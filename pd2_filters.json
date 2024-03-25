@@ -1,0 +1,319 @@
+[
+    [
+        "ADevDH",
+        {
+            "info": {
+                "name": "DarkHumility + ADev Filter",
+                "url": "https://api.github.com/repos/DarkHumility/DHFilter/contents",
+                "author": "ADevDH"
+            },
+            "filters": [
+                {
+                    "name": "dark.filter",
+                    "url": "https://api.github.com/repos/DarkHumility/DHFilter/contents/dark.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/DarkHumility/DHFilter/main/dark.filter"
+                }
+            ]
+        }
+    ],
+    [
+        "BetweenWalls",
+        {
+            "info": {
+                "name": "Feather - Lightweight Loot Filter",
+                "url": "https://api.github.com/repos/BetweenWalls/Feather-PD2/contents",
+                "author": "BetweenWalls"
+            },
+            "filters": [
+                {
+                    "name": "feather-old-text.filter",
+                    "url": "https://api.github.com/repos/BetweenWalls/Feather-PD2/contents/feather-old-text.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/BetweenWalls/Feather-PD2/main/feather-old-text.filter"
+                },
+                {
+                    "name": "feather.filter",
+                    "url": "https://api.github.com/repos/BetweenWalls/Feather-PD2/contents/feather.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/BetweenWalls/Feather-PD2/main/feather.filter"
+                }
+            ]
+        }
+    ],
+    [
+        "Dauracul",
+        {
+            "info": {
+                "name": "Dauracul's PD2 Loot Filter",
+                "url": "https://api.github.com/repos/Dauracul/filter/contents",
+                "author": "Dauracul"
+            },
+            "filters": [
+                {
+                    "name": "dauracul-crafting.filter",
+                    "url": "https://api.github.com/repos/Dauracul/filter/contents/dauracul-crafting.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/Dauracul/filter/main/dauracul-crafting.filter"
+                },
+                {
+                    "name": "dauracul.filter",
+                    "url": "https://api.github.com/repos/Dauracul/filter/contents/dauracul.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/Dauracul/filter/main/dauracul.filter"
+                }
+            ]
+        }
+    ],
+    [
+        "Erazure",
+        {
+            "info": {
+                "name": "Erazure's PD2 Loot Filter",
+                "url": "https://api.github.com/repos/FiltersBy-Erazure/PD2-Loot-Filter/contents",
+                "author": "Erazure"
+            },
+            "filters": [
+                {
+                    "name": "Erazure-Crafting-BIG-GG.filter",
+                    "url": "https://api.github.com/repos/FiltersBy-Erazure/PD2-Loot-Filter/contents/Erazure-Crafting-BIG-GG.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/FiltersBy-Erazure/PD2-Loot-Filter/main/Erazure-Crafting-BIG-GG.filter"
+                },
+                {
+                    "name": "Erazure-Crafting-Main.filter",
+                    "url": "https://api.github.com/repos/FiltersBy-Erazure/PD2-Loot-Filter/contents/Erazure-Crafting-Main.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/FiltersBy-Erazure/PD2-Loot-Filter/main/Erazure-Crafting-Main.filter"
+                },
+                {
+                    "name": "Erazure-Season-8-BIG-GG.filter",
+                    "url": "https://api.github.com/repos/FiltersBy-Erazure/PD2-Loot-Filter/contents/Erazure-Season-8-BIG-GG.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/FiltersBy-Erazure/PD2-Loot-Filter/main/Erazure-Season-8-BIG-GG.filter"
+                },
+                {
+                    "name": "Erazure-Season-8-Main.filter",
+                    "url": "https://api.github.com/repos/FiltersBy-Erazure/PD2-Loot-Filter/contents/Erazure-Season-8-Main.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/FiltersBy-Erazure/PD2-Loot-Filter/main/Erazure-Season-8-Main.filter"
+                }
+            ]
+        }
+    ],
+    [
+        "HiimFilter",
+        {
+            "info": {
+                "name": "HiimFilter by Maaaark + HiimDave",
+                "url": "https://api.github.com/repos/Maaaaaarrk/HiimFilter-PD2-Filter/contents",
+                "author": "HiimFilter"
+            },
+            "filters": [
+                {
+                    "name": "Hiim.filter",
+                    "url": "https://api.github.com/repos/Maaaaaarrk/HiimFilter-PD2-Filter/contents/Hiim.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/Maaaaaarrk/HiimFilter-PD2-Filter/main/Hiim.filter"
+                },
+                {
+                    "name": "Hiim_Crafters_League.filter",
+                    "url": "https://api.github.com/repos/Maaaaaarrk/HiimFilter-PD2-Filter/contents/Hiim_Crafters_League.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/Maaaaaarrk/HiimFilter-PD2-Filter/main/Hiim_Crafters_League.filter"
+                },
+                {
+                    "name": "Hiim_Muted_Colors.filter",
+                    "url": "https://api.github.com/repos/Maaaaaarrk/HiimFilter-PD2-Filter/contents/Hiim_Muted_Colors.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/Maaaaaarrk/HiimFilter-PD2-Filter/main/Hiim_Muted_Colors.filter"
+                }
+            ]
+        }
+    ],
+    [
+        "Kassahi",
+        {
+            "info": {
+                "name": "Kassahi's PD2 Filter",
+                "url": "https://api.github.com/repos/KassahiPD2/Kassahi/contents",
+                "author": "Kassahi"
+            },
+            "filters": [
+                {
+                    "name": "Crafters-Hyper.filter",
+                    "url": "https://api.github.com/repos/KassahiPD2/Kassahi/contents/Crafters-Hyper.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/KassahiPD2/Kassahi/main/Crafters-Hyper.filter"
+                },
+                {
+                    "name": "Crafters.filter",
+                    "url": "https://api.github.com/repos/KassahiPD2/Kassahi/contents/Crafters.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/KassahiPD2/Kassahi/main/Crafters.filter"
+                },
+                {
+                    "name": "Meme-Hyper.filter",
+                    "url": "https://api.github.com/repos/KassahiPD2/Kassahi/contents/Meme-Hyper.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/KassahiPD2/Kassahi/main/Meme-Hyper.filter"
+                },
+                {
+                    "name": "Meme.filter",
+                    "url": "https://api.github.com/repos/KassahiPD2/Kassahi/contents/Meme.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/KassahiPD2/Kassahi/main/Meme.filter"
+                },
+                {
+                    "name": "Regular-Hyper.filter",
+                    "url": "https://api.github.com/repos/KassahiPD2/Kassahi/contents/Regular-Hyper.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/KassahiPD2/Kassahi/main/Regular-Hyper.filter"
+                },
+                {
+                    "name": "Regular.filter",
+                    "url": "https://api.github.com/repos/KassahiPD2/Kassahi/contents/Regular.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/KassahiPD2/Kassahi/main/Regular.filter"
+                }
+            ]
+        }
+    ],
+    [
+        "Kryszard",
+        {
+            "info": {
+                "name": "Kryszard's PD2 Loot Filter",
+                "url": "https://api.github.com/repos/Kryszard-POD/Kryszard-s-PD2-Loot-Filter/contents",
+                "author": "Kryszard"
+            },
+            "filters": [
+                {
+                    "name": "futureal.filter",
+                    "url": "https://api.github.com/repos/Kryszard-POD/Kryszard-s-PD2-Loot-Filter/contents/futureal.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/Kryszard-POD/Kryszard-s-PD2-Loot-Filter/main/futureal.filter"
+                },
+                {
+                    "name": "item.filter",
+                    "url": "https://api.github.com/repos/Kryszard-POD/Kryszard-s-PD2-Loot-Filter/contents/item.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/Kryszard-POD/Kryszard-s-PD2-Loot-Filter/main/item.filter"
+                }
+            ]
+        }
+    ],
+    [
+        "PiLLLa",
+        {
+            "info": {
+                "name": "PiLLLa Filter",
+                "url": "https://api.github.com/repos/PiLLLaa/pd2/contents",
+                "author": "PiLLLa"
+            },
+            "filters": [
+                {
+                    "name": "MiniSeason_Hype_Craft.filter",
+                    "url": "https://api.github.com/repos/PiLLLaa/Pd2/contents/MiniSeason_Hype_Craft.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/PiLLLaa/Pd2/main/MiniSeason_Hype_Craft.filter"
+                },
+                {
+                    "name": "MiniSeason_Hype_Craft_Colored.filter",
+                    "url": "https://api.github.com/repos/PiLLLaa/Pd2/contents/MiniSeason_Hype_Craft_Colored.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/PiLLLaa/Pd2/main/MiniSeason_Hype_Craft_Colored.filter"
+                },
+                {
+                    "name": "S8_Blank.filter",
+                    "url": "https://api.github.com/repos/PiLLLaa/Pd2/contents/S8_Blank.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/PiLLLaa/Pd2/main/S8_Blank.filter"
+                },
+                {
+                    "name": "S8_GrayWhite.filter",
+                    "url": "https://api.github.com/repos/PiLLLaa/Pd2/contents/S8_GrayWhite.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/PiLLLaa/Pd2/main/S8_GrayWhite.filter"
+                },
+                {
+                    "name": "S8_Hype.filter",
+                    "url": "https://api.github.com/repos/PiLLLaa/Pd2/contents/S8_Hype.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/PiLLLaa/Pd2/main/S8_Hype.filter"
+                },
+                {
+                    "name": "S8_PurpleGold.filter",
+                    "url": "https://api.github.com/repos/PiLLLaa/Pd2/contents/S8_PurpleGold.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/PiLLLaa/Pd2/main/S8_PurpleGold.filter"
+                },
+                {
+                    "name": "S8_Standard.filter",
+                    "url": "https://api.github.com/repos/PiLLLaa/Pd2/contents/S8_Standard.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/PiLLLaa/Pd2/main/S8_Standard.filter"
+                },
+                {
+                    "name": "S8_Starter.filter",
+                    "url": "https://api.github.com/repos/PiLLLaa/Pd2/contents/S8_Starter.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/PiLLLaa/Pd2/main/S8_Starter.filter"
+                }
+            ]
+        }
+    ],
+    [
+        "TalRasha125",
+        {
+            "info": {
+                "name": "TalRasha's PD2 Item Filters",
+                "url": "https://api.github.com/repos/TalRasha125/TalRashas-PD2-Item-Filter/contents",
+                "author": "TalRasha125"
+            },
+            "filters": [
+                {
+                    "name": "default.filter",
+                    "url": "https://api.github.com/repos/TalRasha125/TalRashas-PD2-Item-Filter/contents/default.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/TalRasha125/TalRashas-PD2-Item-Filter/main/default.filter"
+                }
+            ]
+        }
+    ],
+    [
+        "Wolfie",
+        {
+            "info": {
+                "name": "Wolfie's PD2 Loot Filters",
+                "url": "https://api.github.com/repos/WolfieeifloW/pd2filter/contents",
+                "author": "Wolfie"
+            },
+            "filters": [
+                {
+                    "name": "btneandertha1.filter",
+                    "url": "https://api.github.com/repos/WolfieeifloW/pd2filter/contents/btneandertha1.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/WolfieeifloW/pd2filter/main/btneandertha1.filter"
+                },
+                {
+                    "name": "combined.filter",
+                    "url": "https://api.github.com/repos/WolfieeifloW/pd2filter/contents/combined.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/WolfieeifloW/pd2filter/main/combined.filter"
+                },
+                {
+                    "name": "template.filter",
+                    "url": "https://api.github.com/repos/WolfieeifloW/pd2filter/contents/template.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/WolfieeifloW/pd2filter/main/template.filter"
+                }
+            ]
+        }
+    ],
+    [
+        "eqN",
+        {
+            "info": {
+                "name": "eqN's PD2 Filters",
+                "url": "https://api.github.com/repos/eqNj/eqN-PD2-Filter/contents",
+                "author": "eqN"
+            },
+            "filters": [
+                {
+                    "name": "eqN-All-In-One.filter",
+                    "url": "https://api.github.com/repos/eqNj/eqN-PD2-Filter/contents/eqN-All-In-One.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/eqNj/eqN-PD2-Filter/main/eqN-All-In-One.filter"
+                },
+                {
+                    "name": "eqN-Craft-League-LLD.filter",
+                    "url": "https://api.github.com/repos/eqNj/eqN-PD2-Filter/contents/eqN-Craft-League-LLD.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/eqNj/eqN-PD2-Filter/main/eqN-Craft-League-LLD.filter"
+                },
+                {
+                    "name": "eqN-Craft-League.filter",
+                    "url": "https://api.github.com/repos/eqNj/eqN-PD2-Filter/contents/eqN-Craft-League.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/eqNj/eqN-PD2-Filter/main/eqN-Craft-League.filter"
+                },
+                {
+                    "name": "eqN-Potionless.filter",
+                    "url": "https://api.github.com/repos/eqNj/eqN-PD2-Filter/contents/eqN-Potionless.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/eqNj/eqN-PD2-Filter/main/eqN-Potionless.filter"
+                },
+                {
+                    "name": "eqN-Specialized-LLD.filter",
+                    "url": "https://api.github.com/repos/eqNj/eqN-PD2-Filter/contents/eqN-Specialized-LLD.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/eqNj/eqN-PD2-Filter/main/eqN-Specialized-LLD.filter"
+                }
+            ]
+        }
+    ]
+]
