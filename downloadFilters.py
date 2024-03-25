@@ -37,8 +37,9 @@ if authorsData:
                         url.headers.set_param("charset", "cp1252")
                         filterText = url.read()
                     
-                    Path(Path(__file__).parent / 'filters' / authorName / f['name']).mkdir(parents=True, exist_ok=True)
-                    with open(Path(__file__).parent / 'filters' / authorName / f['name'] / 'loot.filter', 'wb') as filter:
+                    filterName = f["name"].replace(".filter", "")
+                    Path(Path(__file__).parent / "filters" / authorName / filterName).mkdir(parents=True, exist_ok=True)
+                    with open(Path(__file__).parent / "filters" / authorName / filterName / "loot.filter", "wb") as filter:
                         filter.write(filterText)
 
     jsonData = json.dumps(sorted(masterFilterList.items()), indent=4)
