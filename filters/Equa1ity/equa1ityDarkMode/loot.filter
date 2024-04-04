@@ -949,7 +949,7 @@ ItemDisplay[rvs CLVL<85]:%PURPLE%(%GRAY%juv%PURPLE%)
 ItemDisplay[rvs CLVL>84]:
 
 //healing
-ItemDisplay[(hp1 OR hp2 OR hp3 OR hp4 OR hp5)]:%RED%(%GRAY%hppOOOOOOOOOOOOOOOOOOO%RED%)%CONTINUE%
+ItemDisplay[(hp1 OR hp2 OR hp3 OR hp4 OR hp5)]:%RED%(%GRAY%hp%RED%)%CONTINUE%
 //MANA
 ItemDisplay[(mp1 OR mp2 OR mp3 OR mp4 OR mp5)]:%BLUE%(%GRAY%mp%BLUE%)%CONTINUE%
 
