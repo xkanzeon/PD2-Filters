@@ -4,7 +4,6 @@
 ItemDisplayFilterName[]:Low Runeword Notes
 ItemDisplayFilterName[]:Mid Runeword Notes
 ItemDisplayFilterName[]:High Runeword Notes
-ItemDisplayFilterName[]:Lore Flavor Text (NYI)
 
 // Fix to show names of items in gambling screen
 ItemDisplay[(WEAPON OR ARMOR) SHOP NMAG !ID]: %NAME%
@@ -26,8 +25,9 @@ ItemDisplay[rvs]: %PURPLE%!%WHITE%Rejuv{%GRAY%Rejuvination Potion}
 ItemDisplay[rvl]: %PURPLE%!%WHITE%Full Rejuv{%GRAY%Full Rejuvination Potion}
 ItemDisplay[yps]: %DARK_GREEN%!%WHITE%Anti{%GRAY%Antidote Potion}
 ItemDisplay[wms]: %YELLOW%!%WHITE%Thaw{%GRAY%Thawing Potion}
-ItemDisplay[vps]: %LIGHT_GRAY%!%WHITE%Stam{%GRAY%Stamina Potion}
 ItemDisplay[vps CLVL>10 !SHOP]:
+ItemDisplay[vps]: %LIGHT_GRAY%!%WHITE%Stam{%GRAY%Stamina Potion}
+
 
 // Hide Lesser Health and Mana potions by CLVL
 ItemDisplay[hp1 CLVL<15]: %RED%!%WHITE%HP%GRAY%°{%GRAY%Minor Healing Potion}
@@ -51,7 +51,7 @@ ItemDisplay[hp4 CLVL>30 !SHOP]:
 ItemDisplay[mp4 CLVL>30 !SHOP]:
 
 // Release Notes on Identify Scrolls (in Town at Vendors)
-ItemDisplay[isc SHOP]: %NAME%{%NAME%%BLUE%wiki.projectdiablo2.com%NL%%NL%%DARK_GREEN%For full Season 8 patch notes, visit the Project Diablo 2 Wiki:%NL%Updated %RED%Season 8: Depravity %DARK_GREEN%items, changes, and values.%NL%Last Updated 9-16-2023:%NL%%NL%%ORANGE%filter level keys in settings for easy access!%NL%I highly recommend binding the Increase and Decrease%NL%runeword recipes on weapon and armor bases.%NL%Use the filter levels in settings to display%NL%%NL%%GOLD%Dauracul's PD2 Loot Filter}
+ItemDisplay[isc SHOP]: %NAME%{%NAME%%BLUE%wiki.projectdiablo2.com%NL%%NL%%DARK_GREEN%For full Season 9 patch notes, visit the Project Diablo 2 Wiki:%NL%Updated %RED%Season 9: Anarchy %DARK_GREEN%items, changes, and values.%NL%Last Updated 4-5-2024:%NL%%NL%%ORANGE%filter level keys in settings for easy access.%NL%I highly recommend binding the Increase and Decrease%NL%runeword recipes on weapon and armor bases.%NL%Use the filter levels in settings to display%NL%%NL%%GOLD%Dauracul's PD2 Loot Filter}
 
 // Superior Tag on Bases
 
@@ -485,6 +485,11 @@ ItemDisplay[NORM !RW NMAG]: %NAME%%TAN%¹%CONTINUE%
 ItemDisplay[EXC !RW NMAG]: %NAME%%TAN%²%CONTINUE%
 ItemDisplay[ELT !RW NMAG]: %NAME%%TAN%³%CONTINUE%
 
+// Tags for Normal, Exceptional, Elite Bases on Magic+ Quality
+ItemDisplay[NORM !RW (MAG OR RARE OR CRAFT)]: %NAME%%TAN%¹%CONTINUE%
+ItemDisplay[EXC !RW (MAG OR RARE OR CRAFT)]: %NAME%%TAN%²%CONTINUE%
+ItemDisplay[ELT !RW (MAG OR RARE OR CRAFT)]: %NAME%%TAN%³%CONTINUE%
+
 // Show me Enhanced Damage value on Superior Weapons
 ItemDisplay[SUP NMAG WEAPON ED=5]: %GRAY%(%RED%5%%GRAY%) %NAME%%CONTINUE%
 ItemDisplay[SUP NMAG WEAPON ED=6]: %GRAY%(%RED%6%%GRAY%) %NAME%%CONTINUE%
@@ -522,9 +527,7 @@ ItemDisplay[ETH CRAFT]: %GRAY%(%TAN%Eth%GRAY%) %ORANGE%%NAME%%CONTINUE%
 ItemDisplay[SOCK>0 !RW]: %NAME% %GRAY%(%TAN%%SOCKETS%%GRAY%)%CONTINUE%
 
 // Rune Notice
-ItemDisplay[RUNE>0 AND RUNE<11]: %DOT-62%%ORANGE%%RUNENAME% Rune %GRAY%(%GREEN%%RUNENUM%%GRAY%)%CONTINUE%
-ItemDisplay[RUNE>10 AND RUNE<21]: %DOT-62%%ORANGE%%RUNENAME% Rune %GRAY%(%GREEN%%RUNENUM%%GRAY%)%CONTINUE%
-ItemDisplay[RUNE>20]: %DOT-62%%ORANGE%%RUNENAME% Rune %GRAY%(%GREEN%%RUNENUM%%GRAY%)%CONTINUE%
+ItemDisplay[RUNE>0]: %DOT-62%%ORANGE%%RUNENAME% Rune %GRAY%(%GREEN%%RUNENUM%%GRAY%)%CONTINUE%
 
 // PD2 Items
 
@@ -582,7 +585,23 @@ ItemDisplay[tpll CLVL<20]: %YELLOW%!%WHITE%Shock{%NAME%%BLUE%Deals Lightning Dam
 ItemDisplay[tpll !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109) CLVL>20]:
 ItemDisplay[tpll (MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109) CLVL>20]: %YELLOW%!%WHITE%Shock{%NAME%%BLUE%Deals Lightning Damage and Reduces Enemy Lightning Resist%NL%%TAN%Large%NL%%GRAY%Shock Potion}%CONTINUE%
 
-// WSS and Puzzleboxes
+// Craft Infusions (S9/Craft season)
+//Blood
+ItemDisplay[crfb]: %DOT-99%%RED%%NAME%%CONTINUE%
+//Caster
+ItemDisplay[crfc]: %DOT-99%%PURPLE%%NAME%%CONTINUE%
+//Safety
+ItemDisplay[crfs]: %DOT-99%%GREEN%%NAME%%CONTINUE%
+//Hitpower
+ItemDisplay[crfh]: %DOT-99%%BLUE%%NAME%%CONTINUE%
+//Vampiric
+ItemDisplay[crfv]: %DOT-99%%CORAL%%NAME%%CONTINUE%
+//Bountiful
+ItemDisplay[crfu]: %DOT-99%%YELLOW%%NAME%%CONTINUE%
+//Brilliant
+ItemDisplay[crfp]: %DOT-99%%TEAL%%NAME%%CONTINUE%
+
+// WSS and Puzzleboxes/Puzzlepieces
 ItemDisplay[(wss OR lbox OR lpp)]: %DOT-62%%NAME%%CONTINUE%
 
 // Catalyst Shard / Inert Worldstone Shard (S7)
@@ -617,18 +636,18 @@ ItemDisplay[(ubaa OR ubab OR ubac)]: %NAME%{%NAME%%WHITE%to create %GOLD%Relic o
 // Voidstone and Vision of Terror Difficulty Recipes
 ItemDisplay[dcma]: %RED%Vision of Terror%CONTINUE%
 ItemDisplay[rtma]: %TEAL%Voidstone%CONTINUE%
-ItemDisplay[(rtma OR dcma) STAT185=0]: %NAME%{%NAME%%BLUE%Difficulty Level: 0%NL%%ORANGE%Ber %WHITE%through %ORANGE%Zod Rune:%BLUE% Difficulty 2%NL%%ORANGE%Vex %WHITE%through %ORANGE%Sur Rune:%BLUE% Difficulty 1%NL%%TAN%Transmute with %ORANGE%Runes %TAN%to increase Boss Difficulty:}%CONTINUE%
-ItemDisplay[(rtma OR dcma) STAT185>0]: %NAME%%CONTINUE%
+ItemDisplay[(rtma OR dcma) STAT185=0]: %NAME%{%NAME%%BLUE%Tier: 0%NL%%TAN%Transmute this item by itself to cycle Boss Difficulty}%CONTINUE%
+ItemDisplay[(rtma OR dcma) STAT185>0]: %NAME%%NAME%{%NAME%%TAN%Transmute this item by itself to cycle Boss Difficulty}%CONTINUE%%CONTINUE%
 
 // Flavor Text on Voidstone and Vision of Terror
 ItemDisplay[dcma]: %NAME%{%NAME%%NL%%RED%Not even death can save you from me...}%CONTINUE%
 ItemDisplay[rtma]: %NAME%{%NAME%%NL%%TEAL%If you cannot find the way, wait, and the way will find you.}%CONTINUE%
 
 // Vial of Lightsong
-ItemDisplay[lsvl]: %DOT-62%%NAME%{%NAME%%TAN%(Does not work with Set or Indestructible items)}%CONTINUE%
+ItemDisplay[lsvl]: %DOT-62%%NAME%{%NAME%%RED%Does not work with Indestructible items}%CONTINUE%
 
 // Lillith's Mirror
-ItemDisplay[llmr]: %DOT-62%%NAME%{%NAME%%TAN%(Resulting items cannot be Transmuted)%NL%%WHITE%Only works with %BLUE%Magic%WHITE%/%YELLOW%Rare %WHITE%Equipment and Jewels}%CONTINUE%
+ItemDisplay[llmr]: %DOT-62%%NAME%{%NAME%%RED%Resulting items cannot be Transmuted%NL%%WHITE%Only useable with %BLUE%Magic%WHITE%/%YELLOW%Rare %WHITE%Equipment and Jewels}%CONTINUE%
 
 // White Maps Notice
 ItemDisplay[(t11 OR t12 OR t13 OR t14 OR t15 OR t16 OR t21 OR t22 OR t23 OR t24 OR t25 OR t26 OR t31 OR t32 OR t33 OR t34 OR t35 OR t36 OR t37 OR t38 OR t39 OR t3a) NMAG]: %DOT-62%%ORANGE%%NAME%%CONTINUE%
@@ -643,115 +662,121 @@ ItemDisplay[(t11 OR t12 OR t13 OR t14 OR t15 OR t16 OR t21 OR t22 OR t23 OR t24 
 ItemDisplay[(t51 OR t52 OR t53) UNI]: %DOT-61%%GOLD%%NAME%%CONTINUE%
 
 // Map Recipes
+// Updated and commented out to prevent redundant/duplicate recipe descriptions. S9 added default recipes to many of these items
 
 // Arcane Orb
-ItemDisplay[imma]: %NAME%{%NAME%%WHITE%Transmute with %BLUE%Jewel%WHITE% to create %TEAL%Infused Arcane Orb%NL%%WHITE%Transmute with %ORANGE%Common Map %WHITE%+ %BLUE%Jewel %WHITE%to create %BLUE%Magic Map}%CONTINUE%
+//ItemDisplay[imma]: %NAME%{%NAME%%WHITE%Transmute with %BLUE%Jewel%WHITE% to create %TEAL%Infused Arcane Orb%NL%%WHITE%Transmute with %ORANGE%Common Map %WHITE%+ %BLUE%Jewel %WHITE%to create %BLUE%Magic Map}%CONTINUE%
+ItemDisplay[imma]: %NAME%{%NAME%%WHITE%Transmute with a %BLUE%Jewel%WHITE% to create %TEAL%Infused Arcane Orb}%CONTINUE%
 // Infused Arcane Orb
-ItemDisplay[irma]: %TEAL%Infused Arcane Orb{%WHITE%Transmute with %ORANGE%Common Map %WHITE%to create %BLUE%Magic Map}%CONTINUE%
+//ItemDisplay[irma]: %TEAL%Infused Arcane Orb{%WHITE%Transmute with %ORANGE%Common Map %WHITE%to create %BLUE%Magic Map}%CONTINUE%
 
 // Zakarum Orb
-ItemDisplay[imra]: %NAME%{%NAME%%WHITE%Transmute with %BLUE%Jewel %WHITE%+ %ORANGE%Thul (or greater) %WHITE%to create %TEAL%Infused Zakarum Orb%NL%%WHITE%Transmute with %ORANGE%Common Map %WHITE%+ %BLUE%Jewel %WHITE%+ %ORANGE%Thul (or greater) %WHITE%to create %YELLOW%Rare Map}%CONTINUE%
+//ItemDisplay[imra]: %NAME%{%NAME%%WHITE%Transmute with %BLUE%Jewel %WHITE%+ %ORANGE%Thul (or greater) %WHITE%to create %TEAL%Infused Zakarum Orb%NL%%WHITE%Transmute with %ORANGE%Common Map %WHITE%+ %BLUE%Jewel %WHITE%+ %ORANGE%Thul (or greater) %WHITE%to create %YELLOW%Rare Map}%CONTINUE%
+ItemDisplay[imra]: %NAME%{%NAME%%WHITE%Transmute with a %BLUE%Jewel %WHITE%+ %ORANGE%Thul (or greater) %WHITE%to create %TEAL%Infused Zakarum Orb}%CONTINUE%
 // Infused Zakarum Orb
-ItemDisplay[irra]: %TEAL%Infused Zakarum Orb{%WHITE%Transmute with %ORANGE%Common Map %WHITE%to create %YELLOW%Rare Map}%CONTINUE%
+//ItemDisplay[irra]: %TEAL%Infused Zakarum Orb{%WHITE%Transmute with %ORANGE%Common Map %WHITE%to create %YELLOW%Rare Map}%CONTINUE%
 
 // Angelic Orb
-ItemDisplay[upma]: %NAME%{%NAME%%WHITE%Transmute with Perfect Skull + %ORANGE%Thul (or greater) %WHITE%to create %TEAL%Infused Angelic Orb%NL%%WHITE%Transmute with %BLUE%Magic Map %WHITE%+ Perfect Skull + %ORANGE%Thul (or greater) %WHITE%to create %YELLOW%Rare Map}%CONTINUE%
+//ItemDisplay[upma]: %NAME%{%NAME%%WHITE%Transmute with Perfect Skull + %ORANGE%Thul (or greater) %WHITE%to create %TEAL%Infused Angelic Orb%NL%%WHITE%Transmute with %BLUE%Magic Map %WHITE%+ Perfect Skull + %ORANGE%Thul (or greater) %WHITE%to create %YELLOW%Rare Map}%CONTINUE%
+ItemDisplay[upma]: %NAME%{%NAME%%WHITE%Transmute with Perfect Skull + %ORANGE%Thul (or greater) %WHITE%to create %TEAL%Infused Angelic Orb}%CONTINUE%
 // Infused Angelic Orb
-ItemDisplay[urma]: %TEAL%Infused Angelic Orb{%WHITE%Transmute with %BLUE%Magic Map %WHITE%to create %YELLOW%Rare Map}%CONTINUE%
+//ItemDisplay[urma]: %TEAL%Infused Angelic Orb{%WHITE%Transmute with %BLUE%Magic Map %WHITE%to create %YELLOW%Rare Map}%CONTINUE%
 
 // Horadrim Orb
-ItemDisplay[rera]: %NAME%{%NAME%%WHITE%Transmute with Any Perfect Gem + %ORANGE%Thul (or greater) %WHITE%to create %TEAL%Infused Horadrim Orb%NL%%WHITE%Transmute with %YELLOW%Rare Map %WHITE%+ Any Perfect Gem + %ORANGE%Thul (or greater) %WHITE%to reroll %YELLOW%Rare Map}%CONTINUE%
+//ItemDisplay[rera]: %NAME%{%NAME%%WHITE%Transmute with Any Perfect Gem + %ORANGE%Thul (or greater) %WHITE%to create %TEAL%Infused Horadrim Orb%NL%%WHITE%Transmute with %YELLOW%Rare Map %WHITE%+ Any Perfect Gem + %ORANGE%Thul (or greater) %WHITE%to reroll %YELLOW%Rare Map}%CONTINUE%
+ItemDisplay[rera]: %NAME%{%NAME%%WHITE%Transmute with any Perfect Gem + %ORANGE%Thul (or greater) %WHITE%to create %TEAL%Infused Horadrim Orb}%CONTINUE%
 // Infused Horadrim Orb
-ItemDisplay[rrra]: %TEAL%Infused Horadrim Orb{%WHITE%Transmute with %YELLOW%Rare Map %WHITE%to reroll %YELLOW%Rare Map}%CONTINUE%
+//ItemDisplay[rrra]: %TEAL%Infused Horadrim Orb{%WHITE%Transmute with %YELLOW%Rare Map %WHITE%to reroll %YELLOW%Rare Map}%CONTINUE%
 
 // Orb of Destruction
-ItemDisplay[scou]: %NAME%{%NAME%%WHITE%Transmute with %BLUE%Magic Map %WHITE%or %YELLOW%Rare Map %WHITE%to downgrade to %ORANGE%Common Map}%CONTINUE%
+//ItemDisplay[scou]: %NAME%{%NAME%%WHITE%Transmute with %BLUE%Magic Map %WHITE%or %YELLOW%Rare Map %WHITE%to downgrade to %ORANGE%Common Map}%CONTINUE%
 
 // Cartographer's Orb
-ItemDisplay[upmp]: %NAME%{%NAME%%WHITE%Transmute with 3 same-tier %ORANGE%Common Maps %WHITE%to Upgrade Tier}%CONTINUE%
+//ItemDisplay[upmp]: %NAME%{%NAME%%WHITE%Transmute with 3 same-tier %ORANGE%Common Maps %WHITE%to Upgrade Tier}%CONTINUE%
 
 // Horadrim Scarab
-ItemDisplay[scrb]: %NAME%{%NAME%%WHITE%Transmute with a Tier 3 %ORANGE%Map %WHITE%to create a %RED%Dungeon}%CONTINUE%
+//ItemDisplay[scrb]: %NAME%{%NAME%%WHITE%Transmute with a Tier 3 %ORANGE%Map %WHITE%to create a %RED%Dungeon}%CONTINUE%
 
 // Standard of Heroes
-ItemDisplay[std]: %NAME%{%NAME%%BLUE%+10% Experience, +20% Monster Density, +20% Magic and Gold Find%NL%%WHITE%Transmute with a %ORANGE%Map %WHITE%to add %DARK_GREEN%Heroic}%CONTINUE%
+//ItemDisplay[std]: %NAME%{%NAME%%BLUE%+10% Experience, +20% Monster Density, +20% Magic and Gold Find%NL%%WHITE%Transmute with a %ORANGE%Map %WHITE%to add %DARK_GREEN%Heroic}%CONTINUE%
 
 // Orb of Fortification
-ItemDisplay[fort]: %GOLD%%NAME%{%NAME%%BLUE%Monsters Drop Loot Twice (does not affect Bosses or Events)%NL%-50% Base Density, +100% Monster Life, +20% Monster Damage, +100% Experience%NL%%WHITE%Transmute with a %ORANGE%Map %WHITE%to add %ORANGE%Fortified}%CONTINUE%
+//ItemDisplay[fort]: %GOLD%%NAME%{%NAME%%BLUE%Monsters Drop Loot Twice (does not affect Bosses or Events)%NL%-50% Base Density, +100% Monster Life, +20% Monster Damage, +100% Experience%NL%%WHITE%Transmute with a %ORANGE%Map %WHITE%to add %ORANGE%Fortified}%CONTINUE%
 
 // Catalyst Shard
-ItemDisplay[iwss]: %NAME%{%NAME%%BLUE%Map Contains a Random Event%NL%%WHITE%Transmute with a %ORANGE%Map %WHITE%to add %ORANGE%Catalyzed}%CONTINUE%
+//ItemDisplay[iwss]: %NAME%{%NAME%%BLUE%Map Contains a Random Event%NL%%WHITE%Transmute with a %ORANGE%Map %WHITE%to add %ORANGE%Catalyzed}%CONTINUE%
 
 // Map has Random Event applied (Catalyst Shard)
-ItemDisplay[(t11 OR t12 OR t13 OR t14 OR t15 OR t16 OR t21 OR t22 OR t23 OR t24 OR t25 OR t26 OR t31 OR t32 OR t33 OR t34 OR t35 OR t36 OR t37 OR t38 OR t39 OR t3a OR t51 OR t52 OR t53) STAT500>0]: %NAME%{%NAME%%ORANGE%Catalyzed%NL%}%CONTINUE%
+ItemDisplay[(t11 OR t12 OR t13 OR t14 OR t15 OR t16 OR t21 OR t22 OR t23 OR t24 OR t25 OR t26 OR t31 OR t32 OR t33 OR t34 OR t35 OR t36 OR t37 OR t38 OR t39 OR t3a OR t51 OR t52 OR t53) STAT500>0]: %NAME%{%NAME%%PURPLE%Catalyzed%NL%}%CONTINUE%
 
 // Immunes on Maps
+// Display order should be: Physical Magic Fire Lightning Cold Poison 
 
 //Ruins of Viz-Jun
-ItemDisplay[t11]: %NAME%{%NAME%%YELLOW%Lightning %GREEN%Poison%NL%%WHITE%Immunities:}%CONTINUE%
+ItemDisplay[t11]: %NAME%{%NAME%%RED%Fire %YELLOW%Lightning%NL%%WHITE%Immunities:}%CONTINUE%
 
 //Horazon's Memory
-ItemDisplay[t12]: %NAME%{%NAME%%GRAY%Note: Lightning Spires have 1000% Poison Resist%NL%%RED%Fire %GREEN%Poison %NL%%WHITE%Immunities:}%CONTINUE%
+ItemDisplay[t12]: %NAME%{%NAME%%GRAY%Note: Lightning Spires have 1000% Poison Resist%NL%%RED%Fire %BLUE%Cold%NL%%WHITE%Immunities:}%CONTINUE%
 
 //Bastion Keep
-ItemDisplay[t13]: %NAME%{%NAME%%GOLD%Physical %YELLOW%Lightning%NL%%WHITE%Immunities:}%CONTINUE%
+ItemDisplay[t13]: %NAME%{%NAME%%GOLD%Physical %RED%Fire %BLUE%Cold%NL%%WHITE%Immunities:}%CONTINUE%
 
 //Sanatorium
-ItemDisplay[t14]: %NAME%{%NAME%%RED%Fire %BLUE%Cold%NL%%WHITE%Immunities:}%CONTINUE%
+ItemDisplay[t14]: %NAME%{%NAME%%YELLOW%Lightning %GREEN%Poison%NL%%WHITE%Immunities:}%CONTINUE%
 
 //Royal Crypts
-ItemDisplay[t15]: %NAME%{%NAME%%ORANGE%Magic %YELLOW%Lightning %GREEN%Poison%NL%%WHITE%Immunities:}%CONTINUE%
+ItemDisplay[t15]: %NAME%{%NAME%%ORANGE%Magic %BLUE%Cold %GREEN%Poison%NL%%WHITE%Immunities:}%CONTINUE%
 
 //Ruined Cistern
-ItemDisplay[t16]: %NAME%{%NAME%%ORANGE%Magic %BLUE%Cold %GREEN%Poison%NL%%WHITE%Immunities:}%CONTINUE%
+ItemDisplay[t16]: %NAME%{%NAME%%ORANGE%Magic %RED%Fire %BLUE%Cold%NL%%WHITE%Immunities:}%CONTINUE%
 
 //Pthlegethon
-ItemDisplay[t21]: %NAME%{%NAME%%RED%Fire %GREEN%Poison%NL%%WHITE%Immunities:}%CONTINUE%
+ItemDisplay[t21]: %NAME%{%NAME%%RED%Fire %YELLOW%Lightning%NL%%WHITE%Immunities:}%CONTINUE%
 
 //Torajan Jungle
-ItemDisplay[t22]: %NAME%{%NAME%%YELLOW%Lightning %BLUE%Cold%NL%%WHITE%Immunities:}%CONTINUE%
+ItemDisplay[t22]: %NAME%{%NAME%%RED%Fire %YELLOW%Lightning%NL%%WHITE%Immunities:}%CONTINUE%
 
 //Arreat Battlefield
 ItemDisplay[t23]: %NAME%{%NAME%%RED%Fire %YELLOW%Lightning%NL%%WHITE%Immunities:}%CONTINUE%
 
 //Tomb of Zoltun Kulle
-ItemDisplay[t24]: %NAME%{%NAME%%GOLD%Physical %YELLOW%Lightning %BLUE%Cold %GREEN%Poison%NL%%WHITE%Immunities:}%CONTINUE%
+ItemDisplay[t24]: %NAME%{%NAME%%GOLD%Physical %YELLOW%Lightning %GREEN%Poison%NL%%WHITE%Immunities:}%CONTINUE%
 
 //Sewers of Harrogath
-ItemDisplay[t25]: %NAME%{%NAME%%RED%Fire %YELLOW%Lightning%NL%%WHITE%Immunities:}%CONTINUE%
+ItemDisplay[t25]: %NAME%{%NAME%%YELLOW%Lightning %GREEN%Poison%NL%%WHITE%Immunities:}%CONTINUE%
 
 //Shadows of Westmarch
-ItemDisplay[t26]: %NAME%{%NAME%%GOLD%Physical %RED%Fire %BLUE%Cold%NL%%WHITE%Immunities:}%CONTINUE%
+ItemDisplay[t26]: %NAME%{%NAME%%GOLD%Physical %GREEN%Poison%NL%%WHITE%Immunities:}%CONTINUE%
 
 //River of Blood
-ItemDisplay[t31]: %NAME%{%NAME%%ORANGE%Magic %RED%Fire %BLUE%Cold%NL%%WHITE%Immunities:}%CONTINUE%
+ItemDisplay[t31]: %NAME%{%NAME%%ORANGE%Magic %BLUE%Cold %GREEN%Poison%NL%%WHITE%Immunities:}%CONTINUE%
 
 //Throne of Insanity
-ItemDisplay[t32]: %NAME%{%NAME%%RED%Fire %GREEN%Poison%NL%%WHITE%Immunities:}%CONTINUE%
+ItemDisplay[t32]: %NAME%{%NAME%%YELLOW%Lightning %BLUE%Cold%NL%%WHITE%Immunities:}%CONTINUE%
 
 //Lost Temple
-ItemDisplay[t33]: %NAME%{%NAME%%RED%Fire %YELLOW%Lightning %BLUE%Cold%NL%%WHITE%Immunities:}%CONTINUE%
+ItemDisplay[t33]: %NAME%{%NAME%%RED%Fire %BLUE%Cold%NL%%WHITE%Immunities:}%CONTINUE%
 
 //Ancestral Trial
-ItemDisplay[t34]: %NAME%{%NAME%%GOLD%Physical %RED%Fire %GREEN%Poison%NL%%WHITE%Immunities:}%CONTINUE%
+ItemDisplay[t34]: %NAME%{%NAME%%YELLOW%Lightning %GREEN%Poison%NL%%WHITE%Immunities:}%CONTINUE%
 
 //Fall of Caldeum
-ItemDisplay[t36]: %NAME%{%NAME%%YELLOW%Lightning%NL%%WHITE%Immunities:}%CONTINUE%
+ItemDisplay[t36]: %NAME%{%NAME%%YELLOW%Lightning %BLUE%Cold%NL%%WHITE%Immunities:}%CONTINUE%
 
 //Pandemonium Citadel
-ItemDisplay[t37]: %NAME%{%NAME%%GOLD%Physical %RED%Fire %BLUE%Cold%NL%%WHITE%Immunities:}%CONTINUE%
+ItemDisplay[t37]: %NAME%{%NAME%%GOLD%Physical %YELLOW%Lightning %GREEN%Poison%NL%%WHITE%Immunities:}%CONTINUE%
 
 //Canyon of Sescheron
-ItemDisplay[t38]: %NAME%{%NAME%%YELLOW%Lightning %GREEN%Poison%NL%%WHITE%Immunities:}%CONTINUE%
+ItemDisplay[t38]: %NAME%{%NAME%%GOLD%Physical %RED%Fire %GREEN%Poison%NL%%WHITE%Immunities:}%CONTINUE%
 
 //Kehjistan Marketplace
-ItemDisplay[t39]: %NAME%{%NAME%%GRAY%Note: Fire Towers have 1000% Poison Resist%NL%%BLUE%Cold %GREEN%Poison %NL%%WHITE%Immunities:}%CONTINUE%
+ItemDisplay[t39]: %NAME%{%NAME%%GRAY%Note: Fire Towers have 1000% Poison Resist%NL%%RED%Fire %BLUE%Cold %GREEN%Poison%NL%%WHITE%Immunities:}%CONTINUE%
 
 //Ashen Plains
-ItemDisplay[t3a]: %NAME%{%NAME%%ORANGE%Magic %YELLOW%Lightning %GREEN%Poison%NL%%WHITE%Immunities:}%CONTINUE%
+ItemDisplay[t3a]: %NAME%{%NAME%%ORANGE%Magic %BLUE%Cold %GREEN%Poison%NL%%WHITE%Immunities:}%CONTINUE%
 
 // T4 Dungeons
-ItemDisplay[(t41 OR t42 OR t43) NMAG]: %DOT-62%%RED%%NAME%%CONTINUE%
+ItemDisplay[(t41 OR t42 OR t43)]: %DOT-62%%RED%%NAME%%CONTINUE%
 
 // Any Unidentified Unique Ring/Amulet
 ItemDisplay[UNI !ID (rin OR amu)]: %BORDER-0E%%GOLD%%NAME%%CONTINUE%
@@ -773,7 +798,7 @@ ItemDisplay[SET !ID NORM CLVL<45]: %BORDER-84%%GREEN%%NAME%%CONTINUE%
 
 // [=|| LORE FLAVORTEXT ||=]
 
-//Will do this on a future update
+//Will do this on a future update - probably not
 //Formatting Reference
 //ItemDisplay[xxx]: %NAME%{%NAME%%GOLD%-~+~-%NL%%ORANGE%bottom line%NL%top line%NL%%GOLD%~-+-~%NL%}%CONTINUE%
 //NOTES: (reanimate) with MULTI (MULTI155,XX>YY):
@@ -791,23 +816,25 @@ ItemDisplay[SET !ID NORM CLVL<45]: %BORDER-84%%GREEN%%NAME%%CONTINUE%
 
 
 // Upgrade Recipes
-ItemDisplay[SET ARMOR NORM !BOOTS ID]: %NAME%{%NAME%%TAN%(Upgrade to Exceptional: %ORANGE%Tal %TAN%+ %ORANGE%Shael %TAN%+ %WHITE%PDiamond%TAN%)}%CONTINUE%
-ItemDisplay[SET ARMOR EXC !BOOTS ID]: %NAME%{%NAME%%TAN%(Upgrade to Elite: %ORANGE%Ko %TAN%+ %ORANGE%Lem %TAN%+ %WHITE%PDiamond%TAN%)}%CONTINUE%
+ItemDisplay[SET ARMOR NORM !BOOTS ID]: %NAME%{%NAME%%WHITE%Transmute with %ORANGE%Tal %TAN%+ %ORANGE%Shael %TAN%+ %WHITE%PDiamond%WHITE% to upgrade to %TAN%Exceptional}%CONTINUE%
+ItemDisplay[SET ARMOR EXC !BOOTS ID]: %NAME%{%NAME%%WHITE%Transmute with %ORANGE%Ko %TAN%+ %ORANGE%Lem %TAN%+ %WHITE%PDiamond%WHITE% to upgrade to %TAN%Elite}%CONTINUE%
 
-ItemDisplay[SET BOOTS NORM ID !ASSASSIN]: %NAME%{%NAME%%TAN%(Upgrade to Exceptional: %ORANGE%Tal %TAN%+ %ORANGE%Shael %TAN%+ %WHITE%PDiamond%TAN%)}%CONTINUE%
-ItemDisplay[SET BOOTS EXC ID !ASSASSIN]: %NAME%{%NAME%%TAN%(Upgrade to Elite: %ORANGE%Ko %TAN%+ %ORANGE%Lem %TAN%+ %WHITE%PDiamond%TAN%)}%CONTINUE%
-ItemDisplay[SET BOOTS NORM ID ASSASSIN]: %NAME%{%NAME%%TAN%(Upgrade to Exceptional: %ORANGE%Tal %TAN%+ %ORANGE%Shael %TAN%+ %WHITE%PDiamond%TAN%)%NL%}%CONTINUE%
-ItemDisplay[SET BOOTS EXC ID ASSASSIN]: %NAME%{%NAME%%TAN%(Upgrade to Elite: %ORANGE%Ko %TAN%+ %ORANGE%Lem %TAN%+ %WHITE%PDiamond%TAN%)%NL%}%CONTINUE%
+ItemDisplay[SET BOOTS NORM ID !ASSASSIN]: %NAME%{%NAME%%WHITE%Transmute with %ORANGE%Tal %TAN%+ %ORANGE%Shael %TAN%+ %WHITE%PDiamond%WHITE% to upgrade to %TAN%Exceptional}%CONTINUE%
+ItemDisplay[SET BOOTS EXC ID !ASSASSIN]: %NAME%{%NAME%%WHITE%Transmute with %ORANGE%Ko %TAN%+ %ORANGE%Lem %TAN%+ %WHITE%PDiamond%WHITE% to upgrade to %TAN%Elite}%CONTINUE%
+ItemDisplay[SET BOOTS NORM ID ASSASSIN]: %NAME%{%NAME%%WHITE%Transmute with %ORANGE%Tal %TAN%+ %ORANGE%Shael %TAN%+ %WHITE%PDiamond%WHITE% to upgrade to %TAN%Exceptional%NL%}%CONTINUE%
+ItemDisplay[SET BOOTS EXC ID ASSASSIN]: %NAME%{%NAME%%WHITE%Transmute with %ORANGE%Ko %TAN%+ %ORANGE%Lem %TAN%+ %WHITE%PDiamond%WHITE% to upgrade to %TAN%Elite%NL%}%CONTINUE%
 
-ItemDisplay[UNI ARMOR NORM ID]: %NAME%{%NAME%%TAN%(Upgrade to Exceptional: %ORANGE%Tal %TAN%+ %ORANGE%Shael %TAN%+ %WHITE%PDiamond%TAN%)}%CONTINUE%
-ItemDisplay[UNI ARMOR EXC ID]: %NAME%{%NAME%%TAN%(Upgrade to Elite: %ORANGE%Ko %TAN%+ %ORANGE%Lem %TAN%+ %WHITE%PDiamond%TAN%)}%CONTINUE%
-ItemDisplay[(SET OR UNI) WEAPON NORM ID]: %NAME%{%NAME%%TAN%(Upgrade to Exceptional: %ORANGE%Ral %TAN%+ %ORANGE%Sol %TAN%+ %GREEN%PEmerald%TAN%)%NL%}%CONTINUE%
-ItemDisplay[(SET OR UNI) WEAPON EXC ID]: %NAME%{%NAME%%TAN%(Upgrade to Elite: %ORANGE%Lum %TAN%+ %ORANGE%Pul %TAN%+ %GREEN%PEmerald%TAN%)%NL%}%CONTINUE%
+ItemDisplay[UNI ARMOR NORM ID]: %NAME%{%NAME%%WHITE%Transmute with %ORANGE%Tal %TAN%+ %ORANGE%Shael %TAN%+ %WHITE%PDiamond%WHITE% to upgrade to %TAN%Exceptional}%CONTINUE%
+ItemDisplay[UNI ARMOR EXC ID]: %NAME%{%NAME%%WHITE%Transmute with %ORANGE%Ko %TAN%+ %ORANGE%Lem %TAN%+ %WHITE%PDiamond%WHITE% to upgrade to %TAN%Elite}%CONTINUE%
+ItemDisplay[(SET OR UNI) WEAPON NORM ID]: %NAME%{%NAME%%WHITE%Transmute with %ORANGE%Ral %TAN%+ %ORANGE%Sol %TAN%+ %GREEN%PEmerald%WHITE% to upgrade to %TAN%Exceptional%NL%}%CONTINUE%
+ItemDisplay[(SET OR UNI) WEAPON EXC ID]: %NAME%{%NAME%%WHITE%Transmute with %ORANGE%Lum %TAN%+ %ORANGE%Pul %TAN%+ %GREEN%PEmerald%WHITE% to upgrade to %TAN%Elite%NL%}%CONTINUE%
 
-ItemDisplay[(RARE OR CRAFT) ARMOR NORM ID]: %NAME%{%NAME%%TAN%(Upgrade to Exceptional: %ORANGE%Ral %TAN%+ %ORANGE%Thul %TAN%+ %PURPLE%PAmethyst%TAN%)}%CONTINUE%
-ItemDisplay[(RARE OR CRAFT) ARMOR EXC ID]: %NAME%{%NAME%%TAN%(Upgrade to Elite: %ORANGE%Ko %TAN%+ %ORANGE%Pul %TAN%+ %PURPLE%PAmethyst%TAN%)}%CONTINUE%
-ItemDisplay[(RARE OR CRAFT) WEAPON NORM ID]: %NAME%{%NAME%%TAN%(Upgrade to Exceptional: %ORANGE%Ort %TAN%+ %ORANGE%Amn %TAN%+ %BLUE%PSapphire%TAN%)%NL%}%CONTINUE%
-ItemDisplay[(RARE OR CRAFT) WEAPON EXC ID]: %NAME%{%NAME%%TAN%(Upgrade to Elite: %ORANGE%Fal %TAN%+ %ORANGE%Um %TAN%+ %BLUE%PSapphire%TAN%)%NL%}%CONTINUE%
+ItemDisplay[(RARE OR CRAFT) ARMOR NORM ID]: %NAME%{%NAME%%WHITE%Transmute with %ORANGE%Ral %TAN%+ %ORANGE%Thul %TAN%+ %PURPLE%PAmethyst%WHITE% to upgrade to %TAN%Exceptional}%CONTINUE%
+ItemDisplay[(RARE OR CRAFT) ARMOR EXC ID]: %NAME%{%NAME%%WHITE%Transmute with %ORANGE%Ko %TAN%+ %ORANGE%Pul %TAN%+ %PURPLE%PAmethyst%WHITE% to upgrade to %TAN%Elite}%CONTINUE%
+ItemDisplay[(RARE OR CRAFT) WEAPON NORM ID]: %NAME%{%NAME%%WHITE%Transmute with %ORANGE%Ort %TAN%+ %ORANGE%Amn %TAN%+ %BLUE%PSapphire%WHITE% to upgrade to %TAN%Exceptional%NL%}%CONTINUE%
+ItemDisplay[(RARE OR CRAFT) WEAPON EXC ID]: %NAME%{%NAME%%WHITE%Transmute with %ORANGE%Fal %TAN%+ %ORANGE%Um %TAN%+ %BLUE%PSapphire%WHITE% to upgrade to %TAN%Elite%NL%}%CONTINUE%
+
+
 
 // [=|| DRUID ||=]
 
@@ -3341,13 +3368,13 @@ ItemDisplay[NMAG SOCK>1 !RW (TABSK2>0 OR TABSK0>0)]: %GRAY%%NAME%%GRAY%)%CONTINU
 
 // Cube Recipes to add Sockets
 
-ItemDisplay[NMAG CHEST SOCK=0 !SUP]: %NAME%{%NAME%%WHITE%This + %ORANGE%Tal %WHITE%+ %ORANGE%Thul %WHITE%+ %YELLOW%PTopaz%NL%%TAN%Note:%WHITE% Add Sockets With:}%CONTINUE%
+ItemDisplay[NMAG CHEST SOCK=0 !SUP]: %NAME%{%NAME%%WHITE%Transmute with %ORANGE%Tal %WHITE%+ %ORANGE%Thul %WHITE%+ %YELLOW%PTopaz %WHITE%to add Sockets}%CONTINUE%
 
-ItemDisplay[NMAG HELM SOCK=0 !SUP]: %NAME%{%NAME%%WHITE%This + %ORANGE%Ral %WHITE%+ %ORANGE%Thul %WHITE%+ %BLUE%PSapphire%NL%%TAN%Note:%WHITE% Add Sockets With:}%CONTINUE%
+ItemDisplay[NMAG HELM SOCK=0 !SUP]: %NAME%{%NAME%%WHITE%Transmute with %ORANGE%Ral %WHITE%+ %ORANGE%Thul %WHITE%+ %BLUE%PSapphire %WHITE%to add Sockets}%CONTINUE%
 
-ItemDisplay[NMAG SHIELD SOCK=0 !SUP]: %NAME%{%NAME%%WHITE%This + %ORANGE%Tal %WHITE%+ %ORANGE%Amn %WHITE%+ %RED%PRuby%NL%%TAN%Note:%WHITE% Add Sockets With:}%CONTINUE%
+ItemDisplay[NMAG SHIELD SOCK=0 !SUP]: %NAME%{%NAME%%WHITE%Transmute with %ORANGE%Tal %WHITE%+ %ORANGE%Amn %WHITE%+ %RED%PRuby %WHITE%to add Sockets}%CONTINUE%
 
-ItemDisplay[NMAG WEAPON !THROWING SOCK=0 !SUP]: %NAME%{%NAME%%WHITE%This + %ORANGE%Ral %WHITE%+ %ORANGE%Amn %WHITE%+ %PURPLE%PAmethyst%NL%%TAN%Note:%WHITE% Add Sockets With:%NL%}%CONTINUE%
+ItemDisplay[NMAG WEAPON !THROWING SOCK=0 !SUP]: %NAME%{%NAME%%WHITE%Transmute with %ORANGE%Ral %WHITE%+ %ORANGE%Amn %WHITE%+ %PURPLE%PAmethyst %WHITE%to add Sockets}%CONTINUE%
 
 // RUNEWORD REWORK
 
@@ -4549,139 +4576,221 @@ ItemDisplay[(amb OR amf)]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-10%WHITE%}%C
 // SOCKETABLES
 
 // Show Rune Bonuses and Recipes on Stacked Runes
+
+//El Rune
 ItemDisplay[r01s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%+50 to Attack Rating%NL%%WHITE%Armor: %BLUE%+15 Defense%NL%%WHITE%Shields: %BLUE%+15 Defense}%CONTINUE%
 ItemDisplay[r01s]: %NAME%{%NAME%%NL%%NL%%ORANGE%Vampiric:%WHITE% This + %GRAY%PSkull %WHITE%+ %BLUE%Magic Boots}%CONTINUE%
 ItemDisplay[r01s]: %NAME%{%NAME%%NL%%ORANGE%Bountiful:%WHITE% This + %YELLOW%PTopaz %WHITE%+ %BLUE%Magic Belt}%CONTINUE%
+ItemDisplay[r01s]: %NAME%{%NAME%%NL%%ORANGE%Brilliant:%WHITE% This + %WHITE%PDiamond %WHITE%+ %BLUE%Magic Chest}%CONTINUE%
+ItemDisplay[r01s]: %NAME%{%NAME%%NL%%TAN%Transmute the following with a %BLUE%Jewel %TAN%or %WHITE%Jewel Fragment%NL%%ORANGE%Crafting}%CONTINUE%  //This should always be the last entry for the rune
 
+//Eld Rune
 ItemDisplay[r02s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%+75% Dmg to Undead, +50 AR to Undead%NL%%WHITE%Armor: %BLUE%15% Slower Stam%NL%%WHITE%Shields: %BLUE%7% Block Chance}%CONTINUE%
 ItemDisplay[r02s]: %NAME%{%NAME%%NL%%NL%%ORANGE%Vampiric:%WHITE% This + %GRAY%PSkull %WHITE%+ %BLUE%Magic Belt}%CONTINUE%
 ItemDisplay[r02s]: %NAME%{%NAME%%NL%%ORANGE%Bountiful:%WHITE% This + %YELLOW%PTopaz %WHITE%+ %BLUE%Magic Chest}%CONTINUE%
+ItemDisplay[r02s]: %NAME%{%NAME%%NL%%ORANGE%Brilliant:%WHITE% This + %WHITE%PDiamond %WHITE%+ %BLUE%Magic Helm}%CONTINUE%
+ItemDisplay[r02s]: %NAME%{%NAME%%NL%%TAN%Transmute the following with a %BLUE%Jewel %TAN%or %WHITE%Jewel Fragment%NL%%ORANGE%Crafting}%CONTINUE%  //This should always be the last entry for the rune
 
+//Tir Rune
 ItemDisplay[r03s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%+2 Mana Per Kill%NL%%WHITE%Armor: %BLUE%+2 Mana Per Kill%NL%%WHITE%Shields: %BLUE%+2 Mana Per Kill}%CONTINUE%
 ItemDisplay[r03s]: %NAME%{%NAME%%NL%%NL%%ORANGE%Caster:%WHITE% This + %PURPLE%PAmethyst %WHITE%+ %BLUE%Magic Weapon}%CONTINUE%
 ItemDisplay[r03s]: %NAME%{%NAME%%NL%%ORANGE%Hit Power:%WHITE% This + %BLUE%PSapphire %WHITE%+ %BLUE%Magic Weapon}%CONTINUE%
 ItemDisplay[r03s]: %NAME%{%NAME%%NL%%ORANGE%Vampiric:%WHITE% This + %GRAY%PSkull %WHITE%+ %BLUE%Magic Chest}%CONTINUE%
 ItemDisplay[r03s]: %NAME%{%NAME%%NL%%ORANGE%Bountiful:%WHITE% This + %YELLOW%PTopaz %WHITE%+ %BLUE%Magic Helm}%CONTINUE%
+ItemDisplay[r03s]: %NAME%{%NAME%%NL%%TAN%Transmute the following with a %BLUE%Jewel %TAN%or %WHITE%Jewel Fragment%NL%%ORANGE%Crafting}%CONTINUE%  //This should always be the last entry for the rune
 
+//Nef Rune
 ItemDisplay[r04s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%Knockback%NL%%WHITE%Armor: %BLUE%+30 Def vs Missile%NL%%WHITE%Shields: %BLUE%+30 Def vs Missile}%CONTINUE%
 ItemDisplay[r04s]: %NAME%{%NAME%%NL%%NL%%ORANGE%Blood:%WHITE% This + %RED%PRuby %WHITE%+ %BLUE%Magic Gloves}%CONTINUE%
 ItemDisplay[r04s]: %NAME%{%NAME%%NL%%ORANGE%Caster:%WHITE% This + %PURPLE%PAmethyst %WHITE%+ %BLUE%Magic Helm}%CONTINUE%
 ItemDisplay[r04s]: %NAME%{%NAME%%NL%%ORANGE%Safety:%WHITE% This + %GREEN%PEmerald %WHITE%+ %BLUE%Magic Shield}%CONTINUE%
 ItemDisplay[r04s]: %NAME%{%NAME%%NL%%ORANGE%Hit Power:%WHITE% This + %BLUE%PSapphire %WHITE%+ %BLUE%Magic Chest}%CONTINUE%
+ItemDisplay[r04s]: %NAME%{%NAME%%NL%%TAN%Transmute the following with a %BLUE%Jewel %TAN%or %WHITE%Jewel Fragment%NL%%ORANGE%Crafting}%CONTINUE%  //This should always be the last entry for the rune
 
+//Eth Rune
 ItemDisplay[r05s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%-25% Target Def%NL%%WHITE%Armor: %BLUE%Regen Mana 15%%NL%%WHITE%Shields: %BLUE%Regen Mana 15%}%CONTINUE%
 ItemDisplay[r05s]: %NAME%{%NAME%%NL%%NL%%ORANGE%Blood:%WHITE% This + %RED%PRuby %WHITE%+ %BLUE%Magic Boots}%CONTINUE%
 ItemDisplay[r05s]: %NAME%{%NAME%%NL%%ORANGE%Caster:%WHITE% This + %PURPLE%PAmethyst %WHITE%+ %BLUE%Magic Shield}%CONTINUE%
 ItemDisplay[r05s]: %NAME%{%NAME%%NL%%ORANGE%Safety:%WHITE% This + %GREEN%PEmerald %WHITE%+ %BLUE%Magic Chest}%CONTINUE%
 ItemDisplay[r05s]: %NAME%{%NAME%%NL%%ORANGE%Hit Power:%WHITE% This + %BLUE%PSapphire %WHITE%+ %BLUE%Magic Shield}%CONTINUE%
+ItemDisplay[r05s]: %NAME%{%NAME%%NL%%TAN%Transmute the following with a %BLUE%Jewel %TAN%or %WHITE%Jewel Fragment%NL%%ORANGE%Crafting}%CONTINUE%  //This should always be the last entry for the rune
 
+//Ith Rune
 ItemDisplay[r06s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%+9 Max Damage%NL%%WHITE%Armor: %BLUE%15% Damage Goes to Mana%NL%%WHITE%Shields: %BLUE%15% Damage Goes to Mana}%CONTINUE%
 ItemDisplay[r06s]: %NAME%{%NAME%%NL%%NL%%ORANGE%Blood:%WHITE% This + %RED%PRuby %WHITE%+ %BLUE%Magic Shield}%CONTINUE%
 ItemDisplay[r06s]: %NAME%{%NAME%%NL%%ORANGE%Caster:%WHITE% This + %PURPLE%PAmethyst %WHITE%+ %BLUE%Magic Belt}%CONTINUE%
 ItemDisplay[r06s]: %NAME%{%NAME%%NL%%ORANGE%Safety:%WHITE% This + %GREEN%PEmerald %WHITE%+ %BLUE%Magic Helm}%CONTINUE%
 ItemDisplay[r06s]: %NAME%{%NAME%%NL%%ORANGE%Hit Power:%WHITE% This + %BLUE%PSapphire %WHITE%+ %BLUE%Magic Helm}%CONTINUE%
+ItemDisplay[r06s]: %NAME%{%NAME%%NL%%TAN%Transmute the following with a %BLUE%Jewel %TAN%or %WHITE%Jewel Fragment%NL%%ORANGE%Crafting}%CONTINUE%  //This should always be the last entry for the rune
 
+//Tal Rune
 ItemDisplay[r07s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%+75 Poison Dmg (5 Sec)%NL%%WHITE%Armor: %BLUE%30% Poison Resist%NL%%WHITE%Shields: %BLUE%35% Poison Resist}%CONTINUE%
 ItemDisplay[r07s]: %NAME%{%NAME%%NL%%NL%%ORANGE%Blood:%WHITE% This + %RED%PRuby %WHITE%+ %BLUE%Magic Belt}%CONTINUE%
 ItemDisplay[r07s]: %NAME%{%NAME%%NL%%ORANGE%Caster:%WHITE% This + %PURPLE%PAmethyst %WHITE%+ %BLUE%Magic Chest}%CONTINUE%
 ItemDisplay[r07s]: %NAME%{%NAME%%NL%%ORANGE%Safety:%WHITE% This + %GREEN%PEmerald %WHITE%+ %BLUE%Magic Belt}%CONTINUE%
 ItemDisplay[r07s]: %NAME%{%NAME%%NL%%ORANGE%Hit Power:%WHITE% This + %BLUE%PSapphire %WHITE%+ %BLUE%Magic Belt}%CONTINUE%
+ItemDisplay[r07s]: %NAME%{%NAME%%NL%%ORANGE%Brilliant:%WHITE% This + %WHITE%PDiamond %WHITE%+ %BLUE%Magic Amulet}%CONTINUE%
+ItemDisplay[r07s]: %NAME%{%NAME%%NL%%TAN%Transmute the following with a %BLUE%Jewel %TAN%or %WHITE%Jewel Fragment%NL%%ORANGE%Crafting}%CONTINUE%  //This should always be the last entry for the rune
 
+//Ral Rune
 ItemDisplay[r08s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%+5-30 Fire Damage%NL%%WHITE%Armor: %BLUE%30% Fire Resist%NL%%WHITE%Shields: %BLUE%35% Fire Resist}%CONTINUE%
 ItemDisplay[r08s]: %NAME%{%NAME%%NL%%NL%%ORANGE%Blood:%WHITE% This + %RED%PRuby %WHITE%+ %BLUE%Magic Helm}%CONTINUE%
 ItemDisplay[r08s]: %NAME%{%NAME%%NL%%ORANGE%Caster:%WHITE% This + %PURPLE%PAmethyst %WHITE%+ %BLUE%Magic Amulet}%CONTINUE%
 ItemDisplay[r08s]: %NAME%{%NAME%%NL%%ORANGE%Safety:%WHITE% This + %GREEN%PEmerald %WHITE%+ %BLUE%Magic Gloves}%CONTINUE%
 ItemDisplay[r08s]: %NAME%{%NAME%%NL%%ORANGE%Hit Power:%WHITE% This + %BLUE%PSapphire %WHITE%+ %BLUE%Magic Boots}%CONTINUE%
+ItemDisplay[r08s]: %NAME%{%NAME%%NL%%TAN%Transmute the following with a %BLUE%Jewel %TAN%or %WHITE%Jewel Fragment%NL%%ORANGE%Crafting}%CONTINUE%  //This should always be the last entry for the rune
 
+//Ort Rune
 ItemDisplay[r09s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%+1-50 Lightning Damage%NL%%WHITE%Armor: %BLUE%30% Lightning Resist%NL%%WHITE%Shields: %BLUE%35% Lightning Resist}%CONTINUE%
 ItemDisplay[r09s]: %NAME%{%NAME%%NL%%NL%%ORANGE%Blood:%WHITE% This + %RED%PRuby %WHITE%+ %BLUE%Magic Weapon}%CONTINUE%
 ItemDisplay[r09s]: %NAME%{%NAME%%NL%%ORANGE%Caster:%WHITE% This + %PURPLE%PAmethyst %WHITE%+ %BLUE%Magic Gloves}%CONTINUE%
 ItemDisplay[r09s]: %NAME%{%NAME%%NL%%ORANGE%Safety:%WHITE% This + %GREEN%PEmerald %WHITE%+ %BLUE%Magic Boots}%CONTINUE%
 ItemDisplay[r09s]: %NAME%{%NAME%%NL%%ORANGE%Hit Power:%WHITE% This + %BLUE%PSapphire %WHITE%+ %BLUE%Magic Gloves}%CONTINUE%
+ItemDisplay[r09s]: %NAME%{%NAME%%NL%%ORANGE%Brilliant:%WHITE% This + %WHITE%PDiamond %WHITE%+ %BLUE%Magic Shield}%CONTINUE%
+ItemDisplay[r09s]: %NAME%{%NAME%%NL%%TAN%Transmute the following with a %BLUE%Jewel %TAN%or %WHITE%Jewel Fragment%NL%%ORANGE%Crafting}%CONTINUE%  //This should always be the last entry for the rune
 
+//Thul Rune
 ItemDisplay[r10s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%+3-14 Cold Dmg (3 Sec)%NL%%WHITE%Armor: %BLUE%30% Cold Resist%NL%%WHITE%Shields: %BLUE%35% Cold Resist}%CONTINUE%
 ItemDisplay[r10s]: %NAME%{%NAME%%NL%%NL%%ORANGE%Blood:%WHITE% This + %RED%PRuby %WHITE%+ %BLUE%Magic Chest}%CONTINUE%
 ItemDisplay[r10s]: %NAME%{%NAME%%NL%%ORANGE%Caster:%WHITE% This + %PURPLE%PAmethyst %WHITE%+ %BLUE%Magic Boots}%CONTINUE%
 ItemDisplay[r10s]: %NAME%{%NAME%%NL%%ORANGE%Safety:%WHITE% This + %GREEN%PEmerald %WHITE%+ %BLUE%Magic Amulet}%CONTINUE%
 ItemDisplay[r10s]: %NAME%{%NAME%%NL%%ORANGE%Hit Power:%WHITE% This + %BLUE%PSapphire %WHITE%+ %BLUE%Magic Amulet}%CONTINUE%
+ItemDisplay[r10s]: %NAME%{%NAME%%NL%%TAN%Transmute the following with a %BLUE%Jewel %TAN%or %WHITE%Jewel Fragment%NL%%ORANGE%Crafting}%CONTINUE%  //This should always be the last entry for the rune
 
+//Amn Rune
 ItemDisplay[r11s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%7% Life Leech%NL%%WHITE%Armor: %BLUE%Attacker Takes 14 Dmg%NL%%WHITE%Shields: %BLUE%Attacker Takes 14 Dmg}%CONTINUE%
 ItemDisplay[r11s]: %NAME%{%NAME%%NL%%NL%%ORANGE%Blood:%WHITE% This + %RED%PRuby %WHITE%+ %BLUE%Magic Amulet}%CONTINUE%
 ItemDisplay[r11s]: %NAME%{%NAME%%NL%%ORANGE%Caster:%WHITE% This + %PURPLE%PAmethyst %WHITE%+ %BLUE%Magic Ring}%CONTINUE%
 ItemDisplay[r11s]: %NAME%{%NAME%%NL%%ORANGE%Safety:%WHITE% This + %GREEN%PEmerald %WHITE%+ %BLUE%Magic Ring}%CONTINUE%
 ItemDisplay[r11s]: %NAME%{%NAME%%NL%%ORANGE%Hit Power:%WHITE% This + %BLUE%PSapphire %WHITE%+ %BLUE%Magic Ring}%CONTINUE%
+ItemDisplay[r11s]: %NAME%{%NAME%%NL%%TAN%Transmute the following with a %BLUE%Jewel %TAN%or %WHITE%Jewel Fragment%NL%%ORANGE%Crafting}%CONTINUE%  //This should always be the last entry for the rune
 
+//Sol Rune
 ItemDisplay[r12s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%+9 Min Damage%NL%%WHITE%Armor: %BLUE%Dmg Reduced by 7%NL%%WHITE%Shields: %BLUE%Dmg Reduced by 7}%CONTINUE%
 ItemDisplay[r12s]: %NAME%{%NAME%%NL%%NL%%ORANGE%Blood:%WHITE% This + %RED%PRuby %WHITE%+ %BLUE%Magic Ring}%CONTINUE%
 ItemDisplay[r12s]: %NAME%{%NAME%%NL%%ORANGE%Safety:%WHITE% This + %GREEN%PEmerald %WHITE%+ %BLUE%Magic Bow/XBow}%CONTINUE%
 ItemDisplay[r12s]: %NAME%{%NAME%%NL%%ORANGE%Vampiric:%WHITE% This + %GRAY%PSkull %WHITE%+ %BLUE%Magic Shield}%CONTINUE%
+ItemDisplay[r12s]: %NAME%{%NAME%%NL%%TAN%Transmute the following with a %BLUE%Jewel %TAN%or %WHITE%Jewel Fragment%NL%%ORANGE%Crafting}%CONTINUE%  //This should always be the last entry for the rune
 
+//Shael Rune
 ItemDisplay[r13s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%20% Attack Speed%NL%%WHITE%Armor: %BLUE%20% Hit Recovery%NL%%WHITE%Shields: %BLUE%20% Block Rate}%CONTINUE%
 ItemDisplay[r13s]: %NAME%{%NAME%%NL%%NL%%ORANGE%Vampiric:%WHITE% This + %GRAY%PSkull %WHITE%+ %BLUE%Magic Weapon}%CONTINUE%
 ItemDisplay[r13s]: %NAME%{%NAME%%NL%%ORANGE%Bountiful:%WHITE% This + %YELLOW%PTopaz %WHITE%+ %BLUE%Magic Weapon}%CONTINUE%
+ItemDisplay[r13s]: %NAME%{%NAME%%NL%%ORANGE%Brilliant:%WHITE% This + %WHITE%PDiamond %WHITE%+ %BLUE%Magic Gloves}%CONTINUE%
+ItemDisplay[r13s]: %NAME%{%NAME%%NL%%TAN%Transmute the following with a %BLUE%Jewel %TAN%or %WHITE%Jewel Fragment%NL%%ORANGE%Crafting}%CONTINUE%  //This should always be the last entry for the rune
 
+//Dol Rune
 ItemDisplay[r14s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%20% Enhanced Dmg%NL%%WHITE%Armor: %BLUE%Replenish Life +10%NL%%WHITE%Shields: %BLUE%Replenish Life +10}%CONTINUE%
 ItemDisplay[r14s]: %NAME%{%NAME%%NL%%NL%%ORANGE%Vampiric:%WHITE% This + %GRAY%PSkull %WHITE%+ %BLUE%Magic Amulet}%CONTINUE%
 ItemDisplay[r14s]: %NAME%{%NAME%%NL%%ORANGE%Bountiful:%WHITE% This + %YELLOW%PTopaz %WHITE%+ %BLUE%Magic Shield}%CONTINUE%
+ItemDisplay[r14s]: %NAME%{%NAME%%NL%%TAN%Transmute the following with a %BLUE%Jewel %TAN%or %WHITE%Jewel Fragment%NL%%ORANGE%Crafting}%CONTINUE%  //This should always be the last entry for the rune
 
+//Hel Rune
 ItemDisplay[r15s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%Requirements -20%%NL%%WHITE%Armor: %BLUE%Requirements -15%%NL%%WHITE%Shields: %BLUE%Requirements -15%}%CONTINUE%
 ItemDisplay[r15s]: %NAME%{%NAME%%NL%%NL%%ORANGE%Vampiric:%WHITE% This + %GRAY%PSkull %WHITE%+ %BLUE%Magic Ring}%CONTINUE%
 ItemDisplay[r15s]: %NAME%{%NAME%%NL%%ORANGE%Bountiful:%WHITE% This + %YELLOW%PTopaz %WHITE%+ %BLUE%Magic Gloves}%CONTINUE%
+ItemDisplay[r15s]: %NAME%{%NAME%%NL%%ORANGE%Brilliant:%WHITE% This + %WHITE%PDiamond %WHITE%+ %BLUE%Magic Ring}%CONTINUE%
+ItemDisplay[r15s]: %NAME%{%NAME%%NL%%TAN%Transmute the following with a %BLUE%Jewel %TAN%or %WHITE%Jewel Fragment%NL%%ORANGE%Crafting}%CONTINUE%  //This should always be the last entry for the rune
 
+//Io Rune
 ItemDisplay[r16s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%+10 Vitality%NL%%WHITE%Armor: %BLUE%+10 Vitality%NL%%WHITE%Shields: %BLUE%+10 Vitality}%CONTINUE%
 ItemDisplay[r16s]: %NAME%{%NAME%%NL%%NL%%ORANGE%Vampiric:%WHITE% This + %GRAY%PSkull %WHITE%+ %BLUE%Magic Gloves}%CONTINUE%
 ItemDisplay[r16s]: %NAME%{%NAME%%NL%%ORANGE%Bountiful:%WHITE% This + %YELLOW%PTopaz %WHITE%+ %BLUE%Magic Boots}%CONTINUE%
+ItemDisplay[r16s]: %NAME%{%NAME%%NL%%ORANGE%Brilliant:%WHITE% This + %WHITE%PDiamond %WHITE%+ %BLUE%Magic Belt}%CONTINUE%
+ItemDisplay[r16s]: %NAME%{%NAME%%NL%%TAN%Transmute the following with a %BLUE%Jewel %TAN%or %WHITE%Jewel Fragment%NL%%ORANGE%Crafting}%CONTINUE%  //This should always be the last entry for the rune
 
+//Lum Rune
 ItemDisplay[r17s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%+10 Energy%NL%%WHITE%Armor: %BLUE%+10 Energy%NL%%WHITE%Shields: %BLUE%+10 Energy}%CONTINUE%
 ItemDisplay[r17s]: %NAME%{%NAME%%NL%%NL%%ORANGE%Vampiric:%WHITE% This + %GRAY%PSkull %WHITE%+ %BLUE%Magic Helm}%CONTINUE%
 ItemDisplay[r17s]: %NAME%{%NAME%%NL%%ORANGE%Bountiful:%WHITE% This + %YELLOW%PTopaz %WHITE%+ %BLUE%Magic Ring}%CONTINUE%
+ItemDisplay[r17s]: %NAME%{%NAME%%NL%%ORANGE%Brilliant:%WHITE% This + %WHITE%PDiamond %WHITE%+ %BLUE%Magic Weapon}%CONTINUE%
+ItemDisplay[r17s]: %NAME%{%NAME%%NL%%TAN%Transmute the following with a %BLUE%Jewel %TAN%or %WHITE%Jewel Fragment%NL%%ORANGE%Crafting}%CONTINUE%  //This should always be the last entry for the rune
 
+//Ko Rune
 ItemDisplay[r18s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%+10 Dexterity%NL%%WHITE%Armor: %BLUE%+10 Dexterity%NL%%WHITE%Shields: %BLUE%+10 Dexterity}%CONTINUE%
 ItemDisplay[r18s]: %NAME%{%NAME%%NL%%NL%%ORANGE%Bountiful:%WHITE% This + %YELLOW%PTopaz %WHITE%+ %BLUE%Magic Amulet}%CONTINUE%
+ItemDisplay[r18s]: %NAME%{%NAME%%NL%%ORANGE%Brilliant:%WHITE% This + %YELLOW%PTopaz %WHITE%+ %BLUE%Magic Amulet}%CONTINUE%
+ItemDisplay[r18s]: %NAME%{%NAME%%NL%%TAN%Transmute the following with a %BLUE%Jewel %TAN%or %WHITE%Jewel Fragment%NL%%ORANGE%Crafting}%CONTINUE%  //This should always be the last entry for the rune
 
+//Fal Rune
 ItemDisplay[r19s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%+10 Strength%NL%%WHITE%Armor: %BLUE%+10 Strength%NL%%WHITE%Shields: %BLUE%+10 Strength}%CONTINUE%
+
+//Lem Rune
 ItemDisplay[r20s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%75% Extra Gold%NL%%WHITE%Armor: %BLUE%50% Extra Gold%NL%%WHITE%Shields: %BLUE%50% Extra Gold}%CONTINUE%
+
+//Pul Rune
 ItemDisplay[r21s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%+75% Dmg to Demons, +100 AR to Demons%NL%%WHITE%Armor: %BLUE%30% Enhanced Defense%NL%%WHITE%Shields: %BLUE%30% Enhanced Defense}%CONTINUE%
+
+//Um Rune
 ItemDisplay[r22s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%10% Open Wounds, +120 Open Wounds Dmg%NL%%WHITE%Armor: %BLUE%+15 All Resist%NL%%WHITE%Shields: %BLUE%+22 All Resist}%CONTINUE%
+
+//Mal Rune
 ItemDisplay[r23s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%Prevent Monster Heal%NL%%WHITE%Armor: %BLUE%Magic Dmg -7%NL%%WHITE%Shields: %BLUE%Magic Dmg -7}%CONTINUE%
+
+//Ist Rune
 ItemDisplay[r24s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%30% Magic Find%NL%%WHITE%Armor: %BLUE%30% Magic Find%NL%%WHITE%Shields: %BLUE%30% Magic Find}%CONTINUE%
+
+//Gul Rune
 ItemDisplay[r25s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%20% Attack Rating%NL%%WHITE%Armor: %BLUE%+4% Max Poison Res%NL%%WHITE%Shields: %BLUE%+4% Max Poison Res}%CONTINUE%
+
+//Vex Rune
 ItemDisplay[r26s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%7% Mana Leech%NL%%WHITE%Armor: %BLUE%+4% Max Fire Res%NL%%WHITE%Shields: %BLUE%+4% Max Fire Res}%CONTINUE%
+
+//Ohm Rune
 ItemDisplay[r27s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%45% Enhanced Damage%NL%%WHITE%Armor: %BLUE%+4% Max Cold Res%NL%%WHITE%Shields: %BLUE%+4% Max Cold Res}%CONTINUE%
+
+//Lo Rune
 ItemDisplay[r28s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%20% Deadly Strike%NL%%WHITE%Armor: %BLUE%+4% Max Lightning Res%NL%%WHITE%Shields: %BLUE%+4% Max Lightning Res}%CONTINUE%
+
+//Sur Rune
 ItemDisplay[r29s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%+4 Life Per Kill%NL%%WHITE%Armor: %BLUE%Max Mana +5%%NL%%WHITE%Shields: %BLUE%+50 Mana}%CONTINUE%
+
+//Ber Rune
 ItemDisplay[r30s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%20% Crushing Blow%NL%%WHITE%Armor: %BLUE%5% Damage Reduction%NL%%WHITE%Shields: %BLUE%5% Damage Reduction}%CONTINUE%
+
+//Jah Rune
 ItemDisplay[r31s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%Ignore Target Def%NL%%WHITE%Armor: %BLUE%Max Life +5%%NL%%WHITE%Shields: %BLUE%+50 Life}%CONTINUE%
+
+//Cham Rune
 ItemDisplay[r32s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%Freeze Target +3%NL%%WHITE%Armor: %BLUE%Cannot be Frozen%NL%%WHITE%Shields: %BLUE%Cannot be Frozen}%CONTINUE%
+
+//Zod Rune
 ItemDisplay[r33s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%Indestructible%NL%%WHITE%Armor: %BLUE%Indestructible%NL%%WHITE%Shields: %BLUE%Indestructible}%CONTINUE%
 
 // Rubies
-ItemDisplay[GEMTYPE=4 GEM=4]: %RED%%NAME%{%NAME%%WHITE%Weapons: %BLUE%10-16 Fire Dmg%NL%%WHITE%Armor: %BLUE%+31 Life%NL%%WHITE%Shields: %BLUE%28% Fire Resist} %GRAY%(%GRAY%%QTY%%GRAY%)
-ItemDisplay[GEMTYPE=4 GEM=5]: %RED%%NAME%{%NAME%%WHITE%Weapons: %BLUE%15-20 Fire Dmg%NL%%WHITE%Armor: %BLUE%+38 Life%NL%%WHITE%Shields: %BLUE%40% Fire Resist} %GRAY%(%GRAY%%QTY%%GRAY%)
+ItemDisplay[GEMTYPE=4 (GEM=1 OR GEM=2 OR GEM=3)]: %RED%%NAME%%CONTINUE%
+ItemDisplay[GEMTYPE=4 GEM=4]: %RED%%NAME%{%NAME%%WHITE%Weapons: %BLUE%10-16 Fire Dmg%NL%%WHITE%Armor: %BLUE%+31 Life%NL%%WHITE%Shields: %BLUE%28% Fire Resist}
+ItemDisplay[GEMTYPE=4 GEM=5]: %RED%%NAME%{%NAME%%WHITE%Weapons: %BLUE%15-20 Fire Dmg%NL%%WHITE%Armor: %BLUE%+38 Life%NL%%WHITE%Shields: %BLUE%40% Fire Resist}
 
 // Amethysts
-ItemDisplay[GEMTYPE=1 GEM=4]: %PURPLE%%NAME%{%NAME%%WHITE%Weapons: %BLUE%+100 Attack Rating%NL%%WHITE%Armor: %BLUE%+8 Strength%NL%%WHITE%Shields: %BLUE%+24 Defense} %GRAY%(%GRAY%%QTY%%GRAY%)
-ItemDisplay[GEMTYPE=1 GEM=5]: %PURPLE%%NAME%{%NAME%%WHITE%Weapons: %BLUE%+150 Attack Rating%NL%%WHITE%Armor: %BLUE%+10 Strength%NL%%WHITE%Shields: %BLUE%+30 Defense} %GRAY%(%GRAY%%QTY%%GRAY%)
+ItemDisplay[GEMTYPE=1 (GEM=1 OR GEM=2 OR GEM=3)]: %PURPLE%%NAME%%CONTINUE%
+ItemDisplay[GEMTYPE=1 GEM=4]: %PURPLE%%NAME%{%NAME%%WHITE%Weapons: %BLUE%+100 Attack Rating%NL%%WHITE%Armor: %BLUE%+8 Strength%NL%%WHITE%Shields: %BLUE%+24 Defense}
+ItemDisplay[GEMTYPE=1 GEM=5]: %PURPLE%%NAME%{%NAME%%WHITE%Weapons: %BLUE%+150 Attack Rating%NL%%WHITE%Armor: %BLUE%+10 Strength%NL%%WHITE%Shields: %BLUE%+30 Defense}
 
 // Diamonds
-ItemDisplay[GEMTYPE=2 GEM=4]: %WHITE%%NAME%{%NAME%%WHITE%Weapons: %BLUE%54% Dmg to Undead%NL%%WHITE%Armor: %BLUE%+80 Attack Rating%NL%%WHITE%Shields: %BLUE%14% All Resist} %GRAY%(%GRAY%%QTY%%GRAY%)
-ItemDisplay[GEMTYPE=2 GEM=5]: %WHITE%%NAME%{%NAME%%WHITE%Weapons: %BLUE%68% Dmg to Undead%NL%%WHITE%Armor: %BLUE%+100 Attack Rating%NL%%WHITE%Shields: %BLUE%19% All Resist} %GRAY%(%GRAY%%QTY%%GRAY%)
+ItemDisplay[GEMTYPE=2 (GEM=1 OR GEM=2 OR GEM=3)]: %WHITE%%NAME%%CONTINUE%
+ItemDisplay[GEMTYPE=2 GEM=4]: %WHITE%%NAME%{%NAME%%WHITE%Weapons: %BLUE%54% Dmg to Undead%NL%%WHITE%Armor: %BLUE%+80 Attack Rating%NL%%WHITE%Shields: %BLUE%14% All Resist}
+ItemDisplay[GEMTYPE=2 GEM=5]: %WHITE%%NAME%{%NAME%%WHITE%Weapons: %BLUE%68% Dmg to Undead%NL%%WHITE%Armor: %BLUE%+100 Attack Rating%NL%%WHITE%Shields: %BLUE%19% All Resist}
 
 // Emeralds
-ItemDisplay[GEMTYPE=3 GEM=4]: %GREEN%%NAME%{%NAME%%WHITE%Weapons: %BLUE%+60 Poison Dmg (6 Sec)%NL%%WHITE%Armor: %BLUE%+8 Dexterity%NL%%WHITE%Shields: %BLUE%28% Poison Resist} %GRAY%(%GRAY%%QTY%%GRAY%)
-ItemDisplay[GEMTYPE=3 GEM=5]: %GREEN%%NAME%{%NAME%%WHITE%Weapons: %BLUE%+100 Poison Dmg (7 Sec)%NL%%WHITE%Armor: %BLUE%+10 Dexterity%NL%%WHITE%Shields: %BLUE%40% Poison Resist} %GRAY%(%GRAY%%QTY%%GRAY%)
+ItemDisplay[GEMTYPE=3 (GEM=1 OR GEM=2 OR GEM=3)]: %GREEN%%NAME%%CONTINUE%
+ItemDisplay[GEMTYPE=3 GEM=4]: %GREEN%%NAME%{%NAME%%WHITE%Weapons: %BLUE%+60 Poison Dmg (6 Sec)%NL%%WHITE%Armor: %BLUE%+8 Dexterity%NL%%WHITE%Shields: %BLUE%28% Poison Resist}
+ItemDisplay[GEMTYPE=3 GEM=5]: %GREEN%%NAME%{%NAME%%WHITE%Weapons: %BLUE%+100 Poison Dmg (7 Sec)%NL%%WHITE%Armor: %BLUE%+10 Dexterity%NL%%WHITE%Shields: %BLUE%40% Poison Resist}
 
 // Sapphires
-ItemDisplay[GEMTYPE=5 GEM=4]: %BLUE%%NAME%{%NAME%%WHITE%Weapons: %BLUE%6-10 Cold Dmg (2.4 Sec)%NL%%WHITE%Armor: %BLUE%+31 Mana%NL%%WHITE%Shields: %BLUE%28% Cold Resist} %GRAY%(%GRAY%%QTY%%GRAY%)
-ItemDisplay[GEMTYPE=5 GEM=5]: %BLUE%%NAME%{%NAME%%WHITE%Weapons: %BLUE%10-14 Cold Dmg (3 Sec)%NL%%WHITE%Armor: %BLUE%+38 Mana%NL%%WHITE%Shields: %BLUE%40% Cold Resist} %GRAY%(%GRAY%%QTY%%GRAY%)
+ItemDisplay[GEMTYPE=5 (GEM=1 OR GEM=2 OR GEM=3)]: %BLUE%%NAME%%CONTINUE%
+ItemDisplay[GEMTYPE=5 GEM=4]: %BLUE%%NAME%{%NAME%%WHITE%Weapons: %BLUE%6-10 Cold Dmg (2.4 Sec)%NL%%WHITE%Armor: %BLUE%+31 Mana%NL%%WHITE%Shields: %BLUE%28% Cold Resist}
+ItemDisplay[GEMTYPE=5 GEM=5]: %BLUE%%NAME%{%NAME%%WHITE%Weapons: %BLUE%10-14 Cold Dmg (3 Sec)%NL%%WHITE%Armor: %BLUE%+38 Mana%NL%%WHITE%Shields: %BLUE%40% Cold Resist}
 
 // Topazes
-ItemDisplay[GEMTYPE=6 GEM=4]: %YELLOW%%NAME%{%NAME%%WHITE%Weapons: %BLUE%1-30 Lightning Dmg%NL%%WHITE%Armor: %BLUE%20% Magic Find%NL%%WHITE%Shields: %BLUE%28% Lightning Resist} %GRAY%(%GRAY%%QTY%%GRAY%)
-ItemDisplay[GEMTYPE=6 GEM=5]: %YELLOW%%NAME%{%NAME%%WHITE%Weapons: %BLUE%1-40 Lightning Dmg%NL%%WHITE%Armor: %BLUE%24% Magic Find%NL%%WHITE%Shields: %BLUE%40% Lightning Resist} %GRAY%(%GRAY%%QTY%%GRAY%)
+ItemDisplay[GEMTYPE=6 (GEM=1 OR GEM=2 OR GEM=3)]: %YELLOW%%NAME%%CONTINUE%
+ItemDisplay[GEMTYPE=6 GEM=4]: %YELLOW%%NAME%{%NAME%%WHITE%Weapons: %BLUE%1-30 Lightning Dmg%NL%%WHITE%Armor: %BLUE%20% Magic Find%NL%%WHITE%Shields: %BLUE%28% Lightning Resist}
+ItemDisplay[GEMTYPE=6 GEM=5]: %YELLOW%%NAME%{%NAME%%WHITE%Weapons: %BLUE%1-40 Lightning Dmg%NL%%WHITE%Armor: %BLUE%24% Magic Find%NL%%WHITE%Shields: %BLUE%40% Lightning Resist}
 
 // Skulls
-ItemDisplay[GEMTYPE=7 GEM=4]: %WHITE%%NAME%{%NAME%%WHITE%Weapons: %BLUE%Leech 3% Life / 3% Mana%NL%%WHITE%Armor: %BLUE%Regen +4 / 12%%NL%%WHITE%Shields: %BLUE%16 Thorns Dmg} %GRAY%(%GRAY%%QTY%%GRAY%)
-ItemDisplay[GEMTYPE=7 GEM=5]: %WHITE%%NAME%{%NAME%%WHITE%Weapons: %BLUE%Leech 4% Life / 3% Mana%NL%%WHITE%Armor: %BLUE%Regen +5 / 19%%NL%%WHITE%Shields: %BLUE%20 Thorns Dmg} %GRAY%(%GRAY%%QTY%%GRAY%)
+ItemDisplay[GEMTYPE=7 (GEM=1 OR GEM=2 OR GEM=3)]: %WHITE%%NAME%%CONTINUE%
+ItemDisplay[GEMTYPE=7 GEM=4]: %WHITE%%NAME%{%NAME%%WHITE%Weapons: %BLUE%Leech 3% Life / 3% Mana%NL%%WHITE%Armor: %BLUE%Regen +4 / 12%%NL%%WHITE%Shields: %BLUE%16 Thorns Dmg}
+ItemDisplay[GEMTYPE=7 GEM=5]: %WHITE%%NAME%{%NAME%%WHITE%Weapons: %BLUE%Leech 4% Life / 3% Mana%NL%%WHITE%Armor: %BLUE%Regen +5 / 19%%NL%%WHITE%Shields: %BLUE%20 Thorns Dmg}
 
 // Jewels
 ItemDisplay[jew UNI !ID]: %DOT-61%%GOLD%%NAME%%CONTINUE%
