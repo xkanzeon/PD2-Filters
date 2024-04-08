@@ -336,16 +336,6 @@
                     "download_url": "https://raw.githubusercontent.com/eqNj/eqN-PD2-Filter/main/eqN-All-In-One.filter"
                 },
                 {
-                    "name": "eqN-Craft-League-LLD.filter",
-                    "url": "https://api.github.com/repos/eqNj/eqN-PD2-Filter/contents/eqN-Craft-League-LLD.filter?ref=main",
-                    "download_url": "https://raw.githubusercontent.com/eqNj/eqN-PD2-Filter/main/eqN-Craft-League-LLD.filter"
-                },
-                {
-                    "name": "eqN-Craft-League.filter",
-                    "url": "https://api.github.com/repos/eqNj/eqN-PD2-Filter/contents/eqN-Craft-League.filter?ref=main",
-                    "download_url": "https://raw.githubusercontent.com/eqNj/eqN-PD2-Filter/main/eqN-Craft-League.filter"
-                },
-                {
                     "name": "eqN-Potionless.filter",
                     "url": "https://api.github.com/repos/eqNj/eqN-PD2-Filter/contents/eqN-Potionless.filter?ref=main",
                     "download_url": "https://raw.githubusercontent.com/eqNj/eqN-PD2-Filter/main/eqN-Potionless.filter"
