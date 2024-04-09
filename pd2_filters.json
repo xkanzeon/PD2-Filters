@@ -53,11 +53,6 @@
             },
             "filters": [
                 {
-                    "name": "dauracul-crafting.filter",
-                    "url": "https://api.github.com/repos/Dauracul/filter/contents/dauracul-crafting.filter?ref=main",
-                    "download_url": "https://raw.githubusercontent.com/Dauracul/filter/main/dauracul-crafting.filter"
-                },
-                {
                     "name": "dauracul.filter",
                     "url": "https://api.github.com/repos/Dauracul/filter/contents/dauracul.filter?ref=main",
                     "download_url": "https://raw.githubusercontent.com/Dauracul/filter/main/dauracul.filter"

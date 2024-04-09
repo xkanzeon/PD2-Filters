@@ -671,28 +671,28 @@ ItemDisplay[(t51 OR t52 OR t53) UNI]: %DOT-61%%GOLD%%NAME%%CONTINUE%
 
 // Arcane Orb
 //ItemDisplay[imma]: %NAME%{%NAME%%WHITE%Transmute with %BLUE%Jewel%WHITE% to create %TEAL%Infused Arcane Orb%NL%%WHITE%Transmute with %ORANGE%Common Map %WHITE%+ %BLUE%Jewel %WHITE%to create %BLUE%Magic Map}%CONTINUE%
-ItemDisplay[imma]: %NAME%{%NAME%%WHITE%Transmute with a %BLUE%Jewel%WHITE% to create %TEAL%Infused Arcane Orb}%CONTINUE%
+ItemDisplay[imma]: %NAME%{%NAME%%WHITE%create %TEAL%Infused Arcane Orb%NL%%WHITE%Transmute with a %BLUE%Jewel%WHITE% to}%CONTINUE%
 // Infused Arcane Orb
 //ItemDisplay[irma]: %TEAL%Infused Arcane Orb{%WHITE%Transmute with a normal %ORANGE%Map %WHITE%to create a %BLUE%Magic Map}%CONTINUE%
 ItemDisplay[irma]: %TEAL%Infused Arcane Orb
 
 // Zakarum Orb
 //ItemDisplay[imra]: %NAME%{%NAME%%WHITE%Transmute with %BLUE%Jewel %WHITE%+ %ORANGE%Thul (or greater) %WHITE%to create %TEAL%Infused Zakarum Orb%NL%%WHITE%Transmute with %ORANGE%Common Map %WHITE%+ %BLUE%Jewel %WHITE%+ %ORANGE%Thul (or greater) %WHITE%to create %YELLOW%Rare Map}%CONTINUE%
-ItemDisplay[imra]: %NAME%{%NAME%%WHITE%Transmute with a %BLUE%Jewel %WHITE%+ %ORANGE%Thul (or greater) %WHITE%to create %TEAL%Infused Zakarum Orb}%CONTINUE%
+ItemDisplay[imra]: %NAME%{%NAME%%WHITE%to create %TEAL%Infused Zakarum Orb%NL%%WHITE%Transmute with a %BLUE%Jewel %WHITE%+ %ORANGE%Rune}%CONTINUE%
 // Infused Zakarum Orb
 //ItemDisplay[irra]: %TEAL%Infused Zakarum Orb{%WHITE%Transmute with a normal %ORANGE%Map %WHITE%to create a %YELLOW%Rare Map}%CONTINUE%
 ItemDisplay[irra]: %TEAL%Infused Zakarum Orb
 
 // Angelic Orb
 //ItemDisplay[upma]: %NAME%{%NAME%%WHITE%Transmute with Perfect Skull + %ORANGE%Thul (or greater) %WHITE%to create %TEAL%Infused Angelic Orb%NL%%WHITE%Transmute with %BLUE%Magic Map %WHITE%+ Perfect Skull + %ORANGE%Thul (or greater) %WHITE%to create %YELLOW%Rare Map}%CONTINUE%
-ItemDisplay[upma]: %NAME%{%NAME%%WHITE%Transmute with Perfect Skull + %ORANGE%Thul (or greater) %WHITE%to create %TEAL%Infused Angelic Orb}%CONTINUE%
+ItemDisplay[upma]: %NAME%{%NAME%%WHITE%to create %TEAL%Infused Angelic Orb%NL%%WHITE%Transmute with Perfect Skull + %ORANGE%Rune}%CONTINUE%
 // Infused Angelic Orb
 //ItemDisplay[urma]: %TEAL%Infused Angelic Orb{%WHITE%Transmute with a %BLUE%Magic Map %WHITE%to create a %YELLOW%Rare Map}%CONTINUE%
 ItemDisplay[urma]: %TEAL%Infused Angelic Orb
 
 // Horadrim Orb
 //ItemDisplay[rera]: %NAME%{%NAME%%WHITE%Transmute with any Perfect Gem + %ORANGE%Thul (or greater) %WHITE%to create %TEAL%Infused Horadrim Orb%NL%%WHITE%Transmute with %YELLOW%Rare Map %WHITE%+ any Perfect Gem + %ORANGE%Thul (or greater) %WHITE%to reroll %YELLOW%Rare Map}%CONTINUE%
-ItemDisplay[rera]: %NAME%{%NAME%%WHITE%Transmute with any Perfect Gem + %ORANGE%Thul (or greater) %WHITE%to create %TEAL%Infused Horadrim Orb}%CONTINUE%
+ItemDisplay[rera]: %NAME%{%NAME%%WHITE%to create %TEAL%Infused Horadrim Orb%NL%%WHITE%Transmute with any Perfect Gem + %ORANGE%Rune}%CONTINUE%
 // Infused Horadrim Orb
 //ItemDisplay[rrra]: %TEAL%Infused Horadrim Orb{%WHITE%Transmute with a %YELLOW%Rare Map %WHITE%to reroll %YELLOW%Rare Map %WHITE%affixes}%CONTINUE%
 ItemDisplay[rrra]: %TEAL%Infused Horadrim Orb
@@ -826,23 +826,23 @@ ItemDisplay[SET !ID NORM CLVL<45]: %BORDER-84%%GREEN%%NAME%%CONTINUE%
 
 
 // Upgrade Recipes
-ItemDisplay[SET ARMOR NORM !BOOTS ID]: %NAME%{%NAME%%WHITE%Transmute with %ORANGE%Tal %TAN%+ %ORANGE%Shael %TAN%+ %WHITE%PDiamond%WHITE% to upgrade to %TAN%Exceptional}%CONTINUE%
-ItemDisplay[SET ARMOR EXC !BOOTS ID]: %NAME%{%NAME%%WHITE%Transmute with %ORANGE%Ko %TAN%+ %ORANGE%Lem %TAN%+ %WHITE%PDiamond%WHITE% to upgrade to %TAN%Elite}%CONTINUE%
+ItemDisplay[SET ARMOR NORM !BOOTS ID]: %NAME%{%NAME%%WHITE%PDiamond%WHITE% to upgrade to %TAN%Exceptional%NL%%WHITE%Transmute with %ORANGE%Tal %TAN%+ %ORANGE%Shael %TAN%+}%CONTINUE%
+ItemDisplay[SET ARMOR EXC !BOOTS ID]: %NAME%{%NAME%%WHITE%PDiamond%WHITE% to upgrade to %TAN%Elite%NL%%WHITE%Transmute with %ORANGE%Ko %TAN%+ %ORANGE%Lem %TAN%+}%CONTINUE%
 
-ItemDisplay[SET BOOTS NORM ID !ASSASSIN]: %NAME%{%NAME%%WHITE%Transmute with %ORANGE%Tal %TAN%+ %ORANGE%Shael %TAN%+ %WHITE%PDiamond%WHITE% to upgrade to %TAN%Exceptional}%CONTINUE%
-ItemDisplay[SET BOOTS EXC ID !ASSASSIN]: %NAME%{%NAME%%WHITE%Transmute with %ORANGE%Ko %TAN%+ %ORANGE%Lem %TAN%+ %WHITE%PDiamond%WHITE% to upgrade to %TAN%Elite}%CONTINUE%
-ItemDisplay[SET BOOTS NORM ID ASSASSIN]: %NAME%{%NAME%%WHITE%Transmute with %ORANGE%Tal %TAN%+ %ORANGE%Shael %TAN%+ %WHITE%PDiamond%WHITE% to upgrade to %TAN%Exceptional%NL%}%CONTINUE%
-ItemDisplay[SET BOOTS EXC ID ASSASSIN]: %NAME%{%NAME%%WHITE%Transmute with %ORANGE%Ko %TAN%+ %ORANGE%Lem %TAN%+ %WHITE%PDiamond%WHITE% to upgrade to %TAN%Elite%NL%}%CONTINUE%
+ItemDisplay[SET BOOTS NORM ID !ASSASSIN]: %NAME%{%NAME%%WHITE%PDiamond%WHITE% to upgrade to %TAN%Exceptional%NL%%WHITE%Transmute with %ORANGE%Tal %TAN%+ %ORANGE%Shael %TAN%+}%CONTINUE%
+ItemDisplay[SET BOOTS EXC ID !ASSASSIN]: %NAME%{%NAME%%WHITE%PDiamond%WHITE% to upgrade to %TAN%Elite%NL%%WHITE%Transmute with %ORANGE%Ko %TAN%+ %ORANGE%Lem %TAN%+}%CONTINUE%
+ItemDisplay[SET BOOTS NORM ID ASSASSIN]: %NAME%{%NAME%%WHITE%PDiamond%WHITE% to upgrade to %TAN%Exceptional%NL%%WHITE%Transmute with %ORANGE%Tal %TAN%+ %ORANGE%Shael %TAN%+%NL%}%CONTINUE%
+ItemDisplay[SET BOOTS EXC ID ASSASSIN]: %NAME%{%NAME%%WHITE%PDiamond%WHITE% to upgrade to %TAN%Elite%NL%%WHITE%Transmute with %ORANGE%Ko %TAN%+ %ORANGE%Lem %TAN%+%NL%}%CONTINUE%
 
-ItemDisplay[UNI ARMOR NORM ID]: %NAME%{%NAME%%WHITE%Transmute with %ORANGE%Tal %TAN%+ %ORANGE%Shael %TAN%+ %WHITE%PDiamond%WHITE% to upgrade to %TAN%Exceptional}%CONTINUE%
-ItemDisplay[UNI ARMOR EXC ID]: %NAME%{%NAME%%WHITE%Transmute with %ORANGE%Ko %TAN%+ %ORANGE%Lem %TAN%+ %WHITE%PDiamond%WHITE% to upgrade to %TAN%Elite}%CONTINUE%
-ItemDisplay[(SET OR UNI) WEAPON NORM ID]: %NAME%{%NAME%%WHITE%Transmute with %ORANGE%Ral %TAN%+ %ORANGE%Sol %TAN%+ %GREEN%PEmerald%WHITE% to upgrade to %TAN%Exceptional%NL%}%CONTINUE%
-ItemDisplay[(SET OR UNI) WEAPON EXC ID]: %NAME%{%NAME%%WHITE%Transmute with %ORANGE%Lum %TAN%+ %ORANGE%Pul %TAN%+ %GREEN%PEmerald%WHITE% to upgrade to %TAN%Elite%NL%}%CONTINUE%
+ItemDisplay[UNI ARMOR NORM ID]: %NAME%{%NAME%%WHITE%PDiamond%WHITE% to upgrade to %TAN%Exceptional%NL%%WHITE%Transmute with %ORANGE%Tal %TAN%+ %ORANGE%Shael %TAN%+}%CONTINUE%
+ItemDisplay[UNI ARMOR EXC ID]: %NAME%{%NAME%%WHITE%PDiamond%WHITE% to upgrade to %TAN%Elite%NL%%WHITE%Transmute with %ORANGE%Ko %TAN%+ %ORANGE%Lem %TAN%+}%CONTINUE%
+ItemDisplay[(SET OR UNI) WEAPON NORM ID]: %NAME%{%NAME%%GREEN%PEmerald%WHITE% to upgrade to %TAN%Exceptional%NL%%WHITE%Transmute with %ORANGE%Ral %TAN%+ %ORANGE%Sol %TAN%+%NL%}%CONTINUE%
+ItemDisplay[(SET OR UNI) WEAPON EXC ID]: %NAME%{%NAME%%GREEN%PEmerald%WHITE% to upgrade to %TAN%Elite%NL%%WHITE%Transmute with %ORANGE%Lum %TAN%+ %ORANGE%Pul %TAN%+%NL%}%CONTINUE%
 
-ItemDisplay[(RARE OR CRAFT) ARMOR NORM ID]: %NAME%{%NAME%%WHITE%Transmute with %ORANGE%Ral %TAN%+ %ORANGE%Thul %TAN%+ %PURPLE%PAmethyst%WHITE% to upgrade to %TAN%Exceptional}%CONTINUE%
-ItemDisplay[(RARE OR CRAFT) ARMOR EXC ID]: %NAME%{%NAME%%WHITE%Transmute with %ORANGE%Ko %TAN%+ %ORANGE%Pul %TAN%+ %PURPLE%PAmethyst%WHITE% to upgrade to %TAN%Elite}%CONTINUE%
-ItemDisplay[(RARE OR CRAFT) WEAPON NORM ID]: %NAME%{%NAME%%WHITE%Transmute with %ORANGE%Ort %TAN%+ %ORANGE%Amn %TAN%+ %BLUE%PSapphire%WHITE% to upgrade to %TAN%Exceptional%NL%}%CONTINUE%
-ItemDisplay[(RARE OR CRAFT) WEAPON EXC ID]: %NAME%{%NAME%%WHITE%Transmute with %ORANGE%Fal %TAN%+ %ORANGE%Um %TAN%+ %BLUE%PSapphire%WHITE% to upgrade to %TAN%Elite%NL%}%CONTINUE%
+ItemDisplay[(RARE OR CRAFT) ARMOR NORM ID]: %NAME%{%NAME%%PURPLE%PAmethyst%WHITE% to upgrade to %TAN%Exceptional%NL%%WHITE%Transmute with %ORANGE%Ral %TAN%+ %ORANGE%Thul %TAN%+}%CONTINUE%
+ItemDisplay[(RARE OR CRAFT) ARMOR EXC ID]: %NAME%{%NAME%%PURPLE%PAmethyst%WHITE% to upgrade to %TAN%Elite%NL%%WHITE%Transmute with %ORANGE%Ko %TAN%+ %ORANGE%Pul %TAN%+}%CONTINUE%
+ItemDisplay[(RARE OR CRAFT) WEAPON NORM ID]: %NAME%{%NAME%%BLUE%PSapphire%WHITE% to upgrade to %TAN%Exceptional%NL%%WHITE%Transmute with %ORANGE%Ort %TAN%+ %ORANGE%Amn %TAN%+%NL%}%CONTINUE%
+ItemDisplay[(RARE OR CRAFT) WEAPON EXC ID]: %NAME%{%NAME%%BLUE%PSapphire%WHITE% to upgrade to %TAN%Elite%NL%%WHITE%Transmute with %ORANGE%Fal %TAN%+ %ORANGE%Um %TAN%+%NL%}%CONTINUE%
 
 
 
@@ -3414,13 +3414,13 @@ ItemDisplay[NMAG SOCK>1 !RW (TABSK2>0 OR TABSK0>0)]: %GRAY%(%NAME%{%NAME%}%CONTI
 
 // Cube Recipes to add Sockets
 
-ItemDisplay[NMAG CHEST SOCK=0 !SUP]: %NAME%{%NAME%%WHITE%Transmute with %ORANGE%Tal %WHITE%+ %ORANGE%Thul %WHITE%+ %YELLOW%PTopaz %WHITE%to add Sockets}%CONTINUE%
+ItemDisplay[NMAG CHEST SOCK=0 !SUP]: %NAME%{%NAME%%YELLOW%PTopaz %WHITE%to add Sockets%NL%%WHITE%Transmute with %ORANGE%Tal %WHITE%+ %ORANGE%Thul %WHITE%+}%CONTINUE%
 
-ItemDisplay[NMAG HELM SOCK=0 !SUP]: %NAME%{%NAME%%WHITE%Transmute with %ORANGE%Ral %WHITE%+ %ORANGE%Thul %WHITE%+ %BLUE%PSapphire %WHITE%to add Sockets}%CONTINUE%
+ItemDisplay[NMAG HELM SOCK=0 !SUP]: %NAME%{%NAME%%BLUE%PSapphire %WHITE%to add Sockets%NL%%WHITE%Transmute with %ORANGE%Ral %WHITE%+ %ORANGE%Thul %WHITE%+}%CONTINUE%
 
-ItemDisplay[NMAG SHIELD SOCK=0 !SUP]: %NAME%{%NAME%%WHITE%Transmute with %ORANGE%Tal %WHITE%+ %ORANGE%Amn %WHITE%+ %RED%PRuby %WHITE%to add Sockets}%CONTINUE%
+ItemDisplay[NMAG SHIELD SOCK=0 !SUP]: %NAME%{%NAME%%RED%PRuby %WHITE%to add Sockets%NL%%WHITE%Transmute with %ORANGE%Tal %WHITE%+ %ORANGE%Amn %WHITE%+}%CONTINUE%
 
-ItemDisplay[NMAG WEAPON !THROWING SOCK=0 !SUP]: %NAME%{%NAME%%WHITE%Transmute with %ORANGE%Ral %WHITE%+ %ORANGE%Amn %WHITE%+ %PURPLE%PAmethyst %WHITE%to add Sockets%NL%}%CONTINUE%
+ItemDisplay[NMAG WEAPON !THROWING SOCK=0 !SUP]: %NAME%{%NAME%%PURPLE%PAmethyst %WHITE%to add Sockets%NL%%WHITE%Transmute with %ORANGE%Ral %WHITE%+ %ORANGE%Amn %WHITE%+%NL%}%CONTINUE%
 
 // RUNEWORD REWORK
 
@@ -4714,8 +4714,9 @@ ItemDisplay[r11s]: %NAME%{%NAME%%NL%%TAN%Transmute the following with a %BLUE%Je
 //Sol Rune
 ItemDisplay[r12s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%+9 Min Damage%NL%%WHITE%Armor: %BLUE%Dmg Reduced by 7%NL%%WHITE%Shields: %BLUE%Dmg Reduced by 7}%CONTINUE%
 ItemDisplay[r12s]: %NAME%{%NAME%%NL%%NL%%ORANGE%Blood:%WHITE% This + %RED%PRuby %WHITE%+ %BLUE%Magic Ring}%CONTINUE%
-ItemDisplay[r12s]: %NAME%{%NAME%%NL%%ORANGE%Safety:%WHITE% This + %GREEN%PEmerald %WHITE%+ %BLUE%Magic Bow/XBow}%CONTINUE%
+ItemDisplay[r12s]: %NAME%{%NAME%%NL%%ORANGE%Safety:%WHITE% This + %GREEN%PEmerald %WHITE%+ %BLUE%Magic Weapon}%CONTINUE%
 ItemDisplay[r12s]: %NAME%{%NAME%%NL%%ORANGE%Vampiric:%WHITE% This + %GRAY%PSkull %WHITE%+ %BLUE%Magic Shield}%CONTINUE%
+ItemDisplay[r12s]: %NAME%{%NAME%%NL%%ORANGE%Brilliant:%WHITE% This + %WHITE%PDiamond %WHITE%+ %BLUE%Magic Weapon}%CONTINUE%
 ItemDisplay[r12s]: %NAME%{%NAME%%NL%%TAN%Transmute the following with a %BLUE%Jewel %TAN%or %WHITE%Jewel Fragment%NL%%ORANGE%Crafting}%CONTINUE%  //This should always be the last entry for the rune
 
 //Shael Rune
@@ -4749,7 +4750,6 @@ ItemDisplay[r16s]: %NAME%{%NAME%%NL%%TAN%Transmute the following with a %BLUE%Je
 ItemDisplay[r17s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%+10 Energy%NL%%WHITE%Armor: %BLUE%+10 Energy%NL%%WHITE%Shields: %BLUE%+10 Energy}%CONTINUE%
 ItemDisplay[r17s]: %NAME%{%NAME%%NL%%NL%%ORANGE%Vampiric:%WHITE% This + %GRAY%PSkull %WHITE%+ %BLUE%Magic Helm}%CONTINUE%
 ItemDisplay[r17s]: %NAME%{%NAME%%NL%%ORANGE%Bountiful:%WHITE% This + %YELLOW%PTopaz %WHITE%+ %BLUE%Magic Ring}%CONTINUE%
-ItemDisplay[r17s]: %NAME%{%NAME%%NL%%ORANGE%Brilliant:%WHITE% This + %WHITE%PDiamond %WHITE%+ %BLUE%Magic Weapon}%CONTINUE%
 ItemDisplay[r17s]: %NAME%{%NAME%%NL%%TAN%Transmute the following with a %BLUE%Jewel %TAN%or %WHITE%Jewel Fragment%NL%%ORANGE%Crafting}%CONTINUE%  //This should always be the last entry for the rune
 
 //Ko Rune
@@ -4868,7 +4868,7 @@ ItemDisplay[cm3 MAG ID LIFE>0]: %RED%%LIFE% Life%NAME%{%NAME%}%CONTINUE%
 ItemDisplay[cm3 MAG ID AR>0]: %LIGHT_GRAY%%AR% AR %NAME%{%NAME%}%CONTINUE%
 
 // Max Damage
-ItemDisplay[cm3 MAG ID MAXDMG>0]: %TAN%%MAXDMG% Max Damage %NAME%{%NAME%}%CONTINUE%
+ItemDisplay[cm3 MAG ID MAXDMG>0]: %TAN%%MAXDMG% Max Dmg %NAME%{%NAME%}%CONTINUE%
 
 // Skillers
 ItemDisplay[cm3 MAG ID TABSK0>0]: %TAN%+1 Bow and Crossbow %NAME%{%NAME%}%CONTINUE%
@@ -4911,7 +4911,7 @@ ItemDisplay[cm2 MAG ID LIFE>0]: %RED%%LIFE% Life%NAME%{%NAME%}%CONTINUE%
 ItemDisplay[cm2 MAG ID AR>0]: %LIGHT_GRAY%%AR% AR %NAME%{%NAME%}%CONTINUE%
 
 // Max Damage
-ItemDisplay[cm2 MAG ID MAXDMG>0]: %TAN%%MAXDMG% Max Damage %NAME%{%NAME%}%CONTINUE%
+ItemDisplay[cm2 MAG ID MAXDMG>0]: %TAN%%MAXDMG% Max Dmg %NAME%{%NAME%}%CONTINUE%
 
 // Elemental Mastery
 // Fire
@@ -4943,7 +4943,7 @@ ItemDisplay[cm1 MAG ID LIFE>0]: %RED%%LIFE% Life%NAME%{%NAME%}%CONTINUE%
 ItemDisplay[cm1 MAG ID AR>0]: %LIGHT_GRAY%%AR% AR %NAME%{%NAME%}%CONTINUE%
 
 // Max Damage
-ItemDisplay[cm1 MAG ID MAXDMG>0]: %TAN%%MAXDMG% Max Damage %NAME%{%NAME%}%CONTINUE%
+ItemDisplay[cm1 MAG ID MAXDMG>0]: %TAN%%MAXDMG% Max Dmg %NAME%{%NAME%}%CONTINUE%
 
 // Elemental Damage
 ItemDisplay[cm1 MAG ID (STAT48>0 OR STAT49>0)]: %RED%Fire Dmg %NAME%{%NAME%}%CONTINUE%
