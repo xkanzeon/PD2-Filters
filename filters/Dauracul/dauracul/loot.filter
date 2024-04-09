@@ -4853,7 +4853,7 @@ ItemDisplay[cm3 MAG !ID]: %DOT-97%%BLUE%%NAME%%CONTINUE%
 // Grand Charms
 
 // Prepare to drop notes to a new line
-ItemDisplay[cm3 MAG ID]: %NL%%BLUE%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[cm3 MAG ID]: %CL%%BLUE%%NAME%{%NAME%}%CONTINUE%
 
 // All Resist
 ItemDisplay[cm3 MAG ID RES>0]: %PURPLE%%RES% All Res%NAME%{%NAME%}%CONTINUE%
@@ -4896,7 +4896,7 @@ ItemDisplay[cm3 MAG ID TABSK49>0]: %TAN%+1 Martial Arts %NAME%{%NAME%}%CONTINUE%
 // Large Charms
 
 // Prepare to drop notes to a new line
-ItemDisplay[cm2 MAG ID]: %NL%%BLUE%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[cm2 MAG ID]: %CL%%BLUE%%NAME%{%NAME%}%CONTINUE%
 
 // All Resist
 ItemDisplay[cm2 MAG ID RES>0]: %PURPLE%%RES% All Res%NAME%{%NAME%}%CONTINUE%
@@ -4928,7 +4928,7 @@ ItemDisplay[cm2 MAG ID STAT357>0]: %ORANGE%%STAT357%% Magic %NAME%{%NAME%}%CONTI
 // Small Charms
 
 // Prepare to drop notes to a new line
-ItemDisplay[cm1 MAG ID]: %NL%%BLUE%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[cm1 MAG ID]: %CL%%BLUE%%NAME%{%NAME%}%CONTINUE%
 
 // All Resist
 ItemDisplay[cm1 MAG ID RES>0]: %PURPLE%%RES% All Resist%NAME%{%NAME%}%CONTINUE%
