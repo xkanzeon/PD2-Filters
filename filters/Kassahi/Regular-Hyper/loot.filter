@@ -1306,7 +1306,7 @@ ItemDisplay[hdm]: %MAP-51%Horadric Malus{%TAN%Bestowed to The Sisters of The Sig
 // QUEST ITEMS (ACT 2)
 ItemDisplay[ass]: %MAP-51%Book of Skill{%GOLD%Right Click to Read%NL%%GRAY%(Grants +1 Skill Point Permanently)%NL%%NL%%TAN%Learned Are Those Who Stay Awhile And Listen.}
 ItemDisplay[tr1]: Horadric Scroll{%TAN%Onward, The Tomb of Tal Rasha%NL%Found, The Details of The Binding of Baal%NL%Slain, Radament The Fallen, Mummified Horadrim}
-ItemDisplay[box]: %MAP-51%Horadric Cube{%GREEN%Feedback is Very Welcome%NL%%ORANGE%%NL%+3/Shop Sks Highlights on Filter Lvl 1 Now%NL%Hfd/Amp/Lre on Striking/Casting to Item Names%NL%Fanged knife 0-3os, +3 Pst/Cob Highlighted For Plague%NL%& (10+ ED, +3 Sks All Lvls For Now)%NL%Bone/Fanged knife 0-2-3os, (+3 Sks on Lvl 1)%NL%Diamond Recipes/Infusion/Gems/Runes%NL%Eth Set Items, Map Immune/res/Tier%NL%Qol Hfd/Cbf For Equipped Gear%NL%Added: Player Commands to Key in Shop%NL%%RED%Update 11/04/24:}
+ItemDisplay[box]: %MAP-51%Horadric Cube{%GREEN%Feedback is Very Welcome%NL%%ORANGE%%NL%+3/Shop Sks Highlights on Filter Lvl 1 Now%NL%Hfd/Amp/Lre on Striking/Casting to Item Names%NL%Fanged knife 0-3os, +3 Pst/Cob Highlighted For Plague%NL%& (10+ ED, +3 Sks All Lvls For Now)%NL%Bone/Fanged knife 0-2-3os, (+3 Sks on Lvl 1)%NL%Diamond Recipes/Infusion/Gems/Runes%NL%Eth Set Items, Map/Dungeons Immune/res/Tier%NL%Qol Hfd/Cbf For Equipped Gear%NL%Added: Player Commands to Key in Shop%NL%%RED%Update 12/04/24:}
 ItemDisplay[msf]: %MAP-51%Staff of Kings{%TAN%A Relic of Royalty, withered of Dust%NL%Beneath The Tunnels Woven of Arthropods}
 ItemDisplay[vip]: %MAP-51%Amulet of the Viper{%TAN%Fangskin The Salamander Abides%NL%An Endless Eclipse, Buried in Scales%NL%Amidst The Darkness, An Amulet Unworn}
 ItemDisplay[hst]: %MAP-51%Horadric Staff{%TAN%The Mage Clans United%NL%In Archangel Tyrael Confided%NL%The Dark Exile Provided}
@@ -1553,9 +1553,9 @@ ItemDisplay[t37]: %NAME%{%RED%Bitches%NL%%WHITE%Immunes: %YELLOW%L:135, %GREEN%P
 ItemDisplay[t38]: %NAME%{%WHITE%Immunes: %RED%F:130, %GREEN%P:110, %GOLD%Ph:120%NL%%WHITE%Highest Res: %YELLOW%L:75, %BLUE%C:80, %ORANGE%M:70%NAME%}%CONTINUE% // Canyon of Sescheron 160
 ItemDisplay[t39]: %NAME%{%WHITE%Immunes: %RED%F:125, %BLUE%C:130, %GREEN%Tower:1000%NL%%WHITE%Highest Res: %YELLOW%L:90, %ORANGE%M:50, %GOLD%Ph:40%NAME%}%CONTINUE% // Kehjistan Marketplace 147
 ItemDisplay[t3a]: %NAME%{%RED%Souls%NL%%WHITE%Immunes: %BLUE%C:130, %GREEN%P:130, %ORANGE%M:120%NL%%WHITE%Highest Res: %RED%F:75, %YELLOW%L:80, %NL%%GOLD%Ph:50%NAME%}%CONTINUE% // Ashen Plains 175
-ItemDisplay[t41]: %NAME%{%WHITE%Immunes: %RED%F:180 %YELLOW%L:180 %BLUE%C:180 %GREEN%P:180 %ORANGE%M:180 %GOLD%Ph:180}%CONTINUE%
-ItemDisplay[t42]: %NAME%{%WHITE%Immunes: %RED%F:180 %YELLOW%L:180 %BLUE%C:180 %GREEN%P:180 %ORANGE%M:180 %GOLD%Ph:180}%CONTINUE%
-ItemDisplay[t43]: %NAME%{%WHITE%Immunes: %RED%F:180 %YELLOW%L:180 %BLUE%C:180 %GREEN%P:180 %ORANGE%M:180 %GOLD%Ph:180}%CONTINUE%
+ItemDisplay[t41]: %NAME%{%WHITE%Immunes: %RED%F:165 %YELLOW%L:165 %BLUE%C:165 %GREEN%P:165 %ORANGE%M:165 %GOLD%Ph:165}%CONTINUE%
+ItemDisplay[t42]: %NAME%{%WHITE%Immunes: %RED%F:165 %YELLOW%L:165 %BLUE%C:165 %GREEN%P:165 %ORANGE%M:165 %GOLD%Ph:165}%CONTINUE%
+ItemDisplay[t43]: %NAME%{%WHITE%Immunes: %RED%F:165 %YELLOW%L:165 %BLUE%C:165 %GREEN%P:165 %ORANGE%M:165 %GOLD%Ph:165}%CONTINUE%
 ItemDisplay[t51]: %NAME%{%WHITE%Highest Res: %RED%F:85 %YELLOW%L:85 %BLUE%C:85 %GREEN%P:95 %ORANGE%M:40 %GOLD%Ph:65}%CONTINUE%
 ItemDisplay[t52]: %NAME%{%WHITE%Highest Res: %RED%F:65 %YELLOW%L:60 %BLUE%C:65 %GREEN%P:75 %ORANGE%M:50 %GOLD%Ph:50}%CONTINUE%
 ItemDisplay[t53]: %NAME%{%WHITE%Highest Res: %RED%F:70 %YELLOW%L:75 %BLUE%C:65 %GREEN%P:80 %ORANGE%M:80 %GOLD%Ph:60}%CONTINUE%
@@ -5662,8 +5662,8 @@ ItemDisplay[FILTLVL<2 NMAG (SOCK=0 OR SOCK=3 OR SOCK=4 OR SOCK=5 OR SOCK=6) !INF
 ItemDisplay[NMAG (SOCK=0 OR SOCK=3 OR SOCK=4 OR SOCK=5 OR SOCK=6) !INF !RW ETH ED>9 (7gs OR 7fb OR 7gd)]: %PX-21%%DOT-D6%%NAME% %RED%+{%NAME%}
 ItemDisplay[NMAG (SOCK=0 OR SOCK=3 OR SOCK=4 OR SOCK=5 OR SOCK=6) !INF !RW ETH (7gs OR 7fb OR 7gd)]: %PX-21%%DOT-D6%%NAME%{%NAME%}
 // DAGGER'S (NMAG)
-ItemDisplay[NMAG (SOCK=0 OR SOCK=2 OR SOCK=3) !INF !RW !ETH ED>9 (7dg OR 7kr) (SK73=3 OR SK254=3 OR SK259=3 OR SK265=3 OR SK269=3 OR SK274=3 OR SK280=3)]: %PX-21%%DOT-D6%%NAME% %RED%+{%NAME%}
-ItemDisplay[FILTLVL<2 NMAG (SOCK=0 OR SOCK=2 OR SOCK=3) !INF !RW !ETH (7dg OR 7kr) (SK73=3 OR SK254=3 OR SK259=3 OR SK265=3 OR SK269=3 OR SK274=3 OR SK280=3)]: %NAME%{%NAME%}
+ItemDisplay[NMAG (SOCK=0 OR SOCK=2 OR SOCK=3) !INF !RW !ETH ED>9 (7dg OR 7kr) (SK73=3 OR SK254=3 OR SK257=3 OR SK259=3 OR SK265=3 OR SK266=3 OR SK269=3 OR SK274=3 OR SK280=3)]: %PX-21%%DOT-D6%%NAME% %RED%+{%NAME%}
+ItemDisplay[FILTLVL<2 NMAG (SOCK=0 OR SOCK=2 OR SOCK=3) !INF !RW !ETH (7dg OR 7kr) (SK73=3 OR SK254=3 OR SK257=3 OR SK259=3 OR SK265=3 OR SK266=3 OR SK269=3 OR SK274=3 OR SK280=3)]: %NAME%{%NAME%}
 // SPEAR'S/POLEARM'S/AMAZON SPEAR'S (NMAG)
 ItemDisplay[FILTLVL<2 NMAG (SOCK=0 OR SOCK=4 OR SOCK=5) !INF !RW !ETH (7tr OR 7br OR 7st OR 7p7 OR 7o7 OR 7vo OR 7s8 OR 7pa OR 7h7 OR 7wc)]: %NAME%{%NAME%}
 ItemDisplay[FILTLVL<2 NMAG (SOCK=0 OR SOCK=3) !INF !RW !ETH (amd OR ame) TABSK2=3]: %PX-21%%DOT-D6%%NAME%{%NAME%}
