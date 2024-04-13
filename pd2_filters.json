@@ -92,16 +92,6 @@
             },
             "filters": [
                 {
-                    "name": "Erazure-Crafting-BIG-GG.filter",
-                    "url": "https://api.github.com/repos/FiltersBy-Erazure/PD2-Loot-Filter/contents/Erazure-Crafting-BIG-GG.filter?ref=main",
-                    "download_url": "https://raw.githubusercontent.com/FiltersBy-Erazure/PD2-Loot-Filter/main/Erazure-Crafting-BIG-GG.filter"
-                },
-                {
-                    "name": "Erazure-Crafting-Main.filter",
-                    "url": "https://api.github.com/repos/FiltersBy-Erazure/PD2-Loot-Filter/contents/Erazure-Crafting-Main.filter?ref=main",
-                    "download_url": "https://raw.githubusercontent.com/FiltersBy-Erazure/PD2-Loot-Filter/main/Erazure-Crafting-Main.filter"
-                },
-                {
                     "name": "Erazure-Season-9-BIG-GG.filter",
                     "url": "https://api.github.com/repos/FiltersBy-Erazure/PD2-Loot-Filter/contents/Erazure-Season-9-BIG-GG.filter?ref=main",
                     "download_url": "https://raw.githubusercontent.com/FiltersBy-Erazure/PD2-Loot-Filter/main/Erazure-Season-9-BIG-GG.filter"
