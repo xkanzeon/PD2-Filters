@@ -258,23 +258,6 @@
         }
     ],
     [
-        "TalRasha125",
-        {
-            "info": {
-                "name": "TalRasha's PD2 Item Filters",
-                "url": "https://api.github.com/repos/TalRasha125/TalRashas-PD2-Item-Filter/contents",
-                "author": "TalRasha125"
-            },
-            "filters": [
-                {
-                    "name": "default.filter",
-                    "url": "https://api.github.com/repos/TalRasha125/TalRashas-PD2-Item-Filter/contents/default.filter?ref=main",
-                    "download_url": "https://raw.githubusercontent.com/TalRasha125/TalRashas-PD2-Item-Filter/main/default.filter"
-                }
-            ]
-        }
-    ],
-    [
         "Wolfie",
         {
             "info": {
