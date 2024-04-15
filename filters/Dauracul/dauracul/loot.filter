@@ -534,6 +534,11 @@ ItemDisplay[RUNE>0]: %DOT-62%%ORANGE%%RUNENAME% Rune %GRAY%(%GREEN%%RUNENUM%%GRA
 ItemDisplay[(RUNE>0 OR GEMLEVEL>3 OR wss OR jewf) (MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109)]: %NAME% %LIGHT_GRAY%×%QTY%%CONTINUE%
 ItemDisplay[(RUNE>0 OR GEMLEVEL>3 OR wss OR jewf) !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109)]: %NAME%%CONTINUE%
 
+// 2x Half Freeze Duration = Cannot Be Frozen
+ItemDisplay[STAT118>0 !EQUIPPED]: %NAME%{%NAME%%WHITE%Equip two %BLUE%Half Freeze Duration %WHITE%items to gain %BLUE%Cannot Be Frozen%CL%}%CONTINUE%
+ItemDisplay[STAT118>0 AND CHARSTAT118=1 EQUIPPED]: %NAME%{%NAME%%GRAY%Cannot Be Frozen %RED%(Inactive)%CL%}%CONTINUE%
+ItemDisplay[STAT118>0 AND CHARSTAT118>1 EQUIPPED]: %NAME%{%NAME%%BLUE%Cannot Be Frozen %GREEN%(Active)%CL%}%CONTINUE%
+
 // PD2 Items
 
 // S8 Throwing Potions
@@ -4755,7 +4760,7 @@ ItemDisplay[r17s]: %NAME%{%NAME%%NL%%TAN%Transmute the following with a %BLUE%Je
 //Ko Rune
 ItemDisplay[r18s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%+10 Dexterity%NL%%WHITE%Armor: %BLUE%+10 Dexterity%NL%%WHITE%Shields: %BLUE%+10 Dexterity}%CONTINUE%
 ItemDisplay[r18s]: %NAME%{%NAME%%NL%%NL%%ORANGE%Bountiful:%WHITE% This + %YELLOW%PTopaz %WHITE%+ %BLUE%Magic Amulet}%CONTINUE%
-ItemDisplay[r18s]: %NAME%{%NAME%%NL%%ORANGE%Brilliant:%WHITE% This + %YELLOW%PTopaz %WHITE%+ %BLUE%Magic Amulet}%CONTINUE%
+ItemDisplay[r18s]: %NAME%{%NAME%%NL%%ORANGE%Brilliant:%WHITE% This + %LIGHT_GRAY%PDiamond %WHITE%+ %BLUE%Magic Boots}%CONTINUE%
 ItemDisplay[r18s]: %NAME%{%NAME%%NL%%TAN%Transmute the following with a %BLUE%Jewel %TAN%or %WHITE%Jewel Fragment%NL%%ORANGE%Crafting}%CONTINUE%  //This should always be the last entry for the rune
 
 //Fal Rune
