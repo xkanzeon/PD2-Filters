@@ -15,12 +15,12 @@ ItemDisplay[(bks OR bkd OR tr1 OR ass OR j34 OR g34 OR bbb OR qbr OR qey OR qhr 
 // Hide them in Maps
 ItemDisplay[(isc OR tsc) MAPID>137]:
 // Relabel them outside of Town
-ItemDisplay[(isc) !MAPID>137 !SHOP]: %ORANGE%!%WHITE%ID{%NAME%Scroll of Identify}%CONTINUE%
-ItemDisplay[(tsc) !MAPID>137 !SHOP]: %TEAL%!%WHITE%TP{%NAME%Scroll of Town Portal}%CONTINUE%
+ItemDisplay[(isc) !MAPID>137 !SHOP]: %ORANGE% !%WHITE%ID {%NAME%Scroll of Identify}%CONTINUE%
+ItemDisplay[(tsc) !MAPID>137 !SHOP]: %TEAL% !%WHITE%TP {%NAME%Scroll of Town Portal}%CONTINUE%
 
 // Potions
-ItemDisplay[hp5]: %RED%!%WHITE%HP%GRAY%{%GRAY%Super Healing Potion}
-ItemDisplay[mp5]: %BLUE%!%WHITE%MP%GRAY%{%GRAY%Super Mana Potion}
+ItemDisplay[hp5]: %RED% !%WHITE%HP %GRAY%{%GRAY%Super Healing Potion}
+ItemDisplay[mp5]: %BLUE% !%WHITE%MP %GRAY%{%GRAY%Super Mana Potion}
 ItemDisplay[rvs]: %PURPLE%!%WHITE%Rejuv{%GRAY%Rejuvination Potion}
 ItemDisplay[rvl]: %PURPLE%!%WHITE%Full Rejuv{%GRAY%Full Rejuvination Potion}
 ItemDisplay[yps]: %DARK_GREEN%!%WHITE%Anti{%GRAY%Antidote Potion}
@@ -624,6 +624,9 @@ ItemDisplay[ID UNI cm2]: %GOLD%%NAME%{%NAME%%WHITE%Transmute with a Key to creat
 // Dueling Mana Pot (S7)
 ItemDisplay[pvpp]: %BLUE%%NAME%%CONTINUE%
 
+// Uber Key Alerts (for Map Key event)
+ItemDisplay[(pk1 OR pk2 OR pk3)]: %MAP-68%%ORANGE%%NAME%%CONTINUE%
+
 // Ancient Sigils
 ItemDisplay[(ubaa OR ubab OR ubac)]: %DOT-62%%ORANGE%%NAME%%CONTINUE%
 ItemDisplay[uba]: %GOLD%%NAME%%CONTINUE%
@@ -730,7 +733,7 @@ ItemDisplay[(t11 OR t12 OR t13 OR t14 OR t15 OR t16 OR t21 OR t22 OR t23 OR t24 
 ItemDisplay[t11]: %NAME%{%NAME%%RED%Fire %YELLOW%Lightning%NL%%WHITE%Immunities:}%CONTINUE%
 
 //Horazon's Memory
-ItemDisplay[t12]: %NAME%{%NAME%%GRAY%Note: Lightning Spires have 1000% Poison Resist%NL%%RED%Fire %BLUE%Cold%NL%%WHITE%Immunities:}%CONTINUE%
+ItemDisplay[t12]: %NAME%{%NAME%%GRAY%Note: Lightning Spires have 1000% Poison Resist%NL% %RED%Fire %BLUE%Cold %NL%%WHITE%Immunities:}%CONTINUE%
 
 //Bastion Keep
 ItemDisplay[t13]: %NAME%{%NAME%%GOLD%Physical %RED%Fire %BLUE%Cold%NL%%WHITE%Immunities:}%CONTINUE%
@@ -784,7 +787,7 @@ ItemDisplay[t37]: %NAME%{%NAME%%GOLD%Physical %YELLOW%Lightning %GREEN%Poison%NL
 ItemDisplay[t38]: %NAME%{%NAME%%GOLD%Physical %RED%Fire %GREEN%Poison%NL%%WHITE%Immunities:}%CONTINUE%
 
 //Kehjistan Marketplace
-ItemDisplay[t39]: %NAME%{%NAME%%GRAY%Note: Fire Towers have 1000% Poison Resist%NL%%RED%Fire %BLUE%Cold %GREEN%Poison%NL%%WHITE%Immunities:}%CONTINUE%
+ItemDisplay[t39]: %NAME%{%NAME%%GRAY%Note: Fire Towers have 1000% Poison Resist%NL% %RED%Fire %BLUE%Cold %GREEN%Poison %NL%%WHITE%Immunities:}%CONTINUE%
 
 //Ashen Plains
 ItemDisplay[t3a]: %NAME%{%NAME%%ORANGE%Magic %BLUE%Cold %GREEN%Poison%NL%%WHITE%Immunities:}%CONTINUE%
@@ -4593,33 +4596,33 @@ ItemDisplay[7tw]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-30%WHITE%}%CONTINUE%
 
 // Normal Amazon Weapons
 // ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%20%WHITE%}%CONTINUE%
-ItemDisplay[(am2 OR am4)]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%10%WHITE%}%CONTINUE%
+ItemDisplay[am2]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%10%WHITE%}%CONTINUE%
 // ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%5%WHITE%}%CONTINUE%
-ItemDisplay[(am1 OR am3)]: %NAME%{%NAME%%WHITE%Weapon Speed: %WHITE%0%WHITE%}%CONTINUE%
+ItemDisplay[(am1 OR am4)]: %NAME%{%NAME%%WHITE%Weapon Speed: %WHITE%0%WHITE%}%CONTINUE%
 // ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-5%WHITE%}%CONTINUE%
-ItemDisplay[am5]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-10%WHITE%}%CONTINUE%
+ItemDisplay[(am5 OR am3)]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-10%WHITE%}%CONTINUE%
 // ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-15%WHITE%}%CONTINUE%
 // ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-20%WHITE%}%CONTINUE%
 // ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-30%WHITE%}%CONTINUE%
 
 // Exceptional Amazon Weapons
-ItemDisplay[am9]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%20%WHITE%}%CONTINUE%
-ItemDisplay[am7]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%10%WHITE%}%CONTINUE%
+// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%20%WHITE%}%CONTINUE%
+ItemDisplay[(am7 OR am9)]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%10%WHITE%}%CONTINUE%
 // ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%5%WHITE%}%CONTINUE%
-ItemDisplay[(am6 OR am8)]: %NAME%{%NAME%%WHITE%Weapon Speed: %WHITE%0%WHITE%}%CONTINUE%
+ItemDisplay[am6]: %NAME%{%NAME%%WHITE%Weapon Speed: %WHITE%0%WHITE%}%CONTINUE%
 // ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-5%WHITE%}%CONTINUE%
-ItemDisplay[ama]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-10%WHITE%}%CONTINUE%
+ItemDisplay[(ama OR am8)]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-10%WHITE%}%CONTINUE%
 // ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-15%WHITE%}%CONTINUE%
 // ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-20%WHITE%}%CONTINUE%
 // ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-30%WHITE%}%CONTINUE%
 
 // Elite Amazon Weapons
-ItemDisplay[ame]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%20%WHITE%}%CONTINUE%
-ItemDisplay[amc]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%10%WHITE%}%CONTINUE%
+// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%20%WHITE%}%CONTINUE%
+ItemDisplay[(amc OR ame)]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%10%WHITE%}%CONTINUE%
 // ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%5%WHITE%}%CONTINUE%
-ItemDisplay[amd]: %NAME%{%NAME%%WHITE%Weapon Speed: %WHITE%0%WHITE%}%CONTINUE%
+// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %WHITE%0%WHITE%}%CONTINUE%
 // ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-5%WHITE%}%CONTINUE%
-ItemDisplay[(amb OR amf)]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-10%WHITE%}%CONTINUE%
+ItemDisplay[(amb OR amd OR amf)]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-10%WHITE%}%CONTINUE%
 // ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-15%WHITE%}%CONTINUE%
 // ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-20%WHITE%}%CONTINUE%
 // ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-30%WHITE%}%CONTINUE%
@@ -4811,37 +4814,37 @@ ItemDisplay[r33s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%Indestructible%NL%%WHITE%A
 // Rubies
 ItemDisplay[GEMTYPE=4 (GEM=1 OR GEM=2 OR GEM=3)]: %RED%%NAME%%CONTINUE%
 ItemDisplay[GEMTYPE=4 GEM=4]: %RED%%NAME%{%NAME%%WHITE%Weapons: %BLUE%10-16 Fire Dmg%NL%%WHITE%Armor: %BLUE%+31 Life%NL%%WHITE%Shields: %BLUE%28% Fire Resist}
-ItemDisplay[GEMTYPE=4 GEM=5]: %RED%%NAME%{%NAME%%WHITE%Weapons: %BLUE%15-20 Fire Dmg%NL%%WHITE%Armor: %BLUE%+38 Life%NL%%WHITE%Shields: %BLUE%40% Fire Resist}
+ItemDisplay[GEMTYPE=4 GEM=5]: %DOT-0A%%RED%%NAME%{%NAME%%WHITE%Weapons: %BLUE%15-20 Fire Dmg%NL%%WHITE%Armor: %BLUE%+38 Life%NL%%WHITE%Shields: %BLUE%40% Fire Resist}
 
 // Amethysts
 ItemDisplay[GEMTYPE=1 (GEM=1 OR GEM=2 OR GEM=3)]: %PURPLE%%NAME%%CONTINUE%
 ItemDisplay[GEMTYPE=1 GEM=4]: %PURPLE%%NAME%{%NAME%%WHITE%Weapons: %BLUE%+100 Attack Rating%NL%%WHITE%Armor: %BLUE%+8 Strength%NL%%WHITE%Shields: %BLUE%+24 Defense}
-ItemDisplay[GEMTYPE=1 GEM=5]: %PURPLE%%NAME%{%NAME%%WHITE%Weapons: %BLUE%+150 Attack Rating%NL%%WHITE%Armor: %BLUE%+10 Strength%NL%%WHITE%Shields: %BLUE%+30 Defense}
+ItemDisplay[GEMTYPE=1 GEM=5]: %DOT-9B%%PURPLE%%NAME%{%NAME%%WHITE%Weapons: %BLUE%+150 Attack Rating%NL%%WHITE%Armor: %BLUE%+10 Strength%NL%%WHITE%Shields: %BLUE%+30 Defense}
 
 // Diamonds
 ItemDisplay[GEMTYPE=2 (GEM=1 OR GEM=2 OR GEM=3)]: %LIGHT_GRAY%%NAME%%CONTINUE%
 ItemDisplay[GEMTYPE=2 GEM=4]: %LIGHT_GRAY%%NAME%{%NAME%%WHITE%Weapons: %BLUE%54% Dmg to Undead%NL%%WHITE%Armor: %BLUE%+80 Attack Rating%NL%%WHITE%Shields: %BLUE%14% All Resist}
-ItemDisplay[GEMTYPE=2 GEM=5]: %LIGHT_GRAY%%NAME%{%NAME%%WHITE%Weapons: %BLUE%68% Dmg to Undead%NL%%WHITE%Armor: %BLUE%+100 Attack Rating%NL%%WHITE%Shields: %BLUE%19% All Resist}
+ItemDisplay[GEMTYPE=2 GEM=5]: %DOT-DB%%LIGHT_GRAY%%NAME%{%NAME%%WHITE%Weapons: %BLUE%68% Dmg to Undead%NL%%WHITE%Armor: %BLUE%+100 Attack Rating%NL%%WHITE%Shields: %BLUE%19% All Resist}
 
 // Emeralds
 ItemDisplay[GEMTYPE=3 (GEM=1 OR GEM=2 OR GEM=3)]: %GREEN%%NAME%%CONTINUE%
 ItemDisplay[GEMTYPE=3 GEM=4]: %GREEN%%NAME%{%NAME%%WHITE%Weapons: %BLUE%+60 Poison Dmg (6 Sec)%NL%%WHITE%Armor: %BLUE%+8 Dexterity%NL%%WHITE%Shields: %BLUE%28% Poison Resist}
-ItemDisplay[GEMTYPE=3 GEM=5]: %GREEN%%NAME%{%NAME%%WHITE%Weapons: %BLUE%+100 Poison Dmg (7 Sec)%NL%%WHITE%Armor: %BLUE%+10 Dexterity%NL%%WHITE%Shields: %BLUE%40% Poison Resist}
+ItemDisplay[GEMTYPE=3 GEM=5]: %DOT-81%%GREEN%%NAME%{%NAME%%WHITE%Weapons: %BLUE%+100 Poison Dmg (7 Sec)%NL%%WHITE%Armor: %BLUE%+10 Dexterity%NL%%WHITE%Shields: %BLUE%40% Poison Resist}
 
 // Sapphires
 ItemDisplay[GEMTYPE=5 (GEM=1 OR GEM=2 OR GEM=3)]: %BLUE%%NAME%%CONTINUE%
 ItemDisplay[GEMTYPE=5 GEM=4]: %BLUE%%NAME%{%NAME%%WHITE%Weapons: %BLUE%6-10 Cold Dmg (2.4 Sec)%NL%%WHITE%Armor: %BLUE%+31 Mana%NL%%WHITE%Shields: %BLUE%28% Cold Resist}
-ItemDisplay[GEMTYPE=5 GEM=5]: %BLUE%%NAME%{%NAME%%WHITE%Weapons: %BLUE%10-14 Cold Dmg (3 Sec)%NL%%WHITE%Armor: %BLUE%+38 Mana%NL%%WHITE%Shields: %BLUE%40% Cold Resist}
+ItemDisplay[GEMTYPE=5 GEM=5]: %DOT-97%%BLUE%%NAME%{%NAME%%WHITE%Weapons: %BLUE%10-14 Cold Dmg (3 Sec)%NL%%WHITE%Armor: %BLUE%+38 Mana%NL%%WHITE%Shields: %BLUE%40% Cold Resist}
 
 // Topazes
 ItemDisplay[GEMTYPE=6 (GEM=1 OR GEM=2 OR GEM=3)]: %YELLOW%%NAME%%CONTINUE%
 ItemDisplay[GEMTYPE=6 GEM=4]: %YELLOW%%NAME%{%NAME%%WHITE%Weapons: %BLUE%1-30 Lightning Dmg%NL%%WHITE%Armor: %BLUE%20% Magic Find%NL%%WHITE%Shields: %BLUE%28% Lightning Resist}
-ItemDisplay[GEMTYPE=6 GEM=5]: %YELLOW%%NAME%{%NAME%%WHITE%Weapons: %BLUE%1-40 Lightning Dmg%NL%%WHITE%Armor: %BLUE%24% Magic Find%NL%%WHITE%Shields: %BLUE%40% Lightning Resist}
+ItemDisplay[GEMTYPE=6 GEM=5]: %DOT-A8%%YELLOW%%NAME%{%NAME%%WHITE%Weapons: %BLUE%1-40 Lightning Dmg%NL%%WHITE%Armor: %BLUE%24% Magic Find%NL%%WHITE%Shields: %BLUE%40% Lightning Resist}
 
 // Skulls
 ItemDisplay[GEMTYPE=7 (GEM=1 OR GEM=2 OR GEM=3)]: %GRAY%%NAME%%CONTINUE%
 ItemDisplay[GEMTYPE=7 GEM=4]: %GRAY%%NAME%{%NAME%%WHITE%Weapons: %BLUE%Leech 3% Life / 3% Mana%NL%%WHITE%Armor: %BLUE%Regen +4 / 12%%NL%%WHITE%Shields: %BLUE%16 Thorns Dmg}
-ItemDisplay[GEMTYPE=7 GEM=5]: %GRAY%%NAME%{%NAME%%WHITE%Weapons: %BLUE%Leech 4% Life / 3% Mana%NL%%WHITE%Armor: %BLUE%Regen +5 / 19%%NL%%WHITE%Shields: %BLUE%20 Thorns Dmg}
+ItemDisplay[GEMTYPE=7 GEM=5]: %DOT-19%%GRAY%%NAME%{%NAME%%WHITE%Weapons: %BLUE%Leech 4% Life / 3% Mana%NL%%WHITE%Armor: %BLUE%Regen +5 / 19%%NL%%WHITE%Shields: %BLUE%20 Thorns Dmg}
 
 // Jewels
 ItemDisplay[jew UNI !ID]: %DOT-61%%GOLD%%NAME%%CONTINUE%
