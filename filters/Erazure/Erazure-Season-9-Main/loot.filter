@@ -21,7 +21,7 @@ ItemDisplay[box FILTLVL=8]:%NAME%{%WHITE%Filter Level: 8%CL%%GRAY%Strict Filteri
 ItemDisplay[box FILTLVL=9]:%NAME%{%WHITE%Filter Level: 9%CL%%GRAY%Endgame Mapping}%CONTINUE%//
 ItemDisplay[box FILTLVL=0]:%NAME%{%NAME%%CL%%GRAY%Levels 5-6-7-8 Hide Some Rares and Non-Eth Items%CL%%GRAY%Levels 2-3-4 Hide Some Non-Magic/Magic Items%CL%Level 1 Shows Most Non-Magic/Magic Items}%CONTINUE%//
 ItemDisplay[box CLVL<20 !FILTLVL=0]:%NAME%{%NAME%%CL%%GRAY%For %GOLD%Increase and Decrease Filter Level%CL%%GRAY%For %GOLD%Always Show Items %GRAY%and Hotkeys%CL%Open Settings to Create Toggle}%CONTINUE%//
-ItemDisplay[box]:%NAME%{%NAME%%CL%%WHITE%Erazure: Version 5.03.4}//
+ItemDisplay[box]:%NAME%{%NAME%%CL%%WHITE%Erazure: Version 5.03.5}//
 
 // ==============================  Arrows and Bolts  ===============================
 
@@ -996,7 +996,7 @@ ItemDisplay[(t61 OR t62)]:%BLUE%\%WHITE%\%BLUE%V%WHITE%/%BLUE%/  %WHITE%%NAME%  
 
 // Keep orginal coloring for items
 ItemDisplay[UNI]:%GOLD%%NAME%{%NAME%}%CONTINUE%
-ItemDisplay[ETH UNI !ID]:%WHITE%Eth %NAME%{%NAME%}%CONTINUE%//
+ItemDisplay[ETH UNI]:%WHITE%Eth %NAME%{%NAME%}%CONTINUE%//
 
 // DClone and Rathma Unique Items
 ItemDisplay[UNI !ID rar]:%NAME%%CONTINUE%// Cage of the Unsullied Boneweave
@@ -1414,7 +1414,7 @@ ItemDisplay[UNI ELT !ID FILTLVL>8 (7mp OR 7cl OR 7mt OR 7sm OR 7sb OR 7cm OR 7kr
 
 // Keep orginal coloring for Set items
 ItemDisplay[SET]:%GREEN%%NAME%{%NAME%}%CONTINUE%
-ItemDisplay[ETH SET !ID]:%WHITE%Eth %NAME%{%NAME%}%CONTINUE%//
+ItemDisplay[ETH SET]:%WHITE%Eth %NAME%{%NAME%}%CONTINUE%//
 
 // High Value Set Items
 ItemDisplay[SET !ID (dr8 OR uul OR xtb OR urn OR paf OR 7ws OR uar OR ci3 OR uth OR uh9 OR utc OR xmg OR ne9 OR xhm OR ulg OR uts OR (ETH (7fb OR 7gd OR 7ls OR 7m7 OR 7qr OR 7ws)))]:%PURPLE%\%DARK_GREEN%\  %GREEN%>  %WHITE%o  %GREEN%%NAME%  %WHITE%o  %GREEN%<  %DARK_GREEN%/%PURPLE%/%GREEN%%BORDER-71%%MAP-76%%DOT-84%%PX-20%//
@@ -1475,7 +1475,7 @@ ItemDisplay[ETH CRAFT]:%WHITE%Eth %NAME%{%NAME%}%CONTINUE%//
 
 // Keep orginal coloring for items
 ItemDisplay[RARE]:%YELLOW%%NAME%{%NAME%}%CONTINUE%
-ItemDisplay[ETH RARE !ID]:%WHITE%Eth %NAME%{%NAME%}%CONTINUE%//
+ItemDisplay[ETH RARE]:%WHITE%Eth %NAME%{%NAME%}%CONTINUE%//
 
 
 ItemDisplay[RARE !ID jew]:%PURPLE%\%YELLOW%\  %PURPLE%* %YELLOW%>  %TAN%(x  %YELLOW%%NAME%  %TAN%x)  %YELLOW%< %PURPLE%*  %YELLOW%/%PURPLE%/%YELLOW%%BORDER-8F%%MAP-9B%%DOT-6C%%PX-A8%// All unidentified rare Jewels
@@ -1595,7 +1595,7 @@ ItemDisplay[RARE !ID ETH ASSASSIN (ktr OR axf OR clw OR btl OR skr OR 9ar OR 9xf
 // 	---------------------------------------------------------------------------- 
 
 ItemDisplay[MAG]:%BLUE%%NAME%{%NAME%}%CONTINUE%
-ItemDisplay[ETH MAG !ID]:%WHITE%Eth %NAME%{%NAME%}%CONTINUE%//
+ItemDisplay[ETH MAG]:%WHITE%Eth %NAME%{%NAME%}%CONTINUE%//
 
 // -----------------------------------------------------------------------------
 //    						          Amulets
@@ -2978,7 +2978,7 @@ ItemDisplay[NMAG !RW BAR CLVL>9 FILTLVL>0 !(SK368>0 OR SK126>0 OR SK127>0 OR SK1
 // ------------------------------------------------------------------------------
 
 // On filter level 9, hide nonmagical druid clubs are not plague bases
-ItemDisplay[NMAG !RW (clb OR spc OR 9cl OR 9sp OR 7cl OR 7sp) (FILTLVL>8 OR (FILTLVL<9 FILTLVL>4 CLVL>89)) !(((9cl OR 9sp OR 7cl OR 7sp) (SOCK=0 OR SOCK=3) SK230=3 (SK250=3 OR (SK226=3 (SK231>0 OR SK241>0 OR SK247>0)) OR (SK231=3 (SK226>0 OR SK241>0 OR SK247>0)) OR (SK241=3 (SK231>0 OR SK226>0 OR SK247>0)) OR (SK247=3 (SK231>0 OR SK241>0 OR SK226>0)))) OR ((9cl OR 9sp OR 7cl OR 7sp) (SOCK=0 OR SOCK=3) ((CLVL<95 OR (SK236>0 OR SK226>0 OR SK370>0 OR SK231>0 OR SK250>0 OR SK235>0 OR SK241>0)) ((SK221>2 (SK237>2 OR SK227>2 OR SK247>2)) OR (SK237>2 (SK221>2 OR SK227>2 OR SK247>2)) OR (SK227>2 (SK237>2 OR SK221>2 OR SK247>2)) OR (SK247>2 (SK237>2 OR SK227>2 OR SK221>2)))))) !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109)]:// On filter level 9, hide nonmagical druid clubs are not plague bases and all nonmagical druid helms
+ItemDisplay[NMAG !RW (clb OR spc OR 9cl OR 9sp OR 7cl OR 7sp) (FILTLVL>8 OR (FILTLVL<9 FILTLVL>4 CLVL>89)) !(((9cl OR 9sp OR 7cl OR 7sp) (SOCK=0 OR SOCK=3) SK230=3 (SK250=3 OR (SK226=3 (SK231>0 OR SK241>0 OR SK247>0)) OR (SK231=3 (SK226>0 OR SK241>0 OR SK247>0)) OR (SK241=3 (SK231>0 OR SK226>0 OR SK247>0)) OR (SK247=3 (SK231>0 OR SK241>0 OR SK226>0)))) OR ((9cl OR 9sp OR 7cl OR 7sp) (SOCK=0 OR SOCK=3) ((SK226=3 SK236=3) OR ((CLVL<95 OR (SK236>0 OR SK226>0 OR SK370>0 OR SK231>0 OR SK250>0 OR SK235>0 OR SK241>0)) ((SK221>2 (SK237>2 OR SK227>2 OR SK247>2)) OR (SK237>2 (SK221>2 OR SK227>2 OR SK247>2)) OR (SK227>2 (SK237>2 OR SK221>2 OR SK247>2)) OR (SK247>2 (SK237>2 OR SK227>2 OR SK221>2))))))) !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109)]:// On filter level 9, hide nonmagical druid clubs are not plague bases and all nonmagical druid helms
 
 // On filter level 9, hide nonmagical druid clubs are not plague bases and all nonmagical druid helms
 ItemDisplay[NMAG !RW DRU (FILTLVL>8 OR (FILTLVL<9 FILTLVL>4 CLVL>89)) !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109)]:// On filter level 9, hide nonmagical druid helms
@@ -2988,7 +2988,7 @@ ItemDisplay[NMAG !RW DRU (FILTLVL>8 OR (FILTLVL<9 FILTLVL>4 CLVL>89)) !(MAPID=1 
 ItemDisplay[NMAG !RW (9cl OR 9sp OR 7cl OR 7sp) (SOCK=0 OR SOCK=3) SK230=3 (SK250=3 OR (SK226=3 (SK231>0 OR SK241>0 OR SK247>0)) OR (SK231=3 (SK226>0 OR SK241>0 OR SK247>0)) OR (SK241=3 (SK231>0 OR SK226>0 OR SK247>0)) OR (SK247=3 (SK231>0 OR SK241>0 OR SK226>0)))]:%ORANGE%Plague %WHITE%%NAME%{%NAME%}%DOT-20%%PX-00%%CONTINUE%//
 
 //      (CLVL<95 OR (+1 or more to H.Wolverine, Oak Sage, Gust, Carrion Vine, Solar Creeper, Cyclone Armor, or Hurricane)) AND: (+3 to two of the following: Raven, Spirit Wolf, Dire Wolf, Grizzly)
-ItemDisplay[NMAG !RW (9cl OR 9sp OR 7cl OR 7sp) (SOCK=0 OR SOCK=3) ((CLVL<95 OR (SK236>0 OR SK226>0 OR SK370>0 OR SK231>0 OR SK250>0 OR SK235>0 OR SK241>0)) ((SK221>2 (SK237>2 OR SK227>2 OR SK247>2)) OR (SK237>2 (SK221>2 OR SK227>2 OR SK247>2)) OR (SK227>2 (SK237>2 OR SK221>2 OR SK247>2)) OR (SK247>2 (SK237>2 OR SK227>2 OR SK221>2))))]:%ORANGE%Plague %WHITE%%NAME%{%NAME%}%DOT-20%%PX-00%%CONTINUE%//
+ItemDisplay[NMAG !RW (9cl OR 9sp OR 7cl OR 7sp) (SOCK=0 OR SOCK=3) ((SK226=3 SK236=3) OR ((CLVL<95 OR (SK236>0 OR SK226>0 OR SK370>0 OR SK231>0 OR SK250>0 OR SK235>0 OR SK241>0)) ((SK221>2 (SK237>2 OR SK227>2 OR SK247>2)) OR (SK237>2 (SK221>2 OR SK227>2 OR SK247>2)) OR (SK227>2 (SK237>2 OR SK221>2 OR SK247>2)) OR (SK247>2 (SK237>2 OR SK227>2 OR SK221>2)))))]:%ORANGE%Plague %WHITE%%NAME%{%NAME%}%DOT-20%%PX-00%%CONTINUE%//
 
 // Hides nonmagical Ethereal Druid Helms after character level 30
 ItemDisplay[NMAG !RW ETH DRU DRUID CLVL>29 !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109)]:// If your character is a druid, hide all Eth nonmagical Ethereal Druid Helms after character level 29
@@ -3997,8 +3997,6 @@ ItemDisplay[wst (RARE OR CRAFT OR UNI OR SET OR MAG) SOCK=0 STAT360=0 ILVL>25]:%
 ItemDisplay[((CHEST OR HELM OR CIRC OR SHIELD) OR WEAPON) !THROWING (RARE OR CRAFT OR UNI OR SET OR MAG) ID SOCK=0]:%NAME%{%NAME%}%CONTINUE%
 
 
-ItemDisplay[ETH ID (MAG OR RARE OR SET OR UNI)]:%WHITE%Eth %NAME%{%NAME%}%CONTINUE%
-
 
 // ------------------------------------------------------------------------------
 // ===========================  Magic Charm Display =============================
@@ -4127,10 +4125,13 @@ ItemDisplay[UNI RES>9 RES<31 (cm1 OR cm2)]:%WHITE%%RES%%PURPLE%res %NAME%{%NAME%
 ItemDisplay[UNI STAT1>9 STAT1<36 (cm1 OR cm2)]:%WHITE%%STAT1%%BLUE%nrg %NAME%{%NAME%}%CONTINUE%
 // Add Vitality to Anni and Torches
 ItemDisplay[UNI STAT3>29 STAT3<86 (cm1 OR cm2)]:%WHITE%%STAT3%%RED%vit %NAME%{%NAME%}%CONTINUE%
+// Add Skills to Anni
+ItemDisplay[UNI cm1 ALLSK=1]:%WHITE%1%GOLD%allsk %NAME%{%NAME%}%CONTINUE%
+ItemDisplay[UNI cm1 ALLSK=2]:%WHITE%2%GOLD%allsk %NAME%{%NAME%}%CONTINUE%
 // Add visual flair
-ItemDisplay[UNI ID cm1]:%NAME% %RED%+%BLUE%+%PURPLE%+%ORANGE%+{%NAME%}%CONTINUE%//
-ItemDisplay[UNI ID cm2]:%NAME% %RED%+%BLUE%+%PURPLE%+{%NAME%}%CONTINUE%//
-ItemDisplay[UNI ID cm3]:%NAME% %GOLD%+%YELLOW%+%ORANGE%+{%NAME%}%CONTINUE%//
+ItemDisplay[UNI ID cm1]:%NAME% %GOLD%+%RED%+%BLUE%+%PURPLE%+%ORANGE%+{%NAME%}//
+ItemDisplay[UNI ID cm2]:%NAME% %RED%+%BLUE%+%PURPLE%+{%NAME%}//
+ItemDisplay[UNI ID cm3]:%NAME% %GOLD%+%YELLOW%+%ORANGE%+{%NAME%}//
 
 // ------------------------------------------------------------------------------
 //    ===========================  Jewels Display ===========================
@@ -4240,6 +4241,8 @@ ItemDisplay[RARE ID (aqv OR cqv)]:%CL%%YELLOW%%NAME%{%NAME%}%CONTINUE%
 ItemDisplay[(MAG OR RARE) STAT110>24 ID (aqv OR cqv)]:%WHITE%%STAT110%%DARK_GREEN%plr %NAME%{%NAME%}%CONTINUE%
 // All Resist
 ItemDisplay[(MAG OR RARE) RES>4 ID (aqv OR cqv)]:%WHITE%%RES%%PURPLE%res %NAME%{%NAME%}%CONTINUE%
+// Curse Resistance
+ItemDisplay[(MAG OR RARE) STAT360=49 STAT504>0 ID (aqv OR cqv)]:%WHITE%%STAT504%%GRAY%cr %NAME%{%NAME%}%CONTINUE%
 // - Enemy Fire Res
 ItemDisplay[(MAG OR RARE) STAT333>4 ID (aqv OR cqv)]:%WHITE%-%STAT333%%RED%%res %NAME%{%NAME%}%CONTINUE%
 // - Enemy Cold Res
@@ -4328,7 +4331,6 @@ ItemDisplay[(RARE OR CRAFT) CHEST ID STAT110>74 (LIFE>39 OR STR>14 OR DEX>14 OR 
 // Rare Circlets - PLR
 // 50-75 PLR, 40+Life/15+Str/15+Dex, 20+FCR/20+FRW/15+AllRes/3Sockets, +2-3 to Class/Tab Skills
 ItemDisplay[RARE CIRC ID STAT110>49 (LIFE>39 OR STAT216>0 OR STR>14 OR DEX>14) (FCR>19 OR FRW>19 OR RES>14 OR SOCK=3) (TABSK40>1 OR TABSK42>1 OR TABSK32>1 OR TABSK33>1 OR TABSK34>1 OR TABSK24>1 OR TABSK25>1 OR TABSK16>1 OR TABSK17>1 OR TABSK18>1 OR TABSK8>1 OR TABSK9>1 OR TABSK10>1 OR TABSK48>1 OR TABSK49>1 OR TABSK50>1 OR TABSK0>1 OR TABSK1>1 OR TABSK2>1 OR CLSK0>1 OR CLSK1>1 OR CLSK2>1 OR CLSK3>1 OR CLSK4>1 OR CLSK5>1 OR CLSK6>1)]:%NAME%{%RED%Rathma Circlet%CL%%NAME%}%CONTINUE%//
-
 
 // ------------------------------------------------------------------------------
 //     =========================  Affixes Tags Display ======================
