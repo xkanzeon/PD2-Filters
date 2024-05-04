@@ -7,7 +7,7 @@
 
  This repository should automaticaly update every hour, pulling any updates the filter authors have applied. The author pages will still be the most reliable source for current changes.
  
- [![Hourly Update](https://github.com/xkanzeon/PD2-Filters/actions/workflows/hourly.yml/badge.svg)](https://github.com/xkanzeon/PD2-Filters/actions/workflows/hourly.yml)
+ [![Hourly Update](https://github.com/xkanzeon/PD2-Filters/actions/workflows/4-hourly.yml/badge.svg)](https://github.com/xkanzeon/PD2-Filters/actions/workflows/4-hourly.yml)
 
 ## Instructions
 
