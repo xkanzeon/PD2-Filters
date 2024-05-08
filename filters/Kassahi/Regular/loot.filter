@@ -1792,7 +1792,7 @@ ItemDisplay[FILTLVL<2 MAG !ID SORCERESS (ob5 OR oba OR obf OR wst OR 8ws OR 6ws)
 ItemDisplay[FILTLVL<2 RARE !ID SORCERESS (ob5 OR oba OR obf OR wst OR 8ws OR 6ws)]: %DOT-6D%%ORANGE%+ %NAME% %ORANGE%+
 ItemDisplay[FILTLVL<2 MAG !ID AMAZON (am3 OR am8 OR amd OR am4 OR am9 OR ame OR am5 OR ama OR amf)]: %DOT-97%%ORANGE%+ %NAME% %ORANGE%+
 ItemDisplay[FILTLVL<2 RARE !ID AMAZON (am3 OR am8 OR amd OR am4 OR am9 OR ame OR am5 OR ama OR amf)]: %DOT-6D%%ORANGE%+ %NAME% %ORANGE%+
-ItemDisplay[(FILTLVL<3 OR FILTLVL=6) MAG !ID (CLUB OR DIN OR SCEPTER OR BAR OR ob5 OR oba OR obf OR wst OR 8ws OR 6ws OR am3 OR am8 OR amd OR am4 OR am9 OR ame OR am1 OR am6 OR amb OR am5 OR ama OR amf OR cqv OR aqv)]: %GRAY%+ %NAME% %GRAY%+
+ItemDisplay[(FILTLVL<3 OR FILTLVL=6) MAG !ID (CLUB OR DIN OR SCEPTER OR BAR OR ob5 OR oba OR obf OR wst OR 8ws OR 6ws OR am3 OR am8 OR amd OR am4 OR am9 OR ame OR am1 OR am6 OR amb OR am5 OR ama OR amf)]: %GRAY%+ %NAME% %GRAY%+
 ItemDisplay[(FILTLVL<3 OR FILTLVL=6) RARE !ID (CLUB OR WAND OR DIN OR SCEPTER OR SIN OR BAR OR ob5 OR oba OR obf OR wst OR 8ws OR 6ws OR am3 OR am8 OR amd OR am4 OR am9 OR ame OR am1 OR am6 OR amb OR am5 OR ama OR amf OR cqv OR aqv)]: %GRAY%+ %NAME% %GRAY%+
 ItemDisplay[(FILTLVL<3 OR FILTLVL=6) MAG !ID ((ETH SIN) OR (!ETH (ktr OR 9ar OR 7ar OR axf OR 9xf OR 7xf OR skr OR 9qr OR 7qr)))]: %GRAY%+ %NAME% %GRAY%+
 // MAGIC/RARE ITEM'S
@@ -1833,10 +1833,9 @@ ItemDisplay[MAG rin (ILVL=92 OR ILVL=93)]: %NAME% %ORANGE%C: %WHITE%70+%CONTINUE
 ItemDisplay[MAG rin (ILVL=94 OR ILVL=95)]: %NAME% %ORANGE%C: %WHITE%68+%CONTINUE%
 ItemDisplay[MAG rin (ILVL=96 OR ILVL=97)]: %NAME% %ORANGE%C: %WHITE%66+%CONTINUE%
 ItemDisplay[MAG rin (ILVL=98 OR ILVL=99)]: %NAME% %ORANGE%C: %WHITE%64+%CONTINUE%
-ItemDisplay[!(FILTLVL<4 OR FILTLVL=6 OR FILTLVL=7) MAG !ID (amu OR rin)]:
 ItemDisplay[CLVL<29 MAG !ID rin]: %MAP-97%%NAME%
 ItemDisplay[FILTLVL<2 MAG !ID amu]: %MAP-97%%NAME%
-ItemDisplay[MAG !ID (amu OR rin)]: %NAME%
+ItemDisplay[(FILTLVL<3 OR FILTLVL=6) MAG !ID (amu OR rin)]: %NAME%
 
 
 
@@ -5487,8 +5486,7 @@ ItemDisplay[NMAG SOCK=4 !INF !RW !ETH 7ws SK123=3]: %PX-84%%DOT-21%%MAP-D6%%NAME
 ItemDisplay[NMAG (SOCK=0 OR SOCK=4) !INF !RW (wsp OR 9ws OR 7ws) (SK112=3 SK113>1)]: %PX-84%%DOT-21%%MAP-D6%%NAME% %GREEN%Phoenix{%NAME%}
 ItemDisplay[NMAG SOCK=5 !INF !RW !ETH 7ws SK123=3]: %PX-84%%DOT-21%%MAP-D6%%NAME% %GREEN%Doom{%NAME%}
 ItemDisplay[NMAG (SOCK=0 OR SOCK=5) !INF !RW ETH 7ws (SK122>1 SK106>1)]: %PX-84%%DOT-21%%MAP-D6%%NAME% %GREEN%Eternity{%NAME%}
-ItemDisplay[NMAG (SOCK=0 OR SOCK=5) !INF !RW (wsp OR 9ws OR 7ws) SK116=3]: %PX-84%%DOT-21%%MAP-D6%%NAME% %GREEN%2H-Cta{%NAME%}
-ItemDisplay[NMAG (SOCK=0 OR SOCK=5) !INF !RW (wsp OR 9ws OR 7ws) SK117=3]: %PX-84%%DOT-21%%MAP-D6%%NAME% %GREEN%1H-Cta{%NAME%}
+ItemDisplay[NMAG (SOCK=0 OR SOCK=5) !INF !RW (wsp OR 9ws OR 7ws) SK117=3]: %PX-84%%DOT-21%%MAP-D6%%NAME% %GREEN%Cta{%NAME%}
 ItemDisplay[NMAG SOCK=0 !INF !RW (wsp OR 9ws OR 7ws) SK99=3]: %PX-84%%DOT-21%%MAP-D6%%NAME% %GREEN%Merc Base{%NAME%}
 ItemDisplay[NMAG SOCK=4 !INF !RW (wsp OR 9ws OR 7ws) SK99=3]: %PX-84%%DOT-21%%MAP-D6%%NAME% %GREEN%Merc Insight{%NAME%}
 ItemDisplay[NMAG SOCK=5 !INF !RW (wsp OR 9ws OR 7ws) SK99=3]: %PX-84%%DOT-21%%MAP-D6%%NAME% %GREEN%Merc Doom/Beast{%NAME%}
