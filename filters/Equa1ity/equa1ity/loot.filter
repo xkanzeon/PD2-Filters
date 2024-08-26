@@ -21,6 +21,7 @@ ItemDisplay[BOW !(amb OR 6lw OR 8lw OR lwb OR am7 OR amc OR am2) MAG !ID CLVL>85
 ItemDisplay[!ID MAG rin CLVL>85]:
 ItemDisplay[(am5 OR ama OR amf) !ID MAG !ETH CLVL>85]:
 ItemDisplay[(am5 OR ama OR amf) NMAG CLVL>60]:
+ItemDisplay[(tpfl OR tpgl OR tpcl OR tpll)]:
 
 //GLOBAL HIDE
 ItemDisplay[MAG !ID (BELT OR GLOVES OR BOOTS OR rin) CLVL>90]:
