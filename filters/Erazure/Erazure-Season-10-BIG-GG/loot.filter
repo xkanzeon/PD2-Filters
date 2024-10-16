@@ -588,7 +588,7 @@ ItemDisplay[fed QTY=1]:%DARK_GREEN%[X]  %ORANGE%Festering Essence of Destruction
 ItemDisplay[tes QTY>1]:%BLUE%[X]  %ORANGE%Twisted Essences of Suffering %TAN%x %WHITE%%QTY%  %BLUE%[X]%BORDER-8E%%MAP-97%%DOT-68%%PX-20%{%WHITE%Token of Absolution%CL%%TAN%Cube with %DARK_GREEN%[X]%YELLOW%[X]%RED%[X] %TAN%to create%NL%%NL%%BLUE%Duriel, Lord of Pain%CL%%BLUE%Andariel, Maiden of Anguish}// Twisted Essence of Suffering
 ItemDisplay[tes QTY=1]:%BLUE%[X]  %ORANGE%Twisted Essence of Suffering  %BLUE%[X]%BORDER-8E%%MAP-97%%DOT-68%%PX-20%{%WHITE%Token of Absolution%CL%%TAN%Cube with %DARK_GREEN%[X]%YELLOW%[X]%RED%[X] %TAN%to create%NL%%NL%%BLUE%Duriel, Lord of Pain%CL%%BLUE%Andariel, Maiden of Anguish}// Twisted Essence of Suffering
 
-ItemDisplay[toa]:%WHITE%I%LIGHT_GRAY%x%WHITE%[X]%LIGHT_GRAY%x%WHITE%I  %WHITE%Token of Absolution  %WHITE%I%LIGHT_GRAY%x%WHITE%[X]%LIGHT_GRAY%x%WHITE%I%MAP-20%%DOT-69%%PX-68%{%NL%%TAN%Right click to %WHITE%reset %TAN%stats and skills%NL%}// Token of Absolution
+ItemDisplay[toa]:%WHITE%I%LIGHT_GRAY%x%WHITE%[X]%LIGHT_GRAY%x%WHITE%I  %WHITE%Token of Absolution  %WHITE%I%LIGHT_GRAY%x%WHITE%[X]%LIGHT_GRAY%x%WHITE%I%MAP-20%%DOT-69%%PX-68%// Token of Absolution
 
 // =========================================  Uber Keys =========================================
 
