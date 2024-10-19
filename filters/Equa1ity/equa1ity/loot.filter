@@ -1305,6 +1305,11 @@ ItemDisplay[jew !UNI FHR>5]:%NAME%%TAN%FHR %CONTINUE%
 //☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼
 //               SEASON TRENDS               SEASON TRENDS               SEASON TRENDS               SEASON TRENDS               SEASON TRENDS               SEASON TRENDS               SEASON TRENDS               SEASON TRENDS               SEASON TRENDS               SEASON TRENDS               SEASON TRENDS
 //☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼§☼
+//s10
+ItemDisplay[NMAG SOCK=3 (POLEARM OR SPEAR OR STAFF OR BOW OR XBOW) CLVL<85]:%NAME
+ItemDisplay[NMAG 6ws]:%NAME%
+
+
 // crfb (blood craft)
 ItemDisplay[crfb]:%RED%Blood Craft Infusion%CONTINUE%{Amulet 10% FRW +[3-6] LPK +[10-20] Life%NL%Ring +[5-10] Str [1-3]% LL +[10-20] Life%NL%Belt [10-20]% Open Wounds [3-6]% LL +[10-20] Life%NL%Gloves [5-10]% Crushing Blow [2-4]% LL +[10-20] Life%NL%Boots Rep Life +[15-30] [2-4]%LL +[10-20] Life%NL%Helm [10-20]% Crushing Blow [2-4]% LL +[10-20] Life%NL%Chest +[3-6] LPK [3-6]% LL +[20-40] Life%NL%Shield [10-20]% Block [3-6]% LL +[10-20] Life%NL%Weapon +[50-80]% EDmg [3-6]% LL +[10-20] Life%NL%%RED%Blood Craft Infusion %WHITE%+ %BLUE%Item %WHITE%= %ORANGE%Craft}
 // crfc (caster craft)
@@ -1674,7 +1679,7 @@ ItemDisplay[xng !RW NMAG SOCK=0 CLVL>5]:
 ItemDisplay[xng !RW NMAG SOCK>1 CLVL>70]:
 
 // Diamond Mail 	
-ItemDisplay[ung UNI !ID]:%GOLD% %NAME% %CONTINUE%
+ItemDisplay[ung UNI !ID]:%GOLD% Wraithskin %CONTINUE%
 ItemDisplay[ung !ID MAG CLVL>55]:
 ItemDisplay[ung !ID RARE CLVL>65 ILVL<85]:
 ItemDisplay[ung !RW NMAG SOCK=0 CLVL>5]:
@@ -1976,7 +1981,7 @@ ItemDisplay[xrg !RW NMAG SOCK=0 CLVL>25]:
 ItemDisplay[xrg !RW NMAG SOCK>1 CLVL>65]:
 
 // Hyperion
-ItemDisplay[urg UNI !ID]:%GOLD% %NAME% %CONTINUE%
+ItemDisplay[urg UNI !ID]:%GOLD% Twilight Reflection %CONTINUE%
 ItemDisplay[urg !ID MAG CLVL>85]:
 ItemDisplay[urg !ID RARE CLVL>85 ILVL<85]:
 ItemDisplay[urg !RW NMAG SOCK=0 CLVL>25]:
@@ -2111,7 +2116,7 @@ ItemDisplay[xlg !ID RARE]:%NAME%
 ItemDisplay[xlg !RW NMAG CLVL>5]:
 
 // Bramble Mitts 
-ItemDisplay[ulg UNI !ID]:%GOLD% %NAME% %CONTINUE%
+ItemDisplay[ulg UNI !ID]:%GOLD% Titans Grip %CONTINUE%
 ItemDisplay[ulg !ID MAG CLVL>60 ILVL<85]:
 ItemDisplay[ulg !ID RARE]:%NAME%
 ItemDisplay[ulg !RW NMAG CLVL>5]:
@@ -2560,7 +2565,7 @@ ItemDisplay[dr7 !RW NMAG SOCK=0 CLVL>5 ED<1]:
 ItemDisplay[dr7 !RW NMAG SOCK>1 CLVL>80 ED<1]:
 ItemDisplay[dr7 !RW NMAG (SOCK=0 OR SOCK=3) ED>0]:%NAME%
 
-ItemDisplay[drc UNI !ID]:%GOLD% %NAME% %CONTINUE%
+ItemDisplay[drc UNI !ID]:%GOLD% Denmother %CONTINUE%
 ItemDisplay[drc !ID MAG CLVL>85 ILVL<85]:
 ItemDisplay[drc !ID RARE CLVL>85 ILVL<85]:
 ItemDisplay[drc !RW NMAG SOCK=0 CLVL>5 ED<1]:
@@ -2888,7 +2893,7 @@ ItemDisplay[am7 NMAG !RW SOCK=0 CLVL<5]:
 ItemDisplay[am7 NMAG !RW SOCK>1 CLVL<80]:%NAME%
 ItemDisplay[am7 NMAG !RW SOCK>1 CLVL>79]:
 
-ItemDisplay[amc UNI !ID]:%GOLD% %NAME% %CONTINUE%
+ItemDisplay[amc UNI !ID]:%GOLD% Ebonbane %CONTINUE%
 ItemDisplay[amc !ID MAG CLVL>60 ILVL<85]:
 ItemDisplay[amc !ID RARE CLVL>60 ILVL<85]:
 ItemDisplay[amc NMAG !RW SOCK=0 CLVL<5]:
@@ -3745,7 +3750,7 @@ ItemDisplay[9di !ID RARE CLVL>55]:
 ItemDisplay[9di !RW NMAG SOCK>1 CLVL>40]:
 ItemDisplay[9di !RW NMAG SOCK=0 CLVL>5]:
 
-ItemDisplay[7di UNI !ID]:%GOLD% %NAME% %CONTINUE%
+ItemDisplay[7di UNI !ID]:%GOLD% Shatterblade %CONTINUE%
 ItemDisplay[7di !ID MAG CLVL>60]:
 ItemDisplay[7di !ID RARE CLVL>75]:
 ItemDisplay[7di !RW NMAG SOCK>1 CLVL>60]:
@@ -5494,7 +5499,7 @@ ItemDisplay[UNI !ID (8mx)]:%BORDER-9B%%RED%<%PURPLE%*%RED%><%PURPLE%*%RED%><%PUR
 ItemDisplay[UNI !ID CLVL<60 (bld OR 9dg OR 9di OR kri)]:%BORDER-0E%%GREEN%<%ORANGE%*%GREEN%> <%ORANGE%*%GREEN%> <%ORANGE%*%GREEN%> %GOLD%%NAME% %GREEN%<%ORANGE%*%GREEN%> <%ORANGE%*%GREEN%> <%ORANGE%*%GREEN%>
 
 //Mid Uniquess
-ItemDisplay[UNI !ID (dgr OR 9kr OR 9bl OR 7bl OR 7dg)]:%BORDER-0E%%GREEN%<%ORANGE%*%GREEN%> <%ORANGE%*%GREEN%> <%ORANGE%*%GREEN%> %GOLD%%NAME% %GREEN%<%ORANGE%*%GREEN%> <%ORANGE%*%GREEN%> <%ORANGE%*%GREEN%>
+ItemDisplay[UNI !ID (dgr OR 9kr OR 9bl OR 7bl OR 7dg OR 7di OR urg OR ulg OR ung OR drc OR amb)]:%BORDER-0E%%GREEN%<%ORANGE%*%GREEN%> <%ORANGE%*%GREEN%> <%ORANGE%*%GREEN%> %GOLD%%NAME% %GREEN%<%ORANGE%*%GREEN%> <%ORANGE%*%GREEN%> <%ORANGE%*%GREEN%>
 
 //Non Eth Mid Uniq
 ItemDisplay[UNI !ETH !ID (7kr)]:%BORDER-0E%%GREEN%<%ORANGE%*%GREEN%> <%ORANGE%*%GREEN%> <%ORANGE%*%GREEN%> %GOLD%%NAME% %GREEN%<%ORANGE%*%GREEN%> <%ORANGE%*%GREEN%> <%ORANGE%*%GREEN%>
@@ -5630,10 +5635,10 @@ ItemDisplay[UNI ETH !ID (7bk OR 7ta OR 7b8)]:%BORDER-9B%%RED%<%PURPLE%*%RED%><%P
 ItemDisplay[UNI !ID CLVL<80 (wnd OR ywn OR bwn OR 9wn OR 9yw)]:%BORDER-0E%%GREEN%<%ORANGE%*%GREEN%> <%ORANGE%*%GREEN%> <%ORANGE%*%GREEN%> %GOLD%%NAME% %GREEN%<%ORANGE%*%GREEN%> <%ORANGE%*%GREEN%> <%ORANGE%*%GREEN%>
 
 //Mid Uniquess
-ItemDisplay[UNI !ID (7bw OR 9gw OR 9bw)]:%BORDER-0E%%GREEN%<%ORANGE%*%GREEN%> <%ORANGE%*%GREEN%> <%ORANGE%*%GREEN%> %GOLD%%NAME% %GREEN%<%ORANGE%*%GREEN%> <%ORANGE%*%GREEN%> <%ORANGE%*%GREEN%>
+ItemDisplay[UNI !ID (9gw OR 9bw)]:%BORDER-0E%%GREEN%<%ORANGE%*%GREEN%> <%ORANGE%*%GREEN%> <%ORANGE%*%GREEN%> %GOLD%%NAME% %GREEN%<%ORANGE%*%GREEN%> <%ORANGE%*%GREEN%> <%ORANGE%*%GREEN%>
 
 //High Uniques
-ItemDisplay[UNI !ID (7gw)]:%BORDER-9B%%RED%<%PURPLE%*%RED%><%PURPLE%*%RED%><%PURPLE%*%RED%> %ORANGE%*+* %GOLD%%NAME% %ORANGE%*+* %RED%<%PURPLE%*%RED%><%PURPLE%*%RED%><%PURPLE%*%RED%>
+ItemDisplay[UNI !ID (7gw OR 7bw)]:%BORDER-9B%%RED%<%PURPLE%*%RED%><%PURPLE%*%RED%><%PURPLE%*%RED%> %ORANGE%*+* %GOLD%%NAME% %ORANGE%*+* %RED%<%PURPLE%*%RED%><%PURPLE%*%RED%><%PURPLE%*%RED%>
 
 // """
 // Index(10)

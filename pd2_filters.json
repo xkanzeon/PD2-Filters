@@ -70,11 +70,6 @@
                     "download_url": "https://raw.githubusercontent.com/Equa1ityPe4ce/Equa1ityPD2Filter/main/equa1ity.filter"
                 },
                 {
-                    "name": "equa1ityDarkMode.filter",
-                    "url": "https://api.github.com/repos/Equa1ityPe4ce/Equa1ityPD2Filter/contents/equa1ityDarkMode.filter?ref=main",
-                    "download_url": "https://raw.githubusercontent.com/Equa1ityPe4ce/Equa1ityPD2Filter/main/equa1ityDarkMode.filter"
-                },
-                {
                     "name": "equa1ityNoPotions.filter",
                     "url": "https://api.github.com/repos/Equa1ityPe4ce/Equa1ityPD2Filter/contents/equa1ityNoPotions.filter?ref=main",
                     "download_url": "https://raw.githubusercontent.com/Equa1ityPe4ce/Equa1ityPD2Filter/main/equa1ityNoPotions.filter"
