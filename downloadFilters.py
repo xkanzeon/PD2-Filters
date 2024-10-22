@@ -41,6 +41,8 @@ if authorsData:
                     Path(Path(__file__).parent / "filters" / authorName / filterName).mkdir(parents=True, exist_ok=True)
                     with open(Path(__file__).parent / "filters" / authorName / filterName / "loot.filter", "wb") as filter:
                         filter.write(filterText)
+                    with open(Path(__file__).parent / "filters" / "local" / authorName + "-" + filterName + ".filter", "wb") as filter:
+                        filter.write(filterText)
 
     jsonData = json.dumps(sorted(masterFilterList.items()), indent=4)
     with open("pd2_filters.json", "w") as j:
