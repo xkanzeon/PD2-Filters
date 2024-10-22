@@ -1,8 +1,19 @@
-// DAURACUL's LOOT FILTER Season 10.1
-// Last updated: 10/18/24
+// DAURACUL'S LOOT FILTER Season 10.2
+// Last updated: 10/21/24
+// For any bug reports/feedback contact @Dauracul in the PD2 Discord #lootfilter channel
+
+// 10.2
+// Corrected Demon Road and Skovos Stronghold to properly display Catalyzed descriptions
+// Reworked display of Upgrade recipes and Socket recipes in item descriptions
+// Added Zenith Runeword to 2H Swords
+
+// 10.1
 // Added Details to PvP Charms / Potions
 // Added Purity and Rapture Runeword recipes to socketed bases
 // Added immunity notes to new maps Skovos Stronghold and Demon Road
+// S10 Uber materials will be added in a future update once discovered
+
+
 
 // Filter Tier Names
 ItemDisplayFilterName[]:Low Runeword Notes
@@ -55,7 +66,7 @@ ItemDisplay[hp4 CLVL>30 !SHOP]:
 ItemDisplay[mp4 CLVL>30 !SHOP]:
 
 // Release Notes on Identify Scrolls (in Town at Vendors)
-ItemDisplay[isc SHOP]: %NAME%{%NAME%%BLUE%wiki.projectdiablo2.com%NL%%NL%%DARK_GREEN%For full Season 10 patch notes, visit the Project Diablo 2 Wiki:%NL%Updated %RED%Season 10: Desecration %DARK_GREEN%items, changes, and values.%NL%Last Updated 10-18-2024:%NL%%NL%%ORANGE%filter level keys in settings for easy access.%NL%I highly recommend binding the Increase and Decrease%NL%runeword recipes on weapon and armor bases.%NL%Use the filter levels in settings to display%NL%%NL%%GOLD%Dauracul's PD2 Loot Filter}
+ItemDisplay[isc SHOP]: %NAME%{%NAME%%BLUE%wiki.projectdiablo2.com%NL%%NL%%DARK_GREEN%For full Season 10 patch notes, visit the Project Diablo 2 Wiki:%NL%Updated %RED%Season 10: Desecration %DARK_GREEN%items, changes, and values.%NL%Last Updated 10-21-2024:%NL%%NL%%ORANGE%the PD2 Discord #lootfilter channel.%NL%For any bug reports or feedback, contact @Dauracul in%NL%runeword recipes on weapon and armor bases.%NL%Use the filter levels in settings to display%NL%%NL%%GOLD%Dauracul's PD2 Loot Filter %RED%v10.2}
 
 // Superior Tag on Bases
 
@@ -484,16 +495,6 @@ ItemDisplay[SUP NMAG ned !RW]: %BLUE%Sup %GRAY%Overseer Skull%CONTINUE%
 ItemDisplay[SUP NMAG nee !RW]: %BLUE%Sup %GRAY%Succubus Skull%CONTINUE%
 ItemDisplay[SUP NMAG nef !RW]: %BLUE%Sup %GRAY%Bloodlord Skull%CONTINUE%
 
-// Tags for Normal, Exceptional, Elite Bases
-ItemDisplay[NORM !RW NMAG]: %NAME%%TAN%¹%CONTINUE%
-ItemDisplay[EXC !RW NMAG]: %NAME%%TAN%²%CONTINUE%
-ItemDisplay[ELT !RW NMAG]: %NAME%%TAN%³%CONTINUE%
-
-// Tags for Normal, Exceptional, Elite Bases on Magic+ Quality
-ItemDisplay[NORM !RW (MAG OR RARE OR CRAFT)]: %NAME%%TAN%¹%CONTINUE%
-ItemDisplay[EXC !RW (MAG OR RARE OR CRAFT)]: %NAME%%TAN%²%CONTINUE%
-ItemDisplay[ELT !RW (MAG OR RARE OR CRAFT)]: %NAME%%TAN%³%CONTINUE%
-
 // Show me Enhanced Damage value on Superior Weapons
 ItemDisplay[SUP NMAG WEAPON ED=5]: %GRAY%(%RED%5%%GRAY%) %NAME%%CONTINUE%
 ItemDisplay[SUP NMAG WEAPON ED=6]: %GRAY%(%RED%6%%GRAY%) %NAME%%CONTINUE%
@@ -731,7 +732,7 @@ ItemDisplay[rrra]: %TEAL%Infused Horadrim Orb
 //ItemDisplay[iwss]: %NAME%{%NAME%%BLUE%Map Contains a Random Event%NL%%WHITE%Transmute with a %ORANGE%Map %WHITE%to add %ORANGE%Catalyzed}%CONTINUE%
 
 // Map has Random Event applied (Catalyst Shard)
-ItemDisplay[(t11 OR t12 OR t13 OR t14 OR t15 OR t16 OR t21 OR t22 OR t23 OR t24 OR t25 OR t26 OR t31 OR t32 OR t33 OR t34 OR t35 OR t36 OR t37 OR t38 OR t39 OR t3a OR t51 OR t52 OR t53) STAT500>0]: %NAME%{%NAME%%PURPLE%Catalyzed%NL%}%CONTINUE%
+ItemDisplay[(t11 OR t12 OR t13 OR t14 OR t15 OR t16 OR t21 OR t22 OR t23 OR t24 OR t25 OR t26 OR t27 OR t28 OR t31 OR t32 OR t33 OR t34 OR t35 OR t36 OR t37 OR t38 OR t39 OR t3a OR t51 OR t52 OR t53) STAT500>0]: %NAME%{%NAME%%PURPLE%Catalyzed%NL%}%CONTINUE%
 
 // Immunes on Maps
 // Display order should be: Physical Magic Fire Lightning Cold Poison 
@@ -842,28 +843,6 @@ ItemDisplay[SET !ID NORM CLVL<45]: %BORDER-84%%GREEN%%NAME%%CONTINUE%
 
 //Demon Machine 
 //ItemDisplay[UNI ((8rx OR 6rx) AND MULTI155,492>0) FILTLVL=4]: //unused, only for testing reanimate with MULTI
-
-
-
-
-// Upgrade Recipes
-ItemDisplay[SET ARMOR NORM !BOOTS ID]: %NAME%{%NAME%%LIGHT_GRAY%PDiamond%WHITE% to upgrade to %TAN%Exceptional%NL%%WHITE%Transmute with %ORANGE%Tal %WHITE%+ %ORANGE%Shael %WHITE%+}%CONTINUE%
-ItemDisplay[SET ARMOR EXC !BOOTS ID]: %NAME%{%NAME%%LIGHT_GRAY%PDiamond%WHITE% to upgrade to %TAN%Elite%NL%%WHITE%Transmute with %ORANGE%Ko %WHITE%+ %ORANGE%Lem %WHITE%+}%CONTINUE%
-
-ItemDisplay[SET BOOTS NORM ID !ASSASSIN]: %NAME%{%NAME%%LIGHT_GRAY%PDiamond%WHITE% to upgrade to %TAN%Exceptional%NL%%WHITE%Transmute with %ORANGE%Tal %WHITE%+ %ORANGE%Shael %WHITE%+}%CONTINUE%
-ItemDisplay[SET BOOTS EXC ID !ASSASSIN]: %NAME%{%NAME%%LIGHT_GRAY%PDiamond%WHITE% to upgrade to %TAN%Elite%NL%%WHITE%Transmute with %ORANGE%Ko %WHITE%+ %ORANGE%Lem %WHITE%+}%CONTINUE%
-ItemDisplay[SET BOOTS NORM ID ASSASSIN]: %NAME%{%NAME%%LIGHT_GRAY%PDiamond%WHITE% to upgrade to %TAN%Exceptional%NL%%WHITE%Transmute with %ORANGE%Tal %WHITE%+ %ORANGE%Shael %WHITE%+%NL%}%CONTINUE%
-ItemDisplay[SET BOOTS EXC ID ASSASSIN]: %NAME%{%NAME%%LIGHT_GRAY%PDiamond%WHITE% to upgrade to %TAN%Elite%NL%%WHITE%Transmute with %ORANGE%Ko %WHITE%+ %ORANGE%Lem %WHITE%+%NL%}%CONTINUE%
-
-ItemDisplay[UNI ARMOR NORM ID]: %NAME%{%NAME%%LIGHT_GRAY%PDiamond%WHITE% to upgrade to %TAN%Exceptional%NL%%WHITE%Transmute with %ORANGE%Tal %WHITE%+ %ORANGE%Shael %WHITE%+}%CONTINUE%
-ItemDisplay[UNI ARMOR EXC ID]: %NAME%{%NAME%%LIGHT_GRAY%PDiamond%WHITE% to upgrade to %TAN%Elite%NL%%WHITE%Transmute with %ORANGE%Ko %WHITE%+ %ORANGE%Lem %WHITE%+}%CONTINUE%
-ItemDisplay[(SET OR UNI) WEAPON NORM ID]: %NAME%{%NAME%%GREEN%PEmerald%WHITE% to upgrade to %TAN%Exceptional%NL%%WHITE%Transmute with %ORANGE%Ral %WHITE%+ %ORANGE%Sol %WHITE%+%NL%}%CONTINUE%
-ItemDisplay[(SET OR UNI) WEAPON EXC ID]: %NAME%{%NAME%%GREEN%PEmerald%WHITE% to upgrade to %TAN%Elite%NL%%WHITE%Transmute with %ORANGE%Lum %WHITE%+ %ORANGE%Pul %WHITE%+%NL%}%CONTINUE%
-
-ItemDisplay[(RARE OR CRAFT) ARMOR NORM ID]: %NAME%{%NAME%%PURPLE%PAmethyst%WHITE% to upgrade to %TAN%Exceptional%NL%%WHITE%Transmute with %ORANGE%Ral %WHITE%+ %ORANGE%Thul %WHITE%+}%CONTINUE%
-ItemDisplay[(RARE OR CRAFT) ARMOR EXC ID]: %NAME%{%NAME%%PURPLE%PAmethyst%WHITE% to upgrade to %TAN%Elite%NL%%WHITE%Transmute with %ORANGE%Ko %WHITE%+ %ORANGE%Pul %WHITE%+}%CONTINUE%
-ItemDisplay[(RARE OR CRAFT) WEAPON NORM ID]: %NAME%{%NAME%%BLUE%PSapphire%WHITE% to upgrade to %TAN%Exceptional%NL%%WHITE%Transmute with %ORANGE%Ort %WHITE%+ %ORANGE%Amn %WHITE%+%NL%}%CONTINUE%
-ItemDisplay[(RARE OR CRAFT) WEAPON EXC ID]: %NAME%{%NAME%%BLUE%PSapphire%WHITE% to upgrade to %TAN%Elite%NL%%WHITE%Transmute with %ORANGE%Fal %WHITE%+ %ORANGE%Um %WHITE%+%NL%}%CONTINUE%
 
 
 
@@ -1285,23 +1264,6 @@ ItemDisplay[NMAG SOCK=0 !RW (SK221>0 OR SK222>0 OR SK223>0 OR SK224>0 OR SK225>0
 ItemDisplay[NMAG SOCK>1 !RW (SK221>0 OR SK222>0 OR SK223>0 OR SK224>0 OR SK225>0 OR SK226>0 OR SK227>0 OR SK228>0 OR SK229>0 OR SK230>0 OR SK231>0 OR SK232>0 OR SK233>0 OR SK234>0 OR SK235>0 OR SK236>0 OR SK237>0 OR SK238>0 OR SK239>0 OR SK240>0 OR SK241>0 OR SK242>0 OR SK243>0 OR SK244>0 OR SK245>0 OR SK246>0 OR SK247>0 OR SK248>0 OR SK249>0 OR SK250>0 OR SK370>0)]: %GRAY%(%NAME%{%NAME%}%CONTINUE%
 
 // [=|| ASSASSIN ||=]
-
-// Show me Kick Damage on Set Boots (Assassin Only) - Updated for S5 Damage
-ItemDisplay[lbt SET ASSASSIN]: %NAME%{%NAME%%WHITE%Kick Damage: 3 to 8}%CONTINUE%
-ItemDisplay[vbt SET ASSASSIN]: %NAME%{%NAME%%WHITE%Kick Damage: 4 to 12}%CONTINUE%
-ItemDisplay[mbt SET ASSASSIN]: %NAME%{%NAME%%WHITE%Kick Damage: 6 to 14}%CONTINUE%
-ItemDisplay[tbt SET ASSASSIN]: %NAME%{%NAME%%WHITE%Kick Damage: 8 to 18}%CONTINUE%
-ItemDisplay[hbt SET ASSASSIN]: %NAME%{%NAME%%WHITE%Kick Damage: 10 to 20}%CONTINUE%
-ItemDisplay[xlb SET ASSASSIN]: %NAME%{%NAME%%WHITE%Kick Damage: 30 to 64}%CONTINUE%
-ItemDisplay[xvb SET ASSASSIN]: %NAME%{%NAME%%WHITE%Kick Damage: 32 to 72}%CONTINUE%
-ItemDisplay[xmb SET ASSASSIN]: %NAME%{%NAME%%WHITE%Kick Damage: 35 to 78}%CONTINUE%
-ItemDisplay[xtb SET ASSASSIN]: %NAME%{%NAME%%WHITE%Kick Damage: 42 to 84}%CONTINUE%
-ItemDisplay[xhb SET ASSASSIN]: %NAME%{%NAME%%WHITE%Kick Damage: 45 to 90}%CONTINUE%
-ItemDisplay[ulb SET ASSASSIN]: %NAME%{%NAME%%WHITE%Kick Damage: 75 to 100}%CONTINUE%
-ItemDisplay[uvb SET ASSASSIN]: %NAME%{%NAME%%WHITE%Kick Damage: 70 to 110}%CONTINUE%
-ItemDisplay[umb SET ASSASSIN]: %NAME%{%NAME%%WHITE%Kick Damage: 80 to 125}%CONTINUE%
-ItemDisplay[utb SET ASSASSIN]: %NAME%{%NAME%%WHITE%Kick Damage: 69 to 147}%CONTINUE%
-ItemDisplay[uhb SET ASSASSIN]: %NAME%{%NAME%%WHITE%Kick Damage: 83 to 155}%CONTINUE%
 
 // Prepare Staffmod text to drop to new line
 ItemDisplay[NMAG SOCK=0 !RW (SK251>0 OR SK252>0 OR SK253>0 OR SK254>0 OR SK255>0 OR SK256>0 OR SK257>0 OR SK258>0 OR SK259>0 OR SK260>0 OR SK261>0 OR SK262>0 OR SK263>0 OR SK264>0 OR SK265>0 OR SK266>0 OR SK267>0 OR SK268>0 OR SK269>0 OR SK270>0 OR SK271>0 OR SK272>0 OR SK273>0 OR SK274>0 OR SK275>0 OR SK276>0 OR SK277>0 OR SK278>0 OR SK279>0 OR SK280>0 OR SK366>0)]: %NL%%NAME%{%NAME%}%CONTINUE%
@@ -3401,8 +3363,8 @@ ItemDisplay[NMAG SOCK=0 !RW (TABSK2>0 OR TABSK0>0)]: %NL%%NAME%{%NAME%}%CONTINUE
 ItemDisplay[NMAG SOCK>1 !RW (TABSK2>0 OR TABSK0>0)]: %NL%%NAME%{%NAME%}%CONTINUE%
 
 // Closing brackets on Amazon Weapons with Staffmods
-ItemDisplay[NMAG SOCK=0 !RW (TABSK2>0 OR TABSK0>0)]: %GRAY%)%NAME%{%NAME%}%CONTINUE%
-ItemDisplay[NMAG SOCK>1 !RW (TABSK2>0 OR TABSK0>0)]: %GRAY%)%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[NMAG SOCK=0 !RW (TABSK2>0 OR TABSK0>0)]: %GRAY%) %NAME%{%NAME%}%CONTINUE%
+ItemDisplay[NMAG SOCK>1 !RW (TABSK2>0 OR TABSK0>0)]: %GRAY%) %NAME%{%NAME%}%CONTINUE%
 
 // Amazon Weapons with Bow and Crossbow
 ItemDisplay[NMAG SOCK=0 !RW TABSK0=1]: %DARK_GREEN%+1%TAN%bow%NAME%{%NAME%}%CONTINUE%
@@ -3432,16 +3394,6 @@ ItemDisplay[NMAG SOCK>1 !RW (TABSK2>0 OR TABSK0>0)]: %GRAY%(%NAME%{%NAME%}%CONTI
 
 // [=|| MISC ||=]
 
-
-// Cube Recipes to add Sockets
-
-ItemDisplay[NMAG CHEST SOCK=0 !SUP]: %NAME%{%NAME%%YELLOW%PTopaz %WHITE%to add Sockets%NL%%WHITE%Transmute with %ORANGE%Tal %WHITE%+ %ORANGE%Thul %WHITE%+}%CONTINUE%
-
-ItemDisplay[NMAG HELM SOCK=0 !SUP]: %NAME%{%NAME%%BLUE%PSapphire %WHITE%to add Sockets%NL%%WHITE%Transmute with %ORANGE%Ral %WHITE%+ %ORANGE%Thul %WHITE%+}%CONTINUE%
-
-ItemDisplay[NMAG SHIELD SOCK=0 !SUP]: %NAME%{%NAME%%RED%PRuby %WHITE%to add Sockets%NL%%WHITE%Transmute with %ORANGE%Tal %WHITE%+ %ORANGE%Amn %WHITE%+}%CONTINUE%
-
-ItemDisplay[NMAG WEAPON !THROWING SOCK=0 !SUP]: %NAME%{%NAME%%PURPLE%PAmethyst %WHITE%to add Sockets%NL%%WHITE%Transmute with %ORANGE%Ral %WHITE%+ %ORANGE%Amn %WHITE%+%NL%}%CONTINUE%
 
 // RUNEWORD REWORK
 
@@ -3681,6 +3633,9 @@ ItemDisplay[NMAG SWORD SOCK=6 !RW CLVL<69 (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NA
 ItemDisplay[NMAG SWORD SOCK=6 !RW CLVL>68 (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NAME%%TAN%Breath of the Dying: %ORANGE%Vex Hel El Eld Zod Eth%NL%}%CONTINUE%
 
 // Two-Handed Swords
+
+ItemDisplay[NMAG (gsd OR 9gd OR 7gd) SOCK=5 !RW CLVL<69 (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NAME%%RED%Zenith: Jah Zod Ort Thul Ral (Level 69)%NL%}%CONTINUE%
+ItemDisplay[NMAG (gsd OR 9gd OR 7gd) SOCK=5 !RW CLVL>68 (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NAME%%TAN%Zenith: %ORANGE%Jah Zod Ort Thul Ral%NL%}%CONTINUE%
 
 ItemDisplay[NMAG (gsd OR 9gd OR 7gd) SOCK=6 !RW CLVL<67 (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NAME%%RED%Asylum: Gul Cham Hel Jah Dol Um (Level 67)%NL%}%CONTINUE%
 ItemDisplay[NMAG (gsd OR 9gd OR 7gd) SOCK=6 !RW CLVL>66 (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NAME%%TAN%Asylum: %ORANGE%Gul Cham Hel Jah Dol Um%NL%}%CONTINUE%
@@ -4260,26 +4215,84 @@ ItemDisplay[NMAG (WP9 OR WP10) !RW SOCK=6 (FILTLVL>0 AND FILTLVL<2)]: %NAME%{%NA
 ItemDisplay[NMAG (WP9 OR WP10) !RW SOCK=6 (FILTLVL>1 AND FILTLVL<3)]: %NAME%{%NAME%%RED%None (Incorrect Sockets, Change Filter Level)%NL%%WHITE%Runewords:%NL%%WHITE%Filter Level: 2 (Mid Runewords)%NL%}%CONTINUE%
 ItemDisplay[NMAG (WP9 OR WP10) !RW SOCK=6 (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NAME%%WHITE%Runewords:%NL%%WHITE%Filter Level: 3 (High Runewords)%NL%}%CONTINUE%
 
-ItemDisplay[NMAG HELM !RW SOCK>1 (FILTLVL>0 AND FILTLVL<2)]: %NAME%{%NAME%%WHITE%Runewords:%NL%%WHITE%Filter Level: 1 (Low Runewords)}%CONTINUE%
-ItemDisplay[NMAG HELM !RW (SOCK>1 AND SOCK<3) (FILTLVL>1 AND FILTLVL<3)]: %NAME%{%NAME%%RED%None (Incorrect Sockets, Change Filter Level)%NL%%WHITE%Runewords:%NL%%WHITE%Filter Level: 2 (Mid Runewords)}%CONTINUE%
-ItemDisplay[NMAG HELM !RW SOCK>2 (FILTLVL>1 AND FILTLVL<3)]: %NAME%{%NAME%%WHITE%Runewords:%NL%%WHITE%Filter Level: 2 (Mid Runewords)}%CONTINUE%
-ItemDisplay[NMAG HELM !RW (SOCK>1 AND SOCK<3) (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NAME%%RED%None (Incorrect Sockets, Change Filter Lvl)%NL%%WHITE%Runewords:%NL%%WHITE%Filter Level: 3 (High Runewords)}%CONTINUE%
-ItemDisplay[NMAG HELM !RW SOCK>2 (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NAME%%WHITE%Runewords:%NL%%WHITE%Filter Level: 3 (High Runewords)}%CONTINUE%
+ItemDisplay[NMAG HELM !RW SOCK>1 (FILTLVL>0 AND FILTLVL<2)]: %NAME%{%NAME%%WHITE%Runewords:%NL%%WHITE%Filter Level: 1 (Low Runewords)%CL%}%CONTINUE%
+ItemDisplay[NMAG HELM !RW (SOCK>1 AND SOCK<3) (FILTLVL>1 AND FILTLVL<3)]: %NAME%{%NAME%%RED%None (Incorrect Sockets, Change Filter Level)%NL%%WHITE%Runewords:%NL%%WHITE%Filter Level: 2 (Mid Runewords)%CL%}%CONTINUE%
+ItemDisplay[NMAG HELM !RW SOCK>2 (FILTLVL>1 AND FILTLVL<3)]: %NAME%{%NAME%%WHITE%Runewords:%NL%%WHITE%Filter Level: 2 (Mid Runewords)%CL%}%CONTINUE%
+ItemDisplay[NMAG HELM !RW (SOCK>1 AND SOCK<3) (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NAME%%RED%None (Incorrect Sockets, Change Filter Lvl)%NL%%WHITE%Runewords:%NL%%WHITE%Filter Level: 3 (High Runewords)%CL%}%CONTINUE%
+ItemDisplay[NMAG HELM !RW SOCK>2 (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NAME%%WHITE%Runewords:%NL%%WHITE%Filter Level: 3 (High Runewords)%CL%}%CONTINUE%
 
-ItemDisplay[NMAG CHEST !RW (SOCK>1 AND SOCK<4) (FILTLVL>0 AND FILTLVL<2)]: %NAME%{%NAME%%WHITE%Runewords:%NL%%WHITE%Filter Level: 1 (Low Runewords)}%CONTINUE%
-ItemDisplay[NMAG CHEST !RW (SOCK>1 AND SOCK<3) (FILTLVL>1 AND FILTLVL<3)]: %NAME%{%NAME%%RED%None (Incorrect Sockets, Change Filter Level)%NL%%WHITE%Runewords:%NL%%WHITE%Filter Level: 2 (Mid Runewords)}%CONTINUE%
-ItemDisplay[NMAG CHEST !RW (SOCK>3 AND SOCK<5) (FILTLVL>0 AND FILTLVL<2)]: %NAME%{%NAME%%RED%None (Incorrect Sockets, Change Filter Lvl)%NL%%WHITE%Runewords:%NL%%WHITE%Filter Level: 1 (Low Runewords)}%CONTINUE%
-ItemDisplay[NMAG CHEST !RW SOCK>2 (FILTLVL>1 AND FILTLVL<3)]: %NAME%{%NAME%%WHITE%Runewords:%NL%%WHITE%Filter Level: 2 (Mid Runewords)}%CONTINUE%
-ItemDisplay[NMAG CHEST !RW SOCK=2 (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NAME%%WHITE%Runewords:%NL%%WHITE%Filter Level: 3 (High Runewords)}%CONTINUE%
-ItemDisplay[NMAG CHEST !RW SOCK>2 (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NAME%%WHITE%Runewords:%NL%%WHITE%Filter Level: 3 (High Runewords)}%CONTINUE%
+ItemDisplay[NMAG CHEST !RW (SOCK>1 AND SOCK<4) (FILTLVL>0 AND FILTLVL<2)]: %NAME%{%NAME%%WHITE%Runewords:%NL%%WHITE%Filter Level: 1 (Low Runewords)%CL%}%CONTINUE%
+ItemDisplay[NMAG CHEST !RW (SOCK>1 AND SOCK<3) (FILTLVL>1 AND FILTLVL<3)]: %NAME%{%NAME%%RED%None (Incorrect Sockets, Change Filter Level)%NL%%WHITE%Runewords:%NL%%WHITE%Filter Level: 2 (Mid Runewords)%CL%}%CONTINUE%
+ItemDisplay[NMAG CHEST !RW (SOCK>3 AND SOCK<5) (FILTLVL>0 AND FILTLVL<2)]: %NAME%{%NAME%%RED%None (Incorrect Sockets, Change Filter Lvl)%NL%%WHITE%Runewords:%NL%%WHITE%Filter Level: 1 (Low Runewords)%CL%}%CONTINUE%
+ItemDisplay[NMAG CHEST !RW SOCK>2 (FILTLVL>1 AND FILTLVL<3)]: %NAME%{%NAME%%WHITE%Runewords:%NL%%WHITE%Filter Level: 2 (Mid Runewords)%CL%}%CONTINUE%
+ItemDisplay[NMAG CHEST !RW SOCK=2 (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NAME%%WHITE%Runewords:%NL%%WHITE%Filter Level: 3 (High Runewords)%CL%}%CONTINUE%
+ItemDisplay[NMAG CHEST !RW SOCK>2 (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NAME%%WHITE%Runewords:%NL%%WHITE%Filter Level: 3 (High Runewords)%CL%}%CONTINUE%
 
-ItemDisplay[NMAG SHIELD !RW SOCK>1 (FILTLVL>0 AND FILTLVL<2)]: %NAME%{%NAME%%WHITE%Runewords:%NL%%WHITE%Filter Level: 1 (Low Runewords)}%CONTINUE%
-ItemDisplay[NMAG SHIELD !RW (SOCK=2) (FILTLVL>1 AND FILTLVL<3)]: %NAME%{%NAME%%WHITE%Runewords:%NL%%WHITE%Filter Level: 2 (Mid Runewords)}%CONTINUE%
-ItemDisplay[NMAG SHIELD !RW (SOCK=3 OR SOCK=4) (FILTLVL>1 AND FILTLVL<3)]: %NAME%{%NAME%%RED%None (Incorrect Sockets, Change Filter Level)%NL%%WHITE%Runewords:%NL%%WHITE%Filter Level: 2 (Mid Runewords)}%CONTINUE%
-ItemDisplay[NMAG SHIELD !RW (SOCK=2) (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NAME%%RED%None (Incorrect Sockets, Change Filter Level)%NL%%WHITE%Runewords:%NL%%WHITE%Filter Level: 3 (High Runewords)}%CONTINUE%
-ItemDisplay[NMAG SHIELD !RW (SOCK=3 OR SOCK=4) (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NAME%%WHITE%Runewords:%NL%%WHITE%Filter Level: 3 (High Runewords)}%CONTINUE%
+ItemDisplay[NMAG SHIELD !RW SOCK>1 (FILTLVL>0 AND FILTLVL<2)]: %NAME%{%NAME%%WHITE%Runewords:%NL%%WHITE%Filter Level: 1 (Low Runewords)%CL%}%CONTINUE%
+ItemDisplay[NMAG SHIELD !RW (SOCK=2) (FILTLVL>1 AND FILTLVL<3)]: %NAME%{%NAME%%WHITE%Runewords:%NL%%WHITE%Filter Level: 2 (Mid Runewords)%CL%}%CONTINUE%
+ItemDisplay[NMAG SHIELD !RW (SOCK=3 OR SOCK=4) (FILTLVL>1 AND FILTLVL<3)]: %NAME%{%NAME%%RED%None (Incorrect Sockets, Change Filter Level)%NL%%WHITE%Runewords:%NL%%WHITE%Filter Level: 2 (Mid Runewords)%CL%}%CONTINUE%
+ItemDisplay[NMAG SHIELD !RW (SOCK=2) (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NAME%%RED%None (Incorrect Sockets, Change Filter Level)%NL%%WHITE%Runewords:%NL%%WHITE%Filter Level: 3 (High Runewords)%CL%}%CONTINUE%
+ItemDisplay[NMAG SHIELD !RW (SOCK=3 OR SOCK=4) (FILTLVL>2 AND FILTLVL<4)]: %NAME%{%NAME%%WHITE%Runewords:%NL%%WHITE%Filter Level: 3 (High Runewords)%CL%}%CONTINUE%
+
+// Upgrade Recipes
+
+// Uniques and Sets
+
+ItemDisplay[(SET OR UNI) ARMOR NORM ID]: %NAME%{%NAME%%TAN%Upgrade Quality: %ORANGE%Tal %WHITE%+ %ORANGE%Shael %WHITE%+ %LIGHT_GRAY%PDiamond%CL%}%CONTINUE%
+ItemDisplay[(SET OR UNI) ARMOR EXC ID]: %NAME%{%NAME%%TAN%Upgrade Quality: %ORANGE%Ko %WHITE%+ %ORANGE%Lem %WHITE%+ %LIGHT_GRAY%PDiamond%CL%}%CONTINUE%
+
+ItemDisplay[(SET OR UNI) WEAPON NORM ID]: %NAME%{%NAME%%TAN%Upgrade Quality: %ORANGE%Ral %WHITE%+ %ORANGE%Sol %WHITE%+ %GREEN%PEmerald%CL%}%CONTINUE%
+ItemDisplay[(SET OR UNI) WEAPON EXC ID]: %NAME%{%NAME%%TAN%Upgrade Quality: %ORANGE%Lum %WHITE%+ %ORANGE%Pul %WHITE%+ %GREEN%PEmerald%CL%}%CONTINUE%
+
+// Rares and Crafts
+
+ItemDisplay[(RARE OR CRAFT) ARMOR NORM ID]: %NAME%{%NAME%%TAN%Upgrade Quality: %ORANGE%Ral %WHITE%+ %ORANGE%Thul %WHITE%+ %PURPLE%PAmethyst%CL%}%CONTINUE%
+ItemDisplay[(RARE OR CRAFT) ARMOR EXC ID]: %NAME%{%NAME%%TAN%Upgrade Quality: %ORANGE%Ko %WHITE%+ %ORANGE%Pul %WHITE%+ %PURPLE%PAmethyst%CL%}%CONTINUE%
+
+ItemDisplay[(RARE OR CRAFT) WEAPON NORM ID]: %NAME%{%NAME%%TAN%Upgrade Quality: %ORANGE%Ort %WHITE%+ %ORANGE%Amn %WHITE%+ %BLUE%PSapphire%CL%}%CONTINUE%
+ItemDisplay[(RARE OR CRAFT) WEAPON EXC ID]: %NAME%{%NAME%%TAN%Upgrade Quality: %ORANGE%Fal %WHITE%+ %ORANGE%Um %WHITE%+ %BLUE%PSapphire%CL%}%CONTINUE%
 
 
+// Cube Recipes to add Sockets
+
+ItemDisplay[NMAG CHEST SOCK=0 !SUP]: %NAME%{%NAME%%TAN%Add Sockets: %ORANGE%Tal %WHITE%+ %ORANGE%Thul %WHITE%+ %YELLOW%PTopaz%CL%}%CONTINUE%
+
+ItemDisplay[NMAG HELM SOCK=0 !SUP]: %NAME%{%NAME%%TAN%Add Sockets: %ORANGE%Ral %WHITE%+ %ORANGE%Thul %WHITE%+ %BLUE%PSapphire%CL%}%CONTINUE%
+
+ItemDisplay[NMAG SHIELD SOCK=0 !SUP]: %NAME%{%NAME%%TAN%Add Sockets: %ORANGE%Tal %WHITE%+ %ORANGE%Amn %WHITE%+ %RED%PRuby%CL%}%CONTINUE%
+
+ItemDisplay[NMAG WEAPON !THROWING SOCK=0 !SUP]: %NAME%{%NAME%%TAN%Add Sockets: %ORANGE%Ral %WHITE%+ %ORANGE%Amn %WHITE%+ %PURPLE%PAmethyst%CL%}%CONTINUE%
+
+
+// Tags for Normal, Exceptional, Elite Bases
+ItemDisplay[NORM !RW !ASSASSIN]: %NAME%%TAN%¹{%NAME%%TAN%¹%LIGHT_GRAY%Normal Quality%CL%}%CONTINUE%
+ItemDisplay[EXC !RW !ASSASSIN]: %NAME%%TAN%²{%NAME%%TAN%²%LIGHT_GRAY%Exceptional Quality%CL%}%CONTINUE%
+ItemDisplay[ELT !RW !ASSASSIN]: %NAME%%TAN%³{%NAME%%TAN%³%LIGHT_GRAY%Elite Quality%CL%}%CONTINUE%
+
+// Tags for Normal, Exceptional, Elite Bases adjusted to display Kick damage on Set Boots for Assassins
+ItemDisplay[NORM !(SET BOOTS) !RW ASSASSIN]: %NAME%%TAN%¹{%NAME%%TAN%¹%LIGHT_GRAY%Normal Quality%CL%}%CONTINUE%
+ItemDisplay[EXC !(SET BOOTS) !RW ASSASSIN]: %NAME%%TAN%²{%NAME%%TAN%²%LIGHT_GRAY%Exceptional Quality%CL%}%CONTINUE%
+ItemDisplay[ELT !(SET BOOTS) !RW ASSASSIN]: %NAME%%TAN%³{%NAME%%TAN%³%LIGHT_GRAY%Elite Quality%CL%}%CONTINUE%
+ItemDisplay[SET BOOTS NORM !RW ASSASSIN]: %NAME%%TAN%¹{%NAME%%TAN%¹%LIGHT_GRAY%Normal Quality%CL%}%CONTINUE%
+ItemDisplay[SET BOOTS EXC !RW ASSASSIN]: %NAME%%TAN%²{%NAME%%TAN%²%LIGHT_GRAY%Exceptional Quality%CL%}%CONTINUE%
+ItemDisplay[SET BOOTS ELT !RW ASSASSIN]: %NAME%%TAN%³{%NAME%%TAN%³%LIGHT_GRAY%Elite Quality%CL%}%CONTINUE%
+
+// Show me Kick Damage on Set Boots (Assassin Only) - Updated for S5 Damage
+ItemDisplay[lbt SET ASSASSIN]: %NAME%{%NAME%%WHITE%Kick Damage: 3 to 8}%CONTINUE%
+ItemDisplay[vbt SET ASSASSIN]: %NAME%{%NAME%%WHITE%Kick Damage: 4 to 12}%CONTINUE%
+ItemDisplay[mbt SET ASSASSIN]: %NAME%{%NAME%%WHITE%Kick Damage: 6 to 14}%CONTINUE%
+ItemDisplay[tbt SET ASSASSIN]: %NAME%{%NAME%%WHITE%Kick Damage: 8 to 18}%CONTINUE%
+ItemDisplay[hbt SET ASSASSIN]: %NAME%{%NAME%%WHITE%Kick Damage: 10 to 20}%CONTINUE%
+ItemDisplay[xlb SET ASSASSIN]: %NAME%{%NAME%%WHITE%Kick Damage: 30 to 64}%CONTINUE%
+ItemDisplay[xvb SET ASSASSIN]: %NAME%{%NAME%%WHITE%Kick Damage: 32 to 72}%CONTINUE%
+ItemDisplay[xmb SET ASSASSIN]: %NAME%{%NAME%%WHITE%Kick Damage: 35 to 78}%CONTINUE%
+ItemDisplay[xtb SET ASSASSIN]: %NAME%{%NAME%%WHITE%Kick Damage: 42 to 84}%CONTINUE%
+ItemDisplay[xhb SET ASSASSIN]: %NAME%{%NAME%%WHITE%Kick Damage: 45 to 90}%CONTINUE%
+ItemDisplay[ulb SET ASSASSIN]: %NAME%{%NAME%%WHITE%Kick Damage: 75 to 100}%CONTINUE%
+ItemDisplay[uvb SET ASSASSIN]: %NAME%{%NAME%%WHITE%Kick Damage: 70 to 110}%CONTINUE%
+ItemDisplay[umb SET ASSASSIN]: %NAME%{%NAME%%WHITE%Kick Damage: 80 to 125}%CONTINUE%
+ItemDisplay[utb SET ASSASSIN]: %NAME%{%NAME%%WHITE%Kick Damage: 69 to 147}%CONTINUE%
+ItemDisplay[uhb SET ASSASSIN]: %NAME%{%NAME%%WHITE%Kick Damage: 83 to 155}%CONTINUE%
 
 // BASE WEAPON SPEEDS
 
@@ -4648,6 +4661,10 @@ ItemDisplay[(amb OR amd OR amf)]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-10%WH
 // ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-15%WHITE%}%CONTINUE%
 // ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-20%WHITE%}%CONTINUE%
 // ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-30%WHITE%}%CONTINUE%
+
+
+
+
 
 // SOCKETABLES
 
