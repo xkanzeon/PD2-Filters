@@ -195,9 +195,14 @@
             },
             "filters": [
                 {
-                    "name": "S10_beta_Hype.filter",
-                    "url": "https://api.github.com/repos/PiLLLaa/Pd2/contents/S10_beta_Hype.filter?ref=main",
-                    "download_url": "https://raw.githubusercontent.com/PiLLLaa/Pd2/main/S10_beta_Hype.filter"
+                    "name": "S10_Hype.filter",
+                    "url": "https://api.github.com/repos/PiLLLaa/Pd2/contents/S10_Hype.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/PiLLLaa/Pd2/main/S10_Hype.filter"
+                },
+                {
+                    "name": "S10_Starter.filter",
+                    "url": "https://api.github.com/repos/PiLLLaa/Pd2/contents/S10_Starter.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/PiLLLaa/Pd2/main/S10_Starter.filter"
                 },
                 {
                     "name": "S9_Blank.filter",
