@@ -176,31 +176,6 @@
                     "name": "S10_Starter.filter",
                     "url": "https://api.github.com/repos/PiLLLaa/Pd2/contents/S10_Starter.filter?ref=main",
                     "download_url": "https://raw.githubusercontent.com/PiLLLaa/Pd2/main/S10_Starter.filter"
-                },
-                {
-                    "name": "S9_Blank.filter",
-                    "url": "https://api.github.com/repos/PiLLLaa/Pd2/contents/S9_Blank.filter?ref=main",
-                    "download_url": "https://raw.githubusercontent.com/PiLLLaa/Pd2/main/S9_Blank.filter"
-                },
-                {
-                    "name": "S9_Hype.filter",
-                    "url": "https://api.github.com/repos/PiLLLaa/Pd2/contents/S9_Hype.filter?ref=main",
-                    "download_url": "https://raw.githubusercontent.com/PiLLLaa/Pd2/main/S9_Hype.filter"
-                },
-                {
-                    "name": "S9_PurpleGold.filter",
-                    "url": "https://api.github.com/repos/PiLLLaa/Pd2/contents/S9_PurpleGold.filter?ref=main",
-                    "download_url": "https://raw.githubusercontent.com/PiLLLaa/Pd2/main/S9_PurpleGold.filter"
-                },
-                {
-                    "name": "S9_Standard.filter",
-                    "url": "https://api.github.com/repos/PiLLLaa/Pd2/contents/S9_Standard.filter?ref=main",
-                    "download_url": "https://raw.githubusercontent.com/PiLLLaa/Pd2/main/S9_Standard.filter"
-                },
-                {
-                    "name": "S9_Starter.filter",
-                    "url": "https://api.github.com/repos/PiLLLaa/Pd2/contents/S9_Starter.filter?ref=main",
-                    "download_url": "https://raw.githubusercontent.com/PiLLLaa/Pd2/main/S9_Starter.filter"
                 }
             ]
         }
