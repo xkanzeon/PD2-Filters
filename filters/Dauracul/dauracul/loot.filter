@@ -1,6 +1,15 @@
-// DAURACUL'S LOOT FILTER Season 10.2
-// Last updated: 10/21/24
+// DAURACUL'S LOOT FILTER Season 10.3
+// Last updated: 10/29/24
 // For any bug reports/feedback contact @Dauracul in the PD2 Discord #lootfilter channel
+
+// NOTE: IF YOU WISH TO MAKE EDITS TO THIS LOOTFILTER, PLEASE BE AWARE IT USES 'ANSI' ENCODING -- WITHOUT THIS ENCODING, CERTAIN CHARACTERS WILL DISPLAY INCORRECTLY 
+// (In Notepad++, select ANSI from the Encoding menu prior to saving)
+
+// 10.3
+// Added new flavor text to the inferior starting equipment for all classes
+// Corrected Immunities on Demon Road and Skovos Stronghold -- These maps have zero natural immunes
+// Added notifications for S10 uber materials, and flavor text to S10 uber activation item
+// Removed the recipes for DClone and Rathma item descriptions (reducing text clutter. I figure anyone who runs these bosses already knows the recipe, but let me know if there is demand to keep this in #lootfilter)
 
 // 10.2
 // Corrected Demon Road and Skovos Stronghold to properly display Catalyzed descriptions
@@ -66,7 +75,39 @@ ItemDisplay[hp4 CLVL>30 !SHOP]:
 ItemDisplay[mp4 CLVL>30 !SHOP]:
 
 // Release Notes on Identify Scrolls (in Town at Vendors)
-ItemDisplay[isc SHOP]: %NAME%{%NAME%%BLUE%wiki.projectdiablo2.com%NL%%NL%%DARK_GREEN%For full Season 10 patch notes, visit the Project Diablo 2 Wiki:%NL%Updated %RED%Season 10: Desecration %DARK_GREEN%items, changes, and values.%NL%Last Updated 10-21-2024:%NL%%NL%%ORANGE%the PD2 Discord #lootfilter channel.%NL%For any bug reports or feedback, contact @Dauracul in%NL%runeword recipes on weapon and armor bases.%NL%Use the filter levels in settings to display%NL%%NL%%GOLD%Dauracul's PD2 Loot Filter %RED%v10.2}
+ItemDisplay[isc SHOP]: %NAME%{%NAME%%BLUE%wiki.projectdiablo2.com%NL%%NL%%DARK_GREEN%For full Season 10 patch notes, visit the Project Diablo 2 Wiki:%NL%Updated %RED%Season 10: Desecration %DARK_GREEN%items, changes, and values.%NL%Last Updated 10-29-2024:%NL%%NL%%ORANGE%the PD2 Discord #lootfilter channel.%NL%For any bug reports or feedback, contact @Dauracul in%NL%runeword recipes on weapon and armor bases.%NL%Use the filter levels in settings to display%NL%%NL%%GOLD%Dauracul's PD2 Loot Filter %RED%v10.3}
+
+
+// Starter Equipment Flavortext
+
+// Hide all Inferior Items after level 1
+ItemDisplay[NMAG INF CLVL<2 !EQUIPPED]: %RED%%NAME%
+ItemDisplay[NMAG INF CLVL>1 !EQUIPPED]:
+
+// Amazon
+ItemDisplay[NMAG INF CLVL<3 EQUIPPED JAV AMAZON]: %RED%Weathered Askari Javelin{%NAME%%CORAL%%NL%It has seen better days.%NL%%NL%is now ruined, aged and rusted.%NL%Once a formidable weapon of Skovos, it}
+ItemDisplay[NMAG INF CLVL<3 EQUIPPED SHIELD AMAZON]: %RED%Weathered Skovos Aspis{%NAME%%CORAL%It will offer little protection.%NL%%NL%is now beyond repair.%NL%A shield of the warrior-women of Skovos, it}
+
+// Assassin
+ItemDisplay[NMAG INF CLVL<3 EQUIPPED SIN ASSASSIN]: %RED%Dulled Vizjerei Swordhand{%NAME%%CORAL%%NL%Seek sharper blades, and adapt to your enemy.%NL%%NL%were never meant to slay demons.%NL%The first mage-killing tools of the Viz-Jaq'taal}
+
+// Necromancer
+ItemDisplay[NMAG INF CLVL<3 EQUIPPED WAND NECROMANCER]: %RED%Old Priest's Vessel{%NAME%%CORAL%%NL%It will soon fade away entirely.%NL%%NL%wand. It senses imbalance.%NL%A weak, fading soul rests within this}
+
+// Barbarian
+ItemDisplay[NMAG INF CLVL<3 EQUIPPED AXE BARBARIAN]: %RED%Disgraced Arreat Axe{%NAME%%CORAL%%NL%The Children of Bul-Kathos often carry these in shame.%NL%%NL%unfit to protect the Worldstone, or even oneself.%NL%A chipped and dulled battle axe. It is}
+
+// Paladin
+ItemDisplay[NMAG INF CLVL<3 EQUIPPED SWORD PALADIN]: %RED%Westmarch Infantry Sword{%NAME%%CORAL%%NL%Only the Zakarum faith will bring salvation.%NL%%NL%The kingdom was never prepared to face such dark forces alone.%NL%Standard armament of the Knights of Westmarch.}
+ItemDisplay[NMAG INF CLVL<3 EQUIPPED SHIELD PALADIN]: %RED%Westmarch Infantry Shield{%NAME%%CORAL%In the absence of light, it possibly never could.%NL%%NL%It can no longer guard against foes or mortal wounds.%NL%Standard armament of the Knights of Westmarch.}
+
+// Sorceress
+ItemDisplay[NMAG INF CLVL<3 EQUIPPED STAFF SORCERESS]: %RED%Ancient Zann Esu Staff{%NAME%%CORAL%%NL%True power instead lies within oneself.%NL%%NL%and brittle. It is little more than an ornament.%NL%An artifact of the old mage clans, decayed}
+
+// Druid
+ItemDisplay[NMAG INF CLVL<3 EQUIPPED CLUB DRUID]: %RED%Rotten Scosglen Branch{%NAME%%CORAL%%NL%This tree will never grow again.%NL%%NL%It is near-death, and barely holds a bond with nature.%NL%A branch of a tree, taken from the College of Túr Dúlra.}
+ItemDisplay[NMAG INF CLVL<3 EQUIPPED SHIELD DRUID]: %RED%Caoi Dúlra Offering{%NAME%%CORAL%Bloodier, more feral offerings will take its place.%NL%%NL%It has been repurposed into a feeble shield.%NL%An old basin, once used to make offerings to the oak Glór-an-Fháidha.} 
+
 
 // Superior Tag on Bases
 
@@ -643,26 +684,29 @@ ItemDisplay[(dcso OR dcbl OR dcho)]: %DOT-62%%ORANGE%%NAME%%CONTINUE%
 // Rathma Items
 ItemDisplay[(rtmo OR rtmv)]: %DOT-62%%ORANGE%%NAME%%CONTINUE%
 
+// Lucion Items
+ItemDisplay[(lucb OR lucc OR lucd)]: %DOT-62%%ORANGE%%NAME%%CONTINUE%
+
 // DClone Recipe
-ItemDisplay[(dcso OR dcbl OR dcho)]: %NAME%{%NAME%%WHITE%to create %RED%Vision of Terror%NL%%WHITE%Transmute %ORANGE%Prime Evil Soul %WHITE%+ %ORANGE%Black Soulstone %WHITE%+ %ORANGE%Pure Demonic Essence}%CONTINUE%
+//ItemDisplay[(dcso OR dcbl OR dcho)]: %NAME%{%NAME%%WHITE%to create %RED%Vision of Terror%NL%%WHITE%Transmute %ORANGE%Prime Evil Soul %WHITE%+ %ORANGE%Black Soulstone %WHITE%+ %ORANGE%Pure Demonic Essence}%CONTINUE%
 
 // Rathma Recipe
-ItemDisplay[(rtmo OR rtmv OR cm2f)]: %NAME%{%NAME%%WHITE%to create %TEAL%Voidstone%NL%%WHITE%Transmute %ORANGE%Trang-Oul's Jawbone %WHITE%+ %ORANGE%Splinter of the Void %WHITE%+ %GOLD%Hellfire Ashes}%CONTINUE%
+//ItemDisplay[(rtmo OR rtmv OR cm2f)]: %NAME%{%NAME%%WHITE%to create %TEAL%Voidstone%NL%%WHITE%Transmute %ORANGE%Trang-Oul's Jawbone %WHITE%+ %ORANGE%Splinter of the Void %WHITE%+ %GOLD%Hellfire Ashes}%CONTINUE%
 
 // Ancients Recipe
-ItemDisplay[(ubaa OR ubab OR ubac)]: %NAME%{%NAME%%WHITE%to create %GOLD%Relic of the Ancients%NL%%WHITE%Transmute sigils %ORANGE%Madawc %WHITE%+ %ORANGE%Talic %WHITE%+ %ORANGE%Korlic}%CONTINUE%
+//ItemDisplay[(ubaa OR ubab OR ubac)]: %NAME%{%NAME%%WHITE%to create %GOLD%Relic of the Ancients%NL%%WHITE%Transmute sigils %ORANGE%Madawc %WHITE%+ %ORANGE%Talic %WHITE%+ %ORANGE%Korlic}%CONTINUE%
 
-// Voidstone and Vision of Terror Difficulty Recipes
+// Voidstone, Shadow of Hatred and Vision of Terror Difficulty Recipes
 ItemDisplay[dcma]: %RED%Vision of Terror%CONTINUE%
 ItemDisplay[rtma]: %TEAL%Voidstone%CONTINUE%
-ItemDisplay[(rtma OR dcma) STAT185=0]: %NAME%{%NAME%%BLUE%Tier: 0%NL%%TAN%Transmute this item by itself to cycle Boss Difficulty}%CONTINUE%
-ItemDisplay[(rtma OR dcma) STAT185>0]: %NAME%%NAME%{%NAME%%TAN%Transmute this item by itself to cycle Boss Difficulty}%CONTINUE%%CONTINUE%
+ItemDisplay[luca]: %GRAY%Shadow of Hatred%CONTINUE%
+ItemDisplay[(rtma OR dcma OR luca) STAT185=0]: %NAME%{%NAME%%BLUE%Tier: 0%NL%%TAN%Transmute this item by itself to cycle Boss Difficulty}%CONTINUE%
+ItemDisplay[(rtma OR dcma OR luca) STAT185>0]: %NAME%%NAME%{%NAME%%TAN%Transmute this item by itself to cycle Boss Difficulty}%CONTINUE%%CONTINUE%
 
-// Placeholder spot for S10 Uber materials
-
-// Flavor Text on Voidstone and Vision of Terror
+// Flavor Text on Voidstone, Shadow of Hatred and Vision of Terror
 ItemDisplay[dcma]: %NAME%{%NAME%%NL%%RED%Not even death can save you from me...}%CONTINUE%
 ItemDisplay[rtma]: %NAME%{%NAME%%NL%%TEAL%If you cannot find the way, wait, and the way will find you.}%CONTINUE%
+ItemDisplay[luca]: %NAME%{%NAME%%NL%%CORAL%world is made over in our image.%NL%A taste of what is to come... When this}%CONTINUE%
 
 // Vial of Lightsong
 ItemDisplay[lsvl]: %DOT-62%%NAME%{%NAME%%RED%Does not work with Indestructible items}%CONTINUE%
@@ -774,10 +818,10 @@ ItemDisplay[t25]: %NAME%{%NAME%%YELLOW%Lightning %GREEN%Poison%NL%%WHITE%Immunit
 ItemDisplay[t26]: %NAME%{%NAME%%GOLD%Physical %GREEN%Poison%NL%%WHITE%Immunities:}%CONTINUE%
 
 //Demon Road (As of 10/12/24)
-ItemDisplay[t27]: %NAME%{%NAME%%GOLD%Physical %RED%Fire %YELLOW%Lightning %BLUE%Cold %GREEN%Poison%NL%%WHITE%Immunities:}%CONTINUE%
+//ItemDisplay[t27]: %NAME%{%NAME%%GOLD%Physical %RED%Fire %YELLOW%Lightning %BLUE%Cold %GREEN%Poison%NL%%WHITE%Immunities:}%CONTINUE%
 
 //Skovos Stronghold (As of 10/12/24)
-ItemDisplay[t28]: %NAME%{%NAME%%YELLOW%Lightning %BLUE%Cold %GREEN%Poison%NL%%WHITE%Immunities:}%CONTINUE%
+//ItemDisplay[t28]: %NAME%{%NAME%%YELLOW%Lightning %BLUE%Cold %GREEN%Poison%NL%%WHITE%Immunities:}%CONTINUE%
 
 //River of Blood
 ItemDisplay[t31]: %NAME%{%NAME%%ORANGE%Magic %BLUE%Cold %GREEN%Poison%NL%%WHITE%Immunities:}%CONTINUE%
@@ -2078,12 +2122,12 @@ ItemDisplay[CL3 NMAG STAT17=56 !RW]: %NAME% %GRAY%(%RED%56%%GRAY%/%CONTINUE%
 ItemDisplay[CL3 NMAG STAT17=57 !RW]: %NAME% %GRAY%(%RED%57%%GRAY%/%CONTINUE%
 ItemDisplay[CL3 NMAG STAT17=58 !RW]: %NAME% %GRAY%(%RED%58%%GRAY%/%CONTINUE%
 ItemDisplay[CL3 NMAG STAT17=59 !RW]: %NAME% %GRAY%(%RED%59%%GRAY%/%CONTINUE%
-ItemDisplay[CL3 NMAG STAT17=60 !RW]: %DOT-16%%NAME% %GRAY%(%RED%60%%GRAY%/%CONTINUE%
-ItemDisplay[CL3 NMAG STAT17=61 !RW]: %DOT-16%%NAME% %GRAY%(%RED%61%%GRAY%/%CONTINUE%
-ItemDisplay[CL3 NMAG STAT17=62 !RW]: %DOT-16%%NAME% %GRAY%(%RED%62%%GRAY%/%CONTINUE%
-ItemDisplay[CL3 NMAG STAT17=63 !RW]: %DOT-16%%NAME% %GRAY%(%RED%63%%GRAY%/%CONTINUE%
-ItemDisplay[CL3 NMAG STAT17=64 !RW]: %DOT-16%%NAME% %GRAY%(%RED%64%%GRAY%/%CONTINUE%
-ItemDisplay[CL3 NMAG STAT17=65 !RW]: %DOT-16%%NAME% %GRAY%(%RED%65%%GRAY%/%CONTINUE%
+ItemDisplay[CL3 NMAG STAT17=60 !RW]: %NAME% %GRAY%(%RED%60%%GRAY%/%CONTINUE%
+ItemDisplay[CL3 NMAG STAT17=61 !RW]: %NAME% %GRAY%(%RED%61%%GRAY%/%CONTINUE%
+ItemDisplay[CL3 NMAG STAT17=62 !RW]: %NAME% %GRAY%(%RED%62%%GRAY%/%CONTINUE%
+ItemDisplay[CL3 NMAG STAT17=63 !RW]: %NAME% %GRAY%(%RED%63%%GRAY%/%CONTINUE%
+ItemDisplay[CL3 NMAG STAT17=64 !RW]: %NAME% %GRAY%(%RED%64%%GRAY%/%CONTINUE%
+ItemDisplay[CL3 NMAG STAT17=65 !RW]: %NAME% %GRAY%(%RED%65%%GRAY%/%CONTINUE%
 
 // Show me Attack Rating value on Paladin Shields
 ItemDisplay[CL3 NMAG AR=15 !RW]: %NAME%%GRAY%%RED%15%GRAY%)%CONTINUE%
@@ -2215,12 +2259,12 @@ ItemDisplay[CL3 NMAG RES=21 !RW]: %NAME% %GRAY%(%PURPLE%+21%GRAY%)%CONTINUE%
 ItemDisplay[CL3 NMAG RES=22 !RW]: %NAME% %GRAY%(%PURPLE%+22%GRAY%)%CONTINUE%
 ItemDisplay[CL3 NMAG RES=23 !RW]: %NAME% %GRAY%(%PURPLE%+23%GRAY%)%CONTINUE%
 ItemDisplay[CL3 NMAG RES=24 !RW]: %NAME% %GRAY%(%PURPLE%+24%GRAY%)%CONTINUE%
-ItemDisplay[CL3 NMAG RES=25 !RW]: %DOT-16%%NAME% %GRAY%(%PURPLE%+25%GRAY%)%CONTINUE%
-ItemDisplay[CL3 NMAG RES=26 !RW]: %DOT-16%%NAME% %GRAY%(%PURPLE%+26%GRAY%)%CONTINUE%
-ItemDisplay[CL3 NMAG RES=27 !RW]: %DOT-16%%NAME% %GRAY%(%PURPLE%+27%GRAY%)%CONTINUE%
-ItemDisplay[CL3 NMAG RES=28 !RW]: %DOT-16%%NAME% %GRAY%(%PURPLE%+28%GRAY%)%CONTINUE%
-ItemDisplay[CL3 NMAG RES=29 !RW]: %DOT-16%%NAME% %GRAY%(%PURPLE%+29%GRAY%)%CONTINUE%
-ItemDisplay[CL3 NMAG RES=30 !RW]: %DOT-16%%NAME% %GRAY%(%PURPLE%+30%GRAY%)%CONTINUE%
+ItemDisplay[CL3 NMAG RES=25 !RW]: %NAME% %GRAY%(%PURPLE%+25%GRAY%)%CONTINUE%
+ItemDisplay[CL3 NMAG RES=26 !RW]: %NAME% %GRAY%(%PURPLE%+26%GRAY%)%CONTINUE%
+ItemDisplay[CL3 NMAG RES=27 !RW]: %NAME% %GRAY%(%PURPLE%+27%GRAY%)%CONTINUE%
+ItemDisplay[CL3 NMAG RES=28 !RW]: %NAME% %GRAY%(%PURPLE%+28%GRAY%)%CONTINUE%
+ItemDisplay[CL3 NMAG RES=29 !RW]: %NAME% %GRAY%(%PURPLE%+29%GRAY%)%CONTINUE%
+ItemDisplay[CL3 NMAG RES=30 !RW]: %NAME% %GRAY%(%PURPLE%+30%GRAY%)%CONTINUE%
 
 // [=|| BARBARIAN ||=]
 
@@ -5036,9 +5080,6 @@ ItemDisplay[NMAG (BOOTS OR GLOVES OR BELT) !(MAPID=1 OR MAPID=40 OR MAPID=75 OR 
 
 // Hide Non-magic Throwing weapons unless in Town
 ItemDisplay[NMAG THROWING !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109) !CL7 CLVL>25]:
-
-// Hide all Inferior Items
-ItemDisplay[NMAG INF]:
 
 // Hide all Lesser Gems (below Flawless) unless in Town
 ItemDisplay[(gcv OR gcy OR gcb OR gcg OR gcr OR gcw OR skc OR gfv OR gfy OR gfb OR gfg OR gfr OR gfw OR skf OR gsv OR gsy OR gsb OR gsg OR gsr OR gsw OR sku) CLVL>40 !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109)]:
