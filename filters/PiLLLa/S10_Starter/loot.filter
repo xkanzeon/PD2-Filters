@@ -2774,18 +2774,18 @@ ItemDisplay[RW MULTI151,100=1]:%NAME% %RED%+1 FAura%CONTINUE%
 //                                           UNIQUE                                            //
 /////////////////////////////////////////////////////////////////////////////////////////////////
 //s10
-ItemDisplay[UNI !ID ulg !ETH]: %DOT-0C% %GOLD%@@@@     %RED%Titan's Grip%PURPLE%(New)     %GOLD%@@@@
-ItemDisplay[UNI !ID ulg ETH]: %DOT-0C% %GOLD%@@@@     %WHITE%ETH %RED%Titan's Grip%PURPLE%(New)     %GOLD%@@@@
-ItemDisplay[UNI !ID ung !ETH]: %DOT-0C% %GOLD%@@@@     %RED%Wraithskin%PURPLE%(New)     %GOLD%@@@@
-ItemDisplay[UNI !ID ung ETH]: %DOT-0C% %GOLD%@@@@     %WHITE%ETH %RED%Wraithskin%PURPLE%(New)     %GOLD%@@@@
-ItemDisplay[UNI !ID urg !ETH]: %DOT-0C% %GOLD%@@@@     %RED%Twilight's Reflection%PURPLE%(New)     %GOLD%@@@@
-ItemDisplay[UNI !ID urg ETH]: %DOT-0C% %GOLD%@@@@     %WHITE%ETH %RED%Twilight's Reflection%PURPLE%(New)     %GOLD%@@@@
-ItemDisplay[UNI !ID drc !ETH]: %DOT-0C% %GOLD%@@@@     %RED%Denmother%PURPLE%(New)     %GOLD%@@@@
-ItemDisplay[UNI !ID drc ETH]: %DOT-0C% %GOLD%@@@@     %WHITE%ETH %RED%Denmother%PURPLE%(New)     %GOLD%@@@@
-ItemDisplay[UNI !ID amc !ETH]: %DOT-0C% %GOLD%@@@@     %RED%Ebonbane%PURPLE%(New)     %GOLD%@@@@
-ItemDisplay[UNI !ID amc ETH]: %DOT-0C% %GOLD%@@@@     %WHITE%ETH %RED%Ebonbane%PURPLE%(New)     %GOLD%@@@@
-ItemDisplay[UNI !ID 7di !ETH]: %DOT-0C% %GOLD%@@@@     %RED%Shatterblade%PURPLE%(New)     %GOLD%@@@@
-ItemDisplay[UNI !ID 7di ETH]: %DOT-0C% %GOLD%@@@@     %WHITE%ETH %RED%Shatterblade%PURPLE%(New)     %GOLD%@@@@
+ItemDisplay[UNI !ID ulg !ETH]: %DOT-0C% %GOLD%@@@@     %RED%Titan's Grip%WHITE%(New)     %GOLD%@@@@
+ItemDisplay[UNI !ID ulg ETH]: %DOT-0C% %GOLD%@@@@     %WHITE%ETH %RED%Titan's Grip%WHITE%(New)     %GOLD%@@@@
+ItemDisplay[UNI !ID ung !ETH]: %DOT-0C% %GOLD%@@@@     %RED%Wraithskin%WHITE%(New)     %GOLD%@@@@
+ItemDisplay[UNI !ID ung ETH]: %DOT-0C% %GOLD%@@@@     %WHITE%ETH %RED%Wraithskin%WHITE%(New)     %GOLD%@@@@
+ItemDisplay[UNI !ID urg !ETH]: %DOT-0C% %GOLD%@@@@     %RED%Twilight's Reflection%WHITE%(New)     %GOLD%@@@@
+ItemDisplay[UNI !ID urg ETH]: %DOT-0C% %GOLD%@@@@     %WHITE%ETH %RED%Twilight's Reflection%WHITE%(New)     %GOLD%@@@@
+ItemDisplay[UNI !ID drc !ETH]: %DOT-0C% %GOLD%@@@@     %RED%Denmother%WHITE%(New)     %GOLD%@@@@
+ItemDisplay[UNI !ID drc ETH]: %DOT-0C% %GOLD%@@@@     %WHITE%ETH %RED%Denmother%WHITE%(New)     %GOLD%@@@@
+ItemDisplay[UNI !ID amc !ETH]: %DOT-0C% %GOLD%@@@@     %RED%Ebonbane%WHITE%(New)     %GOLD%@@@@
+ItemDisplay[UNI !ID amc ETH]: %DOT-0C% %GOLD%@@@@     %WHITE%ETH %RED%Ebonbane%WHITE%(New)     %GOLD%@@@@
+ItemDisplay[UNI !ID 7di !ETH]: %DOT-0C% %GOLD%@@@@     %RED%Shatterblade%WHITE%(New)     %GOLD%@@@@
+ItemDisplay[UNI !ID 7di ETH]: %DOT-0C% %GOLD%@@@@     %WHITE%ETH %RED%Shatterblade%WHITE%(New)     %GOLD%@@@@
 
 //Unique Helmet
 ItemDisplay[UNI !ID xh9 !ETH]: %BORDER-62%%RED%@@%ORANGE%@@%YELLOW%@@%GREEN%@@%BLUE%@@%PURPLE%@@    %RED%Vampire Gaze    %RED%@@%ORANGE%@@%YELLOW%@@%GREEN%@@%BLUE%@@%PURPLE%@@
@@ -2863,8 +2863,8 @@ ItemDisplay[UNI !ID 7s8 ETH]:%BORDER-62%%RED%@@%ORANGE%@@%YELLOW%@@%GREEN%@@%BLU
 ItemDisplay[UNI !ID 7pa !ETH]: %DOT-0C% %GOLD%@@@@     %RED%Tomb Reaver     %GOLD%@@@@ 
 ItemDisplay[UNI !ID 7pa ETH]: %DOT-0C% %GOLD%@@@@     %PURPLE%Eth %RED%Tomb Reaver     %GOLD%@@@@
 //Unique Spear 
-ItemDisplay[UNI !ID 7st !ETH]: %DOT-0C% %GOLD%@@@@     %RED%Uldyssian's Awakening%WHITE%(New)     %GOLD%@@@@ 
-ItemDisplay[UNI !ID 7st ETH]: %DOT-0C% %GOLD%@@@@     %PURPLE%Eth %RED%Uldyssian's Awakening%WHITE%(New)     %GOLD%@@@@
+ItemDisplay[UNI !ID 7st !ETH]: %DOT-0C% %GOLD%@@@@     %RED%Uldyssian's Awakening     %GOLD%@@@@ 
+ItemDisplay[UNI !ID 7st ETH]: %DOT-0C% %GOLD%@@@@     %PURPLE%Eth %RED%Uldyssian's Awakening     %GOLD%@@@@
 //Unique Staves
 ItemDisplay[UNI !ID 6cs !ETH]: %DOT-0C% %GOLD%@@@@     %RED%Ondals Wisdom     %GOLD%@@@@ 
 ItemDisplay[UNI !ID 6cs ETH]: %DOT-0C% %GOLD%@@@@     %PURPLE%Eth %RED%Ondals Wisdom     %GOLD%@@@@ 
@@ -2875,8 +2875,8 @@ ItemDisplay[UNI !ID 7cr]: %DOT-0C% %GOLD%@@@@ %RED%Lightsabre %TAN%Or %GREEN%Azu
 ItemDisplay[UNI !ID 7gd !ETH]: %BORDER-62%%RED%@@%ORANGE%@@%YELLOW%@@%GREEN%@@%BLUE%@@%PURPLE%@@    %RED%The Grandfather    %RED%@@%ORANGE%@@%YELLOW%@@%GREEN%@@%BLUE%@@%PURPLE%@@
 ItemDisplay[UNI !ID 7gd ETH]: %DOT-0C% %GOLD%@@@@     %PURPLE%Eth %RED%The Grandfather     %GOLD%@@@@ 
 
-ItemDisplay[UNI !ID 7cm !ETH]: %DOT-0C% %GOLD%@@@@     %RED%Leoric's Mithril Bane%WHITE%(New)     %GOLD%@@@@ 
-ItemDisplay[UNI !ID 7cm ETH]: %DOT-0C% %GOLD%@@@@     %PURPLE%Eth %RED%Leoric's Mithril Bane%WHITE%(New)     %GOLD%@@@@
+ItemDisplay[UNI !ID 7cm !ETH]: %DOT-0C% %GOLD%@@@@     %RED%Leoric's Mithril Bane     %GOLD%@@@@ 
+ItemDisplay[UNI !ID 7cm ETH]: %DOT-0C% %GOLD%@@@@     %PURPLE%Eth %RED%Leoric's Mithril Bane     %GOLD%@@@@
 //Unique Wands
 ItemDisplay[UNI !ID 7gw !ETH]: %BORDER-62%%RED%@@%ORANGE%@@%YELLOW%@@%GREEN%@@%BLUE%@@%PURPLE%@@    %RED%Deaths Web    %RED%@@%ORANGE%@@%YELLOW%@@%GREEN%@@%BLUE%@@%PURPLE%@@
 ItemDisplay[UNI !ID 7gw ETH]: %DOT-0C% %GOLD%@@@@     %PURPLE%Eth %RED%Deaths Web     %GOLD%@@@@ 
@@ -6967,7 +6967,7 @@ ItemDisplay[(rin OR amu OR ram) ID (SET OR UNI OR RW) STAT360=45]:%NAME%%PURPLE%
 ItemDisplay[(rin OR amu OR ram) ID (SET OR UNI OR RW) STAT360=46]:%NAME%%PURPLE%[%ORANGE%PDR.%PURPLE%] %RED%C{%NAME%}%CONTINUE%
 ItemDisplay[(rin OR amu OR ram) ID (SET OR UNI OR RW) STAT360=47]:%NAME%%PURPLE%[%ORANGE%MDR%PURPLE%] %RED%C{%NAME%}%CONTINUE%
 ItemDisplay[(rin OR amu OR ram) ID (SET OR UNI OR RW) STAT360=48]:%NAME%%PURPLE%[%ORANGE%ind.*%PURPLE%] %RED%C{%NAME%}%CONTINUE%
-ItemDisplay[(rin OR amu OR ram) ID (SET OR UNI OR RW) STAT360=49]:%NAME%%PURPLE%[%ORANGE%Reduced Curse Duration%PURPLE%] %RED%C{%NAME%}%CONTINUE%
+ItemDisplay[(rin OR amu OR ram) ID (SET OR UNI OR RW) STAT360=49]:%NAME%%PURPLE%[%ORANGE%Curse%PURPLE%] %RED%C{%NAME%}%CONTINUE%
 
 ItemDisplay[(rin OR amu OR ram) ID (SET OR UNI OR RW) STAT360=50]:%NAME%%PURPLE%[%ORANGE%Allsk%PURPLE%] %RED%C{%NAME%}%CONTINUE%
 ItemDisplay[(rin OR amu OR ram) ID (SET OR UNI OR RW) STAT360=51]:%NAME%%PURPLE%[%ORANGE%AllRes%PURPLE%] %RED%C{%NAME%}%CONTINUE%
