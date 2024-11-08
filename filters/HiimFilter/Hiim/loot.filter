@@ -36,7 +36,7 @@ ItemDisplayFilterName[]: No Items Out of Town
 //-----------------------------------------------------------------------------------
 // SHOW VERSION AND LEVEL DETAILS ON CUBE/KEYS
 //-----------------------------------------------------------------------------------
-ItemDisplay[(box OR key)]: %NAME%{Send Feedback via PD2 Discord #lootfilter%CL%Last updated Nov 7%CL%Season 10 - version 59%CL%HiimFilter -}%CONTINUE%
+ItemDisplay[(box OR key)]: %NAME%{Send Feedback via PD2 Discord #lootfilter%CL%Last updated Nov 7%CL%Season 10 - version 60%CL%HiimFilter -}%CONTINUE%
 ItemDisplay[(box OR key) FILTLVL=0]: %NAME%{%NAME% OFF}%CONTINUE%
 ItemDisplay[(box OR key) FILTLVL=1]: %NAME%{%NAME% Base}%CONTINUE%
 ItemDisplay[(box OR key) FILTLVL=2]: %NAME%{%NAME% Semi-Strict}%CONTINUE%
@@ -111,8 +111,8 @@ ItemDisplay[(rtma OR dcma OR luca)]: [Tier %STAT185%] %NAME% [Tier %STAT185%]%CO
 ItemDisplay[(rtma OR dcma OR luca) STAT185=0]: %DARK_GREEN%%NAME%%CONTINUE%{%RED%Tier 2 (Larger Boss Item Chance)%CL%%TAN%Tier 1 (Boss Item Chance)%CL%%ORANGE%> > %DARK_GREEN%Tier 0 (No Boss Item)%ORANGE% < <%CL%%GOLD%Cube%WHITE% to change the difficulty -> Tier 1}
 ItemDisplay[(rtma OR dcma) STAT185=1]: %TAN%%NAME%%CONTINUE%{%RED%Tier 2 (Larger Boss Item Chance)%CL%%ORANGE%> > %TAN%Tier 1 (Boss Item Chance)%ORANGE% < <%CL%%DARK_GREEN%Tier 0 (No Boss Item)%CL%%GOLD%Cube%WHITE% to change the difficulty -> Tier 2}
 ItemDisplay[(rtma OR dcma) STAT185=2]: %RED%%NAME%%CONTINUE%{%ORANGE%> > %RED%Tier 2 (Larger Boss Item Chance)%ORANGE% < <%CL%%TAN%Tier 1 (Boss Item Chance)%CL%%DARK_GREEN%Tier 0 (No Boss Item)%CL%%GOLD%Cube%WHITE% to change the difficulty -> Tier 0}
-ItemDisplay[luca STAT185=1]: %TAN%%NAME%%CONTINUE%{%RED%Tier 2%CL%%ORANGE%> > %TAN%Tier 1%ORANGE% < <%CL%%GOLD%Cube%WHITE% to change the difficulty -> Tier 2}
-ItemDisplay[luca STAT185=2]: %RED%%NAME%%CONTINUE%{%ORANGE%> > %RED%Tier 2 %ORANGE% < <%CL%%TAN%Tier 1 %CL%%GOLD%Cube%WHITE% to change the difficulty -> Tier 1}
+ItemDisplay[luca STAT185=1]: %TAN%%NAME%%CONTINUE%{%RED%Tier 2 (Alleged lower brick rate)%CL%%ORANGE%> > %TAN%Tier 1%ORANGE% < <%CL%%GOLD%Cube%WHITE% to change the difficulty -> Tier 2}
+ItemDisplay[luca STAT185=2]: %RED%%NAME%%CONTINUE%{%ORANGE%> > %RED%Tier 2 (Alleged lower brick rate)%ORANGE% < <%CL%%TAN%Tier 1 %CL%%GOLD%Cube%WHITE% to change the difficulty -> Tier 1}
 ItemDisplay[dcma]: %NAME%%CONTINUE%{%NAME%%CL%%RED%Diablo Clone Entry}
 ItemDisplay[rtma]: %NAME%%CONTINUE%{%NAME%%CL%%BLUE%Rathma Entry}
 ItemDisplay[luca]: %NAME%%CONTINUE%{%NAME%%CL%%ORANGE%Lucion Boss Entry}
@@ -2027,7 +2027,7 @@ ItemDisplay[MAG cm1 (STAT49>34 OR STAT51>59 OR STAT55>31)]: %DOT-50%%NAME% %PURP
 ItemDisplay[MAG cm1 STAT49>23 (STAT51>19 OR STAT55>8)]: %DOT-50%%NAME% %PURPLE%[Veng]
 ItemDisplay[MAG cm1 STAT51>39 (STAT49>10 OR STAT55>8)]: %DOT-50%%NAME% %PURPLE%[Veng]
 ItemDisplay[MAG cm1 STAT55>20 (STAT49>10 OR STAT51>19)]: %DOT-50%%NAME% %PURPLE%[Veng]
-ItemDisplay[MAG cm1 (STAT49>23 OR STAT51>39 OR STAT55>20)]: %DOT-50%%NAME% %ORANGE%[Veng]
+ItemDisplay[MAG cm1 (STAT49>20 OR STAT51>32 OR STAT55>17)]: %DOT-50%%NAME% %ORANGE%[Veng]
 
 // Combo charm notification For a combo of desired prefix and suffix
 // Prefix: Gold Find, Mana, Max Damage, All Res, Specific Resists, Damage % Charm
@@ -3855,6 +3855,17 @@ ItemDisplay[!RW TABSK18=2 SK85=3 !(ALLSK=1)]:%CONTINUE%%NAME%%DOT-ED%{%PURPLE%> 
 ItemDisplay[!RW TABSK18=3 SK85=2 !(ALLSK=1)]:%CONTINUE%%NAME%%DOT-ED%{%PURPLE%> > > >   +5 BloodGol   < < < <%CL%%NAME%}
 ItemDisplay[!RW CLSK2=2 SK85=3 !(ALLSK=1)]:%CONTINUE%%NAME%%DOT-ED%{%PURPLE%> > > >   +5 BloodGol   < < < <%CL%%NAME%}
 
+
+// Shock Web sk wands / offhand //ALLSK
+ItemDisplay[!RW CLSK6=2 SK256=3 ALLSK=2]:%CONTINUE%%NAME%%BORDER-ED%{%PURPLE%> > > >   +7 Shock Web   < < < <%CL%%NAME%}
+ItemDisplay[!RW TABSK48=3 SK256=3 ALLSK=1]:%CONTINUE%%NAME%%BORDER-ED%{%PURPLE%> > > >   +7 Shock Web   < < < <%CL%%NAME%}
+ItemDisplay[!RW TABSK48=3 SK256=3 !(ALLSK=1)]:%CONTINUE%%NAME%%BORDER-ED%{%PURPLE%> > > >   +6 Shock Web   < < < <%CL%%NAME%}
+ItemDisplay[!RW TABSK48=3 SK256=2 ALLSK=1]:%CONTINUE%%NAME%%BORDER-ED%{%PURPLE%> > > >   +6 Shock Web   < < < <%CL%%NAME%}
+ItemDisplay[!RW TABSK48=2 SK256=3 ALLSK=1]:%CONTINUE%%NAME%%BORDER-ED%{%PURPLE%> > > >   +6 Shock Web   < < < <%CL%%NAME%}
+ItemDisplay[!RW CLSK6=2 SK256=3 ALLSK=1]:%CONTINUE%%NAME%%DOT-ED%{%PURPLE%> > > >   +6 Shock Web   < < < <%CL%%NAME%}
+ItemDisplay[!RW TABSK48=2 SK256=3 !(ALLSK=1)]:%CONTINUE%%NAME%%DOT-ED%{%PURPLE%> > > >   +5 Shock Web   < < < <%CL%%NAME%}
+ItemDisplay[!RW TABSK48=3 SK256=2 !(ALLSK=1)]:%CONTINUE%%NAME%%DOT-ED%{%PURPLE%> > > >   +5 Shock Web   < < < <%CL%%NAME%}
+ItemDisplay[!RW CLSK6=2 SK256=3 !(ALLSK=1)]:%CONTINUE%%NAME%%DOT-ED%{%PURPLE%> > > >   +5 Shock Web   < < < <%CL%%NAME%}
 
 // SK245	Tornado
 ItemDisplay[!RW TABSK42=3 SK245=2 ALLSK=2]: %NAME% %BORDER-ED%%PURPLE%+7 Tornado%CONTINUE%{%NAME%}
