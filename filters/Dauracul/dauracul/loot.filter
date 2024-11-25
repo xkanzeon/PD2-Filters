@@ -5609,8 +5609,8 @@ ItemDisplay[(aqv OR cqv) NMAG !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR 
 // Hide Arrows & Bolts if not Rare past lv20
 ItemDisplay[(aqv OR cqv) MAG !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109) CLVL>20]:
 
-// Hide Circlets if not Rare 
-ItemDisplay[(ci0 OR ci1 OR ci2 OR ci3) !RARE]:
+// Hide Circlets if not Rare or Unique or Set
+ItemDisplay[(ci0 OR ci1 OR ci2 OR ci3) !RARE !UNI !SET]:
 
 // Hide Choking, Exploding, Fulminating, Oil, Rancid, Strangling, Thawing, Stamina, ID and TP Scrolls unless in Town
 //ItemDisplay[(gpm OR opm OR opl OR ops OR gps OR gpl OR wms OR vps OR tsc OR isc) !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109) CLVL>25]:
