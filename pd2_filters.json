@@ -137,6 +137,11 @@
                     "name": "Regular.filter",
                     "url": "https://api.github.com/repos/KassahiPD2/Kassahi/contents/Regular.filter?ref=main",
                     "download_url": "https://raw.githubusercontent.com/KassahiPD2/Kassahi/main/Regular.filter"
+                },
+                {
+                    "name": "V2_Meme-Hyper.filter",
+                    "url": "https://api.github.com/repos/KassahiPD2/Kassahi/contents/V2_Meme-Hyper.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/KassahiPD2/Kassahi/main/V2_Meme-Hyper.filter"
                 }
             ]
         }
