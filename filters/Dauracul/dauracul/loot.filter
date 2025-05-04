@@ -1,5 +1,5 @@
-// DAURACUL'S LOOT FILTER Season 11.0
-// Last updated: 3/31/25
+// DAURACUL'S LOOT FILTER Season 11.2
+// Last updated: 5/03/25
 // For any bug reports/feedback contact @Dauracul in the PD2 Discord #lootfilter channel
 
 // NOTE: IF YOU WISH TO MAKE EDITS TO THIS LOOTFILTER, PLEASE BE AWARE IT USES 'ANSI' ENCODING -- WITHOUT THIS ENCODING, CERTAIN CHARACTERS WILL DISPLAY INCORRECTLY 
@@ -14,6 +14,26 @@
 // Added high value properties to item names of identified magic class loot at vendors (no class restrictions)
 // Added high value properties to item names of jewels
 // Added Amp/Lower Res on striking or casting to class magic/rare/craft loot
+
+// 11.1
+// Bug fix - Added parentheses to Amp and LR aliases to prevent duplication
+// Bug fix - Magic throwing daggers are no longer teal color for Necromancers
+// Added new shield runeword "Epiphany"
+// Added Throwing Weapons as colorized loot for Barbarians (if they roll sockets or are magic)
+// Non-magic throwing weapons are now no longer hidden, unless they only roll 1 socket 
+
+// 11.2
+// Added new Throwing Weapon runewords to non-magic bases: Steel, Malice, Zephyr, Strength, King's Grace, Lawbringer, Crescent Moon, Venom, Fury, Plague, Wind
+// Throwing Weapons now display recipe to add sockets when Sockets=0 and non-magic + non-superior
+// Added high value properties to magic/rare/craft Throwing Weapons for Barbarians
+// Added "Loyalty" Runeword to Bows/Crossbows/Spears
+// Added drop notifications for Demonic Cube
+// Added no immunity tag to new map - Halls of Torture
+// Demon Road and Skovos Stronghold prepared for immunity notes but immunities not yet known - will update later
+// Added drop notifications for new Unique Maps - Outer Void and Imperial Palace
+// Updated Socket bonuses of Nef, Amn, Dol, Sol, Pul, Mal, Gul, Sur runes
+// Added Crescent Moon, Voice of Reason to Scepter runewords
+// Removed Insight from Scepter runewords
 
 
 // Table of Contents (For my own reference)  **CTRL+F to jump**
@@ -59,15 +79,15 @@ ItemDisplayFilterName[]:High Runeword Notes
 
 
 // Release Notes on Identify Scrolls (in Town at Vendors)
-ItemDisplay[isc SHOP]: %NAME%{%NAME%%BLUE%wiki.projectdiablo2.com%NL%%NL%%DARK_GREEN%For full Season 10 patch notes, visit the Project Diablo 2 Wiki:%NL%Added new features in prep for %RED%Season 11%DARK_GREEN%. View the filter file for patch notes.%NL%Last Updated 3-31-2025:%NL%%NL%%ORANGE%the PD2 Discord #lootfilter channel.%NL%For any bug reports or feedback, contact @Dauracul in%NL%runeword recipes on weapon and armor bases.%NL%Use the filter levels in settings to display%NL%%NL%%GOLD%Dauracul's PD2 Loot Filter %RED%v11.0}
+ItemDisplay[isc SHOP]: %NAME%{%NAME%%BLUE%wiki.projectdiablo2.com%NL%%NL%%DARK_GREEN%For full Season 11 patch notes, visit the Project Diablo 2 Wiki:%NL%Added new features in prep for %RED%Season 11: Prosperity%DARK_GREEN%. View the filter file for patch notes.%NL%Last Updated 5-03-2025:%NL%%NL%%ORANGE%the PD2 Discord #lootfilter channel.%NL%For any bug reports or feedback, contact @Dauracul in%NL%runeword recipes on weapon and armor bases.%NL%Use the filter levels in settings to display%NL%%NL%%GOLD%Dauracul's PD2 Loot Filter %RED%v11.2}
 
 // ALIASES
 
 Alias[ALL_UBER_MATS]: dcso OR dcbl OR dcho OR rtmo OR rtmv OR lucb OR lucc OR lucd OR ubaa OR ubab OR ubac OR pk1 OR pk2 OR pk3 OR dhn OR bey OR mbr
 
-Alias[ALL_MAPS]: t11 OR t12 OR t13 OR t14 OR t15 OR t16 OR t21 OR t22 OR t23 OR t24 OR t25 OR t26 OR t27 OR t28 OR t31 OR t32 OR t33 OR t34 OR t35 OR t36 OR t37 OR t38 OR t39 OR t3a
+Alias[ALL_MAPS]: t11 OR t12 OR t13 OR t14 OR t15 OR t16 OR t17 OR t21 OR t22 OR t23 OR t24 OR t25 OR t26 OR t27 OR t28 OR t31 OR t32 OR t33 OR t34 OR t35 OR t36 OR t37 OR t38 OR t39 OR t3a
 
-Alias[ALL_STACKABLE_QTY_ITEMS]: (RUNE>0 OR GEMLEVEL>3 OR wss OR jewf OR t11 OR t12 OR t13 OR t14 OR t15 OR t16 OR t21 OR t22 OR t23 OR t24 OR t25 OR t26 OR t27 OR t28 OR t31 OR t32 OR t33 OR t34 OR t35 OR t36 OR t37 OR t38 OR t39 OR t3a OR dcso OR dcbl OR dcho OR rtmo OR rtmv OR lucb OR lucc OR lucd OR ubaa OR ubab OR ubac OR pk1 OR pk2 OR pk3 OR imma OR irma OR imra OR irra OR upma OR urma OR rera OR rrra OR scou OR fort OR upmp OR scrb OR iwss OR lbox OR lpp OR crfb OR crfc OR crfs OR crfh OR crfv OR crfu OR crfp OR dhn OR bey OR mbr OR tes OR ceh OR bet OR fed OR cm2f OR std)
+Alias[ALL_STACKABLE_QTY_ITEMS]: (RUNE>0 OR GEMLEVEL>3 OR wss OR jewf OR t11 OR t12 OR t13 OR t14 OR t15 OR t16 OR t17 OR t21 OR t22 OR t23 OR t24 OR t25 OR t26 OR t27 OR t28 OR t31 OR t32 OR t33 OR t34 OR t35 OR t36 OR t37 OR t38 OR t39 OR t3a OR dcso OR dcbl OR dcho OR rtmo OR rtmv OR lucb OR lucc OR lucd OR ubaa OR ubab OR ubac OR pk1 OR pk2 OR pk3 OR imma OR irma OR imra OR irra OR upma OR urma OR rera OR rrra OR scou OR fort OR upmp OR scrb OR iwss OR lbox OR lpp OR crfb OR crfc OR crfs OR crfh OR crfv OR crfu OR crfp OR dhn OR bey OR mbr OR tes OR ceh OR bet OR fed OR cm2f OR std OR imrn)
 
 Alias[DRUID_STAFFMODS]: (SK221>0 OR SK222>0 OR SK223>0 OR SK224>0 OR SK225>0 OR SK226>0 OR SK227>0 OR SK228>0 OR SK229>0 OR SK230>0 OR SK231>0 OR SK232>0 OR SK233>0 OR SK234>0 OR SK235>0 OR SK236>0 OR SK237>0 OR SK238>0 OR SK239>0 OR SK240>0 OR SK241>0 OR SK242>0 OR SK243>0 OR SK244>0 OR SK245>0 OR SK246>0 OR SK247>0 OR SK248>0 OR SK249>0 OR SK250>0 OR SK370>0)
 
@@ -83,11 +103,11 @@ Alias[NECROMANCER_STAFFMODS]: (SK66>0 OR SK67>0 OR SK68>0 OR SK69>0 OR SK70>0 OR
 
 Alias[AMAZON_STAFFMODS]: (TABSK2>0 OR TABSK0>0)
 
-Alias[AMP_ON_STRIKING]: SUFFIX=662 OR SUFFIX=898 OR SUFFIX=899
-Alias[AMP_ON_CASTING]: SUFFIX=904 OR SUFFIX=905 OR SUFFIX=906
+Alias[AMP_ON_STRIKING]: (SUFFIX=662 OR SUFFIX=898 OR SUFFIX=899)
+Alias[AMP_ON_CASTING]: (SUFFIX=904 OR SUFFIX=905 OR SUFFIX=906)
 
-Alias[LR_ON_STRIKING]: SUFFIX=907 OR SUFFIX=908 OR SUFFIX=909
-Alias[LR_ON_CASTING]: SUFFIX=910 OR SUFFIX=911 OR SUFFIX=912
+Alias[LR_ON_STRIKING]: (SUFFIX=907 OR SUFFIX=908 OR SUFFIX=909)
+Alias[LR_ON_CASTING]: (SUFFIX=910 OR SUFFIX=911 OR SUFFIX=912)
 
 
 
@@ -638,7 +658,7 @@ ItemDisplay[CL4 !RW NECROMANCER NMAG NECROMANCER_STAFFMODS]: %SAGE%%NAME%{%NAME%
 ItemDisplay[CL4 NECROMANCER MAG !ID]: %TEAL%%NAME%{%NAME%}%CONTINUE%
 ItemDisplay[WP4 !RW NECROMANCER NMAG SK73>0]: %SAGE%%NAME%{%NAME%}%CONTINUE%
 ItemDisplay[WP4 !RW NECROMANCER NMAG (SK73>0 AND ASSASSIN_STAFFMODS)]: %SAGE%%NAME%{%NAME%}%CONTINUE%
-ItemDisplay[WP4 NECROMANCER MAG !ID]: %TEAL%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[WP4 !THROWING NECROMANCER MAG !ID]: %TEAL%%NAME%{%NAME%}%CONTINUE%
 ItemDisplay[WP12 !RW NECROMANCER NMAG NECROMANCER_STAFFMODS]: %SAGE%%NAME%{%NAME%}%CONTINUE%
 ItemDisplay[WP12 NECROMANCER MAG !ID]: %TEAL%%NAME%{%NAME%}%CONTINUE%
 ItemDisplay[SUP NMAG ne1 !RW NECROMANCER NECROMANCER_STAFFMODS]: %BLUE%Sup %SAGE%Preserved Head%CONTINUE%
@@ -746,9 +766,11 @@ ItemDisplay[SUP NMAG 7lw !RW ASSASSIN ASSASSIN_STAFFMODS]: %RED%Sup %SAGE%Feral 
 ItemDisplay[SUP NMAG 7tw !RW ASSASSIN ASSASSIN_STAFFMODS]: %RED%Sup %SAGE%Runic Talons%CONTINUE%
 ItemDisplay[SUP NMAG 7qr !RW ASSASSIN ASSASSIN_STAFFMODS]: %RED%Sup %SAGE%Scissors Suwayyah%CONTINUE%
 
-//Colorize Barb Helms for Barbs (if magic or roll staffmods)
+//Colorize Barb Helms and socketed Throwing Weapons for Barbs (if magic or roll staffmods)
 ItemDisplay[CL2 !RW BARBARIAN NMAG BARBARIAN_STAFFMODS]: %SAGE%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[THROWING !ZON !RW BARBARIAN NMAG SOCK>1]: %SAGE%%NAME%{%NAME%}%CONTINUE%
 ItemDisplay[CL2 BARBARIAN MAG !ID]: %TEAL%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[THROWING !ZON BARBARIAN MAG !ID]: %TEAL%%NAME%{%NAME%}%CONTINUE%
 ItemDisplay[SUP NMAG ba1 !RW BARBARIAN BARBARIAN_STAFFMODS]: %BLUE%Sup %SAGE%Jawbone Cap%CONTINUE%
 ItemDisplay[SUP NMAG ba2 !RW BARBARIAN BARBARIAN_STAFFMODS]: %BLUE%Sup %SAGE%Fanged Helm%CONTINUE%
 ItemDisplay[SUP NMAG ba3 !RW BARBARIAN BARBARIAN_STAFFMODS]: %BLUE%Sup %SAGE%Horned Helm%CONTINUE%
@@ -764,6 +786,33 @@ ItemDisplay[SUP NMAG bac !RW BARBARIAN BARBARIAN_STAFFMODS]: %BLUE%Sup %SAGE%Fur
 ItemDisplay[SUP NMAG bad !RW BARBARIAN BARBARIAN_STAFFMODS]: %BLUE%Sup %SAGE%Destroyer Helm%CONTINUE%
 ItemDisplay[SUP NMAG bae !RW BARBARIAN BARBARIAN_STAFFMODS]: %BLUE%Sup %SAGE%Conqueror Crown%CONTINUE%
 ItemDisplay[SUP NMAG baf !RW BARBARIAN BARBARIAN_STAFFMODS]: %BLUE%Sup %SAGE%Guardian Crown%CONTINUE%
+ItemDisplay[SUP NMAG tkf !RW BARBARIAN SOCK>1]: %RED%Sup %SAGE%Throwing Knife%CONTINUE%
+ItemDisplay[SUP NMAG tax !RW BARBARIAN SOCK>1]: %RED%Sup %SAGE%Throwing Axe%CONTINUE%
+ItemDisplay[SUP NMAG bkf !RW BARBARIAN SOCK>1]: %RED%Sup %SAGE%Balanced Knife%CONTINUE%
+ItemDisplay[SUP NMAG bal !RW BARBARIAN SOCK>1]: %RED%Sup %SAGE%Balanced Axe%CONTINUE%
+ItemDisplay[SUP NMAG jav !RW BARBARIAN SOCK>1]: %RED%Sup %SAGE%Javelin%CONTINUE%
+ItemDisplay[SUP NMAG pil !RW BARBARIAN SOCK>1]: %RED%Sup %SAGE%Pilum%CONTINUE%
+ItemDisplay[SUP NMAG ssp !RW BARBARIAN SOCK>1]: %RED%Sup %SAGE%Short Spear%CONTINUE%
+ItemDisplay[SUP NMAG glv !RW BARBARIAN SOCK>1]: %RED%Sup %SAGE%Glaive%CONTINUE%
+ItemDisplay[SUP NMAG tsp !RW BARBARIAN SOCK>1]: %RED%Sup %SAGE%Throwing Spear%CONTINUE%
+ItemDisplay[SUP NMAG 9tk !RW BARBARIAN SOCK>1]: %RED%Sup %SAGE%Battle Dart%CONTINUE%
+ItemDisplay[SUP NMAG 9ta !RW BARBARIAN SOCK>1]: %RED%Sup %SAGE%Francisca%CONTINUE%
+ItemDisplay[SUP NMAG 9bk !RW BARBARIAN SOCK>1]: %RED%Sup %SAGE%War Dart%CONTINUE%
+ItemDisplay[SUP NMAG 9b8 !RW BARBARIAN SOCK>1]: %RED%Sup %SAGE%Hurlbat%CONTINUE%
+ItemDisplay[SUP NMAG 9ja !RW BARBARIAN SOCK>1]: %RED%Sup %SAGE%War Javelin%CONTINUE%
+ItemDisplay[SUP NMAG 9pi !RW BARBARIAN SOCK>1]: %RED%Sup %SAGE%Great Pilum%CONTINUE%
+ItemDisplay[SUP NMAG 9s9 !RW BARBARIAN SOCK>1]: %RED%Sup %SAGE%Simbilan%CONTINUE%
+ItemDisplay[SUP NMAG 9gl !RW BARBARIAN SOCK>1]: %RED%Sup %SAGE%Spiculum%CONTINUE%
+ItemDisplay[SUP NMAG 9ts !RW BARBARIAN SOCK>1]: %RED%Sup %SAGE%Harpoon%CONTINUE%
+ItemDisplay[SUP NMAG 7tk !RW BARBARIAN SOCK>1]: %RED%Sup %SAGE%Flying Knife%CONTINUE%
+ItemDisplay[SUP NMAG 7ta !RW BARBARIAN SOCK>1]: %RED%Sup %SAGE%Flying Axe%CONTINUE%
+ItemDisplay[SUP NMAG 7bk !RW BARBARIAN SOCK>1]: %RED%Sup %SAGE%Winged Knife%CONTINUE%
+ItemDisplay[SUP NMAG 7b8 !RW BARBARIAN SOCK>1]: %RED%Sup %SAGE%Winged Axe%CONTINUE%
+ItemDisplay[SUP NMAG 7ja !RW BARBARIAN SOCK>1]: %RED%Sup %SAGE%Hyperion Javelin%CONTINUE%
+ItemDisplay[SUP NMAG 7pi !RW BARBARIAN SOCK>1]: %RED%Sup %SAGE%Stygian Pilum%CONTINUE%
+ItemDisplay[SUP NMAG 7s7 !RW BARBARIAN SOCK>1]: %RED%Sup %SAGE%Balrog Spear%CONTINUE%
+ItemDisplay[SUP NMAG 7gl !RW BARBARIAN SOCK>1]: %RED%Sup %SAGE%Ghost Glaive%CONTINUE%
+ItemDisplay[SUP NMAG 7ts !RW BARBARIAN SOCK>1]: %RED%Sup %SAGE%Winged Harpoon%CONTINUE%
 
 // Colorize Sorc Orbs, Staves for Sorcs (if magic or roll staffmods)
 ItemDisplay[CL6 !RW SORCERESS NMAG SORCERESS_STAFFMODS]: %SAGE%%NAME%{%NAME%}%CONTINUE%
@@ -962,6 +1011,9 @@ ItemDisplay[luca]: %NAME%{%NAME%%NL%%CORAL%world is made over in our image.%NL%A
 // Vial of Lightsong
 ItemDisplay[lsvl]: %DOT-62%%NAME%{%NAME%%RED%Does not work with Indestructible items}%CONTINUE%
 
+// Demonic Cube (S11)
+ItemDisplay[imrn]: %DOT-62%%NAME%%CONTINUE%
+
 // Lillith's Mirror
 ItemDisplay[llmr]: %DOT-62%%NAME%{%NAME%%RED%Resulting items cannot be Transmuted%NL%%WHITE%Only useable with %BLUE%Magic%WHITE%/%YELLOW%Rare%WHITE%/%ORANGE%Crafted %WHITE%Equipment}%CONTINUE%
 
@@ -975,7 +1027,7 @@ ItemDisplay[(ALL_MAPS) MAG]: %DOT-62%%BLUE%%NAME%%CONTINUE%
 ItemDisplay[(ALL_MAPS) RARE]: %DOT-A8%%YELLOW%%NAME%%CONTINUE%
 
 // Unique Maps Notice
-ItemDisplay[(t51 OR t52 OR t53) UNI]: %DOT-61%%GOLD%%NAME%%CONTINUE%
+ItemDisplay[(t51 OR t52 OR t53 OR t54 OR t55) UNI]: %DOT-61%%GOLD%%NAME%%CONTINUE%
 
 // Map Recipes
 // Updated and commented out to prevent redundant/duplicate recipe descriptions. S9 added default recipes to many of these items
@@ -1051,6 +1103,9 @@ ItemDisplay[t15]: %NAME%{%NAME%%ORANGE%Magic %BLUE%Cold %GREEN%Poison%NL%%WHITE%
 //Ruined Cistern
 ItemDisplay[t16]: %NAME%{%NAME%%ORANGE%Magic %RED%Fire %BLUE%Cold%NL%%WHITE%Immunities:}%CONTINUE%
 
+//Halls of Torture (Introduced in S11, no immunes on introduction, will gain immunes in S12+)
+ItemDisplay[t17]: %NAME%{%NAME%%CORAL%Debut Season - No Immunities%NL%%WHITE%Immunities:}%CONTINUE%
+
 //Pthlegethon
 ItemDisplay[t21]: %NAME%{%NAME%%RED%Fire %YELLOW%Lightning%NL%%WHITE%Immunities:}%CONTINUE%
 
@@ -1069,11 +1124,11 @@ ItemDisplay[t25]: %NAME%{%NAME%%YELLOW%Lightning %GREEN%Poison%NL%%WHITE%Immunit
 //Shadows of Westmarch
 ItemDisplay[t26]: %NAME%{%NAME%%GOLD%Physical %GREEN%Poison%NL%%WHITE%Immunities:}%CONTINUE%
 
-//Demon Road (Introduced in S10, no immunes on introduction, will gain immunes in S11+)
-ItemDisplay[t27]: %NAME%{%NAME%%CORAL%Debut Season - No Immunities%NL%%WHITE%Immunities:}%CONTINUE%
+//Demon Road 
+ItemDisplay[t27]: %NAME%{%NAME%%DARK_GREEN%TBD%NL%%WHITE%Immunities:}%CONTINUE%
 
-//Skovos Stronghold (Introduced in S10, no immunes on introduction, will gain immunes in S11+)
-ItemDisplay[t28]: %NAME%{%NAME%%CORAL%Debut Season - No Immunities%NL%%WHITE%Immunities:}%CONTINUE%
+//Skovos Stronghold
+ItemDisplay[t28]: %NAME%{%NAME%%DARK_GREEN%TBD%NL%%WHITE%Immunities:}%CONTINUE%
 
 //River of Blood
 ItemDisplay[t31]: %NAME%{%NAME%%ORANGE%Magic %BLUE%Cold %GREEN%Poison%NL%%WHITE%Immunities:}%CONTINUE%
@@ -3213,14 +3268,17 @@ ItemDisplay[CL3 NMAG RES=28 !RW]: %NAME% %GRAY%(%PURPLE%+28%GRAY%)%CONTINUE%
 ItemDisplay[CL3 NMAG RES=29 !RW]: %NAME% %GRAY%(%PURPLE%+29%GRAY%)%CONTINUE%
 ItemDisplay[CL3 NMAG RES=30 !RW]: %NAME% %GRAY%(%PURPLE%+30%GRAY%)%CONTINUE%
 
+
 // [=|| BARBARIAN ||=]
 
 
-
-// Show high value properties in item names of magic Barb Helms
+// Show high value properties in item names of magic Barb Helms and Throwing Weapons
 
 // Prepare to drop properties to a new line if one of the below properties exist
 ItemDisplay[(CL2 OR amu) (CLSK4>0 OR TABSK32>0 OR TABSK33>0 OR TABSK34>0) (MAG OR RARE OR CRAFT) BARBARIAN]: %CL%%NAME%{%NAME%}%CONTINUE%
+
+ItemDisplay[THROWING !ZON (FOOLS OR EDAM>200 OR AMP_ON_STRIKING OR AMP_ON_CASTING OR LR_ON_STRIKING OR LR_ON_CASTING) (MAG OR RARE OR CRAFT) BARBARIAN !SHOP]: %CL%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[THROWING !ZON (FOOLS OR EDAM>200 OR AMP_ON_STRIKING OR AMP_ON_CASTING OR LR_ON_STRIKING OR LR_ON_CASTING) (MAG OR RARE OR CRAFT) BARBARIAN SHOP]: %CL%%NAME%{%NAME%}%CONTINUE%
 
 // +Barb Skills on Barb Helms, Amulets
 ItemDisplay[(CL2 OR amu) MAG BARBARIAN CLSK4>0]: %TAN%+%CLSK4% Barbarian %BLUE%%NAME%{%NAME%}%CONTINUE%
@@ -3239,6 +3297,56 @@ ItemDisplay[(CL2 OR amu) CRAFT BARBARIAN TABSK33>0]: %TAN%+%TABSK25% Masteries %
 ItemDisplay[(CL2 OR amu) MAG BARBARIAN TABSK34>0]: %TAN%+%TABSK34% Warcries %BLUE%%NAME%{%NAME%}%CONTINUE%
 ItemDisplay[(CL2 OR amu) RARE BARBARIAN TABSK34>0]: %TAN%+%TABSK34% Warcries %YELLOW%%NAME%{%NAME%}%CONTINUE%
 ItemDisplay[(CL2 OR amu) CRAFT BARBARIAN TABSK34>0]: %TAN%+%TABSK34% Warcries %ORANGE%%NAME%{%NAME%}%CONTINUE%
+
+// High ED or Fools on THROWING !ZON Weapons
+ItemDisplay[THROWING !ZON MAG BARBARIAN FOOLS !SHOP]: %RED%Fools %BLUE%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[THROWING !ZON RARE BARBARIAN FOOLS !SHOP]: %RED%Fools %YELLOW%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[THROWING !ZON CRAFT BARBARIAN FOOLS !SHOP]: %RED%Fools %ORANGE%%NAME%{%NAME%}%CONTINUE%
+
+ItemDisplay[THROWING !ZON MAG BARBARIAN EDAM>200 !SHOP]: %CORAL%%EDAM%% ED %BLUE%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[THROWING !ZON RARE BARBARIAN EDAM>200 !SHOP]: %CORAL%%EDAM%% ED %YELLOW%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[THROWING !ZON CRAFT BARBARIAN EDAM>200 !SHOP]: %CORAL%%EDAM%% ED %ORANGE%%NAME%{%NAME%}%CONTINUE%
+
+ItemDisplay[THROWING !ZON MAG FOOLS SHOP]: %RED%Fools %BLUE%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[THROWING !ZON RARE FOOLS SHOP]: %RED%Fools %YELLOW%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[THROWING !ZON CRAFT FOOLS SHOP]: %RED%Fools %ORANGE%%NAME%{%NAME%}%CONTINUE%
+
+ItemDisplay[THROWING !ZON MAG EDAM>200 SHOP]: %CORAL%%EDAM%% ED %BLUE%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[THROWING !ZON RARE EDAM>200 SHOP]: %CORAL%%EDAM%% ED %YELLOW%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[THROWING !ZON CRAFT EDAM>200 SHOP]: %CORAL%%EDAM%% ED %ORANGE%%NAME%{%NAME%}%CONTINUE%
+
+// Amp or Lower Res on THROWING !ZON Weapons
+ItemDisplay[THROWING !ZON MAG BARBARIAN AMP_ON_STRIKING !SHOP]: %PURPLE%Amp%GRAY%-%CORAL%S %BLUE%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[THROWING !ZON RARE BARBARIAN AMP_ON_STRIKING !SHOP]: %PURPLE%Amp%GRAY%-%CORAL%S %YELLOW%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[THROWING !ZON CRAFT BARBARIAN AMP_ON_STRIKING !SHOP]: %PURPLE%Amp%GRAY%-%CORAL%S %ORANGE%%NAME%{%NAME%}%CONTINUE%
+
+ItemDisplay[THROWING !ZON MAG BARBARIAN AMP_ON_CASTING !SHOP]: %PURPLE%Amp%GRAY%-%TEAL%C %BLUE%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[THROWING !ZON RARE BARBARIAN AMP_ON_CASTING !SHOP]: %PURPLE%Amp%GRAY%-%TEAL%C %YELLOW%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[THROWING !ZON CRAFT BARBARIAN AMP_ON_CASTING !SHOP]: %PURPLE%Amp%GRAY%-%TEAL%C %ORANGE%%NAME%{%NAME%}%CONTINUE%
+
+ItemDisplay[THROWING !ZON MAG BARBARIAN LR_ON_STRIKING !SHOP]: %PURPLE%Lower Res%GRAY%-%CORAL%S %BLUE%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[THROWING !ZON RARE BARBARIAN LR_ON_STRIKING !SHOP]: %PURPLE%Lower Res%GRAY%-%CORAL%S %YELLOW%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[THROWING !ZON CRAFT BARBARIAN LR_ON_STRIKING !SHOP]: %PURPLE%Lower Res%GRAY%-%CORAL%S %ORANGE%%NAME%{%NAME%}%CONTINUE%
+
+ItemDisplay[THROWING !ZON MAG BARBARIAN LR_ON_CASTING !SHOP]: %PURPLE%Lower Res%GRAY%-%TEAL%C %BLUE%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[THROWING !ZON RARE BARBARIAN LR_ON_CASTING !SHOP]: %PURPLE%Lower Res%GRAY%-%TEAL%C %YELLOW%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[THROWING !ZON CRAFT BARBARIAN LR_ON_CASTING !SHOP]: %PURPLE%Lower Res%GRAY%-%TEAL%C %ORANGE%%NAME%{%NAME%}%CONTINUE%
+
+ItemDisplay[THROWING !ZON MAG AMP_ON_STRIKING SHOP]: %PURPLE%Amp%GRAY%-%CORAL%S %BLUE%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[THROWING !ZON RARE AMP_ON_STRIKING SHOP]: %PURPLE%Amp%GRAY%-%CORAL%S %YELLOW%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[THROWING !ZON CRAFT AMP_ON_STRIKING SHOP]: %PURPLE%Amp%GRAY%-%CORAL%S %ORANGE%%NAME%{%NAME%}%CONTINUE%
+
+ItemDisplay[THROWING !ZON MAG AMP_ON_CASTING SHOP]: %PURPLE%Amp%GRAY%-%TEAL%C %BLUE%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[THROWING !ZON RARE AMP_ON_CASTING SHOP]: %PURPLE%Amp%GRAY%-%TEAL%C %YELLOW%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[THROWING !ZON CRAFT AMP_ON_CASTING SHOP]: %PURPLE%Amp%GRAY%-%TEAL%C %ORANGE%%NAME%{%NAME%}%CONTINUE%
+
+ItemDisplay[THROWING !ZON MAG LR_ON_STRIKING SHOP]: %PURPLE%Lower Res%GRAY%-%CORAL%S %BLUE%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[THROWING !ZON RARE LR_ON_STRIKING SHOP]: %PURPLE%Lower Res%GRAY%-%CORAL%S %YELLOW%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[THROWING !ZON CRAFT LR_ON_STRIKING SHOP]: %PURPLE%Lower Res%GRAY%-%CORAL%S %ORANGE%%NAME%{%NAME%}%CONTINUE%
+
+ItemDisplay[THROWING !ZON MAG LR_ON_CASTING SHOP]: %PURPLE%Lower Res%GRAY%-%TEAL%C %BLUE%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[THROWING !ZON RARE LR_ON_CASTING SHOP]: %PURPLE%Lower Res%GRAY%-%TEAL%C %YELLOW%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[THROWING !ZON CRAFT LR_ON_CASTING SHOP]: %PURPLE%Lower Res%GRAY%-%TEAL%C %ORANGE%%NAME%{%NAME%}%CONTINUE%
 
 
 // Prepare Staffmod text to drop to new line
@@ -4361,6 +4469,8 @@ ItemDisplay[NMAG SHIELD SOCK=4 !RW CLVL<25 FILTLVL=1]: %NAME%{%NAME%%RED%Spirit:
 ItemDisplay[NMAG SHIELD SOCK=4 !RW CLVL>24 FILTLVL=1]: %NAME%{%NAME%%TAN%Spirit: %ORANGE%Tal Thul Ort Amn%NL%}%CONTINUE%
 ItemDisplay[NMAG SHIELD SOCK=4 !RW CLVL<57 FILTLVL=3]: %NAME%{%NAME%%RED%Exile: Vex Ohm Ist Dol (Level 57)%NL%}%CONTINUE%
 ItemDisplay[NMAG SHIELD SOCK=4 !RW CLVL>56 FILTLVL=3]: %NAME%{%NAME%%TAN%Exile: %ORANGE%Vex Ohm Ist Dol%NL%}%CONTINUE%
+ItemDisplay[NMAG SHIELD SOCK=4 !RW CLVL<59 FILTLVL=3]: %NAME%{%NAME%%RED%Epiphany: Lo Ith Lo Ist%NL%}%CONTINUE%
+ItemDisplay[NMAG SHIELD SOCK=4 !RW CLVL>58 FILTLVL=3]: %NAME%{%NAME%%TAN%Epiphany: %ORANGE%Lo Ith Lo Ist%NL%}%CONTINUE%
 ItemDisplay[NMAG SHIELD SOCK=4 !RW CLVL<65 FILTLVL=3]: %NAME%{%NAME%%RED%Phoenix: Vex Vex Lo Jah (Level 65)%NL%}%CONTINUE%
 ItemDisplay[NMAG SHIELD SOCK=4 !RW CLVL>64 FILTLVL=3]: %NAME%{%NAME%%TAN%Phoenix: %ORANGE%Vex Vex Lo Jah%NL%}%CONTINUE%
 
@@ -4381,6 +4491,8 @@ ItemDisplay[NMAG (WP9 OR WP10) SOCK=3 !RW CLVL<25 FILTLVL=1]: %NAME%{%NAME%%RED%
 ItemDisplay[NMAG (WP9 OR WP10) SOCK=3 !RW CLVL>24 FILTLVL=1]: %NAME%{%NAME%%TAN%Edge: %ORANGE%Tir Tal Amn%NL%}%CONTINUE%
 ItemDisplay[NMAG (WP9 OR WP10) SOCK=3 !RW CLVL<39 FILTLVL=2]: %NAME%{%NAME%%RED%Melody: Shael Ko Nef (Level 39)%NL%}%CONTINUE%
 ItemDisplay[NMAG (WP9 OR WP10) SOCK=3 !RW CLVL>38 FILTLVL=2]: %NAME%{%NAME%%TAN%Melody: %ORANGE%Shael Ko Nef%NL%}%CONTINUE%
+ItemDisplay[NMAG (WP9 OR WP10) SOCK=3 !RW CLVL<45 FILTLVL=2]: %NAME%{%NAME%%RED%Loyalty: Pul Tir Dol (Level 45)%NL%}%CONTINUE%
+ItemDisplay[NMAG (WP9 OR WP10) SOCK=3 !RW CLVL>44 FILTLVL=2]: %NAME%{%NAME%%TAN%Loyalty: %ORANGE%Pul Tir Dol%NL%}%CONTINUE%
 ItemDisplay[NMAG (WP9 OR WP10) SOCK=3 !RW CLVL<49 FILTLVL=3]: %NAME%{%NAME%%RED%Venom: Tal Dol Mal (Level 49)%NL%}%CONTINUE%
 ItemDisplay[NMAG (WP9 OR WP10) SOCK=3 !RW CLVL>48 FILTLVL=3]: %NAME%{%NAME%%TAN%Venom: %ORANGE%Tal Dol Mal%NL%}%CONTINUE%
 ItemDisplay[NMAG (WP9 OR WP10) SOCK=3 !RW CLVL<67 FILTLVL=3]: %NAME%{%NAME%%RED%Plague: Cham Fal Um (Level 67)%NL%}%CONTINUE%
@@ -4634,6 +4746,8 @@ ItemDisplay[NMAG WP13 SOCK=3 !RW CLVL<25 FILTLVL=1]: %NAME%{%NAME%%RED%King's Gr
 ItemDisplay[NMAG WP13 SOCK=3 !RW CLVL>24 FILTLVL=1]: %NAME%{%NAME%%TAN%King's Grace: %ORANGE%Amn Ral Thul%NL%}%CONTINUE%
 ItemDisplay[NMAG WP13 SOCK=3 !RW CLVL<43 FILTLVL=2]: %NAME%{%NAME%%RED%Lawbringer: Amn Lem Ko (Level 43)%NL%}%CONTINUE%
 ItemDisplay[NMAG WP13 SOCK=3 !RW CLVL>42 FILTLVL=2]: %NAME%{%NAME%%TAN%Lawbringer: %ORANGE%Amn Lem Ko%NL%}%CONTINUE%
+ItemDisplay[NMAG WP13 SOCK=3 !RW CLVL<47 FILTLVL=2]: %NAME%{%NAME%%RED%Crescent Moon: Shael Um Tir (Level 47)%NL%}%CONTINUE%
+ItemDisplay[NMAG WP13 SOCK=3 !RW CLVL>46 FILTLVL=2]: %NAME%{%NAME%%TAN%Crescent Moon: %ORANGE%Shael Um Tir%NL%}%CONTINUE%
 ItemDisplay[NMAG WP13 SOCK=3 !RW CLVL<49 FILTLVL=3]: %NAME%{%NAME%%RED%Venom: Tal Dol Mal (Level 49)%NL%}%CONTINUE%
 ItemDisplay[NMAG WP13 SOCK=3 !RW CLVL>48 FILTLVL=3]: %NAME%{%NAME%%TAN%Venom: %ORANGE%Tal Dol Mal%NL%}%CONTINUE%
 ItemDisplay[NMAG WP13 SOCK=3 !RW CLVL<65 FILTLVL=3]: %NAME%{%NAME%%RED%Fury: Jah Gul Eth (Level 65)%NL%}%CONTINUE%
@@ -4643,10 +4757,12 @@ ItemDisplay[NMAG WP13 SOCK=3 !RW CLVL>66 FILTLVL=3]: %NAME%{%NAME%%TAN%Plague: %
 
 ItemDisplay[NMAG WP13 SOCK=4 !RW CLVL<21 FILTLVL=1]: %NAME%{%NAME%%RED%Holy Thunder: Eth Ral Ort Tal (Level 21)%NL%}%CONTINUE%
 ItemDisplay[NMAG WP13 SOCK=4 !RW CLVL>20 FILTLVL=1]: %NAME%{%NAME%%TAN%Holy Thunder: %ORANGE%Eth Ral Ort Tal%NL%}%CONTINUE%
-ItemDisplay[NMAG WP13 SOCK=4 !RW CLVL<27 FILTLVL=1]: %NAME%{%NAME%%RED%Insight: Ral Tir Tal Sol (Level 27)%NL%}%CONTINUE%
-ItemDisplay[NMAG WP13 SOCK=4 !RW CLVL>26 FILTLVL=1]: %NAME%{%NAME%%TAN%Insight: %ORANGE%Ral Tir Tal Sol%NL%}%CONTINUE%
+//ItemDisplay[NMAG WP13 SOCK=4 !RW CLVL<27 FILTLVL=1]: %NAME%{%NAME%%RED%Insight: Ral Tir Tal Sol (Level 27)%NL%}%CONTINUE%   //Removed in S11
+//ItemDisplay[NMAG WP13 SOCK=4 !RW CLVL>26 FILTLVL=1]: %NAME%{%NAME%%TAN%Insight: %ORANGE%Ral Tir Tal Sol%NL%}%CONTINUE%      //Removed in S11
 ItemDisplay[NMAG WP13 SOCK=4 !RW CLVL<43 FILTLVL=2]: %NAME%{%NAME%%RED%Passion: Dol Ort Eld Lem (Level 43)%NL%}%CONTINUE%
 ItemDisplay[NMAG WP13 SOCK=4 !RW CLVL>42 FILTLVL=2]: %NAME%{%NAME%%TAN%Passion: %ORANGE%Dol Ort Eld Lem%NL%}%CONTINUE%
+ItemDisplay[NMAG WP13 SOCK=4 !RW CLVL<43 FILTLVL=2]: %NAME%{%NAME%%RED%Voice of Reason: Lem Ko El Eld (Level 43)%NL%}%CONTINUE%
+ItemDisplay[NMAG WP13 SOCK=4 !RW CLVL>42 FILTLVL=2]: %NAME%{%NAME%%TAN%Voice of Reason: %ORANGE%Lem Ko El Eld%NL%}%CONTINUE%
 ItemDisplay[NMAG WP13 SOCK=4 !RW CLVL<53 FILTLVL=3]: %NAME%{%NAME%%RED%Rift: Hel Ko Lem Gul (Level 53)%NL%}%CONTINUE%
 ItemDisplay[NMAG WP13 SOCK=4 !RW CLVL>52 FILTLVL=3]: %NAME%{%NAME%%TAN%Rift: %ORANGE%Hel Ko Lem Gul%NL%}%CONTINUE%
 ItemDisplay[NMAG WP13 SOCK=4 !RW CLVL<59 FILTLVL=3]: %NAME%{%NAME%%RED%Fortitude: El Sol Dol Lo (Level 59)%NL%}%CONTINUE%
@@ -4842,6 +4958,8 @@ ItemDisplay[NMAG (POLEARM OR SPEAR) SOCK=3 !RW CLVL<15 FILTLVL=1]: %NAME%{%NAME%
 ItemDisplay[NMAG (POLEARM OR SPEAR) SOCK=3 !RW CLVL>14 FILTLVL=1]: %NAME%{%NAME%%TAN%Malice: %ORANGE%Ith El Eth%NL%}%CONTINUE%
 ItemDisplay[NMAG (POLEARM OR SPEAR) SOCK=3 !RW CLVL<25 FILTLVL=1]: %NAME%{%NAME%%RED%Purity: Amn Eth Thul (Level 25)%NL%}%CONTINUE%
 ItemDisplay[NMAG (POLEARM OR SPEAR) SOCK=3 !RW CLVL>24 FILTLVL=1]: %NAME%{%NAME%%TAN%Purity: %ORANGE%Amn Eth Thul%NL%}%CONTINUE%
+ItemDisplay[NMAG SPEAR SOCK=3 !RW CLVL<45 FILTLVL=2]: %NAME%{%NAME%%RED%Loyalty: Pul Tir Dol (Level 45)%NL%}%CONTINUE%
+ItemDisplay[NMAG SPEAR SOCK=3 !RW CLVL>44 FILTLVL=2]: %NAME%{%NAME%%TAN%Loyalty: %ORANGE%Pul Tir Dol%NL%}%CONTINUE%
 ItemDisplay[NMAG (POLEARM OR SPEAR) SOCK=3 !RW CLVL<47 FILTLVL=2]: %NAME%{%NAME%%RED%Crescent Moon: Shael Um Tir (Level 47)%NL%}%CONTINUE%
 ItemDisplay[NMAG (POLEARM OR SPEAR) SOCK=3 !RW CLVL>46 FILTLVL=2]: %NAME%{%NAME%%TAN%Crescent Moon: %ORANGE%Shael Um Tir%NL%}%CONTINUE%
 ItemDisplay[NMAG (POLEARM OR SPEAR) SOCK=3 !RW CLVL<49 FILTLVL=3]: %NAME%{%NAME%%RED%Venom: Tal Dol Mal (Level 49)%NL%}%CONTINUE%
@@ -4907,11 +5025,45 @@ ItemDisplay[NMAG WP4 SOCK=3 !RW CLVL>64 FILTLVL=3]: %NAME%{%NAME%%TAN%Fury: %ORA
 ItemDisplay[NMAG WP4 SOCK=3 !RW CLVL<67 FILTLVL=3]: %NAME%{%NAME%%RED%Plague: Cham Fal Um (Level 67)%NL%}%CONTINUE%
 ItemDisplay[NMAG WP4 SOCK=3 !RW CLVL>66 FILTLVL=3]: %NAME%{%NAME%%TAN%Plague: %ORANGE%Cham Fal Um%NL%}%CONTINUE%
 
+// Throwing Weapons (S11)
+
+ItemDisplay[NMAG THROWING SOCK=2 !RW CLVL<13 FILTLVL=1]: %NAME%{%NAME%%RED%Steel: Tir El (Level 13)%NL%}%CONTINUE%
+ItemDisplay[NMAG THROWING SOCK=2 !RW CLVL>12 FILTLVL=1]: %NAME%{%NAME%%TAN%Steel: %ORANGE%Tir El%NL%}%CONTINUE%
+ItemDisplay[NMAG THROWING SOCK=2 !RW CLVL<21 FILTLVL=1]: %NAME%{%NAME%%RED%Zephyr: Ort Eth (Level 21)%NL%}%CONTINUE%
+ItemDisplay[NMAG THROWING SOCK=2 !RW CLVL>20 FILTLVL=1]: %NAME%{%NAME%%TAN%Zephyr: %ORANGE%Ort Eth%NL%}%CONTINUE%
+ItemDisplay[NMAG THROWING SOCK=2 !RW CLVL<25 FILTLVL=1]: %NAME%{%NAME%%RED%Strength: Amn Tir (Level 25)%NL%}%CONTINUE%
+ItemDisplay[NMAG THROWING SOCK=2 !RW CLVL>24 FILTLVL=1]: %NAME%{%NAME%%TAN%Strength: %ORANGE%Amn Tir%NL%}%CONTINUE%
+ItemDisplay[NMAG THROWING SOCK=2 !RW CLVL<61 FILTLVL=3]: %NAME%{%NAME%%RED%Wind: Sur El (Level 61)%NL%}%CONTINUE%
+ItemDisplay[NMAG THROWING SOCK=2 !RW CLVL>60 FILTLVL=3]: %NAME%{%NAME%%TAN%Wind: %ORANGE%Sur El%NL%}%CONTINUE%
+
+ItemDisplay[NMAG THROWING SOCK=3 !RW CLVL<15 FILTLVL=1]: %NAME%{%NAME%%RED%Malice: Ith El Eth (Level 15)%NL%}%CONTINUE%
+ItemDisplay[NMAG THROWING SOCK=3 !RW CLVL>14 FILTLVL=1]: %NAME%{%NAME%%TAN%Malice: %ORANGE%Ith El Eth%NL%}%CONTINUE%
+ItemDisplay[NMAG THROWING SOCK=3 !RW CLVL<25 FILTLVL=1]: %NAME%{%NAME%%RED%King's Grace: Amn Ral Thul (Level 25)%NL%}%CONTINUE%
+ItemDisplay[NMAG THROWING SOCK=3 !RW CLVL>24 FILTLVL=1]: %NAME%{%NAME%%TAN%King's Grace: %ORANGE%Amn Ral Thul%NL%}%CONTINUE%
+ItemDisplay[NMAG THROWING SOCK=3 !RW CLVL<43 FILTLVL=2]: %NAME%{%NAME%%RED%Lawbringer: Amn Lem Ko (Level 43)%NL%}%CONTINUE%
+ItemDisplay[NMAG THROWING SOCK=3 !RW CLVL>42 FILTLVL=2]: %NAME%{%NAME%%TAN%Lawbringer: %ORANGE%Amn Lem Ko%NL%}%CONTINUE%
+ItemDisplay[NMAG THROWING SOCK=3 !RW CLVL<47 FILTLVL=2]: %NAME%{%NAME%%RED%Crescent Moon: Shael Um Tir (Level 47)%NL%}%CONTINUE%
+ItemDisplay[NMAG THROWING SOCK=3 !RW CLVL>46 FILTLVL=2]: %NAME%{%NAME%%TAN%Crescent Moon: %ORANGE%Shael Um Tir%NL%}%CONTINUE%
+ItemDisplay[NMAG THROWING SOCK=3 !RW CLVL<49 FILTLVL=3]: %NAME%{%NAME%%RED%Venom: Tal Dol Mal (Level 49)%NL%}%CONTINUE%
+ItemDisplay[NMAG THROWING SOCK=3 !RW CLVL>48 FILTLVL=3]: %NAME%{%NAME%%TAN%Venom: %ORANGE%Tal Dol Mal%NL%}%CONTINUE%
+ItemDisplay[NMAG THROWING SOCK=3 !RW CLVL<65 FILTLVL=3]: %NAME%{%NAME%%RED%Fury: Jah Gul Eth (Level 65)%NL%}%CONTINUE%
+ItemDisplay[NMAG THROWING SOCK=3 !RW CLVL>64 FILTLVL=3]: %NAME%{%NAME%%TAN%Fury: %ORANGE%Jah Gul Eth%NL%}%CONTINUE%
+ItemDisplay[NMAG THROWING SOCK=3 !RW CLVL<67 FILTLVL=3]: %NAME%{%NAME%%RED%Plague: Cham Fal Um (Level 67)%NL%}%CONTINUE%
+ItemDisplay[NMAG THROWING SOCK=3 !RW CLVL>66 FILTLVL=3]: %NAME%{%NAME%%TAN%Plague: %ORANGE%Cham Fal Um%NL%}%CONTINUE%
+
+
 // RUNEWORD TIER NOTES
 
 ItemDisplay[NMAG !RW SOCK>1 FILTLVL>3]: %NAME%{%NAME%%RED%Invalid Filter Level%NL%%WHITE%Filter Level: 4 (Class Loot Colors)%NL%}%CONTINUE%    //Keep active until Lore flavor text is added
 //ItemDisplay[NMAG !RW SOCK>1 FILTLVL>3]: %NAME%{%NAME%%RED%Stay a while and listen...%NL%%WHITE%Filter Level: 4 (Flavor Text)%NL%}%CONTINUE%   //Use this when flavor text is added
 // Make sure to still use Invalid Filter Level for non-uniques and sets, flavor text will not be on normal bases
+
+ItemDisplay[NMAG THROWING !RW SOCK=2 FILTLVL=1]: %NAME%{%NAME%%WHITE%Runewords:%NL%%WHITE%Filter Level: 1 (Low Runewords)%NL%}%CONTINUE%
+ItemDisplay[NMAG THROWING !RW SOCK=2 FILTLVL=2]: %NAME%{%NAME%%RED%None (Incorrect Sockets, Change Filter Level)%NL%%WHITE%Runewords:%NL%%WHITE%Filter Level: 2 (Mid Runewords)%NL%}%CONTINUE%
+ItemDisplay[NMAG THROWING !RW SOCK=2 FILTLVL=3]: %NAME%{%NAME%%WHITE%Runewords:%NL%%WHITE%Filter Level: 3 (High Runewords)%NL%}%CONTINUE%
+ItemDisplay[NMAG THROWING !RW SOCK=3 FILTLVL=1]: %NAME%{%NAME%%WHITE%Runewords:%NL%%WHITE%Filter Level: 1 (Low Runewords)%NL%}%CONTINUE%
+ItemDisplay[NMAG THROWING !RW SOCK=3 FILTLVL=2]: %NAME%{%NAME%%WHITE%Runewords:%NL%%WHITE%Filter Level: 2 (Mid Runewords)%NL%}%CONTINUE%
+ItemDisplay[NMAG THROWING !RW SOCK=3 FILTLVL=3]: %NAME%{%NAME%%WHITE%Runewords:%NL%%WHITE%Filter Level: 3 (High Runewords)%NL%}%CONTINUE%
 
 ItemDisplay[NMAG WP4 !RW SOCK=2 FILTLVL=1]: %NAME%{%NAME%%WHITE%Runewords:%NL%%WHITE%Filter Level: 1 (Low Runewords)%NL%}%CONTINUE%
 ItemDisplay[NMAG WP4 !RW SOCK=2 FILTLVL=2]: %NAME%{%NAME%%RED%None (Incorrect Sockets, Change Filter Level)%NL%%WHITE%Runewords:%NL%%WHITE%Filter Level: 2 (Mid Runewords)%NL%}%CONTINUE%
@@ -5613,7 +5765,7 @@ ItemDisplay[NMAG HELM SOCK=0 !SUP]: %NAME%{%NAME%%GRAY%Add Sockets: %ORANGE%Ral 
 
 ItemDisplay[NMAG SHIELD SOCK=0 !SUP]: %NAME%{%NAME%%GRAY%Add Sockets: %ORANGE%Tal %WHITE%+ %ORANGE%Amn %WHITE%+ %RED%PRuby%CL%}%CONTINUE%
 
-ItemDisplay[NMAG WEAPON !THROWING SOCK=0 !SUP]: %NAME%{%NAME%%GRAY%Add Sockets: %ORANGE%Ral %WHITE%+ %ORANGE%Amn %WHITE%+ %PURPLE%PAmethyst%CL%}%CONTINUE%
+ItemDisplay[NMAG WEAPON SOCK=0 !SUP]: %NAME%{%NAME%%GRAY%Add Sockets: %ORANGE%Ral %WHITE%+ %ORANGE%Amn %WHITE%+ %PURPLE%PAmethyst%CL%}%CONTINUE%
 
 
 // Tags for Normal, Exceptional, Elite Bases
@@ -6045,7 +6197,7 @@ ItemDisplay[r03s]: %NAME%{%NAME%%NL%%ORANGE%Bountiful:%WHITE% This + %YELLOW%PTo
 ItemDisplay[r03s]: %NAME%{%NAME%%NL%%TAN%Transmute the following with a %BLUE%Jewel %TAN%or %WHITE%Jewel Fragment%NL%%ORANGE%Crafting}%CONTINUE%  //This should always be the last entry for the rune
 
 //Nef Rune
-ItemDisplay[r04s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%Knockback%NL%%WHITE%Armor: %BLUE%+30 Def vs Missile%NL%%WHITE%Shields: %BLUE%+30 Def vs Missile}%CONTINUE%
+ItemDisplay[r04s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%Knockback%NL%%WHITE%Armor: %BLUE%+30 Def vs Missile%NL%%WHITE%Shields: %BLUE%+50 Def vs Missile}%CONTINUE%
 ItemDisplay[r04s]: %NAME%{%NAME%%NL%%NL%%ORANGE%Blood:%WHITE% This + %RED%PRuby %WHITE%+ %BLUE%Magic Gloves}%CONTINUE%
 ItemDisplay[r04s]: %NAME%{%NAME%%NL%%ORANGE%Caster:%WHITE% This + %PURPLE%PAmethyst %WHITE%+ %BLUE%Magic Helm}%CONTINUE%
 ItemDisplay[r04s]: %NAME%{%NAME%%NL%%ORANGE%Safety:%WHITE% This + %GREEN%PEmerald %WHITE%+ %BLUE%Magic Shield}%CONTINUE%
@@ -6103,7 +6255,7 @@ ItemDisplay[r10s]: %NAME%{%NAME%%NL%%ORANGE%Hit Power:%WHITE% This + %BLUE%PSapp
 ItemDisplay[r10s]: %NAME%{%NAME%%NL%%TAN%Transmute the following with a %BLUE%Jewel %TAN%or %WHITE%Jewel Fragment%NL%%ORANGE%Crafting}%CONTINUE%  //This should always be the last entry for the rune
 
 //Amn Rune
-ItemDisplay[r11s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%7% Life Leech%NL%%WHITE%Armor: %BLUE%Attacker Takes 14 Dmg%NL%%WHITE%Shields: %BLUE%Attacker Takes 14 Dmg}%CONTINUE%
+ItemDisplay[r11s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%7% Life Leech%NL%%WHITE%Armor: %BLUE%Attacker Takes 20 Dmg%NL%%WHITE%Shields: %BLUE%Attacker Takes 24 Dmg}%CONTINUE%
 ItemDisplay[r11s]: %NAME%{%NAME%%NL%%NL%%ORANGE%Blood:%WHITE% This + %RED%PRuby %WHITE%+ %BLUE%Magic Amulet}%CONTINUE%
 ItemDisplay[r11s]: %NAME%{%NAME%%NL%%ORANGE%Caster:%WHITE% This + %PURPLE%PAmethyst %WHITE%+ %BLUE%Magic Ring}%CONTINUE%
 ItemDisplay[r11s]: %NAME%{%NAME%%NL%%ORANGE%Safety:%WHITE% This + %GREEN%PEmerald %WHITE%+ %BLUE%Magic Ring}%CONTINUE%
@@ -6111,7 +6263,7 @@ ItemDisplay[r11s]: %NAME%{%NAME%%NL%%ORANGE%Hit Power:%WHITE% This + %BLUE%PSapp
 ItemDisplay[r11s]: %NAME%{%NAME%%NL%%TAN%Transmute the following with a %BLUE%Jewel %TAN%or %WHITE%Jewel Fragment%NL%%ORANGE%Crafting}%CONTINUE%  //This should always be the last entry for the rune
 
 //Sol Rune
-ItemDisplay[r12s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%+9 Min Damage%NL%%WHITE%Armor: %BLUE%Dmg Reduced by 7%NL%%WHITE%Shields: %BLUE%Dmg Reduced by 7}%CONTINUE%
+ItemDisplay[r12s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%+9 Min Damage%NL%%WHITE%Armor: %BLUE%Dmg Reduced by 9%NL%%WHITE%Shields: %BLUE%Dmg Reduced by 9}%CONTINUE%
 ItemDisplay[r12s]: %NAME%{%NAME%%NL%%NL%%ORANGE%Blood:%WHITE% This + %RED%PRuby %WHITE%+ %BLUE%Magic Ring}%CONTINUE%
 ItemDisplay[r12s]: %NAME%{%NAME%%NL%%ORANGE%Safety:%WHITE% This + %GREEN%PEmerald %WHITE%+ %BLUE%Magic Weapon}%CONTINUE%
 ItemDisplay[r12s]: %NAME%{%NAME%%NL%%ORANGE%Vampiric:%WHITE% This + %GRAY%PSkull %WHITE%+ %BLUE%Magic Shield}%CONTINUE%
@@ -6126,7 +6278,7 @@ ItemDisplay[r13s]: %NAME%{%NAME%%NL%%ORANGE%Brilliant:%WHITE% This + %LIGHT_GRAY
 ItemDisplay[r13s]: %NAME%{%NAME%%NL%%TAN%Transmute the following with a %BLUE%Jewel %TAN%or %WHITE%Jewel Fragment%NL%%ORANGE%Crafting}%CONTINUE%  //This should always be the last entry for the rune
 
 //Dol Rune
-ItemDisplay[r14s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%20% Enhanced Dmg%NL%%WHITE%Armor: %BLUE%Replenish Life +10%NL%%WHITE%Shields: %BLUE%Replenish Life +10}%CONTINUE%
+ItemDisplay[r14s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%20% Enhanced Dmg%NL%%WHITE%Armor: %BLUE%Replenish Life +20%NL%%WHITE%Shields: %BLUE%Replenish Life +30}%CONTINUE%
 ItemDisplay[r14s]: %NAME%{%NAME%%NL%%NL%%ORANGE%Vampiric:%WHITE% This + %GRAY%PSkull %WHITE%+ %BLUE%Magic Amulet}%CONTINUE%
 ItemDisplay[r14s]: %NAME%{%NAME%%NL%%ORANGE%Bountiful:%WHITE% This + %YELLOW%PTopaz %WHITE%+ %BLUE%Magic Shield}%CONTINUE%
 ItemDisplay[r14s]: %NAME%{%NAME%%NL%%TAN%Transmute the following with a %BLUE%Jewel %TAN%or %WHITE%Jewel Fragment%NL%%ORANGE%Crafting}%CONTINUE%  //This should always be the last entry for the rune
@@ -6164,19 +6316,19 @@ ItemDisplay[r19s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%+10 Strength%NL%%WHITE%Arm
 ItemDisplay[r20s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%75% Extra Gold%NL%%WHITE%Armor: %BLUE%50% Extra Gold%NL%%WHITE%Shields: %BLUE%50% Extra Gold}%CONTINUE%
 
 //Pul Rune
-ItemDisplay[r21s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%+75% Dmg to Demons, +100 AR to Demons%NL%%WHITE%Armor: %BLUE%30% Enhanced Defense%NL%%WHITE%Shields: %BLUE%30% Enhanced Defense}%CONTINUE%
+ItemDisplay[r21s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%+75% Dmg to Demons, +100 AR to Demons%NL%%WHITE%Armor: %BLUE%50% Enhanced Defense%NL%%WHITE%Shields: %BLUE%50% Enhanced Defense}%CONTINUE%
 
 //Um Rune
 ItemDisplay[r22s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%10% Open Wounds, +120 Open Wounds Dmg%NL%%WHITE%Armor: %BLUE%+15 All Resist%NL%%WHITE%Shields: %BLUE%+22 All Resist}%CONTINUE%
 
 //Mal Rune
-ItemDisplay[r23s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%Prevent Monster Heal%NL%%WHITE%Armor: %BLUE%Magic Dmg -7%NL%%WHITE%Shields: %BLUE%Magic Dmg -7}%CONTINUE%
+ItemDisplay[r23s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%Prevent Monster Heal%NL%%WHITE%Armor: %BLUE%Magic Dmg -9%NL%%WHITE%Shields: %BLUE%Magic Dmg -9}%CONTINUE%
 
 //Ist Rune
 ItemDisplay[r24s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%30% Magic Find%NL%%WHITE%Armor: %BLUE%30% Magic Find%NL%%WHITE%Shields: %BLUE%30% Magic Find}%CONTINUE%
 
 //Gul Rune
-ItemDisplay[r25s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%20% Attack Rating%NL%%WHITE%Armor: %BLUE%+4% Max Poison Res%NL%%WHITE%Shields: %BLUE%+4% Max Poison Res}%CONTINUE%
+ItemDisplay[r25s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%50% Attack Rating%NL%%WHITE%Armor: %BLUE%+4% Max Poison Res%NL%%WHITE%Shields: %BLUE%+4% Max Poison Res}%CONTINUE%
 
 //Vex Rune
 ItemDisplay[r26s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%7% Mana Leech%NL%%WHITE%Armor: %BLUE%+4% Max Fire Res%NL%%WHITE%Shields: %BLUE%+4% Max Fire Res}%CONTINUE%
@@ -6188,7 +6340,7 @@ ItemDisplay[r27s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%45% Enhanced Damage%NL%%WH
 ItemDisplay[r28s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%20% Deadly Strike%NL%%WHITE%Armor: %BLUE%+4% Max Lightning Res%NL%%WHITE%Shields: %BLUE%+4% Max Lightning Res}%CONTINUE%
 
 //Sur Rune
-ItemDisplay[r29s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%+4 Life Per Kill%NL%%WHITE%Armor: %BLUE%Max Mana +5%%NL%%WHITE%Shields: %BLUE%+50 Mana}%CONTINUE%
+ItemDisplay[r29s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%+4 Life Per Kill%NL%%WHITE%Armor: %BLUE%Max Mana +5%%NL%%WHITE%Shields: %BLUE%+75 Mana}%CONTINUE%
 
 //Ber Rune
 ItemDisplay[r30s]: %NAME%{%NAME%%WHITE%Weapons: %BLUE%20% Crushing Blow%NL%%WHITE%Armor: %BLUE%5% Damage Reduction%NL%%WHITE%Shields: %BLUE%5% Damage Reduction}%CONTINUE%
@@ -6428,13 +6580,13 @@ ItemDisplay[mp4 CLVL>29 !SHOP]:
 ItemDisplay[NMAG SOCK=1 !leg !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109) CLVL>15]:
 
 // Hide White Boots, Gloves, Belts unless in Town
-ItemDisplay[NMAG (BOOTS OR GLOVES OR BELT) !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109) CLVL>10]:
+ItemDisplay[NMAG (BOOTS OR GLOVES OR BELT) !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109) CLVL>6]:
 
-// Hide Non-magic Throwing weapons unless in Town
-ItemDisplay[NMAG THROWING !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109) !CL7 CLVL>10]:
+// Hide Non-magic Throwing weapons if they roll 1 Socket
+ItemDisplay[NMAG THROWING SOCK=1 CLVL>10]:
 
-// Hide Non-magic Amazon Javelins 
-ItemDisplay[NMAG (am5 OR ama OR amf) CLVL>10]:
+// Hide Non-magic Amazon Javelins if they roll 1 Socket 
+ItemDisplay[NMAG (am5 OR ama OR amf) SOCK=1 CLVL>10]:
 
 // Hide all Lesser Gems (below Flawless) unless in Town
 ItemDisplay[(gcv OR gcy OR gcb OR gcg OR gcr OR gcw OR skc OR gfv OR gfy OR gfb OR gfg OR gfr OR gfw OR skf OR gsv OR gsy OR gsb OR gsg OR gsr OR gsw OR sku) CLVL>30 !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109)]:
