@@ -22,7 +22,7 @@ ItemDisplay[(am5 OR ama OR amf) !ID MAG !ETH CLVL>85]:
 ItemDisplay[(am5 OR ama OR amf) NMAG CLVL>60]:
 ItemDisplay[(tpfl OR tpgl OR tpcl OR tpll)]:
 
-//GLOBAL HIDE
+//GLOBAL HID
 ItemDisplay[MAG !ID (BELT OR GLOVES OR BOOTS OR rin) CLVL>90]:
 // """
 // Index(1)
