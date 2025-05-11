@@ -65,14 +65,14 @@
             },
             "filters": [
                 {
-                    "name": "Erazure-Season-10-BIG-GG.filter",
-                    "url": "https://api.github.com/repos/FiltersBy-Erazure/PD2-Loot-Filter/contents/Erazure-Season-10-BIG-GG.filter?ref=main",
-                    "download_url": "https://raw.githubusercontent.com/FiltersBy-Erazure/PD2-Loot-Filter/main/Erazure-Season-10-BIG-GG.filter"
+                    "name": "Erazure-BIG-GG.filter",
+                    "url": "https://api.github.com/repos/FiltersBy-Erazure/PD2-Loot-Filter/contents/Erazure-BIG-GG.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/FiltersBy-Erazure/PD2-Loot-Filter/main/Erazure-BIG-GG.filter"
                 },
                 {
-                    "name": "Erazure-Season-10-Main.filter",
-                    "url": "https://api.github.com/repos/FiltersBy-Erazure/PD2-Loot-Filter/contents/Erazure-Season-10-Main.filter?ref=main",
-                    "download_url": "https://raw.githubusercontent.com/FiltersBy-Erazure/PD2-Loot-Filter/main/Erazure-Season-10-Main.filter"
+                    "name": "Erazure-Main.filter",
+                    "url": "https://api.github.com/repos/FiltersBy-Erazure/PD2-Loot-Filter/contents/Erazure-Main.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/FiltersBy-Erazure/PD2-Loot-Filter/main/Erazure-Main.filter"
                 }
             ]
         }
