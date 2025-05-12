@@ -211,6 +211,23 @@
         }
     ],
     [
+        "Sven",
+        {
+            "info": {
+                "name": "Sven's Filter",
+                "url": "https://api.github.com/repos/StandInTheRiver/Sven-s-Filter/contents",
+                "author": "Sven"
+            },
+            "filters": [
+                {
+                    "name": "loot.filter",
+                    "url": "https://api.github.com/repos/StandInTheRiver/Sven-s-Filter/contents/loot.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/StandInTheRiver/Sven-s-Filter/main/loot.filter"
+                }
+            ]
+        }
+    ],
+    [
         "Wolfie",
         {
             "info": {
