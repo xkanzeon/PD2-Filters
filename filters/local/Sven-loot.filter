@@ -876,11 +876,11 @@ ItemDisplay[NMAG SUP !ETH ED=0 !DIN (WEAPON OR ARMOR) FILTLVL>1]://
 ItemDisplay[NMAG !SUP !ETH !GLOVES !BOOTS !BELT !DIN !DRU !BAR !SIN !STAFF !SCEPTER (WEAPON OR ARMOR) FILTLVL>2]://
 
 //general hide bases
-ItemDisplay[NMAG ELT (SHIELD OR BOW OR XBOW OR POLEARM OR SPEAR OR STAFF OR SCEPTER OR SOR OR SIN) (SOCK=2)]://
-ItemDisplay[NMAG ELT (STAFF) (SOCK=3)]://
-ItemDisplay[NMAG EXC (SIN OR SCEPTER) (SOCK=2)]://
-ItemDisplay[NMAG (NORM OR EXC) !(DRU OR BAR OR BOOTS OR BELT OR GLOVES) (WEAPON OR ARMOR) (SOCK=0)]://
-ItemDisplay[NMAG (WEAPON OR ARMOR) (SOCK=1)]://
+ItemDisplay[NMAG ELT (SHIELD OR BOW OR XBOW OR POLEARM OR SPEAR OR STAFF OR SCEPTER OR SOR OR SIN) (SOCK=2) FILTLVL>1]://
+ItemDisplay[NMAG ELT (STAFF) (SOCK=3) FILTLVL>1]://
+ItemDisplay[NMAG EXC (SIN OR SCEPTER) (SOCK=2) FILTLVL>1]://
+ItemDisplay[NMAG (NORM OR EXC) !(DRU OR BAR OR BOOTS OR BELT OR GLOVES) (WEAPON OR ARMOR) (SOCK=0) FILTLVL>1]://
+ItemDisplay[NMAG (WEAPON OR ARMOR) (SOCK=1) FILTLVL>1]://
 ItemDisplay[NMAG (EXC OR ELT) (BOOTS OR BELT OR GLOVES) FILTLVL>0]://
 ItemDisplay[NMAG (aqv OR cqv) CLVL>5]://
 ItemDisplay[NMAG (BOOTS OR GLOVES OR BELT) CLVL>10]://
@@ -961,601 +961,601 @@ ItemDisplay[!ID SET amu]:ooo Amulet ooo%CONTINUE%
 
 /////////////////////////////////////////////////////////////////////////////////////////////
 //SET normal helms
-ItemDisplay[!ID SET cap]:%NAME%¹Infernal or Sander's%CONTINUE%
-ItemDisplay[!ID SET skp]:%NAME%¹Arcanna's helm%CONTINUE%
-ItemDisplay[!ID SET hlm]:%NAME%¹Berserker's helm%CONTINUE%
-ItemDisplay[!ID SET fhl]:%NAME%¹Isenharts helm%CONTINUE%
-ItemDisplay[!ID SET msk]:%NAME%¹Cathan's helm%CONTINUE%
-ItemDisplay[!ID SET bhm]:%NAME%¹Tancred's helm%CONTINUE%
-ItemDisplay[!ID SET ghm]:%NAME%¹Sigon's helm%CONTINUE%
-ItemDisplay[!ID SET crn]:%NAME%¹Iratha's or Milabrega's helm%CONTINUE%
-ItemDisplay[!ID SET ci0]:%NAME%¹Naj's Helm%CONTINUE%
+ItemDisplay[!ID SET cap]:%NAME%Â¹Infernal or Sander's%CONTINUE%
+ItemDisplay[!ID SET skp]:%NAME%Â¹Arcanna's helm%CONTINUE%
+ItemDisplay[!ID SET hlm]:%NAME%Â¹Berserker's helm%CONTINUE%
+ItemDisplay[!ID SET fhl]:%NAME%Â¹Isenharts helm%CONTINUE%
+ItemDisplay[!ID SET msk]:%NAME%Â¹Cathan's helm%CONTINUE%
+ItemDisplay[!ID SET bhm]:%NAME%Â¹Tancred's helm%CONTINUE%
+ItemDisplay[!ID SET ghm]:%NAME%Â¹Sigon's helm%CONTINUE%
+ItemDisplay[!ID SET crn]:%NAME%Â¹Iratha's or Milabrega's helm%CONTINUE%
+ItemDisplay[!ID SET ci0]:%NAME%Â¹Naj's Helm%CONTINUE%
 //UNIQUE normal helms
-ItemDisplay[!ID UNI cap]:%NAME%¹Biggin's Bonnet%CONTINUE%
-ItemDisplay[!ID UNI skp]:%NAME%¹Tarnhelm%CONTINUE%
-ItemDisplay[!ID UNI hlm]:%NAME%¹Coif of Glory%CONTINUE%
-ItemDisplay[!ID UNI fhl]:%NAME%¹Duskdeep%CONTINUE%
-ItemDisplay[!ID UNI msk]:%NAME%¹The Face of Horror%CONTINUE%
-ItemDisplay[!ID UNI bhm]:%NAME%¹Wormskull%CONTINUE%
-ItemDisplay[!ID UNI ghm]:%NAME%¹Howltusk%CONTINUE%
-ItemDisplay[!ID UNI crn]:%NAME%¹Undead Crown%CONTINUE%
+ItemDisplay[!ID UNI cap]:%NAME%Â¹Biggin's Bonnet%CONTINUE%
+ItemDisplay[!ID UNI skp]:%NAME%Â¹Tarnhelm%CONTINUE%
+ItemDisplay[!ID UNI hlm]:%NAME%Â¹Coif of Glory%CONTINUE%
+ItemDisplay[!ID UNI fhl]:%NAME%Â¹Duskdeep%CONTINUE%
+ItemDisplay[!ID UNI msk]:%NAME%Â¹The Face of Horror%CONTINUE%
+ItemDisplay[!ID UNI bhm]:%NAME%Â¹Wormskull%CONTINUE%
+ItemDisplay[!ID UNI ghm]:%NAME%Â¹Howltusk%CONTINUE%
+ItemDisplay[!ID UNI crn]:%NAME%Â¹Undead Crown%CONTINUE%
 //SET exceptional helms
-ItemDisplay[!ID SET xap]:%NAME%%ORANGE%O ²%GREEN%Cow king's helm %ORANGE%O%CONTINUE%
-ItemDisplay[!ID SET xhl]:%NAME%%ORANGE%O ²%GREEN%Sazabi's helm %ORANGE%O%CONTINUE%
-ItemDisplay[!ID SET xsk]:%NAME%%ORANGE%O ²%GREEN%Tal Rasha's helm %ORANGE%O%CONTINUE%
-ItemDisplay[!ID SET xh9]:%NAME%%ORANGE%O ²%GREEN%Natalya's helm %ORANGE%O%CONTINUE%
-ItemDisplay[!ID SET xhm]:%NAME%%ORANGE%O ²%GREEN%Guillaume's Face %ORANGE%O%CONTINUE%
-ItemDisplay[!ID SET xrn]:%NAME%%ORANGE%O ²%GREEN%Hwanin's helm %ORANGE%O%CONTINUE%
+ItemDisplay[!ID SET xap]:%NAME%%ORANGE%O Â²%GREEN%Cow king's helm %ORANGE%O%CONTINUE%
+ItemDisplay[!ID SET xhl]:%NAME%%ORANGE%O Â²%GREEN%Sazabi's helm %ORANGE%O%CONTINUE%
+ItemDisplay[!ID SET xsk]:%NAME%%ORANGE%O Â²%GREEN%Tal Rasha's helm %ORANGE%O%CONTINUE%
+ItemDisplay[!ID SET xh9]:%NAME%%ORANGE%O Â²%GREEN%Natalya's helm %ORANGE%O%CONTINUE%
+ItemDisplay[!ID SET xhm]:%NAME%%ORANGE%O Â²%GREEN%Guillaume's Face %ORANGE%O%CONTINUE%
+ItemDisplay[!ID SET xrn]:%NAME%%ORANGE%O Â²%GREEN%Hwanin's helm %ORANGE%O%CONTINUE%
 //UNIQUE exceptional helms
-ItemDisplay[!ID UNI xap]:%NAME%%ORANGE%O ²%GOLD%Peasant Crown %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI xkp]:%NAME%%ORANGE%O ²%GOLD%Rockstopper %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI xlm]:%NAME%%ORANGE%O ²%GOLD%Stealskull %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI xhl]:%NAME%%ORANGE%O ²%GOLD%Darksight Helm %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI xsk]:%NAME%%ORANGE%O ²%GOLD%Blackthorn's Face %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI xh9]:%NAME%%ORANGE%O ²%GOLD%Vampire Gaze %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI xhm]:%NAME%%ORANGE%O ²%GOLD%Valkyrie Wing %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI xrn]:%NAME%%ORANGE%O ²%GOLD%Crown of thieves %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI ci2]:%NAME%%ORANGE%O ²%GOLD%Kira's Guardian %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI xap]:%NAME%%ORANGE%O Â²%GOLD%Peasant Crown %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI xkp]:%NAME%%ORANGE%O Â²%GOLD%Rockstopper %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI xlm]:%NAME%%ORANGE%O Â²%GOLD%Stealskull %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI xhl]:%NAME%%ORANGE%O Â²%GOLD%Darksight Helm %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI xsk]:%NAME%%ORANGE%O Â²%GOLD%Blackthorn's Face %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI xh9]:%NAME%%ORANGE%O Â²%GOLD%Vampire Gaze %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI xhm]:%NAME%%ORANGE%O Â²%GOLD%Valkyrie Wing %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI xrn]:%NAME%%ORANGE%O Â²%GOLD%Crown of thieves %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI ci2]:%NAME%%ORANGE%O Â²%GOLD%Kira's Guardian %ORANGE%O%CONTINUE%
 //SET elite helms
-ItemDisplay[!ID SET uh9]:%NAME%%RED%O ³%GREEN%Trang-Oul's helm %RED%O%CONTINUE%
-ItemDisplay[!ID SET uhm]:%NAME%%RED%O ³%GREEN%Heaven's Brethren helm %RED%O%CONTINUE%
-ItemDisplay[!ID SET urn]:%NAME%%RED%O ³%GREEN%Griswold's helm %RED%O%CONTINUE%
-ItemDisplay[!ID SET ci3]:%NAME%%RED%O ³%GREEN%M'avina's helm %RED%O%CONTINUE%
+ItemDisplay[!ID SET uh9]:%NAME%%RED%O Â³%GREEN%Trang-Oul's helm %RED%O%CONTINUE%
+ItemDisplay[!ID SET uhm]:%NAME%%RED%O Â³%GREEN%Heaven's Brethren helm %RED%O%CONTINUE%
+ItemDisplay[!ID SET urn]:%NAME%%RED%O Â³%GREEN%Griswold's helm %RED%O%CONTINUE%
+ItemDisplay[!ID SET ci3]:%NAME%%RED%O Â³%GREEN%M'avina's helm %RED%O%CONTINUE%
 //UNIQUE elite helms
-ItemDisplay[!ID UNI uap]:%NAME%%PURPLE%O%BLUE%O%GREEN%O%YELLOW%O%ORANGE%O%RED%O ³%GOLD%Harlequin Crest %RED%O%ORANGE%O%YELLOW%O%GREEN%O%BLUE%O%PURPLE%O
-ItemDisplay[!ID UNI ulm]:%NAME%%RED%O ³%GOLD%Steel Shade %RED%O%CONTINUE%
-ItemDisplay[!ID UNI usk]:%NAME%%RED%O ³%GOLD%Andariel's Visage %RED%O%CONTINUE%
-ItemDisplay[!ID UNI uh9]:%NAME%%RED%O ³%GOLD%Giant Skull %RED%O%CONTINUE%
-ItemDisplay[!ID UNI uhm]:%NAME%%PURPLE%O%BLUE%O%GREEN%O%YELLOW%O%ORANGE%O%RED%O ³%GOLD%Veil of Steel or Nightwing's Veil %RED%O%ORANGE%O%YELLOW%O%GREEN%O%BLUE%O%PURPLE%O
-ItemDisplay[!ID UNI urn]:%NAME%%YELLOW%O%ORANGE%O%RED%O ³%GOLD%Crown of Ages %RED%O%ORANGE%O%YELLOW%O%CONTINUE%
-ItemDisplay[!ID UNI ci3]:%NAME%%PURPLE%O%BLUE%O%GREEN%O%YELLOW%O%ORANGE%O%RED%O ³%GOLD%Griffon's Eye %RED%O%ORANGE%O%YELLOW%O%GREEN%O%BLUE%O%PURPLE%O
+ItemDisplay[!ID UNI uap]:%NAME%%PURPLE%O%BLUE%O%GREEN%O%YELLOW%O%ORANGE%O%RED%O Â³%GOLD%Harlequin Crest %RED%O%ORANGE%O%YELLOW%O%GREEN%O%BLUE%O%PURPLE%O
+ItemDisplay[!ID UNI ulm]:%NAME%%RED%O Â³%GOLD%Steel Shade %RED%O%CONTINUE%
+ItemDisplay[!ID UNI usk]:%NAME%%RED%O Â³%GOLD%Andariel's Visage %RED%O%CONTINUE%
+ItemDisplay[!ID UNI uh9]:%NAME%%RED%O Â³%GOLD%Giant Skull %RED%O%CONTINUE%
+ItemDisplay[!ID UNI uhm]:%NAME%%PURPLE%O%BLUE%O%GREEN%O%YELLOW%O%ORANGE%O%RED%O Â³%GOLD%Veil of Steel or Nightwing's Veil %RED%O%ORANGE%O%YELLOW%O%GREEN%O%BLUE%O%PURPLE%O
+ItemDisplay[!ID UNI urn]:%NAME%%YELLOW%O%ORANGE%O%RED%O Â³%GOLD%Crown of Ages %RED%O%ORANGE%O%YELLOW%O%CONTINUE%
+ItemDisplay[!ID UNI ci3]:%NAME%%PURPLE%O%BLUE%O%GREEN%O%YELLOW%O%ORANGE%O%RED%O Â³%GOLD%Griffon's Eye %RED%O%ORANGE%O%YELLOW%O%GREEN%O%BLUE%O%PURPLE%O
 ///////
 //Set Normal Chests
-ItemDisplay[!ID SET qui]:%NAME%¹Arctic chest%CONTINUE%
-ItemDisplay[!ID SET lea]:%NAME%¹Vidala's chest%CONTINUE%
-ItemDisplay[!ID SET stu]:%NAME%¹Cow King's chest%CONTINUE%
-ItemDisplay[!ID SET rng]:%NAME%¹Angelic chest%CONTINUE%
-ItemDisplay[!ID SET chn]:%NAME%¹Cathan's chest%CONTINUE%
-ItemDisplay[!ID SET brs]:%NAME%¹Isenhart's chest%CONTINUE%
-ItemDisplay[!ID SET spl]:%NAME%¹Berserker's chest%CONTINUE%
-ItemDisplay[!ID SET gth]:%NAME%¹Sigon's chest%CONTINUE%
-ItemDisplay[!ID SET ltp]:%NAME%¹Arcanna's chest%CONTINUE%
-ItemDisplay[!ID SET ful]:%NAME%¹Tancred's chest%CONTINUE%
-ItemDisplay[!ID SET aar]:%NAME%¹Milabrega's chest%CONTINUE%
+ItemDisplay[!ID SET qui]:%NAME%Â¹Arctic chest%CONTINUE%
+ItemDisplay[!ID SET lea]:%NAME%Â¹Vidala's chest%CONTINUE%
+ItemDisplay[!ID SET stu]:%NAME%Â¹Cow King's chest%CONTINUE%
+ItemDisplay[!ID SET rng]:%NAME%Â¹Angelic chest%CONTINUE%
+ItemDisplay[!ID SET chn]:%NAME%Â¹Cathan's chest%CONTINUE%
+ItemDisplay[!ID SET brs]:%NAME%Â¹Isenhart's chest%CONTINUE%
+ItemDisplay[!ID SET spl]:%NAME%Â¹Berserker's chest%CONTINUE%
+ItemDisplay[!ID SET gth]:%NAME%Â¹Sigon's chest%CONTINUE%
+ItemDisplay[!ID SET ltp]:%NAME%Â¹Arcanna's chest%CONTINUE%
+ItemDisplay[!ID SET ful]:%NAME%Â¹Tancred's chest%CONTINUE%
+ItemDisplay[!ID SET aar]:%NAME%Â¹Milabrega's chest%CONTINUE%
 //unique normal chests
-ItemDisplay[!ID UNI qui]:%NAME%¹Greyform%CONTINUE%
-ItemDisplay[!ID UNI lea]:%NAME%¹Blinkbat's Form%CONTINUE%
-ItemDisplay[!ID UNI hla]:%NAME%¹The Centurion%CONTINUE%
-ItemDisplay[!ID UNI stu]:%NAME%¹Twitchthroe%CONTINUE%
-ItemDisplay[!ID UNI rng]:%NAME%¹Darkglow%CONTINUE%
-ItemDisplay[!ID UNI scl]:%NAME%¹Hawkmail%CONTINUE%
-ItemDisplay[!ID UNI chn]:%NAME%¹Sparking Mail%CONTINUE%
-ItemDisplay[!ID UNI brs]:%NAME%¹Venom Ward%CONTINUE%
-ItemDisplay[!ID UNI spl]:%NAME%¹Iceblink%CONTINUE%
-ItemDisplay[!ID UNI plt]:%NAME%¹Boneflesh%CONTINUE%
-ItemDisplay[!ID UNI fld]:%NAME%¹Rockfleece%CONTINUE%
-ItemDisplay[!ID UNI gth]:%NAME%¹Rattlecage%CONTINUE%
-ItemDisplay[!ID UNI ltp]:%NAME%¹Heavenly Garb%CONTINUE%
-ItemDisplay[!ID UNI ful]:%NAME%¹Goldskin%CONTINUE%
-ItemDisplay[!ID UNI aar]:%NAME%¹Silks of the Victor%CONTINUE%
+ItemDisplay[!ID UNI qui]:%NAME%Â¹Greyform%CONTINUE%
+ItemDisplay[!ID UNI lea]:%NAME%Â¹Blinkbat's Form%CONTINUE%
+ItemDisplay[!ID UNI hla]:%NAME%Â¹The Centurion%CONTINUE%
+ItemDisplay[!ID UNI stu]:%NAME%Â¹Twitchthroe%CONTINUE%
+ItemDisplay[!ID UNI rng]:%NAME%Â¹Darkglow%CONTINUE%
+ItemDisplay[!ID UNI scl]:%NAME%Â¹Hawkmail%CONTINUE%
+ItemDisplay[!ID UNI chn]:%NAME%Â¹Sparking Mail%CONTINUE%
+ItemDisplay[!ID UNI brs]:%NAME%Â¹Venom Ward%CONTINUE%
+ItemDisplay[!ID UNI spl]:%NAME%Â¹Iceblink%CONTINUE%
+ItemDisplay[!ID UNI plt]:%NAME%Â¹Boneflesh%CONTINUE%
+ItemDisplay[!ID UNI fld]:%NAME%Â¹Rockfleece%CONTINUE%
+ItemDisplay[!ID UNI gth]:%NAME%Â¹Rattlecage%CONTINUE%
+ItemDisplay[!ID UNI ltp]:%NAME%Â¹Heavenly Garb%CONTINUE%
+ItemDisplay[!ID UNI ful]:%NAME%Â¹Goldskin%CONTINUE%
+ItemDisplay[!ID UNI aar]:%NAME%Â¹Silks of the Victor%CONTINUE%
 //Set exceptional chests
-ItemDisplay[!ID SET xcl]:%NAME%%ORANGE%O ²%GREEN%Hwanin's chest %ORANGE%O%CONTINUE%
-ItemDisplay[!ID SET xrs]:%NAME%%ORANGE%O ²%GREEN%Heaven's Brethren chest %ORANGE%O%CONTINUE%
-ItemDisplay[!ID SET xul]:%NAME%%ORANGE%O ²%GREEN%Trang-Oul's chest %ORANGE%O%CONTINUE%
-ItemDisplay[!ID SET xar]:%NAME%%ORANGE%O ²%GREEN%Griswold's chest %ORANGE%O%CONTINUE%
+ItemDisplay[!ID SET xcl]:%NAME%%ORANGE%O Â²%GREEN%Hwanin's chest %ORANGE%O%CONTINUE%
+ItemDisplay[!ID SET xrs]:%NAME%%ORANGE%O Â²%GREEN%Heaven's Brethren chest %ORANGE%O%CONTINUE%
+ItemDisplay[!ID SET xul]:%NAME%%ORANGE%O Â²%GREEN%Trang-Oul's chest %ORANGE%O%CONTINUE%
+ItemDisplay[!ID SET xar]:%NAME%%ORANGE%O Â²%GREEN%Griswold's chest %ORANGE%O%CONTINUE%
 //unique exceptional chests
-ItemDisplay[!ID UNI xui]:%NAME%%ORANGE%O ²%GOLD%Spirit Shroud %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI xea]:%NAME%%ORANGE%O ²%GOLD%Skin of the Vipermagi %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI xla]:%NAME%%ORANGE%O ²%GOLD%Skin of the Flayed One %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI xtu]:%NAME%%ORANGE%O ²%GOLD%Iron Pelt %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI xng]:%NAME%%ORANGE%O ²%GOLD%Spirit Forge %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI xcl]:%NAME%%ORANGE%O ²%GOLD%Crow Caw %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI xhn]:%NAME%%ORANGE%O ²%GOLD%Shaftstop% %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI xrs]:%NAME%%ORANGE%O ²%GOLD%Duriel's Shell %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI xpl]:%NAME%%ORANGE%O ²%GOLD%Skullder's Ire %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI xlt]:%NAME%%ORANGE%O ²%GOLD%Guardian Angel %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI xld]:%NAME%%ORANGE%O ²%GOLD%Toothrow %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI xth]:%NAME%%ORANGE%O ²%GOLD%Atma's Wail %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI xtp]:%NAME%%ORANGE%O ²%GOLD%Que-Hegan's Wisdom %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI xul]:%NAME%%ORANGE%O ²%GOLD%Black Hades %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI xar]:%NAME%%ORANGE%O ²%GOLD%Corpsemourn %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI xui]:%NAME%%ORANGE%O Â²%GOLD%Spirit Shroud %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI xea]:%NAME%%ORANGE%O Â²%GOLD%Skin of the Vipermagi %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI xla]:%NAME%%ORANGE%O Â²%GOLD%Skin of the Flayed One %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI xtu]:%NAME%%ORANGE%O Â²%GOLD%Iron Pelt %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI xng]:%NAME%%ORANGE%O Â²%GOLD%Spirit Forge %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI xcl]:%NAME%%ORANGE%O Â²%GOLD%Crow Caw %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI xhn]:%NAME%%ORANGE%O Â²%GOLD%Shaftstop% %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI xrs]:%NAME%%ORANGE%O Â²%GOLD%Duriel's Shell %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI xpl]:%NAME%%ORANGE%O Â²%GOLD%Skullder's Ire %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI xlt]:%NAME%%ORANGE%O Â²%GOLD%Guardian Angel %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI xld]:%NAME%%ORANGE%O Â²%GOLD%Toothrow %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI xth]:%NAME%%ORANGE%O Â²%GOLD%Atma's Wail %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI xtp]:%NAME%%ORANGE%O Â²%GOLD%Que-Hegan's Wisdom %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI xul]:%NAME%%ORANGE%O Â²%GOLD%Black Hades %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI xar]:%NAME%%ORANGE%O Â²%GOLD%Corpsemourn %ORANGE%O%CONTINUE%
 //Elite set chests
-ItemDisplay[!ID SET uui]:%NAME%%RED%O ³%GREEN%Dark Adherent %RED%O%CONTINUE%
-ItemDisplay[!ID SET ucl]:%NAME%%RED%O ³%GREEN%Natalya's chest %RED%O%CONTINUE%
-ItemDisplay[!ID SET upl]:%NAME%%RED%O ³%GREEN%Sazabi's chest %RED%O%CONTINUE%
-ItemDisplay[!ID SET ult]:%NAME%%RED%O ³%GREEN%Naj's chest %RED%O%CONTINUE%
-ItemDisplay[!ID SET uld]:%NAME%%RED%O ³%GREEN%M'avina's chest %RED%O%CONTINUE%
-ItemDisplay[!ID SET uth]:%NAME%%RED%O ³%GREEN%Tal Rasha's chest %RED%O%CONTINUE%
-ItemDisplay[!ID SET uul]:%NAME%%RED%O ³%GREEN%Aldur's chest %RED%O%CONTINUE%
-ItemDisplay[!ID SET uar]:%NAME%%YELLOW%O%ORANGE%O%RED%O ³%GREEN%Immortal King's chest %RED%O%ORANGE%O%YELLOW%O%CONTINUE%
+ItemDisplay[!ID SET uui]:%NAME%%RED%O Â³%GREEN%Dark Adherent %RED%O%CONTINUE%
+ItemDisplay[!ID SET ucl]:%NAME%%RED%O Â³%GREEN%Natalya's chest %RED%O%CONTINUE%
+ItemDisplay[!ID SET upl]:%NAME%%RED%O Â³%GREEN%Sazabi's chest %RED%O%CONTINUE%
+ItemDisplay[!ID SET ult]:%NAME%%RED%O Â³%GREEN%Naj's chest %RED%O%CONTINUE%
+ItemDisplay[!ID SET uld]:%NAME%%RED%O Â³%GREEN%M'avina's chest %RED%O%CONTINUE%
+ItemDisplay[!ID SET uth]:%NAME%%RED%O Â³%GREEN%Tal Rasha's chest %RED%O%CONTINUE%
+ItemDisplay[!ID SET uul]:%NAME%%RED%O Â³%GREEN%Aldur's chest %RED%O%CONTINUE%
+ItemDisplay[!ID SET uar]:%NAME%%YELLOW%O%ORANGE%O%RED%O Â³%GREEN%Immortal King's chest %RED%O%ORANGE%O%YELLOW%O%CONTINUE%
 //Elite unique chests
-ItemDisplay[!ID UNI uui]:%NAME%%YELLOW%O%ORANGE%O%RED%O ³%GOLD%Ormus' Robes %RED%O%ORANGE%O%YELLOW%O%CONTINUE%
-ItemDisplay[!ID UNI utu]:%NAME%%RED%O ³%GOLD%The Gladiator's Bane %RED%O%CONTINUE%
-ItemDisplay[!ID UNI upl]:%NAME%%YELLOW%O%ORANGE%O%RED%O ³%GOLD%Arkaine's Valor %RED%O%ORANGE%O%YELLOW%O%CONTINUE%
-ItemDisplay[!ID UNI uld]:%NAME%%RED%O ³%GOLD%Leviathan %RED%O%CONTINUE%
-ItemDisplay[!ID UNI utp]:%NAME%%PURPLE%O%BLUE%O%GREEN%O%YELLOW%O%ORANGE%O%RED%O ³%GOLD%Purgatory %RED%O%ORANGE%O%YELLOW%O%GREEN%O%BLUE%O%PURPLE%O
-ItemDisplay[!ID UNI uul]:%NAME%%RED%O ³%GOLD%Steel Carapace %RED%O%CONTINUE%
-ItemDisplay[!ID UNI uar]:%NAME%%PURPLE% O %BLUE% O %GREEN% O %YELLOW% O %ORANGE% O %RED% O  ³%GOLD%Tyrael's??? %RED% O %ORANGE% O %YELLOW% O %GREEN% O %BLUE% O %PURPLE% O %CONTINUE%
-ItemDisplay[!ID UNI ung]:%NAME%%RED%O ³%GOLD%Wraithskin %RED%O%CONTINUE%
+ItemDisplay[!ID UNI uui]:%NAME%%YELLOW%O%ORANGE%O%RED%O Â³%GOLD%Ormus' Robes %RED%O%ORANGE%O%YELLOW%O%CONTINUE%
+ItemDisplay[!ID UNI utu]:%NAME%%RED%O Â³%GOLD%The Gladiator's Bane %RED%O%CONTINUE%
+ItemDisplay[!ID UNI upl]:%NAME%%YELLOW%O%ORANGE%O%RED%O Â³%GOLD%Arkaine's Valor %RED%O%ORANGE%O%YELLOW%O%CONTINUE%
+ItemDisplay[!ID UNI uld]:%NAME%%RED%O Â³%GOLD%Leviathan %RED%O%CONTINUE%
+ItemDisplay[!ID UNI utp]:%NAME%%PURPLE%O%BLUE%O%GREEN%O%YELLOW%O%ORANGE%O%RED%O Â³%GOLD%Purgatory %RED%O%ORANGE%O%YELLOW%O%GREEN%O%BLUE%O%PURPLE%O
+ItemDisplay[!ID UNI uul]:%NAME%%RED%O Â³%GOLD%Steel Carapace %RED%O%CONTINUE%
+ItemDisplay[!ID UNI uar]:%NAME%%PURPLE% O %BLUE% O %GREEN% O %YELLOW% O %ORANGE% O %RED% O  Â³%GOLD%Tyrael's??? %RED% O %ORANGE% O %YELLOW% O %GREEN% O %BLUE% O %PURPLE% O %CONTINUE%
+ItemDisplay[!ID UNI ung]:%NAME%%RED%O Â³%GOLD%Wraithskin %RED%O%CONTINUE%
 /////
 //normal set shields
-ItemDisplay[!ID SET buc]:%NAME%¹Hsarus' shield%CONTINUE%
-ItemDisplay[!ID SET sml]:%NAME%¹Cleglaw's shield%CONTINUE%
-ItemDisplay[!ID SET lrg]:%NAME%¹Civerb's shield%CONTINUE%
-ItemDisplay[!ID SET kit]:%NAME%¹Milabrega's shield%CONTINUE%
-ItemDisplay[!ID SET tow]:%NAME%¹Sigon's shield%CONTINUE%
-ItemDisplay[!ID SET gts]:%NAME%¹Isenhart's shield%CONTINUE%
+ItemDisplay[!ID SET buc]:%NAME%Â¹Hsarus' shield%CONTINUE%
+ItemDisplay[!ID SET sml]:%NAME%Â¹Cleglaw's shield%CONTINUE%
+ItemDisplay[!ID SET lrg]:%NAME%Â¹Civerb's shield%CONTINUE%
+ItemDisplay[!ID SET kit]:%NAME%Â¹Milabrega's shield%CONTINUE%
+ItemDisplay[!ID SET tow]:%NAME%Â¹Sigon's shield%CONTINUE%
+ItemDisplay[!ID SET gts]:%NAME%Â¹Isenhart's shield%CONTINUE%
 //normal unique shields
-ItemDisplay[!ID UNI buc]:%NAME%¹Pelta Lunata%CONTINUE%
-ItemDisplay[!ID UNI sml]:%NAME%¹Umbral Disk%CONTINUE%
-ItemDisplay[!ID UNI lrg]:%NAME%¹Stormguild%CONTINUE%
-ItemDisplay[!ID UNI spk]:%NAME%¹Swordback Hold%CONTINUE%
-ItemDisplay[!ID UNI kit]:%NAME%¹Steelclash%CONTINUE%
-ItemDisplay[!ID UNI bsh]:%NAME%¹Wall of the Eyeless%CONTINUE%
-ItemDisplay[!ID UNI tow]:%NAME%¹Bverrit Keep%CONTINUE%
-ItemDisplay[!ID UNI gts]:%NAME%¹The Ward%CONTINUE%
+ItemDisplay[!ID UNI buc]:%NAME%Â¹Pelta Lunata%CONTINUE%
+ItemDisplay[!ID UNI sml]:%NAME%Â¹Umbral Disk%CONTINUE%
+ItemDisplay[!ID UNI lrg]:%NAME%Â¹Stormguild%CONTINUE%
+ItemDisplay[!ID UNI spk]:%NAME%Â¹Swordback Hold%CONTINUE%
+ItemDisplay[!ID UNI kit]:%NAME%Â¹Steelclash%CONTINUE%
+ItemDisplay[!ID UNI bsh]:%NAME%Â¹Wall of the Eyeless%CONTINUE%
+ItemDisplay[!ID UNI tow]:%NAME%Â¹Bverrit Keep%CONTINUE%
+ItemDisplay[!ID UNI gts]:%NAME%Â¹The Ward%CONTINUE%
 //exceptional set shield
-ItemDisplay[!ID SET xml]:%NAME%%ORANGE%O ²%GREEN%Whitstan's Guard %ORANGE%O%CONTINUE%
+ItemDisplay[!ID SET xml]:%NAME%%ORANGE%O Â²%GREEN%Whitstan's Guard %ORANGE%O%CONTINUE%
 //exceptional unique shield
-ItemDisplay[!ID UNI xuc]:%NAME%%ORANGE%O ²%GOLD%Visceratuant %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI xml]:%NAME%%ORANGE%O ²%GOLD%Moser's Blessed Circle %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI xrg]:%NAME%%ORANGE%O ²%GOLD%Stormchaser %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI xpk]:%NAME%%ORANGE%O ²%GOLD%Lance Guard %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI xit]:%NAME%%ORANGE%O ²%GOLD%Tiamat's Rebuke %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI xsh]:%NAME%%ORANGE%O ²%GOLD%Lidless Wall %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI xow]:%NAME%%ORANGE%O ²%GOLD%Gerke's Sanctuary %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI xts]:%NAME%%ORANGE%O ²%GOLD%Radament's Sphere %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI xuc]:%NAME%%ORANGE%O Â²%GOLD%Visceratuant %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI xml]:%NAME%%ORANGE%O Â²%GOLD%Moser's Blessed Circle %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI xrg]:%NAME%%ORANGE%O Â²%GOLD%Stormchaser %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI xpk]:%NAME%%ORANGE%O Â²%GOLD%Lance Guard %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI xit]:%NAME%%ORANGE%O Â²%GOLD%Tiamat's Rebuke %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI xsh]:%NAME%%ORANGE%O Â²%GOLD%Lidless Wall %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI xow]:%NAME%%ORANGE%O Â²%GOLD%Gerke's Sanctuary %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI xts]:%NAME%%ORANGE%O Â²%GOLD%Radament's Sphere %ORANGE%O%CONTINUE%
 //elite set shields
-ItemDisplay[!ID SET uts]:%NAME%%RED%O ³%GREEN%Heaven's Brethren shield %RED%O%CONTINUE%
+ItemDisplay[!ID SET uts]:%NAME%%RED%O Â³%GREEN%Heaven's Brethren shield %RED%O%CONTINUE%
 //elite unique shield
-ItemDisplay[!ID UNI uml]:%NAME%%RED%O ³%GOLD%Blackoak Shield %RED%O%CONTINUE%
-ItemDisplay[!ID UNI upk]:%NAME%%RED%O ³%GOLD%Spike Thorn %RED%O%CONTINUE%
-ItemDisplay[!ID UNI uit]:%NAME%%RED%O ³%GOLD%Stormshield %RED%O%CONTINUE%
-ItemDisplay[!ID UNI ush]:%NAME%%RED%O ³%GOLD%Head Hunter's Glory %RED%O%CONTINUE%
-ItemDisplay[!ID UNI uow]:%NAME%%RED%O ³%GOLD%Medusa's Gaze %RED%O%CONTINUE%
-ItemDisplay[!ID UNI uts]:%NAME%%RED%O ³%GOLD%Spirit Ward %RED%O%CONTINUE%
-ItemDisplay[!ID UNI urg]:%NAME%%RED%O ³%GOLD%Twilight's Reflection %RED%O%CONTINUE%
+ItemDisplay[!ID UNI uml]:%NAME%%RED%O Â³%GOLD%Blackoak Shield %RED%O%CONTINUE%
+ItemDisplay[!ID UNI upk]:%NAME%%RED%O Â³%GOLD%Spike Thorn %RED%O%CONTINUE%
+ItemDisplay[!ID UNI uit]:%NAME%%RED%O Â³%GOLD%Stormshield %RED%O%CONTINUE%
+ItemDisplay[!ID UNI ush]:%NAME%%RED%O Â³%GOLD%Head Hunter's Glory %RED%O%CONTINUE%
+ItemDisplay[!ID UNI uow]:%NAME%%RED%O Â³%GOLD%Medusa's Gaze %RED%O%CONTINUE%
+ItemDisplay[!ID UNI uts]:%NAME%%RED%O Â³%GOLD%Spirit Ward %RED%O%CONTINUE%
+ItemDisplay[!ID UNI urg]:%NAME%%RED%O Â³%GOLD%Twilight's Reflection %RED%O%CONTINUE%
 /////
 //normal set gloves
-ItemDisplay[!ID SET lgl]:%NAME%%YELLOW%O%ORANGE%O%RED%O ¹Death's gloves %YELLOW%O%ORANGE%O%RED%O%CONTINUE%
-ItemDisplay[!ID SET vgl]:%NAME%¹Sander's gloves%CONTINUE%
-ItemDisplay[!ID SET mgl]:%NAME%¹Cleglaw's gloves%CONTINUE%
-ItemDisplay[!ID SET tgl]:%NAME%¹Arctic OR Iratha's gloves%CONTINUE%
-ItemDisplay[!ID SET hgl]:%NAME%¹Sigon's gloves%CONTINUE%
+ItemDisplay[!ID SET lgl]:%NAME%%YELLOW%O%ORANGE%O%RED%O Â¹Death's gloves %YELLOW%O%ORANGE%O%RED%O%CONTINUE%
+ItemDisplay[!ID SET vgl]:%NAME%Â¹Sander's gloves%CONTINUE%
+ItemDisplay[!ID SET mgl]:%NAME%Â¹Cleglaw's gloves%CONTINUE%
+ItemDisplay[!ID SET tgl]:%NAME%Â¹Arctic OR Iratha's gloves%CONTINUE%
+ItemDisplay[!ID SET hgl]:%NAME%Â¹Sigon's gloves%CONTINUE%
 //normal unique gloves
-ItemDisplay[!ID UNI lgl]:%NAME%¹The Hand of Broc%CONTINUE%
-ItemDisplay[!ID UNI vgl]:%NAME%¹Bloodfist%CONTINUE%
-ItemDisplay[!ID UNI mgl]:%NAME%¹Chance Guards%CONTINUE%
-ItemDisplay[!ID UNI tgl]:%NAME%¹Magefist%CONTINUE%
-ItemDisplay[!ID UNI hgl]:%NAME%¹Frostburn%CONTINUE%
+ItemDisplay[!ID UNI lgl]:%NAME%Â¹The Hand of Broc%CONTINUE%
+ItemDisplay[!ID UNI vgl]:%NAME%Â¹Bloodfist%CONTINUE%
+ItemDisplay[!ID UNI mgl]:%NAME%Â¹Chance Guards%CONTINUE%
+ItemDisplay[!ID UNI tgl]:%NAME%Â¹Magefist%CONTINUE%
+ItemDisplay[!ID UNI hgl]:%NAME%Â¹Frostburn%CONTINUE%
 //exceptional set gloves
-ItemDisplay[!ID SET xvg]:%NAME%%ORANGE%O ²%GREEN%Magnus' gloves %ORANGE%O%CONTINUE%
-ItemDisplay[!ID SET xmg]:%NAME%%ORANGE%O ²%GREEN%Trang-Oul's gloves %ORANGE%O%CONTINUE%
-ItemDisplay[!ID SET xtg]:%NAME%%ORANGE%O ²%GREEN%M'avina's gloves %ORANGE%O%CONTINUE%
-ItemDisplay[!ID SET xhg]:%NAME%%ORANGE%O ²%GREEN%Immortal King's gloves %ORANGE%O%CONTINUE%
+ItemDisplay[!ID SET xvg]:%NAME%%ORANGE%O Â²%GREEN%Magnus' gloves %ORANGE%O%CONTINUE%
+ItemDisplay[!ID SET xmg]:%NAME%%ORANGE%O Â²%GREEN%Trang-Oul's gloves %ORANGE%O%CONTINUE%
+ItemDisplay[!ID SET xtg]:%NAME%%ORANGE%O Â²%GREEN%M'avina's gloves %ORANGE%O%CONTINUE%
+ItemDisplay[!ID SET xhg]:%NAME%%ORANGE%O Â²%GREEN%Immortal King's gloves %ORANGE%O%CONTINUE%
 //exceptional unique gloves
-ItemDisplay[!ID UNI xlg]:%NAME%%ORANGE%O ²%GOLD%Venom Grip %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI xvg]:%NAME%%ORANGE%O ²%GOLD%Gravepalm %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI xmg]:%NAME%%ORANGE%O ²%GOLD%Ghoulhide %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI xtg]:%NAME%%ORANGE%O ²%GOLD%Lava Gout %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI xhg]:%NAME%%ORANGE%O ²%GOLD%Hellmouth %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI xlg]:%NAME%%ORANGE%O Â²%GOLD%Venom Grip %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI xvg]:%NAME%%ORANGE%O Â²%GOLD%Gravepalm %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI xmg]:%NAME%%ORANGE%O Â²%GOLD%Ghoulhide %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI xtg]:%NAME%%ORANGE%O Â²%GOLD%Lava Gout %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI xhg]:%NAME%%ORANGE%O Â²%GOLD%Hellmouth %ORANGE%O%CONTINUE%
 //elite set gloves
-ItemDisplay[!ID SET ulg]:%NAME%%RED%O ³%GREEN%Laying of Hands %RED%O%CONTINUE%
+ItemDisplay[!ID SET ulg]:%NAME%%RED%O Â³%GREEN%Laying of Hands %RED%O%CONTINUE%
 //elite unique gloves
-ItemDisplay[!ID UNI uvg]:%NAME%%RED%O ³%GOLD%Dracul's Grasp %RED%O%CONTINUE%
-ItemDisplay[!ID UNI umg]:%NAME%%YELLOW%O%ORANGE%O%RED%O ³%GOLD%Soul Drainer %RED%O%ORANGE%O%YELLOW%O%CONTINUE%
-ItemDisplay[!ID UNI utg]:%NAME%%RED%O ³%GOLD%Occultist %RED%O%CONTINUE%
-ItemDisplay[!ID UNI uhg]:%NAME%%RED%O ³%GOLD%Steelrend %RED%O%CONTINUE%
-ItemDisplay[!ID UNI ulg]:%NAME%%RED%O ³%GOLD%Titan's Grip %RED%O%CONTINUE%
+ItemDisplay[!ID UNI uvg]:%NAME%%RED%O Â³%GOLD%Dracul's Grasp %RED%O%CONTINUE%
+ItemDisplay[!ID UNI umg]:%NAME%%YELLOW%O%ORANGE%O%RED%O Â³%GOLD%Soul Drainer %RED%O%ORANGE%O%YELLOW%O%CONTINUE%
+ItemDisplay[!ID UNI utg]:%NAME%%RED%O Â³%GOLD%Occultist %RED%O%CONTINUE%
+ItemDisplay[!ID UNI uhg]:%NAME%%RED%O Â³%GOLD%Steelrend %RED%O%CONTINUE%
+ItemDisplay[!ID UNI ulg]:%NAME%%RED%O Â³%GOLD%Titan's Grip %RED%O%CONTINUE%
 /////
 //normal set boots
-ItemDisplay[!ID SET lbt]:%NAME%%YELLOW%O%ORANGE%O%RED%O ¹Tancred's boots %YELLOW%O%ORANGE%O%RED%O%CONTINUE%
-ItemDisplay[!ID SET vbt]:%NAME%¹Cow King's OR Sander's boots%CONTINUE%
-ItemDisplay[!ID SET mbt]:%NAME%¹Hsarus' boots%CONTINUE%
-ItemDisplay[!ID SET tbt]:%NAME%¹Vidala's boots%CONTINUE%
-ItemDisplay[!ID SET hbt]:%NAME%¹Sigon's boots%CONTINUE%
+ItemDisplay[!ID SET lbt]:%NAME%%YELLOW%O%ORANGE%O%RED%O Â¹Tancred's boots %YELLOW%O%ORANGE%O%RED%O%CONTINUE%
+ItemDisplay[!ID SET vbt]:%NAME%Â¹Cow King's OR Sander's boots%CONTINUE%
+ItemDisplay[!ID SET mbt]:%NAME%Â¹Hsarus' boots%CONTINUE%
+ItemDisplay[!ID SET tbt]:%NAME%Â¹Vidala's boots%CONTINUE%
+ItemDisplay[!ID SET hbt]:%NAME%Â¹Sigon's boots%CONTINUE%
 //normal unique boots
-ItemDisplay[!ID UNI lbt]:%NAME%%YELLOW%O%ORANGE%O%RED%O ¹Hotspur %YELLOW%O%ORANGE%O%RED%O%CONTINUE%
-ItemDisplay[!ID UNI vbt]:%NAME%¹Gorefoot%CONTINUE%
-ItemDisplay[!ID UNI mbt]:%NAME%¹Treads of Cthon%CONTINUE%
-ItemDisplay[!ID UNI tbt]:%NAME%¹Goblin Toe%CONTINUE%
-ItemDisplay[!ID UNI hbt]:%NAME%¹Tearhaunch%CONTINUE%
+ItemDisplay[!ID UNI lbt]:%NAME%%YELLOW%O%ORANGE%O%RED%O Â¹Hotspur %YELLOW%O%ORANGE%O%RED%O%CONTINUE%
+ItemDisplay[!ID UNI vbt]:%NAME%Â¹Gorefoot%CONTINUE%
+ItemDisplay[!ID UNI mbt]:%NAME%Â¹Treads of Cthon%CONTINUE%
+ItemDisplay[!ID UNI tbt]:%NAME%Â¹Goblin Toe%CONTINUE%
+ItemDisplay[!ID UNI hbt]:%NAME%Â¹Tearhaunch%CONTINUE%
 //exceptional set boots
-ItemDisplay[!ID SET xlb]:%NAME%%ORANGE%O ²%GREEN%Rite of Passage %ORANGE%O%CONTINUE%
-ItemDisplay[!ID SET xmb]:%NAME%%ORANGE%O ²%GREEN%Natalya's boots %ORANGE%O%CONTINUE%
-ItemDisplay[!ID SET xtb]:%NAME%%ORANGE%O ²%GREEN%Aldur's boots %ORANGE%O%CONTINUE%
-ItemDisplay[!ID SET xhb]:%NAME%%ORANGE%O ²%GREEN%Immortal King's boots %ORANGE%O%CONTINUE%
+ItemDisplay[!ID SET xlb]:%NAME%%ORANGE%O Â²%GREEN%Rite of Passage %ORANGE%O%CONTINUE%
+ItemDisplay[!ID SET xmb]:%NAME%%ORANGE%O Â²%GREEN%Natalya's boots %ORANGE%O%CONTINUE%
+ItemDisplay[!ID SET xtb]:%NAME%%ORANGE%O Â²%GREEN%Aldur's boots %ORANGE%O%CONTINUE%
+ItemDisplay[!ID SET xhb]:%NAME%%ORANGE%O Â²%GREEN%Immortal King's boots %ORANGE%O%CONTINUE%
 //exceptional unique boots
-ItemDisplay[!ID UNI xlb]:%NAME%%ORANGE%O ²%GOLD%Infernostride %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI xvb]:%NAME%%ORANGE%O ²%GOLD%Waterwalk %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI xmb]:%NAME%%ORANGE%O ²%GOLD%Silkweave %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI xtb]:%NAME%%YELLOW%O%ORANGE%O%RED%O ²%GOLD%War Traveler %RED%O%ORANGE%O%YELLOW%O%CONTINUE%
-ItemDisplay[!ID UNI xhb]:%NAME%%ORANGE%O ²%GOLD%Gore Rider %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI xlb]:%NAME%%ORANGE%O Â²%GOLD%Infernostride %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI xvb]:%NAME%%ORANGE%O Â²%GOLD%Waterwalk %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI xmb]:%NAME%%ORANGE%O Â²%GOLD%Silkweave %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI xtb]:%NAME%%YELLOW%O%ORANGE%O%RED%O Â²%GOLD%War Traveler %RED%O%ORANGE%O%YELLOW%O%CONTINUE%
+ItemDisplay[!ID UNI xhb]:%NAME%%ORANGE%O Â²%GOLD%Gore Rider %ORANGE%O%CONTINUE%
 //elite unique boots
-ItemDisplay[!ID UNI ulb]:%NAME%%RED%O ³%GOLD%Merman's Sprocket %RED%O%CONTINUE%
-ItemDisplay[!ID UNI uvb]:%NAME%%RED%O ³%GOLD%Sandstorm Trek %RED%O%CONTINUE%
-ItemDisplay[!ID UNI umb]:%NAME%%RED%O ³%GOLD%Marrowwalk %RED%O%CONTINUE%
-ItemDisplay[!ID UNI uhb]:%NAME%%RED%O ³%GOLD%Shadow Dancer %RED%O%CONTINUE%
+ItemDisplay[!ID UNI ulb]:%NAME%%RED%O Â³%GOLD%Merman's Sprocket %RED%O%CONTINUE%
+ItemDisplay[!ID UNI uvb]:%NAME%%RED%O Â³%GOLD%Sandstorm Trek %RED%O%CONTINUE%
+ItemDisplay[!ID UNI umb]:%NAME%%RED%O Â³%GOLD%Marrowwalk %RED%O%CONTINUE%
+ItemDisplay[!ID UNI uhb]:%NAME%%RED%O Â³%GOLD%Shadow Dancer %RED%O%CONTINUE%
 //////
 //normal set belts
-ItemDisplay[!ID SET lbl]:%NAME%%YELLOW%O%ORANGE%O%RED%O ¹Death's belt %YELLOW%O%ORANGE%O%RED%O%CONTINUE%
-ItemDisplay[!ID SET vbl]:%NAME%¹Arctic  belt%CONTINUE%
-ItemDisplay[!ID SET mbl]:%NAME%¹Hsarus' OR Hwanin's belt%CONTINUE%
-ItemDisplay[!ID SET tbl]:%NAME%¹Infernal OR Iratha's belt%CONTINUE%
-ItemDisplay[!ID SET hbl]:%NAME%¹Sigon's belt%CONTINUE%
+ItemDisplay[!ID SET lbl]:%NAME%%YELLOW%O%ORANGE%O%RED%O Â¹Death's belt %YELLOW%O%ORANGE%O%RED%O%CONTINUE%
+ItemDisplay[!ID SET vbl]:%NAME%Â¹Arctic  belt%CONTINUE%
+ItemDisplay[!ID SET mbl]:%NAME%Â¹Hsarus' OR Hwanin's belt%CONTINUE%
+ItemDisplay[!ID SET tbl]:%NAME%Â¹Infernal OR Iratha's belt%CONTINUE%
+ItemDisplay[!ID SET hbl]:%NAME%Â¹Sigon's belt%CONTINUE%
 //normal unique belts
-ItemDisplay[!ID UNI lbl]:%NAME%¹Lenymo%CONTINUE%
-ItemDisplay[!ID UNI vbl]:%NAME%¹Snakecord%CONTINUE%
-ItemDisplay[!ID UNI mbl]:%NAME%¹Nightsmoke%CONTINUE%
-ItemDisplay[!ID UNI tbl]:%NAME%¹Goldwrap%CONTINUE%
-ItemDisplay[!ID UNI hbl]:%NAME%¹Bladebuckle%CONTINUE%
+ItemDisplay[!ID UNI lbl]:%NAME%Â¹Lenymo%CONTINUE%
+ItemDisplay[!ID UNI vbl]:%NAME%Â¹Snakecord%CONTINUE%
+ItemDisplay[!ID UNI mbl]:%NAME%Â¹Nightsmoke%CONTINUE%
+ItemDisplay[!ID UNI tbl]:%NAME%Â¹Goldwrap%CONTINUE%
+ItemDisplay[!ID UNI hbl]:%NAME%Â¹Bladebuckle%CONTINUE%
 //exceptional set belts
-ItemDisplay[!ID SET zvb]:%NAME%%ORANGE%O ²%GREEN%M'avina's belt belt %ORANGE%O%CONTINUE%
-ItemDisplay[!ID SET zmb]:%NAME%%ORANGE%O ²%GREEN%Tal Rasha's belt %ORANGE%O%CONTINUE%
-ItemDisplay[!ID SET ztb]:%NAME%%ORANGE%O ²%GREEN%Wilhelm's belt %ORANGE%O%CONTINUE%
-ItemDisplay[!ID SET zhb]:%NAME%%ORANGE%O ²%GREEN%Immortal King's belt %ORANGE%O%CONTINUE%
+ItemDisplay[!ID SET zvb]:%NAME%%ORANGE%O Â²%GREEN%M'avina's belt belt %ORANGE%O%CONTINUE%
+ItemDisplay[!ID SET zmb]:%NAME%%ORANGE%O Â²%GREEN%Tal Rasha's belt %ORANGE%O%CONTINUE%
+ItemDisplay[!ID SET ztb]:%NAME%%ORANGE%O Â²%GREEN%Wilhelm's belt %ORANGE%O%CONTINUE%
+ItemDisplay[!ID SET zhb]:%NAME%%ORANGE%O Â²%GREEN%Immortal King's belt %ORANGE%O%CONTINUE%
 //exceptional unique belts
-ItemDisplay[!ID UNI zlb]:%NAME%%ORANGE%O ²%GOLD%String of Ears %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI zvb]:%NAME%%ORANGE%O ²%GOLD%Razortail %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI zmb]:%NAME%%ORANGE%O ²%GOLD%Gloom's Trap %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI ztb]:%NAME%%ORANGE%O ²%GOLD%Snowclash %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI zhb]:%NAME%%ORANGE%O ²%GOLD%Thundergod's Vigor %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI zlb]:%NAME%%ORANGE%O Â²%GOLD%String of Ears %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI zvb]:%NAME%%ORANGE%O Â²%GOLD%Razortail %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI zmb]:%NAME%%ORANGE%O Â²%GOLD%Gloom's Trap %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI ztb]:%NAME%%ORANGE%O Â²%GOLD%Snowclash %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI zhb]:%NAME%%ORANGE%O Â²%GOLD%Thundergod's Vigor %ORANGE%O%CONTINUE%
 //elite set belts
-ItemDisplay[!ID SET umc]:%NAME%%RED%O ³%GREEN%Credendum %RED%O%CONTINUE%
-ItemDisplay[!ID SET utc]:%NAME%%RED%O ³%GREEN%Trang-Oul's belt %RED%O%CONTINUE%
+ItemDisplay[!ID SET umc]:%NAME%%RED%O Â³%GREEN%Credendum %RED%O%CONTINUE%
+ItemDisplay[!ID SET utc]:%NAME%%RED%O Â³%GREEN%Trang-Oul's belt %RED%O%CONTINUE%
 //Elite unique belts
-ItemDisplay[!ID UNI ulc]:%NAME%%PURPLE%O%BLUE%O%GREEN%O%YELLOW%O%ORANGE%O%RED%O ³%GOLD%Arachnid Mesh %RED%O%ORANGE%O%YELLOW%O%GREEN%O%BLUE%O%PURPLE%O
-ItemDisplay[!ID UNI uvc]:%NAME%%RED%O ³%GOLD%Nosferatu's Coil %RED%O%CONTINUE%
-ItemDisplay[!ID UNI utc]:%NAME%%RED%O ³%GOLD%Verdungo's Hearty Cord %RED%O%CONTINUE%
-ItemDisplay[!ID UNI uhc]:%NAME%%RED%O ³%GOLD%Siggard's Staunch %RED%O%CONTINUE%
+ItemDisplay[!ID UNI ulc]:%NAME%%PURPLE%O%BLUE%O%GREEN%O%YELLOW%O%ORANGE%O%RED%O Â³%GOLD%Arachnid Mesh %RED%O%ORANGE%O%YELLOW%O%GREEN%O%BLUE%O%PURPLE%O
+ItemDisplay[!ID UNI uvc]:%NAME%%RED%O Â³%GOLD%Nosferatu's Coil %RED%O%CONTINUE%
+ItemDisplay[!ID UNI utc]:%NAME%%RED%O Â³%GOLD%Verdungo's Hearty Cord %RED%O%CONTINUE%
+ItemDisplay[!ID UNI uhc]:%NAME%%RED%O Â³%GOLD%Siggard's Staunch %RED%O%CONTINUE%
 /////druid helms
 //normal unique druid helms
-ItemDisplay[!ID UNI dr2]:%NAME%¹Quetzalcoatl%CONTINUE%
+ItemDisplay[!ID UNI dr2]:%NAME%Â¹Quetzalcoatl%CONTINUE%
 //set exceptional druid helms
-ItemDisplay[!ID SET dr8]:%NAME%%ORANGE%O ²%GREEN%Aldur's helm %ORANGE%O%CONTINUE%
+ItemDisplay[!ID SET dr8]:%NAME%%ORANGE%O Â²%GREEN%Aldur's helm %ORANGE%O%CONTINUE%
 //unique exceptional druid helms
-ItemDisplay[!ID UNI dra]:%NAME%%ORANGE%O ²%GOLD%Jalal's Mane %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI dr6]:%NAME%%ORANGE%O ²%GOLD%Fenris %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI dra]:%NAME%%ORANGE%O Â²%GOLD%Jalal's Mane %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI dr6]:%NAME%%ORANGE%O Â²%GOLD%Fenris %ORANGE%O%CONTINUE%
 //elite unique druid helms
-ItemDisplay[!ID UNI drb]:%NAME%%RED%O ³%GOLD%Cerebus' Bite %RED%O%CONTINUE%
-ItemDisplay[!ID UNI drd]:%NAME%%RED%O ³%GOLD%Spirit Keeper %RED%O%CONTINUE%
-ItemDisplay[!ID UNI dre]:%NAME%%RED%O ³%GOLD%Ravenlore %RED%O%CONTINUE%
-ItemDisplay[!ID UNI drf]:%NAME%%RED%O ³%GOLD%Ursa's Nightmare %RED%O%CONTINUE%
-ItemDisplay[!ID UNI drc]:%NAME%%RED%O ³%GOLD%Denmother %RED%O%CONTINUE%
+ItemDisplay[!ID UNI drb]:%NAME%%RED%O Â³%GOLD%Cerebus' Bite %RED%O%CONTINUE%
+ItemDisplay[!ID UNI drd]:%NAME%%RED%O Â³%GOLD%Spirit Keeper %RED%O%CONTINUE%
+ItemDisplay[!ID UNI dre]:%NAME%%RED%O Â³%GOLD%Ravenlore %RED%O%CONTINUE%
+ItemDisplay[!ID UNI drf]:%NAME%%RED%O Â³%GOLD%Ursa's Nightmare %RED%O%CONTINUE%
+ItemDisplay[!ID UNI drc]:%NAME%%RED%O Â³%GOLD%Denmother %RED%O%CONTINUE%
 
 //////barb helms
 //normal set barb helms
-ItemDisplay[!ID SET ba5]:%NAME%¹Immortal King's helm%CONTINUE%
+ItemDisplay[!ID SET ba5]:%NAME%Â¹Immortal King's helm%CONTINUE%
 //exceptional unique barb helms
-ItemDisplay[!ID UNI ba6]:%NAME%%ORANGE%O ²%GOLD%Cyclopean Roar %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI ba7]:%NAME%%ORANGE%O ²%GOLD%Wildspeaker %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI baa]:%NAME%%ORANGE%O ²%GOLD%Arreat's Face %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI ba6]:%NAME%%ORANGE%O Â²%GOLD%Cyclopean Roar %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI ba7]:%NAME%%ORANGE%O Â²%GOLD%Wildspeaker %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI baa]:%NAME%%ORANGE%O Â²%GOLD%Arreat's Face %ORANGE%O%CONTINUE%
 //elite unique barb helms
-ItemDisplay[!ID UNI bac]:%NAME%%RED%O ³%GOLD%Wolfhowl %RED%O%CONTINUE%
-ItemDisplay[!ID UNI bad]:%NAME%%RED%O ³%GOLD%Demonhorn's Edge %RED%O%CONTINUE%
-ItemDisplay[!ID UNI bae]:%NAME%%RED%O ³%GOLD%Halaberd's Reign %RED%O%CONTINUE%
-ItemDisplay[!ID UNI baf]:%NAME%%RED%O ³%GOLD%Raekor's Virtue %RED%O%CONTINUE%
+ItemDisplay[!ID UNI bac]:%NAME%%RED%O Â³%GOLD%Wolfhowl %RED%O%CONTINUE%
+ItemDisplay[!ID UNI bad]:%NAME%%RED%O Â³%GOLD%Demonhorn's Edge %RED%O%CONTINUE%
+ItemDisplay[!ID UNI bae]:%NAME%%RED%O Â³%GOLD%Halaberd's Reign %RED%O%CONTINUE%
+ItemDisplay[!ID UNI baf]:%NAME%%RED%O Â³%GOLD%Raekor's Virtue %RED%O%CONTINUE%
 /////pally shields
 //normal unique pally shields
-ItemDisplay[!ID UNI pa3]:%NAME%¹Sankekur's Fall%CONTINUE%
+ItemDisplay[!ID UNI pa3]:%NAME%Â¹Sankekur's Fall%CONTINUE%
 //exceptional unique pally shields
-ItemDisplay[!ID UNI pa9]:%NAME%%YELLOW%O%ORANGE%O%RED%O ²%GOLD%Herald of Zakarum %RED%O%ORANGE%O%YELLOW%O%CONTINUE%
+ItemDisplay[!ID UNI pa9]:%NAME%%YELLOW%O%ORANGE%O%RED%O Â²%GOLD%Herald of Zakarum %RED%O%ORANGE%O%YELLOW%O%CONTINUE%
 //elite unique pally shields
-ItemDisplay[!ID UNI pac]:%NAME%%RED%O ³%GOLD%Alma Negra %RED%O%CONTINUE%
-ItemDisplay[!ID UNI paf]:%NAME%%RED%O ³%GOLD%Skywarden %RED%O%CONTINUE%
-ItemDisplay[!ID UNI pae]:%NAME%%RED%O ³%GOLD%Dragonscale %RED%O%CONTINUE%
+ItemDisplay[!ID UNI pac]:%NAME%%RED%O Â³%GOLD%Alma Negra %RED%O%CONTINUE%
+ItemDisplay[!ID UNI paf]:%NAME%%RED%O Â³%GOLD%Skywarden %RED%O%CONTINUE%
+ItemDisplay[!ID UNI pae]:%NAME%%RED%O Â³%GOLD%Dragonscale %RED%O%CONTINUE%
 //elite set pally shields
-ItemDisplay[!ID SET paf]:%NAME%%RED%O ³%GREEN%Griswold's shield %RED%O%CONTINUE%
+ItemDisplay[!ID SET paf]:%NAME%%RED%O Â³%GREEN%Griswold's shield %RED%O%CONTINUE%
 //////necro shields
 //exceptional set necro shields
-ItemDisplay[!ID SET ne9]:%NAME%%ORANGE%O ²%GREEN%Trang-Oul's shield %ORANGE%O%CONTINUE%
+ItemDisplay[!ID SET ne9]:%NAME%%ORANGE%O Â²%GREEN%Trang-Oul's shield %ORANGE%O%CONTINUE%
 //exceptional unique necro shields
-ItemDisplay[!ID UNI ne6]:%NAME%%ORANGE%O ²%GOLD%Kalan's Legacy %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI nea]:%NAME%%ORANGE%O ²%GOLD%Homunculus %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI ne6]:%NAME%%ORANGE%O Â²%GOLD%Kalan's Legacy %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI nea]:%NAME%%ORANGE%O Â²%GOLD%Homunculus %ORANGE%O%CONTINUE%
 //elite unique necro shields
-ItemDisplay[!ID UNI ned]:%NAME%%RED%O ³%GOLD%Martyrdom %RED%O%CONTINUE%
-ItemDisplay[!ID UNI nee]:%NAME%%RED%O ³%GOLD%Boneflame %RED%O%CONTINUE%
-ItemDisplay[!ID UNI neg]:%NAME%%RED%O ³%GOLD%Sacred Totem %RED%O%CONTINUE%
-ItemDisplay[!ID UNI nef]:%NAME%%RED%O ³%GOLD%Darkforce Spawn %RED%O%CONTINUE%
+ItemDisplay[!ID UNI ned]:%NAME%%RED%O Â³%GOLD%Martyrdom %RED%O%CONTINUE%
+ItemDisplay[!ID UNI nee]:%NAME%%RED%O Â³%GOLD%Boneflame %RED%O%CONTINUE%
+ItemDisplay[!ID UNI neg]:%NAME%%RED%O Â³%GOLD%Sacred Totem %RED%O%CONTINUE%
+ItemDisplay[!ID UNI nef]:%NAME%%RED%O Â³%GOLD%Darkforce Spawn %RED%O%CONTINUE%
 //////////weapons
 //normal set weapons
-ItemDisplay[!ID SET 2ax]:%NAME%¹Berserker's Weapon%CONTINUE%
-ItemDisplay[!ID SET mpi]:%NAME%¹Tancred's Weapon%CONTINUE%
-ItemDisplay[!ID SET sbr]:%NAME%¹Angelic Weapon%CONTINUE%
-ItemDisplay[!ID SET bsd]:%NAME%¹Isenhart's Weapon%CONTINUE%
-ItemDisplay[!ID SET lsd]:%NAME%¹Cleglaw's Weapon%CONTINUE%
-ItemDisplay[!ID SET wsd]:%NAME%¹Death's Weapon%CONTINUE%
-ItemDisplay[!ID SET dgr]:%NAME%¹Infernal Weapon%CONTINUE%
-ItemDisplay[!ID SET lbb]:%NAME%¹Vidala's Weapon%CONTINUE%
-ItemDisplay[!ID SET swb]:%NAME%¹Arctic Weapon%CONTINUE%
-ItemDisplay[!ID SET bst]:%NAME%¹Cathan's Weapon%CONTINUE%
-ItemDisplay[!ID SET wst]:%NAME%¹Arcanna's Weapon%CONTINUE%
-ItemDisplay[!ID SET bwn]:%NAME%¹Sander's Weapon%CONTINUE%
-ItemDisplay[!ID SET gsc]:%NAME%¹Civerb's Weapon%CONTINUE%
-ItemDisplay[!ID SET wsp]:%NAME%¹Milabrega's Weapon%CONTINUE%
+ItemDisplay[!ID SET 2ax]:%NAME%Â¹Berserker's Weapon%CONTINUE%
+ItemDisplay[!ID SET mpi]:%NAME%Â¹Tancred's Weapon%CONTINUE%
+ItemDisplay[!ID SET sbr]:%NAME%Â¹Angelic Weapon%CONTINUE%
+ItemDisplay[!ID SET bsd]:%NAME%Â¹Isenhart's Weapon%CONTINUE%
+ItemDisplay[!ID SET lsd]:%NAME%Â¹Cleglaw's Weapon%CONTINUE%
+ItemDisplay[!ID SET wsd]:%NAME%Â¹Death's Weapon%CONTINUE%
+ItemDisplay[!ID SET dgr]:%NAME%Â¹Infernal Weapon%CONTINUE%
+ItemDisplay[!ID SET lbb]:%NAME%Â¹Vidala's Weapon%CONTINUE%
+ItemDisplay[!ID SET swb]:%NAME%Â¹Arctic Weapon%CONTINUE%
+ItemDisplay[!ID SET bst]:%NAME%Â¹Cathan's Weapon%CONTINUE%
+ItemDisplay[!ID SET wst]:%NAME%Â¹Arcanna's Weapon%CONTINUE%
+ItemDisplay[!ID SET bwn]:%NAME%Â¹Sander's Weapon%CONTINUE%
+ItemDisplay[!ID SET gsc]:%NAME%Â¹Civerb's Weapon%CONTINUE%
+ItemDisplay[!ID SET wsp]:%NAME%Â¹Milabrega's Weapon%CONTINUE%
 //exceptional set weapons
-ItemDisplay[!ID SET 9mt]:%NAME%%ORANGE%O ²%GREEN%Aldur's Weapon %ORANGE%O%CONTINUE%
-ItemDisplay[!ID SET 9vo]:%NAME%%ORANGE%O ²%GREEN%Hwanin's Weapon %ORANGE%O%CONTINUE%
-ItemDisplay[!ID SET oba]:%NAME%%ORANGE%O ²%GREEN%Tal Rasha's Weapon %ORANGE%O%CONTINUE%
+ItemDisplay[!ID SET 9mt]:%NAME%%ORANGE%O Â²%GREEN%Aldur's Weapon %ORANGE%O%CONTINUE%
+ItemDisplay[!ID SET 9vo]:%NAME%%ORANGE%O Â²%GREEN%Hwanin's Weapon %ORANGE%O%CONTINUE%
+ItemDisplay[!ID SET oba]:%NAME%%ORANGE%O Â²%GREEN%Tal Rasha's Weapon %ORANGE%O%CONTINUE%
 //elite set items
-ItemDisplay[!ID SET 7ma]:%NAME%%RED%O ³%GREEN%Heaven's Brethren Weapon %RED%O%CONTINUE%
-ItemDisplay[!ID SET 7m7]:%NAME%%RED%O ³%GREEN%Immortal King's Weapon %RED%O%CONTINUE%
-ItemDisplay[!ID SET 7ls]:%NAME%%RED%O ³%GREEN%Sazabi's Weapon %RED%O%CONTINUE%
-ItemDisplay[!ID SET 7fb]:%NAME%%RED%O ³%GREEN%Bul-Kathos' Tribal Guardian %RED%O%CONTINUE%
-ItemDisplay[!ID SET 7gd]:%NAME%%RED%O ³%GREEN%Bul-Kathos' Sacred Charge %RED%O%CONTINUE%
-ItemDisplay[!ID SET 6cs]:%NAME%%RED%O ³%GREEN%Naj's Weapon %RED%O%CONTINUE%
-ItemDisplay[!ID SET 7ws]:%NAME%%RED%O ³%GREEN%Griswold's Weapon %RED%O%CONTINUE%
-ItemDisplay[!ID SET 7qr]:%NAME%%RED%O ³%GREEN%Natalya's Weapon %RED%O%CONTINUE%
-ItemDisplay[!ID SET amc]:%NAME%%RED%O ³%GREEN%M'avina's Weapon %RED%O%CONTINUE%
+ItemDisplay[!ID SET 7ma]:%NAME%%RED%O Â³%GREEN%Heaven's Brethren Weapon %RED%O%CONTINUE%
+ItemDisplay[!ID SET 7m7]:%NAME%%RED%O Â³%GREEN%Immortal King's Weapon %RED%O%CONTINUE%
+ItemDisplay[!ID SET 7ls]:%NAME%%RED%O Â³%GREEN%Sazabi's Weapon %RED%O%CONTINUE%
+ItemDisplay[!ID SET 7fb]:%NAME%%RED%O Â³%GREEN%Bul-Kathos' Tribal Guardian %RED%O%CONTINUE%
+ItemDisplay[!ID SET 7gd]:%NAME%%RED%O Â³%GREEN%Bul-Kathos' Sacred Charge %RED%O%CONTINUE%
+ItemDisplay[!ID SET 6cs]:%NAME%%RED%O Â³%GREEN%Naj's Weapon %RED%O%CONTINUE%
+ItemDisplay[!ID SET 7ws]:%NAME%%RED%O Â³%GREEN%Griswold's Weapon %RED%O%CONTINUE%
+ItemDisplay[!ID SET 7qr]:%NAME%%RED%O Â³%GREEN%Natalya's Weapon %RED%O%CONTINUE%
+ItemDisplay[!ID SET amc]:%NAME%%RED%O Â³%GREEN%M'avina's Weapon %RED%O%CONTINUE%
 //normal unique
 //axes
-ItemDisplay[!ID UNI hax]:%NAME%¹The Gnasher%CONTINUE%
-ItemDisplay[!ID UNI axe]:%NAME%¹Deathspade%CONTINUE%
-ItemDisplay[!ID UNI 2ax]:%NAME%¹Bladebone%CONTINUE%
-ItemDisplay[!ID UNI mpi]:%NAME%¹Skull Splitter%CONTINUE%
-ItemDisplay[!ID UNI wax]:%NAME%¹Rakescar%CONTINUE%
-ItemDisplay[!ID UNI lax]:%NAME%¹Axe of Fechmar%CONTINUE%
-ItemDisplay[!ID UNI bax]:%NAME%¹Goreshovel%CONTINUE%
-ItemDisplay[!ID UNI btx]:%NAME%¹The Chieftain%CONTINUE%
-ItemDisplay[!ID UNI gax]:%NAME%¹Brainhew%CONTINUE%
-ItemDisplay[!ID UNI gix]:%NAME%¹Humongous%CONTINUE%
+ItemDisplay[!ID UNI hax]:%NAME%Â¹The Gnasher%CONTINUE%
+ItemDisplay[!ID UNI axe]:%NAME%Â¹Deathspade%CONTINUE%
+ItemDisplay[!ID UNI 2ax]:%NAME%Â¹Bladebone%CONTINUE%
+ItemDisplay[!ID UNI mpi]:%NAME%Â¹Skull Splitter%CONTINUE%
+ItemDisplay[!ID UNI wax]:%NAME%Â¹Rakescar%CONTINUE%
+ItemDisplay[!ID UNI lax]:%NAME%Â¹Axe of Fechmar%CONTINUE%
+ItemDisplay[!ID UNI bax]:%NAME%Â¹Goreshovel%CONTINUE%
+ItemDisplay[!ID UNI btx]:%NAME%Â¹The Chieftain%CONTINUE%
+ItemDisplay[!ID UNI gax]:%NAME%Â¹Brainhew%CONTINUE%
+ItemDisplay[!ID UNI gix]:%NAME%Â¹Humongous%CONTINUE%
 //maces
-ItemDisplay[!ID UNI clb]:%NAME%¹Felloak%CONTINUE%
-ItemDisplay[!ID UNI spc]:%NAME%¹Stoutnail%CONTINUE%
-ItemDisplay[!ID UNI mac]:%NAME%¹Crushflange%CONTINUE%
-ItemDisplay[!ID UNI mst]:%NAME%¹Bloodrise%CONTINUE%
-ItemDisplay[!ID UNI fla]:%NAME%¹The General's Tan Do Li Ga%CONTINUE%
-ItemDisplay[!ID UNI whm]:%NAME%¹Ironstone%CONTINUE%
-ItemDisplay[!ID UNI mau]:%NAME%¹Bonesnap%CONTINUE%
-ItemDisplay[!ID UNI gma]:%NAME%¹Steeldriver%CONTINUE%
+ItemDisplay[!ID UNI clb]:%NAME%Â¹Felloak%CONTINUE%
+ItemDisplay[!ID UNI spc]:%NAME%Â¹Stoutnail%CONTINUE%
+ItemDisplay[!ID UNI mac]:%NAME%Â¹Crushflange%CONTINUE%
+ItemDisplay[!ID UNI mst]:%NAME%Â¹Bloodrise%CONTINUE%
+ItemDisplay[!ID UNI fla]:%NAME%Â¹The General's Tan Do Li Ga%CONTINUE%
+ItemDisplay[!ID UNI whm]:%NAME%Â¹Ironstone%CONTINUE%
+ItemDisplay[!ID UNI mau]:%NAME%Â¹Bonesnap%CONTINUE%
+ItemDisplay[!ID UNI gma]:%NAME%Â¹Steeldriver%CONTINUE%
 //swords
-ItemDisplay[!ID UNI ssd]:%NAME%¹Rixot's Keen%CONTINUE%
-ItemDisplay[!ID UNI scm]:%NAME%¹Blood Crescent%CONTINUE%
-ItemDisplay[!ID UNI sbr]:%NAME%¹Skewer of Krintiz%CONTINUE%
-ItemDisplay[!ID UNI flc]:%NAME%¹Gleamscythe%CONTINUE%
-ItemDisplay[!ID UNI bsd]:%NAME%¹Griswold's Edge%CONTINUE%
-ItemDisplay[!ID UNI lsd]:%NAME%¹Hellplague%CONTINUE%
-ItemDisplay[!ID UNI wsd]:%NAME%¹Culwen's Point%CONTINUE%
-ItemDisplay[!ID UNI 2hs]:%NAME%¹Shadowfang%CONTINUE%
-ItemDisplay[!ID UNI clm]:%NAME%¹Soulflay%CONTINUE%
-ItemDisplay[!ID UNI gis]:%NAME%¹Kinemil's Awl%CONTINUE%
-ItemDisplay[!ID UNI bsw]:%NAME%¹Blacktongue%CONTINUE%
-ItemDisplay[!ID UNI flb]:%NAME%¹Ripsaw%CONTINUE%
-ItemDisplay[!ID UNI gsd]:%NAME%¹The Patriarch%CONTINUE%
+ItemDisplay[!ID UNI ssd]:%NAME%Â¹Rixot's Keen%CONTINUE%
+ItemDisplay[!ID UNI scm]:%NAME%Â¹Blood Crescent%CONTINUE%
+ItemDisplay[!ID UNI sbr]:%NAME%Â¹Skewer of Krintiz%CONTINUE%
+ItemDisplay[!ID UNI flc]:%NAME%Â¹Gleamscythe%CONTINUE%
+ItemDisplay[!ID UNI bsd]:%NAME%Â¹Griswold's Edge%CONTINUE%
+ItemDisplay[!ID UNI lsd]:%NAME%Â¹Hellplague%CONTINUE%
+ItemDisplay[!ID UNI wsd]:%NAME%Â¹Culwen's Point%CONTINUE%
+ItemDisplay[!ID UNI 2hs]:%NAME%Â¹Shadowfang%CONTINUE%
+ItemDisplay[!ID UNI clm]:%NAME%Â¹Soulflay%CONTINUE%
+ItemDisplay[!ID UNI gis]:%NAME%Â¹Kinemil's Awl%CONTINUE%
+ItemDisplay[!ID UNI bsw]:%NAME%Â¹Blacktongue%CONTINUE%
+ItemDisplay[!ID UNI flb]:%NAME%Â¹Ripsaw%CONTINUE%
+ItemDisplay[!ID UNI gsd]:%NAME%Â¹The Patriarch%CONTINUE%
 //daggers
-ItemDisplay[!ID UNI dgr]:%NAME%¹Gull%CONTINUE%
-ItemDisplay[!ID UNI dir]:%NAME%¹The Diggler%CONTINUE%
-ItemDisplay[!ID UNI kri]:%NAME%¹The Jade Tan Do%CONTINUE%
-ItemDisplay[!ID UNI bld]:%NAME%¹Spectral Shard%CONTINUE%
+ItemDisplay[!ID UNI dgr]:%NAME%Â¹Gull%CONTINUE%
+ItemDisplay[!ID UNI dir]:%NAME%Â¹The Diggler%CONTINUE%
+ItemDisplay[!ID UNI kri]:%NAME%Â¹The Jade Tan Do%CONTINUE%
+ItemDisplay[!ID UNI bld]:%NAME%Â¹Spectral Shard%CONTINUE%
 //spears
-ItemDisplay[!ID UNI spr]:%NAME%¹The Dragon Chang%CONTINUE%
-ItemDisplay[!ID UNI tri]:%NAME%¹Razortine%CONTINUE%
-ItemDisplay[!ID UNI brn]:%NAME%¹Bloodthief%CONTINUE%
-ItemDisplay[!ID UNI spt]:%NAME%¹Lance of Yaggai%CONTINUE%
-ItemDisplay[!ID UNI pik]:%NAME%¹The Tannr Gorerod%CONTINUE%
+ItemDisplay[!ID UNI spr]:%NAME%Â¹The Dragon Chang%CONTINUE%
+ItemDisplay[!ID UNI tri]:%NAME%Â¹Razortine%CONTINUE%
+ItemDisplay[!ID UNI brn]:%NAME%Â¹Bloodthief%CONTINUE%
+ItemDisplay[!ID UNI spt]:%NAME%Â¹Lance of Yaggai%CONTINUE%
+ItemDisplay[!ID UNI pik]:%NAME%Â¹The Tannr Gorerod%CONTINUE%
 //polearms
-ItemDisplay[!ID UNI bar]:%NAME%¹Dimoak's Hew%CONTINUE%
-ItemDisplay[!ID UNI vou]:%NAME%¹Steelgoad%CONTINUE%
-ItemDisplay[!ID UNI scy]:%NAME%¹Soul Harvest%CONTINUE%
-ItemDisplay[!ID UNI pax]:%NAME%¹The Battlebranch%CONTINUE%
-ItemDisplay[!ID UNI hal]:%NAME%¹Woestave%CONTINUE%
-ItemDisplay[!ID UNI wsc]:%NAME%¹The Grim Reaper%CONTINUE%
+ItemDisplay[!ID UNI bar]:%NAME%Â¹Dimoak's Hew%CONTINUE%
+ItemDisplay[!ID UNI vou]:%NAME%Â¹Steelgoad%CONTINUE%
+ItemDisplay[!ID UNI scy]:%NAME%Â¹Soul Harvest%CONTINUE%
+ItemDisplay[!ID UNI pax]:%NAME%Â¹The Battlebranch%CONTINUE%
+ItemDisplay[!ID UNI hal]:%NAME%Â¹Woestave%CONTINUE%
+ItemDisplay[!ID UNI wsc]:%NAME%Â¹The Grim Reaper%CONTINUE%
 //bows
-ItemDisplay[!ID UNI sbw]:%NAME%¹Pluckeye%CONTINUE%
-ItemDisplay[!ID UNI hbw]:%NAME%¹Witherstring%CONTINUE%
-ItemDisplay[!ID UNI lbw]:%NAME%¹Raven Claw%CONTINUE%
-ItemDisplay[!ID UNI cbw]:%NAME%¹Rogue's Bow%CONTINUE%
-ItemDisplay[!ID UNI sbb]:%NAME%¹Stormstrike%CONTINUE%
-ItemDisplay[!ID UNI lbb]:%NAME%¹Wizendraw%CONTINUE%
-ItemDisplay[!ID UNI swb]:%NAME%¹Hellclap%CONTINUE%
-ItemDisplay[!ID UNI lwb]:%NAME%¹Blastbark%CONTINUE%
+ItemDisplay[!ID UNI sbw]:%NAME%Â¹Pluckeye%CONTINUE%
+ItemDisplay[!ID UNI hbw]:%NAME%Â¹Witherstring%CONTINUE%
+ItemDisplay[!ID UNI lbw]:%NAME%Â¹Raven Claw%CONTINUE%
+ItemDisplay[!ID UNI cbw]:%NAME%Â¹Rogue's Bow%CONTINUE%
+ItemDisplay[!ID UNI sbb]:%NAME%Â¹Stormstrike%CONTINUE%
+ItemDisplay[!ID UNI lbb]:%NAME%Â¹Wizendraw%CONTINUE%
+ItemDisplay[!ID UNI swb]:%NAME%Â¹Hellclap%CONTINUE%
+ItemDisplay[!ID UNI lwb]:%NAME%Â¹Blastbark%CONTINUE%
 //
 crossbows
-ItemDisplay[!ID UNI lxb]:%NAME%¹Leadcrow%CONTINUE%
-ItemDisplay[!ID UNI mxb]:%NAME%¹Ichorsting%CONTINUE%
-ItemDisplay[!ID UNI hxb]:%NAME%¹Hellcast%CONTINUE%
-ItemDisplay[!ID UNI rxb]:%NAME%¹Doomslinger%CONTINUE%
+ItemDisplay[!ID UNI lxb]:%NAME%Â¹Leadcrow%CONTINUE%
+ItemDisplay[!ID UNI mxb]:%NAME%Â¹Ichorsting%CONTINUE%
+ItemDisplay[!ID UNI hxb]:%NAME%Â¹Hellcast%CONTINUE%
+ItemDisplay[!ID UNI rxb]:%NAME%Â¹Doomslinger%CONTINUE%
 //staves
-ItemDisplay[!ID UNI sst]:%NAME%¹Bane Ash%CONTINUE%
-ItemDisplay[!ID UNI lst]:%NAME%¹Serpent Lord%CONTINUE%
-ItemDisplay[!ID UNI cst]:%NAME%¹Spire of Lazarus%CONTINUE%
-ItemDisplay[!ID UNI bst]:%NAME%¹The Salamander%CONTINUE%
-ItemDisplay[!ID UNI wst]:%NAME%¹The Iron Jang Bong%CONTINUE%
+ItemDisplay[!ID UNI sst]:%NAME%Â¹Bane Ash%CONTINUE%
+ItemDisplay[!ID UNI lst]:%NAME%Â¹Serpent Lord%CONTINUE%
+ItemDisplay[!ID UNI cst]:%NAME%Â¹Spire of Lazarus%CONTINUE%
+ItemDisplay[!ID UNI bst]:%NAME%Â¹The Salamander%CONTINUE%
+ItemDisplay[!ID UNI wst]:%NAME%Â¹The Iron Jang Bong%CONTINUE%
 //wands
-ItemDisplay[!ID UNI wnd]:%NAME%¹Torch of Iro%CONTINUE%
-ItemDisplay[!ID UNI ywn]:%NAME%¹Maelstrom%CONTINUE%
-ItemDisplay[!ID UNI bwn]:%NAME%¹Gravenspine%CONTINUE%
-ItemDisplay[!ID UNI gwn]:%NAME%¹Ume's Lament%CONTINUE%
+ItemDisplay[!ID UNI wnd]:%NAME%Â¹Torch of Iro%CONTINUE%
+ItemDisplay[!ID UNI ywn]:%NAME%Â¹Maelstrom%CONTINUE%
+ItemDisplay[!ID UNI bwn]:%NAME%Â¹Gravenspine%CONTINUE%
+ItemDisplay[!ID UNI gwn]:%NAME%Â¹Ume's Lament%CONTINUE%
 //scepters
-ItemDisplay[!ID UNI scp]:%NAME%¹Knell Striker%CONTINUE%
-ItemDisplay[!ID UNI gsc]:%NAME%¹Rusthandle%CONTINUE%
-ItemDisplay[!ID UNI wsp]:%NAME%¹Stormeye%CONTINUE%
+ItemDisplay[!ID UNI scp]:%NAME%Â¹Knell Striker%CONTINUE%
+ItemDisplay[!ID UNI gsc]:%NAME%Â¹Rusthandle%CONTINUE%
+ItemDisplay[!ID UNI wsp]:%NAME%Â¹Stormeye%CONTINUE%
 //ama jav
-ItemDisplay[!ID UNI am5]:%NAME%¹True Silver%CONTINUE%
+ItemDisplay[!ID UNI am5]:%NAME%Â¹True Silver%CONTINUE%
 ////Exceptional unique
 //axes
-ItemDisplay[!ID UNI 9ha]:%NAME%%ORANGE%O ²%GOLD%Coldkill %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI 9ax]:%NAME%%ORANGE%O ²%GOLD%Butcher's Pupil %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI 92a]:%NAME%%ORANGE%O ²%GOLD%Islestrike %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI 9mp]:%NAME%%ORANGE%O ²%GOLD%Pompeii's Wrath %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI 9wa]:%NAME%%ORANGE%O ²%GOLD%Guardian Naga %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI 9la]:%NAME%%ORANGE%O ²%GOLD%Warlord's Trust %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI 9ba]:%NAME%%ORANGE%O ²%GOLD%Spellsteel %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI 9bt]:%NAME%%ORANGE%O ²%GOLD%Stormrider %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI 9ga]:%NAME%%ORANGE%O ²%GOLD%Boneslayer Blade %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI 9gi]:%NAME%%ORANGE%O ²%GOLD%The Minotaur %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI 9ha]:%NAME%%ORANGE%O Â²%GOLD%Coldkill %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI 9ax]:%NAME%%ORANGE%O Â²%GOLD%Butcher's Pupil %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI 92a]:%NAME%%ORANGE%O Â²%GOLD%Islestrike %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI 9mp]:%NAME%%ORANGE%O Â²%GOLD%Pompeii's Wrath %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI 9wa]:%NAME%%ORANGE%O Â²%GOLD%Guardian Naga %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI 9la]:%NAME%%ORANGE%O Â²%GOLD%Warlord's Trust %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI 9ba]:%NAME%%ORANGE%O Â²%GOLD%Spellsteel %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI 9bt]:%NAME%%ORANGE%O Â²%GOLD%Stormrider %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI 9ga]:%NAME%%ORANGE%O Â²%GOLD%Boneslayer Blade %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI 9gi]:%NAME%%ORANGE%O Â²%GOLD%The Minotaur %ORANGE%O%CONTINUE%
 //maces
-ItemDisplay[!ID UNI 9cl]:%NAME%%ORANGE%O ²%GOLD%Dark Clan Crusher %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI 9sp]:%NAME%%ORANGE%O ²%GOLD%Fleshrender %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI 9ma]:%NAME%%ORANGE%O ²%GOLD%Sureshrill Frost %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI 9mt]:%NAME%%ORANGE%O ²%GOLD%Moonfall %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI 9fl]:%NAME%%ORANGE%O ²%GOLD%Baezil's Vortex %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI 9wh]:%NAME%%ORANGE%O ²%GOLD%Earthshaker %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI 9m9]:%NAME%%ORANGE%O ²%GOLD%Bloodtree Stump %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI 9gm]:%NAME%%ORANGE%O ²%GOLD%The Gavel of Pain %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI 9cl]:%NAME%%ORANGE%O Â²%GOLD%Dark Clan Crusher %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI 9sp]:%NAME%%ORANGE%O Â²%GOLD%Fleshrender %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI 9ma]:%NAME%%ORANGE%O Â²%GOLD%Sureshrill Frost %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI 9mt]:%NAME%%ORANGE%O Â²%GOLD%Moonfall %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI 9fl]:%NAME%%ORANGE%O Â²%GOLD%Baezil's Vortex %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI 9wh]:%NAME%%ORANGE%O Â²%GOLD%Earthshaker %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI 9m9]:%NAME%%ORANGE%O Â²%GOLD%Bloodtree Stump %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI 9gm]:%NAME%%ORANGE%O Â²%GOLD%The Gavel of Pain %ORANGE%O%CONTINUE%
 //swords
-ItemDisplay[!ID UNI 9ss]:%NAME%%ORANGE%O ²%GOLD%Bloodletter %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI 9sm]:%NAME%%ORANGE%O ²%GOLD%Coldsteel Eye %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI 9sb]:%NAME%%ORANGE%O ²%GOLD%Hexfire %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI 9fc]:%NAME%%ORANGE%O ²%GOLD%Blade of Ali Baba %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI 9cr]:%NAME%%ORANGE%O ²%GOLD%Ginther's Rift %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI 9bs]:%NAME%%ORANGE%O ²%GOLD%Headstriker %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI 9ls]:%NAME%%ORANGE%O ²%GOLD%Plague Bearer %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI 9wd]:%NAME%%ORANGE%O ²%GOLD%The Atlantean %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI 92h]:%NAME%%ORANGE%O ²%GOLD%Crainte Vomir %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI 9cm]:%NAME%%ORANGE%O ²%GOLD%Bing Sz Wang %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI 9gs]:%NAME%%ORANGE%O ²%GOLD%The Vile Husk %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI 9b9]:%NAME%%ORANGE%O ²%GOLD%Cloudcrack %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI 9fb]:%NAME%%ORANGE%O ²%GOLD%Todesfaelle Flamme %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI 9gd]:%NAME%%ORANGE%O ²%GOLD%Swordguard %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI 9ss]:%NAME%%ORANGE%O Â²%GOLD%Bloodletter %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI 9sm]:%NAME%%ORANGE%O Â²%GOLD%Coldsteel Eye %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI 9sb]:%NAME%%ORANGE%O Â²%GOLD%Hexfire %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI 9fc]:%NAME%%ORANGE%O Â²%GOLD%Blade of Ali Baba %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI 9cr]:%NAME%%ORANGE%O Â²%GOLD%Ginther's Rift %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI 9bs]:%NAME%%ORANGE%O Â²%GOLD%Headstriker %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI 9ls]:%NAME%%ORANGE%O Â²%GOLD%Plague Bearer %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI 9wd]:%NAME%%ORANGE%O Â²%GOLD%The Atlantean %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI 92h]:%NAME%%ORANGE%O Â²%GOLD%Crainte Vomir %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI 9cm]:%NAME%%ORANGE%O Â²%GOLD%Bing Sz Wang %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI 9gs]:%NAME%%ORANGE%O Â²%GOLD%The Vile Husk %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI 9b9]:%NAME%%ORANGE%O Â²%GOLD%Cloudcrack %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI 9fb]:%NAME%%ORANGE%O Â²%GOLD%Todesfaelle Flamme %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI 9gd]:%NAME%%ORANGE%O Â²%GOLD%Swordguard %ORANGE%O%CONTINUE%
 //daggers
-ItemDisplay[!ID UNI 9dg]:%NAME%%ORANGE%O ²%GOLD%Spineripper %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI 9di]:%NAME%%ORANGE%O ²%GOLD%Heart Carver %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI 9kr]:%NAME%%ORANGE%O ²%GOLD%Blackbog's Sharp %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI 9bl]:%NAME%%ORANGE%O ²%GOLD%Stormspike %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI 9dg]:%NAME%%ORANGE%O Â²%GOLD%Spineripper %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI 9di]:%NAME%%ORANGE%O Â²%GOLD%Heart Carver %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI 9kr]:%NAME%%ORANGE%O Â²%GOLD%Blackbog's Sharp %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI 9bl]:%NAME%%ORANGE%O Â²%GOLD%Stormspike %ORANGE%O%CONTINUE%
 //throwing
-ItemDisplay[!ID UNI 9tk]:%NAME%%ORANGE%O ²%GOLD%Deathbit %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI 9ta]:%NAME%%ORANGE%O ²%GOLD%The Scalper %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI 9b8]:%NAME%%ORANGE%O ²%GOLD%Achilles Strike %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI 9tk]:%NAME%%ORANGE%O Â²%GOLD%Deathbit %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI 9ta]:%NAME%%ORANGE%O Â²%GOLD%The Scalper %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI 9b8]:%NAME%%ORANGE%O Â²%GOLD%Achilles Strike %ORANGE%O%CONTINUE%
 
 //spears
-ItemDisplay[!ID UNI 9sr]:%NAME%%ORANGE%O ²%GOLD%The Impaler %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI 9tr]:%NAME%%ORANGE%O ²%GOLD%Kelpie Snare %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI 9br]:%NAME%%ORANGE%O ²%GOLD%Soulfeast Tine %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI 9st]:%NAME%%ORANGE%O ²%GOLD%Hone Sundan %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI 9p9]:%NAME%%ORANGE%O ²%GOLD%Spire of Honor %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI 9sr]:%NAME%%ORANGE%O Â²%GOLD%The Impaler %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI 9tr]:%NAME%%ORANGE%O Â²%GOLD%Kelpie Snare %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI 9br]:%NAME%%ORANGE%O Â²%GOLD%Soulfeast Tine %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI 9st]:%NAME%%ORANGE%O Â²%GOLD%Hone Sundan %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI 9p9]:%NAME%%ORANGE%O Â²%GOLD%Spire of Honor %ORANGE%O%CONTINUE%
 //polearms
-ItemDisplay[!ID UNI 9b7]:%NAME%%ORANGE%O ²%GOLD%The Meat Scraper %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI 9vo]:%NAME%%ORANGE%O ²%GOLD%Blackleach Blade %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI 9s8]:%NAME%%ORANGE%O ²%GOLD%Athena's Wrath %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI 9pa]:%NAME%%ORANGE%O ²%GOLD%Pierre Tombale Couant %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI 9h9]:%NAME%%ORANGE%O ²%GOLD%Husoldal Evo %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI 9wc]:%NAME%%ORANGE%O ²%GOLD%Grim's Burning Dead %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI 9b7]:%NAME%%ORANGE%O Â²%GOLD%The Meat Scraper %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI 9vo]:%NAME%%ORANGE%O Â²%GOLD%Blackleach Blade %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI 9s8]:%NAME%%ORANGE%O Â²%GOLD%Athena's Wrath %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI 9pa]:%NAME%%ORANGE%O Â²%GOLD%Pierre Tombale Couant %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI 9h9]:%NAME%%ORANGE%O Â²%GOLD%Husoldal Evo %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI 9wc]:%NAME%%ORANGE%O Â²%GOLD%Grim's Burning Dead %ORANGE%O%CONTINUE%
 //bows
-ItemDisplay[!ID UNI 8sb]:%NAME%%ORANGE%O ²%GOLD%Skystrike %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI 8hb]:%NAME%%ORANGE%O ²%GOLD%Riphook %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI 8lb]:%NAME%%ORANGE%O ²%GOLD%Kuko Shakaku %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI 8cb]:%NAME%%ORANGE%O ²%GOLD%Endlesshail %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI 8s8]:%NAME%%ORANGE%O ²%GOLD%Witchwild String %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI 8l8]:%NAME%%ORANGE%O ²%GOLD%Cliffkiller %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI 8sw]:%NAME%%ORANGE%O ²%GOLD%Magewrath %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI 8lw]:%NAME%%ORANGE%O ²%GOLD%Goldstrike Arch %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI 8sb]:%NAME%%ORANGE%O Â²%GOLD%Skystrike %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI 8hb]:%NAME%%ORANGE%O Â²%GOLD%Riphook %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI 8lb]:%NAME%%ORANGE%O Â²%GOLD%Kuko Shakaku %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI 8cb]:%NAME%%ORANGE%O Â²%GOLD%Endlesshail %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI 8s8]:%NAME%%ORANGE%O Â²%GOLD%Witchwild String %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI 8l8]:%NAME%%ORANGE%O Â²%GOLD%Cliffkiller %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI 8sw]:%NAME%%ORANGE%O Â²%GOLD%Magewrath %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI 8lw]:%NAME%%ORANGE%O Â²%GOLD%Goldstrike Arch %ORANGE%O%CONTINUE%
 //crossbows
-ItemDisplay[!ID UNI 8lx]:%NAME%%ORANGE%O ²%GOLD%Langer Briser %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI 8mx]:%NAME%%ORANGE%O ²%GOLD%Pus Spitter %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI 8hx]:%NAME%%ORANGE%O ²%GOLD%Buriza-Do Kyanon %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI 8rx]:%NAME%%ORANGE%O ²%GOLD%Demon Machine %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI 8lx]:%NAME%%ORANGE%O Â²%GOLD%Langer Briser %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI 8mx]:%NAME%%ORANGE%O Â²%GOLD%Pus Spitter %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI 8hx]:%NAME%%ORANGE%O Â²%GOLD%Buriza-Do Kyanon %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI 8rx]:%NAME%%ORANGE%O Â²%GOLD%Demon Machine %ORANGE%O%CONTINUE%
 //staves
-ItemDisplay[!ID UNI 8ss]:%NAME%%ORANGE%O ²%GOLD%Razorswitch %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI 8ls]:%NAME%%ORANGE%O ²%GOLD%Ribcracker %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI 8cs]:%NAME%%ORANGE%O ²%GOLD%Chromatic Ire %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI 8bs]:%NAME%%ORANGE%O ²%GOLD%Warpspear %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI 8ws]:%NAME%%ORANGE%O ²%GOLD%Skull Collector %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI 8ss]:%NAME%%ORANGE%O Â²%GOLD%Razorswitch %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI 8ls]:%NAME%%ORANGE%O Â²%GOLD%Ribcracker %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI 8cs]:%NAME%%ORANGE%O Â²%GOLD%Chromatic Ire %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI 8bs]:%NAME%%ORANGE%O Â²%GOLD%Warpspear %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI 8ws]:%NAME%%ORANGE%O Â²%GOLD%Skull Collector %ORANGE%O%CONTINUE%
 //wands
-ItemDisplay[!ID UNI 9wn]:%NAME%%ORANGE%O ²%GOLD%Suicide Branch %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI 9yw]:%NAME%%ORANGE%O ²%GOLD%Carin Shard %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI 9bw]:%NAME%%ORANGE%O ²%GOLD%Arm of King Leoric %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI 9gw]:%NAME%%ORANGE%O ²%GOLD%Blackhand Key %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI 9wn]:%NAME%%ORANGE%O Â²%GOLD%Suicide Branch %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI 9yw]:%NAME%%ORANGE%O Â²%GOLD%Carin Shard %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI 9bw]:%NAME%%ORANGE%O Â²%GOLD%Arm of King Leoric %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI 9gw]:%NAME%%ORANGE%O Â²%GOLD%Blackhand Key %ORANGE%O%CONTINUE%
 //scepters
-ItemDisplay[!ID UNI 9sc]:%NAME%%ORANGE%O ²%GOLD%Zakarum's Hand %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI 9qs]:%NAME%%ORANGE%O ²%GOLD%The Fetid Sprinkler %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI 9ws]:%NAME%%ORANGE%O ²%GOLD%Hand of Blessed Light %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI 9sc]:%NAME%%ORANGE%O Â²%GOLD%Zakarum's Hand %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI 9qs]:%NAME%%ORANGE%O Â²%GOLD%The Fetid Sprinkler %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI 9ws]:%NAME%%ORANGE%O Â²%GOLD%Hand of Blessed Light %ORANGE%O%CONTINUE%
 //claws
-ItemDisplay[!ID UNI 9ar]:%NAME%%ORANGE%O ²%GOLD%Mage Slayer %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI 9tw]:%NAME%%ORANGE%O ²%GOLD%Bartuc's Cut-Throat %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI 9ar]:%NAME%%ORANGE%O Â²%GOLD%Mage Slayer %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI 9tw]:%NAME%%ORANGE%O Â²%GOLD%Bartuc's Cut-Throat %ORANGE%O%CONTINUE%
 //orbs
-ItemDisplay[!ID UNI ob6]:%NAME%%ORANGE%O ²%GOLD%Tempest %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI ob7]:%NAME%%ORANGE%O ²%GOLD%Skorn %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI oba]:%NAME%%ORANGE%O ²%GOLD%The Oculus %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI ob6]:%NAME%%ORANGE%O Â²%GOLD%Tempest %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI ob7]:%NAME%%ORANGE%O Â²%GOLD%Skorn %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI oba]:%NAME%%ORANGE%O Â²%GOLD%The Oculus %ORANGE%O%CONTINUE%
 //ama weps
-ItemDisplay[!ID UNI am7]:%NAME%%ORANGE%O ²%GOLD%Lycander's Aim %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI am9]:%NAME%%ORANGE%O ²%GOLD%Lycander's Flank %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI ama]:%NAME%%ORANGE%O ²%GOLD%Titan's Revenge %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI am7]:%NAME%%ORANGE%O Â²%GOLD%Lycander's Aim %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI am9]:%NAME%%ORANGE%O Â²%GOLD%Lycander's Flank %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI ama]:%NAME%%ORANGE%O Â²%GOLD%Titan's Revenge %ORANGE%O%CONTINUE%
 ///////elite unique weapons
 //axes
-ItemDisplay[!ID UNI 7ha]:%NAME%%RED%O ³%GOLD%Razor's Edge %RED%O%CONTINUE%
-ItemDisplay[!ID UNI 72a]:%NAME%%RED%O ³%GOLD%Rune Master %RED%O%CONTINUE%
-ItemDisplay[!ID UNI 7mp]:%NAME%%RED%O ³%GOLD%Cranebeak %RED%O%CONTINUE%
-ItemDisplay[!ID UNI 7wa]:%NAME%%RED%O ³%GOLD%Death Cleaver %RED%O%CONTINUE%
-ItemDisplay[!ID UNI 7ba]:%NAME%%RED%O ³%GOLD%Ethereal Edge %RED%O%CONTINUE%
-ItemDisplay[!ID UNI 7bt]:%NAME%%RED%O ³%GOLD%Hellslayer %RED%O%CONTINUE%
-ItemDisplay[!ID UNI 7ga]:%NAME%%RED%O ³%GOLD%Messerschmidt's Reaver %RED%O%CONTINUE%
-ItemDisplay[!ID UNI 7gi]:%NAME%%RED%O ³%GOLD%Executioner's Justice %RED%O%CONTINUE%
+ItemDisplay[!ID UNI 7ha]:%NAME%%RED%O Â³%GOLD%Razor's Edge %RED%O%CONTINUE%
+ItemDisplay[!ID UNI 72a]:%NAME%%RED%O Â³%GOLD%Rune Master %RED%O%CONTINUE%
+ItemDisplay[!ID UNI 7mp]:%NAME%%RED%O Â³%GOLD%Cranebeak %RED%O%CONTINUE%
+ItemDisplay[!ID UNI 7wa]:%NAME%%RED%O Â³%GOLD%Death Cleaver %RED%O%CONTINUE%
+ItemDisplay[!ID UNI 7ba]:%NAME%%RED%O Â³%GOLD%Ethereal Edge %RED%O%CONTINUE%
+ItemDisplay[!ID UNI 7bt]:%NAME%%RED%O Â³%GOLD%Hellslayer %RED%O%CONTINUE%
+ItemDisplay[!ID UNI 7ga]:%NAME%%RED%O Â³%GOLD%Messerschmidt's Reaver %RED%O%CONTINUE%
+ItemDisplay[!ID UNI 7gi]:%NAME%%RED%O Â³%GOLD%Executioner's Justice %RED%O%CONTINUE%
 //maces
-ItemDisplay[!ID UNI 7cl]:%NAME%%RED%O ³%GOLD%Nord's Tenderizer %RED%O%CONTINUE%
-ItemDisplay[!ID UNI 7sp]:%NAME%%RED%O ³%GOLD%Demon Limb %RED%O%CONTINUE%
-ItemDisplay[!ID UNI 7mt]:%NAME%%RED%O ³%GOLD%Baranar's Star %RED%O%CONTINUE%
-ItemDisplay[!ID UNI 7fl]:%NAME%%RED%O ³%GOLD%Horizon's Tornado OR Stormlash %RED%O%CONTINUE%
-ItemDisplay[!ID UNI 7wh]:%NAME%%YELLOW%O%ORANGE%O%RED%O ³%GOLD%Stone Crusher OR Schaefer's Hammer %RED%O%ORANGE%O%YELLOW%O%CONTINUE%
-ItemDisplay[!ID UNI 7m7]:%NAME%%RED%O ³%GOLD%Windhammer %RED%O%CONTINUE%
-ItemDisplay[!ID UNI 7gm]:%NAME%%RED%O ³%GOLD%Earth Shifter OR The Cranium Basher %RED%O%CONTINUE%
+ItemDisplay[!ID UNI 7cl]:%NAME%%RED%O Â³%GOLD%Nord's Tenderizer %RED%O%CONTINUE%
+ItemDisplay[!ID UNI 7sp]:%NAME%%RED%O Â³%GOLD%Demon Limb %RED%O%CONTINUE%
+ItemDisplay[!ID UNI 7mt]:%NAME%%RED%O Â³%GOLD%Baranar's Star %RED%O%CONTINUE%
+ItemDisplay[!ID UNI 7fl]:%NAME%%RED%O Â³%GOLD%Horizon's Tornado OR Stormlash %RED%O%CONTINUE%
+ItemDisplay[!ID UNI 7wh]:%NAME%%YELLOW%O%ORANGE%O%RED%O Â³%GOLD%Stone Crusher OR Schaefer's Hammer %RED%O%ORANGE%O%YELLOW%O%CONTINUE%
+ItemDisplay[!ID UNI 7m7]:%NAME%%RED%O Â³%GOLD%Windhammer %RED%O%CONTINUE%
+ItemDisplay[!ID UNI 7gm]:%NAME%%RED%O Â³%GOLD%Earth Shifter OR The Cranium Basher %RED%O%CONTINUE%
 //swords
-ItemDisplay[!ID UNI 7sm]:%NAME%%RED%O ³%GOLD%Djinn Slayer %RED%O%CONTINUE%
-ItemDisplay[!ID UNI 7sb]:%NAME%%RED%O ³%GOLD%Bloodmoon %RED%O%CONTINUE%
-ItemDisplay[!ID UNI 7cr]:%NAME%%YELLOW%O%ORANGE%O%RED%O ³%GOLD%Lightsabre OR Azurewrath %RED%O%ORANGE%O%YELLOW%O%CONTINUE%
-ItemDisplay[!ID UNI 7ls]:%NAME%%YELLOW%O%ORANGE%O%RED%O ³%GOLD%Frostwind %RED%O%ORANGE%O%YELLOW%O%CONTINUE%
-ItemDisplay[!ID UNI 7cm]:%NAME%%RED%O ³%GOLD%Leoric's Mithril Bane %RED%O%CONTINUE%
-ItemDisplay[!ID UNI 7gs]:%NAME%%RED%O ³%GOLD%Flamebellow %RED%O%CONTINUE%
-ItemDisplay[!ID UNI 7b7]:%NAME%%RED%O ³%GOLD%Doombringer %RED%O%CONTINUE%
-ItemDisplay[!ID UNI 7fb]:%NAME%%RED%O ³%GOLD%Odium %RED%O%CONTINUE%
-ItemDisplay[!ID UNI 7gd]:%NAME%%PURPLE%O%BLUE%O%GREEN%O%YELLOW%O%ORANGE%O%RED%O ³%GOLD%The Grandfather %RED%O%ORANGE%O%YELLOW%O%GREEN%O%BLUE%O%PURPLE%O
+ItemDisplay[!ID UNI 7sm]:%NAME%%RED%O Â³%GOLD%Djinn Slayer %RED%O%CONTINUE%
+ItemDisplay[!ID UNI 7sb]:%NAME%%RED%O Â³%GOLD%Bloodmoon %RED%O%CONTINUE%
+ItemDisplay[!ID UNI 7cr]:%NAME%%YELLOW%O%ORANGE%O%RED%O Â³%GOLD%Lightsabre OR Azurewrath %RED%O%ORANGE%O%YELLOW%O%CONTINUE%
+ItemDisplay[!ID UNI 7ls]:%NAME%%YELLOW%O%ORANGE%O%RED%O Â³%GOLD%Frostwind %RED%O%ORANGE%O%YELLOW%O%CONTINUE%
+ItemDisplay[!ID UNI 7cm]:%NAME%%RED%O Â³%GOLD%Leoric's Mithril Bane %RED%O%CONTINUE%
+ItemDisplay[!ID UNI 7gs]:%NAME%%RED%O Â³%GOLD%Flamebellow %RED%O%CONTINUE%
+ItemDisplay[!ID UNI 7b7]:%NAME%%RED%O Â³%GOLD%Doombringer %RED%O%CONTINUE%
+ItemDisplay[!ID UNI 7fb]:%NAME%%RED%O Â³%GOLD%Odium %RED%O%CONTINUE%
+ItemDisplay[!ID UNI 7gd]:%NAME%%PURPLE%O%BLUE%O%GREEN%O%YELLOW%O%ORANGE%O%RED%O Â³%GOLD%The Grandfather %RED%O%ORANGE%O%YELLOW%O%GREEN%O%BLUE%O%PURPLE%O
 //daggers
-ItemDisplay[!ID UNI 7dg]:%NAME%%RED%O ³%GOLD%Wizardspike %RED%O%CONTINUE%
-ItemDisplay[!ID UNI 7kr]:%NAME%%RED%O ³%GOLD%Fleshripper %RED%O%CONTINUE%
-ItemDisplay[!ID UNI 7bl]:%NAME%%RED%O ³%GOLD%Ghostflame %RED%O%CONTINUE%
-ItemDisplay[!ID UNI 7di]:%NAME%%RED%O ³%GOLD%Shatterblade %RED%O%CONTINUE%
+ItemDisplay[!ID UNI 7dg]:%NAME%%RED%O Â³%GOLD%Wizardspike %RED%O%CONTINUE%
+ItemDisplay[!ID UNI 7kr]:%NAME%%RED%O Â³%GOLD%Fleshripper %RED%O%CONTINUE%
+ItemDisplay[!ID UNI 7bl]:%NAME%%RED%O Â³%GOLD%Ghostflame %RED%O%CONTINUE%
+ItemDisplay[!ID UNI 7di]:%NAME%%RED%O Â³%GOLD%Shatterblade %RED%O%CONTINUE%
 
 //throwing
-ItemDisplay[!ID UNI 7ta]:%NAME%%RED%O ³%GOLD%Gimmershred %RED%O%CONTINUE%
-ItemDisplay[!ID UNI 7bk]:%NAME%%RED%O ³%GOLD%Warshrike %RED%O%CONTINUE%
-ItemDisplay[!ID UNI 7b8]:%NAME%%RED%O ³%GOLD%Lacerator %RED%O%CONTINUE%
+ItemDisplay[!ID UNI 7ta]:%NAME%%RED%O Â³%GOLD%Gimmershred %RED%O%CONTINUE%
+ItemDisplay[!ID UNI 7bk]:%NAME%%RED%O Â³%GOLD%Warshrike %RED%O%CONTINUE%
+ItemDisplay[!ID UNI 7b8]:%NAME%%RED%O Â³%GOLD%Lacerator %RED%O%CONTINUE%
 //javelins
-ItemDisplay[!ID UNI 7s7]:%NAME%%RED%O ³%GOLD%Demon's Arch %RED%O%CONTINUE%
-ItemDisplay[!ID UNI 7gl]:%NAME%%RED%O ³%GOLD%Wraith Flight %RED%O%CONTINUE%
-ItemDisplay[!ID UNI 7ts]:%NAME%%RED%O ³%GOLD%Gargoyle's Bite %RED%O%CONTINUE%
+ItemDisplay[!ID UNI 7s7]:%NAME%%RED%O Â³%GOLD%Demon's Arch %RED%O%CONTINUE%
+ItemDisplay[!ID UNI 7gl]:%NAME%%RED%O Â³%GOLD%Wraith Flight %RED%O%CONTINUE%
+ItemDisplay[!ID UNI 7ts]:%NAME%%RED%O Â³%GOLD%Gargoyle's Bite %RED%O%CONTINUE%
 //spears
-ItemDisplay[!ID UNI 7sr]:%NAME%%RED%O ³%GOLD%Arioc's Needle %RED%O%CONTINUE%
-ItemDisplay[!ID UNI 7br]:%NAME%%RED%O ³%GOLD%Viperfork %RED%O%CONTINUE%
-ItemDisplay[!ID UNI 7st]:%NAME%%RED%O ³%GOLD%Uldyssian's Awakening %RED%O%CONTINUE%
-ItemDisplay[!ID UNI 7p7]:%NAME%%RED%O ³%GOLD%Steel Pillar %RED%O%CONTINUE%
+ItemDisplay[!ID UNI 7sr]:%NAME%%RED%O Â³%GOLD%Arioc's Needle %RED%O%CONTINUE%
+ItemDisplay[!ID UNI 7br]:%NAME%%RED%O Â³%GOLD%Viperfork %RED%O%CONTINUE%
+ItemDisplay[!ID UNI 7st]:%NAME%%RED%O Â³%GOLD%Uldyssian's Awakening %RED%O%CONTINUE%
+ItemDisplay[!ID UNI 7p7]:%NAME%%RED%O Â³%GOLD%Steel Pillar %RED%O%CONTINUE%
 //polearms
-ItemDisplay[!ID UNI 7o7]:%NAME%%RED%O ³%GOLD%Bonehew %RED%O%CONTINUE%
-ItemDisplay[!ID UNI 7s8]:%NAME%%RED%O ³%GOLD%The Reaper's Toll %RED%O%CONTINUE%
-ItemDisplay[!ID UNI 7pa]:%NAME%%RED%O ³%GOLD%Tomb Reaver %RED%O%CONTINUE%
-ItemDisplay[!ID UNI 7wc]:%NAME%%RED%O ³%GOLD%Stormspire %RED%O%CONTINUE%
+ItemDisplay[!ID UNI 7o7]:%NAME%%RED%O Â³%GOLD%Bonehew %RED%O%CONTINUE%
+ItemDisplay[!ID UNI 7s8]:%NAME%%RED%O Â³%GOLD%The Reaper's Toll %RED%O%CONTINUE%
+ItemDisplay[!ID UNI 7pa]:%NAME%%RED%O Â³%GOLD%Tomb Reaver %RED%O%CONTINUE%
+ItemDisplay[!ID UNI 7wc]:%NAME%%RED%O Â³%GOLD%Stormspire %RED%O%CONTINUE%
 //bows
-ItemDisplay[!ID UNI 6l7]:%NAME%%RED%O ³%GOLD%Eaglehorn %RED%O%CONTINUE%
-ItemDisplay[!ID UNI 6sw]:%NAME%%RED%O ³%GOLD%Widowmaker %RED%O%CONTINUE%
-ItemDisplay[!ID UNI 6lw]:%NAME%%PURPLE%O%BLUE%O%GREEN%O%YELLOW%O%ORANGE%O%RED%O ³%GOLD%Windforce %RED%O%ORANGE%O%YELLOW%O%GREEN%O%BLUE%O%PURPLE%O
+ItemDisplay[!ID UNI 6l7]:%NAME%%RED%O Â³%GOLD%Eaglehorn %RED%O%CONTINUE%
+ItemDisplay[!ID UNI 6sw]:%NAME%%RED%O Â³%GOLD%Widowmaker %RED%O%CONTINUE%
+ItemDisplay[!ID UNI 6lw]:%NAME%%PURPLE%O%BLUE%O%GREEN%O%YELLOW%O%ORANGE%O%RED%O Â³%GOLD%Windforce %RED%O%ORANGE%O%YELLOW%O%GREEN%O%BLUE%O%PURPLE%O
 //crossbows
-ItemDisplay[!ID UNI 6hx]:%NAME%%RED%O ³%GOLD%Hellrack %RED%O%CONTINUE%
-ItemDisplay[!ID UNI 6rx]:%NAME%%RED%O ³%GOLD%Gut Siphon %RED%O%CONTINUE%
+ItemDisplay[!ID UNI 6hx]:%NAME%%RED%O Â³%GOLD%Hellrack %RED%O%CONTINUE%
+ItemDisplay[!ID UNI 6rx]:%NAME%%RED%O Â³%GOLD%Gut Siphon %RED%O%CONTINUE%
 //staves
-ItemDisplay[!ID UNI 6cs]:%NAME%%RED%O ³%GOLD%Ondals Wisdom %RED%O%CONTINUE%
-ItemDisplay[!ID UNI 6bs]:%NAME%%RED%O ³%GOLD%Brimstone Rain %RED%O%CONTINUE%
-ItemDisplay[!ID UNI 6ws]:%NAME%%PURPLE%O%BLUE%O%GREEN%O%YELLOW%O%ORANGE%O%RED%O ³%GOLD%Mang Song's Lesson %RED%O%ORANGE%O%YELLOW%O%GREEN%O%BLUE%O%PURPLE%O
+ItemDisplay[!ID UNI 6cs]:%NAME%%RED%O Â³%GOLD%Ondals Wisdom %RED%O%CONTINUE%
+ItemDisplay[!ID UNI 6bs]:%NAME%%RED%O Â³%GOLD%Brimstone Rain %RED%O%CONTINUE%
+ItemDisplay[!ID UNI 6ws]:%NAME%%PURPLE%O%BLUE%O%GREEN%O%YELLOW%O%ORANGE%O%RED%O Â³%GOLD%Mang Song's Lesson %RED%O%ORANGE%O%YELLOW%O%GREEN%O%BLUE%O%PURPLE%O
 //wands
-ItemDisplay[!ID UNI 7bw]:%NAME%%RED%O ³%GOLD%Boneshade %RED%O%CONTINUE%
-ItemDisplay[!ID UNI 7gw]:%NAME%%PURPLE%O%BLUE%O%GREEN%O%YELLOW%O%ORANGE%O%RED%O ³%GOLD%Death's Web %RED%O%ORANGE%O%YELLOW%O%GREEN%O%BLUE%O%PURPLE%O
+ItemDisplay[!ID UNI 7bw]:%NAME%%RED%O Â³%GOLD%Boneshade %RED%O%CONTINUE%
+ItemDisplay[!ID UNI 7gw]:%NAME%%PURPLE%O%BLUE%O%GREEN%O%YELLOW%O%ORANGE%O%RED%O Â³%GOLD%Death's Web %RED%O%ORANGE%O%YELLOW%O%GREEN%O%BLUE%O%PURPLE%O
 //scepters
-ItemDisplay[!ID UNI 7sc]:%NAME%%YELLOW%O%ORANGE%O%RED%O ³%GOLD%Heaven's Light OR The Redeemer %RED%O%ORANGE%O%YELLOW%O%CONTINUE%
-ItemDisplay[!ID UNI 7qs]:%NAME%%RED%O ³%GOLD%Akarat's Devotion %RED%O%CONTINUE%
-ItemDisplay[!ID UNI 7ws]:%NAME%%YELLOW%O%ORANGE%O%RED%O ³%GOLD%Astreon's Iron Ward %RED%O%ORANGE%O%YELLOW%O%CONTINUE%
+ItemDisplay[!ID UNI 7sc]:%NAME%%YELLOW%O%ORANGE%O%RED%O Â³%GOLD%Heaven's Light OR The Redeemer %RED%O%ORANGE%O%YELLOW%O%CONTINUE%
+ItemDisplay[!ID UNI 7qs]:%NAME%%RED%O Â³%GOLD%Akarat's Devotion %RED%O%CONTINUE%
+ItemDisplay[!ID UNI 7ws]:%NAME%%YELLOW%O%ORANGE%O%RED%O Â³%GOLD%Astreon's Iron Ward %RED%O%ORANGE%O%YELLOW%O%CONTINUE%
 //claws
-ItemDisplay[!ID UNI 7wb]:%NAME%%RED%O ³%GOLD%Jade Talon %RED%O%CONTINUE%
-ItemDisplay[!ID UNI 7cs]:%NAME%%RED%O ³%GOLD%Shadow Killer %RED%O%CONTINUE%
-ItemDisplay[!ID UNI 7xf]:%NAME%%RED%O ³%GOLD%Whispering Mirage %RED%O%CONTINUE%
-ItemDisplay[!ID UNI 7lw]:%NAME%%RED%O ³%GOLD%Firelizard's Talons %RED%O%CONTINUE%
-ItemDisplay[!ID UNI 7tw]:%NAME%%RED%O ³%GOLD%Stalker's Cull %RED%O%CONTINUE%
+ItemDisplay[!ID UNI 7wb]:%NAME%%RED%O Â³%GOLD%Jade Talon %RED%O%CONTINUE%
+ItemDisplay[!ID UNI 7cs]:%NAME%%RED%O Â³%GOLD%Shadow Killer %RED%O%CONTINUE%
+ItemDisplay[!ID UNI 7xf]:%NAME%%RED%O Â³%GOLD%Whispering Mirage %RED%O%CONTINUE%
+ItemDisplay[!ID UNI 7lw]:%NAME%%RED%O Â³%GOLD%Firelizard's Talons %RED%O%CONTINUE%
+ItemDisplay[!ID UNI 7tw]:%NAME%%RED%O Â³%GOLD%Stalker's Cull %RED%O%CONTINUE%
 //orbs
-ItemDisplay[!ID UNI obc]:%NAME%%YELLOW%O%ORANGE%O%RED%O ³%GOLD%Eschuta's Temper %RED%O%ORANGE%O%YELLOW%O%CONTINUE%
-ItemDisplay[!ID UNI obf]:%NAME%%PURPLE%O%BLUE%O%GREEN%O%YELLOW%O%ORANGE%O%RED%O ³%GOLD%Death's Fathom %RED%O%ORANGE%O%YELLOW%O%GREEN%O%BLUE%O%PURPLE%O
+ItemDisplay[!ID UNI obc]:%NAME%%YELLOW%O%ORANGE%O%RED%O Â³%GOLD%Eschuta's Temper %RED%O%ORANGE%O%YELLOW%O%CONTINUE%
+ItemDisplay[!ID UNI obf]:%NAME%%PURPLE%O%BLUE%O%GREEN%O%YELLOW%O%ORANGE%O%RED%O Â³%GOLD%Death's Fathom %RED%O%ORANGE%O%YELLOW%O%GREEN%O%BLUE%O%PURPLE%O
 //ama weps
-ItemDisplay[!ID UNI amb]:%NAME%%RED%O ³%GOLD%Blood Raven's Charge %RED%O%CONTINUE%
-ItemDisplay[!ID UNI amd]:%NAME%%RED%O ³%GOLD%Stoneraven %RED%O%CONTINUE%
-ItemDisplay[!ID UNI ame]:%NAME%%RED%O ³%GOLD%Zerae's Resolve %RED%O%CONTINUE%
-ItemDisplay[!ID UNI amf]:%NAME%%RED%O ³%GOLD%Thunderstroke %RED%O%CONTINUE%
-ItemDisplay[!ID UNI amc]:%NAME%%RED%O ³%GOLD%Ebonbane %RED%O%CONTINUE%
+ItemDisplay[!ID UNI amb]:%NAME%%RED%O Â³%GOLD%Blood Raven's Charge %RED%O%CONTINUE%
+ItemDisplay[!ID UNI amd]:%NAME%%RED%O Â³%GOLD%Stoneraven %RED%O%CONTINUE%
+ItemDisplay[!ID UNI ame]:%NAME%%RED%O Â³%GOLD%Zerae's Resolve %RED%O%CONTINUE%
+ItemDisplay[!ID UNI amf]:%NAME%%RED%O Â³%GOLD%Thunderstroke %RED%O%CONTINUE%
+ItemDisplay[!ID UNI amc]:%NAME%%RED%O Â³%GOLD%Ebonbane %RED%O%CONTINUE%
 
 //hide
 ItemDisplay[!ID SET NORM (ARMOR OR WEAPON) !(qui OR cap OR tbl OR lbl OR lgl OR tow OR bst OR lea OR aar OR wsp OR crn OR kit OR lbt OR ba5) FILTLVL>2]://
