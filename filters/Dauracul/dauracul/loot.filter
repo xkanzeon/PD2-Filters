@@ -1,5 +1,5 @@
-// DAURACUL'S LOOT FILTER Season 11.3
-// Last updated: 5/09/25
+// DAURACUL'S LOOT FILTER Season 11.4
+// Last updated: 5/15/25
 // For any bug reports/feedback contact @Dauracul in the PD2 Discord #lootfilter channel
 
 // NOTE: IF YOU WISH TO MAKE EDITS TO THIS LOOTFILTER, PLEASE BE AWARE IT USES 'ANSI' ENCODING -- WITHOUT THIS ENCODING, CERTAIN CHARACTERS WILL DISPLAY INCORRECTLY 
@@ -46,6 +46,11 @@
 // Bug fix: Colorized Sage class loot should now properly display enhanced damage/defense values
 // Slight visual changeup of how Amp / Lower Resist displays on rares & crafts
 
+// 11.4
+// Updated S11 Map Immunity notes
+// Added Grief runeword for Polearms
+// Minor bug fixes
+
 
 // Table of Contents (For my own reference)  **CTRL+F to jump**
 
@@ -91,7 +96,7 @@ ItemDisplayFilterName[]:High Runeword Notes
 
 
 // Release Notes on Identify Scrolls (in Town at Vendors)
-ItemDisplay[isc SHOP]: %NAME%{%NAME%%BLUE%wiki.projectdiablo2.com%NL%%NL%%DARK_GREEN%For full Season 11 patch notes, visit the Project Diablo 2 Wiki:%NL%Added new features in prep for %RED%Season 11: Prosperity%DARK_GREEN%. View the filter file for patch notes.%NL%Last Updated 5-09-2025:%NL%%NL%%ORANGE%the PD2 Discord #lootfilter channel.%NL%For any bug reports or feedback, contact @Dauracul in%NL%runeword recipes on weapon and armor bases.%NL%Use the filter levels in settings to display%NL%%NL%%GOLD%Dauracul's PD2 Loot Filter %RED%v11.3}
+ItemDisplay[isc SHOP]: %NAME%{%NAME%%BLUE%wiki.projectdiablo2.com%NL%%NL%%DARK_GREEN%For full Season 11 patch notes, visit the Project Diablo 2 Wiki:%NL%Added new features in prep for %RED%Season 11: Prosperity%DARK_GREEN%. View the filter file for patch notes.%NL%Last Updated 5-15-2025:%NL%%NL%%ORANGE%the PD2 Discord #lootfilter channel.%NL%For any bug reports or feedback, contact @Dauracul in%NL%runeword recipes on weapon and armor bases.%NL%Use the filter levels in settings to display%NL%%NL%%GOLD%Dauracul's PD2 Loot Filter %RED%v11.4}
 
 // ALIASES
 
@@ -1091,7 +1096,7 @@ ItemDisplay[rrra]: %TEAL%Infused Horadrim Orb%CONTINUE%
 //ItemDisplay[iwss]: %NAME%{%NAME%%BLUE%Map Contains a Random Event%NL%%WHITE%Transmute with a %ORANGE%Map %WHITE%to add %ORANGE%Catalyzed}%CONTINUE%
 
 // Map has Random Event applied (Catalyst Shard)
-ItemDisplay[(t11 OR t12 OR t13 OR t14 OR t15 OR t16 OR t21 OR t22 OR t23 OR t24 OR t25 OR t26 OR t27 OR t28 OR t31 OR t32 OR t33 OR t34 OR t35 OR t36 OR t37 OR t38 OR t39 OR t3a OR t51 OR t52 OR t53) STAT500>0]: %NAME%{%NAME%%PURPLE%Catalyzed%NL%}%CONTINUE%
+ItemDisplay[(t11 OR t12 OR t13 OR t14 OR t15 OR t16 OR t17 OR t21 OR t22 OR t23 OR t24 OR t25 OR t26 OR t27 OR t28 OR t31 OR t32 OR t33 OR t34 OR t35 OR t36 OR t37 OR t38 OR t39 OR t3a OR t51 OR t52 OR t53 or t54 or t55) STAT500>0]: %NAME%{%NAME%%PURPLE%Catalyzed%NL%}%CONTINUE%
 
 // Gems
 
@@ -1127,7 +1132,7 @@ ItemDisplay[GEMTYPE=3 GEMLEVEL=5]: %DOT-81%%GREEN%Perfect Emerald%CONTINUE%
 ItemDisplay[GEMTYPE=5 GEMLEVEL=1]: %BLUE%Chipped Sapphire%CONTINUE%
 ItemDisplay[GEMTYPE=5 GEMLEVEL=2]: %BLUE%Flawed Sapphire%CONTINUE%
 ItemDisplay[GEMTYPE=5 GEMLEVEL=3]: %BLUE%Sapphire%CONTINUE%
-ItemDisplay[GEMTYPE=5 GEMLEVEL=4]: %DOT-97%%BLUE%Flawless Sapphire%CONTINUE%
+ItemDisplay[GEMTYPE=5 GEMLEVEL=4]: %BLUE%Flawless Sapphire%CONTINUE%
 ItemDisplay[GEMTYPE=5 GEMLEVEL=5]: %DOT-97%%BLUE%Perfect Sapphire%CONTINUE%
 
 // Topazes
@@ -1193,16 +1198,16 @@ ItemDisplay[t25]: %NAME%{%NAME%%YELLOW%Lightning %GREEN%Poison%NL%%WHITE%Immunit
 ItemDisplay[t26]: %NAME%{%NAME%%GOLD%Physical %GREEN%Poison%NL%%WHITE%Immunities:}%CONTINUE%
 
 //Demon Road 
-ItemDisplay[t27]: %NAME%{%NAME%%DARK_GREEN%TBD%NL%%WHITE%Immunities:}%CONTINUE%
+ItemDisplay[t27]: %NAME%{%NAME%%BLUE%Cold %GREEN%Poison%NL%%WHITE%Immunities:}%CONTINUE%
 
 //Skovos Stronghold
-ItemDisplay[t28]: %NAME%{%NAME%%DARK_GREEN%TBD%NL%%WHITE%Immunities:}%CONTINUE%
+ItemDisplay[t28]: %NAME%{%NAME%%ORANGE%Magic %RED%Fire %YELLOW%Lightning%NL%%WHITE%Immunities:}%CONTINUE%
 
 //River of Blood
 ItemDisplay[t31]: %NAME%{%NAME%%ORANGE%Magic %BLUE%Cold %GREEN%Poison%NL%%WHITE%Immunities:}%CONTINUE%
 
 //Throne of Insanity
-ItemDisplay[t32]: %NAME%{%NAME%%YELLOW%Lightning %BLUE%Cold%NL%%WHITE%Immunities:}%CONTINUE%
+ItemDisplay[t32]: %NAME%{%NAME%%RED%Fire %BLUE%Cold%NL%%WHITE%Immunities:}%CONTINUE%
 
 //Lost Temple
 ItemDisplay[t33]: %NAME%{%NAME%%RED%Fire %BLUE%Cold%NL%%WHITE%Immunities:}%CONTINUE%
@@ -1736,7 +1741,7 @@ ItemDisplay[NMAG SOCK>1 !RW DRUID_STAFFMODS]: %GRAY%(%NAME%{%NAME%}%CONTINUE%
 
 // Prepare to drop properties to a new line if one of the below properties exist
 ItemDisplay[(CL4 OR WP4 OR amu) (CLSK2>0 OR TABSK16>0 OR TABSK17>0 OR TABSK18>0 OR FOOLS OR AMP_ON_STRIKING OR AMP_ON_CASTING OR LR_ON_STRIKING OR LR_ON_CASTING) (MAG OR RARE OR CRAFT) NECROMANCER !SHOP]: %CL%%NAME%{%NAME%}%CONTINUE%
-temDisplay[(CL4 OR WP4 OR amu) (CLSK2>0 OR TABSK16>0 OR TABSK17>0 OR TABSK18>0 OR FOOLS OR AMP_ON_STRIKING OR AMP_ON_CASTING OR LR_ON_STRIKING OR LR_ON_CASTING) (MAG OR RARE OR CRAFT) SHOP]: %CL%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[(CL4 OR WP4 OR amu) (CLSK2>0 OR TABSK16>0 OR TABSK17>0 OR TABSK18>0 OR FOOLS OR AMP_ON_STRIKING OR AMP_ON_CASTING OR LR_ON_STRIKING OR LR_ON_CASTING) (MAG OR RARE OR CRAFT) SHOP]: %CL%%NAME%{%NAME%}%CONTINUE%
 // Extra Line to ensure only Fools on a Wand does not trigger
 ItemDisplay[WP12 (CLSK2>0 OR TABSK16>0 OR TABSK17>0 OR TABSK18>0 OR AMP_ON_STRIKING OR AMP_ON_CASTING OR LR_ON_STRIKING OR LR_ON_CASTING) (MAG OR RARE OR CRAFT) NECROMANCER !SHOP]: %CL%%NAME%{%NAME%}%CONTINUE%
 ItemDisplay[WP12 (CLSK2>0 OR TABSK16>0 OR TABSK17>0 OR TABSK18>0 OR AMP_ON_STRIKING OR AMP_ON_CASTING OR LR_ON_STRIKING OR LR_ON_CASTING) (MAG OR RARE OR CRAFT) SHOP]: %CL%%NAME%{%NAME%}%CONTINUE%
@@ -5060,6 +5065,8 @@ ItemDisplay[NMAG (POLEARM OR SPEAR) !THROWING SOCK=5 !RW CLVL<41 FILTLVL=2]: %NA
 ItemDisplay[NMAG (POLEARM OR SPEAR) !THROWING SOCK=5 !RW CLVL>40 FILTLVL=2]: %NAME%{%NAME%%TAN%Obedience: %ORANGE%Hel Ko Thul Eth Fal%NL%}%CONTINUE%
 ItemDisplay[NMAG (POLEARM OR SPEAR) !THROWING SOCK=5 !RW CLVL<57 FILTLVL=3]: %NAME%{%NAME%%RED%Call to Arms: Amn Ral Mal Ist Ohm (Level 57)%NL%}%CONTINUE%
 ItemDisplay[NMAG (POLEARM OR SPEAR) !THROWING SOCK=5 !RW CLVL>56 FILTLVL=3]: %NAME%{%NAME%%TAN%Call to Arms: %ORANGE%Amn Ral Mal Ist Ohm%NL%}%CONTINUE%
+ItemDisplay[NMAG POLEARM SOCK=5 !RW CLVL<59 FILTLVL=3]: %NAME%{%NAME%%RED%Grief: Eth Tir Lo Mal Ral (Level 59)%NL%}%CONTINUE%
+ItemDisplay[NMAG POLEARM SOCK=5 !RW CLVL>58 FILTLVL=3]: %NAME%{%NAME%%TAN%Grief: %ORANGE%Eth Tir Lo Mal Ral%NL%}%CONTINUE%
 ItemDisplay[NMAG (POLEARM OR SPEAR) !THROWING SOCK=5 !RW CLVL<63 FILTLVL=3]: %NAME%{%NAME%%RED%Eternity: Amn Ber Ist Sol Sur (Level 63)%NL%}%CONTINUE%
 ItemDisplay[NMAG (POLEARM OR SPEAR) !THROWING SOCK=5 !RW CLVL>62 FILTLVL=3]: %NAME%{%NAME%%TAN%Eternity: %ORANGE%Amn Ber Ist Sol Sur%NL%}%CONTINUE%
 ItemDisplay[NMAG (POLEARM OR SPEAR) !THROWING SOCK=5 !RW CLVL<65 FILTLVL=3]: %NAME%{%NAME%%RED%Destruction: Vex Lo Ber Jah Ko (Level 65)%NL%}%CONTINUE%
@@ -6617,7 +6624,7 @@ ItemDisplay[NMAG SOCK=1 !leg !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR M
 ItemDisplay[NMAG (BOOTS OR GLOVES OR BELT) !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109) CLVL>6]:
 
 // Hide Non-magic Throwing weapons if they roll 1 Socket
-ItemDisplay[NMAG THROWING SOCK=1 CLVL>10]:
+ItemDisplay[NMAG THROWING SOCK=1 !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109) CLVL>10]:
 
 // Hide Non-magic Amazon Javelins if they roll 1 Socket 
 ItemDisplay[NMAG (am5 OR ama OR amf) SOCK=1 CLVL>10]:
@@ -6637,8 +6644,8 @@ ItemDisplay[(aqv OR cqv) NMAG !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR 
 // Hide Arrows & Bolts if not Rare past lv20
 ItemDisplay[(aqv OR cqv) MAG !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109) CLVL>20]:
 
-// Hide Circlets if not Rare or Set or Unique 
-ItemDisplay[(ci0 OR ci1 OR ci2 OR ci3) !RARE !SET !UNI]:
+// Hide Circlets if not Rare or Set or Unique or have a RW 
+ItemDisplay[(ci0 OR ci1 OR ci2 OR ci3) !RARE !SET !UNI !RW]:
 
 // Hide Choking, Exploding, Fulminating, Oil, Rancid, Strangling, Thawing, Stamina, ID and TP Scrolls unless in Town
 //ItemDisplay[(gpm OR opm OR opl OR ops OR gps OR gpl OR wms OR vps OR tsc OR isc) !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109) CLVL>25]:
