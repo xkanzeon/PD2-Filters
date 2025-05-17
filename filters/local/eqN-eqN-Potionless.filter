@@ -713,7 +713,7 @@ ItemDisplay[t13]: %NAME%{%RED%125% %GRAY%|| %YELLOW%75% %GRAY%|| %BLUE%130% %GRA
 ItemDisplay[t23]: %NAME%{%RED%130% %GRAY%|| %YELLOW%100% %GRAY%|| %BLUE%80% %GRAY%|| %GREEN%85% %GRAY%|| %ORANGE%50% %GRAY%|| %TAN%50%%NL%%RED%Fire %GRAY%|| %YELLOW%Light %GRAY%|| %BLUE%Cold %GRAY%|| %GREEN%Poison %GRAY%|| %ORANGE%Magic %GRAY%|| %TAN%Phys%NL%%WHITE%Highest Monster Resistances:%NL%%NAME%}%CONTINUE% // Arreat Battlefield
 ItemDisplay[t21]: %NAME%{%RED%140% %GRAY%|| %YELLOW%125% %GRAY%|| %BLUE%80% %GRAY%|| %GREEN%75% %GRAY%|| %ORANGE%50% %GRAY%|| %TAN%75%%NL%%RED%Fire %GRAY%|| %YELLOW%Light %GRAY%|| %BLUE%Cold %GRAY%|| %GREEN%Poison %GRAY%|| %ORANGE%Magic %GRAY%|| %TAN%Phys%NL%%WHITE%Highest Monster Resistances:%NL%%NAME%}%CONTINUE% // Phlegethon
 ItemDisplay[t33]: %NAME%{%RED%120% %GRAY%|| %YELLOW%80% %GRAY%|| %BLUE%110% %GRAY%|| %GREEN%80% %GRAY%|| %ORANGE%50% %GRAY%|| %TAN%55%%NL%%RED%Fire %GRAY%|| %YELLOW%Light %GRAY%|| %BLUE%Cold %GRAY%|| %GREEN%Poison %GRAY%|| %ORANGE%Magic %GRAY%|| %TAN%Phys%NL%%WHITE%Highest Monster Resistances:%NL%%NAME%}%CONTINUE% // Lost Temple
-ItemDisplay[t16]: %NAME%{%RED%135% %GRAY%|| %YELLOW%75% %GRAY%|| %BLUE%115% %GRAY%|| %GREEN%75% %GRAY%|| %ORANGE%125% %GRAY%|| %TAN%60%%NL%%RED%Fire %GRAY%|| %YELLOW%Light %GRAY%|| %BLUE%Cold %GRAY%|| %GREEN%Poison %GRAY%|| %ORANGE%Magic %GRAY%|| %TAN%Phys%NL%%WHITE%Highest Monster Resistances:%NL%%NAME%}%CONTINUE% // Ruined Cistern
+ItemDisplay[t16]: %NAME%{%RED%75% %GRAY%|| %YELLOW%135% %GRAY%|| %BLUE%115% %GRAY%|| %GREEN%75% %GRAY%|| %ORANGE%125% %GRAY%|| %TAN%60%%NL%%RED%Fire %GRAY%|| %YELLOW%Light %GRAY%|| %BLUE%Cold %GRAY%|| %GREEN%Poison %GRAY%|| %ORANGE%Magic %GRAY%|| %TAN%Phys%NL%%WHITE%Highest Monster Resistances:%NL%%NAME%}%CONTINUE% // Ruined Cistern
 ItemDisplay[t15]: %NAME%{%RED%75% %GRAY%|| %YELLOW%80% %GRAY%|| %BLUE%125% %GRAY%|| %GREEN%105% %GRAY%|| %ORANGE%150% %GRAY%|| %TAN%60%%NL%%RED%Fire %GRAY%|| %YELLOW%Light %GRAY%|| %BLUE%Cold %GRAY%|| %GREEN%Poison %GRAY%|| %ORANGE%Magic %GRAY%|| %TAN%Phys%NL%%WHITE%Highest Monster Resistances:%NL%%NAME%}%CONTINUE% // Royal Crypts
 ItemDisplay[t11]: %NAME%{%RED%130% %GRAY%|| %YELLOW%120% %GRAY%|| %BLUE%75% %GRAY%|| %GREEN%80% %GRAY%|| %ORANGE%50% %GRAY%|| %TAN%80%%NL%%RED%Fire %GRAY%|| %YELLOW%Light %GRAY%|| %BLUE%Cold %GRAY%|| %GREEN%Poison %GRAY%|| %ORANGE%Magic %GRAY%|| %TAN%Phys%NL%%WHITE%Highest Monster Resistances:%NL%%NAME%}%CONTINUE% // Ruins of Viz-jun
 ItemDisplay[t14]: %NAME%{%RED%75% %GRAY%|| %YELLOW%125% %GRAY%|| %BLUE%75% %GRAY%|| %GREEN%130% %GRAY%|| %ORANGE%35% %GRAY%|| %TAN%60%%NL%%RED%Fire %GRAY%|| %YELLOW%Light %GRAY%|| %BLUE%Cold %GRAY%|| %GREEN%Poison %GRAY%|| %ORANGE%Magic %GRAY%|| %TAN%Phys%NL%%WHITE%Highest Monster Resistances:%NL%%NAME%}%CONTINUE% // Sanatorium
@@ -721,7 +721,7 @@ ItemDisplay[t34]: %NAME%{%RED%75% %GRAY%|| %YELLOW%130% %GRAY%|| %BLUE%75% %GRAY
 ItemDisplay[t36]: %NAME%{%RED%95% %GRAY%|| %YELLOW%100% %GRAY%|| %BLUE%130% %GRAY%|| %GREEN%80% %GRAY%|| %ORANGE%50% %GRAY%|| %TAN%50%%NL%%RED%Fire %GRAY%|| %YELLOW%Light %GRAY%|| %BLUE%Cold %GRAY%|| %GREEN%Poison %GRAY%|| %ORANGE%Magic %GRAY%|| %TAN%Phys%NL%%WHITE%Highest Monster Resistances:%NL%%NAME%}%CONTINUE% // Fall of Caldeum
 ItemDisplay[t26]: %NAME%{%RED%75% %GRAY%|| %YELLOW%75% %GRAY%|| %BLUE%85% %GRAY%|| %GREEN%135% %GRAY%|| %ORANGE%50% %GRAY%|| %TAN%100%%NL%%RED%Fire %GRAY%|| %YELLOW%Light %GRAY%|| %BLUE%Cold %GRAY%|| %GREEN%Poison %GRAY%|| %ORANGE%Magic %GRAY%|| %TAN%Phys%NL%%WHITE%Highest Monster Resistances:%NL%%NAME%}%CONTINUE% // Shadows of Westmarch
 ItemDisplay[t31]: %NAME%{%RED%90% %GRAY%|| %YELLOW%85% %GRAY%|| %BLUE%180% %GRAY%|| %GREEN%130% %GRAY%|| %ORANGE%100% %GRAY%|| %TAN%66%%NL%%RED%Fire %GRAY%|| %YELLOW%Light %GRAY%|| %BLUE%Cold %GRAY%|| %GREEN%Poison %GRAY%|| %ORANGE%Magic %GRAY%|| %TAN%Phys%NL%%WHITE%Highest Monster Resistances:%NL%%NAME%}%CONTINUE% // River of Blood
-ItemDisplay[t32]: %NAME%{%RED%75% %GRAY%|| %YELLOW%130% %GRAY%|| %BLUE%130% %GRAY%|| %GREEN%85% %GRAY%|| %ORANGE%75% %GRAY%|| %TAN%50%%NL%%RED%Fire %GRAY%|| %YELLOW%Light %GRAY%|| %BLUE%Cold %GRAY%|| %GREEN%Poison %GRAY%|| %ORANGE%Magic %GRAY%|| %TAN%Phys%NL%%WHITE%Highest Monster Resistances:%NL%%NAME%}%CONTINUE% // Throne of Insanity
+ItemDisplay[t32]: %NAME%{%RED%130% %GRAY%|| %YELLOW%75% %GRAY%|| %BLUE%130% %GRAY%|| %GREEN%85% %GRAY%|| %ORANGE%75% %GRAY%|| %TAN%50%%NL%%RED%Fire %GRAY%|| %YELLOW%Light %GRAY%|| %BLUE%Cold %GRAY%|| %GREEN%Poison %GRAY%|| %ORANGE%Magic %GRAY%|| %TAN%Phys%NL%%WHITE%Highest Monster Resistances:%NL%%NAME%}%CONTINUE% // Throne of Insanity
 ItemDisplay[t25]: %NAME%{%RED%75% %GRAY%|| %YELLOW%135% %GRAY%|| %BLUE%85% %GRAY%|| %GREEN%125% %GRAY%|| %ORANGE%50% %GRAY%|| %TAN%66%%NL%%RED%Fire %GRAY%|| %YELLOW%Light %GRAY%|| %BLUE%Cold %GRAY%|| %GREEN%Poison %GRAY%|| %ORANGE%Magic %GRAY%|| %TAN%Phys%NL%%WHITE%Highest Monster Resistances:%NL%%NAME%}%CONTINUE% // Sewers of Harrogath
 ItemDisplay[t24]: %NAME%{%RED%85% %GRAY%|| %YELLOW%120% %GRAY%|| %BLUE%75% %GRAY%|| %GREEN%110% %GRAY%|| %ORANGE%50% %GRAY%|| %TAN%105%%NL%%RED%Fire %GRAY%|| %YELLOW%Light %GRAY%|| %BLUE%Cold %GRAY%|| %GREEN%Poison %GRAY%|| %ORANGE%Magic %GRAY%|| %TAN%Phys%NL%%WHITE%Highest Monster Resistances:%NL%%NAME%}%CONTINUE% // Tomb of Zoltun Kulle
 ItemDisplay[t35]: %NAME%{%RED%65% %GRAY%|| %YELLOW%65% %GRAY%|| %BLUE%65% %GRAY%|| %GREEN%65% %GRAY%|| %ORANGE%33% %GRAY%|| %TAN%50%%NL%%RED%Fire %GRAY%|| %YELLOW%Light %GRAY%|| %BLUE%Cold %GRAY%|| %GREEN%Poison %GRAY%|| %ORANGE%Magic %GRAY%|| %TAN%Phys%NL%%WHITE%Highest Monster Resistances:%NL%%NAME%}%CONTINUE% // Blood Moon
@@ -729,8 +729,8 @@ ItemDisplay[t37]: %NAME%{%RED%75% %GRAY%|| %YELLOW%135% %GRAY%|| %BLUE%75% %GRAY
 ItemDisplay[t38]: %NAME%{%RED%130% %GRAY%|| %YELLOW%75% %GRAY%|| %BLUE%80% %GRAY%|| %GREEN%110% %GRAY%|| %ORANGE%70% %GRAY%|| %TAN%120%%NL%%RED%Fire %GRAY%|| %YELLOW%Light %GRAY%|| %BLUE%Cold %GRAY%|| %GREEN%Poison %GRAY%|| %ORANGE%Magic %GRAY%|| %TAN%Phys%NL%%WHITE%Highest Monster Resistances:%NL%%NAME%}%CONTINUE% // Canyon of Sescheron
 ItemDisplay[t39]: %NAME%{%RED%125% %GRAY%|| %YELLOW%90% %GRAY%|| %BLUE%130% %GRAY%|| %GREEN%105% %GRAY%|| %ORANGE%50% %GRAY%|| %TAN%40%%NL%%RED%Fire %GRAY%|| %YELLOW%Light %GRAY%|| %BLUE%Cold %GRAY%|| %GREEN%Poison %GRAY%|| %ORANGE%Magic %GRAY%|| %TAN%Phys%NL%%WHITE%Highest Monster Resistances:%NL%%NAME%}%CONTINUE% // Kehjistan Marketplace
 ItemDisplay[t3a]: %NAME%{%RED%75% %GRAY%|| %YELLOW%80% %GRAY%|| %BLUE%130% %GRAY%|| %GREEN%130% %GRAY%|| %ORANGE%120% %GRAY%|| %TAN%50%%NL%%RED%Fire %GRAY%|| %YELLOW%Light %GRAY%|| %BLUE%Cold %GRAY%|| %GREEN%Poison %GRAY%|| %ORANGE%Magic %GRAY%|| %TAN%Phys%NL%%WHITE%Highest Monster Resistances:%NL%%NAME%}%CONTINUE% // Ashen Plains
-ItemDisplay[t28]: %NAME%{%RED%85% %GRAY%|| %YELLOW%85% %GRAY%|| %BLUE%85% %GRAY%|| %GREEN%85% %GRAY%|| %ORANGE%40% %GRAY%|| %TAN%45%%NL%%RED%Fire %GRAY%|| %YELLOW%Light %GRAY%|| %BLUE%Cold %GRAY%|| %GREEN%Poison %GRAY%|| %ORANGE%Magic %GRAY%|| %TAN%Phys%NL%%WHITE%Highest Monster Resistances:%NL%%NAME%}%CONTINUE% // Skovos Stronghold
-ItemDisplay[t27]: %NAME%{%RED%85% %GRAY%|| %YELLOW%85% %GRAY%|| %BLUE%85% %GRAY%|| %GREEN%85% %GRAY%|| %ORANGE%40% %GRAY%|| %TAN%45%%NL%%RED%Fire %GRAY%|| %YELLOW%Light %GRAY%|| %BLUE%Cold %GRAY%|| %GREEN%Poison %GRAY%|| %ORANGE%Magic %GRAY%|| %TAN%Phys%NL%%WHITE%Highest Monster Resistances:%NL%%NAME%}%CONTINUE% // Demon Road
+ItemDisplay[t28]: %NAME%{%RED%125% %GRAY%|| %YELLOW%130% %GRAY%|| %BLUE%85% %GRAY%|| %GREEN%85% %GRAY%|| %ORANGE%40% %GRAY%|| %TAN%125%%NL%%RED%Fire %GRAY%|| %YELLOW%Light %GRAY%|| %BLUE%Cold %GRAY%|| %GREEN%Poison %GRAY%|| %ORANGE%Magic %GRAY%|| %TAN%Phys%NL%%WHITE%Highest Monster Resistances:%NL%%NAME%}%CONTINUE% // Skovos Stronghold
+ItemDisplay[t27]: %NAME%{%RED%85% %GRAY%|| %YELLOW%85% %GRAY%|| %BLUE%125% %GRAY%|| %GREEN%135% %GRAY%|| %ORANGE%40% %GRAY%|| %TAN%45%%NL%%RED%Fire %GRAY%|| %YELLOW%Light %GRAY%|| %BLUE%Cold %GRAY%|| %GREEN%Poison %GRAY%|| %ORANGE%Magic %GRAY%|| %TAN%Phys%NL%%WHITE%Highest Monster Resistances:%NL%%NAME%}%CONTINUE% // Demon Road
 ItemDisplay[t17]: %NAME%{%RED%85% %GRAY%|| %YELLOW%85% %GRAY%|| %BLUE%85% %GRAY%|| %GREEN%85% %GRAY%|| %ORANGE%35% %GRAY%|| %TAN%50%%NL%%RED%Fire %GRAY%|| %YELLOW%Light %GRAY%|| %BLUE%Cold %GRAY%|| %GREEN%Poison %GRAY%|| %ORANGE%Magic %GRAY%|| %TAN%Phys%NL%%WHITE%Highest Monster Resistances:%NL%%NAME%}%CONTINUE% // Halls of Torture
 
 //Tier 4 Immunes
@@ -2691,7 +2691,7 @@ ItemDisplay[lrg ((NMAG SOCK=0) OR (MAG FILTLVL=6))]: %NAME%{%WHITE%Max Sockets: 
 ItemDisplay[kit ((NMAG SOCK=0) OR (MAG FILTLVL=6))]: %NAME%{%WHITE%Max Sockets: 3%NL%%NAME%}%CONTINUE%//
 ItemDisplay[spk ((NMAG SOCK=0) OR (MAG FILTLVL=6))]: %NAME%{%WHITE%Max Sockets: 3%NL%%NAME%}%CONTINUE%//
 ItemDisplay[tow ((NMAG SOCK=0) OR (MAG FILTLVL=6))]: %NAME%{%WHITE%Max Sockets: 3%NL%%NAME%}%CONTINUE%//
-ItemDisplay[bsh ((NMAG SOCK=0) OR (MAG FILTLVL=6))]: %NAME%{%WHITE%Max Sockets: 3%NL%%NAME%}%CONTINUE%//
+ItemDisplay[bsh ((NMAG SOCK=0) OR (MAG FILTLVL=6))]: %NAME%{%WHITE%Max Sockets: 2%NL%%NAME%}%CONTINUE%//
 ItemDisplay[gts ((NMAG SOCK=0) OR (MAG FILTLVL=6))]: %NAME%{%WHITE%Max Sockets: 3%NL%%NAME%}%CONTINUE%//
 ItemDisplay[ba1 ILVL<26 ((NMAG SOCK=0) OR (MAG FILTLVL=6))]: %NAME%{%WHITE%Max Sockets: 2%NL%%NAME%}%CONTINUE%//
 ItemDisplay[ba1 ILVL>25 ((NMAG SOCK=0) OR (MAG FILTLVL=6))]: %NAME%{%WHITE%Max Sockets: 3%NL%%NAME%}%CONTINUE%//
@@ -3467,7 +3467,7 @@ ItemDisplay[lrg (UNI OR SET OR RARE OR CRAFT) SOCK=0 STAT360=0]: %NAME%{%WHITE%M
 ItemDisplay[kit (UNI OR SET OR RARE OR CRAFT) SOCK=0 STAT360=0]: %NAME%{%WHITE%Max Sockets: 3}%CONTINUE%//
 ItemDisplay[spk (UNI OR SET OR RARE OR CRAFT) SOCK=0 STAT360=0]: %NAME%{%WHITE%Max Sockets: 3}%CONTINUE%//
 ItemDisplay[tow (UNI OR SET OR RARE OR CRAFT) SOCK=0 STAT360=0]: %NAME%{%WHITE%Max Sockets: 3}%CONTINUE%//
-ItemDisplay[bsh (UNI OR SET OR RARE OR CRAFT) SOCK=0 STAT360=0]: %NAME%{%WHITE%Max Sockets: 3}%CONTINUE%//
+ItemDisplay[bsh (UNI OR SET OR RARE OR CRAFT) SOCK=0 STAT360=0]: %NAME%{%WHITE%Max Sockets: 2}%CONTINUE%//
 ItemDisplay[gts (UNI OR SET OR RARE OR CRAFT) SOCK=0 STAT360=0]: %NAME%{%WHITE%Max Sockets: 3}%CONTINUE%//
 ItemDisplay[ba1 ILVL<26 (UNI OR SET OR RARE OR CRAFT) SOCK=0 STAT360=0]: %NAME%{%WHITE%Max Sockets: 2}%CONTINUE%//
 ItemDisplay[ba1 ILVL>25 (UNI OR SET OR RARE OR CRAFT) SOCK=0 STAT360=0]: %NAME%{%WHITE%Max Sockets: 3}%CONTINUE%//
@@ -5077,8 +5077,8 @@ ItemDisplay[NMAG !RW !SHOP FILTLVL=6 (SPEAR OR POLEARM) SOCK=2]: %NAME%{%GOLD%Wi
 ItemDisplay[NMAG !RW !SHOP FILTLVL=6 POLEARM SOCK=3]: %NAME%{%GOLD%Venom %GRAY%Tal + Dol + Mal%NL%%GOLD%Purity %GRAY%Amn + Eth + Thul%NL%%GOLD%Plague %GRAY%Cham + Fal + Um%NL%%GOLD%Malice %GRAY%Ith + El + Eth%NL%%GOLD%Fury %GRAY%Jah + Gul + Eth%NL%%GOLD%Crescent Moon %GRAY%Shael + Um + Tir%NL%%GOLD%Runewords:%NL%%NAME%}%CONTINUE%																																		// Spear & Polearm 3s
 ItemDisplay[NMAG !RW !SHOP FILTLVL=6 SPEAR SOCK=3]: %NAME%{%GOLD%Venom %GRAY%Tal + Dol + Mal%NL%%GOLD%Purity %GRAY%Amn + Eth + Thul%NL%%GOLD%Plague %GRAY%Cham + Fal + Um%NL%%GOLD%Malice %GRAY%Ith + El + Eth%NL%%GOLD%Loyalty %GRAY%Pul + Tir + Dol%NL%%GOLD%Fury %GRAY%Jah + Gul + Eth%NL%%GOLD%Crescent Moon %GRAY%Shael + Um + Tir%NL%%GOLD%Runewords:%NL%%NAME%}%CONTINUE%																																		// Spear & Polearm 3s
 ItemDisplay[NMAG !RW !SHOP FILTLVL=6 (SPEAR OR POLEARM) SOCK=4]: %NAME%{%GOLD%Rift %GRAY%Hel + Ko + Lem + Gul%NL%%GOLD%Rampage %GRAY%Shael + El + Ith + Eth%NL%%GOLD%Pride %GRAY%Cham + Sur + Io + Lo%NL%%GOLD%Phoenix %GRAY%Vex + Vex + Lo + Jah%NL%%GOLD%Passion %GRAY%Dol + Ort + Eld + Lem%NL%%GOLD%Insight %GRAY%Ral + Tir + Tal + Sol%NL%%GOLD%Infinity %GRAY%Ber + Mal + Ber + Ist%NL%%GOLD%Hand of Justice %GRAY%Sur + Cham + Amn + Lo%NL%%GOLD%Fortitude %GRAY%El + Sol + Dol + Lo%NL%%GOLD%Runewords:%NL%%NAME%}%CONTINUE%												// Spear & Polearm 4s
-ItemDisplay[NMAG !RW !SHOP FILTLVL=6 (SPEAR OR POLEARM) !(scy OR 9s8 OR 7s8 OR wsc OR 9wc OR 7wc) SOCK=5]: %NAME%{%GOLD%Zenith %GRAY%Jah + Zod + Ort + Thul + Ral%NL%%GOLD%Obedience %GRAY%Hel + Ko + Thul + Eth + Fal%NL%%GOLD%Honor %GRAY%Amn + El + Ith + Tir + Sol%NL%%GOLD%Eternity %GRAY%Amn + Ber + Ist + Sol + Sur%NL%%GOLD%Doom %GRAY%Hel + Ohm + Um + Lo + Cham%NL%%GOLD%Destruction %GRAY%Vex + Lo + Ber + Jah + Ko%NL%%GOLD%Call to Arms %GRAY%Amn + Ral + Mal + Ist + Ohm%NL%%GOLD%Runewords:%NL%%NAME%}%CONTINUE%                                                                        // Spear & Polearm 5s
-ItemDisplay[NMAG !RW !SHOP FILTLVL=6 (scy OR 9s8 OR 7s8 OR wsc OR 9wc OR 7wc) SOCK=5]: %NAME%{%GOLD%Zenith %GRAY%Jah + Zod + Ort + Thul + Ral%NL%%GOLD%Obedience %GRAY%Hel + Ko + Thul + Eth + Fal%NL%%GOLD%Honor %GRAY%Amn + El + Ith + Tir + Sol%NL%%GOLD%Grief %GRAY%Eth + Tir + Lo + Mal + Ral%NL%%GOLD%Eternity %GRAY%Amn + Ber + Ist + Sol + Sur%NL%%GOLD%Doom %GRAY%Hel + Ohm + Um + Lo + Cham%NL%%GOLD%Destruction %GRAY%Vex + Lo + Ber + Jah + Ko%NL%%GOLD%Call to Arms %GRAY%Amn + Ral + Mal + Ist + Ohm%NL%%GOLD%Runewords:%NL%%NAME%}%CONTINUE%                                                                        // Scythes 5s
+ItemDisplay[NMAG !RW !SHOP FILTLVL=6 SPEAR !(scy OR 9s8 OR 7s8 OR wsc OR 9wc OR 7wc) SOCK=5]: %NAME%{%GOLD%Zenith %GRAY%Jah + Zod + Ort + Thul + Ral%NL%%GOLD%Obedience %GRAY%Hel + Ko + Thul + Eth + Fal%NL%%GOLD%Honor %GRAY%Amn + El + Ith + Tir + Sol%NL%%GOLD%Eternity %GRAY%Amn + Ber + Ist + Sol + Sur%NL%%GOLD%Doom %GRAY%Hel + Ohm + Um + Lo + Cham%NL%%GOLD%Destruction %GRAY%Vex + Lo + Ber + Jah + Ko%NL%%GOLD%Call to Arms %GRAY%Amn + Ral + Mal + Ist + Ohm%NL%%GOLD%Runewords:%NL%%NAME%}%CONTINUE%                                                                        // Spears 5s
+ItemDisplay[NMAG !RW !SHOP FILTLVL=6 (POLEARM OR scy OR 9s8 OR 7s8 OR wsc OR 9wc OR 7wc) SOCK=5]: %NAME%{%GOLD%Zenith %GRAY%Jah + Zod + Ort + Thul + Ral%NL%%GOLD%Obedience %GRAY%Hel + Ko + Thul + Eth + Fal%NL%%GOLD%Honor %GRAY%Amn + El + Ith + Tir + Sol%NL%%GOLD%Grief %GRAY%Eth + Tir + Lo + Mal + Ral%NL%%GOLD%Eternity %GRAY%Amn + Ber + Ist + Sol + Sur%NL%%GOLD%Doom %GRAY%Hel + Ohm + Um + Lo + Cham%NL%%GOLD%Destruction %GRAY%Vex + Lo + Ber + Jah + Ko%NL%%GOLD%Call to Arms %GRAY%Amn + Ral + Mal + Ist + Ohm%NL%%GOLD%Runewords:%NL%%NAME%}%CONTINUE%                                                                        // Polearms and Scythes 5s
 ItemDisplay[NMAG !RW !SHOP FILTLVL=6 (SPEAR OR POLEARM) SOCK=6]: %NAME%{%GOLD%Silence %GRAY%Dol + Eld + Hel + Ist + Tir + Vex%NL%%GOLD%Breath of the Dying %GRAY%Vex + Hel + El + Eld + Zod + Eth%NL%%GOLD%Asylum %GRAY%Gul + Cham + Hel + Jah + Dol + Um%NL%%GOLD%Runewords:%NL%%NAME%}%CONTINUE%																																											// Spear & Polearm 6s
 ItemDisplay[NMAG !RW !SHOP FILTLVL=6 SWORD SOCK=2]: %NAME%{%GOLD%Wind %GRAY%Sur + El%NL%%GOLD%Strength %GRAY%Amn + Tir%NL%%GOLD%Steel %GRAY%Tir + El%NL%%GOLD%Runewords:%NL%%NAME%}%CONTINUE%																																															// Sword 2s
 ItemDisplay[NMAG !RW !SHOP FILTLVL=6 SWORD SOCK=3]: %NAME%{%GOLD%Venom %GRAY%Tal + Dol + Mal%NL%%GOLD%Plague %GRAY%Cham + Fal + Um%NL%%GOLD%Malice %GRAY%Ith + El + Eth%NL%%GOLD%Lawbringer %GRAY%Amn + Lem + Ko%NL%%GOLD%King's Grace %GRAY%Amn + Ral + Thul%NL%%GOLD%Fury %GRAY%Jah + Gul + Eth%NL%%GOLD%Crescent Moon %GRAY%Shael + Um + Tir%NL%%GOLD%Runewords:%NL%%NAME%}%CONTINUE%																										// Sword 3s
@@ -5484,8 +5484,8 @@ ItemDisplay[am5 NMAG !INF !RW TABSK2>2 !SOCK=1 AMAZON CLVL<75]: %NAME%{%NAME%} /
 ItemDisplay[ama NMAG !INF !RW TABSK2>2 !SOCK=1 AMAZON CLVL<75]: %NAME%{%NAME%} // Etheral Ceremonial Javelins (Leveling)
 ItemDisplay[amf NMAG !INF !RW TABSK2>2 !SOCK=1 AMAZON]: %DOT-D6%%NAME%{%NAME%} // Etheral Matriarchal Javelins (Amazon)
 ItemDisplay[ELT THROWING !(ZON TABSK<3) NMAG !INF !RW ETH !SOCK=1 (FILTLVL<3 OR FILTLVL=6 OR (ED>3 (FILTLVL=3 OR FILTLVL=4 OR FILTLVL=5)))]: %NAME%{%NAME%} // Ethereal Elite Throwing Weapons
-ItemDisplay[EXC THROWING !(ZON TABSK<3) NMAG !INF !RW ETH BARBARIAN !SOCK<2 CLVL<60]: %NAME%{%NAME%} // Exceptional Throwing Weapons for Barbarians (Leveling)
-ItemDisplay[NORM THROWING !(ZON TABSK<3) NMAG !INF !RW ETH BARBARIAN !SOCK<2 CLVL<40]: %NAME%{%NAME%} // Normal Throwing Weapons for Barbarians (Leveling)
+ItemDisplay[EXC THROWING !(ZON TABSK<3) NMAG !INF !RW ETH BARBARIAN !SOCK<2 CLVL<70]: %NAME%{%NAME%} // Exceptional Throwing Weapons for Barbarians (Leveling)
+ItemDisplay[NORM THROWING !(ZON TABSK<3) NMAG !INF !RW ETH BARBARIAN !SOCK<2 CLVL<50]: %NAME%{%NAME%} // Normal Throwing Weapons for Barbarians (Leveling)
 
 //Bows/Crossbows
 ItemDisplay[BOW NMAG !INF !RW TABSK0>2 !SOCK=1 !(SOCK=2 CLVL>29) (!NORM CLVL>59) AMAZON CLVL<75]: %DOT-D6%%NAME%{%NAME%} // Amazon Bows (Leveling)
@@ -5877,8 +5877,8 @@ ItemDisplay[NMAG (9ws OR ELT) !INF !RW SK97>2 SCEPTER ((!SOCK=1 !(SOCK=2 !ELT) !
 
 //General Class Item Failsafe
 ItemDisplay[WEAPON THROWING ELT MAG BARBARIAN !ID CLVL<80]: %NAME%{%NAME%} // (Leveling)
-ItemDisplay[WEAPON !THROWING !BOW !SOR !SIN !ZON !WAND !STAFF ELT MAG (BARBARIAN OR DRUID OR PALADIN) !ID CLVL<80]: %NAME%{%NAME%} // (Leveling)
-ItemDisplay[DAGGER ELT ASSASSIN MAG !ID CLVL<75]: %NAME%{%NAME%} // (Leveling)
+ItemDisplay[WEAPON !BOW !SOR !SIN !ZON !WAND !STAFF ELT MAG (BARBARIAN OR DRUID OR PALADIN) !ID CLVL<80]: %NAME%{%NAME%} // (Leveling)
+ItemDisplay[(DAGGER OR SIN) ELT ASSASSIN MAG !ID CLVL<75]: %NAME%{%NAME%} // (Leveling)
 ItemDisplay[WAND NECROMANCER MAG !ID CLVL<75]: %NAME%{%NAME%} // (Leveling)
 ItemDisplay[STAFF ELT SORCERESS MAG !ID CLVL<75]: %NAME%{%NAME%} // (Leveling)
 ItemDisplay[CLUB DRUID MAG !ID CLVL<75]: %NAME%{%NAME%} // (Leveling)
@@ -6071,13 +6071,19 @@ ItemDisplay[SHOP SOR MAG ((TABSK8>2 OR (CLSK1>1 ALLSK>0) OR (ALLSK>0 TABSK8>1) S
 ItemDisplay[SHOP SOR MAG ((TABSK10>2 OR (CLSK1>1 ALLSK>0) OR (ALLSK>0 TABSK10>1) SK40>1) OR ((CLSK1>1 OR TABSK10>1) SK40>2)) !TABSK8>0 !TABSK9>0]: %GREEN%--/--\--%NL%%BLUE%%NAME%%NL%%GREEN%--\--/--%BLUE%{%GREEN%~   %TAN%Enchant Orb   %GREEN%~}
 ItemDisplay[SHOP STAFF MAG ((TABSK8>2 OR (CLSK1>1 ALLSK>0) OR (ALLSK>0 TABSK8>1) SK52>1) OR ((CLSK1>1 OR TABSK8>1) SK52>2)) !TABSK9>0 !TABSK10>0]: %GREEN%--/--\--%NL%%BLUE%%NAME%%NL%%GREEN%--\--/--%BLUE%{%GREEN%~   %TAN%Enchant Staff   %GREEN%~}
 ItemDisplay[SHOP STAFF MAG ((TABSK10>2 OR (CLSK1>1 ALLSK>0) OR (ALLSK>0 TABSK10>1) SK40>1) OR ((CLSK1>1 OR TABSK10>1) SK40>2)) !TABSK8>0 !TABSK9>0]: %GREEN%--/--\--%NL%%BLUE%%NAME%%NL%%GREEN%--\--/--%BLUE%{%GREEN%~   %TAN%Enchant Staff   %GREEN%~}
-ItemDisplay[SHOP CHEST MAG SOCK=4]: %GREEN%--/--\--%NL%%BLUE%%NAME%%NL%%GREEN%--\--/--%BLUE%{%DARK_GREEN%|%RED%::%DARK_GREEN%|   %TAN%Jeweler's Armor  %DARK_GREEN%|%RED%::%DARK_GREEN%|}
-ItemDisplay[SHOP SHIELD MAG SOCK=4]: %GREEN%--/--\--%NL%%BLUE%%NAME%%NL%%GREEN%--\--/--%BLUE%{%DARK_GREEN%|%RED%::%DARK_GREEN%|   %TAN%Jeweler's Shield  %DARK_GREEN%|%RED%::%DARK_GREEN%|}
-ItemDisplay[SHOP WEAPON 1H MAG SOCK=4 !STAT360=32]: %GREEN%--/--\--%NL%%BLUE%%NAME%%NL%%GREEN%--\--/--%BLUE%{%DARK_GREEN%|%RED%::%DARK_GREEN%|   %TAN%Jeweler's Weapon  %DARK_GREEN%|%RED%::%DARK_GREEN%|}
-ItemDisplay[SHOP HELM MAG SOCK=3 !STAT360=32]: %GREEN%--/--\--%NL%%BLUE%%NAME%%NL%%GREEN%--\--/--%BLUE%{%DARK_GREEN%|%RED%::%DARK_GREEN%|   %TAN%Artisan's Helm  %DARK_GREEN%|%RED%::%DARK_GREEN%|}
-
-//Expensive Item Warning when Shop Hunting
-ItemDisplay[SHOP PRICE>749999 FILTLVL=6]: %RED%$  %BLUE%%NAME%  %RED%${%NAME%}
+ItemDisplay[SHOP CHEST MAG SOCK=4]: %GREEN%--/--\--%NL%%BLUE%%NAME%%NL%%GREEN%--\--/--%BLUE%{%DARK_GREEN%|%RED%::%DARK_GREEN%|   %TAN%Jeweler's Armor   %DARK_GREEN%|%RED%::%DARK_GREEN%|}
+ItemDisplay[SHOP CHEST MAG SOCK=3 (FCR>19 OR LIFE>69 OR STAT36>9 OR FHR>16) !STAT360>0 !GEMMED]: %GREEN%--/--\--%NL%%BLUE%%NAME%%NL%%GREEN%--\--/--%BLUE%{%DARK_GREEN%|%RED%::%DARK_GREEN%|   %TAN%Artisan's Armor   %DARK_GREEN%|%RED%::%DARK_GREEN%|}
+ItemDisplay[SHOP CHEST MAG EDAM>119 EDAM<161 (FCR>9 OR LIFE>49 OR STAT36>9 OR FHR>16) !STAT360>0 !GEMMED]: %GREEN%--/--\--%NL%%BLUE%%NAME%%NL%%GREEN%--\--/--%BLUE%{%DARK_GREEN%|%RED%::%DARK_GREEN%|   %TAN%Embattled Armor   %DARK_GREEN%|%RED%::%DARK_GREEN%|}
+ItemDisplay[SHOP CHEST MAG EDAM>160 (FCR>9 OR LIFE>49 OR STAT36>9) !STAT360>0 !GEMMED]: %GREEN%--/--\--%NL%%BLUE%%NAME%%NL%%GREEN%--\--/--%BLUE%{%DARK_GREEN%|%RED%::%DARK_GREEN%|   %TAN%Rampaging Armor   %DARK_GREEN%|%RED%::%DARK_GREEN%|}
+ItemDisplay[SHOP CHEST MAG RES>20 (FCR>9 OR LIFE>49 OR STAT36>9) !STAT360>0 !GEMMED]: %GREEN%--/--\--%NL%%BLUE%%NAME%%NL%%GREEN%--\--/--%BLUE%{%DARK_GREEN%|%RED%::%DARK_GREEN%|   %TAN%Prismatic Shield   %DARK_GREEN%|%RED%::%DARK_GREEN%|}
+ItemDisplay[SHOP SHIELD MAG SOCK=4]: %GREEN%--/--\--%NL%%BLUE%%NAME%%NL%%GREEN%--\--/--%BLUE%{%DARK_GREEN%|%RED%::%DARK_GREEN%|   %TAN%Jeweler's Shield   %DARK_GREEN%|%RED%::%DARK_GREEN%|}
+ItemDisplay[SHOP SHIELD MAG SOCK=3 (FCR>9 OR LIFE>49 OR STAT36>9 OR FBR>29 OR FHR>16) !STAT360>0 !GEMMED]: %GREEN%--/--\--%NL%%BLUE%%NAME%%NL%%GREEN%--\--/--%BLUE%{%DARK_GREEN%|%RED%::%DARK_GREEN%|   %TAN%Artisan's Shield   %DARK_GREEN%|%RED%::%DARK_GREEN%|}
+ItemDisplay[SHOP SHIELD MAG EDAM>119 (FCR>9 OR LIFE>49 OR STAT36>9 OR FBR>29 OR FHR>16) !STAT360>0 !GEMMED]: %GREEN%--/--\--%NL%%BLUE%%NAME%%NL%%GREEN%--\--/--%BLUE%{%DARK_GREEN%|%RED%::%DARK_GREEN%|   %TAN%Embattled Shield   %DARK_GREEN%|%RED%::%DARK_GREEN%|}
+ItemDisplay[SHOP SHIELD MAG RES>20 (FCR>9 OR LIFE>49 OR STAT36>9 OR FBR>29 OR FHR>16) !STAT360>0 !GEMMED]: %GREEN%--/--\--%NL%%BLUE%%NAME%%NL%%GREEN%--\--/--%BLUE%{%DARK_GREEN%|%RED%::%DARK_GREEN%|   %TAN%Prismatic Shield   %DARK_GREEN%|%RED%::%DARK_GREEN%|}
+ItemDisplay[SHOP WEAPON 1H MAG SOCK=4 !STAT360=32]: %GREEN%--/--\--%NL%%BLUE%%NAME%%NL%%GREEN%--\--/--%BLUE%{%DARK_GREEN%|%RED%::%DARK_GREEN%|   %TAN%Jeweler's Weapon   %DARK_GREEN%|%RED%::%DARK_GREEN%|}
+ItemDisplay[SHOP HELM MAG SOCK=3 !STAT360=32]: %GREEN%--/--\--%NL%%BLUE%%NAME%%NL%%GREEN%--\--/--%BLUE%{%DARK_GREEN%|%RED%::%DARK_GREEN%|   %TAN%Artisan's Helm   %DARK_GREEN%|%RED%::%DARK_GREEN%|}
+ItemDisplay[SHOP WAND !wnd !9wn !ywn NMAG (SK67>2 OR SK68>2 OR SK84>2 OR SK74>2) (SOCK=0 OR SOCK=2)]: %GREEN%--/--\--%NL%%BLUE%%NAME%%NL%%GREEN%--\--/--%BLUE%{%DARK_GREEN%|%RED%::%DARK_GREEN%|   %TAN%White Base   %DARK_GREEN%|%RED%::%DARK_GREEN%|}
+ItemDisplay[SHOP WAND !wnd !9wn !ywn NMAG (((SK75>2 OR SK85>2 OR SK90>2 OR SK94>2) (SK79>2 OR SK367>2 OR SK91>2 OR SK68>2)) OR ((SK367>2 OR SK91>2) SK68>2) OR ((SK68>2 OR SK91>2) SK367>2) OR ((SK367>2 OR SK68>2) SK91>2)) (SOCK=0 OR SOCK=2)]: %GREEN%--/--\--%NL%%BLUE%%NAME%%NL%%GREEN%--\--/--%BLUE%{%DARK_GREEN%|%RED%::%DARK_GREEN%|   %TAN%Dominion Base   %DARK_GREEN%|%RED%::%DARK_GREEN%|}
 
 //Low Level, "Out of the Shop"
 ItemDisplay[!SHOP WEAPON MAG ED>149 STAT360=0 ((am1 OR am5) OR (wax OR mpi OR fla OR whm OR lsd OR bld OR wsp OR wrb OR ces OR axf) OR (gix OR mau OR gma OR gsd OR pik OR wsc OR am4) OR (pil OR ssp OR glv OR tsp) OR (am6 OR ama) OR (9wa OR 9mp OR 9fl OR 9wh OR 9ls OR 9bl OR 9ws OR 9wb OR 9cs OR 9xf) OR (9gi OR 9m9 OR 9gm OR 9gd OR 9p9 OR 9wc) OR (9pi OR 9s9 OR 9gl OR 9ts) OR (am6 OR ama)) LVLREQ<31]: %DOT-9B%%BLUE%%NAME%{%PURPLE%»   %TAN%High ED Corruptible   %PURPLE%«%NL%%NAME%}
@@ -7062,9 +7068,9 @@ ItemDisplay[(clb OR 9cl OR spc OR 9sp) NMAG !(SK221>2 OR SK222>2 OR SK223>2 OR S
 ItemDisplay[((DRU (NORM OR EXC)) OR CLUB) NMAG !(SK221>0 OR SK222>0 OR SK223>0 OR SK224>0 OR SK225>0 OR SK226>0 OR SK227>0 OR SK228>0 OR SK229>0 OR SK230>0 OR SK231>0 OR SK232>0 OR SK233>0 OR SK234>0 OR SK235>0 OR SK236>0 OR SK237>0 OR SK238>0 OR SK239>0 OR SK240>0 OR SK241>0 OR SK242>0 OR SK243>0 OR SK244>0 OR SK245>0 OR SK246>0 OR SK247>0 OR SK248>0 OR SK249>0 OR SK250>0 OR SK370>0) FILTLVL>0]: {%NAME%}
 ItemDisplay[DAGGER NMAG CLVL>24 FILTLVL>0]: {%NAME%}
 
-//Hiding MISC / FINAL//Hiding MISC / FINAL
+//Hiding MISC / FINAL
 ItemDisplay[(ARMOR OR WEAPON) NMAG SOCK=1 !leg (CLVL>9 OR (CLVL<31 DIFF>0)) FILTLVL>0]: {%NAME%}
-ItemDisplay[(BOOTS OR GLOVES OR (THROWING SOCK<2)) NMAG (CLVL>9 OR (CLVL<31 DIFF>0)) FILTLVL>0]: {%NAME%}
+ItemDisplay[(BOOTS OR GLOVES OR (THROWING SOCK<2 !ETH)) NMAG (CLVL>9 OR (CLVL<31 DIFF>0)) FILTLVL>0]: {%NAME%}
 ItemDisplay[(ARMOR OR WEAPON) NMAG (NORM OR EXC) CLVL<31 DIFF>0 FILTLVL>0]: {%NAME%}
 ItemDisplay[(ARMOR OR WEAPON) NMAG (NORM OR EXC) CLVL<15 MAPID>65 DIFF=0 FILTLVL>0]: {%NAME%}
 ItemDisplay[(ARMOR OR WEAPON) MAG !ETH (CLVL>74 OR (CLVL<31 DIFF>0)) FILTLVL>0]: {%NAME%}
@@ -7073,7 +7079,7 @@ ItemDisplay[BELT NMAG (CLVL>29 OR (CLVL<31 DIFF>0)) FILTLVL>0]: {%NAME%}
 ItemDisplay[(ARMOR OR WEAPON) !leg INF FILTLVL>0]: {%NAME%}
 
 //Show Recipes Relaxed Filter Congruency
-ItemDisplay[(ARMOR OR WEAPON) NMAG !SOCK=1 !(GLOVES OR BOOTS OR BELT OR (THROWING SOCK<2)) !INF FILTLVL=6]: %NAME%{%NAME%}
+ItemDisplay[(ARMOR OR WEAPON) NMAG !SOCK=1 !(GLOVES OR BOOTS OR BELT OR (THROWING SOCK<2 !ETH)) !INF FILTLVL=6]: %NAME%{%NAME%}
 ItemDisplay[RARE !ID FILTLVL=6]: %NAME%{%NAME%}
 
 //Medium FINAL
