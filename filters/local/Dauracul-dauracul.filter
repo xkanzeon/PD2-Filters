@@ -1,5 +1,5 @@
-// DAURACUL'S LOOT FILTER Season 11.4
-// Last updated: 5/15/25
+// DAURACUL'S LOOT FILTER Season 11.5
+// Last updated: 5/18/25
 // For any bug reports/feedback contact @Dauracul in the PD2 Discord #lootfilter channel
 
 // NOTE: IF YOU WISH TO MAKE EDITS TO THIS LOOTFILTER, PLEASE BE AWARE IT USES 'ANSI' ENCODING -- WITHOUT THIS ENCODING, CERTAIN CHARACTERS WILL DISPLAY INCORRECTLY 
@@ -51,6 +51,10 @@
 // Added Grief runeword for Polearms
 // Minor bug fixes
 
+// 11.5
+// Throwing Potions should no longer display an Add Sockets recipe
+// Corrected Superior Throwing Weapon names for non-Barbarians
+
 
 // Table of Contents (For my own reference)  **CTRL+F to jump**
 
@@ -96,7 +100,7 @@ ItemDisplayFilterName[]:High Runeword Notes
 
 
 // Release Notes on Identify Scrolls (in Town at Vendors)
-ItemDisplay[isc SHOP]: %NAME%{%NAME%%BLUE%wiki.projectdiablo2.com%NL%%NL%%DARK_GREEN%For full Season 11 patch notes, visit the Project Diablo 2 Wiki:%NL%Added new features in prep for %RED%Season 11: Prosperity%DARK_GREEN%. View the filter file for patch notes.%NL%Last Updated 5-15-2025:%NL%%NL%%ORANGE%the PD2 Discord #lootfilter channel.%NL%For any bug reports or feedback, contact @Dauracul in%NL%runeword recipes on weapon and armor bases.%NL%Use the filter levels in settings to display%NL%%NL%%GOLD%Dauracul's PD2 Loot Filter %RED%v11.4}
+ItemDisplay[isc SHOP]: %NAME%{%NAME%%BLUE%wiki.projectdiablo2.com%NL%%NL%%DARK_GREEN%For full Season 11 patch notes, visit the Project Diablo 2 Wiki:%NL%Added new features for %RED%Season 11: Prosperity%DARK_GREEN%. View the filter file for patch notes.%NL%Last Updated 5-18-2025:%NL%%NL%%ORANGE%the PD2 Discord #lootfilter channel.%NL%For any bug reports or feedback, contact @Dauracul in%NL%runeword recipes on weapon and armor bases.%NL%Use the filter levels in settings to display%NL%%NL%%GOLD%Dauracul's PD2 Loot Filter %RED%v11.5}
 
 // ALIASES
 
@@ -125,6 +129,8 @@ Alias[AMP_ON_CASTING]: (SUFFIX=904 OR SUFFIX=905 OR SUFFIX=906)
 
 Alias[LR_ON_STRIKING]: (SUFFIX=907 OR SUFFIX=908 OR SUFFIX=909)
 Alias[LR_ON_CASTING]: (SUFFIX=910 OR SUFFIX=911 OR SUFFIX=912)
+
+Alias[THROW_POTS]: (tpfs OR tpgs OR tpcs OR tpls OR tpfm OR tpgm OR tpcm OR tplm OR tpfl OR tpgl OR tpcl OR tpll)
 
 
 
@@ -455,6 +461,33 @@ ItemDisplay[SUP NMAG amc !RW]: %RED%Sup %GRAY%Grand Matron Bow%CONTINUE%
 ItemDisplay[SUP NMAG amd !RW]: %RED%Sup %GRAY%Matriarchal Spear%CONTINUE%
 ItemDisplay[SUP NMAG ame !RW]: %RED%Sup %GRAY%Matriarchal Pike%CONTINUE%
 ItemDisplay[SUP NMAG amf !RW]: %RED%Sup %GRAY%Matriarchal Javelin%CONTINUE%
+ItemDisplay[SUP NMAG tkf !RW]: %RED%Sup %GRAY%Throwing Knife%CONTINUE%
+ItemDisplay[SUP NMAG tax !RW]: %RED%Sup %GRAY%Throwing Axe%CONTINUE%
+ItemDisplay[SUP NMAG bkf !RW]: %RED%Sup %GRAY%Balanced Knife%CONTINUE%
+ItemDisplay[SUP NMAG bal !RW]: %RED%Sup %GRAY%Balanced Axe%CONTINUE%
+ItemDisplay[SUP NMAG jav !RW]: %RED%Sup %GRAY%Javelin%CONTINUE%
+ItemDisplay[SUP NMAG pil !RW]: %RED%Sup %GRAY%Pilum%CONTINUE%
+ItemDisplay[SUP NMAG ssp !RW]: %RED%Sup %GRAY%Short Spear%CONTINUE%
+ItemDisplay[SUP NMAG glv !RW]: %RED%Sup %GRAY%Glaive%CONTINUE%
+ItemDisplay[SUP NMAG tsp !RW]: %RED%Sup %GRAY%Throwing Spear%CONTINUE%
+ItemDisplay[SUP NMAG 9tk !RW]: %RED%Sup %GRAY%Battle Dart%CONTINUE%
+ItemDisplay[SUP NMAG 9ta !RW]: %RED%Sup %GRAY%Francisca%CONTINUE%
+ItemDisplay[SUP NMAG 9bk !RW]: %RED%Sup %GRAY%War Dart%CONTINUE%
+ItemDisplay[SUP NMAG 9b8 !RW]: %RED%Sup %GRAY%Hurlbat%CONTINUE%
+ItemDisplay[SUP NMAG 9ja !RW]: %RED%Sup %GRAY%War Javelin%CONTINUE%
+ItemDisplay[SUP NMAG 9pi !RW]: %RED%Sup %GRAY%Great Pilum%CONTINUE%
+ItemDisplay[SUP NMAG 9s9 !RW]: %RED%Sup %GRAY%Simbilan%CONTINUE%
+ItemDisplay[SUP NMAG 9gl !RW]: %RED%Sup %GRAY%Spiculum%CONTINUE%
+ItemDisplay[SUP NMAG 9ts !RW]: %RED%Sup %GRAY%Harpoon%CONTINUE%
+ItemDisplay[SUP NMAG 7tk !RW]: %RED%Sup %GRAY%Flying Knife%CONTINUE%
+ItemDisplay[SUP NMAG 7ta !RW]: %RED%Sup %GRAY%Flying Axe%CONTINUE%
+ItemDisplay[SUP NMAG 7bk !RW]: %RED%Sup %GRAY%Winged Knife%CONTINUE%
+ItemDisplay[SUP NMAG 7b8 !RW]: %RED%Sup %GRAY%Winged Axe%CONTINUE%
+ItemDisplay[SUP NMAG 7ja !RW]: %RED%Sup %GRAY%Hyperion Javelin%CONTINUE%
+ItemDisplay[SUP NMAG 7pi !RW]: %RED%Sup %GRAY%Stygian Pilum%CONTINUE%
+ItemDisplay[SUP NMAG 7s7 !RW]: %RED%Sup %GRAY%Balrog Spear%CONTINUE%
+ItemDisplay[SUP NMAG 7gl !RW]: %RED%Sup %GRAY%Ghost Glaive%CONTINUE%
+ItemDisplay[SUP NMAG 7ts !RW]: %RED%Sup %GRAY%Winged Harpoon%CONTINUE%
 
 //ARMOR
 ItemDisplay[SUP NMAG cap !RW]: %BLUE%Sup %GRAY%Cap%CONTINUE%
@@ -908,6 +941,9 @@ ItemDisplay[STAT118>0 AND CHARSTAT118=1 EQUIPPED]: %NAME%{%NAME%%GRAY%Cannot Be 
 ItemDisplay[STAT118>0 AND CHARSTAT118>1 EQUIPPED]: %NAME%{%NAME%%BLUE%Cannot Be Frozen%CL%}%CONTINUE%
 
 // PD2 Items
+
+// S11 Riddle?
+ItemDisplay[7cr2]: %DOT-62%%NAME%
 
 // S8 Throwing Potions
 
@@ -5840,7 +5876,7 @@ ItemDisplay[NMAG HELM SOCK=0 !SUP]: %NAME%{%NAME%%GRAY%Add Sockets: %ORANGE%Ral 
 
 ItemDisplay[NMAG SHIELD SOCK=0 !SUP]: %NAME%{%NAME%%GRAY%Add Sockets: %ORANGE%Tal %WHITE%+ %ORANGE%Amn %WHITE%+ %RED%PRuby%CL%}%CONTINUE%
 
-ItemDisplay[NMAG WEAPON SOCK=0 !SUP]: %NAME%{%NAME%%GRAY%Add Sockets: %ORANGE%Ral %WHITE%+ %ORANGE%Amn %WHITE%+ %PURPLE%PAmethyst%CL%}%CONTINUE%
+ItemDisplay[NMAG WEAPON !THROW_POTS SOCK=0 !SUP]: %NAME%{%NAME%%GRAY%Add Sockets: %ORANGE%Ral %WHITE%+ %ORANGE%Amn %WHITE%+ %PURPLE%PAmethyst%CL%}%CONTINUE%
 
 
 // Tags for Normal, Exceptional, Elite Bases
