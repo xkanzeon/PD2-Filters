@@ -169,6 +169,28 @@
         }
     ],
     [
+        "PiLLLa",
+        {
+            "info": {
+                "name": "PiLLLa Filter",
+                "url": "https://api.github.com/repos/PiLLLaa/pd2/contents",
+                "author": "PiLLLa"
+            },
+            "filters": [
+                {
+                    "name": "S11_Hype.filter",
+                    "url": "https://api.github.com/repos/PiLLLaa/Pd2/contents/S11_Hype.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/PiLLLaa/Pd2/main/S11_Hype.filter"
+                },
+                {
+                    "name": "S11_Starter.filter",
+                    "url": "https://api.github.com/repos/PiLLLaa/Pd2/contents/S11_Starter.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/PiLLLaa/Pd2/main/S11_Starter.filter"
+                }
+            ]
+        }
+    ],
+    [
         "Sven",
         {
             "info": {
