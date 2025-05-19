@@ -787,7 +787,7 @@ ItemDisplay[rkey]:%PURPLE% o %BLUE% o %GREEN% o %YELLOW% o %ORANGE% o %RED% o  S
 ItemDisplay[lsvl]:%PURPLE% o %BLUE% o %GREEN% o %YELLOW% o %ORANGE% o %RED% o  Vial of Lightsong %RED%  o %ORANGE% o %YELLOW% o %GREEN% o %BLUE% o %PURPLE% o  %BORDER-55%%CONTINUE%
 ItemDisplay[llmr]:%PURPLE% o %BLUE% o %GREEN% o %YELLOW% o %ORANGE% o %RED% o  Lilith's Mirror %RED%  o %ORANGE% o %YELLOW% o %GREEN% o %BLUE% o %PURPLE% o  %BORDER-55%%CONTINUE%
 //dclone items
-ItemDisplay[!ID UNI uhl]:%PURPLE% o %BLUE% o %GREEN% o %YELLOW% o %ORANGE% o %RED% o  %GOLD%overlORd %RED% o %ORANGE% o %YELLOW% o %GREEN% o %BLUE% o %PURPLE% o  %BORDER-55%%CONTINUE%
+ItemDisplay[!ID UNI uhl]:%PURPLE% o %BLUE% o %GREEN% o %YELLOW% o %ORANGE% o %RED% o  %GOLD%overlord %RED% o %ORANGE% o %YELLOW% o %GREEN% o %BLUE% o %PURPLE% o  %BORDER-55%%CONTINUE%
 ItemDisplay[!ID UNI rar]:%PURPLE% o %BLUE% o %GREEN% o %YELLOW% o %ORANGE% o %RED% o  %GOLD%Nick Cage %RED% o %ORANGE% o %YELLOW% o %GREEN% o %BLUE% o %PURPLE% o  %BORDER-55%%CONTINUE%
 ItemDisplay[!ID UNI uth]:%PURPLE% o %BLUE% o %GREEN% o %YELLOW% o %ORANGE% o %RED% o  %GOLD%Dark Abyss %RED% o %ORANGE% o %YELLOW% o %GREEN% o %BLUE% o %PURPLE% o  %BORDER-55%%CONTINUE%
 ItemDisplay[!ID UNI utb]:%PURPLE% o %BLUE% o %GREEN% o %YELLOW% o %ORANGE% o %RED% o  %GOLD%Ithereal %RED% o %ORANGE% o %YELLOW% o %GREEN% o %BLUE% o %PURPLE% o  %BORDER-55%%CONTINUE%
@@ -952,9 +952,9 @@ ItemDisplay[!ID RARE SOR]:%YELLOW%+ Check Orb +%CONTINUE%
 ItemDisplay[!ID RARE NEC]:%YELLOW%+ Check Necro Head +%CONTINUE%
 //hide
 ItemDisplay[!ID RARE (WEAPON OR ARMOR) !(BAR OR DRU OR DIN OR SIN OR ZON OR SOR OR NEC OR GLOVES OR BOOTS OR BELT OR CHEST OR CIRC OR STAFF OR WAND OR POLEARM OR SPEAR OR SCEPTER OR SWORD OR TMACE OR THROWING OR XBOW OR (2H MACE) OR (2H AXE)) FILTLVL>1]:%CONTINUE%//
-ItemDisplay[!ID RARE (WEAPON OR ARMOR) !(CIRC OR CHEST OR GLOVES OR BOOTS OR TMACE OR ZON OR THROWING OR SIN OR SWORD OR POLEARM OR SPEAR OR XBOW OR STAFF OR (2H MACE) OR (2H AXE)) FILTLVL>2]:%CONTINUE%//
+ItemDisplay[!ID RARE (WEAPON OR ARMOR) !(CIRC OR CHEST OR GLOVES OR BOOTS OR TMACE OR ZON OR THROWING OR SIN OR DIN OR SWORD OR POLEARM OR SPEAR OR XBOW OR STAFF OR (2H MACE) OR (2H AXE) OR SOR) FILTLVL>2]:%CONTINUE%//
 ItemDisplay[!ID RARE (WEAPON OR ARMOR) !(CIRC OR CHEST OR GLOVES OR BOOTS) FILTLVL>3]:%CONTINUE%//
-ItemDisplay[!ID RARE (aqv OR cqv) FILTLVL>3]://
+ItemDisplay[!ID RARE (aqv OR cqv) FILTLVL>2]://
 
 //Green items
 ItemDisplay[!ID SET rin]:*** Ring ***%CONTINUE%
@@ -1003,7 +1003,7 @@ ItemDisplay[!ID SET uhm]:%NAME%%RED%O ³%GREEN%Heaven's Brethren helm %RED%O%CONT
 ItemDisplay[!ID SET urn]:%NAME%%RED%O ³%GREEN%Griswold's helm %RED%O%CONTINUE%
 ItemDisplay[!ID SET ci3]:%NAME%%RED%O ³%GREEN%M'avina's helm %RED%O%CONTINUE%
 //UNIQUE elite helms
-ItemDisplay[!ID UNI uap]:%NAME%%PURPLE%O%BLUE%O%GREEN%O%YELLOW%O%ORANGE%O%RED%O ³%GOLD%Harlequin Crest %RED%O%ORANGE%O%YELLOW%O%GREEN%O%BLUE%O%PURPLE%O
+ItemDisplay[!ID UNI uap]:%NAME%%YELLOW%O%ORANGE%O%RED%O ³%GOLD%Harlequin Crest %RED%O%ORANGE%O%YELLOW%O
 ItemDisplay[!ID UNI ulm]:%NAME%%RED%O ³%GOLD%Steel Shade %RED%O%CONTINUE%
 ItemDisplay[!ID UNI usk]:%NAME%%RED%O ³%GOLD%Andariel's Visage %RED%O%CONTINUE%
 ItemDisplay[!ID UNI uh9]:%NAME%%RED%O ³%GOLD%Giant Skull %RED%O%CONTINUE%
@@ -1118,7 +1118,7 @@ ItemDisplay[!ID UNI uts]:%NAME%%RED%O ³%GOLD%Spirit Ward %RED%O%CONTINUE%
 ItemDisplay[!ID UNI urg]:%NAME%%RED%O ³%GOLD%Twilight's Reflection %RED%O%CONTINUE%
 /////
 //normal set gloves
-ItemDisplay[!ID SET lgl]:%NAME%%YELLOW%O%ORANGE%O%RED%O ¹Death's gloves %YELLOW%O%ORANGE%O%RED%O%CONTINUE%
+ItemDisplay[!ID SET lgl]:%NAME%%YELLOW%O%ORANGE%O%RED%O%GOLD% ¹Death's gloves %YELLOW%O%ORANGE%O%RED%O%CONTINUE%
 ItemDisplay[!ID SET vgl]:%NAME%¹Sander's gloves%CONTINUE%
 ItemDisplay[!ID SET mgl]:%NAME%¹Cleglaw's gloves%CONTINUE%
 ItemDisplay[!ID SET tgl]:%NAME%¹Arctic OR Iratha's gloves%CONTINUE%
@@ -1150,13 +1150,13 @@ ItemDisplay[!ID UNI uhg]:%NAME%%RED%O ³%GOLD%Steelrend %RED%O%CONTINUE%
 ItemDisplay[!ID UNI ulg]:%NAME%%RED%O ³%GOLD%Titan's Grip %RED%O%CONTINUE%
 /////
 //normal set boots
-ItemDisplay[!ID SET lbt]:%NAME%%YELLOW%O%ORANGE%O%RED%O ¹Tancred's boots %YELLOW%O%ORANGE%O%RED%O%CONTINUE%
+ItemDisplay[!ID SET lbt]:%NAME%%YELLOW%O%ORANGE%O%RED%O%GOLD% ¹Tancred's boots %YELLOW%O%ORANGE%O%RED%O%CONTINUE%
 ItemDisplay[!ID SET vbt]:%NAME%¹Cow King's OR Sander's boots%CONTINUE%
 ItemDisplay[!ID SET mbt]:%NAME%¹Hsarus' boots%CONTINUE%
 ItemDisplay[!ID SET tbt]:%NAME%¹Vidala's boots%CONTINUE%
 ItemDisplay[!ID SET hbt]:%NAME%¹Sigon's boots%CONTINUE%
 //normal unique boots
-ItemDisplay[!ID UNI lbt]:%NAME%%YELLOW%O%ORANGE%O%RED%O ¹Hotspur %YELLOW%O%ORANGE%O%RED%O%CONTINUE%
+ItemDisplay[!ID UNI lbt]:%NAME%%YELLOW%O%ORANGE%O%RED%O%GOLD% ¹Hotspur %YELLOW%O%ORANGE%O%RED%O%CONTINUE%
 ItemDisplay[!ID UNI vbt]:%NAME%¹Gorefoot%CONTINUE%
 ItemDisplay[!ID UNI mbt]:%NAME%¹Treads of Cthon%CONTINUE%
 ItemDisplay[!ID UNI tbt]:%NAME%¹Goblin Toe%CONTINUE%
@@ -1179,7 +1179,7 @@ ItemDisplay[!ID UNI umb]:%NAME%%RED%O ³%GOLD%Marrowwalk %RED%O%CONTINUE%
 ItemDisplay[!ID UNI uhb]:%NAME%%RED%O ³%GOLD%Shadow Dancer %RED%O%CONTINUE%
 //////
 //normal set belts
-ItemDisplay[!ID SET lbl]:%NAME%%YELLOW%O%ORANGE%O%RED%O ¹Death's belt %YELLOW%O%ORANGE%O%RED%O%CONTINUE%
+ItemDisplay[!ID SET lbl]:%NAME%%YELLOW%O%ORANGE%O%RED%O%GREEN% ¹Death's belt %YELLOW%O%ORANGE%O%RED%O%CONTINUE%
 ItemDisplay[!ID SET vbl]:%NAME%¹Arctic  belt%CONTINUE%
 ItemDisplay[!ID SET mbl]:%NAME%¹Hsarus' OR Hwanin's belt%CONTINUE%
 ItemDisplay[!ID SET tbl]:%NAME%¹Infernal OR Iratha's belt%CONTINUE%
@@ -1207,7 +1207,7 @@ ItemDisplay[!ID SET utc]:%NAME%%RED%O ³%GREEN%Trang-Oul's belt %RED%O%CONTINUE%
 //Elite unique belts
 ItemDisplay[!ID UNI ulc]:%NAME%%PURPLE%O%BLUE%O%GREEN%O%YELLOW%O%ORANGE%O%RED%O ³%GOLD%Arachnid Mesh %RED%O%ORANGE%O%YELLOW%O%GREEN%O%BLUE%O%PURPLE%O
 ItemDisplay[!ID UNI uvc]:%NAME%%RED%O ³%GOLD%Nosferatu's Coil %RED%O%CONTINUE%
-ItemDisplay[!ID UNI utc]:%NAME%%RED%O ³%GOLD%Verdungo's Hearty Cord %RED%O%CONTINUE%
+ItemDisplay[!ID UNI umc]:%NAME%%RED%O ³%GOLD%Verdungo's Hearty Cord %RED%O%CONTINUE%
 ItemDisplay[!ID UNI uhc]:%NAME%%RED%O ³%GOLD%Siggard's Staunch %RED%O%CONTINUE%
 /////druid helms
 //normal unique druid helms
@@ -1527,7 +1527,7 @@ ItemDisplay[!ID UNI 7wc]:%NAME%%RED%O ³%GOLD%Stormspire %RED%O%CONTINUE%
 //bows
 ItemDisplay[!ID UNI 6l7]:%NAME%%RED%O ³%GOLD%Eaglehorn %RED%O%CONTINUE%
 ItemDisplay[!ID UNI 6sw]:%NAME%%RED%O ³%GOLD%Widowmaker %RED%O%CONTINUE%
-ItemDisplay[!ID UNI 6lw]:%NAME%%PURPLE%O%BLUE%O%GREEN%O%YELLOW%O%ORANGE%O%RED%O ³%GOLD%Windforce %RED%O%ORANGE%O%YELLOW%O%GREEN%O%BLUE%O%PURPLE%O
+ItemDisplay[!ID UNI 6lw]:%NAME%%YELLOW%O%ORANGE%O%RED%O ³%GOLD%Windforce %RED%O%ORANGE%O%YELLOW%O
 //crossbows
 ItemDisplay[!ID UNI 6hx]:%NAME%%RED%O ³%GOLD%Hellrack %RED%O%CONTINUE%
 ItemDisplay[!ID UNI 6rx]:%NAME%%RED%O ³%GOLD%Gut Siphon %RED%O%CONTINUE%
