@@ -148,7 +148,7 @@ ItemDisplay[box FILTLVL=12 SORCERESS CHARSTAT1>149]:%NAME%{%WHITE%Filter Level: 
 
 ItemDisplay[box FILTLVL=0]:%NAME%{%NAME%%CL%%GRAY%Level 12 Hides Crafting Bases, Flawless Gems, and Low Value Items%CL%%GRAY%Levels 8-9-10-11 Hide Most Non-Eth and Non-Magic Class Items%CL%%GRAY%Levels 3-4-5-6-7 Hide Some Rares and Non-Superior Items%CL%%GRAY%Level 2 Hides Additional Non-Magic/Magic Items%CL%Level 1 Shows Most Non-Magic/Magic Items}%CONTINUE%//
 ItemDisplay[box CLVL<50 !FILTLVL=0]:%NAME%{%NAME%%CL%%GRAY%For %GOLD%Increase and Decrease Filter Level%CL%%GRAY%For %GOLD%Always Show Items %GRAY%and Hotkeys%CL%Open Settings to Create Toggle}%CONTINUE%//
-ItemDisplay[box]:%NAME%{%NAME%%CL%%WHITE%Erazure: Season 11 v5.19.2}//
+ItemDisplay[box]:%NAME%{%NAME%%CL%%WHITE%Erazure: Season 11 v5.19.3}//
 
 // ========================  Non-Magic Arrows and Bolts  =========================
 
@@ -1389,7 +1389,7 @@ ItemDisplay[STAT426>19 (t12 OR t13 OR t16 OR t17 OR t21 OR t22 OR t23 OR t33 OR 
 ItemDisplay[STAT401>0 (t12 OR t13 OR t16 OR t17 OR t21 OR t22 OR t23 OR t33 OR t11 OR t14 OR t15 OR t26 OR t34 OR t36 OR t24 OR t25 OR t31 OR t32 OR t35 OR t37 OR t38 OR t39 OR t3a OR t51 OR t52 OR t54 OR t55 OR t53 OR t27 OR t28)]:%NAME%{%GRAY%+%STAT401%% Monster Velocity%CL%%NAME%}%CONTINUE%//
 
 // Map Contains Minions of Destruction
-ItemDisplay[STAT499>0 (t12 OR t13 OR t16 OR t17 OR t21 OR t22 OR t23 OR t33 OR t11 OR t14 OR t15 OR t26 OR t34 OR t36 OR t24 OR t25 OR t31 OR t32 OR t35 OR t37 OR t38 OR t39 OR t3a OR t51 OR t52 OR t55 OR t53 OR t27 OR t28)]:%NAME%{%GRAY%Minions of Destruction%CL%%NAME%}%CONTINUE%//
+ItemDisplay[STAT499>0 (t12 OR t13 OR t16 OR t17 OR t21 OR t22 OR t23 OR t33 OR t11 OR t14 OR t15 OR t26 OR t34 OR t36 OR t24 OR t25 OR t31 OR t32 OR t35 OR t37 OR t38 OR t39 OR t3a OR t51 OR t52 OR t55 OR t53 OR t27 OR t28)]:%NAME%{%RED%Minions of Destruction%CL%%NAME%}%CONTINUE%//
 // Map Contains Native Minions of Destructions
 ItemDisplay[(t54)]:%NAME%{%GRAY%Minions of Destruction%CL%%NAME%}%CONTINUE%//
 
@@ -4772,7 +4772,7 @@ ItemDisplay[(MAG OR RARE) !RES>0 CRES>0 ID jew]:%WHITE%%CRES%%BLUE%res %NAME%{%N
 // Poison Res
 ItemDisplay[(MAG OR RARE) !RES>0 PRES>0 ID jew]:%WHITE%%PRES%%DARK_GREEN%res %NAME%{%NAME%}%CONTINUE%
 // Replenish Life
-ItemDisplay[(MAG OR RARE) STAT74>0 ID jew]:%WHITE%%MANA%%BLUE%mana %NAME%{%NAME%}%CONTINUE%
+ItemDisplay[(MAG OR RARE) STAT74>0 ID jew]:%WHITE%%STAT74%%RED%rep %NAME%{%NAME%}%CONTINUE%
 // Mana
 ItemDisplay[(MAG OR RARE) MANA>0 ID jew]:%WHITE%%MANA%%BLUE%mana %NAME%{%NAME%}%CONTINUE%
 // Energy
