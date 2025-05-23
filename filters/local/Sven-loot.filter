@@ -814,22 +814,22 @@ ItemDisplay[NMAG (BOOTS OR BELT OR GLOVES) SOCK=0 FILTLVL>1]://
 
 //normal quality bases
 //show
-ItemDisplay[NMAG crs SOCK=4 FILTLVL>1]://crystal sword
-ItemDisplay[NMAG crs SOCK=5 FILTLVL>1]://
-ItemDisplay[NMAG bsd SOCK=4 FILTLVL>1]://broad sword
-ItemDisplay[NMAG fla SOCK=5 FILTLVL>1]://flail
-ItemDisplay[NMAG fla SOCK=4 FILTLVL>1]://
-ItemDisplay[NMAG fla SOCK=0 FILTLVL>1]://
+//ItemDisplay[NMAG crs SOCK=4 FILTLVL>1]://crystal sword
+//ItemDisplay[NMAG crs SOCK=5 FILTLVL>1]://
+//ItemDisplay[NMAG bsd SOCK=4 FILTLVL>1]://broad sword
+//ItemDisplay[NMAG fla SOCK=5 FILTLVL>1]://flail
+//ItemDisplay[NMAG fla SOCK=4 FILTLVL>1]://
+//ItemDisplay[NMAG fla SOCK=0 FILTLVL>1]://
 ItemDisplay[NMAG NORM WAND SOCK=0 FILTLVL>1]://wands
 ItemDisplay[NMAG NORM WAND SOCK=2 FILTLVL>1]://wands
 ItemDisplay[NMAG NORM SIN SOCK=0 FILTLVL>1]://Claw
 ItemDisplay[NMAG NORM SIN SOCK=2 FILTLVL>1]://Claw
 ItemDisplay[NMAG NORM SIN SOCK=3 FILTLVL>1]://Claw
-ItemDisplay[NMAG NORM SCEPTER SOCK=0 FILTLVL>2]://Scepter
-ItemDisplay[NMAG NORM SCEPTER SOCK=2 FILTLVL>2]://Scepter
-ItemDisplay[NMAG NORM SCEPTER SOCK=3 FILTLVL>2]://Scepter
-ItemDisplay[NMAG NORM SCEPTER SOCK=4 FILTLVL>2]://Scepter
-ItemDisplay[NMAG NORM SCEPTER SOCK=5 FILTLVL>2]://Scepter
+//ItemDisplay[NMAG NORM SCEPTER SOCK=0 FILTLVL>2]://Scepter
+//ItemDisplay[NMAG NORM SCEPTER SOCK=2 FILTLVL>2]://Scepter
+//ItemDisplay[NMAG NORM SCEPTER SOCK=3 FILTLVL>2]://Scepter
+//ItemDisplay[NMAG NORM SCEPTER SOCK=4 FILTLVL>2]://Scepter
+//ItemDisplay[NMAG NORM SCEPTER SOCK=5 FILTLVL>2]://Scepter
 //hide
 ItemDisplay[NMAG NORM (WEAPON OR ARMOR) !(crs OR bsd OR fla OR WAND OR SIN OR SCEPTER OR BAR OR DRU) FILTLVL>1]://
 ItemDisplay[NMAG (aqv OR cqv) FILTLVL>1]://
@@ -876,7 +876,7 @@ ItemDisplay[DIN NMAG !INF !EXC !NORM !(SOCK=2 OR SOCK=1) EDAM<49 AND EDAM>0]:%BL
 ItemDisplay[NMAG SUP !ETH !GLOVES !BOOTS !BELT !EXC !NORM !DIN !DRU !BAR !SIN !WAND !STAFF !SCEPTER (WEAPON OR ARMOR) ED>0 ED<10 FILTLVL>2]://
 ItemDisplay[NMAG SUP !ETH !GLOVES !BOOTS !BELT !EXC !NORM !DIN !DRU !BAR !SIN !WAND !STAFF !SCEPTER (WEAPON OR ARMOR) ED>9 ED<15 FILTLVL>3]://
 ItemDisplay[NMAG SUP !ETH ED=0 !DIN (WEAPON OR ARMOR) FILTLVL>1]://
-ItemDisplay[NMAG !SUP !ETH !GLOVES !BOOTS !BELT !DIN !DRU !BAR !SIN !STAFF !SCEPTER (WEAPON OR ARMOR) FILTLVL>2]://
+ItemDisplay[NMAG !SUP !ETH !GLOVES !BOOTS !BELT !DIN !DRU !BAR !SIN !STAFF !SCEPTER !crs !fla (WEAPON OR ARMOR) FILTLVL>2]://
 
 //general hide bases
 ItemDisplay[NMAG ELT (SHIELD OR BOW OR XBOW OR POLEARM OR SPEAR OR STAFF OR SCEPTER OR SOR OR SIN) (SOCK=2) FILTLVL>1]://
@@ -1054,7 +1054,7 @@ ItemDisplay[!ID UNI xla]:%NAME%%ORANGE%O ²%GOLD%Skin of the Flayed One %ORANGE%O
 ItemDisplay[!ID UNI xtu]:%NAME%%ORANGE%O ²%GOLD%Iron Pelt %ORANGE%O%CONTINUE%
 ItemDisplay[!ID UNI xng]:%NAME%%ORANGE%O ²%GOLD%Spirit Forge %ORANGE%O%CONTINUE%
 ItemDisplay[!ID UNI xcl]:%NAME%%ORANGE%O ²%GOLD%Crow Caw %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI xhn]:%NAME%%ORANGE%O ²%GOLD%Shaftstop% %ORANGE%O%CONTINUE%
+ItemDisplay[!ID UNI xhn]:%NAME%%ORANGE%O ²%GOLD%Shaftstop %ORANGE%O%CONTINUE%
 ItemDisplay[!ID UNI xrs]:%NAME%%ORANGE%O ²%GOLD%Duriel's Shell %ORANGE%O%CONTINUE%
 ItemDisplay[!ID UNI xpl]:%NAME%%ORANGE%O ²%GOLD%Skullder's Ire %ORANGE%O%CONTINUE%
 ItemDisplay[!ID UNI xlt]:%NAME%%ORANGE%O ²%GOLD%Guardian Angel %ORANGE%O%CONTINUE%
