@@ -102,6 +102,41 @@
                     "download_url": "https://raw.githubusercontent.com/Maaaaaarrk/HiimFilter-PD2-Filter/main/Hiim_Crafting.filter"
                 },
                 {
+                    "name": "Hiim_Crafting_Amazon_Focused.filter",
+                    "url": "https://api.github.com/repos/Maaaaaarrk/HiimFilter-PD2-Filter/contents/Hiim_Crafting_Amazon_Focused.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/Maaaaaarrk/HiimFilter-PD2-Filter/main/Hiim_Crafting_Amazon_Focused.filter"
+                },
+                {
+                    "name": "Hiim_Crafting_Assassin_Focused.filter",
+                    "url": "https://api.github.com/repos/Maaaaaarrk/HiimFilter-PD2-Filter/contents/Hiim_Crafting_Assassin_Focused.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/Maaaaaarrk/HiimFilter-PD2-Filter/main/Hiim_Crafting_Assassin_Focused.filter"
+                },
+                {
+                    "name": "Hiim_Crafting_Barbarian_Focused.filter",
+                    "url": "https://api.github.com/repos/Maaaaaarrk/HiimFilter-PD2-Filter/contents/Hiim_Crafting_Barbarian_Focused.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/Maaaaaarrk/HiimFilter-PD2-Filter/main/Hiim_Crafting_Barbarian_Focused.filter"
+                },
+                {
+                    "name": "Hiim_Crafting_Druid_Focused.filter",
+                    "url": "https://api.github.com/repos/Maaaaaarrk/HiimFilter-PD2-Filter/contents/Hiim_Crafting_Druid_Focused.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/Maaaaaarrk/HiimFilter-PD2-Filter/main/Hiim_Crafting_Druid_Focused.filter"
+                },
+                {
+                    "name": "Hiim_Crafting_Necromancer_Focused.filter",
+                    "url": "https://api.github.com/repos/Maaaaaarrk/HiimFilter-PD2-Filter/contents/Hiim_Crafting_Necromancer_Focused.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/Maaaaaarrk/HiimFilter-PD2-Filter/main/Hiim_Crafting_Necromancer_Focused.filter"
+                },
+                {
+                    "name": "Hiim_Crafting_Paladin_Focused.filter",
+                    "url": "https://api.github.com/repos/Maaaaaarrk/HiimFilter-PD2-Filter/contents/Hiim_Crafting_Paladin_Focused.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/Maaaaaarrk/HiimFilter-PD2-Filter/main/Hiim_Crafting_Paladin_Focused.filter"
+                },
+                {
+                    "name": "Hiim_Crafting_Sorceress_Focused.filter",
+                    "url": "https://api.github.com/repos/Maaaaaarrk/HiimFilter-PD2-Filter/contents/Hiim_Crafting_Sorceress_Focused.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/Maaaaaarrk/HiimFilter-PD2-Filter/main/Hiim_Crafting_Sorceress_Focused.filter"
+                },
+                {
                     "name": "Hiim_Mystery.filter",
                     "url": "https://api.github.com/repos/Maaaaaarrk/HiimFilter-PD2-Filter/contents/Hiim_Mystery.filter?ref=main",
                     "download_url": "https://raw.githubusercontent.com/Maaaaaarrk/HiimFilter-PD2-Filter/main/Hiim_Mystery.filter"
