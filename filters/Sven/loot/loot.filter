@@ -1256,7 +1256,7 @@ ItemDisplay[MAG !ID GLOVES FILTLVL>1]://
 ItemDisplay[MAG !ID (aqv OR cqv) CLVL>10]://
 ItemDisplay[MAG !ID WAND FILTLVL>1]://
 ItemDisplay[MAG !ID (NORM OR EXC) ZON]://
-
+ItemDisplay[MAG !ID crs !ETH CLVL>35]://
 
 /////YELLOW ITEMS
 //show
@@ -2015,13 +2015,13 @@ ItemDisplay[!ID UNI amf]:%NAME%%RED%O ³%GOLD%Thunderstroke %RED%O%CONTINUE%
 ItemDisplay[!ID UNI amc]:%NAME%%RED%O ³%GOLD%Ebonbane %RED%O%CONTINUE%
 
 //hide
-ItemDisplay[!ID SET NORM (ARMOR OR WEAPON) !(qui OR cap OR tbl OR lbl OR lgl OR tow OR bst OR lea OR aar OR wsp OR crn OR kit OR lbt OR ba5) FILTLVL>2]://
-ItemDisplay[!ID SET NORM (ARMOR OR WEAPON) !(lbl OR lgl OR lbt OR ba5) FILTLVL>2]://
-ItemDisplay[!ID SET EXC (ARMOR OR WEAPON) !(xhm OR xml OR xar OR xtg OR zvb OR zmb OR oba OR xsk OR xhg OR xhb OR zhb OR xh9 OR xmb OR xul OR xmg OR ne9 OR xtb OR dr8 OR 9mt) FILTLVL>3]://class sets always shown
+//ItemDisplay[!ID SET NORM (ARMOR OR WEAPON) !(qui OR cap OR tbl OR lbl OR lgl OR tow OR bst OR lea OR aar OR wsp OR crn OR kit OR lbt OR ba5) FILTLVL>2]://
+//ItemDisplay[!ID SET NORM (ARMOR OR WEAPON) !(lbl OR lgl OR lbt OR ba5) FILTLVL>2]://
+//ItemDisplay[!ID SET EXC (ARMOR OR WEAPON) !(xhm OR xml OR xar OR xtg OR zvb OR zmb OR oba OR xsk OR xhg OR xhb OR zhb OR xh9 OR xmb OR xul OR xmg OR ne9 OR xtb OR dr8 OR 9mt) FILTLVL>3]://class sets always shown
 
-ItemDisplay[!ID UNI NORM (ARMOR OR WEAPON) !(ssd OR gsd OR skp OR qui OR lea OR ful OR GLOVES OR BOOTS OR lbl OR vbl OR tbl) FILTLVL>2]://
-ItemDisplay[!ID UNI NORM (ARMOR OR WEAPON) !(gsd OR skp OR tbl OR lbt OR mgl) FILTLVL>2]://
-ItemDisplay[!ID UNI NORM (ARMOR OR WEAPON) !(gsd OR tbl OR lbt OR mgl) FILTLVL>3]://
+//ItemDisplay[!ID UNI NORM (ARMOR OR WEAPON) !(ssd OR gsd OR skp OR qui OR lea OR ful OR GLOVES OR BOOTS OR lbl OR vbl OR tbl) FILTLVL>2]://
+//ItemDisplay[!ID UNI NORM (ARMOR OR WEAPON) !(gsd OR skp OR tbl OR lbt OR mgl) FILTLVL>2]://
+//ItemDisplay[!ID UNI NORM (ARMOR OR WEAPON) !(gsd OR tbl OR lbt OR mgl) FILTLVL>3]://
 //ItemDisplay[!ID UNI EXC (ARMOR OR WEAPON) !(9gm OR 9ls OR 9bs OR 9fc OR 9gd OR 9gs OR 7b8 OR 7ts OR 8cb OR 8mx OR 8hx OR 8rx OR 8ws OR 9bw OR 9qs OR 9sc OR 9ws OR DRU OR BAR OR DIN OR NEC OR SIN OR SOR OR ZON OR xlm OR xh9 OR xhm OR xrn OR CHEST OR xit OR xsh OR xow OR GLOVES OR BOOTS OR BELT OR CIRC OR 9b8 OR pa9 OR ba7 OR dr6) FILTLVL>3]://
 
 ///////////
@@ -2034,7 +2034,7 @@ ItemDisplay[!ID UNI NORM (ARMOR OR WEAPON) !(gsd OR tbl OR lbt OR mgl) FILTLVL>3
 ////////
 
 ItemDisplay[NMAG !RW ZON !BOW TABSK2>0]:%ORANGE%+%TABSK2%%DARK_GREEN%Java %NAME%%CONTINUE%
-ItemDisplay[NMAG !RW ZON BOW TABSK0>0]:%ORANGE%+%TABSK0%%DARK_GREEN%Java %NAME%%CONTINUE%
+ItemDisplay[NMAG !RW ZON BOW TABSK0>0]:%ORANGE%+%TABSK0%%DARK_GREEN%Bowa %NAME%%CONTINUE%
 
 ItemDisplay[NMAG !RW SK89>0 !NECROMANCER]: %DARK_GREEN%rka%NAME%%CONTINUE%
 ItemDisplay[NMAG !RW SK89~1-2]: %LIGHT_GRAY%%SK89%%NAME%%CONTINUE%
