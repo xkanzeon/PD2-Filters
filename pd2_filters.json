@@ -169,6 +169,16 @@
                     "download_url": "https://raw.githubusercontent.com/KassahiPD2/Kassahi/main/Meme.filter"
                 },
                 {
+                    "name": "Mystery-Hyper.filter",
+                    "url": "https://api.github.com/repos/KassahiPD2/Kassahi/contents/Mystery-Hyper.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/KassahiPD2/Kassahi/main/Mystery-Hyper.filter"
+                },
+                {
+                    "name": "Mystery.filter",
+                    "url": "https://api.github.com/repos/KassahiPD2/Kassahi/contents/Mystery.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/KassahiPD2/Kassahi/main/Mystery.filter"
+                },
+                {
                     "name": "Regular-Hyper.filter",
                     "url": "https://api.github.com/repos/KassahiPD2/Kassahi/contents/Regular-Hyper.filter?ref=main",
                     "download_url": "https://raw.githubusercontent.com/KassahiPD2/Kassahi/main/Regular-Hyper.filter"
