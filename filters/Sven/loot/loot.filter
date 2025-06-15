@@ -936,6 +936,7 @@ ItemDisplay[NMAG !RW ELT !(DRU OR BAR) (HELM OR CIRC)  !ETH SUP ED=15 SOCK=2 FIL
 ItemDisplay[NMAG !RW ELT !(DRU OR BAR) (HELM OR CIRC)  ETH SUP ED>0 ED<13 SOCK=1]://
 ItemDisplay[NMAG !RW ELT !(DRU OR BAR) (HELM OR CIRC)  ETH SUP ED>12 ED<15 SOCK=2]://
 ItemDisplay[NMAG !RW ELT !(DRU OR BAR) (HELM OR CIRC)  ETH SUP ED=15 SOCK=2]://
+ItemDisplay[NMAG CIRC FILTLVL>2]://
 
 //Chest armor
 //normal
@@ -1257,7 +1258,7 @@ ItemDisplay[MAG !ID (aqv OR cqv) CLVL>10]://
 ItemDisplay[MAG !ID WAND FILTLVL>1]://
 ItemDisplay[MAG !ID (NORM OR EXC) ZON]://
 ItemDisplay[MAG !ID crs !ETH CLVL>35]://
-
+ItemDisplay[MAG !ID 9cr !ETH CLVL>35]://
 /////YELLOW ITEMS
 //show
 ItemDisplay[!ID RARE NORM CIRC]:%YELLOW%OO ¹%NAME% OO%MAP-6A%%CONTINUE%
@@ -1372,7 +1373,7 @@ ItemDisplay[!ID RARE NORM NEC]:%YELLOW%+ ¹Check Necro Head +%CONTINUE%
 ItemDisplay[!ID RARE EXC NEC]:%YELLOW%+ ²Check Necro Head +%CONTINUE%
 ItemDisplay[!ID RARE ELT NEC]:%YELLOW%+ ³Check Necro Head +%CONTINUE%
 
-ItemDisplay[!ID (RARE OR MAG) ETH (crs OR 9cr)]:%RED%[craft me] %ORANGE%%NAME%%CONTINUE%
+ItemDisplay[!ID (RARE OR MAG) ETH (crs OR 9cr OR POLEARM)]:%RED%[craft me] %ORANGE%%NAME%%CONTINUE%
 
 ItemDisplay[!ID RARE NORM SHIELD !NEC !DIN]:%YELLOW%+ ¹Check Shield +%CONTINUE%
 ItemDisplay[!ID RARE EXC SHIELD !NEC !DIN]:%YELLOW%+ ²Check Shield +%CONTINUE%
@@ -1410,7 +1411,7 @@ ItemDisplay[!ID RARE CLUB FILTLVL>3]://
 ItemDisplay[!ID RARE AXE THROWING FILTLVL>3]://
 ItemDisplay[!ID RARE SPEAR ZON FILTLVL>3]://
 ItemDisplay[!ID RARE 2H SWORD FILTLVL>3]://
-ItemDisplay[!ID RARE (SIN OR SOR OR SCEPTER OR WAND OR STAFF) FILTLVL>3]://
+ItemDisplay[!ID RARE (SOR OR SCEPTER OR WAND OR STAFF) FILTLVL>3]://
 
 //Green items
 ItemDisplay[!ID SET rin]:*** Ring ***%CONTINUE%
