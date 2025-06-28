@@ -1377,18 +1377,20 @@ ItemDisplay[GOLD<4999 CLVL>79]:
 ItemDisplay[(FILTLVL=1 OR FILTLVL=2 OR FILTLVL=3 OR FILTLVL=7 OR FILTLVL=8) rvs]: %PURPLE%*%WHITE%35%
 ItemDisplay[rvs]:
 ItemDisplay[rvl]: %PURPLE%O %WHITE%Juice %PURPLE%O
-ItemDisplay[hp1 CLVL<7]: %RED%*%WHITE%Heal 1
-ItemDisplay[hp2 CLVL<15]: %RED%*%WHITE%Heal 2
-ItemDisplay[hp3 CLVL<19]: %RED%*%WHITE%Heal 3
-ItemDisplay[hp4 CLVL<59]: %RED%*%WHITE%Heal 4
+ItemDisplay[hp1 (MAPID>0 MAPID<39) DIFF=0]: %RED%*%WHITE%Heal 1
+ItemDisplay[hp2 (MAPID>0 MAPID<75) DIFF=0]: %RED%*%WHITE%Heal 2
+ItemDisplay[hp3 (MAPID>0 MAPID<103) DIFF=0]: %RED%*%WHITE%Heal 3
+ItemDisplay[hp4 (MAPID>0 MAPID<133) DIFF<2]: %RED%*%WHITE%Heal 4
 ItemDisplay[FILTLVL>6 hp5]:
-ItemDisplay[hp5]: %RED%*%WHITE%H5
-ItemDisplay[mp1 CLVL<7]: %BLUE%*%WHITE%Mana 1
-ItemDisplay[mp2 CLVL<15]: %BLUE%*%WHITE%Mana 2
-ItemDisplay[mp3 CLVL<19]: %BLUE%*%WHITE%Mana 3
-ItemDisplay[mp4 CLVL<59]: %BLUE%*%WHITE%Mana 4
+ItemDisplay[hp5 (MAPID>0 MAPID<133)]: %RED%*%WHITE%Heal 5
+ItemDisplay[hp5 (MAPID>132 MAPID<185)]: %RED%*%WHITE%H5
+ItemDisplay[mp1 (MAPID>0 MAPID<39) DIFF=0]: %BLUE%*%WHITE%Mana 1
+ItemDisplay[mp2 (MAPID>0 MAPID<75) DIFF=0]: %BLUE%*%WHITE%Mana 2
+ItemDisplay[mp3 (MAPID>0 MAPID<103) DIFF=0]: %BLUE%*%WHITE%Mana 3
+ItemDisplay[mp4 (MAPID>0 MAPID<133) DIFF<2]: %BLUE%*%WHITE%Mana 4
 ItemDisplay[FILTLVL>6 mp5]:
-ItemDisplay[mp5]: %BLUE%*%WHITE%M5
+ItemDisplay[mp5 (MAPID>0 MAPID<133)]: %BLUE%*%WHITE%Mana 5
+ItemDisplay[mp5 (MAPID>132 MAPID<185)]: %BLUE%*%WHITE%M5
 ItemDisplay[(hp1 OR hp2 OR hp3 OR hp4 OR mp1 OR mp2 OR mp3 OR mp4) CLVL>0]:
 // UTILITIES
 ItemDisplay[((MAPID>1 MAPID<40) OR (MAPID>40 MAPID<75) OR (MAPID>75 MAPID<103) OR (MAPID>103 MAPID<109) OR (MAPID>109 MAPID<133) OR (MAPID>160 MAPID<164) OR (MAPID=143 OR MAPID=146 OR MAPID=147 OR MAPID=151 OR MAPID=158 OR MAPID=190)) yps]: %GREEN%*%WHITE%A{%GRAY%(Time Stack)%NL%%WHITE%+25 Psn Res For 30s%NL%%TAN%Instantly Cures Poison:}
@@ -3658,8 +3660,8 @@ ItemDisplay[NMAG SOCK=2 SHIELD !RW]: %NAME%{%NAME%%CL%%GOLD%rhyme:%ORANGE%Shael,
 ItemDisplay[NMAG SOCK=3 SHIELD !RW]: %NAME%{%NAME%%CL%%GOLD%dragon:%RED%Sur, Lo, %ORANGE%Sol %GOLD%dream:%ORANGE%Io, %RED%Jah, %ORANGE%Pul%NL%%GOLD%ancient's Pledge:%ORANGE%Ral, Ort, Tal %GOLD%sanctuary:%ORANGE%Ko, Ko, Mal}%CONTINUE%
 ItemDisplay[NMAG SOCK=4 SHIELD !DIN !RW]: %NAME%{%NAME%%CL%%GOLD%phoenix:%RED%Vex, Vex, Lo, Jah%NL%%GOLD%spirit:%ORANGE%Tal, Thul, Ort, Amn %GOLD%epiphany:%RED%Lo, %ORANGE%Ith, %RED%Lo, %ORANGE%Ist %GOLD%exile:%RED%Vex, Ohm, %ORANGE%Ist, Dol}%CONTINUE%
 ItemDisplay[NMAG SOCK=4 DIN !RW]: %NAME%{%NAME%%CL%%GOLD%phoenix:%RED%Vex, Vex, Lo, Jah %GOLD%shattered wall:%RED%Zod, Jah, %ORANGE%Ral, %RED%Cham%NL%%GOLD%spirit:%ORANGE%Tal, Thul, Ort, Amn %GOLD%epiphany:%RED%Lo, %ORANGE%Ith, %RED%Lo, %ORANGE%Ist %GOLD%exile:%RED%Vex, Ohm, %ORANGE%Ist, Dol}%CONTINUE%
-ItemDisplay[NMAG SOCK=2 AXE !RW]: %NAME%{%NAME%%CL%%GOLD%wind:%RED%Sur, %ORANGE%El%NL%%GOLD%steel:%ORANGE%Tir, El %GOLD%strength:%ORANGE%Amn, Tir}%CONTINUE%
-ItemDisplay[NMAG SOCK=3 AXE !RW]: %NAME%{%NAME%%CL%%GOLD%plague:%RED%Cham, %ORANGE%Fal, Um%NL%%GOLD%venom:%ORANGE%Tal, Dol, Mal %GOLD%fury:%RED%Jah, %ORANGE%Gul, Eth%NL%%GOLD%malice:%ORANGE%Ith, El, Eth %GOLD%crescent moon:%ORANGE%Shael, Um, Tir}%CONTINUE%
+ItemDisplay[NMAG SOCK=2 AXE !THROWING !RW]: %NAME%{%NAME%%CL%%GOLD%wind:%RED%Sur, %ORANGE%El%NL%%GOLD%steel:%ORANGE%Tir, El %GOLD%strength:%ORANGE%Amn, Tir}%CONTINUE%
+ItemDisplay[NMAG SOCK=3 AXE !THROWING !RW]: %NAME%{%NAME%%CL%%GOLD%plague:%RED%Cham, %ORANGE%Fal, Um%NL%%GOLD%venom:%ORANGE%Tal, Dol, Mal %GOLD%fury:%RED%Jah, %ORANGE%Gul, Eth%NL%%GOLD%malice:%ORANGE%Ith, El, Eth %GOLD%crescent moon:%ORANGE%Shael, Um, Tir}%CONTINUE%
 ItemDisplay[NMAG SOCK=4 AXE !RW]: %NAME%{%NAME%%CL%%GOLD%hand of justice:%RED%Sur, Cham, %ORANGE%Amn, %RED%Lo%NL%%GOLD%famine:%ORANGE%Fal, %RED%Ohm, %ORANGE%Ort, %RED%Jah %GOLD%phoenix:%RED%Vex, Vex, Lo, Jah%NL%%GOLD%kingslayer:%ORANGE%Mal, Um, Gul, Fal %GOLD%fortitude:%ORANGE%El, Sol, Dol, %RED%Lo%NL%%GOLD%passion:%ORANGE%Dol, Ort, Eld, Lem %GOLD%oath:%ORANGE%Shael, Pul, Mal, Lum}%CONTINUE%
 ItemDisplay[NMAG SOCK=5 AXE !RW]: %NAME%{%NAME%%CL%%GOLD%doom:%ORANGE%Hel, %RED%Ohm, %ORANGE%Um, %RED%Lo, Cham%NL%%GOLD%eternity:%ORANGE%Amn, %RED%Ber, %ORANGE%Ist, Sol, %RED%Sur %GOLD%beast:%RED%Ber, %ORANGE%Tir, Um, Mal, Lum%NL%%GOLD%call to arms:%ORANGE%Amn, Ral, Mal, Ist, %RED%Ohm %GOLD%grief:%ORANGE%Eth, Tir, %RED%Lo, %ORANGE%Mal, Ral%NL%%GOLD%honor:%ORANGE%Amn, El, Ith, Tir, Sol %GOLD%death:%ORANGE%Hel, El, %RED%Vex, %ORANGE%Ort, Gul}%CONTINUE%
 ItemDisplay[NMAG SOCK=6 AXE !RW]: %NAME%{%NAME%%CL%%GOLD%breath of the dying:%RED%Vex, %ORANGE%Hel, El, Eld, %RED%Zod, %ORANGE%Eth%NL%%GOLD%silence:%ORANGE%Dol, Eld, Hel, Ist, Tir, %RED%Vex %GOLD%last wish:%RED%Jah, %ORANGE%Mal, %RED%Jah, Sur, Jah, Ber}%CONTINUE%
