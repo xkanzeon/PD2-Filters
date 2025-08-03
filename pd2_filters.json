@@ -228,6 +228,11 @@
             },
             "filters": [
                 {
+                    "name": "S11_Blank.filter",
+                    "url": "https://api.github.com/repos/PiLLLaa/Pd2/contents/S11_Blank.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/PiLLLaa/Pd2/main/S11_Blank.filter"
+                },
+                {
                     "name": "S11_Hype.filter",
                     "url": "https://api.github.com/repos/PiLLLaa/Pd2/contents/S11_Hype.filter?ref=main",
                     "download_url": "https://raw.githubusercontent.com/PiLLLaa/Pd2/main/S11_Hype.filter"
