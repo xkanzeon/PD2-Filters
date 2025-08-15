@@ -317,6 +317,11 @@
                     "name": "eqN-Specialized-LLD.filter",
                     "url": "https://api.github.com/repos/eqNj/eqN-PD2-Filter/contents/eqN-Specialized-LLD.filter?ref=main",
                     "download_url": "https://raw.githubusercontent.com/eqNj/eqN-PD2-Filter/main/eqN-Specialized-LLD.filter"
+                },
+                {
+                    "name": "eqN-Specialized-SSF.filter",
+                    "url": "https://api.github.com/repos/eqNj/eqN-PD2-Filter/contents/eqN-Specialized-SSF.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/eqNj/eqN-PD2-Filter/main/eqN-Specialized-SSF.filter"
                 }
             ]
         }
