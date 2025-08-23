@@ -2565,7 +2565,9 @@ ItemDisplay[(aqv OR cqv) RARE ID]:%NAME%{%GRAY%And...Skill+ManaLeech+MagicFind%N
 /////////////////////////////////////////////////////////////////////////////////////////////////
 //                                            RARE                                             //
 /////////////////////////////////////////////////////////////////////////////////////////////////
-
+ItemDisplay[RARE (WEAPON OR ARMOR) !ID ELT]:%ORANGE%El - %YELLOW%%NAME%%CONTINUE%
+ItemDisplay[RARE (WEAPON OR ARMOR) !ID EXC]:%YELLOW%Ex - %YELLOW%%NAME%%CONTINUE%
+ItemDisplay[RARE (WEAPON OR ARMOR) !ID NORM]:%WHITE%N - %YELLOW%%NAME%%CONTINUE%
 ItemDisplay[RARE (mau OR 9m9 OR 7m7 OR gma OR 9gm OR 7gm OR flb OR 9fb OR 7fb) ETH !ID]:%DOT-75%%GREEN%*%SAGE%*%BLUE%*%PURPLE%*    %WHITE%[%PURPLE%E%WHITE%t%BLUE%h%WHITE%] %YELLOW%%NAME%    %GREEN%*%SAGE%*%BLUE%*%PURPLE%*
 ItemDisplay[RARE (gsd OR 9gd OR 7gd OR glv OR 9gl OR 7gl OR pil OR 9pi OR 7pi OR tsp OR 9ts OR 7ts) ETH !ID]:%DOT-75%%GREEN%*%SAGE%*%BLUE%*%PURPLE%*    %WHITE%[%PURPLE%E%WHITE%t%BLUE%h%WHITE%] %YELLOW%%NAME%    %GREEN%*%SAGE%*%BLUE%*%PURPLE%*
 ItemDisplay[RARE (am5 OR ama OR amf OR whm OR 9wh OR 7wh) ETH !ID]:%DOT-75%%GREEN%*%SAGE%*%BLUE%*%PURPLE%*    %WHITE%[%PURPLE%E%WHITE%t%BLUE%h%WHITE%] %YELLOW%%NAME%    %GREEN%*%SAGE%*%BLUE%*%PURPLE%*
@@ -2573,6 +2575,9 @@ ItemDisplay[RARE (CL5) ETH !ID]:%DOT-75%%GREEN%*%SAGE%*%BLUE%*%PURPLE%*    %WHIT
 
 ItemDisplay[RARE (EQ4) !ETH !ID]:%DOT-75%%GREEN%*%SAGE%*%BLUE%*%PURPLE%*    %WHITE%[ %YELLOW%%NAME% %WHITE%]    %GREEN%*%SAGE%*%BLUE%*%PURPLE%*
 ItemDisplay[RARE (EQ5) !ETH !ID]:%DOT-75%%GREEN%*%SAGE%*%BLUE%*%PURPLE%*    %WHITE%[ %YELLOW%%NAME% %WHITE%]    %GREEN%*%SAGE%*%BLUE%*%PURPLE%*
+
+ItemDisplay[RARE (CL4) !ETH !ID]:%DOT-75%%GREEN%*%SAGE%*  %WHITE%[ %YELLOW%%NAME% %WHITE%]  %GREEN%*%SAGE%*
+
 ItemDisplay[RARE (am2 OR am7 OR amc OR lwb OR 8lw OR 6lw OR WP10) !ETH !ID]: %DOT-75%%GREEN%*%CORAL%*%PURPLE%*%WHITE%*    %WHITE%[ %YELLOW%%NAME% %WHITE%]    %GREEN%*%CORAL%*%PURPLE%*%WHITE%*
 ItemDisplay[RARE (WEAPON OR ARMOR) !ETH !ID]: %YELLOW%%NAME%
 ItemDisplay[RARE (WEAPON OR ARMOR) ETH !ID]: %WHITE%[%PURPLE%E%WHITE%t%BLUE%h%WHITE%] %YELLOW%%NAME%
@@ -3031,6 +3036,9 @@ ItemDisplay[UNI !ID nef !ETH]:%DOT-0C%%GOLD%@%RED%@  %RED%Darkforce Spawn%PURPLE
 ItemDisplay[UNI !ID nef ETH]:%DOT-0C%%GOLD%@%RED%@  %WHITE%[%PURPLE%E%WHITE%t%BLUE%h%WHITE%] %RED%Darkforce Spawn%PURPLE%[%GRAY%Bloodlord Skull%PURPLE%] %GRAY%-EL-   %GOLD%@%RED%@
 ItemDisplay[UNI !ID 7ws !ETH]:%DOT-0C%%GOLD%@%RED%@  %RED%Astreon's Iron Ward%PURPLE%[%GRAY%Caduceus%PURPLE%] %GRAY%-EL-  %ORANGE%+%WHITE%+
 ItemDisplay[UNI !ID 7ws ETH]:%DOT-0C%%GOLD%@%RED%@  %WHITE%[%PURPLE%E%WHITE%t%BLUE%h%WHITE%] %RED%Astreon's Iron Ward%PURPLE%[%GRAY%Caduceus%PURPLE%] %GRAY%-EL-  %ORANGE%+%WHITE%+
+ItemDisplay[UNI !ID xhm !ETH]:%DOT-0C%%GOLD%@%RED%@  %RED%Valkyrie Wing%PURPLE%[%GRAY%Winged Helm%PURPLE%] %GRAY%-EX-  %RED%@%GOLD%@
+ItemDisplay[UNI !ID xhm ETH]:%DOT-0C%%GOLD%@%RED%@  %WHITE%[%PURPLE%E%WHITE%t%BLUE%h%WHITE%] %RED%Valkyrie Wing%PURPLE%[%GRAY%Winged Helm%PURPLE%] %GRAY%-EX-  %RED%@%GOLD%@
+
 //Unique Rings Amulets Jewels Charms
 ItemDisplay[UNI !ID (rin OR amu)]:%SOUNDID-2664%%BORDER-62%%RED%@@%ORANGE%@@%YELLOW%@@%GREEN%@@%BLUE%@@%PURPLE%@@    %RED%%NAME%    %RED%@@%ORANGE%@@%YELLOW%@@%GREEN%@@%BLUE%@@%PURPLE%@@
 ItemDisplay[UNI !ID jew]:%SOUNDID-2664%%BORDER-62%%RED%@@%ORANGE%@@%YELLOW%@@%GREEN%@@%BLUE%@@%PURPLE%@@    %RED%R%ORANGE%a%YELLOW%i%GREEN%n%BLUE%b%PURPLE%o%WHITE%w %GOLD%Facet    %RED%@@%ORANGE%@@%YELLOW%@@%GREEN%@@%BLUE%@@%PURPLE%@@
@@ -3076,8 +3084,6 @@ ItemDisplay[UNI !ID xlm !ETH]:%ORANGE%@%WHITE%@  %TAN%Stealskull%PURPLE%[%GRAY%C
 ItemDisplay[UNI !ID xlm ETH]:%ORANGE%@%WHITE%@  %WHITE%[%PURPLE%E%WHITE%t%BLUE%h%WHITE%] %TAN%Stealskull%PURPLE%[%GRAY%Casque%PURPLE%] %GRAY%-EX-  %ORANGE%@%WHITE%@
 ItemDisplay[UNI !ID xhl !ETH]:%ORANGE%@%WHITE%@  %TAN%Darksight Helm%PURPLE%[%GRAY%Basinet%PURPLE%] %GRAY%-EX-  %ORANGE%@%WHITE%@
 ItemDisplay[UNI !ID xhl ETH]:%ORANGE%@%WHITE%@  %WHITE%[%PURPLE%E%WHITE%t%BLUE%h%WHITE%] %TAN%Darksight Helm%PURPLE%[%GRAY%Basinet%PURPLE%] %GRAY%-EX-  %ORANGE%@%WHITE%@
-ItemDisplay[UNI !ID xhm !ETH]:%ORANGE%@%WHITE%@  %TAN%Valkyrie Wing%PURPLE%[%GRAY%Winged Helm%PURPLE%] %GRAY%-EX-  %ORANGE%@%WHITE%@
-ItemDisplay[UNI !ID xhm ETH]:%ORANGE%@%WHITE%@  %WHITE%[%PURPLE%E%WHITE%t%BLUE%h%WHITE%] %TAN%Valkyrie Wing%PURPLE%[%GRAY%Winged Helm%PURPLE%] %GRAY%-EX-  %ORANGE%@%WHITE%@
 ItemDisplay[UNI !ID xsk !ETH]:%ORANGE%@%WHITE%@  %TAN%Blackhorn's Face%PURPLE%[%GRAY%Death Mask%PURPLE%] %GRAY%-EX-  %ORANGE%@%WHITE%@
 ItemDisplay[UNI !ID xsk ETH]:%ORANGE%@%WHITE%@  %WHITE%[%PURPLE%E%WHITE%t%BLUE%h%WHITE%] %TAN%Blackhorn's Face%PURPLE%[%GRAY%Death Mask%PURPLE%] %GRAY%-EX-  %ORANGE%@%WHITE%@
 ItemDisplay[UNI !ID xrn !ETH]:%ORANGE%@%WHITE%@  %TAN%Crown of Thieves%PURPLE%[%GRAY%Grand Crown%PURPLE%] %GRAY%-EX-  %ORANGE%@%WHITE%@
@@ -4026,6 +4032,8 @@ ItemDisplay[7dg NMAG !RW]:%GRAY%Bone Knife%CONTINUE%
 ItemDisplay[7di NMAG !RW]:%GRAY%Mithril Point%CONTINUE%
 ItemDisplay[ywn NMAG !RW]:%GRAY%Yew Wand%CONTINUE%
 ItemDisplay[ob4 NMAG !RW]:%GRAY%Clasped Orb%CONTINUE%
+ItemDisplay[ob3 NMAG !RW]:%GRAY%Smoked Sphere%CONTINUE%
+ItemDisplay[7ta NMAG !RW]:%GRAY%Flying Axe%CONTINUE%
 
 ItemDisplay[(WEAPON OR ARMOR) !RW NMAG SOCK=0]:%GRAY%%NAME%%CONTINUE%
 
