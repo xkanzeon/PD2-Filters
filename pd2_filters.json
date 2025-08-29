@@ -207,11 +207,6 @@
                     "name": "Regular.filter",
                     "url": "https://api.github.com/repos/KassahiPD2/Kassahi/contents/Regular.filter?ref=main",
                     "download_url": "https://raw.githubusercontent.com/KassahiPD2/Kassahi/main/Regular.filter"
-                },
-                {
-                    "name": "Testing-DO-NOT-USE.filter",
-                    "url": "https://api.github.com/repos/KassahiPD2/Kassahi/contents/Testing-DO-NOT-USE.filter?ref=main",
-                    "download_url": "https://raw.githubusercontent.com/KassahiPD2/Kassahi/main/Testing-DO-NOT-USE.filter"
                 }
             ]
         }
