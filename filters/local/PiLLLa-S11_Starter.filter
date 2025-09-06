@@ -2690,7 +2690,7 @@ ItemDisplay[RARE (CL4) !ETH !ID]:%DOT-75%%GREEN%*%SAGE%*  %WHITE%[ %YELLOW%%NAME
 
 //ItemDisplay[RARE (EQ6) ETH !ID]:%PURPLE%Eth %YELLOW%%NAME%: Belt%CONTINUE%
 //ItemDisplay[RARE (EQ7) ETH !ID]:%PURPLE%Eth %YELLOW%%NAME%: Circ%CONTINUE%
-ItemDisplay[RARE (am2 OR am7 OR amc OR lwb OR 8lw OR 6lw OR WP10) !ETH !ID]: %DOT-75%%GREEN%*%CORAL%*  %WHITE%[ %YELLOW%%NAME% %WHITE%]  %GREEN%*%CORAL%*
+ItemDisplay[RARE (am2 OR am7 OR amc OR lwb OR 8lw OR 6lw OR hxb OR 8hx OR 6hx) !ETH !ID]: %DOT-75%%GREEN%*%CORAL%*  %WHITE%[ %YELLOW%%NAME% %WHITE%]  %GREEN%*%CORAL%*
 ItemDisplay[RARE (WEAPON OR ARMOR) !ETH !ID]: %YELLOW%%NAME%
 ItemDisplay[RARE (WEAPON OR ARMOR) ETH !ID]: %PURPLE%Eth %YELLOW%%NAME%
 /////////////////////////////////////////////////////////////////////////////////////////////////
@@ -3155,6 +3155,8 @@ ItemDisplay[UNI !ID 7bt !ETH]:%DOT-0C%%GOLD%@@  %RED%Hellslayer%GOLD%[Decapitato
 ItemDisplay[UNI !ID 7bt ETH]:%DOT-0C%%GOLD%@@  %PURPLE%Eth %RED%Hellslayer%GOLD%[Decapitator] %ORANGE%(EL) %GOLD%@@
 ItemDisplay[UNI !ID 7ga !ETH]:%DOT-0C%%GOLD%@@  %RED%Messerschmidt's Reaver%GOLD%[Champion Axe] %ORANGE%(EL) %GOLD%@@
 ItemDisplay[UNI !ID 7ga ETH]:%DOT-0C%%GOLD%@@  %PURPLE%Eth %RED%Messerschmidt's Reaver%GOLD%[Champion Axe] %ORANGE%(EL) %GOLD%@@
+ItemDisplay[UNI !ID ztb !ETH]:%DOT-0C%%GOLD%@@  %RED%Snowclash%GOLD%[Battle Belt] %ORANGE%(EX) %GOLD%@@
+ItemDisplay[UNI !ID ztb ETH]:%DOT-0C%%GOLD%@@  %PURPLE%Eth %RED%Snowclash%GOLD%[Battle Belt] %ORANGE%(EX) %GOLD%@@
 
 //Unique Rings Amulets Jewels Charms
 ItemDisplay[UNI !ID (rin OR amu)]:%SOUNDID-2664%%BORDER-62%%RED%@@%ORANGE%@@%YELLOW%@@%GREEN%@@%BLUE%@@%PURPLE%@@    %RED%%NAME%    %RED%@@%ORANGE%@@%YELLOW%@@%GREEN%@@%BLUE%@@%PURPLE%@@
@@ -3317,8 +3319,7 @@ ItemDisplay[UNI !ID hbl !ETH]:%ORANGE%@@  %TAN%Bladebuckle%GOLD%[Plated Belt] %O
 ItemDisplay[UNI !ID hbl ETH]:%ORANGE%@@  %PURPLE%Eth %TAN%Bladebuckle%GOLD%[Plated Belt] %ORANGE%(N) %ORANGE%@@
 ItemDisplay[UNI !ID zmb !ETH]:%ORANGE%@@  %TAN%Gloom's Trap%GOLD%[Mesh Belt] %ORANGE%(EX) %ORANGE%@@
 ItemDisplay[UNI !ID zmb ETH]:%ORANGE%@@  %PURPLE%Eth %TAN%Gloom's Trap%GOLD%[Mesh Belt] %ORANGE%(EX) %ORANGE%@@
-ItemDisplay[UNI !ID ztb !ETH]:%ORANGE%@@  %TAN%Snowclash%GOLD%[Battle Belt] %ORANGE%(EX) %ORANGE%@@
-ItemDisplay[UNI !ID ztb ETH]:%ORANGE%@@  %PURPLE%Eth %TAN%Snowclash%GOLD%[Battle Belt] %ORANGE%(EX) %ORANGE%@@
+
 ItemDisplay[UNI !ID hax !ETH]:%ORANGE%@@  %TAN%The Gnasher%GOLD%[Hand Axe] %ORANGE%(N) %ORANGE%@@
 ItemDisplay[UNI !ID hax ETH]:%ORANGE%@@  %PURPLE%Eth %TAN%The Gnasher%GOLD%[Hand Axe] %ORANGE%(N) %ORANGE%@@
 ItemDisplay[UNI !ID axe !ETH]:%ORANGE%@@  %TAN%Deathspade%GOLD%[Axe] %ORANGE%(N) %ORANGE%@@
@@ -7291,8 +7292,8 @@ ItemDisplay[(WEAPON OR ARMOR) ID (MAG OR RARE OR SET OR UNI OR RW) STAT360=47]:%
 ItemDisplay[(WEAPON OR ARMOR) ID (MAG OR RARE OR SET OR UNI OR RW) STAT360=48]:%NAME%%PURPLE%[%ORANGE%ind.*%PURPLE%] %RED%C{%NAME%}%CONTINUE%
 ItemDisplay[(WEAPON) ID (MAG OR RARE OR SET OR UNI OR RW) STAT360=49]:%NAME%%PURPLE%[%ORANGE%ind.+Ed*%PURPLE%] %RED%C{%NAME%}%CONTINUE%
 ItemDisplay[(EQ3) ID (MAG OR RARE OR SET OR UNI OR RW) STAT360=49]:%NAME%%PURPLE%[%ORANGE%ind.+Curse%PURPLE%] %RED%C{%NAME%}%CONTINUE%
-ItemDisplay[(CHEST OR EQ1) ID (MAG OR RARE OR SET OR UNI OR RW) STAT360=49]:%NAME%%PURPLE%[%ORANGE%Curse**%PURPLE%] %RED%C{%NAME%}%CONTINUE%
-ItemDisplay[(EQ4 OR EQ5 OR EQ6 OR EQ7) ID (MAG OR RARE OR SET OR UNI OR RW) STAT360=49]:%NAME%%PURPLE%[%ORANGE%ind.+Ed*%PURPLE%] %RED%C{%NAME%}%CONTINUE%
+ItemDisplay[(CHEST OR EQ1 OR EQ5) ID (MAG OR RARE OR SET OR UNI OR RW) STAT360=49]:%NAME%%PURPLE%[%ORANGE%Curse**%PURPLE%] %RED%C{%NAME%}%CONTINUE%
+ItemDisplay[(EQ4 OR EQ6 OR EQ7) ID (MAG OR RARE OR SET OR UNI OR RW) STAT360=49]:%NAME%%PURPLE%[%ORANGE%ind.+Ed*%PURPLE%] %RED%C{%NAME%}%CONTINUE%
 
 ItemDisplay[(WEAPON OR ARMOR) ID (MAG OR RARE OR SET OR UNI OR RW) STAT360=50]:%NAME%%PURPLE%[%ORANGE%Allsk%PURPLE%] %RED%C{%NAME%}%CONTINUE%
 ItemDisplay[(WEAPON OR ARMOR) ID (MAG OR RARE OR SET OR UNI OR RW) STAT360=51]:%NAME%%PURPLE%[%ORANGE%ARes*%PURPLE%] %RED%C{%NAME%}%CONTINUE%
