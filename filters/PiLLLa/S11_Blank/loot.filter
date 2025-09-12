@@ -5145,6 +5145,10 @@ ItemDisplay[(cm3 OR cm2 OR cm1 OR cm1p OR cm2p OR cm3p) ID MAG !UNI (GFIND OR !S
 //ItemDisplay[cm3 UNI ID]:%PURPLE%G%ORANGE%h%GOLD%e%WHITE%e%GOLD%d'%ORANGE%s %TAN%Fortune
 
 ItemDisplay[cm3 UNI ID]:%TAN%G %ORANGE%  h%GOLD%  e%WHITE%  e%GOLD%  d'  %ORANGE%s    %TAN%F  o  %GOLD%r  t  %ORANGE%u  n  %WHITE%e{%PURPLE%**%ORANGE%**%GOLD%**%WHITE%**%GOLD%**%ORANGE%**%PURPLE%**%PURPLE%**%ORANGE%**%GOLD%**%WHITE%**%GOLD%**%ORANGE%**%PURPLE%**%PURPLE%**%ORANGE%**%GOLD%**%WHITE%**%GOLD%**%ORANGE%**%PURPLE%**%NL%     %PURPLE%Gheed's Fortune     %NL%%PURPLE%**%ORANGE%**%GOLD%**%WHITE%**%GOLD%**%ORANGE%**%PURPLE%**%PURPLE%**%ORANGE%**%GOLD%**%WHITE%**%GOLD%**%ORANGE%**%PURPLE%**%PURPLE%**%ORANGE%**%GOLD%**%WHITE%**%GOLD%**%ORANGE%**%PURPLE%**}
+/////////////////////////////////////////////////////////////////////////////////////////////////
+//                                         S11 New Items                                        //
+/////////////////////////////////////////////////////////////////////////////////////////////////
+ItemDisplay[imrn]:%SOUNDID-2664%%MAP-0B%%PURPLE%*%RED%--%ORANGE%--%YELLOW%--%GREEN%--%BLUE%--%PURPLE%--%WHITE%[    %GOLD%Demonic  %ORANGE%Cube%WHITE%* %GREEN%%QTY%    %WHITE%]%PURPLE%--%BLUE%--%GREEN%--%YELLOW%--%ORANGE%--%RED%--%PURPLE%*{%NL%%GOLD% Maintains the sockets of a unique/set item + Socketed items%NL%%GOLD%Reroll the stats for Set/Unique Items%NL%%RED%(Not Apply for Corrupted or Mirroed item)%NL%}
 
 ItemDisplay[cm2f]:%MAP-0B%%PURPLE%++    %GOLD%H e %ORANGE%l l %LIGHT_GRAY%f i  %SAGE%r e  %ORANGE%A  %SAGE%s h %CORAL%e s %WHITE%* %GREEN%%QTY%    %PURPLE%++{%NL%%GOLD%Made by cubing the %RED%Torch %WHITE%+ %ORANGE%Key%NL%%GOLD%Stackable %RED%Hellfire Torch%GOLD% ingredient for Voidstone recipe%NL%}
 ItemDisplay[pvpp]:%MAP-0B%%PURPLE%++    %GOLD%D %ORANGE%u e %LIGHT_GRAY%l i  %SAGE%n g  %ORANGE%M  %SAGE%a %CORAL%n a %WHITE%* %GREEN%%QTY%    %PURPLE%++{%NL%%GOLD%Sold by PvP vendors for 1 gold%NL%%GOLD%Super Mana Potion equivalent for %RED%PvP arenas only%NL%}
@@ -7198,13 +7202,15 @@ ItemDisplay[NMAG SOCK=0 !RW ILVL>40 7st]:%NAME%{%TEAL%+ %SAGE%This Item Level is
 //s10
 ItemDisplay[NMAG SOCK=0 !RW ILVL>40 9sr]:%NAME%{%TEAL%+ %SAGE%This Item Level is:%ORANGE%L%ILVL%,%WHITE%It can be %PURPLE%Adding Socket:%GREEN%[4] %PURPLE%+%NAME%}%CONTINUE%
 ItemDisplay[NMAG SOCK=0 !RW ILVL>40 7sr]:%NAME%{%TEAL%+ %SAGE%This Item Level is:%ORANGE%L%ILVL%,%WHITE%It can be %PURPLE%Adding Socket:%GREEN%[6] %PURPLE%+%NAME%}%CONTINUE%
+//s11 mythical Sword
+ItemDisplay[NMAG SOCK=0 !RW ILVL>40 7wd]:%NAME%{%TEAL%+ %SAGE%This Item Level is:%ORANGE%L%ILVL%,%WHITE%It can be %PURPLE%Adding Socket:%GREEN%[3] %PURPLE%+%NAME%}%CONTINUE%
 
-ItemDisplay[(7ls OR 7fl OR 7wh OR 7m7 OR 7gm OR 72a OR 7wa OR 7gi OR 7cr OR 72h OR 7fb OR 7gd OR 7gs) !SOCK=1 !RW ED>9 NMAG]:%DOT-75% %ORANGE%*%PURPLE%* %NAME% %ORANGE%*%PURPLE%*{%NAME%}
-//ItemDisplay[(7ls OR 7fl OR 7wh OR 7m7 OR 7gm OR 72a OR 7wa OR 7gi OR 7cr OR 72h OR 7fb OR 7gd OR 7gs) ETH !SOCK=1 !RW ED>9 NMAG]:%DOT-75% %ORANGE%*%PURPLE%* %NAME% %ORANGE%*%PURPLE%*{%NAME%}
+ItemDisplay[(7ls OR 7fl OR 7wh OR 7m7 OR 7gm OR 72a OR 7wa OR 7gi OR 7cr OR 72h OR 7fb OR 7gd OR 7gs OR 7wd) !SOCK=1 !RW ED>9 NMAG]:%DOT-75% %ORANGE%*%PURPLE%* %NAME% %ORANGE%*%PURPLE%*{%NAME%}
+//ItemDisplay[(7ls OR 7fl OR 7wh OR 7m7 OR 7gm OR 72a OR 7wa OR 7gi OR 7cr OR 72h OR 7fb OR 7gd OR 7gs OR 7wd) ETH !SOCK=1 !RW ED>9 NMAG]:%DOT-75% %ORANGE%*%PURPLE%* %NAME% %ORANGE%*%PURPLE%*{%NAME%}
 ItemDisplay[(7wc OR 7vo OR 7s8 OR 7h7 OR 7o7 OR 7br OR 7p7 OR 7tr OR amd OR ame OR 7st OR 7sr) ETH !SOCK=1 !SOCK=2 !SOCK=3 ED>9 !RW NMAG]:%DOT-75% %ORANGE%*%PURPLE%* %NAME% %ORANGE%*%PURPLE%*{%NAME%}
 
-ItemDisplay[(7ls OR 7fl OR 7wh OR 7m7 OR 7gm OR 72a OR 7wa OR 7gi OR 7cr OR 72h OR 7fb OR 7gd OR 7gs) !ETH !SOCK=1 !RW NMAG ED>0 FILTLVL>9]:
-ItemDisplay[(7ls OR 7fl OR 7wh OR 7m7 OR 7gm OR 72a OR 7wa OR 7gi OR 7cr OR 72h OR 7fb OR 7gd OR 7gs) ETH !SOCK=1 !RW NMAG FILTLVL>9]:
+ItemDisplay[(7ls OR 7fl OR 7wh OR 7m7 OR 7gm OR 72a OR 7wa OR 7gi OR 7cr OR 72h OR 7fb OR 7gd OR 7gs OR 7wd) !ETH !SOCK=1 !RW NMAG ED>0 FILTLVL>9]:
+ItemDisplay[(7ls OR 7fl OR 7wh OR 7m7 OR 7gm OR 72a OR 7wa OR 7gi OR 7cr OR 72h OR 7fb OR 7gd OR 7gs OR 7wd) ETH !SOCK=1 !RW NMAG FILTLVL>9]:
 
 ItemDisplay[(7wc OR 7vo OR 7s8 OR 7h7 OR 7o7 OR 7br OR 7p7 OR 7tr OR amd OR ame OR 7st OR 9sr OR 7sr) !ETH !SOCK=1 !SOCK=2 !RW NMAG ED>0 FILTLVL>9]:
 ItemDisplay[(7wc OR 7vo OR 7s8 OR 7h7 OR 7o7 OR 7br OR 7p7 OR 7tr OR amd OR ame OR 7st OR 9sr OR 7sr) ETH !SOCK=1 !SOCK=2 !RW NMAG FILTLVL>9]:
@@ -7213,8 +7219,8 @@ ItemDisplay[(crs OR bsd OR lsd OR fla) (SOCK=4 OR SOCK=5) !RW NMAG FILTLVL>9]:
 ItemDisplay[(7cr) SOCK=5 !RW NMAG FILTLVL>9]:
 ItemDisplay[(7fb) !ETH !SOCK=1 !RW NMAG FILTLVL>9]:
 
-ItemDisplay[(7ls OR 7fl OR 7wh OR 7m7 OR 7gm OR 72a OR 7wa OR 7gi OR 7cr OR 72h OR 7fb OR 7gd OR 7gs) !ETH !SOCK=1 !RW NMAG ED>0]:%NAME%{%NAME%}
-ItemDisplay[(7ls OR 7fl OR 7wh OR 7m7 OR 7gm OR 72a OR 7wa OR 7gi OR 7cr OR 72h OR 7fb OR 7gd OR 7gs) ETH !SOCK=1 !RW NMAG]:%NAME%{%NAME%}
+ItemDisplay[(7ls OR 7fl OR 7wh OR 7m7 OR 7gm OR 72a OR 7wa OR 7gi OR 7cr OR 72h OR 7fb OR 7gd OR 7gs OR 7wd) !ETH !SOCK=1 !RW NMAG ED>0]:%NAME%{%NAME%}
+ItemDisplay[(7ls OR 7fl OR 7wh OR 7m7 OR 7gm OR 72a OR 7wa OR 7gi OR 7cr OR 72h OR 7fb OR 7gd OR 7gs OR 7wd) ETH !SOCK=1 !RW NMAG]:%NAME%{%NAME%}
 
 ItemDisplay[(7wc OR 7vo OR 7s8 OR 7h7 OR 7o7 OR 7br OR 7p7 OR 7tr OR amd OR ame OR 7st OR 9sr OR 7sr) !ETH !SOCK=1 !SOCK=2 !RW NMAG ED>0]:%NAME%{%NAME%}
 ItemDisplay[(7wc OR 7vo OR 7s8 OR 7h7 OR 7o7 OR 7br OR 7p7 OR 7tr OR amd OR ame OR 7st OR 9sr OR 7sr) ETH !SOCK=1 !SOCK=2 !RW NMAG]:%NAME%{%NAME%}
