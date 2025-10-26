@@ -1,5 +1,5 @@
-// DAURACUL'S LOOT FILTER Season 11.5
-// Last updated: 5/18/25
+// DAURACUL'S LOOT FILTER Season 11.7
+// Last updated: 10/25/25
 // For any bug reports/feedback contact @Dauracul in the PD2 Discord #lootfilter channel
 
 // NOTE: IF YOU WISH TO MAKE EDITS TO THIS LOOTFILTER, PLEASE BE AWARE IT USES 'ANSI' ENCODING -- WITHOUT THIS ENCODING, CERTAIN CHARACTERS WILL DISPLAY INCORRECTLY 
@@ -55,6 +55,14 @@
 // Throwing Potions should no longer display an Add Sockets recipe
 // Corrected Superior Throwing Weapon names for non-Barbarians
 
+// 11.6 
+// Barb Mastery Tree now reports correctly on magic/rare/craft loot
+
+// 11.7
+// Skovos Stronghold map immunities corrected (incorrectly displayed Magic immune instead of Phys)
+// Removed tooltip text for elemental damage on small charms (reducing clutter)
+// Keys and small Rejuvs are now hidden after Lv80
+
 
 // Table of Contents (For my own reference)  **CTRL+F to jump**
 
@@ -100,7 +108,7 @@ ItemDisplayFilterName[]:High Runeword Notes
 
 
 // Release Notes on Identify Scrolls (in Town at Vendors)
-ItemDisplay[isc SHOP]: %NAME%{%NAME%%BLUE%wiki.projectdiablo2.com%NL%%NL%%DARK_GREEN%For full Season 11 patch notes, visit the Project Diablo 2 Wiki:%NL%Added new features for %RED%Season 11: Prosperity%DARK_GREEN%. View the filter file for patch notes.%NL%Last Updated 5-18-2025:%NL%%NL%%ORANGE%the PD2 Discord #lootfilter channel.%NL%For any bug reports or feedback, contact @Dauracul in%NL%runeword recipes on weapon and armor bases.%NL%Use the filter levels in settings to display%NL%%NL%%GOLD%Dauracul's PD2 Loot Filter %RED%v11.5}
+ItemDisplay[isc SHOP]: %NAME%{%NAME%%BLUE%wiki.projectdiablo2.com%NL%%NL%%DARK_GREEN%For full Season 11 patch notes, visit the Project Diablo 2 Wiki:%NL%Added new features for %RED%Season 11: Prosperity%DARK_GREEN%. View the filter file for patch notes.%NL%Last Updated 10-25-2025:%NL%%NL%%ORANGE%the PD2 Discord #lootfilter channel.%NL%For any bug reports or feedback, contact @Dauracul in%NL%runeword recipes on weapon and armor bases.%NL%Use the filter levels in settings to display%NL%%NL%%GOLD%Dauracul's PD2 Loot Filter %RED%v11.7}
 
 // ALIASES
 
@@ -152,6 +160,7 @@ ItemDisplay[(tsc) !MAPID>137 !SHOP]: %TEAL% !%WHITE%TP {%NAME%Scroll of Town Por
 // Potions
 ItemDisplay[hp5]: %RED% !%WHITE%HP %GRAY%{%GRAY%Super Healing Potion}
 ItemDisplay[mp5]: %BLUE% !%WHITE%MP %GRAY%{%GRAY%Super Mana Potion}
+ItemDisplay[rvs CLVL<80 !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109)]:
 ItemDisplay[rvs]: %PURPLE%!%WHITE%Rejuv{%GRAY%Rejuvination Potion}
 ItemDisplay[rvl]: %PURPLE%!%WHITE%Full Rejuv{%GRAY%Full Rejuvination Potion}
 ItemDisplay[yps]: %DARK_GREEN%!%WHITE%Anti{%GRAY%Antidote Potion}
@@ -1237,7 +1246,7 @@ ItemDisplay[t26]: %NAME%{%NAME%%GOLD%Physical %GREEN%Poison%NL%%WHITE%Immunities
 ItemDisplay[t27]: %NAME%{%NAME%%BLUE%Cold %GREEN%Poison%NL%%WHITE%Immunities:}%CONTINUE%
 
 //Skovos Stronghold
-ItemDisplay[t28]: %NAME%{%NAME%%ORANGE%Magic %RED%Fire %YELLOW%Lightning%NL%%WHITE%Immunities:}%CONTINUE%
+ItemDisplay[t28]: %NAME%{%NAME%%GOLD%Physical %RED%Fire %YELLOW%Lightning%NL%%WHITE%Immunities:}%CONTINUE%
 
 //River of Blood
 ItemDisplay[t31]: %NAME%{%NAME%%ORANGE%Magic %BLUE%Cold %GREEN%Poison%NL%%WHITE%Immunities:}%CONTINUE%
@@ -3399,9 +3408,9 @@ ItemDisplay[(CL2 OR amu) MAG BARBARIAN TABSK32>0]: %TAN%+%TABSK32% Combat %BLUE%
 ItemDisplay[(CL2 OR amu) RARE BARBARIAN TABSK32>0]: %TAN%+%TABSK32% Combat %YELLOW%%NAME%{%NAME%}%CONTINUE%
 ItemDisplay[(CL2 OR amu) CRAFT BARBARIAN TABSK32>0]: %TAN%+%TABSK32% Combat %ORANGE%%NAME%{%NAME%}%CONTINUE%
 
-ItemDisplay[(CL2 OR amu) MAG BARBARIAN TABSK33>0]: %TAN%+%TABSK25% Masteries %BLUE%%NAME%{%NAME%}%CONTINUE%
-ItemDisplay[(CL2 OR amu) RARE BARBARIAN TABSK33>0]: %TAN%+%TABSK25% Masteries %YELLOW%%NAME%{%NAME%}%CONTINUE%
-ItemDisplay[(CL2 OR amu) CRAFT BARBARIAN TABSK33>0]: %TAN%+%TABSK25% Masteries %ORANGE%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[(CL2 OR amu) MAG BARBARIAN TABSK33>0]: %TAN%+%TABSK33% Masteries %BLUE%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[(CL2 OR amu) RARE BARBARIAN TABSK33>0]: %TAN%+%TABSK33% Masteries %YELLOW%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[(CL2 OR amu) CRAFT BARBARIAN TABSK33>0]: %TAN%+%TABSK33% Masteries %ORANGE%%NAME%{%NAME%}%CONTINUE%
 
 ItemDisplay[(CL2 OR amu) MAG BARBARIAN TABSK34>0]: %TAN%+%TABSK34% Warcries %BLUE%%NAME%{%NAME%}%CONTINUE%
 ItemDisplay[(CL2 OR amu) RARE BARBARIAN TABSK34>0]: %TAN%+%TABSK34% Warcries %YELLOW%%NAME%{%NAME%}%CONTINUE%
@@ -6623,9 +6632,9 @@ ItemDisplay[(cm1 OR cm1p) MAG ID AR>0]: %LIGHT_GRAY%%AR% AR %NAME%{%NAME%}%CONTI
 ItemDisplay[(cm1 OR cm1p) MAG ID MAXDMG>0]: %TAN%%MAXDMG% Max Dmg %NAME%{%NAME%}%CONTINUE%
 
 // Elemental Damage
-ItemDisplay[(cm1 OR cm1p) MAG ID (STAT48>0 OR STAT49>0)]: %RED%Fire Dmg %NAME%{%NAME%}%CONTINUE%
-ItemDisplay[(cm1 OR cm1p) MAG ID (STAT50>0 OR STAT51>0)]: %YELLOW%Lightning Dmg %NAME%{%NAME%}%CONTINUE%
-ItemDisplay[(cm1 OR cm1p) MAG ID (STAT54>0 OR STAT55>0)]: %BLUE%Cold Dmg %NAME%{%NAME%}%CONTINUE%
+//ItemDisplay[(cm1 OR cm1p) MAG ID (STAT48>0 OR STAT49>0)]: %RED%Fire Dmg %NAME%{%NAME%}%CONTINUE%
+//ItemDisplay[(cm1 OR cm1p) MAG ID (STAT50>0 OR STAT51>0)]: %YELLOW%Lightning Dmg %NAME%{%NAME%}%CONTINUE%
+//ItemDisplay[(cm1 OR cm1p) MAG ID (STAT54>0 OR STAT55>0)]: %BLUE%Cold Dmg %NAME%{%NAME%}%CONTINUE%
 
 
 
@@ -6668,8 +6677,8 @@ ItemDisplay[NMAG (am5 OR ama OR amf) SOCK=1 CLVL>10]:
 // Hide all Lesser Gems (below Flawless) unless in Town
 ItemDisplay[(gcv OR gcy OR gcb OR gcg OR gcr OR gcw OR skc OR gfv OR gfy OR gfb OR gfg OR gfr OR gfw OR skf OR gsv OR gsy OR gsb OR gsg OR gsr OR gsw OR sku) CLVL>30 !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109)]:
 
-//Hide Key drops unless in Town
-//ItemDisplay[key !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109)]:
+//Hide Key drops below Lv80
+ItemDisplay[key CLVL<80]:
 
 // Hide Greater Health and Mana Potions and Below
 //ItemDisplay[(hp4 OR mp4 OR hp3 OR hp2 OR hp1 OR mp3 OR mp2 OR mp1) CLVL>70]:
