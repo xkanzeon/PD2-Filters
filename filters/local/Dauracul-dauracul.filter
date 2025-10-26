@@ -6678,7 +6678,7 @@ ItemDisplay[NMAG (am5 OR ama OR amf) SOCK=1 CLVL>10]:
 ItemDisplay[(gcv OR gcy OR gcb OR gcg OR gcr OR gcw OR skc OR gfv OR gfy OR gfb OR gfg OR gfr OR gfw OR skf OR gsv OR gsy OR gsb OR gsg OR gsr OR gsw OR sku) CLVL>30 !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109)]:
 
 //Hide Key drops below Lv80
-ItemDisplay[key CLVL<80]:
+ItemDisplay[key CLVL>80]:
 
 // Hide Greater Health and Mana Potions and Below
 //ItemDisplay[(hp4 OR mp4 OR hp3 OR hp2 OR hp1 OR mp3 OR mp2 OR mp1) CLVL>70]:
