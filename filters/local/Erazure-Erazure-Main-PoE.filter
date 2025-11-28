@@ -244,7 +244,7 @@ ItemDisplay[box FILTLVL=12 SORCERESS CHARSTAT1>149]:%NAME%{%WHITE%Filter Level: 
 
 ItemDisplay[box FILTLVL=0]:%NAME%{%NAME%%CL%%GRAY%Level 12 Hides Crafting Bases, Flawless Gems, and Low Value Items%CL%%GRAY%Levels 8-9-10-11 Hide Most Non-Eth and Non-Magic Class Items%CL%%GRAY%Levels 3-4-5-6-7 Hide Some Rares and Non-Superior Items%CL%%GRAY%Level 2 Hides Additional Non-Magic/Magic Items%CL%Level 1 Shows Most Non-Magic/Magic Items}%CONTINUE%//
 ItemDisplay[box CLVL<50 !FILTLVL=0]:%NAME%{%NAME%%CL%%GRAY%For %GOLD%Increase and Decrease Filter Level%CL%%GRAY%For %GOLD%Always Show Items %GRAY%and Hotkeys%CL%Open Settings to Create Toggle}%CONTINUE%//
-ItemDisplay[box]:%NAME%{%NAME%%CL%%WHITE%Erazure - Main%CL%Season 12 v11.28}//
+ItemDisplay[box]:%NAME%{%NAME%%CL%%WHITE%Erazure - Main - PoE%CL%Season 12 v11.28}//
 
 // ================================  Gold  =======================================
 
@@ -610,26 +610,26 @@ ItemDisplay[(gpvs OR gpws OR gpgs OR gprs OR gpbs OR skzs OR gpys)]:%NAME%{%NAME
 //----------------------------------------------------------------------------------------------------------
 
 // Sound notification for Puzzlepiece under filter level 8
-ItemDisplay[lpp QTY=1 !TOWN]:%NAME%{%NAME%}%SOUNDID-2679%%CONTINUE%// 
+ItemDisplay[lpp QTY=1 !TOWN]:%NAME%{%NAME%}%SOUNDID-4727%%CONTINUE%// 
 // Sound notification for Lem-Pul Runes
-ItemDisplay[(r20s OR r21s) QTY=1 !TOWN]:%NAME%{%NAME%}%SOUNDID-2679%%CONTINUE%// 
+ItemDisplay[(r20s OR r21s) QTY=1 !TOWN]:%NAME%{%NAME%}%SOUNDID-4727%%CONTINUE%// 
 // Sound notification for Um-Mal Runes
-ItemDisplay[(r22s OR r23s) QTY=1 !TOWN]:%NAME%{%NAME%}%SOUNDID-2679%%CONTINUE%// 
+ItemDisplay[(r22s OR r23s) QTY=1 !TOWN]:%NAME%{%NAME%}%SOUNDID-4727%%CONTINUE%// 
 // Sound notification for Key of Terror, Key of Hate, Key of Destruction
-ItemDisplay[(pk1 OR pk2 OR pk3) QTY=1 !TOWN]:%NAME%{%NAME%}%SOUNDID-2679%%CONTINUE%// 
+ItemDisplay[(pk1 OR pk2 OR pk3) QTY=1 !TOWN]:%NAME%{%NAME%}%SOUNDID-4727%%CONTINUE%// 
 
 // Sound notification for Ist and Gul Runes
-ItemDisplay[(r24s OR r25s) QTY=1 !TOWN]:%NAME%{%NAME%}%SOUNDID-34%%CONTINUE%//
+ItemDisplay[(r24s OR r25s) QTY=1 !TOWN]:%NAME%{%NAME%}%SOUNDID-4728%%CONTINUE%//
+
 // Sound notification for Vex, Ohm, Lo, Puzzlebox
-ItemDisplay[(r26s OR r27s OR r28s OR lbox) QTY=1 !TOWN]:%NAME%{%NAME%}%SOUNDID-34%%CONTINUE%// 
+ItemDisplay[(r26s OR r27s OR r28s OR lbox) QTY=1 !TOWN]:%NAME%{%NAME%}%SOUNDID-4714%%CONTINUE%// 
 
 // Sound notification for Sur, Ber, Jah, Cham, Zod, and Demonic Cube
-ItemDisplay[(r29s OR r30s OR r31s OR r32s OR r33s OR lbox OR imrn) QTY=1 !TOWN]:%NAME%{%NAME%}%SOUNDID-418%%CONTINUE%// 
-
+ItemDisplay[(r29s OR r30s OR r31s OR r32s OR r33s OR lbox OR imrn) QTY=1 !TOWN]:%NAME%{%NAME%}%SOUNDID-4719%%CONTINUE%// 
 // Sound notification for Horadric Navigator, Horadric Almanac, Skeleton Key
-ItemDisplay[(rid OR rtp OR rkey) !TOWN]:%NAME%{%NAME%}%SOUNDID-619%%CONTINUE%// 
+ItemDisplay[(rid OR rtp OR rkey) !TOWN]:%NAME%{%NAME%}%SOUNDID-4719%%CONTINUE%// 
 // Sound notification for Vial of Lightsong, Lilith's Mirror
-ItemDisplay[(lsvl OR llmr) !TOWN]:%NAME%{%NAME%}%SOUNDID-619%%CONTINUE%// 
+ItemDisplay[(lsvl OR llmr) !TOWN]:%NAME%{%NAME%}%SOUNDID-4719%%CONTINUE%// 
 
 // Sound notification for Diablo Clone, Rathma, and Lucion Boss Materials
 ItemDisplay[(dcma OR dcbl OR dcho OR dcso OR rtma OR rtmo OR rtmv OR luca OR lucb OR lucc OR lucd) QTY=1 !TOWN]:%NAME%{%NAME%}%SOUNDID-1123%%CONTINUE%// 
