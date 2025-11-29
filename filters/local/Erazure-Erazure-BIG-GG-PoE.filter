@@ -2010,13 +2010,13 @@ ItemDisplay[UNI !ID 9gw !NECROMANCER]:%NAME%%CONTINUE%// Blackhand Key Grave Wan
 ItemDisplay[UNI !ID ((9wn CLVL<60) OR (9yw (NECROMANCER OR CLVL<80)) OR (9gw !NECROMANCER))]:%RED%\\%ORANGE%\\  %GOLD%>  %WHITE%•  %NAME%  %WHITE%•  %GOLD%<  %ORANGE%/%ORANGE%/%RED%/%RED%/%GOLD%%BORDER-08%%MAP-50%%DOT-59%%PX-6A%//
 
 //     High Value Quivers
-ItemDisplay[UNI !ID aqv3]:%NAME%%CONTINUE%// Basilisk's Quill / Doom's Finger Razor Arrows
-ItemDisplay[UNI !ID cqv3]:%NAME%%CONTINUE%// Abyssal Ward / Bannerlord's Call / Frozen Sorrow War Bolts
-ItemDisplay[UNI !ID (aqv3 OR cqv3)]:%BLUE%\\%PURPLE%\\%RED%\\%ORANGE%\\  %GOLD%>  %WHITE%O  %NAME%  %WHITE%O  %GOLD%<  %ORANGE%/%ORANGE%/%RED%/%RED%/%PURPLE%/%PURPLE%/%BLUE%/%BLUE%/%GOLD%%BORDER-91%%MAP-9B%%DOT-62%%PX-68%//
+
 //     Medium Value Quivers
+ItemDisplay[UNI !ID aqv3 CLVL<80]:%NAME%%CONTINUE%// Basilisk's Quill / Doom's Finger Razor Arrows
+ItemDisplay[UNI !ID cqv3 CLVL<80]:%NAME%%CONTINUE%// Abyssal Ward / Bannerlord's Call / Frozen Sorrow War Bolts
 ItemDisplay[UNI !ID aqv2 CLVL<60]:%NAME%%CONTINUE%// Tombsong / Swiftwind Needle Sharp Arrows
 ItemDisplay[UNI !ID cqv2 CLVL<60]:%NAME%%CONTINUE%// Shatterhead / Anvilguard Strap Heavy Bolts
-ItemDisplay[UNI !ID ((aqv2 CLVL<60) OR (cqv2 CLVL<60))]:%RED%\\%ORANGE%\\  %GOLD%>  %WHITE%•  %NAME%  %WHITE%•  %GOLD%<  %ORANGE%/%ORANGE%/%RED%/%RED%/%GOLD%%BORDER-08%%MAP-50%%DOT-59%%PX-6A%//
+ItemDisplay[UNI !ID ((aqv3 CLVL<80) OR (cqv3 CLVL<80) OR (aqv2 CLVL<60) OR (cqv2 CLVL<60))]:%RED%\\%ORANGE%\\  %GOLD%>  %WHITE%•  %NAME%  %WHITE%•  %GOLD%<  %ORANGE%/%ORANGE%/%RED%/%RED%/%GOLD%%BORDER-08%%MAP-50%%DOT-59%%PX-6A%//
 
 // --------------------------------------------------------------------------------------------------------
 // =======================================  Low Level Duel Uniques  =======================================
