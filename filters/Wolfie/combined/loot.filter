@@ -210,7 +210,7 @@ ItemDisplay[t53]: %GOLD%++ %NAME% %GOLD%[U2]%MAP-53%%CONTINUE%{%TAN%None%NL%%RED
 ItemDisplay[t52]: %GOLD%++ %NAME% %GOLD%[U3]%MAP-53%%CONTINUE%{%TAN%None%NL%%RED%Immunities:%NL%%TAN%Right-click in Act 5 town to open} // The Stygian Caverns
 ItemDisplay[t54]: %GOLD%++ %NAME% %GOLD%[U3]%MAP-53%%CONTINUE%{%TAN%None%NL%%RED%Immunities:%NL%%TAN%Right-click in Act 5 town to open} // Imperial Palace
 ItemDisplay[t55]: %GOLD%++ %NAME% %GOLD%[U3]%MAP-53%%CONTINUE%{%TAN%None%NL%%RED%Immunities:%NL%%TAN%Right-click in Act 5 town to open} // Outer Void
-ItemDisplay[t56]: %GOLD%++ %NAME% %GOLD%[U3]%MAP-53%%CONTINUE%{%TAN%None%NL%%RED%Immunities:%NL%%TAN%Right-click in Act 5 town to open} // City of Ureh?
+ItemDisplay[t56]: %GOLD%++ %NAME% %GOLD%[U3]%MAP-53%%CONTINUE%{%YELLOW%(*broken w/ Infinity)%NL%%TAN%Light%YELLOW%*%NL%%RED%Immunities:%NL%%TAN%Right-click in Act 5 town to open} // City of Ureh
 
 // Coloring maps names
 ItemDisplay[NMAG (t10 OR t11 OR t12 OR t13 OR t14 OR t15 OR t16 OR t17 OR t18 OR t19 OR t20 OR t21 OR t22 OR t23 OR t24 OR t25 OR t26 OR t27 OR t28 OR t29 OR t30 OR t31 OR t32 OR t33 OR t34 OR t35 OR t36 OR t37 OR t38 OR t39 OR t40 OR t41 OR t42 OR t43 OR t44 OR t45 OR t46 OR t47 OR t48 OR t49 OR t3a OR t50 OR t51 OR t52 OR t52 OR t53 OR t54 OR t55 OR t56 OR t57 OR t58 OR t59)]: %NAME%%WHITE%{%NAME%} // Coloring white maps
@@ -3534,7 +3534,7 @@ ItemDisplay[NMAG !INF !RW SOCK=0 8bs FILTLVL=5]: %NAME%{%TAN%Larzuk quest for 4 
 ItemDisplay[NMAG !INF !RW SOCK=0 ILVL<26 8ws FILTLVL=5]: %NAME%{%TAN%Larzuk quest for 5 sockets}%CONTINUE% // All Rune Staff, 0os, ilvl 1-25
 ItemDisplay[NMAG !INF !RW SOCK=0 ILVL>25 8ws FILTLVL=5]: %NAME%{%TAN%Larzuk quest for 6 sockets}%CONTINUE% // All Rune Staff, 0os, ilvl 26+
 ItemDisplay[NMAG !INF !RW SOCK=0 6ss FILTLVL=5]: %NAME%{%TAN%Larzuk quest for 3 sockets}%CONTINUE% // All Walking Stick, 0os
-ItemDisplay[NMAG !INF !RW SOCK=0 6ls FILTLVL=5]: %NAME%{%TAN%Larzuk quest for 3 sockets}%CONTINUE% // All Stalagmite, 0os
+ItemDisplay[NMAG !INF !RW SOCK=0 6ls FILTLVL=5]: %NAME%{%TAN%Larzuk quest for 4 sockets}%CONTINUE% // All Stalagmite, 0os
 ItemDisplay[NMAG !INF !RW SOCK=0 6cs FILTLVL=5]: %NAME%{%TAN%Larzuk quest for 4 sockets}%CONTINUE% // All Elder Staff, 0os
 ItemDisplay[NMAG !INF !RW SOCK=0 6bs FILTLVL=5]: %NAME%{%TAN%Larzuk quest for 4 sockets}%CONTINUE% // All Shillelagh, 0os
 ItemDisplay[NMAG !INF !RW SOCK=0 ILVL<26 6ws FILTLVL=5]: %NAME%{%TAN%Larzuk quest for 5 sockets}%CONTINUE% // All Archon Staff, 0os, ilvl 1-25
@@ -4564,6 +4564,8 @@ ItemDisplay[NMAG !INF !RW !ETH SOCK=4 ELT STAFF !FILTLVL=3]: %NAME%%DOT-20%%PX-0
 // Other Staves
 ItemDisplay[NMAG !INF !RW ETH SOCK=0 6ls !FILTLVL=3]: %NAME%%DOT-20%%PX-00%{%NAME%} // Stalagmite, 0os, Eth
 ItemDisplay[NMAG !INF !RW ETH SOCK=2 6ls !FILTLVL=3]: %NAME%%DOT-20%%PX-00%{%NAME%} // Stalagmite, 2os, Eth
+ItemDisplay[NMAG !INF !RW ETH SOCK=3 6ls !FILTLVL=3]: %NAME%%DOT-20%%PX-00%{%NAME%} // Stalagmite, 3os, Eth
+ItemDisplay[NMAG !INF !RW ETH SOCK=4 6ls !FILTLVL=3]: %NAME%%DOT-20%%PX-00%{%NAME%} // Stalagmite, 4os, Eth
 ItemDisplay[NMAG !INF !RW ETH SOCK=0 6cs !FILTLVL=3]: %NAME%%DOT-20%%PX-00%{%NAME%} // Elder Staff, 0os, Eth
 ItemDisplay[NMAG !INF !RW ETH SOCK=2 6cs !FILTLVL=3]: %NAME%%DOT-20%%PX-00%{%NAME%} // Elder Staff, 2os, Eth
 ItemDisplay[NMAG !INF !RW ETH SOCK=0 6bs !FILTLVL=3]: %NAME%%DOT-20%%PX-00%{%NAME%} // Shillelagh, 0os, Eth

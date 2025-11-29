@@ -2188,23 +2188,23 @@ ItemDisplay[RARE !ID rin]:%PURPLE%\%YELLOW%\ %PURPLE%ï %YELLOW%>  %YELLOW%%NAME%
 ItemDisplay[RARE !ID QUIVER FILTLVL>7 !AMAZON !TOWN]:// Hide rare arrows on filter levels 8-12 if character is not an Amazon
 
 // Rare Belts
-ItemDisplay[RARE !ID BELT FILTLVL<8]:%PURPLE%ù %YELLOW%>  %NAME%  %YELLOW%< %PURPLE%ù%YELLOW%%BORDER-8F%%MAP-9B%%DOT-5E%%PX-6D%// Notify for rare belts filter levels 1-8
-ItemDisplay[RARE !ID BELT FILTLVL~8-11]:%PURPLE%ù %YELLOW%>  %NAME%  %YELLOW%< %PURPLE%ù%YELLOW%%BORDER-8F%%MAP-9B%%DOT-5E%%PX-6D%%TIER-0%//
-ItemDisplay[RARE !ID BELT FILTLVL=12]:%PURPLE%ù %YELLOW%>  %NAME%  %YELLOW%< %PURPLE%ù%YELLOW%//
+ItemDisplay[RARE !ID BELT FILTLVL<8]:%PURPLE%ï %YELLOW%>  %NAME%  %YELLOW%< %PURPLE%ï%YELLOW%%BORDER-8F%%MAP-9B%%DOT-5E%%PX-6D%// Notify for rare belts filter levels 1-8
+ItemDisplay[RARE !ID BELT FILTLVL~8-11]:%PURPLE%ï %YELLOW%>  %NAME%  %YELLOW%< %PURPLE%ï%YELLOW%%BORDER-8F%%MAP-9B%%DOT-5E%%PX-6D%%TIER-0%//
+ItemDisplay[RARE !ID BELT FILTLVL=12]:%PURPLE%ï %YELLOW%>  %NAME%  %YELLOW%< %PURPLE%ï%YELLOW%//
 // Rare Boots
-ItemDisplay[RARE !ID BOOTS FILTLVL<8]:%PURPLE%ù %YELLOW%>  %NAME%  %YELLOW%< %PURPLE%ù%YELLOW%%BORDER-8F%%MAP-9B%%DOT-5E%%PX-6D%//
-ItemDisplay[RARE !ID BOOTS FILTLVL~8-11]:%PURPLE%ù %YELLOW%>  %NAME%  %YELLOW%< %PURPLE%ù%YELLOW%%BORDER-8F%%MAP-9B%%DOT-5E%%PX-6D%%TIER-0%// 
-ItemDisplay[RARE !ID BOOTS FILTLVL=12]:%PURPLE%ù %YELLOW%>  %NAME%  %YELLOW%< %PURPLE%ù%YELLOW%// 
+ItemDisplay[RARE !ID BOOTS FILTLVL<8]:%PURPLE%ï %YELLOW%>  %NAME%  %YELLOW%< %PURPLE%ï%YELLOW%%BORDER-8F%%MAP-9B%%DOT-5E%%PX-6D%//
+ItemDisplay[RARE !ID BOOTS FILTLVL~8-11]:%PURPLE%ï %YELLOW%>  %NAME%  %YELLOW%< %PURPLE%ï%YELLOW%%BORDER-8F%%MAP-9B%%DOT-5E%%PX-6D%%TIER-0%// 
+ItemDisplay[RARE !ID BOOTS FILTLVL=12]:%PURPLE%ï %YELLOW%>  %NAME%  %YELLOW%< %PURPLE%ï%YELLOW%// 
 // Rare Gloves
-ItemDisplay[RARE !ID GLOVES (CLVL<90 OR FILTLVL<3) !(FILTLVL=10 OR FILTLVL=12)]:%PURPLE%ù %YELLOW%>  %NAME%  %YELLOW%< %PURPLE%ù%YELLOW%%BORDER-8F%%MAP-9B%%DOT-5E%%PX-6D%// Notify for rare gloves under character level 90
-ItemDisplay[RARE !ID GLOVES CLVL>89 FILTLVL<8]:%PURPLE%ù %YELLOW%>  %NAME%  %YELLOW%< %PURPLE%ù%YELLOW%// No chat notification above character level 89
-ItemDisplay[RARE !ID GLOVES CLVL>89 (FILTLVL~8-9 OR FILTLVL=11) (ASSASSIN OR AMAZON)]:%PURPLE%ù %YELLOW%>  %NAME%  %YELLOW%< %PURPLE%ù%YELLOW%// No chat notification above character level 89
+ItemDisplay[RARE !ID GLOVES (CLVL<90 OR FILTLVL<3) !(FILTLVL=10 OR FILTLVL=12)]:%PURPLE%ï %YELLOW%>  %NAME%  %YELLOW%< %PURPLE%ï%YELLOW%%BORDER-8F%%MAP-9B%%DOT-5E%%PX-6D%// Notify for rare gloves under character level 90
+ItemDisplay[RARE !ID GLOVES CLVL>89 FILTLVL<8]:%PURPLE%ï %YELLOW%>  %NAME%  %YELLOW%< %PURPLE%ï%YELLOW%// No chat notification above character level 89
+ItemDisplay[RARE !ID GLOVES CLVL>89 (FILTLVL~8-9 OR FILTLVL=11) (ASSASSIN OR AMAZON)]:%PURPLE%ï %YELLOW%>  %NAME%  %YELLOW%< %PURPLE%ï%YELLOW%// No chat notification above character level 89
 
 // Rare Chests
-ItemDisplay[RARE !ID CHEST ALVL>84 FILTLVL=12]:%PURPLE%ù %YELLOW%>  %NAME%  %YELLOW%< %PURPLE%ù%YELLOW%// 
-ItemDisplay[RARE !ID CHEST ALVL>84 FILTLVL~8-11]:%PURPLE%ù %YELLOW%>  %NAME%  %YELLOW%< %PURPLE%ù%YELLOW%%BORDER-8F%%MAP-9B%%DOT-5E%%PX-6D%%TIER-0%// 
-ItemDisplay[RARE !ID CHEST CLVL>89 ILVL>93 FILTLVL<8]:%PURPLE%ù %YELLOW%>  %NAME%  %YELLOW%< %PURPLE%ù%YELLOW%%BORDER-8F%%MAP-9B%%DOT-5E%%PX-6D%%TIER-0%// Minimap icon for rare armors with affix levels 94 or higher on filter levels 0-8
-ItemDisplay[RARE !ID CHEST CLVL<90 ILVL>93 FILTLVL<8]:%PURPLE%ù %YELLOW%>  %NAME%  %YELLOW%< %PURPLE%ù%YELLOW%%BORDER-8F%%MAP-9B%%DOT-5E%%PX-6D%// Notify for rare armors with affix levels 94 or higher on filter levels 0-8
+ItemDisplay[RARE !ID CHEST ALVL>84 FILTLVL=12]:%PURPLE%ï %YELLOW%>  %NAME%  %YELLOW%< %PURPLE%ï%YELLOW%// 
+ItemDisplay[RARE !ID CHEST ALVL>84 FILTLVL~8-11]:%PURPLE%ï %YELLOW%>  %NAME%  %YELLOW%< %PURPLE%ï%YELLOW%%BORDER-8F%%MAP-9B%%DOT-5E%%PX-6D%%TIER-0%// 
+ItemDisplay[RARE !ID CHEST CLVL>89 ILVL>93 FILTLVL<8]:%PURPLE%ï %YELLOW%>  %NAME%  %YELLOW%< %PURPLE%ï%YELLOW%%BORDER-8F%%MAP-9B%%DOT-5E%%PX-6D%%TIER-0%// Minimap icon for rare armors with affix levels 94 or higher on filter levels 0-8
+ItemDisplay[RARE !ID CHEST CLVL<90 ILVL>93 FILTLVL<8]:%PURPLE%ï %YELLOW%>  %NAME%  %YELLOW%< %PURPLE%ï%YELLOW%%BORDER-8F%%MAP-9B%%DOT-5E%%PX-6D%// Notify for rare armors with affix levels 94 or higher on filter levels 0-8
 // Rare Shields
 ItemDisplay[RARE !ID SHIELD NORM !NEC !DIN FILTLVL>7 ALVL<85 !TOWN]:// Hide specific Normal quality Rare Shields After Level 39
 ItemDisplay[RARE !ID SHIELD EXC !NEC !DIN FILTLVL>7 ALVL<85 !TOWN]:// Hide specific Exceptional quality Rare Shields After Level 89
@@ -2216,40 +2216,40 @@ ItemDisplay[RARE !ID HELM ELT !CIRC !DRU !BAR ((CLVL>89 FILTLVL>2) OR FILTLVL>7)
 
 // Rare Clubs
 ItemDisplay[RARE !ID !DRUID FILTLVL>7 (clb OR spc OR 9cl OR 9sp OR 7cl OR 7sp) !TOWN]:// Hide Clubs on filter levels 11-12
-ItemDisplay[RARE !ID DRUID (FILTLVL~2-7 OR (FILTLVL=1 CLVL>49)) (clb OR spc OR 9cl OR 9sp OR 7cl OR 7sp)]:%YELLOW%ù  %NAME%  ù%YELLOW%// 
-ItemDisplay[RARE !ID DRUID FILTLVL=1 CLVL<50 (clb OR spc OR 9cl OR 9sp OR 7cl OR 7sp)]:%PURPLE%ù %YELLOW%>  %NAME%  %YELLOW%< %PURPLE%ù%YELLOW%%BORDER-8F%%MAP-9B%%DOT-5E%%PX-6D%// 
+ItemDisplay[RARE !ID DRUID (FILTLVL~2-7 OR (FILTLVL=1 CLVL>49)) (clb OR spc OR 9cl OR 9sp OR 7cl OR 7sp)]:%YELLOW%ï  %NAME%  ï%YELLOW%// 
+ItemDisplay[RARE !ID DRUID FILTLVL=1 CLVL<50 (clb OR spc OR 9cl OR 9sp OR 7cl OR 7sp)]:%PURPLE%ï %YELLOW%>  %NAME%  %YELLOW%< %PURPLE%ï%YELLOW%%BORDER-8F%%MAP-9B%%DOT-5E%%PX-6D%// 
 // Rare Druid Pelts
 ItemDisplay[RARE !ID !DRUID FILTLVL>7 DRU !TOWN]:// Hide Druid Pelts on filter levels 11-12
-ItemDisplay[RARE !ID DRUID (FILTLVL~2-7 OR (FILTLVL=1 CLVL>49)) DRU]:%YELLOW%ù  %NAME%  ù%YELLOW%// 
-ItemDisplay[RARE !ID DRUID FILTLVL=1 CLVL<50 DRU]:%PURPLE%ù %YELLOW%>  %NAME%  %YELLOW%< %PURPLE%ù%YELLOW%%BORDER-8F%%MAP-9B%%DOT-5E%%PX-6D%// 
+ItemDisplay[RARE !ID DRUID (FILTLVL~2-7 OR (FILTLVL=1 CLVL>49)) DRU]:%YELLOW%ï  %NAME%  ï%YELLOW%// 
+ItemDisplay[RARE !ID DRUID FILTLVL=1 CLVL<50 DRU]:%PURPLE%ï %YELLOW%>  %NAME%  %YELLOW%< %PURPLE%ï%YELLOW%%BORDER-8F%%MAP-9B%%DOT-5E%%PX-6D%// 
 
 // Rare Barbarian Helms
 ItemDisplay[RARE !ID !BARBARIAN FILTLVL>7 BAR !TOWN]:// Hide Barbarian Helms on filter levels 11-12
-ItemDisplay[RARE !ID BARBARIAN (FILTLVL~2-7 OR (FILTLVL=1 CLVL>49)) BAR]:%YELLOW%ù  %NAME%  ù%YELLOW%// 
-ItemDisplay[RARE !ID BARBARIAN FILTLVL=1 CLVL<50 BAR]:%PURPLE%ù %YELLOW%>  %NAME%  %YELLOW%< %PURPLE%ù%YELLOW%%BORDER-8F%%MAP-9B%%DOT-5E%%PX-6D%// 
+ItemDisplay[RARE !ID BARBARIAN (FILTLVL~2-7 OR (FILTLVL=1 CLVL>49)) BAR]:%YELLOW%ï  %NAME%  ï%YELLOW%// 
+ItemDisplay[RARE !ID BARBARIAN FILTLVL=1 CLVL<50 BAR]:%PURPLE%ï %YELLOW%>  %NAME%  %YELLOW%< %PURPLE%ï%YELLOW%%BORDER-8F%%MAP-9B%%DOT-5E%%PX-6D%// 
 
 // Rare Sorceress Orbs
 ItemDisplay[RARE !ID !SORCERESS FILTLVL>7 SOR !TOWN]:// Hide Sorceress Orbs on filter levels 11-12
-ItemDisplay[RARE !ID SORCERESS (FILTLVL~2-7 OR (FILTLVL=1 CLVL>49)) SOR]:%YELLOW%ù  %NAME%  ù%YELLOW%// 
-ItemDisplay[RARE !ID SORCERESS FILTLVL=1 CLVL<50 SOR]:%PURPLE%ù %YELLOW%>  %NAME%  %YELLOW%< %PURPLE%ù%YELLOW%%BORDER-8F%%MAP-9B%%DOT-5E%%PX-6D%// 
+ItemDisplay[RARE !ID SORCERESS (FILTLVL~2-7 OR (FILTLVL=1 CLVL>49)) SOR]:%YELLOW%ï  %NAME%  ï%YELLOW%// 
+ItemDisplay[RARE !ID SORCERESS FILTLVL=1 CLVL<50 SOR]:%PURPLE%ï %YELLOW%>  %NAME%  %YELLOW%< %PURPLE%ï%YELLOW%%BORDER-8F%%MAP-9B%%DOT-5E%%PX-6D%// 
 // Rare Staves
 ItemDisplay[RARE !ID FILTLVL>7 STAFF !TOWN]:// Hide Staves on filter levels 11-12
-ItemDisplay[RARE !ID SORCERESS (FILTLVL~2-7 OR (FILTLVL=1 CLVL>49)) STAFF]:%YELLOW%ù  %NAME%  ù%YELLOW%// 
-ItemDisplay[RARE !ID SORCERESS FILTLVL=1 CLVL<50 STAFF]:%PURPLE%ù %YELLOW%>  %NAME%  %YELLOW%< %PURPLE%ù%YELLOW%%BORDER-8F%%MAP-9B%%DOT-5E%%PX-6D%// 
+ItemDisplay[RARE !ID SORCERESS (FILTLVL~2-7 OR (FILTLVL=1 CLVL>49)) STAFF]:%YELLOW%ï  %NAME%  ï%YELLOW%// 
+ItemDisplay[RARE !ID SORCERESS FILTLVL=1 CLVL<50 STAFF]:%PURPLE%ï %YELLOW%>  %NAME%  %YELLOW%< %PURPLE%ï%YELLOW%%BORDER-8F%%MAP-9B%%DOT-5E%%PX-6D%// 
 
 // Rare Wands
 ItemDisplay[RARE !ID !NECROMANCER FILTLVL>7 WAND !TOWN]:// Hide Wands on filter levels 11-12
-ItemDisplay[RARE !ID NECROMANCER (FILTLVL~2-7 OR (FILTLVL=1 CLVL>49)) WAND]:%YELLOW%ù  %NAME%  ù%YELLOW%// 
-ItemDisplay[RARE !ID NECROMANCER FILTLVL=1 CLVL<50 WAND]:%PURPLE%ù %YELLOW%>  %NAME%  %YELLOW%< %PURPLE%ù%YELLOW%%BORDER-8F%%MAP-9B%%DOT-5E%%PX-6D%// 
+ItemDisplay[RARE !ID NECROMANCER (FILTLVL~2-7 OR (FILTLVL=1 CLVL>49)) WAND]:%YELLOW%ï  %NAME%  ï%YELLOW%// 
+ItemDisplay[RARE !ID NECROMANCER FILTLVL=1 CLVL<50 WAND]:%PURPLE%ï %YELLOW%>  %NAME%  %YELLOW%< %PURPLE%ï%YELLOW%%BORDER-8F%%MAP-9B%%DOT-5E%%PX-6D%// 
 // Rare Necromancer Heads
 ItemDisplay[RARE !ID !NECROMANCER FILTLVL>7 NEC !TOWN]:// Hide Necromancer Heads on filter levels 11-12
-ItemDisplay[RARE !ID NECROMANCER (FILTLVL~2-7 OR (FILTLVL=1 CLVL>49)) NEC]:%YELLOW%ù  %NAME%  ù%YELLOW%// 
-ItemDisplay[RARE !ID NECROMANCER FILTLVL=1 CLVL<50 NEC]:%PURPLE%ù %YELLOW%>  %NAME%  %YELLOW%< %PURPLE%ù%YELLOW%%BORDER-8F%%MAP-9B%%DOT-5E%%PX-6D%// 
+ItemDisplay[RARE !ID NECROMANCER (FILTLVL~2-7 OR (FILTLVL=1 CLVL>49)) NEC]:%YELLOW%ï  %NAME%  ï%YELLOW%// 
+ItemDisplay[RARE !ID NECROMANCER FILTLVL=1 CLVL<50 NEC]:%PURPLE%ï %YELLOW%>  %NAME%  %YELLOW%< %PURPLE%ï%YELLOW%%BORDER-8F%%MAP-9B%%DOT-5E%%PX-6D%// 
 
 // Rare Scepters
 ItemDisplay[RARE !ID !PALADIN FILTLVL>7 SCEPTER !TOWN]:// Hide Scepters on filter levels 11-12
-ItemDisplay[RARE !ID PALADIN (FILTLVL~2-7 OR (FILTLVL=1 CLVL>49)) SCEPTER]:%YELLOW%ù  %NAME%  ù%YELLOW%// 
-ItemDisplay[RARE !ID PALADIN FILTLVL=1 CLVL<50 SCEPTER]:%PURPLE%ù %YELLOW%>  %NAME%  %YELLOW%< %PURPLE%ù%YELLOW%%BORDER-8F%%MAP-9B%%DOT-5E%%PX-6D%// 
+ItemDisplay[RARE !ID PALADIN (FILTLVL~2-7 OR (FILTLVL=1 CLVL>49)) SCEPTER]:%YELLOW%ï  %NAME%  ï%YELLOW%// 
+ItemDisplay[RARE !ID PALADIN FILTLVL=1 CLVL<50 SCEPTER]:%PURPLE%ï %YELLOW%>  %NAME%  %YELLOW%< %PURPLE%ï%YELLOW%%BORDER-8F%%MAP-9B%%DOT-5E%%PX-6D%// 
 // Rare Paladin Shields
 ItemDisplay[RARE !ID DIN NORM !PALADIN FILTLVL>7 !TOWN]:// Hide Normal quality Rare Paladin Shields on filter levels 11-12
 ItemDisplay[RARE !ID DIN EXC !PALADIN FILTLVL>7 !TOWN]:// Hide Exceptional quality Rare Paladin Shields on filter levels 11-12
@@ -2259,8 +2259,8 @@ ItemDisplay[RARE !ID DIN ELT !PALADIN FILTLVL>7 !TOWN]:// Hide Elite quality Rar
 ItemDisplay[RARE !ID SIN NORM !ASSASSIN (wrb OR ces OR clw OR !ETH) FILTLVL>7 !TOWN]:// Hide specific Normal quality Rare Claws on filter levels 11-12
 ItemDisplay[RARE !ID SIN EXC !ASSASSIN (9wb OR 9cs OR 9lw OR !ETH) FILTLVL>7 !TOWN]:// Hide Exceptional quality Rare Claws on filter levels 11-12
 ItemDisplay[RARE !ID SIN ELT !ASSASSIN (7wb OR 7cs OR 7lw OR !ETH) FILTLVL>7 !TOWN]:// Hide Elite quality Rare Claws After on filter levels 11-12
-ItemDisplay[RARE !ID SIN ASSASSIN (FILTLVL~2-7 OR (FILTLVL=1 CLVL>49)) ]:%YELLOW%ù  %NAME%  ù%YELLOW%// 
-ItemDisplay[RARE !ID SIN ASSASSIN FILTLVL=1 CLVL<50]:%PURPLE%ù %YELLOW%>  %NAME%  %YELLOW%< %PURPLE%ù%YELLOW%%BORDER-8F%%MAP-9B%%DOT-5E%%PX-6D%// 
+ItemDisplay[RARE !ID SIN ASSASSIN (FILTLVL~2-7 OR (FILTLVL=1 CLVL>49)) ]:%YELLOW%ï  %NAME%  ï%YELLOW%// 
+ItemDisplay[RARE !ID SIN ASSASSIN FILTLVL=1 CLVL<50]:%PURPLE%ï %YELLOW%>  %NAME%  %YELLOW%< %PURPLE%ï%YELLOW%%BORDER-8F%%MAP-9B%%DOT-5E%%PX-6D%// 
 // Rare Daggers
 ItemDisplay[RARE !ID NORM !ETH !THROWING DAGGER FILTLVL>7 !TOWN]:// Hide non-Ethereal Normal quality Rare Daggers on filter levels 11-12
 ItemDisplay[RARE !ID EXC !ETH !THROWING DAGGER FILTLVL>7 !TOWN]:// Hide non-Ethereal Exceptional quality Rare Daggers on filter levels 11-12
@@ -5618,16 +5618,17 @@ ItemDisplay[(rin OR BOOTS) (MAG OR RARE OR CRAFT OR STAT360=52) STAT36>0]:%WHITE
 
 // %PDR on Belts
 // Rare/Crafted Belts
-ItemDisplay[BELT (RARE OR CRAFT OR STAT360=52) (STAT36>0 STAT36<8)]:%WHITE%%STAT36%%GOLD%pdr %NAME%{%RED%***   %GOLD%%STAT36%% Damage Reduction   %RED%***%CL%%NAME%}%CONTINUE%
-ItemDisplay[BELT (RARE OR CRAFT OR STAT360=52) STAT36>7]:%WHITE%%STAT36%%PURPLE%pdr %NAME%{%PURPLE%***   %GOLD%%STAT36%% Damage Reduction   %PURPLE%***%CL%%NAME%}%CONTINUE%
+ItemDisplay[BELT (RARE OR CRAFT OR STAT360=52) (STAT36>0 STAT36<8)]:%WHITE%%STAT36%%GOLD%pdr %NAME%{%RED%***%GOLD%**   %STAT36%% Damage Reduction   **%RED%***%CL%%NAME%}%CONTINUE%
+ItemDisplay[BELT (RARE OR CRAFT OR STAT360=52) STAT36>7]:%WHITE%%STAT36%%PURPLE%pdr %NAME%{%PURPLE%***%GOLD%**   %STAT36%% Damage Reduction   **%PURPLE%***%CL%%NAME%}%CONTINUE%
 // Magic Belts
 ItemDisplay[BELT MAG STAT36>0 STAT36<9]:%WHITE%%STAT36%%GOLD%pdr %NAME%{%NAME%}%CONTINUE%
-ItemDisplay[BELT MAG STAT36>8]:%WHITE%%STAT36%%GOLD%pdr %NAME%{%RED%***   %GOLD%%STAT36%% Damage Reduction   %RED%***%CL%%NAME%}%CONTINUE%
+ItemDisplay[BELT MAG STAT36>8 CLVL<80]:%WHITE%%STAT36%%GOLD%pdr %NAME%{%RED%***%GOLD%**   %STAT36%% Damage Reduction   **%RED%***%CL%%NAME%}%CONTINUE%
+ItemDisplay[BELT MAG STAT36>8 CLVL>79]:%WHITE%%STAT36%%GOLD%pdr %NAME%{%GOLD%%STAT36%% Damage Reduction%CL%%NAME%}%CONTINUE%
 // %PDR on Helms and Circlets
-ItemDisplay[(HELM OR CIRC) (MAG OR RARE OR CRAFT OR STAT360=52) (STAT36>0 STAT36<8)]:%WHITE%%STAT36%%GOLD%pdr %NAME%{%RED%***   %GOLD%%STAT36%% Damage Reduction   %RED%***%CL%%NAME%}%CONTINUE%
-ItemDisplay[(HELM OR CIRC) (MAG OR RARE OR CRAFT OR STAT360=52) STAT36>7]:%WHITE%%STAT36%%PURPLE%pdr %NAME%{%PURPLE%***   %GOLD%%STAT36%% Damage Reduction   %PURPLE%***%CL%%NAME%}%CONTINUE%
+ItemDisplay[(HELM OR CIRC) (MAG OR RARE OR CRAFT OR STAT360=52) (STAT36>0 STAT36<8)]:%WHITE%%STAT36%%GOLD%pdr %NAME%{%RED%***%GOLD%**   %STAT36%% Damage Reduction   **%RED%***%CL%%NAME%}%CONTINUE%
+ItemDisplay[(HELM OR CIRC) (MAG OR RARE OR CRAFT OR STAT360=52) STAT36>7]:%WHITE%%STAT36%%PURPLE%pdr %NAME%{%PURPLE%***%GOLD%**   %STAT36%% Damage Reduction   **%PURPLE%***%CL%%NAME%}%CONTINUE%
 // %PDR on Rings and Boots
-ItemDisplay[(rin OR BOOTS) (MAG OR RARE OR CRAFT OR SET OR STAT360=52) STAT36>0]:%NAME%{%RED%***   %GOLD%%STAT36%% Damage Reduction   %RED%***%CL%%NAME%}%CONTINUE%
+ItemDisplay[(rin OR BOOTS) (MAG OR RARE OR CRAFT OR SET OR STAT360=52) STAT36>0]:%NAME%{%RED%***%GOLD%**   %STAT36%% Damage Reduction   **%RED%***%CL%%NAME%}%CONTINUE%
 
 // ---------------------------------------------------------------------
 // ====================  Damage Taken Goes to Mana  ====================
