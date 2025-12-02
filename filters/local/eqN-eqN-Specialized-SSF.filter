@@ -758,7 +758,7 @@ ItemDisplay[t52]: %NAME%{%RED%65% %GRAY%|| %YELLOW%60% %GRAY%|| %BLUE%65% %GRAY%
 ItemDisplay[t53]: %NAME%{%RED%70% %GRAY%|| %YELLOW%75% %GRAY%|| %BLUE%65% %GRAY%|| %GREEN%80% %GRAY%|| %ORANGE%80% %GRAY%|| %TAN%60%%NL%%RED%Fire %GRAY%|| %YELLOW%Light %GRAY%|| %BLUE%Cold %GRAY%|| %GREEN%Poison %GRAY%|| %ORANGE%Magic %GRAY%|| %TAN%Phys%NL%%WHITE%Highest Monster Resistances:}%CONTINUE% // Fallen Gardens
 ItemDisplay[t54]: %NAME%{%RED%65% %GRAY%|| %YELLOW%65% %GRAY%|| %BLUE%65% %GRAY%|| %GREEN%65% %GRAY%|| %ORANGE%20% %GRAY%|| %TAN%20%%NL%%RED%Fire %GRAY%|| %YELLOW%Light %GRAY%|| %BLUE%Cold %GRAY%|| %GREEN%Poison %GRAY%|| %ORANGE%Magic %GRAY%|| %TAN%Phys%NL%%WHITE%Highest Monster Resistances:%NL%%NAME%}%CONTINUE% // Imperial Palace
 ItemDisplay[t55]: %NAME%{%RED%75% %GRAY%|| %YELLOW%75% %GRAY%|| %BLUE%50% %GRAY%|| %GREEN%30% %GRAY%|| %ORANGE%50% %GRAY%|| %TAN%50%%NL%%RED%Fire %GRAY%|| %YELLOW%Light %GRAY%|| %BLUE%Cold %GRAY%|| %GREEN%Poison %GRAY%|| %ORANGE%Magic %GRAY%|| %TAN%Phys%NL%%WHITE%Highest Monster Resistances:%NL%%NAME%}%CONTINUE% // Outer Void
-ItemDisplay[t56]: %NAME%{%RED%75% %GRAY%|| %YELLOW%75% %GRAY%|| %BLUE%50% %GRAY%|| %GREEN%30% %GRAY%|| %ORANGE%50% %GRAY%|| %TAN%50%%NL%%RED%Fire %GRAY%|| %YELLOW%Light %GRAY%|| %BLUE%Cold %GRAY%|| %GREEN%Poison %GRAY%|| %ORANGE%Magic %GRAY%|| %TAN%Phys%NL%%WHITE%Highest Monster Resistances:%NL%%NAME%}%CONTINUE% // Outer Void
+ItemDisplay[t56]: %NAME%{%RED%85% %GRAY%|| %YELLOW%100% %GRAY%|| %BLUE%80% %GRAY%|| %GREEN%75% %GRAY%|| %ORANGE%50% %GRAY%|| %TAN%65%%NL%%RED%Fire %GRAY%|| %YELLOW%Light %GRAY%|| %BLUE%Cold %GRAY%|| %GREEN%Poison %GRAY%|| %ORANGE%Magic %GRAY%|| %TAN%Phys%NL%%WHITE%Highest Monster Resistances:%NL%%NAME%}%CONTINUE% // City of Ureh
 
 //Catalyzed Maps
 ItemDisplay[STAT500>0 MAPTIER>0]: %NAME%%CONTINUE%{%PURPLE%Catalyzed%NL%%NAME%}
@@ -5533,8 +5533,7 @@ ItemDisplay[(aqv3 OR cqv3) NMAG !INF !RW SOCK=2 CLVL<70]: %NAME%{%NAME%}
 // --- // --- NMAG WEAPONS (Runeword Bases) --- \\ --- \\
 
 //Wirt's Leg
-ItemDisplay[leg NMAG MAPID=38]: %SOUNDID-1351%%NAME% {%TAN%God Rest His Soul%NL%Smuggler and Peddler%NL%Wirt the Peg-Legged Boy%NL%%NAME%}
-ItemDisplay[leg NMAG]: %NAME% {%TAN%God Rest His Soul%NL%Smuggler and Peddler%NL%Wirt the Peg-Legged Boy%NL%%NAME%}
+ItemDisplay[leg NMAG]: %SOUNDID-1351%%NAME% {%TAN%God Rest His Soul%NL%Smuggler and Peddler%NL%Wirt the Peg-Legged Boy%NL%%NAME%}
 
 //Superior + Ethereal Failsafe
 ItemDisplay[WEAPON !WAND !SOR !STAFF !(7sp OR 7cl) !SCEPTER !SIN !DAGGER !(TABSK2<3 (amd OR ame OR amf)) ELT NMAG !INF !RW !SOCK=1 !(SOCK=2 2H) ETH ED>9]: %DOT-D6%%NAME%{%NAME%} // All Useful Ethereal Weapons With 10%+ Enhanced Damage
@@ -6502,7 +6501,7 @@ ItemDisplay[(ARMOR OR WEAPON OR rin OR amu) !CIRC (MAG OR RARE) STAT486=0 STAT20
 
 //----------------------------------------- Legacy Item Highlighting -----------------------------------------
 ItemDisplay[((BELT (SET OR UNI)) OR (amu !CRAFT) OR (BOOTS !STAT33>0)) (FHR=11 OR FHR=12 OR FHR=13 OR FHR=14)]: %BORDER-9B%[Legacy]%NL%%NAME%{%DARK_GREEN%|%RED%::%DARK_GREEN%|   %TAN%Legacy FHR Corrupt   %DARK_GREEN%|%RED%::%DARK_GREEN%|}
-ItemDisplay[((rin !(UNI STAT32>0 FRW>19)) OR (BELT (FRW<20 OR FRW>30)) OR (amu !(CRAFT FRW<21) !FRW>29)) FRW>10]: %BORDER-9B%[Legacy]%NL%%NAME%{%DARK_GREEN%|%RED%::%DARK_GREEN%|   %TAN%Legacy FRW Corrupt   %DARK_GREEN%|%RED%::%DARK_GREEN%|}
+ItemDisplay[((rin !(UNI STAT32>0 FRW>19)) OR (BELT (FRW<20 OR FRW>30)) OR (amu !(CRAFT FRW<21) !(UNI DEX>24 STAT32>99 FRW<41))) FRW>10]: %BORDER-9B%[Legacy]%NL%%NAME%{%DARK_GREEN%|%RED%::%DARK_GREEN%|   %TAN%Legacy FRW Corrupt   %DARK_GREEN%|%RED%::%DARK_GREEN%|}
 ItemDisplay[(rin OR BOOTS) STAT153>0 !STAT148>0 !((xlb OR ulb) SET STAT11>0) !(umb UNI SK69>0) !(rin SET EDAM>19)]: %BORDER-9B%[Legacy]%NL%%NAME%{%DARK_GREEN%|%RED%::%DARK_GREEN%|   %TAN%Legacy CBF Corrupt   %DARK_GREEN%|%RED%::%DARK_GREEN%|}
 ItemDisplay[rin UNI (OS236>0 OR OS226>0)]: %BORDER-9B%[Legacy]%NL%%NAME%{%DARK_GREEN%|%RED%::%DARK_GREEN%|   %TAN%Legacy Item   %DARK_GREEN%|%RED%::%DARK_GREEN%|}
 ItemDisplay[rin UNI FRW>9 CHSK222=21]: %BORDER-9B%[Legacy]%NL%%NAME%{%DARK_GREEN%|%RED%::%DARK_GREEN%|   %TAN%Legacy Item   %DARK_GREEN%|%RED%::%DARK_GREEN%|}
