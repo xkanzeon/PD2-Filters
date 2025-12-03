@@ -22,7 +22,7 @@ ItemDisplayFilterName[]: No Items Out of Town
 //-----------------------------------------------------------------------------------
 // SHOW VERSION AND LEVEL DETAILS ON CUBE/KEYS
 //-----------------------------------------------------------------------------------
-ItemDisplay[box]: %NAME%{Send Feedback via PD2 Discord #lootfilter%CL%Last updated December 2nd%CL%Season 12 - version 29%CL%HiimFilter - Crafting - Amazon -}%CONTINUE%
+ItemDisplay[box]: %NAME%{Send Feedback via PD2 Discord #lootfilter%CL%Last updated December 2nd%CL%Season 12 - version 33%CL%HiimFilter - Crafting - Amazon -}%CONTINUE%
 
 ItemDisplay[box FILTLVL=0]: %NAME%{%NAME% OFF}%CONTINUE%
 ItemDisplay[box FILTLVL=1]: %NAME%{%NAME% Base}%CONTINUE%
@@ -1096,12 +1096,19 @@ ItemDisplay[tr2]: %GOLD%Scroll of Resistance%MAP-58%%SOUNDID-4721%{%TAN%All Resi
 //-----------------------------------------------------------------------------------
 
 ItemDisplay[!UNI !SET !RW (WEAPON OR ARMOR OR QUIVER)]: %BASENAME%%CONTINUE%
-ItemDisplay[(aqv OR aqv2 OR aqv3) (MAG OR RARE) !ID]: }}-->%CONTINUE%
-ItemDisplay[(cqv OR cqv2 OR cqv3) (MAG OR RARE) !ID]: ]]==>%CONTINUE%
+
 // Jewelry
 ItemDisplay[!UNI !SET rin]: %CONTINUE%Ring
 ItemDisplay[!UNI !SET amu]: %CONTINUE%Amulet
 ItemDisplay[!UNI !SET jew]: %CONTINUE%Jewel
+
+// Quivers
+ItemDisplay[aqv (MAG OR RARE OR UNI) !ID]: Arrow%CONTINUE%
+ItemDisplay[aqv2 (MAG OR RARE OR UNI) !ID]: Exc Arrow%CONTINUE%
+ItemDisplay[aqv3 (MAG OR RARE OR UNI) !ID]: Elt Arrow%CONTINUE%
+ItemDisplay[cqv (MAG OR RARE OR UNI) !ID]: Bolt%CONTINUE%
+ItemDisplay[cqv2 (MAG OR RARE OR UNI) !ID]: Exc Bolt%CONTINUE%
+ItemDisplay[cqv3 (MAG OR RARE OR UNI) !ID]: Elt Bolt%CONTINUE%
 
 //-----------------------------------------------------------------------------------
 
@@ -1273,7 +1280,7 @@ ItemDisplay[cm3 UNI !ID]: %BORDER-9B%%UBER_KEYS_LEFT%%GOLD%  Unidentified Gheeds
 
 // Weapon Rares
 ItemDisplay[(7cr OR 9cr OR crs OR 7gl OR 9gl OR glv OR 7p7 OR 9p9 OR pik OR 7gm OR 9gm OR gma OR 7wa OR 9wa OR wax OR 7m7 OR 9m9 OR mau OR 7gd OR 9gd OR gsd OR 7fb OR 9fb OR flb OR 7gi OR 9gi OR gix OR 7wh OR 9wh OR whm OR 7pi OR 9pi OR pil OR 7s7 OR 9s9 OR ssp OR 7ts OR 9ts OR tsp OR axf OR 9xf OR 7xf OR am5 OR ama OR amf OR gax OR 9ga OR 7ga OR spr OR 9sr OR 7sr) RARE ETH (ILVL>84) !ID]: %DOT-ED%%RARE_GOOD_ITEM_LEFT% %NAME% %RARE_GOOD_ITEM_RIGHT%
-ItemDisplay[WEAPON RARE ETH (ILVL>84 OR FILTLVL<3) !ID FILTLVL<7]: %DOT-ED%%RARE_HIGH_ITEM_LEFT% %YELLOW%%NAME% %RARE_HIGH_ITEM_RIGHT%
+ItemDisplay[WEAPON RARE ETH (ILVL>84 OR FILTLVL<3) !ID FILTLVL<7]: %DOT-ED%%TIER-2%%RARE_HIGH_ITEM_LEFT% %YELLOW%%NAME% %RARE_HIGH_ITEM_RIGHT%
 ItemDisplay[WEAPON RARE !ID FILTLVL<3]: %RARE_HIGH_ITEM_LEFT% %YELLOW%%NAME% %RARE_HIGH_ITEM_RIGHT%
 ItemDisplay[WEAPON RARE ETH !ID FILTLVL<7]: %DOT-ED%%TIER-2%%RARE_HIGH_ITEM_LEFT% %YELLOW%%NAME% %RARE_HIGH_ITEM_RIGHT%
 ItemDisplay[(6mx OR 8mx OR mxb OR 6hx OR 8hx OR hxb) RARE (ILVL>84) !ID FILTLVL<7]: %DOT-ED%%RARE_ITEM_EXTRA_LEFT% %NAME% %RARE_ITEM_EXTRA_RIGHT%
@@ -1298,7 +1305,7 @@ ItemDisplay[!ID RARE NEC FILTLVL<9 ILVL>84]: %NAME% //nec heads
 ItemDisplay[!ID MAG NEC FILTLVL<8 ILVL>84]: %NAME% //nec heads
 
 // High Ilvl Non-weap Rares
-ItemDisplay[RARE CHEST !ID FILTLVL<8 ALVL>84]: %DOT-ED%%TIER-6%%RARE_ITEM_EXTRA_LEFT% %NAME% %RARE_ITEM_EXTRA_RIGHT%
+ItemDisplay[RARE CHEST !ID FILTLVL<8 ALVL>84]: %DOT-ED%%TIER-2%%RARE_ITEM_EXTRA_LEFT% %NAME% %RARE_ITEM_EXTRA_RIGHT%
 ItemDisplay[RARE !WEAPON (ILVL>84) !ID FILTLVL<3]: %DOT-ED%%RARE_ITEM_EXTRA_LEFT% %NAME% %RARE_ITEM_EXTRA_RIGHT%
 ItemDisplay[RARE ARMOR ETH !ID FILTLVL<7]: %NAME%
 ItemDisplay[RARE (GLOVES OR BELT) ETH !ID FILTLVL<8]: %NAME%
@@ -2268,13 +2275,6 @@ ItemDisplay[UNI !ID rbe]: %CONTINUE%Band of Skulls
 // These item bases belong to multiple sets, so you cannot know what one they are until identified
 ItemDisplay[UNI !ID amu]: %CONTINUE%Unique Amulet
 ItemDisplay[UNI !ID rin]: %CONTINUE%Unique Ring
-
-ItemDisplay[aqv UNI !ID]: }}-->%CONTINUE%
-ItemDisplay[aqv2 UNI !ID]: }}--> Exc%CONTINUE%
-ItemDisplay[aqv3 UNI !ID]: }}--> Elt%CONTINUE%
-ItemDisplay[cqv UNI !ID]: ]]==>%CONTINUE%
-ItemDisplay[cqv2 UNI !ID]: ]]==> Exc%CONTINUE%
-ItemDisplay[cqv3 UNI !ID]: ]]==> Elt%CONTINUE%
 
 // Circlets
 ItemDisplay[UNI !ID ci0]: %CONTINUE%Circlet (No Unique for this base)
@@ -3318,7 +3318,6 @@ ItemDisplay[UNI !ID FILTLVL<8 (drb OR oba OR xea OR zhb OR xmb OR tgl OR xvg OR 
 // Atmas Wail - Embossed Plate
 // Skullders Ire - Russet Armor
 // Treads of Cthon - Chain Boots
-//%SOUNDID-2666%
 
 ItemDisplay[UNI !ID FILTLVL<8 (uml OR xar OR ulg OR urg OR xlt OR drc OR amc OR xap OR gsd OR aar OR uld OR 9ls OR 8rx OR ba7 OR dr6 OR xth OR xpl OR mbt)]: %DOT-68%%UNI_TIER1_ITEM_LEFT%  %NAME%  %UNI_TIER1_ITEM_RIGHT%
 
@@ -3341,9 +3340,9 @@ ItemDisplay[UNI !ID FILTLVL<8 (uml OR xar OR ulg OR urg OR xlt OR drc OR amc OR 
 // Elite bolts
 // Firelizards Talons - Feral Claws
 // Wraithskin - Diamond Mail
-// %SOUNDID-2666%
+// Endlesshail - Double Bow
 
-ItemDisplay[UNI !ID FILTLVL<8 (xlg OR xmg OR xhg OR baf OR utp OR uvb OR amb OR amd OR 9di OR vgl OR 7wb OR aqv3 OR cqv3 OR 7lw OR ung)]: %DOT-68%%UNI_TIER0_ITEM_LEFT%  %NAME%  %UNI_TIER0_ITEM_RIGHT%
+ItemDisplay[UNI !ID FILTLVL<8 (xlg OR xmg OR xhg OR baf OR utp OR uvb OR amb OR amd OR 9di OR vgl OR 7wb OR aqv3 OR cqv3 OR 7lw OR ung OR 8cb)]: %DOT-68%%UNI_TIER0_ITEM_LEFT%  %NAME%  %UNI_TIER0_ITEM_RIGHT%
 
 
 // Tier 0 Unique Callouts
@@ -3359,7 +3358,6 @@ ItemDisplay[UNI !ID FILTLVL<8 (xlg OR xmg OR xhg OR baf OR utp OR uvb OR amb OR 
 // Radaments Sphere - Ancient Shield
 // Rune Master - Ettin Axe
 // Kuko Shakaku - Cedar Bow
-// Endlesshail - Double Bow
 // Gull Dagger
 // Viperfork - Mancatcher
 // Chromatic Ire - Cedar Staff
@@ -3409,7 +3407,7 @@ ItemDisplay[UNI !ID FILTLVL<8 (xlg OR xmg OR xhg OR baf OR utp OR uvb OR amb OR 
 // exceptional bolts
 // Crow Caw - Tigulated Mail
 
-ItemDisplay[UNI !ID FILTLVL<7 (xul OR tbl OR vbt OR xlb OR lgl OR cap OR xkp OR xts OR 72a OR 8lb OR 8cb OR dgr OR 7br OR 8cs OR 7sm OR 7ta OR 7b8 OR 9tw OR 6cs OR kri OR brs OR xhm OR 7m7 OR ama OR baa OR nea OR mgl OR xrn OR 8s8 OR 6l7 OR 7dg OR 7sr OR 9fc OR 7fb OR 9b9 OR 9gd OR ame OR upk OR xtp OR 7gs OR xow OR ush OR 9wc OR bac OR lbb OR 8sw OR ltp OR 7di OR 9fl OR 7gi OR hgl OR 9kr OR drf OR 8hx OR fhl OR 9sr OR aqv2 OR cqv2 OR xcl)]: %DOT-68%%UNI_TIER0_ITEM_LEFT%  %NAME%  %UNI_TIER0_ITEM_RIGHT%
+ItemDisplay[UNI !ID FILTLVL<7 (xul OR tbl OR vbt OR xlb OR lgl OR cap OR xkp OR xts OR 72a OR 8lb OR dgr OR 7br OR 8cs OR 7sm OR 7ta OR 7b8 OR 9tw OR 6cs OR kri OR brs OR xhm OR 7m7 OR ama OR baa OR nea OR mgl OR xrn OR 8s8 OR 6l7 OR 7dg OR 7sr OR 9fc OR 7fb OR 9b9 OR 9gd OR ame OR upk OR xtp OR 7gs OR xow OR ush OR 9wc OR bac OR lbb OR 8sw OR ltp OR 7di OR 9fl OR 7gi OR hgl OR 9kr OR drf OR 8hx OR fhl OR 9sr OR aqv2 OR cqv2 OR xcl)]: %DOT-68%%UNI_TIER0_ITEM_LEFT%  %NAME%  %UNI_TIER0_ITEM_RIGHT%
 
 //  lld catch callouts as Tier 1
 //-----------------------------------------------------------------------------------
@@ -6223,7 +6221,7 @@ ItemDisplay[!RW SK51>2 DIFF<2 FILTLVL<3 SOCK=0 (SORCERESS OR FILTLVL<2)]: %PX-62
 ItemDisplay[!RW SK46>1 CLVL<18 FILTLVL<3 (SORCERESS OR FILTLVL<2)]: %PX-62%%NAME% %LEVELING_TAG%{%RED%Leveling Item%CL%%NAME%}
 
 // Leaf base
-ItemDisplay[NMAG STAFF ELT !RW (SK56>1 OR SK51>1 OR SK41>1 OR SK62>1) (SOCK=0 OR SOCK=2) FILTLVL<3 (SORCERESS OR FILTLVL<2)]: %PX-62%%NAME% %LEVELING_TAG%{%RED%Leaf Base%CL%%NAME%}
+ItemDisplay[NMAG STAFF !RW (SK56>1 OR SK51>1 OR SK41>1 OR SK62>1) (SOCK=0 OR SOCK=2) FILTLVL<3 (SORCERESS OR FILTLVL<2)]: %PX-62%%NAME% %LEVELING_TAG%{%RED%Leaf Base%CL%%NAME%}
 ItemDisplay[NMAG STAFF !RW DIFF<2 (SK41>2 OR SK51>2 OR SK56>2) (SOCK=0 OR SOCK=2) FILTLVL<3 CLVL<80 (SORCERESS OR FILTLVL<2)]: %PX-62%%NAME% %%LEVELING_TAG%{%RED%Leaf Base%CL%%NAME%}
 
 // Memory

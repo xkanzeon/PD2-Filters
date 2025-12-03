@@ -12,7 +12,7 @@ ItemDisplayFilterName[11]: ÿc1Extreme ÿc4Strictness ÿc7w/ ÿc;Juice ÿc7& ÿc.Flawl
 ItemDisplayFilterName[12]: ÿc1Extreme ÿc4Strictness ÿc7w/ ÿc;Juice
 
 //------------------------------FILTER_VERSION_ON_CUBE------------------------------
-ItemDisplay[box]: %MAP-51%Horadric Cube %RED%(Dec/1st/25){%LIGHT_GRAY%Removed Demonic Cube from hr highlight/sound to gul - Kassahi%CL%Removed sounds on Essences (-Baal) & Added sounds back on ppic%CL%%GREEN%Kassahi - HiimMark%CL%%WHITE%Season 12 Build # 42}
+ItemDisplay[box]: %MAP-51%Horadric Cube %RED%(Dec/2nd/25){%LIGHT_GRAY%Removed Demonic Cube from hr highlight/sound to gul - Kassahi%CL%Removed sounds on Essences (-Baal) & Added sounds back on ppic%CL%%GREEN%Kassahi - HiimMark%CL%%WHITE%Season 12 Build # 47}
 
 
 
@@ -58,7 +58,7 @@ ItemDisplay[(NMAG OR MAG OR RARE OR CRAFT) !RW]: %BASENAME%%CONTINUE%
 
 // CHARM'S NAME (BASE)
 ItemDisplay[MAG cm2 (STAT329>2 OR STAT330>2 OR STAT331>2 OR STAT332>2 OR STAT357>2 OR IAS>5 OR FCR>5)]: %PURPLE%Large Charm%CONTINUE%
-ItemDisplay[MAG cm3 (TABSK40=1 OR TABSK41=1 OR TABSK42=1 OR TABSK32=1 OR TABSK33=1 OR TABSK34=1 OR TABSK24=1 OR TABSK25=1 OR TABSK26=1 OR TABSK16=1 OR TABSK17=1 OR TABSK18=1 OR TABSK8=1 OR TABSK9=1 OR TABSK10=1 OR TABSK48=1 OR TABSK49=1 OR TABSK50=1 OR TABSK0=1 OR TABSK1=1 OR TABSK2=1)]: %PURPLE%Grand Charm%CONTINUE%
+ItemDisplay[MAG cm3 (TABSK40=1 OR TABSK41=1 OR TABSK42=1 OR TABSK32=1 OR TABSK33=1 OR TABSK34=1 OR TABSK24=1 OR TABSK25=1 OR TABSK26=1 OR TABSK16=1 OR TABSK17=1 OR TABSK18=1 OR TABSK8=1 OR TABSK9=1 OR TABSK10=1 OR TABSK48=1 OR TABSK49=1 OR TABSK50=1 OR TABSK0=1 OR TABSK1=1 OR TABSK2=1 OR MAXDMG>9)]: %PURPLE%Grand Charm%CONTINUE%
 ItemDisplay[MAG !ID cm1]: Small%CONTINUE%
 ItemDisplay[MAG !ID cm2]: Large%CONTINUE%
 ItemDisplay[MAG !ID cm3]: Grand%CONTINUE%
@@ -717,8 +717,8 @@ ItemDisplay[INF ID !rin !amu]: %GRAY%Shit %NAME%{%NAME%}%CONTINUE%
 // BOSS ITEMS
 ItemDisplay[ETH UNI !ID (ram OR rar OR rbe OR 7qr OR uhn OR uth OR utc OR utb OR uhl OR 7bs OR 7cr2)]: %PURPLE%%NAME%{%NAME%}%CONTINUE%
 // GG
-ItemDisplay[ETH UNI !ID (ci3 OR pa9 OR obf OR uar OR ulc OR uap OR uhm OR usk OR urn OR uit OR uts OR 7wh OR 7gm OR 7ws OR 6bs OR 6ws OR 7gw OR xhb OR 7gd OR uhc OR ci2 OR nef OR uui OR upl OR uul OR 7s8)]: %PURPLE%%NAME%{%NAME%}%CONTINUE%
-ItemDisplay[ETH UNI !ID (utp OR amf OR 9gm OR 7p7 OR 7xf OR 9la)]: %PURPLE%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[ETH UNI !ID (ci3 OR pa9 OR obf OR uar OR ulc OR uap OR uhm OR usk OR urn OR uit OR uts OR 7wh OR 7gm OR 7ws OR 6bs OR 6ws OR 7gw OR xhb OR uhc OR ci2 OR nef OR uui OR upl OR uul)]: %PURPLE%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[ETH UNI !ID (utp OR amf OR 9gm OR 7p7 OR 7xf OR 9la OR 7s8 OR 7b7 OR 7b8 OR ama OR aar OR xlt OR 7gd)]: %PURPLE%%NAME%{%NAME%}%CONTINUE%
 // Other Uniq & Set Tiers
 ItemDisplay[ETH UNI !ID !(STAT477=4 OR STAT477=21)]: %GOLD%%NAME%{%NAME%}%CONTINUE%
 ItemDisplay[ETH SET !ID !(STAT477=4 OR STAT477=21)]: %GREEN%%NAME%{%NAME%}%CONTINUE%
@@ -2081,6 +2081,8 @@ ItemDisplay[MAG !ID ETH ASSASSIN (axf OR 9xf OR 7xf OR dir OR 9di OR 7di OR bld 
 ItemDisplay[RARE !ETH !ID ASSASSIN SIN]: %DOT-6D%%TEAL%• %NAME% %TEAL%•
 // Sorceress
 // Good Crafting/ID Bases
+ItemDisplay[MAG !ID SORCERESS (ob5 OR oba OR obf)]: %DOT-97%%NAME% %TEAL%•
+ItemDisplay[RARE !ID SORCERESS (ob5 OR oba OR obf)]: %DOT-6D%%NAME% %TEAL%•
 // Amazon
 // Good Crafting/ID Bases
 ItemDisplay[RARE !ID AMAZON (mxb OR 8mx OR 6mx OR am1 OR am6 OR amb OR am2 OR am7 OR amc OR am5 OR QUIVER)]: %DOT-6D%%NAME% %TEAL%•
@@ -2134,6 +2136,7 @@ ItemDisplay[FILTLVL~1-8 CRAFTALVL>84 MAG !ETH !ID !NORM CHEST]: %NAME% %RED%•
 ItemDisplay[FILTLVL~1-8 RARE ETH !ID !(DRU OR BAR OR DIN OR NEC) (SHIELD OR CHEST OR BELT OR HELM)]: %NAME% %RED%•
 ItemDisplay[FILTLVL~1-8 RARE !ETH !ID !(DRU OR BAR OR DIN OR NEC) (SHIELD OR CHEST OR BELT OR HELM OR QUIVER)]: %NAME%
 ItemDisplay[FILTLVL~1-8 MAG !ID (ci2 OR ci3)]: %DOT-20%%MAP-21%%BORDER-97%%BLUE%•%WHITE%•  %NAME%  %WHITE%•%BLUE%•
+ItemDisplay[FILTLVL~1-8 MAG !ETH !ID amu]: %NAME%
 
 // Starter/Medium Strictness
 // Good Crafting/ID Bases
@@ -4580,6 +4583,8 @@ ItemDisplay[MAG cm3 FHR>0 TABSK1>0]: %DOT-0A%%RED%>> %ORANGE%>> %RED%>> %GREEN%j
 ItemDisplay[MAG cm3 LIFE>29 MAXDMG>7]: %DOT-0A%%RED%>> %ORANGE%>> %RED%>> %GREEN%max life %RED%<< %ORANGE%<< %RED%<<%CL%%PURPLE%Grand Charm{%NAME%%CL%}
 ItemDisplay[MAG cm3 FRW>0 MAXDMG>7]: %DOT-0A%%RED%>> %ORANGE%>> %RED%>> %GREEN%max frw %RED%<< %ORANGE%<< %RED%<<%CL%%PURPLE%Grand Charm{%NAME%%CL%}
 ItemDisplay[MAG cm3 FHR>0 MAXDMG>7]: %DOT-0A%%RED%>> %ORANGE%>> %RED%>> %GREEN%max fhr %RED%<< %ORANGE%<< %RED%<<%CL%%PURPLE%Grand Charm{%NAME%%CL%}
+ItemDisplay[MAG cm3 MAXDMG>13]: %DOT-0A%%RED%>> %ORANGE%>> %RED%>> %GREEN%max %RED%<< %ORANGE%<< %RED%<<%CL%%PURPLE%Grand Charm{%NAME%%CL%}
+
 
 
 
@@ -7488,6 +7493,9 @@ ItemDisplay[DIFF<3 CLVL<90 (MAPID>0 MAPID<133) NMAG SOCK=0 !INF !RW wsp]: %NAME%
 // ASSASSIN CLAW'S (NMAG)
 ItemDisplay[NMAG (SOCK=0 OR SOCK=3) !INF !RW ETH ED>9 (7ar OR 7xf OR 7qr)]: %PX-21%%DOT-D6%%NAME% %RED%•{%NAME%}
 ItemDisplay[FILTLVL~1-8 NMAG (SOCK=0 OR SOCK=3) !INF !RW ETH (7ar OR 7xf OR 7qr)]: %PX-21%%DOT-D6%%NAME%{%NAME%}
+
+// Specific 0os bases for medium filters
+ItemDisplay[FILTLVL~1-4 NMAG SOCK=0 !INF !RW (6rx OR 6ws)]: %NAME%{%NAME%}
 
 // Druid Early Bases Starter/Medium Filters
 // Helmets
