@@ -1434,7 +1434,7 @@ ItemDisplay[!ID MAG (aqv OR cqv) CLVL>15]://
 ItemDisplay[!ID MAG (aqv2 OR cqv2) CLVL>30]://
 
 ItemDisplay[MAG !ID (WEAPON OR ARMOR) !((ZON !BOW) OR CIRC OR GLOVES OR WAND OR crs OR 9cr) CLVL>35]://
-ItemDisplay[MAG !ID rin CLVL>35]://
+ItemDisplay[MAG !ID rin FILTLVL>1]://
 ItemDisplay[MAG !ID amu FILTLVL>3]://
 ItemDisplay[MAG !ID !ETH CIRC FILTLVL>2]://
 ItemDisplay[MAG !ID ETH CIRC FILTLVL>1]://
