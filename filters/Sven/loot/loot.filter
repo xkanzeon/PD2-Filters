@@ -1718,7 +1718,7 @@ ItemDisplay[!ID UNI xng]:%NAME%%ORANGE%O ²%GOLD%Spirit Forge %ORANGE%O%CONTINUE%
 ItemDisplay[!ID UNI xcl]:%NAME%%ORANGE%O ²%GOLD%Crow Caw %ORANGE%O%CONTINUE%
 ItemDisplay[!ID UNI xhn]:%NAME%%YELLOW%O%ORANGE%O%RED%O ²%GOLD%Shaftstop %RED%O%ORANGE%O%YELLOW%O%CONTINUE%
 ItemDisplay[!ID UNI xrs]:%NAME%%ORANGE%O ²%GOLD%Duriel's Shell %ORANGE%O%CONTINUE%
-ItemDisplay[!ID UNI xpl]:%NAME%%YELLOW%O%ORANGE%O%RED%O ²%GOLD%Skullder's Ire %RED%O%ORANGE%O%YELLOW%O%CONTINUE%
+ItemDisplay[!ID UNI xpl]:%NAME%%ORANGE%O ²%GOLD%Skullder's Ire %ORANGE%O%CONTINUE%
 ItemDisplay[!ID UNI xlt]:%NAME%%ORANGE%O ²%GOLD%Guardian Angel %ORANGE%O%CONTINUE%
 ItemDisplay[!ID UNI xld]:%NAME%%ORANGE%O ²%GOLD%Toothrow %ORANGE%O%CONTINUE%
 ItemDisplay[!ID UNI xth]:%NAME%%ORANGE%O ²%GOLD%Atma's Wail %ORANGE%O%CONTINUE%
@@ -1733,14 +1733,15 @@ ItemDisplay[!ID SET ult]:%NAME%%RED%O ³%GREEN%Naj's chest %RED%O%CONTINUE%
 ItemDisplay[!ID SET uld]:%NAME%%RED%O ³%GREEN%M'avina's chest %RED%O%CONTINUE%
 ItemDisplay[!ID SET uth]:%NAME%%RED%O ³%GREEN%Tal Rasha's chest %RED%O%CONTINUE%
 ItemDisplay[!ID SET uul]:%NAME%%RED%O ³%GREEN%Aldur's chest %RED%O%CONTINUE%
-ItemDisplay[!ID SET uar]:%NAME%%YELLOW%O%ORANGE%O%RED%O ³%GREEN%Immortal King's chest %RED%O%ORANGE%O%YELLOW%O%CONTINUE%
+ItemDisplay[!ID SET uar]:%NAME%%RED%O ³%GREEN%Immortal King's chest %RED%O%CONTINUE%
 //Elite unique chests
 ItemDisplay[!ID UNI uui]:%NAME%%YELLOW%O%ORANGE%O%RED%O ³%GOLD%Ormus' Robes %RED%O%ORANGE%O%YELLOW%O%CONTINUE%
 ItemDisplay[!ID UNI utu]:%NAME%%RED%O ³%GOLD%The Gladiator's Bane %RED%O%CONTINUE%
 ItemDisplay[!ID UNI upl]:%NAME%%YELLOW%O%ORANGE%O%RED%O ³%GOLD%Arkaine's Valor %RED%O%ORANGE%O%YELLOW%O%CONTINUE%
 ItemDisplay[!ID UNI uld]:%NAME%%RED%O ³%GOLD%Leviathan %RED%O%CONTINUE%
-ItemDisplay[!ID UNI utp]:%NAME%%YELLOW%O%ORANGE%O%RED%O ³%GOLD%Purgatory %RED%O%ORANGE%O%YELLOW%O
-ItemDisplay[!ID UNI uul]:%NAME%%YELLOW%O%ORANGE%O%RED%O ³%GOLD%Steel Carapace %RED%O%ORANGE%O%YELLOW%O
+ItemDisplay[!ID UNI utp]:%NAME%%RED%O ³%GOLD%Purgatory %RED%O%ORANGE%O%YELLOW%O%CONTINUE%
+ItemDisplay[!ID UNI !ETH utp]:%NAME%%RED%O ³%GOLD%Purgatory %RED%O%CONTINUE%
+ItemDisplay[!ID UNI ETH uul]:%NAME%%YELLOW%O%ORANGE%O%RED%O ³%GOLD%Steel Carapace %RED%O%ORANGE%O%YELLOW%O%CONTINUE%
 ItemDisplay[!ID UNI uar]:%NAME%%PURPLE%O %BLUE% O %GREEN% O %YELLOW% O %ORANGE% O %RED% O  ³%GOLD%Tyrael's??? %RED% O %ORANGE% O %YELLOW% O %GREEN% O %BLUE% O %PURPLE% O%%SOUNDID-4611%CONTINUE%
 ItemDisplay[!ID UNI ung]:%NAME%%RED%O ³%GOLD%Wraithskin %RED%O%CONTINUE%
 /////
@@ -1905,9 +1906,9 @@ ItemDisplay[!ID UNI baf]:%NAME%%RED%O ³%GOLD%Raekor's Virtue %RED%O%CONTINUE%
 //normal unique pally shields
 ItemDisplay[!ID UNI pa3]:%NAME%¹Sankekur's Fall%CONTINUE%
 //exceptional unique pally shields
-ItemDisplay[!ID UNI pa9]:%NAME%%YELLOW%O%ORANGE%O%RED%O ²%GOLD%Herald of Zakarum %RED%O%ORANGE%O%YELLOW%O%CONTINUE%
+ItemDisplay[!ID UNI pa9]:%NAME%%RED%O ²%GOLD%Herald of Zakarum %RED%O%CONTINUE%
 //elite unique pally shields
-ItemDisplay[!ID UNI pac]:%NAME%%YELLOW%O%ORANGE%O%RED%O ³%GOLD%Alma Negra %RED%O%ORANGE%O%YELLOW%O%CONTINUE%
+ItemDisplay[!ID UNI pac]:%NAME%%RED%O ³%GOLD%Alma Negra %RED%O%CONTINUE%
 ItemDisplay[!ID UNI paf]:%NAME%%RED%O ³%GOLD%Skywarden %RED%O%CONTINUE%
 ItemDisplay[!ID UNI pae]:%NAME%%YELLOW%O%ORANGE%O%RED%O ³%GOLD%Dragonscale %RED%O%ORANGE%O%YELLOW%O%CONTINUE%
 //elite set pally shields
@@ -2152,19 +2153,19 @@ ItemDisplay[!ID UNI 7cl]:%NAME%%RED%O ³%GOLD%Nord's Tenderizer %RED%O%CONTINUE%
 ItemDisplay[!ID UNI 7sp]:%NAME%%RED%O ³%GOLD%Demon Limb %RED%O%CONTINUE%
 ItemDisplay[!ID UNI 7mt]:%NAME%%RED%O ³%GOLD%Baranar's Star %RED%O%CONTINUE%
 ItemDisplay[!ID UNI 7fl]:%NAME%%RED%O ³%GOLD%Horizon's Tornado OR Stormlash %RED%O%CONTINUE%
-ItemDisplay[!ID UNI 7wh]:%NAME%%YELLOW%O%ORANGE%O%RED%O ³%GOLD%Stone Crusher OR Schaefer's Hammer %RED%O%ORANGE%O%YELLOW%O%CONTINUE%
+ItemDisplay[!ID UNI 7wh]:%NAME%%YELLOW%O%ORANGE%O%RED%O ³%GOLD%Schaefer's Hammer??? %RED%O%ORANGE%O%YELLOW%O%CONTINUE%
 ItemDisplay[!ID UNI 7m7]:%NAME%%RED%O ³%GOLD%Windhammer %RED%O%CONTINUE%
 ItemDisplay[!ID UNI 7gm]:%NAME%%RED%O ³%GOLD%Earth Shifter OR The Cranium Basher %RED%O%CONTINUE%
 //swords
 ItemDisplay[!ID UNI 7sm]:%NAME%%RED%O ³%GOLD%Djinn Slayer %RED%O%CONTINUE%
 ItemDisplay[!ID UNI 7sb]:%NAME%%RED%O ³%GOLD%Bloodmoon %RED%O%CONTINUE%
-ItemDisplay[!ID UNI 7cr]:%NAME%%YELLOW%O%ORANGE%O%RED%O ³%GOLD%Lightsabre OR Azurewrath %RED%O%ORANGE%O%YELLOW%O%CONTINUE%
-ItemDisplay[!ID UNI 7ls]:%NAME%%YELLOW%O%ORANGE%O%RED%O ³%GOLD%Frostwind %RED%O%ORANGE%O%YELLOW%O%CONTINUE%
+ItemDisplay[!ID UNI 7cr]:%NAME%%YELLOW%O%ORANGE%O%RED%O ³%GOLD%Azurewrath??? %RED%O%ORANGE%O%YELLOW%O%CONTINUE%
+ItemDisplay[!ID UNI 7ls]:%NAME%%RED%O ³%GOLD%Frostwind %RED%O%CONTINUE%
 ItemDisplay[!ID UNI 7cm]:%NAME%%RED%O ³%GOLD%Leoric's Mithril Bane %RED%O%CONTINUE%
 ItemDisplay[!ID UNI 7gs]:%NAME%%RED%O ³%GOLD%Flamebellow %RED%O%CONTINUE%
 ItemDisplay[!ID UNI 7b7]:%NAME%%RED%O ³%GOLD%Doombringer %RED%O%CONTINUE%
 ItemDisplay[!ID UNI 7fb]:%NAME%%RED%O ³%GOLD%Odium %RED%O%CONTINUE%
-ItemDisplay[!ID UNI 7gd]:%NAME%%YELLOW%O%ORANGE%O%RED%O ³%GOLD%The Grandfather %RED%O%ORANGE%O%YELLOW%O%CONTINUE%
+ItemDisplay[!ID UNI 7gd]:%NAME%%RED%O ³%GOLD%The Grandfather %RED%O%CONTINUE%
 //daggers
 ItemDisplay[!ID UNI 7dg]:%NAME%%RED%O ³%GOLD%Wizardspike %RED%O%CONTINUE%
 ItemDisplay[!ID UNI 7kr]:%NAME%%RED%O ³%GOLD%Fleshripper %RED%O%CONTINUE%
@@ -2199,13 +2200,13 @@ ItemDisplay[!ID UNI 6hx]:%NAME%%RED%O ³%GOLD%Hellrack %RED%O%CONTINUE%
 ItemDisplay[!ID UNI 6rx]:%NAME%%RED%O ³%GOLD%Gut Siphon %RED%O%CONTINUE%
 //staves
 ItemDisplay[!ID UNI 6cs]:%NAME%%RED%O ³%GOLD%Ondals Wisdom %RED%O%CONTINUE%
-ItemDisplay[!ID UNI 6bs]:%NAME%%YELLOW%O%ORANGE%O%RED%O ³%GOLD%Brimstone Rain %RED%O%ORANGE%O%YELLOW%O%CONTINUE%
+ItemDisplay[!ID UNI 6bs]:%NAME%%RED%O ³%GOLD%Brimstone Rain %RED%O%CONTINUE%
 ItemDisplay[!ID UNI 6ws]:%NAME%%YELLOW%O%ORANGE%O%RED%O ³%GOLD%Mang Song's Lesson %RED%O%ORANGE%O%YELLOW%O%CONTINUE%
 //wands
 ItemDisplay[!ID UNI 7bw]:%NAME%%RED%O ³%GOLD%Boneshade %RED%O%CONTINUE%
-ItemDisplay[!ID UNI 7gw]:%NAME%%YELLOW%O%ORANGE%O%RED%O ³%GOLD%Death's Web %RED%O%ORANGE%O%YELLOW%O%CONTINUE%
+ItemDisplay[!ID UNI 7gw]:%NAME%%RED%O ³%GOLD%Death's Web %RED%O%CONTINUE%
 //scepters
-ItemDisplay[!ID UNI 7sc]:%NAME%%YELLOW%O%ORANGE%O%RED%O ³%GOLD%Heaven's Light OR The Redeemer %RED%O%ORANGE%O%YELLOW%O%CONTINUE%
+ItemDisplay[!ID UNI 7sc]:%NAME%%RED%O ³%GOLD%Heaven's Light OR The Redeemer %RED%O%CONTINUE%
 ItemDisplay[!ID UNI 7qs]:%NAME%%RED%O ³%GOLD%Akarat's Devotion %RED%O%CONTINUE%
 ItemDisplay[!ID UNI 7ws]:%NAME%%YELLOW%O%ORANGE%O%RED%O ³%GOLD%Astreon's Iron Ward %RED%O%ORANGE%O%YELLOW%O%CONTINUE%
 //claws
@@ -2215,7 +2216,7 @@ ItemDisplay[!ID UNI 7xf]:%NAME%%RED%O ³%GOLD%Whispering Mirage %RED%O%CONTINUE%
 ItemDisplay[!ID UNI 7lw]:%NAME%%RED%O ³%GOLD%Firelizard's Talons %RED%O%CONTINUE%
 ItemDisplay[!ID UNI 7tw]:%NAME%%RED%O ³%GOLD%Stalker's Cull %RED%O%CONTINUE%
 //orbs
-ItemDisplay[!ID UNI obc]:%NAME%%YELLOW%O%ORANGE%O%RED%O ³%GOLD%Eschuta's Temper %RED%O%ORANGE%O%YELLOW%O%CONTINUE%
+ItemDisplay[!ID UNI obc]:%NAME%%RED%O ³%GOLD%Eschuta's Temper %RED%O%CONTINUE%
 ItemDisplay[!ID UNI obf]:%NAME%%YELLOW%O%ORANGE%O%RED%O ³%GOLD%Death's Fathom %RED%O%ORANGE%O%YELLOW%O%CONTINUE%
 //ama weps
 ItemDisplay[!ID UNI amb]:%NAME%%RED%O ³%GOLD%Blood Raven's Charge %RED%O%CONTINUE%

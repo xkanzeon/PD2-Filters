@@ -15,7 +15,8 @@ ItemDisplayFilterName[]: ÿc1Extreme Filtering! ÿc0- ÿc4Hides ÿc3Crafting Basesÿc
 
 // ==================================  Horadric Cube  ===============================
 
-ItemDisplay[box]:%BLACK%II%GOLD%II%BLACK%X%GOLD%II%BLACK%II  %GOLD%Horadric Cube  %BLACK%II%GOLD%II%BLACK%X%GOLD%II%BLACK%II%CONTINUE%//
+ItemDisplay[box]:%GOLD%Horadric Cube%CONTINUE%//
+ItemDisplay[box]:%BLACK%i%GOLD%II%BLACK%X%GOLD%II%BLACK%i  %NAME%  %BLACK%i%GOLD%II%BLACK%X%GOLD%II%BLACK%i%CONTINUE%//
 ItemDisplay[box FILTLVL=0]:%NAME%{%WHITE%Filter Level: 0}%CONTINUE%//
 ItemDisplay[box FILTLVL=1]:%NAME%{%WHITE%Filter Level: 1%CL%%GRAY%Lowest Strictness}%CONTINUE%//
 ItemDisplay[box FILTLVL=2]:%NAME%{%WHITE%Filter Level: 2%CL%%GRAY%Relaxed Filtering}%CONTINUE%//
@@ -33,7 +34,7 @@ ItemDisplay[box FILTLVL=12 SORCERESS CHARSTAT1>149]:%NAME%{%WHITE%Filter Level: 
 
 ItemDisplay[box FILTLVL=0]:%NAME%{%NAME%%CL%%GRAY%Level 12 Hides Crafting Bases, Flawless Gems, and Low Value Items%CL%%GRAY%Levels 8-9-10-11 Hide Most Non-Eth and Non-Magic Class Items%CL%%GRAY%Levels 3-4-5-6-7 Hide Some Rares and Non-Superior Items%CL%%GRAY%Level 2 Hides Additional Non-Magic/Magic Items%CL%Level 1 Shows Most Non-Magic/Magic Items}%CONTINUE%//
 ItemDisplay[box CLVL<50 !FILTLVL=0]:%NAME%{%NAME%%CL%%GRAY%For %GOLD%Increase and Decrease Filter Level%CL%%GRAY%For %GOLD%Always Show Items %GRAY%and Hotkeys%CL%Open Settings to Create Toggle}%CONTINUE%//
-ItemDisplay[box]:%NAME%{%NAME%%CL%%WHITE%Erazure - BIG GG - PoE%CL%Season 12 - Dec 12th}//
+ItemDisplay[box]:%NAME%{%NAME%%CL%%TEAL%Erazure BIG GG PoE%CL%%WHITE%Season 12 - Dec 12th}//
 
 // =====================================  Aliases  ==================================
 
@@ -630,37 +631,40 @@ ItemDisplay[(gpvs OR gpws OR gpgs OR gprs OR gpbs OR skzs OR gpys)]:%NAME%{%NAME
 //----------------------------------------------------------------------------------------------------------
 
 // Sound notification for Puzzlepiece under filter level 8
-ItemDisplay[lpp QTY=1 !TOWN]:%NAME%{%NAME%}%SOUNDID-2679%%CONTINUE%// 
+ItemDisplay[lpp QTY=1 !TOWN]:%NAME%{%NAME%}%SOUNDID-4715%%CONTINUE%// 
 // Sound notification for Lem-Pul Runes
-ItemDisplay[(r20s OR r21s) QTY=1 !TOWN]:%NAME%{%NAME%}%SOUNDID-2679%%CONTINUE%// 
+ItemDisplay[(r20s OR r21s) QTY=1 !TOWN]:%NAME%{%NAME%}%SOUNDID-4715%%CONTINUE%// 
 // Sound notification for Um-Mal Runes
-ItemDisplay[(r22s OR r23s) QTY=1 !TOWN]:%NAME%{%NAME%}%SOUNDID-2679%%CONTINUE%// 
+ItemDisplay[(r22s OR r23s) QTY=1 !TOWN]:%NAME%{%NAME%}%SOUNDID-4715%%CONTINUE%// 
 // Sound notification for Key of Terror, Key of Hate, Key of Destruction
-ItemDisplay[(pk1 OR pk2 OR pk3) QTY=1 !TOWN]:%NAME%{%NAME%}%SOUNDID-2679%%CONTINUE%// 
+ItemDisplay[(pk1 OR pk2 OR pk3) QTY=1 !TOWN]:%NAME%{%NAME%}%SOUNDID-4726%%CONTINUE%// 
 
 // Sound notification for Ist and Gul Runes
-ItemDisplay[(r24s OR r25s) QTY=1 !TOWN]:%NAME%{%NAME%}%SOUNDID-34%%CONTINUE%//
-// Sound notification for Vex, Ohm, Lo, Puzzlebox
-ItemDisplay[(r26s OR r27s OR r28s OR lbox) QTY=1 !TOWN]:%NAME%{%NAME%}%SOUNDID-34%%CONTINUE%// 
+ItemDisplay[(r24s OR r25s) QTY=1 !TOWN]:%NAME%{%NAME%}%SOUNDID-4714%%CONTINUE%//
+// Sound notification for Vex, Ohm, Lo, Puzzlebox, and Demonic Cube
+ItemDisplay[(r26s OR r27s OR r28s OR lbox OR imrn) QTY=1 !TOWN]:%NAME%{%NAME%}%SOUNDID-4714%%CONTINUE%// 
 
-// Sound notification for Sur, Ber, Jah, Cham, Zod, and Demonic Cube
-ItemDisplay[(r29s OR r30s OR r31s OR r32s OR r33s OR lbox OR imrn) QTY=1 !TOWN]:%NAME%{%NAME%}%SOUNDID-418%%CONTINUE%// 
+// Sound notification for Sur, Ber, Jah, Cham, Zod
+ItemDisplay[(r29s OR r30s OR r31s OR r32s OR r33s OR lbox) QTY=1 !TOWN]:%NAME%{%NAME%}%SOUNDID-4719%%CONTINUE%// 
 // Sound notification for Horadric Navigator, Horadric Almanac, Skeleton Key
-ItemDisplay[(rid OR rtp OR rkey) !TOWN]:%NAME%{%NAME%}%SOUNDID-418%%CONTINUE%// 
+ItemDisplay[(rid OR rtp OR rkey) !TOWN]:%NAME%{%NAME%}%SOUNDID-4719%%CONTINUE%// 
 // Sound notification for Vial of Lightsong, Lilith's Mirror
-ItemDisplay[(lsvl OR llmr) !TOWN]:%NAME%{%NAME%}%SOUNDID-418%%CONTINUE%// 
+ItemDisplay[(lsvl OR llmr) !TOWN]:%NAME%{%NAME%}%SOUNDID-4719%%CONTINUE%// 
 
 // Sound notification for Diablo Clone, Rathma, and Lucion Boss Materials
 ItemDisplay[(dcma OR dcbl OR dcho OR dcso OR rtma OR rtmo OR rtmv OR luca OR lucb OR lucc OR lucd) QTY=1 !TOWN]:%NAME%{%NAME%}%SOUNDID-1123%%CONTINUE%// 
 
 // Sound notification for Tainted Worldstone Shard
-ItemDisplay[cwss QTY=1 !TOWN]:%NAME%{%NAME%}%SOUNDID-705%%CONTINUE%// 
+ItemDisplay[cwss QTY=1 !TOWN]:%NAME%{%NAME%}%SOUNDID-619%%CONTINUE%// 
 
 // Sound notification for Worldstone Shard
-ItemDisplay[wss QTY=1 !TOWN]:%NAME%{%NAME%}%SOUNDID-31%%CONTINUE%// 
+ItemDisplay[wss QTY=1 !TOWN]:%NAME%{%NAME%}%SOUNDID-4715%%CONTINUE%// 
 
 // Sound notification for Sigils
-ItemDisplay[(ubaa OR ubab OR ubac) QTY=1 !TOWN]:%NAME%{%NAME%}%SOUNDID-4607%%CONTINUE%// 
+ItemDisplay[(ubaa OR ubab OR ubac) QTY=1 !TOWN]:%NAME%{%NAME%}%SOUNDID-4715%%CONTINUE%// 
+
+// Sound notification for Unique Maps
+ItemDisplay[UNI !ID (t51 OR t52 OR t53 OR t54 OR t55 OR t56) !TOWN]:%NAME%{%NAME%}%SOUNDID-4718%%CONTINUE%// 
 
 
 //----------------------------------------------------------------------------------------------------------
@@ -1625,8 +1629,8 @@ ItemDisplay[(NMAG OR MAG OR RARE) MAPTIER=3]:%NAME%%BORDER-8F%%MAP-9B%{%NAME%}%C
 
 ItemDisplay[MAPTIER=4]:%NAME% %ORANGE%T4%BORDER-05%%MAP-62%%DOT-68%%PX-6D%{%RED%145% %WHITE%* %YELLOW%145% %WHITE%* %BLUE%145% %WHITE%* %DARK_GREEN%145% %WHITE%* %ORANGE%120% %WHITE%* %TAN%120%%CL%%NAME%}//
 
-ItemDisplay[(t51 OR t52 OR t54 OR t55 OR t56)]:%PURPLE%\V/  %NAME% %PURPLE%T3 %GOLD%Map  %PURPLE%\V/%BORDER-8F%%MAP-9B%%DOT-5A%%PX-AA%{%NAME%}%CONTINUE%//
-ItemDisplay[t53]:%RED%\V/  %NAME% %RED%T2 %GOLD%Map  %RED%\V/%BORDER-8F%%MAP-9B%%DOT-5A%%PX-AA%{%NAME%}%CONTINUE%//
+ItemDisplay[(t51 OR t52 OR t54 OR t55 OR t56)]:%PURPLE%\V/  %NAME% %PURPLE%T3 %GOLD%Map  %PURPLE%\V/%BORDER-8F%%MAP-9B%%DOT-5A%%PX-AA%{%NAME%}//
+ItemDisplay[t53]:%RED%\V/  %NAME% %RED%T2 %GOLD%Map  %RED%\V/%BORDER-8F%%MAP-9B%%DOT-5A%%PX-AA%{%NAME%}//
 
 ItemDisplay[MAPTIER~1-3 (((MAPTIER=1 STAT372>59) OR (MAPTIER=2 STAT372>69) OR (MAPTIER=3 STAT372>79)) OR STAT375>29 OR STAT370>99 OR STAT373>14)]:%CL%%NAME%{%NAME%}%CONTINUE%//
 ItemDisplay[MAPTIER~1-3 (STAT370>99 OR ((((MAPTIER=1 STAT372>59) OR (MAPTIER=2 STAT372>69) OR (MAPTIER=3 STAT372>79)) OR STAT375>29)))]:%WHITE%%STAT370%%YELLOW%mf %NAME%{%NAME%}%CONTINUE%//
@@ -1642,8 +1646,6 @@ ItemDisplay[MAPTIER~1-3 (((MAPTIER=1 STAT372>59) OR (MAPTIER=2 STAT372>69) OR (M
 ItemDisplay[NMAG MAPTIER~1-3]:%NAME%%DOT-D6%%PX-20%%WHITE%{%NAME%}//
 ItemDisplay[MAG MAPTIER~1-3]:%NAME%%DOT-97%%PX-99%%BLUE%{%NAME%}//
 ItemDisplay[RARE MAPTIER~1-3]:%NAME%%DOT-5E%%PX-6D%%YELLOW%{%NAME%}//
-
-ItemDisplay[UNI !ID (t51 OR t52 OR t53 OR t54 OR t55 OR t56)]:%NAME%%SOUNDID-35%%GOLD%{%NAME%}//
 
 // Arenas
 ItemDisplay[(t61 OR t62)]:%BLUE%\%WHITE%\%BLUE%V%WHITE%/%BLUE%/  %WHITE%%NAME%  %BLUE%\%WHITE%\%BLUE%V%WHITE%/%BLUE%/%WHITE%{%GRAY%Portal can be used for shopping%NL%%TAN%to open Dueling Arena%CL%Right click in Act 1}// Items for PvP arenas
@@ -1661,18 +1663,21 @@ ItemDisplay[ETH UNI]:%WHITE%Eth %NAME%{%NAME%}%CONTINUE%//
 // --------------------------------------------------------------------------------------------------------
 
 // DClone and Rathma Unique Items
-ItemDisplay[UNI !ID rar]:%NAME%%SOUNDID-4651%%CONTINUE%// Cage of the Unsullied Boneweave
-ItemDisplay[UNI !ID ram]:%NAME%%SOUNDID-4651%%CONTINUE%// The Third Eye Amulet
-ItemDisplay[UNI !ID rbe]:%NAME%%SOUNDID-4651%%CONTINUE%// Band of Skulls Troll Belt
-ItemDisplay[UNI !ID uhl]:%NAME%%SOUNDID-4651%%CONTINUE%// Overlord's Helm Giant Conch
-ItemDisplay[UNI !ID utb]:%NAME%%SOUNDID-4651%%CONTINUE%// Itherael's Path Mirrored Boots
-ItemDisplay[UNI !ID 7bs]:%NAME%%SOUNDID-4651%%CONTINUE%// Hadriel's Hand Conquest Sword
-ItemDisplay[UNI !ID (rar OR ram OR rbe OR uhl OR utb OR 7bs)]:%BLUE%X\%TEAL%X\%GREEN%X\O\O/O/X%TEAL%/X%BLUE%/X  %NAME%  %BLUE%X\%TEAL%X\%GREEN%X\O\O/O/X%TEAL%/X%BLUE%/X%GOLD%%BORDER-91%%MAP-97%%DOT-84%%PX-20%// 
+ItemDisplay[UNI !ID (rar OR ram OR rbe OR uhl OR utb OR 7bs OR 7qr OR uth) GROUND !INVENTORY !TOWN]:%PURPLE%xX%RED%xX%ORANGE%xX%TAN%XO%WHITE%X%TAN%OX%ORANGE%Xx%RED%Xx%PURPLE%Xx  %WHITE%BIG GG  %PURPLE%xX%RED%xX%ORANGE%xX%TAN%XO%WHITE%X%TAN%OX%ORANGE%Xx%RED%Xx%PURPLE%Xx%BORDER-9B%%MAP-62%%DOT-68%%PX-20%%SOUNDID-4719%//
 
-ItemDisplay[UNI !ETH !ID 7qr]:%BLUE%X\%TEAL%X\%GREEN%X\O\O/O/X%TEAL%/X%BLUE%/X  %GOLD%Scissors Suwayyah  %BLUE%X\%TEAL%X\%GREEN%X\O\O/O/X%TEAL%/X%BLUE%/X%GOLD%%SOUNDID-4651%%BORDER-91%%MAP-97%%DOT-84%%PX-20%%SOUNDID-4651%// Non-eth Aidan's Scar Scissors Suwayyah
-ItemDisplay[UNI ETH !ID 7qr]:%BLUE%X\%TEAL%X\%GREEN%X\O\O/O/X%TEAL%/X%BLUE%/X  %WHITE%Eth %GOLD%Scis. Suwayyah  %BLUE%X\%TEAL%X\%GREEN%X\O\O/O/X%TEAL%/X%BLUE%/X%GOLD%%SOUNDID-4651%%BORDER-91%%MAP-97%%DOT-84%%PX-20%%SOUNDID-4651%// Eth Aidan's Scar Scissors Suwayyah
-ItemDisplay[UNI !ETH !ID uth]:%BLUE%X\%TEAL%X\%GREEN%X\O\O/O/X%TEAL%/X%BLUE%/X  %GOLD%Lacquered Plate  %BLUE%X\%TEAL%X\%GREEN%X\O\O/O/X%TEAL%/X%BLUE%/X%GOLD%%SOUNDID-4651%%BORDER-91%%MAP-97%%DOT-84%%PX-20%%SOUNDID-4651%// Dark Abyss Lacquered Plate
-ItemDisplay[UNI ETH !ID uth]:%BLUE%X\%TEAL%X\%GREEN%X\O\O/O/X%TEAL%/X%BLUE%/X  %WHITE%Eth %GOLD%Lacq. Plate  %BLUE%X\%TEAL%X\%GREEN%X\O\O/O/X%TEAL%/X%BLUE%/X%GOLD%%SOUNDID-4651%%BORDER-91%%MAP-97%%DOT-84%%PX-20%%SOUNDID-4651%// Dark Abyss Lacquered Plate
+// DClone and Rathma Unique Items
+ItemDisplay[UNI !ID rar (INVENTORY OR TOWN)]:%NAME%%SOUNDID-4719%%CONTINUE%// Cage of the Unsullied Boneweave
+ItemDisplay[UNI !ID ram (INVENTORY OR TOWN)]:%NAME%%SOUNDID-4719%%CONTINUE%// The Third Eye Amulet
+ItemDisplay[UNI !ID rbe (INVENTORY OR TOWN)]:%NAME%%SOUNDID-4719%%CONTINUE%// Band of Skulls Troll Belt
+ItemDisplay[UNI !ID uhl (INVENTORY OR TOWN)]:%NAME%%SOUNDID-4719%%CONTINUE%// Overlord's Helm Giant Conch
+ItemDisplay[UNI !ID utb (INVENTORY OR TOWN)]:%NAME%%SOUNDID-4719%%CONTINUE%// Itherael's Path Mirrored Boots
+ItemDisplay[UNI !ID 7bs (INVENTORY OR TOWN)]:%NAME%%SOUNDID-4719%%CONTINUE%// Hadriel's Hand Conquest Sword
+ItemDisplay[UNI !ID (rar OR ram OR rbe OR uhl OR utb OR 7bs) (INVENTORY OR TOWN)]:%BLUE%X\%TEAL%X\%GREEN%X\O\O/O/X%TEAL%/X%BLUE%/X  %NAME%  %BLUE%X\%TEAL%X\%GREEN%X\O\O/O/X%TEAL%/X%BLUE%/X%GOLD%%BORDER-91%%MAP-97%%DOT-84%%PX-20%// 
+
+ItemDisplay[UNI !ETH !ID 7qr (INVENTORY OR TOWN)]:%BLUE%X\%TEAL%X\%GREEN%X\O\O/O/X%TEAL%/X%BLUE%/X  %GOLD%Scissors Suwayyah  %BLUE%X\%TEAL%X\%GREEN%X\O\O/O/X%TEAL%/X%BLUE%/X%GOLD%%BORDER-91%%MAP-97%%DOT-84%%PX-20%%SOUNDID-4719%// Non-eth Aidan's Scar Scissors Suwayyah
+ItemDisplay[UNI ETH !ID 7qr (INVENTORY OR TOWN)]:%BLUE%X\%TEAL%X\%GREEN%X\O\O/O/X%TEAL%/X%BLUE%/X  %WHITE%Eth %GOLD%Scis. Suwayyah  %BLUE%X\%TEAL%X\%GREEN%X\O\O/O/X%TEAL%/X%BLUE%/X%GOLD%%BORDER-91%%MAP-97%%DOT-84%%PX-20%%SOUNDID-4719%// Eth Aidan's Scar Scissors Suwayyah
+ItemDisplay[UNI !ETH !ID uth (INVENTORY OR TOWN)]:%BLUE%X\%TEAL%X\%GREEN%X\O\O/O/X%TEAL%/X%BLUE%/X  %GOLD%Lacquered Plate  %BLUE%X\%TEAL%X\%GREEN%X\O\O/O/X%TEAL%/X%BLUE%/X%GOLD%%BORDER-91%%MAP-97%%DOT-84%%PX-20%%SOUNDID-4719%// Dark Abyss Lacquered Plate
+ItemDisplay[UNI ETH !ID uth (INVENTORY OR TOWN)]:%BLUE%X\%TEAL%X\%GREEN%X\O\O/O/X%TEAL%/X%BLUE%/X  %WHITE%Eth %GOLD%Lacq. Plate  %BLUE%X\%TEAL%X\%GREEN%X\O\O/O/X%TEAL%/X%BLUE%/X%GOLD%%BORDER-91%%MAP-97%%DOT-84%%PX-20%%SOUNDID-4719%// Dark Abyss Lacquered Plate
 
 // --------------------------------------------------------------------------------------------------------
 // ==============================  High Value and Medium Value Unique Items  ==============================
@@ -1688,8 +1693,8 @@ ItemDisplay[UNI !ID rin]:%BLUE%\\%PURPLE%\\%RED%\\%ORANGE%\\  %GOLD%>  %WHITE%O 
 ItemDisplay[UNI !ID amu]:%BLUE%\\%PURPLE%\\%RED%\\%ORANGE%\\  %GOLD%>  %WHITE%O  %NAME%  %WHITE%O  %GOLD%<  %ORANGE%/%ORANGE%/%RED%/%RED%/%PURPLE%/%PURPLE%/%BLUE%/%BLUE%/%GOLD%%BORDER-93%%MAP-9B%%DOT-62%%PX-A8%%SOUNDID-4714%// All unique amulets
 
 //    Charms
-ItemDisplay[UNI !ID cm1 !TOWN]:%NAME%%SOUNDID-4719%%CONTINUE%// Annihilus
-ItemDisplay[UNI !ID cm2 !TOWN]:%NAME%%SOUNDID-4719%%CONTINUE%// Torch
+ItemDisplay[UNI !ID cm1 !TOWN]:%NAME%%SOUNDID-705%%CONTINUE%// Annihilus
+ItemDisplay[UNI !ID cm2 !TOWN]:%NAME%%SOUNDID-705%%CONTINUE%// Torch
 ItemDisplay[UNI !ID cm3]:%NAME%%SOUNDID-3915%%CONTINUE%// Gheed's Fortune Grand Charm
 ItemDisplay[UNI !ID (cm1 OR cm2 OR cm3)]:%BLUE%\\%PURPLE%\\%RED%\\%ORANGE%\\  %GOLD%>  %WHITE%O  %NAME%  %WHITE%O  %GOLD%<  %ORANGE%/%ORANGE%/%RED%/%RED%/%PURPLE%/%PURPLE%/%BLUE%/%BLUE%/%GOLD%%BORDER-91%%MAP-9B%%DOT-62%%PX-68%//
 
@@ -2260,11 +2265,11 @@ ItemDisplay[ETH RARE]:%WHITE%Eth %NAME%{%NAME%}%CONTINUE%//
 // Rare Jewels
 ItemDisplay[RARE !ID jew]:%PURPLE%\%YELLOW%\ %PURPLE%• %YELLOW%>  %TAN%(x  %YELLOW%%NAME%  %TAN%x)  %YELLOW%< %PURPLE%• %YELLOW%/%PURPLE%/%YELLOW%%BORDER-8F%%MAP-9B%%DOT-5E%%PX-6D%%SOUNDID-4715%// All unidentified rare Jewels
 // Rare Amulets
-ItemDisplay[RARE !ID amu]:%PURPLE%\%YELLOW%\ %PURPLE%• %YELLOW%>  %YELLOW%%NAME%  %YELLOW%< %PURPLE%• %YELLOW%/%PURPLE%/%YELLOW%%BORDER-8F%%MAP-9B%%DOT-5E%%PX-6D%%SOUNDID-4726%// All unidentified rare Amulets
+ItemDisplay[RARE !ID amu]:%PURPLE%\%YELLOW%\ %PURPLE%• %YELLOW%>  %YELLOW%%NAME%  %YELLOW%< %PURPLE%• %YELLOW%/%PURPLE%/%YELLOW%%BORDER-8F%%MAP-9B%%DOT-5E%%PX-6D%%SOUNDID-4715%// All unidentified rare Amulets
 // Rare Circlets
-ItemDisplay[RARE !ID CIRC]:%PURPLE%\%YELLOW%\ %PURPLE%• %YELLOW%>  %YELLOW%%NAME%  %YELLOW%< %PURPLE%• %YELLOW%/%PURPLE%/%YELLOW%%BORDER-8F%%MAP-9B%%DOT-5E%%PX-6D%%SOUNDID-4726%// All unidentified rare Circlets
+ItemDisplay[RARE !ID CIRC]:%PURPLE%\%YELLOW%\ %PURPLE%• %YELLOW%>  %YELLOW%%NAME%  %YELLOW%< %PURPLE%• %YELLOW%/%PURPLE%/%YELLOW%%BORDER-8F%%MAP-9B%%DOT-5E%%PX-6D%%SOUNDID-4715%// All unidentified rare Circlets
 // Rare Rings
-ItemDisplay[RARE !ID rin]:%PURPLE%\%YELLOW%\ %PURPLE%• %YELLOW%>  %YELLOW%%NAME%  %YELLOW%< %PURPLE%• %YELLOW%/%PURPLE%/%YELLOW%%BORDER-8F%%MAP-9B%%DOT-5E%%PX-6D%%SOUNDID-4726%// All unidentified rare Rings
+ItemDisplay[RARE !ID rin]:%PURPLE%\%YELLOW%\ %PURPLE%• %YELLOW%>  %YELLOW%%NAME%  %YELLOW%< %PURPLE%• %YELLOW%/%PURPLE%/%YELLOW%%BORDER-8F%%MAP-9B%%DOT-5E%%PX-6D%%SOUNDID-4715%// All unidentified rare Rings
 
 // Rare Arrows and Bolts
 ItemDisplay[RARE !ID QUIVER FILTLVL>7 !AMAZON !TOWN]:// Hide rare arrows on filter levels 8-12 if character is not an Amazon
@@ -2446,7 +2451,7 @@ ItemDisplay[RARE !ID ETH (FILTLVL~8-9 OR FILTLVL=11) (wrb OR 9wb OR 7wb OR ces O
 // -------------------------------------------------------------------------------------------------------
 
 // Hide Magic Items on Filter Level 12
-ItemDisplay[MAG !ID (FILTLVL=10 OR FILTLVL=12) (ARMOR OR WEAPON) !(MAG CIRC) !TOWN]://
+ItemDisplay[MAG !ID (FILTLVL=10 OR FILTLVL=12) (ARMOR OR WEAPON) !TOWN]://
 
 // Keep orginal coloring for items
 ItemDisplay[MAG FILTLVL>0]:%BLUE%%BASENAME%{%NAME%}%CONTINUE%//
@@ -2492,7 +2497,6 @@ ItemDisplay[MAG !ID rin CLVL>19 FILTLVL<2]:%TAN%*  %BLUE%%NAME%  %TAN%*%BLUE%// 
 // Magic Circlets
 ItemDisplay[MAG !ID ETH CIRC CLVL>79 FILTLVL>2 !TOWN]://
 ItemDisplay[MAG !ID CIRC FILTLVL<8]:%TAN%o  %BLUE%%NAME%  %TAN%o%BLUE%%BORDER-91%%MAP-97%%DOT-5A%%PX-DA%// Notify for magic circlets before character level 80
-ItemDisplay[MAG !ID CIRC FILTLVL~8-11]:%TAN%o  %BLUE%%NAME%  %TAN%o%BLUE%// Do not notify for magic circlets after character level 80
 
 // Magic Jewels
 ItemDisplay[jewf QTY>1]:%TAN%(x %BLUE%Jewel %TAN%x) %WHITE%Fragments %TAN%x %WHITE%%QTY%{%BLUE%Jewel %WHITE%when crafting%CL%%WHITE%Use in place of a}%MAP-91%%DOT-97%%PX-A6%// Jewel fragments
