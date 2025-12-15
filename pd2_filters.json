@@ -259,6 +259,45 @@
         }
     ],
     [
+        "PreyInstinct",
+        {
+            "info": {
+                "name": "Loot Goblin Filter",
+                "url": "https://api.github.com/repos/PreyInstinct/Loot-Goblin-Filter/contents",
+                "author": "PreyInstinct"
+            },
+            "filters": [
+                {
+                    "name": "Loot_Goblin.filter",
+                    "url": "https://api.github.com/repos/PreyInstinct/Loot-Goblin-Filter/contents/Loot_Goblin.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/PreyInstinct/Loot-Goblin-Filter/main/Loot_Goblin.filter"
+                },
+                {
+                    "name": "Loot_Goblin_experimental.filter",
+                    "url": "https://api.github.com/repos/PreyInstinct/Loot-Goblin-Filter/contents/Loot_Goblin_experimental.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/PreyInstinct/Loot-Goblin-Filter/main/Loot_Goblin_experimental.filter"
+                }
+            ]
+        }
+    ],
+    [
+        "Roofoo",
+        {
+            "info": {
+                "name": "Roofoo's Filter",
+                "url": "https://api.github.com/repos/RoofooEvazan/Roofoo-s-PD2-Loot-Filter/contents",
+                "author": "Roofoo"
+            },
+            "filters": [
+                {
+                    "name": "Roofoo.filter",
+                    "url": "https://api.github.com/repos/RoofooEvazan/Roofoo-s-PD2-Loot-Filter/contents/Roofoo.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/RoofooEvazan/Roofoo-s-PD2-Loot-Filter/main/Roofoo.filter"
+                }
+            ]
+        }
+    ],
+    [
         "Sven",
         {
             "info": {
