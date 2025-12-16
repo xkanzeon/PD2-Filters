@@ -1,9 +1,26 @@
-// DAURACUL'S LOOT FILTER Season 12.0
-// Last updated: 11/23/25
+// DAURACUL'S LOOT FILTER Season 12.1
+// Last updated: 12/15/25
 // For any bug reports/feedback contact @Dauracul in the PD2 Discord #lootfilter channel
 
 // NOTE: IF YOU WISH TO MAKE EDITS TO THIS LOOTFILTER, PLEASE BE AWARE IT USES 'ANSI' ENCODING -- WITHOUT THIS ENCODING, CERTAIN CHARACTERS WILL DISPLAY INCORRECTLY 
 // (In Notepad++, select ANSI from the Encoding menu prior to saving)
+
+// 12.1
+// Fixed display of purple 'catalyzed' tag on maps that have been given a Catalyst Shard
+// Weapon Speed and item quality notes (norm/exceptional/elite) will now be hidden while an item is inside Horadric Cube (to save on character limit for crafting notes) - fixes an issue where sometimes crafting notes are cut off with a "..."
+// Fixed a display issue with upgrade notes on rare/crafted/unique Poleaxes and Nagas
+// Corrected Ruined Cistern Map immunities
+// Corrected normal Arrows and Bolts not properly displaying the normal¹ tag
+// Normal Arrows and Bolts are now properly hidden in maps
+// Uber Ancients loot and Lucion's Vault will now hide all Magic items unless they are Jewelry or Charms
+// Identified Rainbow Facet jewels will now show the mastery/pierce rolls in the item name
+// Added indicator of tri-res on rare/craft/magic items that roll triple resists (should also help save on character limit space)
+
+// KNOWN ISSUES
+// Items that roll All Resist + two additional resists higher than All Resist will not display the additional resists - I tried to get this working but it's too complex unless filtering can perform mathematical functions in the future, would like to do this eventually
+// Sometimes item names will begin to get truncated if too many notes show in the item name
+// Sometimes Crafting notes will begin to get truncated in the Horadric Cube if there are too many affixes on the item
+// Sometimes item notes will begin to get truncated if there are too many affixes on the item (usually this impacts the Weapon Speed line on weapons) 
 
 // 12.0 
 // Significant visual changes - let me know in #lootfilter on Discord for any feedback
@@ -27,8 +44,7 @@
     //***Due to character limits, Rare items inside the Cube need to hide the notes for stat requirements upon upgrading but the upgrade recipe itself should remain visible
 // Touched up starter equipment flavor text
 
-// Season 12 Checklist:
-// - Find out Halls of Torture immunities
+
 
 // LET THE FILTERING BEGIN
 
@@ -38,7 +54,7 @@ ItemDisplayFilterName[]:Mid Runeword Notes (Displayed on socketed non-magic base
 ItemDisplayFilterName[]:High Runeword Notes (Displayed on socketed non-magic bases)
 
 // Release Notes on Identify Scrolls (in Town at Vendors)
-ItemDisplay[isc SHOP]: %NAME%{%NAME%%BLUE%wiki.projectdiablo2.com%NL%%NL%%DARK_GREEN%For full Season 12 patch notes, visit the Project Diablo 2 Wiki:%NL%%DARK_GREEN%(View the filter file for patch notes)%NL%%PURPLE%Season 12: Suffering%NL%%TAN%Last Updated: 11-23-2025%NL%%NL%%ORANGE%the PD2 Discord #lootfilter channel.%NL%For any bug reports or feedback, contact @Dauracul in%NL%runeword recipes on socketed weapon and armor bases.%NL%Use the filter levels in settings to display%NL%%NL%%GOLD%Dauracul's PD2 Loot Filter %RED%v12.0}
+ItemDisplay[isc SHOP]: %NAME%{%NAME%%BLUE%wiki.projectdiablo2.com%NL%%NL%%DARK_GREEN%For full Season 12 patch notes, visit the Project Diablo 2 Wiki:%NL%%DARK_GREEN%(View the filter file for patch notes)%NL%%PURPLE%Season 12: Suffering%NL%%TAN%Last Updated: 12-15-2025%NL%%NL%%ORANGE%the PD2 Discord #lootfilter channel.%NL%For any bug reports or feedback, contact @Dauracul in%NL%runeword recipes on socketed weapon and armor bases.%NL%Use the filter levels in settings to display%NL%%NL%%GOLD%Dauracul's PD2 Loot Filter %RED%v12.1}
 
 // ALIASES
 
@@ -75,6 +91,8 @@ Alias[QUIVERS]: (aqv OR aqv2 OR aqv3 OR cqv OR cqv2 OR cqv3)
 Alias[TOWN]: (MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109)
 
 Alias[PD2Items]: (crfb OR crfc OR crfs OR crfh OR crfv OR crfu OR crfp OR wss OR lbox OR lpp OR iwss OR lsvl OR imrn OR llmr OR imma OR irma OR imra OR irra OR upma OR urma OR rera OR rrra OR scou OR upmp OR scrb OR std OR fort OR iwss OR dcso OR dcbl OR dcho OR rtmo OR rtmv OR lucb OR lucc OR lucd OR ubaa OR ubab OR ubac OR pk1 OR pk2 OR pk3 OR dhn OR bey OR mbr OR t11 OR t12 OR t13 OR t14 OR t15 OR t16 OR t17 OR t21 OR t22 OR t23 OR t24 OR t25 OR t26 OR t27 OR t28 OR t31 OR t32 OR t33 OR t34 OR t35 OR t36 OR t37 OR t38 OR t39 OR t3a OR t51 OR t52 OR t53 OR t54 OR t55 OR t56 OR cm2f OR cwss OR rtp OR rid)
+
+Alias[TRIRES]: ((LRES>0 FRES>0 CRES>0 !RES>0) OR (LRES>0 FRES>0 PRES>0 !RES>0) OR (PRES>0 FRES>0 CRES>0 !RES>0) OR (CRES>0 LRES>0 PRES>0 !RES>0))
 
 
 
@@ -448,7 +466,7 @@ ItemDisplay[rrra]: %TEAL%Infused Horadrim Orb%CONTINUE%
 //ItemDisplay[iwss]: %NAME%{%NAME%%BLUE%Map Contains a Random Event%NL%%WHITE%Transmute with a %ORANGE%Map %WHITE%to add %ORANGE%Catalyzed}%CONTINUE%
 
 // Map has Random Event applied (Catalyst Shard)
-ItemDisplay[(t11 OR t12 OR t13 OR t14 OR t15 OR t16 OR t17 OR t21 OR t22 OR t23 OR t24 OR t25 OR t26 OR t27 OR t28 OR t31 OR t32 OR t33 OR t34 OR t35 OR t36 OR t37 OR t38 OR t39 OR t3a OR t51 OR t52 OR t53 or t54 or t55 OR t56) STAT500>0]: %NAME%{%NAME%%PURPLE%Catalyzed%CL%}%CONTINUE%
+ItemDisplay[(t11 OR t12 OR t13 OR t14 OR t15 OR t16 OR t17 OR t21 OR t22 OR t23 OR t24 OR t25 OR t26 OR t27 OR t28 OR t31 OR t32 OR t33 OR t34 OR t35 OR t36 OR t37 OR t38 OR t39 OR t3a OR t51 OR t52 OR t53 OR t54 OR t55 OR t56) STAT500>0]: %NAME%{%NAME%%PURPLE%Catalyzed%CL%}%CONTINUE%
 
 // Gems
 
@@ -526,7 +544,7 @@ ItemDisplay[t14]: %NAME%{%NAME%%YELLOW%Lightning %GREEN%Poison%NL%%WHITE%Immunit
 ItemDisplay[t15]: %NAME%{%NAME%%ORANGE%Magic %BLUE%Cold %GREEN%Poison%NL%%WHITE%Immunities:}%CONTINUE%
 
 //Ruined Cistern
-ItemDisplay[t16]: %NAME%{%NAME%%ORANGE%Magic %RED%Fire %BLUE%Cold%NL%%WHITE%Immunities:}%CONTINUE%
+ItemDisplay[t16]: %NAME%{%NAME%%ORANGE%Magic %YELLOW%Lightning %BLUE%Cold%NL%%WHITE%Immunities:}%CONTINUE%
 
 //Halls of Torture 
 ItemDisplay[t17]: %NAME%{%NAME%%CORAL%To Be Determined%NL%%WHITE%Immunities:}%CONTINUE%
@@ -1828,7 +1846,7 @@ ItemDisplay[NMAG SOCK>1 !RW PALADIN_STAFFMODS]: %NL%%NAME%{%NAME%}%CONTINUE%
 
 // Closing brackets on Scepters with Staffmods
 ItemDisplay[NMAG SOCK=0 !RW PALADIN_STAFFMODS]: %GRAY%)%NAME%{%NAME%}%CONTINUE%
-ItemDisplay[NMAG SOCK>1 !RW PALADIN_STAFFMODS)]: %GRAY%)%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[NMAG SOCK>1 !RW PALADIN_STAFFMODS]: %GRAY%)%NAME%{%NAME%}%CONTINUE%
 
 // Scepters with skills to Sacrifice
 ItemDisplay[NMAG SOCK=0 !RW SK96=1]: %DARK_GREEN%+1%TAN%scrfc%NAME%{%NAME%}%CONTINUE%
@@ -2502,14 +2520,14 @@ ItemDisplay[NMAG SOCK=0 !RW SK141=3]: %GREEN%+3%TAN%cr%NAME%{%NAME%}%CONTINUE%
 ItemDisplay[NMAG SOCK>1 !RW SK141=3]: %GREEN%+3%TAN%cr%NAME%{%NAME%}%CONTINUE%
 
 // Barb Helms with skills to Find Item
-ItemDisplay[NMAG SOCK=0 !RW SK142=1]: %DARK_GREEN%+1%TAN%fitm%NAME%{%NAME%}%CONTINUE%
-ItemDisplay[NMAG SOCK>1 !RW SK142=1]: %DARK_GREEN%+1%TAN%fitm%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[NMAG SOCK=0 !RW SK142=1]: %DARK_GREEN%+1%TAN%item%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[NMAG SOCK>1 !RW SK142=1]: %DARK_GREEN%+1%TAN%item%NAME%{%NAME%}%CONTINUE%
 
-ItemDisplay[NMAG SOCK=0 !RW SK142=2]: %DARK_GREEN%+2%TAN%fitm%NAME%{%NAME%}%CONTINUE%
-ItemDisplay[NMAG SOCK>1 !RW SK142=2]: %DARK_GREEN%+2%TAN%fitm%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[NMAG SOCK=0 !RW SK142=2]: %DARK_GREEN%+2%TAN%item%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[NMAG SOCK>1 !RW SK142=2]: %DARK_GREEN%+2%TAN%item%NAME%{%NAME%}%CONTINUE%
 
-ItemDisplay[NMAG SOCK=0 !RW SK142=3]: %GREEN%+3%TAN%fitm%NAME%{%NAME%}%CONTINUE%
-ItemDisplay[NMAG SOCK>1 !RW SK142=3]: %GREEN%+3%TAN%fitm%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[NMAG SOCK=0 !RW SK142=3]: %GREEN%+3%TAN%item%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[NMAG SOCK>1 !RW SK142=3]: %GREEN%+3%TAN%item%NAME%{%NAME%}%CONTINUE%
 
 // Barb Helms with skills to Leap Attack
 ItemDisplay[NMAG SOCK=0 !RW SK143=1]: %DARK_GREEN%+1%TAN%latk%NAME%{%NAME%}%CONTINUE%
@@ -5193,9 +5211,9 @@ ItemDisplay[(SET OR UNI OR RARE OR CRAFT) ID (axe OR lax OR tax OR lxb OR cap OR
 
 // Level 23
 // Required Level (if current item already has higher ReqLvl than the upgraded base)
-ItemDisplay[(SET OR UNI OR RARE OR CRAFT) ID (mac OR sbr OR lbw OR lst) LVLREQ>22 !CUBE]: %NAME%{%NAME% %GRAY%| %CORAL%Level %LVLREQ%%CL%}%CONTINUE%
+ItemDisplay[(SET OR UNI OR RARE OR CRAFT) ID (mac OR sbr OR lbw OR lst OR pax) LVLREQ>22 !CUBE]: %NAME%{%NAME% %GRAY%| %CORAL%Level %LVLREQ%%CL%}%CONTINUE%
 // Required Level (if current item has lower ReqLvl than the upgraded base)
-ItemDisplay[(SET OR UNI OR RARE OR CRAFT) ID (mac OR sbr OR lbw OR lst) LVLREQ<23 !CUBE]: %NAME%{%NAME% %GRAY%| %CORAL%Level 23%CL%}%CONTINUE%
+ItemDisplay[(SET OR UNI OR RARE OR CRAFT) ID (mac OR sbr OR lbw OR lst OR pax) LVLREQ<23 !CUBE]: %NAME%{%NAME% %GRAY%| %CORAL%Level 23%CL%}%CONTINUE%
 
 // Level 24
 // Required Level (if current item already has higher ReqLvl than the upgraded base)
@@ -5493,9 +5511,9 @@ ItemDisplay[(SET OR UNI OR RARE OR CRAFT) ID (ob9) LVLREQ<63 !CUBE]: %NAME%{%NAM
 
 // Level 64
 // Required Level (if current item already has higher ReqLvl than the upgraded base)
-ItemDisplay[(SET OR UNI OR RARE OR CRAFT) ID (9gw OR 9qr OR xul OR xhg) LVLREQ>63 !CUBE]: %NAME%{%NAME% %GRAY%| %CORAL%Level %LVLREQ%%CL%}%CONTINUE%
+ItemDisplay[(SET OR UNI OR RARE OR CRAFT) ID (9gw OR 9qr OR xul OR xhg OR 9wa) LVLREQ>63 !CUBE]: %NAME%{%NAME% %GRAY%| %CORAL%Level %LVLREQ%%CL%}%CONTINUE%
 // Required Level (if current item has lower ReqLvl than the upgraded base)
-ItemDisplay[(SET OR UNI OR RARE OR CRAFT) ID (9gw OR 9qr OR xul OR xhg) LVLREQ<64 !CUBE]: %NAME%{%NAME% %GRAY%| %CORAL%Level 64%CL%}%CONTINUE%
+ItemDisplay[(SET OR UNI OR RARE OR CRAFT) ID (9gw OR 9qr OR xul OR xhg OR 9wa) LVLREQ<64 !CUBE]: %NAME%{%NAME% %GRAY%| %CORAL%Level 64%CL%}%CONTINUE%
 
 // Level 64 Circlet Display Fix
 // Required Level (if current item already has higher ReqLvl than the upgraded base)
@@ -5562,17 +5580,17 @@ ItemDisplay[NMAG WEAPON !THROW_POTS SOCK=0]: %NAME%{%NAME%%GRAY%Add Sockets: %OR
 
 
 // Tags for Normal, Exceptional, Elite Bases
-ItemDisplay[(NORM OR aqv OR cqv) !MISC !RW !ASSASSIN]: %NAME%%TAN%¹{%NAME%%TAN%¹%WHITE%Normal Quality %CL%}%CONTINUE%
-ItemDisplay[(EXC OR aqv2 OR cqv2) !RW !ASSASSIN]: %NAME%%TAN%²{%NAME%%TAN%²%WHITE%Exceptional Quality %CL%}%CONTINUE%
-ItemDisplay[(ELT OR aqv3 OR cqv3) !RW !ASSASSIN]: %NAME%%TAN%³{%NAME%%TAN%³%WHITE%Elite Quality %CL%}%CONTINUE%
+ItemDisplay[(NORM OR aqv OR cqv) !(MISC !(aqv OR cqv)) !RW !ASSASSIN !CUBE]: %NAME%%TAN%¹{%NAME%%TAN%¹%WHITE%Normal Quality %CL%}%CONTINUE%
+ItemDisplay[(EXC OR aqv2 OR cqv2) !RW !ASSASSIN !CUBE]: %NAME%%TAN%²{%NAME%%TAN%²%WHITE%Exceptional Quality %CL%}%CONTINUE%
+ItemDisplay[(ELT OR aqv3 OR cqv3) !RW !ASSASSIN !CUBE]: %NAME%%TAN%³{%NAME%%TAN%³%WHITE%Elite Quality %CL%}%CONTINUE%
 
 // Tags for Normal, Exceptional, Elite Bases adjusted to display Kick damage on Set Boots for Assassins
-ItemDisplay[(NORM OR aqv OR cqv) !MISC !(SET BOOTS) !RW ASSASSIN]: %NAME%%TAN%¹{%NAME%%TAN%¹%WHITE%Normal Quality%CL%}%CONTINUE%
-ItemDisplay[(EXC OR aqv2 OR cqv2) !(SET BOOTS) !RW ASSASSIN]: %NAME%%TAN%²{%NAME%%TAN%²%WHITE%Exceptional Quality%CL%}%CONTINUE%
-ItemDisplay[(ELT OR aqv3 OR cqv3) !(SET BOOTS) !RW ASSASSIN]: %NAME%%TAN%³{%NAME%%TAN%³%WHITE%Elite Quality%CL%}%CONTINUE%
-ItemDisplay[SET BOOTS NORM !RW ASSASSIN]: %NAME%%TAN%¹{%NAME%%TAN%¹%WHITE%Normal Quality%CL%}%CONTINUE%
-ItemDisplay[SET BOOTS EXC !RW ASSASSIN]: %NAME%%TAN%²{%NAME%%TAN%²%WHITE%Exceptional Quality%CL%}%CONTINUE%
-ItemDisplay[SET BOOTS ELT !RW ASSASSIN]: %NAME%%TAN%³{%NAME%%TAN%³%WHITE%Elite Quality%CL%}%CONTINUE%
+ItemDisplay[(NORM OR aqv OR cqv) !(MISC !(aqv OR cqv)) !(SET BOOTS) !RW ASSASSIN !CUBE]: %NAME%%TAN%¹{%NAME%%TAN%¹%WHITE%Normal Quality%CL%}%CONTINUE%
+ItemDisplay[(EXC OR aqv2 OR cqv2) !(SET BOOTS) !RW ASSASSIN !CUBE]: %NAME%%TAN%²{%NAME%%TAN%²%WHITE%Exceptional Quality%CL%}%CONTINUE%
+ItemDisplay[(ELT OR aqv3 OR cqv3) !(SET BOOTS) !RW ASSASSIN !CUBE]: %NAME%%TAN%³{%NAME%%TAN%³%WHITE%Elite Quality%CL%}%CONTINUE%
+ItemDisplay[SET BOOTS NORM !RW ASSASSIN !CUBE]: %NAME%%TAN%¹{%NAME%%TAN%¹%WHITE%Normal Quality%CL%}%CONTINUE%
+ItemDisplay[SET BOOTS EXC !RW ASSASSIN !CUBE]: %NAME%%TAN%²{%NAME%%TAN%²%WHITE%Exceptional Quality%CL%}%CONTINUE%
+ItemDisplay[SET BOOTS ELT !RW ASSASSIN !CUBE]: %NAME%%TAN%³{%NAME%%TAN%³%WHITE%Elite Quality%CL%}%CONTINUE%
 
 // Show me Kick Damage on Set Boots (Assassin Only) - Updated for S5 Damage
 ItemDisplay[lbt SET ASSASSIN]: %NAME%{%NAME%%WHITE%Kick Damage: 3 to 8}%CONTINUE%
@@ -5594,370 +5612,370 @@ ItemDisplay[uhb SET ASSASSIN]: %NAME%{%NAME%%WHITE%Kick Damage: 83 to 155}%CONTI
 // BASE WEAPON SPEEDS
 
 // Normal Axes
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%20%WHITE%}%CONTINUE%
-ItemDisplay[(axe OR 2ax OR btx OR gix)]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%10%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%5%WHITE%}%CONTINUE%
-ItemDisplay[(hax OR wax OR bax)]: %NAME%{%NAME%%WHITE%Weapon Speed: %WHITE%0%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-5%WHITE%}%CONTINUE%
-ItemDisplay[(mpi OR lax OR gax)]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-10%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-15%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-20%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-30%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%20%WHITE%}%CONTINUE%
+ItemDisplay[(axe OR 2ax OR btx OR gix) !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%10%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%5%WHITE%}%CONTINUE%
+ItemDisplay[(hax OR wax OR bax) !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %WHITE%0%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-5%WHITE%}%CONTINUE%
+ItemDisplay[(mpi OR lax OR gax) !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-10%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-15%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-20%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-30%WHITE%}%CONTINUE%
 
 // Exceptional Axes
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%20%WHITE%}%CONTINUE%
-ItemDisplay[(9ax OR 92a OR 9bt OR 9gi)]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%10%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%5%WHITE%}%CONTINUE%
-ItemDisplay[(9ha OR 9wa OR 9ba)]: %NAME%{%NAME%%WHITE%Weapon Speed: %WHITE%0%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-5%WHITE%}%CONTINUE%
-ItemDisplay[(9mp OR 9la OR 9ga)]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-10%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-15%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-20%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-30%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%20%WHITE%}%CONTINUE%
+ItemDisplay[(9ax OR 92a OR 9bt OR 9gi) !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%10%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%5%WHITE%}%CONTINUE%
+ItemDisplay[(9ha OR 9wa OR 9ba) !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %WHITE%0%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-5%WHITE%}%CONTINUE%
+ItemDisplay[(9mp OR 9la OR 9ga) !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-10%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-15%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-20%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-30%WHITE%}%CONTINUE%
 
 // Elite Axes
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%20%WHITE%}%CONTINUE%
-ItemDisplay[(7ax OR 72a OR 7bt OR 7gi)]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%10%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%5%WHITE%}%CONTINUE%
-ItemDisplay[(7ha OR 7wa OR 7ba)]: %NAME%{%NAME%%WHITE%Weapon Speed: %WHITE%0%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-5%WHITE%}%CONTINUE%
-ItemDisplay[(7mp OR 7ga)]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-10%WHITE%}%CONTINUE%
-ItemDisplay[7la]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-15%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-20%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-30%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%20%WHITE%}%CONTINUE%
+ItemDisplay[(7ax OR 72a OR 7bt OR 7gi) !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%10%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%5%WHITE%}%CONTINUE%
+ItemDisplay[(7ha OR 7wa OR 7ba) !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %WHITE%0%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-5%WHITE%}%CONTINUE%
+ItemDisplay[(7mp OR 7ga) !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-10%WHITE%}%CONTINUE%
+ItemDisplay[7la !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-15%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-20%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-30%WHITE%}%CONTINUE%
 
 // Normal Maces
-ItemDisplay[(whm OR gma)]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%20%WHITE%}%CONTINUE%
-ItemDisplay[(mst OR mau)]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%10%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%5%WHITE%}%CONTINUE%
-ItemDisplay[(spc OR mac)]: %NAME%{%NAME%%WHITE%Weapon Speed: %WHITE%0%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-5%WHITE%}%CONTINUE%
-ItemDisplay[(clb OR fla)]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-10%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-15%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-20%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-30%WHITE%}%CONTINUE%
+ItemDisplay[(whm OR gma) !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%20%WHITE%}%CONTINUE%
+ItemDisplay[(mst OR mau) !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%10%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%5%WHITE%}%CONTINUE%
+ItemDisplay[(spc OR mac) !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %WHITE%0%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-5%WHITE%}%CONTINUE%
+ItemDisplay[(clb OR fla) !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-10%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-15%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-20%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-30%WHITE%}%CONTINUE%
 
 // Exceptional Maces
-ItemDisplay[(9wh OR 9gm)]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%20%WHITE%}%CONTINUE%
-ItemDisplay[(9mt OR 9m9)]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%10%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%5%WHITE%}%CONTINUE%
-ItemDisplay[(9sp OR 9ma)]: %NAME%{%NAME%%WHITE%Weapon Speed: %WHITE%0%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-5%WHITE%}%CONTINUE%
-ItemDisplay[(9cl OR 9fl)]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-10%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-15%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-20%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-30%WHITE%}%CONTINUE%
+ItemDisplay[(9wh OR 9gm) !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%20%WHITE%}%CONTINUE%
+ItemDisplay[(9mt OR 9m9) !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%10%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%5%WHITE%}%CONTINUE%
+ItemDisplay[(9sp OR 9ma) !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %WHITE%0%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-5%WHITE%}%CONTINUE%
+ItemDisplay[(9cl OR 9fl) !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-10%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-15%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-20%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-30%WHITE%}%CONTINUE%
 
 // Elite Maces
-ItemDisplay[(7wh OR 7gm)]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%20%WHITE%}%CONTINUE%
-ItemDisplay[(7mt OR 7m7)]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%10%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%5%WHITE%}%CONTINUE%
-ItemDisplay[(7sp OR 7ma)]: %NAME%{%NAME%%WHITE%Weapon Speed: %WHITE%0%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-5%WHITE%}%CONTINUE%
-ItemDisplay[(7cl OR 7fl)]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-10%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-15%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-20%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-30%WHITE%}%CONTINUE%
+ItemDisplay[(7wh OR 7gm) !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%20%WHITE%}%CONTINUE%
+ItemDisplay[(7mt OR 7m7) !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%10%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%5%WHITE%}%CONTINUE%
+ItemDisplay[(7sp OR 7ma) !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %WHITE%0%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-5%WHITE%}%CONTINUE%
+ItemDisplay[(7cl OR 7fl) !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-10%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-15%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-20%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-30%WHITE%}%CONTINUE%
 
 // Normal Swords
-ItemDisplay[flc]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%20%WHITE%}%CONTINUE%
-ItemDisplay[clm OR bsw OR gsd]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%10%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%5%WHITE%}%CONTINUE%
-ItemDisplay[(ssd OR crs OR bsd OR wsd OR 2hs OR gis)]: %NAME%{%NAME%%WHITE%Weapon Speed: %WHITE%0%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-5%WHITE%}%CONTINUE%
-ItemDisplay[(sbr OR lsd OR flb)]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-10%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-15%WHITE%}%CONTINUE%
-ItemDisplay[scm]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-20%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-30%WHITE%}%CONTINUE%
+ItemDisplay[flc !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%20%WHITE%}%CONTINUE%
+ItemDisplay[clm OR bsw OR gsd !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%10%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%5%WHITE%}%CONTINUE%
+ItemDisplay[(ssd OR crs OR bsd OR wsd OR 2hs OR gis) !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %WHITE%0%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-5%WHITE%}%CONTINUE%
+ItemDisplay[(sbr OR lsd OR flb) !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-10%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-15%WHITE%}%CONTINUE%
+ItemDisplay[scm !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-20%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-30%WHITE%}%CONTINUE%
 
 // Exceptional Swords
-ItemDisplay[9fc]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%20%WHITE%}%CONTINUE%
-ItemDisplay[(9cm OR 9b9 OR 9gd)]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%10%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%5%WHITE%}%CONTINUE%
-ItemDisplay[(9ss OR 9cr OR 9bs OR 9wd OR 92h OR 9gs)]: %NAME%{%NAME%%WHITE%Weapon Speed: %WHITE%0%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-5%WHITE%}%CONTINUE%
-ItemDisplay[(9sb OR 9ls OR 9fb)]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-10%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-15%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-20%WHITE%}%CONTINUE%
-ItemDisplay[9sm]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-30%WHITE%}%CONTINUE%
+ItemDisplay[9fc !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%20%WHITE%}%CONTINUE%
+ItemDisplay[(9cm OR 9b9 OR 9gd) !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%10%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%5%WHITE%}%CONTINUE%
+ItemDisplay[(9ss OR 9cr OR 9bs OR 9wd OR 92h OR 9gs) !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %WHITE%0%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-5%WHITE%}%CONTINUE%
+ItemDisplay[(9sb OR 9ls OR 9fb) !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-10%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-15%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-20%WHITE%}%CONTINUE%
+ItemDisplay[9sm !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-30%WHITE%}%CONTINUE%
 
 // Elite Swords
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%20%WHITE%}%CONTINUE%
-ItemDisplay[(7fc OR 7fb)]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%10%WHITE%}%CONTINUE%
-ItemDisplay[7gd]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%5%WHITE%}%CONTINUE%
-ItemDisplay[(7ss OR 7bs OR 7wd OR 7gs)]: %NAME%{%NAME%%WHITE%Weapon Speed: %WHITE%0%WHITE%}%CONTINUE%
-ItemDisplay[7cm]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-5%WHITE%}%CONTINUE%
-ItemDisplay[(7sb OR 7ls OR 7b7)]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-10%WHITE%}%CONTINUE%
-ItemDisplay[72h]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-15%WHITE%}%CONTINUE%
-ItemDisplay[7sm]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-20%WHITE%}%CONTINUE%
-ItemDisplay[(7cr OR 7cr2)]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-30%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%20%WHITE%}%CONTINUE%
+ItemDisplay[(7fc OR 7fb) !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%10%WHITE%}%CONTINUE%
+ItemDisplay[7gd !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%5%WHITE%}%CONTINUE%
+ItemDisplay[(7ss OR 7bs OR 7wd OR 7gs) !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %WHITE%0%WHITE%}%CONTINUE%
+ItemDisplay[7cm !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-5%WHITE%}%CONTINUE%
+ItemDisplay[(7sb OR 7ls OR 7b7) !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-10%WHITE%}%CONTINUE%
+ItemDisplay[72h !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-15%WHITE%}%CONTINUE%
+ItemDisplay[7sm !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-20%WHITE%}%CONTINUE%
+ItemDisplay[(7cr OR 7cr2) !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-30%WHITE%}%CONTINUE%
 
 // Normal Daggers
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%20%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%10%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%5%WHITE%}%CONTINUE%
-ItemDisplay[dir]: %NAME%{%NAME%%WHITE%Weapon Speed: %WHITE%0%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-5%WHITE%}%CONTINUE%
-ItemDisplay[bld]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-10%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-15%WHITE%}%CONTINUE%
-ItemDisplay[(dgr OR kri)]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-20%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-30%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%20%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%10%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%5%WHITE%}%CONTINUE%
+ItemDisplay[dir !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %WHITE%0%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-5%WHITE%}%CONTINUE%
+ItemDisplay[bld !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-10%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-15%WHITE%}%CONTINUE%
+ItemDisplay[(dgr OR kri) !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-20%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-30%WHITE%}%CONTINUE%
 
 // Exceptional Daggers
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%20%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%10%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%5%WHITE%}%CONTINUE%
-ItemDisplay[9di]: %NAME%{%NAME%%WHITE%Weapon Speed: %WHITE%0%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-5%WHITE%}%CONTINUE%
-ItemDisplay[9bl]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-10%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-15%WHITE%}%CONTINUE%
-ItemDisplay[(9dg OR 9kr)]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-20%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-30%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%20%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%10%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%5%WHITE%}%CONTINUE%
+ItemDisplay[9di !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %WHITE%0%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-5%WHITE%}%CONTINUE%
+ItemDisplay[9bl !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-10%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-15%WHITE%}%CONTINUE%
+ItemDisplay[(9dg OR 9kr) !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-20%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-30%WHITE%}%CONTINUE%
 
 // Elite Daggers
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%20%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%10%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%5%WHITE%}%CONTINUE%
-ItemDisplay[7di]: %NAME%{%NAME%%WHITE%Weapon Speed: %WHITE%0%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-5%WHITE%}%CONTINUE%
-ItemDisplay[7bl]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-10%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-15%WHITE%}%CONTINUE%
-ItemDisplay[(7dg OR 7kr)]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-20%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-30%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%20%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%10%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%5%WHITE%}%CONTINUE%
+ItemDisplay[7di !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %WHITE%0%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-5%WHITE%}%CONTINUE%
+ItemDisplay[7bl !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-10%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-15%WHITE%}%CONTINUE%
+ItemDisplay[(7dg OR 7kr) !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-20%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-30%WHITE%}%CONTINUE%
 
 // Normal Throwing/Javelins
-ItemDisplay[glv]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%20%WHITE%}%CONTINUE%
-ItemDisplay[(tax OR ssp)]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%10%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%5%WHITE%}%CONTINUE%
-ItemDisplay[(tkf OR pil)]: %NAME%{%NAME%%WHITE%Weapon Speed: %WHITE%0%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-5%WHITE%}%CONTINUE%
-ItemDisplay[(bal OR jav OR tsp)]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-10%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-15%WHITE%}%CONTINUE%
-ItemDisplay[bkf]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-20%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-30%WHITE%}%CONTINUE%
+ItemDisplay[glv !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%20%WHITE%}%CONTINUE%
+ItemDisplay[(tax OR ssp) !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%10%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%5%WHITE%}%CONTINUE%
+ItemDisplay[(tkf OR pil) !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %WHITE%0%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-5%WHITE%}%CONTINUE%
+ItemDisplay[(bal OR jav OR tsp) !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-10%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-15%WHITE%}%CONTINUE%
+ItemDisplay[bkf !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-20%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-30%WHITE%}%CONTINUE%
 
 // Exceptional Throwing/Javelins
-ItemDisplay[9gl]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%20%WHITE%}%CONTINUE%
-ItemDisplay[(9ta OR 9s9)]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%10%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%5%WHITE%}%CONTINUE%
-ItemDisplay[(9tk OR 9pi)]: %NAME%{%NAME%%WHITE%Weapon Speed: %WHITE%0%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-5%WHITE%}%CONTINUE%
-ItemDisplay[(9b8 OR 9ja OR 9ts)]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-10%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-15%WHITE%}%CONTINUE%
-ItemDisplay[9bk]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-20%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-30%WHITE%}%CONTINUE%
+ItemDisplay[9gl !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%20%WHITE%}%CONTINUE%
+ItemDisplay[(9ta OR 9s9) !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%10%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%5%WHITE%}%CONTINUE%
+ItemDisplay[(9tk OR 9pi) !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %WHITE%0%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-5%WHITE%}%CONTINUE%
+ItemDisplay[(9b8 OR 9ja OR 9ts) !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-10%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-15%WHITE%}%CONTINUE%
+ItemDisplay[9bk !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-20%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-30%WHITE%}%CONTINUE%
 
 // Elite Throwing/Javelins
-ItemDisplay[7gl]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%20%WHITE%}%CONTINUE%
-ItemDisplay[(7ta OR 7s7)]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%10%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%5%WHITE%}%CONTINUE%
-ItemDisplay[(7tk OR 7pi)]: %NAME%{%NAME%%WHITE%Weapon Speed: %WHITE%0%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-5%WHITE%}%CONTINUE%
-ItemDisplay[(7b8 OR 7ja OR 7ts)]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-10%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-15%WHITE%}%CONTINUE%
-ItemDisplay[7bk]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-20%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-30%WHITE%}%CONTINUE%
+ItemDisplay[7gl !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%20%WHITE%}%CONTINUE%
+ItemDisplay[(7ta OR 7s7) !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%10%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%5%WHITE%}%CONTINUE%
+ItemDisplay[(7tk OR 7pi) !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %WHITE%0%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-5%WHITE%}%CONTINUE%
+ItemDisplay[(7b8 OR 7ja OR 7ts) !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-10%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-15%WHITE%}%CONTINUE%
+ItemDisplay[7bk !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-20%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-30%WHITE%}%CONTINUE%
 
 // Normal Spears/Polearms
-ItemDisplay[pik]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%20%WHITE%}%CONTINUE%
-ItemDisplay[(bar OR pax)]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%10%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%5%WHITE%}%CONTINUE%
-ItemDisplay[(tri OR spt OR vou OR hal)]: %NAME%{%NAME%%WHITE%Weapon Speed: %WHITE%0%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-5%WHITE%}%CONTINUE%
-ItemDisplay[(spr OR scy OR wsc)]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-10%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-15%WHITE%}%CONTINUE%
-ItemDisplay[brn]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-20%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-30%WHITE%}%CONTINUE%
+ItemDisplay[pik !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%20%WHITE%}%CONTINUE%
+ItemDisplay[(bar OR pax) !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%10%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%5%WHITE%}%CONTINUE%
+ItemDisplay[(tri OR spt OR vou OR hal) !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %WHITE%0%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-5%WHITE%}%CONTINUE%
+ItemDisplay[(spr OR scy OR wsc) !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-10%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-15%WHITE%}%CONTINUE%
+ItemDisplay[brn !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-20%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-30%WHITE%}%CONTINUE%
 
 // Exceptional Spears/Polearms
-ItemDisplay[9p9]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%20%WHITE%}%CONTINUE%
-ItemDisplay[(9b7 OR 9pa)]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%10%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%5%WHITE%}%CONTINUE%
-ItemDisplay[(9tr OR 9st OR 9vo OR 9h9)]: %NAME%{%NAME%%WHITE%Weapon Speed: %WHITE%0%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-5%WHITE%}%CONTINUE%
-ItemDisplay[(9sr OR 9s8 OR 9wc)]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-10%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-15%WHITE%}%CONTINUE%
-ItemDisplay[9br]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-20%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-30%WHITE%}%CONTINUE%
+ItemDisplay[9p9 !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%20%WHITE%}%CONTINUE%
+ItemDisplay[(9b7 OR 9pa) !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%10%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%5%WHITE%}%CONTINUE%
+ItemDisplay[(9tr OR 9st OR 9vo OR 9h9) !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %WHITE%0%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-5%WHITE%}%CONTINUE%
+ItemDisplay[(9sr OR 9s8 OR 9wc) !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-10%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-15%WHITE%}%CONTINUE%
+ItemDisplay[9br !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-20%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-30%WHITE%}%CONTINUE%
 
 // Elite Spears/Polearms
-ItemDisplay[7p7]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%20%WHITE%}%CONTINUE%
-ItemDisplay[(7vo OR 7pa)]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%10%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%5%WHITE%}%CONTINUE%
-ItemDisplay[(7tr OR 7st OR 7o7 OR 7h7)]: %NAME%{%NAME%%WHITE%Weapon Speed: %WHITE%0%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-5%WHITE%}%CONTINUE%
-ItemDisplay[(7sr OR 7s8 OR 7wc)]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-10%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-15%WHITE%}%CONTINUE%
-ItemDisplay[7br]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-20%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-30%WHITE%}%CONTINUE%
+ItemDisplay[7p7 !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%20%WHITE%}%CONTINUE%
+ItemDisplay[(7vo OR 7pa) !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%10%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%5%WHITE%}%CONTINUE%
+ItemDisplay[(7tr OR 7st OR 7o7 OR 7h7) !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %WHITE%0%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-5%WHITE%}%CONTINUE%
+ItemDisplay[(7sr OR 7s8 OR 7wc) !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-10%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-15%WHITE%}%CONTINUE%
+ItemDisplay[7br !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-20%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-30%WHITE%}%CONTINUE%
 
 // Normal Bows/Crossbows
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%20%WHITE%}%CONTINUE%
-ItemDisplay[(lbb OR lwb OR hxb)]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%10%WHITE%}%CONTINUE%
-ItemDisplay[sbw]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%5%WHITE%}%CONTINUE%
-ItemDisplay[(lbw OR sbb OR swb OR mxb)]: %NAME%{%NAME%%WHITE%Weapon Speed: %WHITE%0%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-5%WHITE%}%CONTINUE%
-ItemDisplay[(hbw OR cbw OR lxb)]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-10%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-15%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-20%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-30%WHITE%}%CONTINUE%
-ItemDisplay[rxb]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-40%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%20%WHITE%}%CONTINUE%
+ItemDisplay[(lbb OR lwb OR hxb) !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%10%WHITE%}%CONTINUE%
+ItemDisplay[sbw !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%5%WHITE%}%CONTINUE%
+ItemDisplay[(lbw OR sbb OR swb OR mxb) !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %WHITE%0%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-5%WHITE%}%CONTINUE%
+ItemDisplay[(hbw OR cbw OR lxb) !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-10%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-15%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-20%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-30%WHITE%}%CONTINUE%
+ItemDisplay[rxb !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-40%WHITE%}%CONTINUE%
 
 // Exceptional Bows/Crossbows
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%20%WHITE%}%CONTINUE%
-ItemDisplay[(8l8 OR 8lw OR 8hx)]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%10%WHITE%}%CONTINUE%
-ItemDisplay[8sb]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%5%WHITE%}%CONTINUE%
-ItemDisplay[(8lb OR 8s8 OR 8sw OR 8mx)]: %NAME%{%NAME%%WHITE%Weapon Speed: %WHITE%0%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-5%WHITE%}%CONTINUE%
-ItemDisplay[(8hb OR 8cb OR 8lx)]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-10%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-15%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-20%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-30%WHITE%}%CONTINUE%
-ItemDisplay[8rx]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-60%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%20%WHITE%}%CONTINUE%
+ItemDisplay[(8l8 OR 8lw OR 8hx) !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%10%WHITE%}%CONTINUE%
+ItemDisplay[8sb !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%5%WHITE%}%CONTINUE%
+ItemDisplay[(8lb OR 8s8 OR 8sw OR 8mx) !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %WHITE%0%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-5%WHITE%}%CONTINUE%
+ItemDisplay[(8hb OR 8cb OR 8lx) !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-10%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-15%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-20%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-30%WHITE%}%CONTINUE%
+ItemDisplay[8rx !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-60%WHITE%}%CONTINUE%
 
 // Elite Bows/Crossbows
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%20%WHITE%}%CONTINUE%
-ItemDisplay[(6l7 OR 6lw OR 6hx)]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%10%WHITE%}%CONTINUE%
-ItemDisplay[6sb]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%5%WHITE%}%CONTINUE%
-ItemDisplay[(6lb OR 6s7 OR 6sw OR 6mx)]: %NAME%{%NAME%%WHITE%Weapon Speed: %WHITE%0%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-5%WHITE%}%CONTINUE%
-ItemDisplay[(6hb OR 6cb OR 6lx)]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-10%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-15%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-20%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-30%WHITE%}%CONTINUE%
-ItemDisplay[6rx]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-60%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%20%WHITE%}%CONTINUE%
+ItemDisplay[(6l7 OR 6lw OR 6hx) !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%10%WHITE%}%CONTINUE%
+ItemDisplay[6sb !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%5%WHITE%}%CONTINUE%
+ItemDisplay[(6lb OR 6s7 OR 6sw OR 6mx) !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %WHITE%0%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-5%WHITE%}%CONTINUE%
+ItemDisplay[(6hb OR 6cb OR 6lx) !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-10%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-15%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-20%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-30%WHITE%}%CONTINUE%
+ItemDisplay[6rx !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-60%WHITE%}%CONTINUE%
 
 // Normal Staves/Wands
-ItemDisplay[wst]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%20%WHITE%}%CONTINUE%
-ItemDisplay[(cst OR ywn)]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%10%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%5%WHITE%}%CONTINUE%
-ItemDisplay[(lst OR bst OR wnd OR gwn)]: %NAME%{%NAME%%WHITE%Weapon Speed: %WHITE%0%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-5%WHITE%}%CONTINUE%
-ItemDisplay[sst]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-10%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-15%WHITE%}%CONTINUE%
-ItemDisplay[bwn]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-20%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-30%WHITE%}%CONTINUE%
+ItemDisplay[wst !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%20%WHITE%}%CONTINUE%
+ItemDisplay[(cst OR ywn) !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%10%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%5%WHITE%}%CONTINUE%
+ItemDisplay[(lst OR bst OR wnd OR gwn) !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %WHITE%0%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-5%WHITE%}%CONTINUE%
+ItemDisplay[sst !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-10%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-15%WHITE%}%CONTINUE%
+ItemDisplay[bwn !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-20%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-30%WHITE%}%CONTINUE%
 
 // Exceptional Staves/Wands
-ItemDisplay[8ws]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%20%WHITE%}%CONTINUE%
-ItemDisplay[(8cs OR 9yw)]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%10%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%5%WHITE%}%CONTINUE%
-ItemDisplay[(8ls OR 8bs OR 9wn OR 9gw)]: %NAME%{%NAME%%WHITE%Weapon Speed: %WHITE%0%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-5%WHITE%}%CONTINUE%
-ItemDisplay[8ss]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-10%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-15%WHITE%}%CONTINUE%
-ItemDisplay[9bw]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-20%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-30%WHITE%}%CONTINUE%
+ItemDisplay[8ws !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%20%WHITE%}%CONTINUE%
+ItemDisplay[(8cs OR 9yw) !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%10%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%5%WHITE%}%CONTINUE%
+ItemDisplay[(8ls OR 8bs OR 9wn OR 9gw) !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %WHITE%0%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-5%WHITE%}%CONTINUE%
+ItemDisplay[8ss !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-10%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-15%WHITE%}%CONTINUE%
+ItemDisplay[9bw !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-20%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-30%WHITE%}%CONTINUE%
 
 // Elite Staves/Wands
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%20%WHITE%}%CONTINUE%
-ItemDisplay[(6ls OR 6ws OR 7yw)]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%10%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%5%WHITE%}%CONTINUE%
-ItemDisplay[(6cs OR 6bs OR 7wn OR 7gw)]: %NAME%{%NAME%%WHITE%Weapon Speed: %WHITE%0%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-5%WHITE%}%CONTINUE%
-ItemDisplay[6ss]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-10%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-15%WHITE%}%CONTINUE%
-ItemDisplay[7bw]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-20%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-30%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%20%WHITE%}%CONTINUE%
+ItemDisplay[(6ls OR 6ws OR 7yw) !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%10%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%5%WHITE%}%CONTINUE%
+ItemDisplay[(6cs OR 6bs OR 7wn OR 7gw) !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %WHITE%0%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-5%WHITE%}%CONTINUE%
+ItemDisplay[6ss !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-10%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-15%WHITE%}%CONTINUE%
+ItemDisplay[7bw !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-20%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-30%WHITE%}%CONTINUE%
 
 // Normal Scepters/Orbs
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%20%WHITE%}%CONTINUE%
-ItemDisplay[(gsc OR ob5)]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%10%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%5%WHITE%}%CONTINUE%
-ItemDisplay[(scp OR ob3 OR ob4)]: %NAME%{%NAME%%WHITE%Weapon Speed: %WHITE%0%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-5%WHITE%}%CONTINUE%
-ItemDisplay[(wsp OR ob1 OR ob2)]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-10%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-15%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-20%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-30%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%20%WHITE%}%CONTINUE%
+ItemDisplay[(gsc OR ob5) !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%10%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%5%WHITE%}%CONTINUE%
+ItemDisplay[(scp OR ob3 OR ob4) !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %WHITE%0%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-5%WHITE%}%CONTINUE%
+ItemDisplay[(wsp OR ob1 OR ob2) !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-10%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-15%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-20%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-30%WHITE%}%CONTINUE%
 
 // Exceptional Scepters/Orbs
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%20%WHITE%}%CONTINUE%
-ItemDisplay[(9qs OR oba)]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%10%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%5%WHITE%}%CONTINUE%
-ItemDisplay[(9sc OR ob8 OR ob9)]: %NAME%{%NAME%%WHITE%Weapon Speed: %WHITE%0%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-5%WHITE%}%CONTINUE%
-ItemDisplay[(9ws OR ob6 OR ob7)]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-10%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-15%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-20%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-30%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%20%WHITE%}%CONTINUE%
+ItemDisplay[(9qs OR oba) !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%10%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%5%WHITE%}%CONTINUE%
+ItemDisplay[(9sc OR ob8 OR ob9) !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %WHITE%0%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-5%WHITE%}%CONTINUE%
+ItemDisplay[(9ws OR ob6 OR ob7) !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-10%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-15%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-20%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-30%WHITE%}%CONTINUE%
 
 // Elite Scepters/Orbs
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%20%WHITE%}%CONTINUE%
-ItemDisplay[(7qs OR obf)]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%10%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%5%WHITE%}%CONTINUE%
-ItemDisplay[(7sc OR obd OR obe)]: %NAME%{%NAME%%WHITE%Weapon Speed: %WHITE%0%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-5%WHITE%}%CONTINUE%
-ItemDisplay[(7ws OR obb OR obc)]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-10%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-15%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-20%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-30%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%20%WHITE%}%CONTINUE%
+ItemDisplay[(7qs OR obf) !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%10%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%5%WHITE%}%CONTINUE%
+ItemDisplay[(7sc OR obd OR obe) !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %WHITE%0%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-5%WHITE%}%CONTINUE%
+ItemDisplay[(7ws OR obb OR obc) !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-10%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-15%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-20%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-30%WHITE%}%CONTINUE%
 
 // Normal Claws
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%20%WHITE%}%CONTINUE%
-ItemDisplay[axf]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%10%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%5%WHITE%}%CONTINUE%
-ItemDisplay[(wrb OR ces)]: %NAME%{%NAME%%WHITE%Weapon Speed: %WHITE%0%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-5%WHITE%}%CONTINUE%
-ItemDisplay[(ktr OR clw OR skr)]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-10%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-15%WHITE%}%CONTINUE%
-ItemDisplay[btl]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-20%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-30%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%20%WHITE%}%CONTINUE%
+ItemDisplay[axf !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%10%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%5%WHITE%}%CONTINUE%
+ItemDisplay[(wrb OR ces) !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %WHITE%0%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-5%WHITE%}%CONTINUE%
+ItemDisplay[(ktr OR clw OR skr) !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-10%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-15%WHITE%}%CONTINUE%
+ItemDisplay[btl !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-20%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-30%WHITE%}%CONTINUE%
 
 // Exceptional Claws
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%20%WHITE%}%CONTINUE%
-ItemDisplay[9xf]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%10%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%5%WHITE%}%CONTINUE%
-ItemDisplay[(9ar OR 9qr)]: %NAME%{%NAME%%WHITE%Weapon Speed: %WHITE%0%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-5%WHITE%}%CONTINUE%
-ItemDisplay[(9wb OR 9cs)]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-10%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-15%WHITE%}%CONTINUE%
-ItemDisplay[9lw]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-20%WHITE%}%CONTINUE%
-ItemDisplay[9tw]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-30%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%20%WHITE%}%CONTINUE%
+ItemDisplay[9xf !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%10%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%5%WHITE%}%CONTINUE%
+ItemDisplay[(9ar OR 9qr) !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %WHITE%0%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-5%WHITE%}%CONTINUE%
+ItemDisplay[(9wb OR 9cs) !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-10%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-15%WHITE%}%CONTINUE%
+ItemDisplay[9lw !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-20%WHITE%}%CONTINUE%
+ItemDisplay[9tw !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-30%WHITE%}%CONTINUE%
 
 // Elite Claws
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%20%WHITE%}%CONTINUE%
-ItemDisplay[7xf]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%10%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%5%WHITE%}%CONTINUE%
-ItemDisplay[(7ar OR 7qr)]: %NAME%{%NAME%%WHITE%Weapon Speed: %WHITE%0%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-5%WHITE%}%CONTINUE%
-ItemDisplay[(7wb OR 7cs)]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-10%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-15%WHITE%}%CONTINUE%
-ItemDisplay[7lw]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-20%WHITE%}%CONTINUE%
-ItemDisplay[7tw]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-30%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%20%WHITE%}%CONTINUE%
+ItemDisplay[7xf !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%10%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%5%WHITE%}%CONTINUE%
+ItemDisplay[(7ar OR 7qr) !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %WHITE%0%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-5%WHITE%}%CONTINUE%
+ItemDisplay[(7wb OR 7cs) !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-10%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-15%WHITE%}%CONTINUE%
+ItemDisplay[7lw !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-20%WHITE%}%CONTINUE%
+ItemDisplay[7tw !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-30%WHITE%}%CONTINUE%
 
 // Normal Amazon Weapons
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%20%WHITE%}%CONTINUE%
-ItemDisplay[am2]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%10%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%5%WHITE%}%CONTINUE%
-ItemDisplay[(am1 OR am4)]: %NAME%{%NAME%%WHITE%Weapon Speed: %WHITE%0%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-5%WHITE%}%CONTINUE%
-ItemDisplay[(am5 OR am3)]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-10%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-15%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-20%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-30%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%20%WHITE%}%CONTINUE%
+ItemDisplay[am2 !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%10%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%5%WHITE%}%CONTINUE%
+ItemDisplay[(am1 OR am4) !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %WHITE%0%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-5%WHITE%}%CONTINUE%
+ItemDisplay[(am5 OR am3) !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-10%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-15%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-20%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-30%WHITE%}%CONTINUE%
 
 // Exceptional Amazon Weapons
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%20%WHITE%}%CONTINUE%
-ItemDisplay[(am7 OR am9)]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%10%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%5%WHITE%}%CONTINUE%
-ItemDisplay[am6]: %NAME%{%NAME%%WHITE%Weapon Speed: %WHITE%0%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-5%WHITE%}%CONTINUE%
-ItemDisplay[(ama OR am8)]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-10%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-15%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-20%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-30%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%20%WHITE%}%CONTINUE%
+ItemDisplay[(am7 OR am9) !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%10%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%5%WHITE%}%CONTINUE%
+ItemDisplay[am6 !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %WHITE%0%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-5%WHITE%}%CONTINUE%
+ItemDisplay[(ama OR am8) !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-10%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-15%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-20%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-30%WHITE%}%CONTINUE%
 
 // Elite Amazon Weapons
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%20%WHITE%}%CONTINUE%
-ItemDisplay[(amc OR ame)]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%10%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%5%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %WHITE%0%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-5%WHITE%}%CONTINUE%
-ItemDisplay[(amb OR amd OR amf)]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-10%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-15%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-20%WHITE%}%CONTINUE%
-// ItemDisplay[()]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-30%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%20%WHITE%}%CONTINUE%
+ItemDisplay[(amc OR ame) !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%10%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %RED%5%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %WHITE%0%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-5%WHITE%}%CONTINUE%
+ItemDisplay[(amb OR amd OR amf) !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-10%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-15%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-20%WHITE%}%CONTINUE%
+// ItemDisplay[() !CUBE]: %NAME%{%NAME%%WHITE%Weapon Speed: %BLUE%-30%WHITE%}%CONTINUE%
 
 // SOCKETABLES
 
@@ -6177,16 +6195,21 @@ ItemDisplay[(WEAPON OR ARMOR OR rin OR amu OR QUIVERS) (MAG OR RARE OR CRAFT) ID
 ItemDisplay[(WEAPON OR ARMOR OR rin OR amu OR QUIVERS) (MAG OR RARE OR CRAFT) ID STAT153>0 !CUBE]: %BLUE%cbf %NAME%{%NAME%}%CONTINUE%
 
 // Curse Resist
-ItemDisplay[(WEAPON OR ARMOR OR rin OR amu OR QUIVERS) (MAG OR RARE OR CRAFT) ID STAT504>0 !CUBE]: %PURPLE%%STAT504%%GRAY%curseres %NAME%{%NAME%}%CONTINUE%
+ItemDisplay[(WEAPON OR ARMOR OR rin OR amu OR QUIVERS) (MAG OR RARE OR CRAFT) ID STAT504>0 !CUBE]: %PURPLE%%STAT504%%GRAY%curse %NAME%{%NAME%}%CONTINUE%
 
 // PDR
 ItemDisplay[(WEAPON OR ARMOR OR rin OR amu OR QUIVERS) (MAG OR RARE OR CRAFT) ID STAT36>0 !CUBE]: %GOLD%%STAT36%%GRAY%pdr %NAME%{%NAME%}%CONTINUE%
 
-// Resists
-ItemDisplay[(ARMOR OR rin OR amu OR QUIVERS) (MAG OR RARE OR CRAFT) !jew ID ((FRES>0 !RES>0) OR (LRES~1-5 CRES~1-5 PRES~1-5 FRES>5) OR (LRES~6-10 CRES~6-10 PRES~6-10 FRES>10) OR (LRES~11-15 CRES~11-15 PRES~11-15 FRES>15) OR (LRES~16-20 CRES~16-20 PRES~16-20 FRES>20) OR (LRES~21-25 CRES~21-25 PRES~21-25 FRES>25) OR (LRES~26-30 CRES~26-30 PRES~26-30 FRES>30) OR (LRES~31-35 CRES~31-35 PRES~31-35 FRES>35) OR (LRES~36-40 CRES~36-40 PRES~36-40 FRES>40) OR (LRES~41-45 CRES~41-45 PRES~41-45 FRES>45) OR (LRES~46-50 CRES~46-50 PRES~46-50 FRES>50) OR (LRES~51-55 CRES~51-55 PRES~51-55 FRES>55) OR (LRES~56-60 CRES~56-60 PRES~56-60 FRES>60)) !CUBE]: %RED%%FRES%%GRAY%fire %NAME%{%NAME%}%CONTINUE%
-ItemDisplay[(ARMOR OR rin OR amu OR QUIVERS) (MAG OR RARE OR CRAFT) !jew ID ((CRES>0 !RES>0) OR (FRES~1-5 LRES~1-5 PRES~1-5 CRES>5) OR (FRES~6-10 LRES~6-10 PRES~6-10 CRES>10) OR (FRES~11-15 LRES~11-15 PRES~11-15 CRES>15) OR (FRES~16-20 LRES~16-20 PRES~16-20 CRES>20) OR (FRES~21-25 LRES~21-25 PRES~21-25 CRES>25) OR (FRES~26-30 LRES~26-30 PRES~26-30 CRES>30) OR (FRES~31-35 LRES~31-35 PRES~31-35 CRES>35) OR (FRES~36-40 LRES~36-40 PRES~36-40 CRES>40) OR (FRES~41-45 LRES~41-45 PRES~41-45 CRES>45) OR (FRES~46-50 LRES~46-50 PRES~46-50 CRES>50) OR (FRES~51-55 LRES~51-55 PRES~51-55 CRES>55) OR (FRES~56-60 LRES~56-60 PRES~56-60 CRES>60)) !CUBE]: %BLUE%%CRES%%GRAY%cold %NAME%{%NAME%}%CONTINUE%
-ItemDisplay[(ARMOR OR rin OR amu OR QUIVERS) (MAG OR RARE OR CRAFT) !jew ID ((LRES>0 !RES>0) OR (FRES~1-5 CRES~1-5 PRES~1-5 LRES>5) OR (FRES~6-10 CRES~6-10 PRES~6-10 LRES>10) OR (FRES~11-15 CRES~11-15 PRES~11-15 LRES>15) OR (FRES~16-20 CRES~16-20 PRES~16-20 LRES>20) OR (FRES~21-25 CRES~21-25 PRES~21-25 LRES>25) OR (FRES~26-30 CRES~26-30 PRES~26-30 LRES>30) OR (FRES~31-35 CRES~31-35 PRES~31-35 LRES>35) OR (FRES~36-40 CRES~36-40 PRES~36-40 LRES>40) OR (FRES~41-45 CRES~41-45 PRES~41-45 LRES>45) OR (FRES~46-50 CRES~46-50 PRES~46-50 LRES>50) OR (FRES~51-55 CRES~51-55 PRES~51-55 LRES>55) OR (FRES~56-60 CRES~56-60 PRES~56-60 LRES>60)) !CUBE]: %YELLOW%%LRES%%GRAY%light %NAME%{%NAME%}%CONTINUE%
-ItemDisplay[(ARMOR OR rin OR amu OR QUIVERS) (MAG OR RARE OR CRAFT) !jew ID ((PRES>0 !RES>0) OR (FRES~1-5 CRES~1-5 LRES~1-5 PRES>5) OR (FRES~6-10 CRES~6-10 LRES~6-10 PRES>10) OR (FRES~11-15 CRES~11-15 LRES~11-15 PRES>15) OR (FRES~16-20 CRES~16-20 LRES~16-20 PRES>20) OR (FRES~21-25 CRES~21-25 LRES~21-25 PRES>25) OR (FRES~26-30 CRES~26-30 LRES~26-30 PRES>30) OR (FRES~31-35 CRES~31-35 LRES~31-35 PRES>35) OR (FRES~36-40 CRES~36-40 LRES~36-40 PRES>40) OR (FRES~41-45 CRES~41-45 LRES~41-45 PRES>45) OR (FRES~46-50 CRES~46-50 LRES~46-50 PRES>50) OR (FRES~51-55 CRES~51-55 LRES~51-55 PRES>55) OR (FRES~56-60 CRES~56-60 LRES~56-60 PRES>60)) !CUBE]: %GREEN%%PRES%%GRAY%pois %NAME%{%NAME%}%CONTINUE%
+// Tri-Res 
+ItemDisplay[(ARMOR OR rin OR amu OR QUIVERS) (MAG OR RARE OR CRAFT) !jew ID TRIRES]: %PURPLE%tri%GRAY%res %NAME%{%NAME%}%CONTINUE%
+
+// Resists if one single Res is > All Res
+ItemDisplay[(ARMOR OR rin OR amu OR QUIVERS) (MAG OR RARE OR CRAFT) !jew ID ((FRES>0 !RES>0) OR (LRES~1-5 CRES~1-5 PRES~1-5 FRES>5) OR (LRES~1-10 CRES~1-10 PRES~1-10 FRES>10) OR (LRES~1-15 CRES~1-15 PRES~1-15 FRES>15) OR (LRES~1-20 CRES~1-20 PRES~1-20 FRES>20) OR (LRES~1-25 CRES~1-25 PRES~1-25 FRES>25) OR (LRES~1-30 CRES~1-30 PRES~1-30 FRES>30) OR (LRES~1-35 CRES~1-35 PRES~1-35 FRES>35) OR (LRES~1-40 CRES~1-40 PRES~1-40 FRES>40) OR (LRES~1-45 CRES~1-45 PRES~1-45 FRES>45) OR (LRES~1-50 CRES~1-50 PRES~1-50 FRES>50) OR (LRES~1-55 CRES~1-55 PRES~1-55 FRES>55) OR (LRES~1-60 CRES~1-60 PRES~1-60 FRES>60)) !TRIRES !CUBE]: %RED%%FRES%%GRAY%fire %NAME%{%NAME%}%CONTINUE%
+ItemDisplay[(ARMOR OR rin OR amu OR QUIVERS) (MAG OR RARE OR CRAFT) !jew ID ((CRES>0 !RES>0) OR (FRES~1-5 LRES~1-5 PRES~1-5 CRES>5) OR (FRES~1-10 LRES~1-10 PRES~1-10 CRES>10) OR (FRES~1-15 LRES~1-15 PRES~1-15 CRES>15) OR (FRES~1-20 LRES~1-20 PRES~1-20 CRES>20) OR (FRES~1-25 LRES~1-25 PRES~1-25 CRES>25) OR (FRES~1-30 LRES~1-30 PRES~1-30 CRES>30) OR (FRES~1-35 LRES~1-35 PRES~1-35 CRES>35) OR (FRES~1-40 LRES~1-40 PRES~1-40 CRES>40) OR (FRES~1-45 LRES~1-45 PRES~1-45 CRES>45) OR (FRES~1-50 LRES~1-50 PRES~1-50 CRES>50) OR (FRES~1-55 LRES~1-55 PRES~1-55 CRES>55) OR (FRES~1-60 LRES~1-60 PRES~1-60 CRES>60)) !TRIRES !CUBE]: %BLUE%%CRES%%GRAY%cold %NAME%{%NAME%}%CONTINUE%
+ItemDisplay[(ARMOR OR rin OR amu OR QUIVERS) (MAG OR RARE OR CRAFT) !jew ID ((LRES>0 !RES>0) OR (FRES~1-5 CRES~1-5 PRES~1-5 LRES>5) OR (FRES~1-10 CRES~1-10 PRES~1-10 LRES>10) OR (FRES~1-15 CRES~1-15 PRES~1-15 LRES>15) OR (FRES~1-20 CRES~1-20 PRES~1-20 LRES>20) OR (FRES~1-25 CRES~1-25 PRES~1-25 LRES>25) OR (FRES~1-30 CRES~1-30 PRES~1-30 LRES>30) OR (FRES~1-35 CRES~1-35 PRES~1-35 LRES>35) OR (FRES~1-40 CRES~1-40 PRES~1-40 LRES>40) OR (FRES~1-45 CRES~1-45 PRES~1-45 LRES>45) OR (FRES~1-50 CRES~1-50 PRES~1-50 LRES>50) OR (FRES~1-55 CRES~1-55 PRES~1-55 LRES>55) OR (FRES~1-60 CRES~1-60 PRES~1-60 LRES>60)) !TRIRES !CUBE]: %YELLOW%%LRES%%GRAY%light %NAME%{%NAME%}%CONTINUE%
+ItemDisplay[(ARMOR OR rin OR amu OR QUIVERS) (MAG OR RARE OR CRAFT) !jew ID ((PRES>0 !RES>0) OR (FRES~1-5 CRES~1-5 LRES~1-5 PRES>5) OR (FRES~1-10 CRES~1-10 LRES~1-10 PRES>10) OR (FRES~1-15 CRES~1-15 LRES~1-15 PRES>15) OR (FRES~1-20 CRES~1-20 LRES~1-20 PRES>20) OR (FRES~1-25 CRES~1-25 LRES~1-25 PRES>25) OR (FRES~1-30 CRES~1-30 LRES~1-30 PRES>30) OR (FRES~1-35 CRES~1-35 LRES~1-35 PRES>35) OR (FRES~1-40 CRES~1-40 LRES~1-40 PRES>40) OR (FRES~1-45 CRES~1-45 LRES~1-45 PRES>45) OR (FRES~1-50 CRES~1-50 LRES~1-50 PRES>50) OR (FRES~1-55 CRES~1-55 LRES~1-55 PRES>55) OR (FRES~1-60 CRES~1-60 LRES~1-60 PRES>60)) !TRIRES !CUBE]: %GREEN%%PRES%%GRAY%pois %NAME%{%NAME%}%CONTINUE%
+
+// All Res
 ItemDisplay[(ARMOR OR rin OR amu OR QUIVERS) (MAG OR RARE OR CRAFT) !jew ID RES>0 !CUBE]: %PURPLE%%RES%%GRAY%res %NAME%{%NAME%}%CONTINUE%
 
 // FRW on Boots and Quivers
@@ -6318,6 +6341,12 @@ ItemDisplay[(WEAPON OR ARMOR OR rin OR amu OR QUIVERS) (MAG OR RARE OR CRAFT) ID
 
 
 // JEWELS
+
+// Mastery and Pierce rolls on Rainbow Facets
+ItemDisplay[jew UNI ID STAT329>0 STAT333>0]: %RED%%STAT329%%GRAY%/%RED%%STAT333% Fire%CL%%GOLD%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[jew UNI ID STAT330>0 STAT334>0]: %YELLOW%%STAT330%%GRAY%/%YELLOW%%STAT334% Lightning%CL%%GOLD%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[jew UNI ID STAT331>0 STAT335>0]: %BLUE%%STAT331%%GRAY%/%BLUE%%STAT335% Cold%CL%%GOLD%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[jew UNI ID STAT332>0 STAT336>0]: %GREEN%%STAT332%%GRAY%/%GREEN%%STAT336% Poison%CL%%GOLD%%NAME%{%NAME%}%CONTINUE%
 
 // Notification Alert for Jewels
 ItemDisplay[jew UNI !ID]: %DOT-61%%GOLD%%NAME%%CONTINUE%
@@ -6566,7 +6595,10 @@ ItemDisplay[GOLD<1000 (CLVL>17 AND CLVL<80)]:
 ItemDisplay[GOLD<5000 CLVL>79]:
 
 // Hide all Normal and Exceptional items in Maps (Except uniques/sets/rare and PD2/misc items) except for Lucion Vault and Uber Ancients
-ItemDisplay[(NORM OR EXC OR aqv OR aqv2 OR cqv OR cqv2) (NMAG OR MAG) !(MISC OR RW) MAPID>137 !(MAPID=189 OR MAPID=168)]:
+ItemDisplay[(NORM OR EXC OR aqv OR aqv2 OR cqv OR cqv2) (NMAG OR MAG) !(MISC !(aqv OR aqv2 OR cqv OR cqv2)) !RW MAPID>137 !(MAPID=189 OR MAPID=168)]:
+
+// Hide Magics in Uber Ancients and Lucion Vault unless Jewelry or Charms
+ItemDisplay[MAG !(jew OR rin OR amu OR cm1 OR cm2 OR cm3) (MAPID=189 OR MAPID=168)]:
 
 // Hide potions, scrolls and small Rejuvs in Maps 
 ItemDisplay[(hp1 OR hp2 OR hp3 OR hp4 OR hp5 OR mp1 OR mp2 OR mp3 OR mp4 OR mp5 OR rvs OR isc OR tsc OR wms OR vps) MAPID>137]:
