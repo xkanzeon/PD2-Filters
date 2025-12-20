@@ -150,6 +150,11 @@
                     "download_url": "https://raw.githubusercontent.com/Maaaaaarrk/HiimFilter-PD2-Filter/main/Hiim_Only_Filter.filter"
                 },
                 {
+                    "name": "Hiim_TalRasha_Themed.filter",
+                    "url": "https://api.github.com/repos/Maaaaaarrk/HiimFilter-PD2-Filter/contents/Hiim_TalRasha_Themed.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/Maaaaaarrk/HiimFilter-PD2-Filter/main/Hiim_TalRasha_Themed.filter"
+                },
+                {
                     "name": "Hiim_Vanilla_Plus.filter",
                     "url": "https://api.github.com/repos/Maaaaaarrk/HiimFilter-PD2-Filter/contents/Hiim_Vanilla_Plus.filter?ref=main",
                     "download_url": "https://raw.githubusercontent.com/Maaaaaarrk/HiimFilter-PD2-Filter/main/Hiim_Vanilla_Plus.filter"
@@ -182,6 +187,11 @@
                     "download_url": "https://raw.githubusercontent.com/KassahiPD2/Kassahi/main/Mystery-Hyper.filter"
                 },
                 {
+                    "name": "Mystery-Luxe.filter",
+                    "url": "https://api.github.com/repos/KassahiPD2/Kassahi/contents/Mystery-Luxe.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/KassahiPD2/Kassahi/main/Mystery-Luxe.filter"
+                },
+                {
                     "name": "Mystery.filter",
                     "url": "https://api.github.com/repos/KassahiPD2/Kassahi/contents/Mystery.filter?ref=main",
                     "download_url": "https://raw.githubusercontent.com/KassahiPD2/Kassahi/main/Mystery.filter"
@@ -190,6 +200,11 @@
                     "name": "Regular-Hyper.filter",
                     "url": "https://api.github.com/repos/KassahiPD2/Kassahi/contents/Regular-Hyper.filter?ref=main",
                     "download_url": "https://raw.githubusercontent.com/KassahiPD2/Kassahi/main/Regular-Hyper.filter"
+                },
+                {
+                    "name": "Regular-Luxe.filter",
+                    "url": "https://api.github.com/repos/KassahiPD2/Kassahi/contents/Regular-Luxe.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/KassahiPD2/Kassahi/main/Regular-Luxe.filter"
                 },
                 {
                     "name": "Regular.filter",

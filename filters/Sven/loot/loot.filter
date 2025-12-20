@@ -857,8 +857,8 @@ ItemDisplay[crfu]:%WHITE%[%YELLOW%O%WHITE%] %ORANGE%Bountiful Craft{Weapon:1 to 
 ItemDisplay[crfp]:%WHITE%[%WHITE%O%WHITE%] %ORANGE%Brilliant Craft{Weapon:[20-40]% ED, 20% IAS, [50-100] AR%CL%Quiver:[5-10]% All Res, [10]% FHR, [100-150] def v missile%CL%Shield:[5-10]% All Res, [10-20]% Block, HfD%CL%Chest:[5-10]% All Res, [10-20]% Block, [25-50]% Def%CL%Helm:[5-10]% IAS, [25-50]% Def, HFD.%CL%Boots:10% FRW, [100-150] Def v Missle, HFD.%CL%Gloves:[5-10]% IAS, [10-20]% AR, [25-50]% Def%CL%Belt:[5-10]% IAS, [25-50]% Def, HFD.%CL%Ring:[3-5]% All Res, [50-100] Def v Missle, HFD.%CL%Amulet:[5-15]% All Res, [100-150] Def vs Missle, [4-8] All Attributes%CL%%TAN% Note%WHITE%:Guaranteed:}
 
 ///Purple items WITH SOUND
-ItemDisplay[ubaa !TOWN]:%PURPLE%@ Sigil of Madawc%WHITE%(%GOLD%t1%WHITE%)%WHITE%(x%QTY%)%PURPLE% @ %SOUNDID-2527%%MAP-9B%
-ItemDisplay[ubab !TOWN:%PURPLE%@ Sigil of Talic%WHITE%(%BLUE%t2%WHITE%)%WHITE%(x%QTY%)%PURPLE% @ %SOUNDID-2528%%MAP-9B%
+ItemDisplay[ubaa !TOWN]:%PURPLE%@ Sigil of Madawc%WHITE%(%GOLD%t1%WHITE%)%WHITE%(x%QTY%)%PURPLE% @ %SOUNDID-2529%%MAP-9B%
+ItemDisplay[ubab !TOWN]:%PURPLE%@ Sigil of Talic%WHITE%(%BLUE%t2%WHITE%)%WHITE%(x%QTY%)%PURPLE% @ %SOUNDID-2529%%MAP-9B%
 ItemDisplay[ubac !TOWN]:%PURPLE%@ Sigil of Korlic%WHITE%(%RED%t3%WHITE%)%WHITE%(x%QTY%)%PURPLE% @ %SOUNDID-2529%%MAP-9B%
 ItemDisplay[wss !TOWN]:%PURPLE%@ Worldstone Shard%WHITE%(x%QTY%)%PURPLE% @ %SOUNDID-240%%MAP-9B%
 ItemDisplay[lpp !TOWN]:%PURPLE%# Larzuk's Puzzlepiece%WHITE%(x%QTY%)%PURPLE% # %SOUNDID-15%%MAP-9B%
