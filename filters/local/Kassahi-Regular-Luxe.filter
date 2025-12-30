@@ -4,15 +4,15 @@ ItemDisplayFilterName[3]: ÿc:Medium ÿc4Strictness ÿc7w/ ÿc;All Juvs ÿc7& ÿc.Flaw
 ItemDisplayFilterName[4]: ÿc:Medium ÿc4Strictness ÿc7w/ ÿc;All Juvs
 ItemDisplayFilterName[5]: ÿc*Extra ÿc4Strictness ÿc7w/ ÿc0All Pots ÿc7& ÿc.Flawless
 ItemDisplayFilterName[6]: ÿc*Extra ÿc4Strictness ÿc7w/ ÿc0All Pots
-ItemDisplayFilterName[7]: ÿc*Extra ÿc4Strictness ÿc7w/ ÿc;Juice ÿc7& ÿc.Flawless
-ItemDisplayFilterName[8]: ÿc*Extra ÿc4Strictness ÿc7w/ ÿc;Juice
+ItemDisplayFilterName[7]: ÿc*Extra ÿc4Strictness ÿc7w/ ÿc;All Juvs ÿc7& ÿc.Flawless
+ItemDisplayFilterName[8]: ÿc*Extra ÿc4Strictness ÿc7w/ ÿc;All Juvs
 ItemDisplayFilterName[9]: ÿc1Extreme ÿc4Strictness ÿc7w/ ÿc0All Pots ÿc7& ÿc.Flawless
 ItemDisplayFilterName[10]: ÿc1Extreme ÿc4Strictness ÿc7w/ ÿc0All Pots
 ItemDisplayFilterName[11]: ÿc1Extreme ÿc4Strictness ÿc7w/ ÿc;Juice ÿc7& ÿc.Flawless
 ItemDisplayFilterName[12]: ÿc1Extreme ÿc4Strictness ÿc7w/ ÿc;Juice
 
 //------------------------------FILTER_VERSION_ON_CUBE------------------------------
-ItemDisplay[box]: %MAP-51%Horadric Cube %RED%(Dec/29th/25){%LIGHT_GRAY%reverted mag/rare class items - Kassahi%CL%added new luxe filter - Mark%CL%%GREEN%Kassahi - HiimMark%CL%%WHITE%Season 12 Build # 141}
+ItemDisplay[box]: %MAP-51%Horadric Cube %RED%(Dec/30th/25){%LIGHT_GRAY%reverted mag/rare class items - Kassahi%CL%added new luxe filter - Mark%CL%%GREEN%Kassahi - HiimMark%CL%%WHITE%Season 12 Build # 144}
 
 
 
@@ -1077,7 +1077,7 @@ ItemDisplay[STAT206>0 !(STAT477=4 OR STAT477=21)]: %NAME%*{%NAME%}%CONTINUE%
 // GOLD
 ItemDisplay[GOLD<9999]:
 // POTIONS
-ItemDisplay[((FILTLVL~1-6) OR (FILTLVL~9-10)) rvs]: %PURPLE%° %WHITE%35%
+ItemDisplay[FILTLVL~1-10 rvs]: %PURPLE%° %WHITE%35%
 ItemDisplay[rvs]:
 ItemDisplay[rvl]: %NAME%
 ItemDisplay[DIFF=0 CLVL<18 (MAPID>0 MAPID<39) hp1]: %RED%· %WHITE%h
@@ -1606,8 +1606,8 @@ ItemDisplay[t43]: %NAME%{%WHITE%Immunes: %RED%F:165 %YELLOW%L:165 %BLUE%C:165 %G
 ItemDisplay[t51]: %NAME%{%WHITE%Highest Res: %RED%F:85 %YELLOW%L:85 %BLUE%C:85 %GREEN%P:95 %ORANGE%M:40 %GOLD%Ph:65}%CONTINUE%
 ItemDisplay[t52]: %NAME%{%WHITE%Highest Res: %RED%F:65 %YELLOW%L:60 %BLUE%C:65 %GREEN%P:75 %ORANGE%M:50 %GOLD%Ph:50}%CONTINUE%
 ItemDisplay[t53]: %NAME%{%WHITE%Highest Res: %RED%F:70 %YELLOW%L:75 %BLUE%C:65 %GREEN%P:80 %ORANGE%M:80 %GOLD%Ph:60}%CONTINUE%
-ItemDisplay[t54]: %NAME%{%WHITE%Highest Res: %RED%F:65 %YELLOW%L:65 %BLUE%C:65 %GRAY%P:20 %ORANGE%M:20 %GREEN%P:65}%CONTINUE% // Imperial Palace Level id 192 Updated: May 16 2025
-ItemDisplay[t55]: %NAME%{%WHITE%Highest Res: %RED%F:75 %YELLOW%L:75 %BLUE%C:50 %GRAY%P:50 %ORANGE%M:50 %GREEN%P:30}%CONTINUE% // Outer Void Level id 180 Updated: May 16 2025
+ItemDisplay[t54]: %NAME%{%WHITE%Highest Res: %RED%F:65 %YELLOW%L:65 %BLUE%C:65 %GREEN%P:65 %ORANGE%M:20 %GOLD%Ph:20}%CONTINUE% // Imperial Palace Level id 192 Updated: May 16 2025
+ItemDisplay[t55]: %NAME%{%WHITE%Highest Res: %RED%F:75 %YELLOW%L:75 %BLUE%C:50 %GREEN%P:30 %ORANGE%M:50 %GOLD%Ph:50}%CONTINUE% // Outer Void Level id 180 Updated: May 16 2025
 ItemDisplay[t56]: %NAME%{%WHITE%Highest Res: %RED%F:85 %YELLOW%L:85 %BLUE%C:85 %GREEN%P:95 %ORANGE%M:40 %GOLD%Ph:65}%CONTINUE%
 // MAPS EXP, MF, DENS, RA
 ItemDisplay[(STAT372>0 OR STAT373>0 OR STAT370>0 OR STAT375>0)]: %NAME%{%CL%%NAME%}%CONTINUE%
