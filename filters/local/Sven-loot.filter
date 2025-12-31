@@ -1179,9 +1179,10 @@ ItemDisplay[NMAG !RW ELT AXE !THROWING SOCK=2 ETH CLVL>10]://
 ItemDisplay[NMAG !RW ELT AXE !THROWING SOCK=2 !ETH !SUP FILTLVL>1]://
 ItemDisplay[NMAG !RW ELT AXE !THROWING SOCK=2 !ETH SUP ED>0 ED<15 FILTLVL>1]://
 ItemDisplay[NMAG !RW ELT AXE !THROWING SOCK=2 !ETH SUP ED=15 FILTLVL>2]://
-ItemDisplay[NMAG !RW ELT AXE !THROWING (SOCK=0 OR SOCK=3 OR SOCK=4 OR SOCK=5 OR SOCK=6) !SUP FILTLVL>1]://
-ItemDisplay[NMAG !RW ELT AXE !THROWING (SOCK=0 OR SOCK=3 OR SOCK=4 OR SOCK=5 OR SOCK=6) SUP ED>0 ED<13 FILTLVL>1]://
-ItemDisplay[NMAG !RW ELT AXE !THROWING (SOCK=0 OR SOCK=3 OR SOCK=4 OR SOCK=5 OR SOCK=6) SUP ED>12 ED<15 FILTLVL>3]://
+ItemDisplay[NMAG !RW ELT AXE !THROWING (SOCK=0 OR SOCK=3 OR SOCK=4 OR SOCK=5 OR SOCK=6) !ETH !SUP FILTLVL>2]://
+ItemDisplay[NMAG !RW ELT AXE !THROWING (SOCK=0 OR SOCK=3 OR SOCK=4 OR SOCK=5 OR SOCK=6) ETH !SUP FILTLVL>3]://
+ItemDisplay[NMAG !RW ELT AXE !THROWING (SOCK=0 OR SOCK=3 OR SOCK=4 OR SOCK=5 OR SOCK=6) SUP ED>0 ED<13 FILTLVL>2]://
+ItemDisplay[NMAG !RW ELT AXE !THROWING (SOCK=0 OR SOCK=3 OR SOCK=4 OR SOCK=5 OR SOCK=6) SUP ED>12 ED<15 FILTLVL>4]://
 //swords
 ItemDisplay[NMAG !RW (7ss OR 7sm OR 7sb OR 7fc OR 7bs OR 72h OR 7cm OR 7gs OR 7b7 OR 9fc) FILTLVL>1]://
 ItemDisplay[NMAG !RW EXC SWORD SOCK=0 !SUP FILTLVL>1]://
@@ -1429,9 +1430,9 @@ ItemDisplay[!ID MAG cqv3]:%BLUE%x ³Check Bolts x{%NAME%}%CONTINUE%
 
 //hide
 ItemDisplay[!ID MAG (amd OR am8 OR am3 OR amb OR am6 OR am1 OR 6sb OR 8sb OR sbw OR 6sw OR 8sw OR swb OR 6lb OR 8lb OR lbw OR 6s7 OR 8s8 OR sbb OR 6hb OR 8hb OR hbw OR 6cb OR 8cb OR cbw OR 6lx OR 8lx OR lxb OR 6mx OR 8mx OR mxb OR 6rx OR 8rx OR rxb OR 6ss OR 8ss OR sst OR 6ls OR 8ls OR lst OR 7s8 OR 9s8 OR scy OR 7sr OR 9sr OR spr OR 7br OR 9br OR brn OR 7ja OR 9ja OR jav OR 7b8 OR 9b8 OR bal OR 7bk OR 9bk OR bkf OR 7di OR 9di OR dir OR 7dg OR 9dg OR dgr OR 7cm OR 9cm OR clm OR 7b7 OR 9b9 OR bsw OR 72h OR 92h OR 2hs OR 7ss OR 9ss OR ssd OR 7wd OR 9wd OR wsd OR 7sb OR 9sb OR sbr OR 7sm OR 9sm OR scm OR 7ga OR 9ga OR gax OR 7la OR 9la OR lax OR 7ha OR 9ha OR hax OR 7mp OR 9mp OR mpi) FILTLVL>1]:// hide bad bases for rares
-ItemDisplay[!ID MAG (aqv OR aqv2 OR aqv3 OR cqv OR cqv2 OR cqv3) FILTLVL>1]://
-ItemDisplay[!ID MAG (aqv OR cqv) CLVL>15]://
-ItemDisplay[!ID MAG (aqv2 OR cqv2) CLVL>30]://
+ItemDisplay[!ID MAG (aqv OR aqv2 OR aqv3 OR cqv OR cqv2 OR cqv3) FILTLVL>3]://
+//ItemDisplay[!ID MAG (aqv OR cqv) CLVL>15]://
+//ItemDisplay[!ID MAG (aqv2 OR cqv2) CLVL>30]://
 
 ItemDisplay[MAG !ID (WEAPON OR ARMOR) !((ZON !BOW) OR CIRC OR GLOVES OR WAND OR crs OR 9cr) CLVL>35]://
 ItemDisplay[MAG !ID rin FILTLVL>1]://
@@ -1615,11 +1616,11 @@ ItemDisplay[!ID RARE AXE THROWING FILTLVL>3]://
 ItemDisplay[!ID RARE SPEAR ZON FILTLVL>3]://
 ItemDisplay[!ID RARE 2H SWORD FILTLVL>3]://
 ItemDisplay[!ID RARE (SOR OR SCEPTER OR WAND OR STAFF) FILTLVL>3]://
-ItemDisplay[!ID RARE (aqv OR cqv) FILTLVL>1]://
-ItemDisplay[!ID RARE (aqv2 OR cqv2) FILTLVL>2]://
-ItemDisplay[!ID RARE (aqv3 OR cqv3) FILTLVL>3]://
-ItemDisplay[!ID RARE (aqv OR cqv) CLVL>25]://
-ItemDisplay[!ID RARE (aqv2 OR cqv2) CLVL>45]://
+//ItemDisplay[!ID RARE (aqv OR cqv) FILTLVL>1]://
+//ItemDisplay[!ID RARE (aqv2 OR cqv2) FILTLVL>2]://
+//ItemDisplay[!ID RARE (aqv3 OR cqv3) FILTLVL>3]://
+//ItemDisplay[!ID RARE (aqv OR cqv) CLVL>25]://
+//ItemDisplay[!ID RARE (aqv2 OR cqv2) CLVL>45]://
 
 //Green items
 ItemDisplay[!ID SET rin]:*** Ring ***%CONTINUE%
@@ -1739,7 +1740,7 @@ ItemDisplay[!ID UNI uui]:%NAME%%YELLOW%O%ORANGE%O%RED%O ³%GOLD%Ormus' Robes %RED
 ItemDisplay[!ID UNI utu]:%NAME%%RED%O ³%GOLD%The Gladiator's Bane %RED%O%CONTINUE%
 ItemDisplay[!ID UNI upl]:%NAME%%YELLOW%O%ORANGE%O%RED%O ³%GOLD%Arkaine's Valor %RED%O%ORANGE%O%YELLOW%O%CONTINUE%
 ItemDisplay[!ID UNI uld]:%NAME%%RED%O ³%GOLD%Leviathan %RED%O%CONTINUE%
-ItemDisplay[!ID UNI utp]:%NAME%%RED%O ³%GOLD%Purgatory %RED%O%ORANGE%O%YELLOW%O%CONTINUE%
+ItemDisplay[!ID UNI ETH utp]:%NAME%%YELLOW%O%ORANGE%O%RED%O ³%GOLD%Purgatory %RED%O%ORANGE%O%YELLOW%O%CONTINUE%
 ItemDisplay[!ID UNI !ETH utp]:%NAME%%RED%O ³%GOLD%Purgatory %RED%O%CONTINUE%
 ItemDisplay[!ID UNI ETH uul]:%NAME%%YELLOW%O%ORANGE%O%RED%O ³%GOLD%Steel Carapace %RED%O%ORANGE%O%YELLOW%O%CONTINUE%
 ItemDisplay[!ID UNI uar]:%NAME%%PURPLE%O %BLUE% O %GREEN% O %YELLOW% O %ORANGE% O %RED% O  ³%GOLD%Tyrael's??? %RED% O %ORANGE% O %YELLOW% O %GREEN% O %BLUE% O %PURPLE% O%%SOUNDID-4611%CONTINUE%

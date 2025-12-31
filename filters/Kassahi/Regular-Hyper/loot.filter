@@ -4,15 +4,17 @@ ItemDisplayFilterName[3]: ÿc:Medium ÿc4Strictness ÿc7w/ ÿc;All Juvs ÿc7& ÿc.Flaw
 ItemDisplayFilterName[4]: ÿc:Medium ÿc4Strictness ÿc7w/ ÿc;All Juvs
 ItemDisplayFilterName[5]: ÿc*Extra ÿc4Strictness ÿc7w/ ÿc0All Pots ÿc7& ÿc.Flawless
 ItemDisplayFilterName[6]: ÿc*Extra ÿc4Strictness ÿc7w/ ÿc0All Pots
-ItemDisplayFilterName[7]: ÿc*Extra ÿc4Strictness ÿc7w/ ÿc;All Juvs ÿc7& ÿc.Flawless
-ItemDisplayFilterName[8]: ÿc*Extra ÿc4Strictness ÿc7w/ ÿc;All Juvs
+ItemDisplayFilterName[7]: ÿc*Extra ÿc4Strictness ÿc7w/ ÿc;Juice ÿc7& ÿc.Flawless
+ItemDisplayFilterName[8]: ÿc*Extra ÿc4Strictness ÿc7w/ ÿc;Juice
 ItemDisplayFilterName[9]: ÿc1Extreme ÿc4Strictness ÿc7w/ ÿc0All Pots ÿc7& ÿc.Flawless
 ItemDisplayFilterName[10]: ÿc1Extreme ÿc4Strictness ÿc7w/ ÿc0All Pots
 ItemDisplayFilterName[11]: ÿc1Extreme ÿc4Strictness ÿc7w/ ÿc;Juice ÿc7& ÿc.Flawless
 ItemDisplayFilterName[12]: ÿc1Extreme ÿc4Strictness ÿc7w/ ÿc;Juice
 
 //------------------------------FILTER_VERSION_ON_CUBE------------------------------
-ItemDisplay[box]: %MAP-51%Horadric Cube %RED%(Dec/30th/25){%LIGHT_GRAY%reverted mag/rare class items - Kassahi%CL%added new luxe filter - Mark%CL%%GREEN%Kassahi - HiimMark%CL%%WHITE%Season 12 Build # 144}
+ItemDisplay[box]: %MAP-51%Horadric Cube %RED%(Dec/30th/25){%LIGHT_GRAY%muted sounds in towns - Kassahi%CL%added new luxe filter - Mark%CL%%GREEN%Kassahi - HiimMark%CL%%WHITE%Season 12 Build # 151}
+// Mute sounds in towns
+ItemDisplay[(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109)]:%NAME%{%NAME%}%WHITE%%SOUNDID-33%%CONTINUE%
 
 
 
@@ -48,8 +50,6 @@ Alias[SHARD_RIGHT]: %CORAL%   •%RED%•%PURPLE%•
 
 Alias[MAIN_DOT]: •
 
-// Charm Item Colors
-ItemDisplay[MAG !ID CHARM]: %PURPLE%%NAME%%CONTINUE%
 // Rejuves
 ItemDisplay[rvl]: %PURPLE%° %WHITE%Juice %PURPLE%°%CONTINUE%
 
@@ -80,7 +80,7 @@ ItemDisplay[MAG cm3 GG_GC]: %PURPLE%%NAME%%CONTINUE%
 ItemDisplay[MAG !ID cm1]: Small%CONTINUE%
 ItemDisplay[MAG !ID cm2]: Large%CONTINUE%
 ItemDisplay[MAG !ID cm3]: Grand%CONTINUE%
-ItemDisplay[MAG !ID (cm1 OR cm2 OR cm3 OR jew) ILVL>89]: %TEAL%%NAME%%CONTINUE%
+ItemDisplay[MAG !ID ((ILVL>89 (cm1 OR cm2 OR cm3)) OR (ILVL>84 (jew)))]: %PURPLE%%NAME%%CONTINUE%
 ItemDisplay[MAG cm1p]: %PURPLE%Pvp Arena %BLUE%Small Charm%CONTINUE%
 ItemDisplay[MAG cm2p]: %PURPLE%Pvp Arena %BLUE%Large Charm%CONTINUE%
 ItemDisplay[MAG cm3p]: %PURPLE%Pvp Arena %BLUE%Grand Charm%CONTINUE%
@@ -96,7 +96,6 @@ ItemDisplay[UNI cm2 CLSK6=2]: Sin Torch%CONTINUE%
 ItemDisplay[UNI cm3]: Gheed's Fortune%CONTINUE%
 
 // JEWELRY'S NAME (BASE)
-ItemDisplay[UNI !ID jew]: Facet%CONTINUE%
 ItemDisplay[UNI ID jew STAT333>0 STAT329>0]: Fire Facet%CONTINUE%
 ItemDisplay[UNI ID jew STAT334>0 STAT330>0]: Lightning Facet%CONTINUE%
 ItemDisplay[UNI ID jew STAT335>0 STAT331>0]: Cold Facet%CONTINUE%
@@ -119,7 +118,7 @@ ItemDisplay[CRAFT !(STAT477=4 OR STAT477=21) ((amu (STR>3 DEX>3 STAT1>3 STAT3>3)
 ItemDisplay[NMAG !ID (WEAPON OR ARMOR OR amu OR rin)]: %NAME%%CONTINUE%
 
 // JEWELRY'S NAME (UNI)
-ItemDisplay[UNI !ID jew]: Jewel%CONTINUE%
+ItemDisplay[UNI !ID jew]: Facet%CONTINUE%
 ItemDisplay[UNI !ID rin]: Ring%CONTINUE%
 ItemDisplay[UNI !ID amu]: Amulet%CONTINUE%
 ItemDisplay[UNI !ID ram]: The Third Eye%CONTINUE%
@@ -754,7 +753,7 @@ ItemDisplay[lucc]: %ORANGE%Talisman of Transgression{%WHITE%to Make %ORANGE%Shad
 ItemDisplay[lucd]: %ORANGE%Flesh of Malic{%WHITE%to Make %ORANGE%Shadow of Hatred%NL%%TAN%Cube: %ORANGE%DI, TOT, FOM%NL%%TAN%Drops From: %RED%Demon Enemy}%CONTINUE%
 ItemDisplay[(lucb OR lucc OR lucd) QTY>1]: %NAME% %TAN%x%WHITE%%QTY%{%NAME%}%CONTINUE%
 // PROJECT DIABLO 2 ITEMS
-ItemDisplay[(rid OR rtp OR rkey) INVENTORY]: %RED%%NAME%{%RED%Highlight disabled in inventory%NAME%}
+ItemDisplay[(rid OR rtp OR rkey) INVENTORY]: %RED%%NAME%{%RED%Highlight disabled in inventory%NAME%}%CONTINUE%
 ItemDisplay[wss]: %MAP-0A%%SOUNDID-4715%%RED%Worldstone{%TAN%Maps: %WHITE%100% %BLUE%Mod %NL% %TAN%Sock Item: %WHITE%75% %BLUE%Mod %WHITE%25% %BLUE%Brick %NL% %TAN%Unsock Item: %WHITE%50% %BLUE%Mod %WHITE%25%%BLUE% Brick%WHITE%/%BLUE%Sockets %NL%%WHITE%Armor: 1-3, 1h Weapon: 2-4, 2h Weapon: 3-6%NL%%WHITE%Possible Corruptions:}%CONTINUE%
 ItemDisplay[wss QTY>1]: %NAME% %TAN%x%WHITE%%QTY%{%NAME%}%CONTINUE%
 ItemDisplay[iwss]: %PX-60%%MAP-0A%%SOUNDID-4715%%RED%Catalyst{%TAN%Ads: %WHITE%Area Contains a Random Event to Maps%NL%%TAN%Drops From: %RED%An Altar of the Catalyst Event}%CONTINUE%
@@ -1038,7 +1037,7 @@ ItemDisplay[STAT206>0 !(STAT477=4 OR STAT477=21)]: %NAME%*{%NAME%}%CONTINUE%
 // GOLD
 ItemDisplay[GOLD<9999]:
 // POTIONS
-ItemDisplay[FILTLVL~1-10 rvs]: %PURPLE%° %WHITE%35%
+ItemDisplay[((FILTLVL~1-6) OR (FILTLVL~9-10)) rvs]: %PURPLE%° %WHITE%35%
 ItemDisplay[rvs]:
 ItemDisplay[rvl]: %NAME%
 ItemDisplay[DIFF=0 CLVL<18 (MAPID>0 MAPID<39) hp1]: %RED%· %WHITE%h
@@ -1483,7 +1482,7 @@ ItemDisplay[lpp]: %MAP-0A%%SOUNDID-4715%%GOLD%%NAME%{%GRAY%(Magic/Rare/Crafted)%
 ItemDisplay[lpp]: %RED%%MAIN_DOT% %NAME% %RED%%MAIN_DOT%{%NAME%}%CONTINUE%
 ItemDisplay[imrn]: %PX-60%%DOT-21%%MAP-0A%%SOUNDID-4714%%RED%%NAME%{%RED%IT WILL GET RID OF ANNIVERSARY SKIN%CL%DO NOT USE Demonic Cube ON THE ANNIVERSARY ITEMS%CL%%NAME%}%CONTINUE%
 ItemDisplay[(jewf OR imra OR rera OR scou OR upma OR upmp OR fort OR irma OR irra OR rrra OR urma)]: %MAP-68%%NAME%{%NAME%}%CONTINUE%
-ItemDisplay[scrb]: %PX-60%%MAP-0A%%GOLD%%NAME%{%GRAY%(These Are Intended For Groups)%NL%}%CONTINUE%
+ItemDisplay[scrb]: %PX-60%%MAP-0A%%SOUNDID-4715%%GOLD%%NAME%{%GRAY%(These Are Intended For Groups)%NL%}%CONTINUE%
 ItemDisplay[scrb]: %RED%%MAIN_DOT% %NAME% %RED%%MAIN_DOT%{%NAME%}%CONTINUE%
 ItemDisplay[(crfb OR crfc OR crfs OR crfh OR crfv OR crfu OR crfp)]: %MAP-68%%SOUNDID-4715%%NAME%{%NAME%}%CONTINUE%
 ItemDisplay[crfb]: %CORAL%%MAIN_DOT%%RED%%MAIN_DOT%%MAIN_DOT%   %NAME%   %RED%%MAIN_DOT%%MAIN_DOT%%CORAL%%MAIN_DOT%{%NAME%}%CONTINUE%
