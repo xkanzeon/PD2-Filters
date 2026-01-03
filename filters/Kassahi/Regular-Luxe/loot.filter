@@ -12,9 +12,7 @@ ItemDisplayFilterName[11]: ÿc1Extreme ÿc4Strictness ÿc7w/ ÿc;Juice ÿc7& ÿc.Flawl
 ItemDisplayFilterName[12]: ÿc1Extreme ÿc4Strictness ÿc7w/ ÿc;Juice
 
 //------------------------------FILTER_VERSION_ON_CUBE------------------------------
-ItemDisplay[box]: %MAP-51%Horadric Cube %RED%(Jan/1st/26){%LIGHT_GRAY%reduced name stats on Quiver - Kassahi%CL%magic/rare highlight/icon/drops overhaul%CL%added new luxe filter - Mark%CL%%GREEN%Kassahi - HiimMark%CL%%WHITE%Season 12 Build # 157}
-// Mute sounds in towns
-ItemDisplay[(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109)]:%NAME%{%NAME%}%WHITE%%SOUNDID-33%%CONTINUE%
+ItemDisplay[box]: %MAP-51%Horadric Cube %RED%(Jan/3rd/26){%LIGHT_GRAY%vs infusion - Kassahi%CL%need feedback on pgems description%CL%drop sounds are back in town temporarily%CL%added new luxe filter - Mark%CL%%GREEN%Kassahi - HiimMark%CL%%WHITE%Season 12 Build # 161}
 
 
 
@@ -47,6 +45,8 @@ Alias[SHARD_LEFT]: %RED%«%BLACK%·%RED%» %RED%
 Alias[SHARD_RIGHT]: %RED% «%BLACK%·%RED%»
 
 Alias[MAIN_DOT]: O
+Alias[PD2_MATS_LEFT]: %PURPLE%«%BLACK%·%RED%»
+Alias[PD2_MATS_RIGHT]: %RED%«%BLACK%·%PURPLE%»
 
 // Rejuves
 ItemDisplay[rvl]: %WHITE%+ %PURPLE%Full %WHITE%+%CONTINUE%
@@ -776,12 +776,12 @@ ItemDisplay[urma]: %GOLD%Infused Angelic%ORANGE%{}%CONTINUE%
 ItemDisplay[(jewf OR imra OR rera OR scou OR upma OR upmp OR fort OR irma OR irra OR rrra OR urma) QTY>1]: %NAME% %TAN%x%WHITE%%QTY%{%NAME%}%CONTINUE%
 ItemDisplay[scrb QTY>1]: %NAME% %TAN%x%WHITE%%QTY%{%NAME%}%CONTINUE%
 ItemDisplay[crfb]: %GOLD%Infusion %RED%@{%WHITE%amulet: %BLUE%10frw, 3-6lpk, 10-20life%CL%%WHITE%ring: %BLUE%5-10str, 1-3ll, 10-20life%CL%%WHITE%belt: %BLUE%10-20ow, 3-6ll, 10-20life%CL%%WHITE%gloves: %BLUE%5-10cb, 2-4ll, 10-20life%CL%%WHITE%boots: %BLUE%15-30repl, 2-4ll, 10-20life%CL%%WHITE%helm: %BLUE%10-20cb, 2-4ll, 10-20life%CL%%WHITE%chest: %BLUE%3-6lpk, 3-6ll, 20-40life%CL%%WHITE%shield: %BLUE%10-20block, 3-6ll, 10-20life%CL%%WHITE%weapon: %BLUE%50-80edmg, 3-6ll, 10-20life%NL%%WHITE%cube: %BLUE%magic%GOLD%/%YELLOW%rare %WHITE%item, %RED%blood @}%CONTINUE%
-ItemDisplay[crfc]: %GOLD%Infusion %PURPLE%@{%WHITE%amulet: %BLUE%5-10fcr, 4-10rm, 10-20mn%CL%%WHITE%ring: %BLUE%5-10ene, 1-2mpk, 10-20mn%CL%%WHITE%belt: %BLUE%10fcr, 4-10rm, 10-20mn%CL%%WHITE%gloves: %BLUE%5-10fcr, 1-3mpk, 10-20mn%CL%%WHITE%boots: %BLUE%10-150imm, 4-10rm, 10-20mn%CL%%WHITE%helm: %BLUE%5-10fcr, 4-10rm, 10-20mn%CL%%WHITE%chest: %BLUE%5-10fcr, 3-6mpk, 20-30mn%CL%%WHITE%shield: %BLUE%10-20block, 5-10fcr, 20-30mn%CL%%WHITE%weapon: %BLUE%1all, 10-20fcr, 10-20mn%NL%%WHITE%cube: %BLUE%magic%GOLD%/%YELLOW%rare %WHITE%item, %PURPLE%Cast @}%CONTINUE%
-ItemDisplay[crfs]: %GOLD%Infusion %GREEN%@{%WHITE%amulet: %BLUE%10block, 4-7mdr/pdr%CL%%WHITE%ring: %BLUE%5-10vit, 2-5mdr/pdr%CL%%WHITE%belt: %BLUE%10-30edef, 10-20pres, 2-5mdr/pdr%CL%%WHITE%gloves: %BLUE%10-30edef, 10-20cres, 2-5mdr/pdr%CL%%WHITE%boots: %BLUE%20-60edef, 10-20fres, 2-5mdr/pdr%CL%%WHITE%helm: %BLUE%20-60edef, 10-20lres, 5-10%pdr %CL%%WHITE%chest: %BLUE%20-60edef, 100-150defvsmelee, 5-10%pdr%CL%%WHITE%shield: %BLUE%20-60edef, 5-10%pdr %CL%%WHITE%weapon: %BLUE%50-80edmg, kb, 2-5mdr/pdr%NL%%WHITE%cube: %BLUE% magic%GOLD%/%YELLOW%rare %WHITE%item, %GREEN%Safe @}%CONTINUE%
-ItemDisplay[crfh]: %GOLD%Infusion %BLUE%@{%WHITE%amulet: %BLUE%150-250ar, 10-20fhr, 5%ctc fnova%CL%%WHITE%ring: %BLUE%5-10dex, 2-4max, 5%ctc fnova%CL%%WHITE%belt: %BLUE%5-10dmgtomana, 10-20fhr, 5%ctc fnova%CL%%WHITE%gloves: %BLUE%kb, -10-20%td, 5%ctc fnova%CL%%WHITE%boots: %BLUE%60-120defvsmelee, 10-20fhr, 5%ctc fnova%CL%%WHITE%helm: %BLUE%100-200ar, 10-20fhr, 5%ctc fnova%CL%%WHITE%chest: %BLUE%25-50edef, 30-40fhr, 5%ctc fnova%CL%%WHITE%shield: %BLUE%10-20block, 20-30fbr, 5%ctc fnova%CL%%WHITE%weapon: %BLUE%50-80edmg, -10-20%td, 5%ctc fnova%NL%%WHITE%cube: %BLUE% magic%GOLD%/%YELLOW%rare %WHITE%item, %BLUE%Hit @}%CONTINUE%
-ItemDisplay[crfv]: %GOLD%Infusion %LIGHT_GRAY%@{%WHITE%amulet: %BLUE%10-20cdr, 3-6ml, 5-10rel%CL%%WHITE%ring: %BLUE%10-20plr, 1-3ml, 5-10rel%CL%%WHITE%belt: %BLUE%10-20plr, 3-6ml, 5-10rel%CL%%WHITE%gloves: %BLUE%5-10ds, 2-4ml, 5-10rel%CL%%WHITE%boots: %BLUE%10-20plr, 2-4ml, 5-10rel%CL%%WHITE%helm: %BLUE%10-20ds, 2-4ml, 5-10rel%CL%%WHITE%chest: %BLUE%3-6ml, 5-10rel, 20-30plr%CL%%WHITE%shield: %BLUE%10-20block, 3-6ml, 20-30plr%CL%%WHITE%weapon: %BLUE%100-140dem/und, 3-6ml, 10-15rel%NL%%WHITE%cube: %BLUE%magic%GOLD%/%YELLOW%rare %WHITE%item, %LIGHT_GRAY%Vamp @}%CONTINUE%
-ItemDisplay[crfu]: %GOLD%Infusion %YELLOW%@{%WHITE%amulet: %BLUE%10-20vit, 20-30mf, 1-3lr%CL%%WHITE%ring: %BLUE%5-10vit, 10-20mf, 1-3lr%CL%%WHITE%belt: %BLUE%25-50edef, 20-30mf, 1-3lr%CL%%WHITE%gloves: %BLUE%25-50edef, 15-25mf, 1-3lr%CL%%WHITE%boots: %BLUE%25-50edef, 15-25mf, 1-3lr%CL%%WHITE%helm: %BLUE%25-50edef, 20-30mf, 1-3lr%CL%%WHITE%chest: %BLUE%25-50edef, 20-30mf, 1-3lr%CL%%WHITE%shield: %BLUE%10-20block, 20-30mf, 1-3lr%CL%%WHITE%weapon: %BLUE%1all, 20-30mf, 1-3lr%NL%%WHITE%cube: %BLUE%magic%GOLD%/%YELLOW%rare %WHITE%item, %YELLOW%Bount @}%CONTINUE%
-ItemDisplay[crfp]: %GOLD%Infusion %WHITE%@{%WHITE%amulet: %BLUE%5-10ares, 100-150dvsm, 4-8astat%CL%%WHITE%ring: %BLUE%3-5ares, 50-100dvsm, hfd%CL%%WHITE%belt: %BLUE%5-10ias, 5-50edef, hfd%CL%%WHITE%gloves: %BLUE%5-10ias, 10-20ar, 25-50edef%CL%%WHITE%boots: %BLUE%10ms, 100-150dvsm, hfd%CL%%WHITE%helm: %BLUE%5-10ias, 25-50edef, hfd%CL%%WHITE%chest: %BLUE%5-10ares, 25-50edef, 10-20block%CL%%WHITE%shield: %BLUE%5-10ares, 10-20block, hfd%CL%%WHITE%weapon: %BLUE%20-40edmg, 20ias, 50-100ar%NL%%WHITE%cube: %BLUE%magic%GOLD%/%YELLOW%rare %WHITE%item, Brill @}%CONTINUE%
+ItemDisplay[crfc]: %GOLD%Infusion %PURPLE%@{%WHITE%amulet: %BLUE%5-10fcr, 4-10rm, 10-20mn%CL%%WHITE%ring: %BLUE%5-10ene, 1-2mpk, 10-20mn%CL%%WHITE%belt: %BLUE%10fcr, 4-10rm, 10-20mn%CL%%WHITE%gloves: %BLUE%5-10fcr, 1-3mpk, 10-20mn%CL%%WHITE%boots: %BLUE%10-150imm, 4-10rm, 10-20mn%CL%%WHITE%helm: %BLUE%5-10fcr, 4-10rm, 10-20mn%CL%%WHITE%chest: %BLUE%5-10fcr, 3-6mpk, 20-30mn%CL%%WHITE%shield: %BLUE%10-20block, 5-10fcr, 20-30mn%CL%%WHITE%weapon: %BLUE%1all, 10-20fcr, 10-20mn%NL%%WHITE%cube: %BLUE%magic%GOLD%/%YELLOW%rare %WHITE%item, %PURPLE%cast @}%CONTINUE%
+ItemDisplay[crfh]: %GOLD%Infusion %BLUE%@{%WHITE%amulet: %BLUE%150-250ar, 10-20fhr, 5%ctc fnova%CL%%WHITE%ring: %BLUE%5-10dex, 2-4max, 5%ctc fnova%CL%%WHITE%belt: %BLUE%5-10dmgtomana, 10-20fhr, 5%ctc fnova%CL%%WHITE%gloves: %BLUE%kb, -10-20%td, 5%ctc fnova%CL%%WHITE%boots: %BLUE%60-120defvsmelee, 10-20fhr, 5%ctc fnova%CL%%WHITE%helm: %BLUE%100-200ar, 10-20fhr, 5%ctc fnova%CL%%WHITE%chest: %BLUE%25-50edef, 30-40fhr, 5%ctc fnova%CL%%WHITE%shield: %BLUE%10-20block, 20-30fbr, 5%ctc fnova%CL%%WHITE%weapon: %BLUE%50-80edmg, -10-20%td, 5%ctc fnova%NL%%WHITE%cube: %BLUE% magic%GOLD%/%YELLOW%rare %WHITE%item, %BLUE%hit @}%CONTINUE%
+ItemDisplay[crfs]: %GOLD%Infusion %GREEN%@{%WHITE%amulet: %BLUE%10block, 4-7mdr/pdr%CL%%WHITE%ring: %BLUE%5-10vit, 2-5mdr/pdr%CL%%WHITE%belt: %BLUE%10-30edef, 10-20pres, 2-5mdr/pdr%CL%%WHITE%gloves: %BLUE%10-30edef, 10-20cres, 2-5mdr/pdr%CL%%WHITE%boots: %BLUE%20-60edef, 10-20fres, 2-5mdr/pdr%CL%%WHITE%helm: %BLUE%20-60edef, 10-20lres, 5-10%pdr %CL%%WHITE%chest: %BLUE%20-60edef, 100-150defvsmelee, 5-10%pdr%CL%%WHITE%shield: %BLUE%20-60edef, 5-10%pdr %CL%%WHITE%weapon: %BLUE%50-80edmg, kb, 2-5mdr/pdr%NL%%WHITE%cube: %BLUE% magic%GOLD%/%YELLOW%rare %WHITE%item, %GREEN%safe @}%CONTINUE%
+ItemDisplay[crfu]: %GOLD%Infusion %YELLOW%@{%WHITE%amulet: %BLUE%10-20vit, 20-30mf, 1-3lr%CL%%WHITE%ring: %BLUE%5-10vit, 10-20mf, 1-3lr%CL%%WHITE%belt: %BLUE%25-50edef, 20-30mf, 1-3lr%CL%%WHITE%gloves: %BLUE%25-50edef, 15-25mf, 1-3lr%CL%%WHITE%boots: %BLUE%25-50edef, 15-25mf, 1-3lr%CL%%WHITE%helm: %BLUE%25-50edef, 20-30mf, 1-3lr%CL%%WHITE%chest: %BLUE%25-50edef, 20-30mf, 1-3lr%CL%%WHITE%shield: %BLUE%10-20block, 20-30mf, 1-3lr%CL%%WHITE%weapon: %BLUE%1all, 20-30mf, 1-3lr%NL%%WHITE%cube: %BLUE%magic%GOLD%/%YELLOW%rare %WHITE%item, %YELLOW%bount @}%CONTINUE%
+ItemDisplay[crfp]: %GOLD%Infusion %WHITE%@{%WHITE%amulet: %BLUE%5-10ares, 100-150dvsm, 4-8astat%CL%%WHITE%ring: %BLUE%3-5ares, 50-100dvsm, hfd%CL%%WHITE%belt: %BLUE%5-10ias, 5-50edef, hfd%CL%%WHITE%gloves: %BLUE%5-10ias, 10-20ar, 25-50edef%CL%%WHITE%boots: %BLUE%10ms, 100-150dvsm, hfd%CL%%WHITE%helm: %BLUE%5-10ias, 25-50edef, hfd%CL%%WHITE%chest: %BLUE%5-10ares, 25-50edef, 10-20block%CL%%WHITE%shield: %BLUE%5-10ares, 10-20block, hfd%CL%%WHITE%weapon: %BLUE%20-40edmg, 20ias, 50-100ar%NL%%WHITE%cube: %BLUE%magic%GOLD%/%YELLOW%rare %WHITE%item, brill @}%CONTINUE%
+ItemDisplay[crfv]: %GOLD%Infusion %LIGHT_GRAY%@{%WHITE%amulet: %BLUE%10-20cdr, 3-6ml, 5-10rel%CL%%WHITE%ring: %BLUE%10-20plr, 1-3ml, 5-10rel%CL%%WHITE%belt: %BLUE%10-20plr, 3-6ml, 5-10rel%CL%%WHITE%gloves: %BLUE%5-10ds, 2-4ml, 5-10rel%CL%%WHITE%boots: %BLUE%10-20plr, 2-4ml, 5-10rel%CL%%WHITE%helm: %BLUE%10-20ds, 2-4ml, 5-10rel%CL%%WHITE%chest: %BLUE%3-6ml, 5-10rel, 20-30plr%CL%%WHITE%shield: %BLUE%10-20block, 3-6ml, 20-30plr%CL%%WHITE%weapon: %BLUE%100-140dem/und, 3-6ml, 10-15rel%NL%%WHITE%cube: %BLUE%magic%GOLD%/%YELLOW%rare %WHITE%item, %LIGHT_GRAY%vamp @}%CONTINUE%
 ItemDisplay[(crfb OR crfc OR crfs OR crfh OR crfv OR crfu OR crfp) QTY>1]: %NAME% %TAN%x%WHITE%%QTY%{%NAME%}%CONTINUE%
 
 
@@ -1507,37 +1507,37 @@ ItemDisplay[r18s]: %NAME%{%WHITE%Brilliant Boots: O%NL%%YELLOW%Bountiful %WHITE%
 
 // ESSENCES & TOKEN
 ItemDisplay[fed]: %DOT-0A%%SOUNDID-4714%%NAME%{%NAME%}%CONTINUE%
-ItemDisplay[(tes OR ceh OR bet OR fed)]: %DOT-0A%%RED%%MAIN_DOT% %NAME% %RED%%MAIN_DOT%{%NAME%}%CONTINUE%
+ItemDisplay[(tes OR ceh OR bet OR fed)]: %DOT-0A%%RED%%PD2_MATS_LEFT% %NAME% %RED%%PD2_MATS_RIGHT%{%NAME%}%CONTINUE%
 ItemDisplay[toa]: %MAP-0A%%SOUNDID-4715%%RED%%MAIN_DOT%%MAIN_DOT%  %ORANGE%Token  %RED%%MAIN_DOT%%MAIN_DOT%{%GOLD%Wherever You Are is The Entry Point.%NL%}
 // MINI UBER KEYS
-ItemDisplay[(pk1 OR pk2 OR pk3)]: %DOT-0A%%SOUNDID-4715%%RED%%MAIN_DOT% %NAME% %RED%%MAIN_DOT%{%NAME%}%CONTINUE%
+ItemDisplay[(pk1 OR pk2 OR pk3)]: %DOT-0A%%SOUNDID-4715%%RED%%PD2_MATS_LEFT% %NAME% %RED%%PD2_MATS_RIGHT%{%NAME%}%CONTINUE%
 // ORGAN & UBER ITEMS
-ItemDisplay[(mbr OR dhn OR bey OR std)]: %DOT-0A%%SOUNDID-4715%%RED%%MAIN_DOT% %NAME% %RED%%MAIN_DOT%{%NAME%}%CONTINUE%
+ItemDisplay[(mbr OR dhn OR bey OR std)]: %DOT-0A%%SOUNDID-4715%%RED%%PD2_MATS_LEFT% %NAME% %RED%%PD2_MATS_RIGHT%{%NAME%}%CONTINUE%
 ItemDisplay[ubtm]: %MAP-0A%%SOUNDID-4715%%LIGHT_GRAY%%MAIN_DOT%%RED%%MAIN_DOT%  %NAME%  %RED%%MAIN_DOT%%LIGHT_GRAY%%MAIN_DOT%{%LIGHT_GRAY%(You Get 3 Tps in Town Once u Enter Ubers)%CL%%NL%%RED%fres, %BLUE%cres:%WHITE%150, %YELLOW%lres:%WHITE%125%CL%%DARK_GREEN%Recommended Stats:%NL%}
 ItemDisplay[UNI cm2]: %NAME%%CONTINUE%{%WHITE%Make Hellfire Ashes%NL%%TAN%Cube: %WHITE%Torch, Key, to}
 // UBER ANCIENTS
-ItemDisplay[(ubaa OR ubab OR ubac)]: %PX-60%%SOUNDID-4715%%RED%%MAIN_DOT% %NAME% %RED%%MAIN_DOT%{%NAME%}%CONTINUE%
+ItemDisplay[(ubaa OR ubab OR ubac)]: %PX-60%%SOUNDID-4715%%RED%%PD2_MATS_LEFT% %NAME% %RED%%PD2_MATS_RIGHT%{%NAME%}%CONTINUE%
 ItemDisplay[uba]: %MAP-0A%%SOUNDID-4715%%LIGHT_GRAY%%MAIN_DOT%%RED%%MAIN_DOT%  %NAME%  %RED%%MAIN_DOT%%LIGHT_GRAY%%MAIN_DOT%{%LIGHT_GRAY%(You Cannot Make TPs Once You're Inside)}
 // DCLONE ITEMS
-ItemDisplay[(dcho OR dcso OR dcbl)]: %PX-60%%MAP-0A%%SOUNDID-4715%%RED%%MAIN_DOT% %NAME% %RED%%MAIN_DOT%{%NAME%}%CONTINUE%
+ItemDisplay[(dcho OR dcso OR dcbl)]: %PX-60%%MAP-0A%%SOUNDID-4715%%RED%%PD2_MATS_LEFT% %NAME% %RED%%PD2_MATS_RIGHT%{%NAME%}%CONTINUE%
 ItemDisplay[dcma]: %MAP-0A%%SOUNDID-4715%%LIGHT_GRAY%%MAIN_DOT%%RED%%MAIN_DOT%  %NAME%  %RED%%MAIN_DOT%%LIGHT_GRAY%%MAIN_DOT%{%LIGHT_GRAY%(+Minions & Mercs Die on Entering)%NL%(You Cannot Make TPs Once You're Inside)%CL%%NL%%ORANGE%T0:%WHITE%50%%GOLD%pdr, %WHITE%90%RED%mfr, %WHITE%2%GOLD%Dwarf %CL%%DARK_GREEN%Recommended Stats:%NL%}
 // RATHMA ITEMS
-ItemDisplay[(rtmo OR rtmv OR cm2f)]: %PX-60%%MAP-0A%%SOUNDID-4715%%RED%%MAIN_DOT% %NAME% %RED%%MAIN_DOT%{%NAME%}%CONTINUE%
+ItemDisplay[(rtmo OR rtmv OR cm2f)]: %PX-60%%MAP-0A%%SOUNDID-4715%%RED%%PD2_MATS_LEFT% %NAME% %RED%%PD2_MATS_RIGHT%{%NAME%}%CONTINUE%
 ItemDisplay[cwss]: %MAP-0A%%SOUNDID-4715%%SHARD_LEFT% %NAME% %SHARD_RIGHT%{%NAME%}%CONTINUE%
 ItemDisplay[rtma]: %MAP-0A%%SOUNDID-4715%%LIGHT_GRAY%%MAIN_DOT%%RED%%MAIN_DOT%  %NAME%  %RED%%MAIN_DOT%%LIGHT_GRAY%%MAIN_DOT%{%LIGHT_GRAY%(+Minions & Mercs Die on Entering)%NL%(You Cannot Make TPs Once You're Inside)%CL%%NL%%ORANGE%T1:%WHITE%119, %ORANGE%T2:%WHITE%123%CL%%WHITE%175%GREEN%plr, %WHITE%90%GREEN%mpr, %WHITE%85+%BLUE%mcr, %WHITE%85+%RED%mfr%CL%%ORANGE%T0:%RED%fres, %BLUE%cres, %GREEN%pres:%WHITE%115%CL%%DARK_GREEN%Recommended Stats:%NL%}
 // LUCION ITEMS
-ItemDisplay[(lucb OR lucc OR lucd)]: %PX-60%%MAP-0A%%SOUNDID-4715%%RED%%MAIN_DOT% %NAME% %RED%%MAIN_DOT%{%NAME%}%CONTINUE%
+ItemDisplay[(lucb OR lucc OR lucd)]: %PX-60%%MAP-0A%%SOUNDID-4715%%RED%%PD2_MATS_LEFT% %NAME% %RED%%PD2_MATS_RIGHT%{%NAME%}%CONTINUE%
 ItemDisplay[luca]: %MAP-0A%%SOUNDID-4715%%LIGHT_GRAY%%MAIN_DOT%%RED%%MAIN_DOT%  %NAME%  %RED%%MAIN_DOT%%LIGHT_GRAY%%MAIN_DOT%{%LIGHT_GRAY%(+Minions & Mercs Die on Entering)%NL%(You Cannot Make TPs Once You're Inside)%CL%%NL%%GOLD%High %WHITE%Def, %GOLD%Max %WHITE%Block%CL%%ORANGE%T0:%WHITE%50%%GOLD%pdr, %WHITE%90%YELLOW%mlr, %GOLD%Wisp %CL%%DARK_GREEN%Recommended Stats:%NL%}
 // PROJECT DIABLO 2 ITEMS
 ItemDisplay[wss]: %SHARD_LEFT% %NAME% %SHARD_RIGHT%{%NAME%}%CONTINUE%
 ItemDisplay[iwss]: %SHARD_LEFT% %NAME% %SHARD_RIGHT%{%NAME%}%CONTINUE%
 ItemDisplay[lbox]: %DOT-0D%%MAP-21%%BORDER-0A%%SOUNDID-4719%%RED%%NAME%{%WHITE%Armor: 1-2, 1h Weapon: 1-2, 2h Weapon: 2-4%NL%%WHITE%Possible Sockets:}%CONTINUE%
-ItemDisplay[lpp]: %MAP-0A%%SOUNDID-4715%%GOLD%%NAME%{%GRAY%(Magic/Rare/Crafted)%NL%%WHITE%Armor: 1-2, 1h Weapon: 1-2, 2h Weapon: 2-4%NL%%WHITE%Possible Sockets:}%CONTINUE%
-ItemDisplay[lpp]: %RED%%MAIN_DOT% %NAME% %RED%%MAIN_DOT%{%NAME%}%CONTINUE%
+ItemDisplay[lpp]: %MAP-0A%%SOUNDID-4715%%GOLD%%NAME%{%GRAY%(Gray/White/Magic/Rare/Crafted)%NL%%WHITE%Armor: 1-2, 1h Weapon: 1-2, 2h Weapon: 2-4%NL%%WHITE%Possible Sockets:}%CONTINUE%
+ItemDisplay[lpp]: %RED%%PD2_MATS_LEFT% %NAME% %RED%%PD2_MATS_RIGHT%{%NAME%}%CONTINUE%
 ItemDisplay[imrn]: %PX-60%%DOT-21%%MAP-0A%%SOUNDID-4714%%RED%%NAME%{%RED%IT WILL GET RID OF ANNIVERSARY SKIN%CL%DO NOT USE Demonic Cube ON THE ANNIVERSARY ITEMS%CL%%NAME%}%CONTINUE%
 ItemDisplay[(jewf OR imra OR rera OR scou OR upma OR upmp OR fort OR irma OR irra OR rrra OR urma)]: %MAP-68%%NAME%{%NAME%}%CONTINUE%
 ItemDisplay[scrb]: %PX-60%%MAP-0A%%SOUNDID-4715%%GOLD%%NAME%{%GRAY%(These Are Intended For Groups)%NL%}%CONTINUE%
-ItemDisplay[scrb]: %RED%%MAIN_DOT% %NAME% %RED%%MAIN_DOT%{%NAME%}%CONTINUE%
+ItemDisplay[scrb]: %RED%%PD2_MATS_LEFT% %NAME% %RED%%PD2_MATS_RIGHT%{%NAME%}%CONTINUE%
 ItemDisplay[(crfb OR crfc OR crfs OR crfh OR crfv OR crfu OR crfp)]: %MAP-68%%SOUNDID-4715%%NAME%{%NAME%}%CONTINUE%
 ItemDisplay[crfb]: %CORAL%%MAIN_DOT%%RED%%MAIN_DOT%%MAIN_DOT%   %NAME%   %RED%%MAIN_DOT%%MAIN_DOT%%CORAL%%MAIN_DOT%{%NAME%}%CONTINUE%
 ItemDisplay[crfc]: %BLUE%%MAIN_DOT%%PURPLE%%MAIN_DOT%%MAIN_DOT%   %NAME%   %PURPLE%%MAIN_DOT%%MAIN_DOT%%BLUE%%MAIN_DOT%{%NAME%}%CONTINUE%
@@ -2186,9 +2186,6 @@ ItemDisplay[DIFF<3 CLVL<85 (MAPID>0 MAPID<133) MAG !ID BARBARIAN THROWING !(am5 
 ItemDisplay[FILTLVL~1-4 RARE !ID BARBARIAN (BAR OR THROWING) !(am5 OR ama OR amf)]: %DOT-6D%%NAME%
 ItemDisplay[FILTLVL~1-4 MAG !ID BARBARIAN ((BAR) OR (ETH (THROWING))) !(am5 OR ama OR amf)]: %DOT-97%%NAME%
 // Magic/Rare Paladin
-ItemDisplay[RARE !ID ETH PALADIN (fla OR 9fl OR 7fl)]: %DOT-62%%MAP-21%%BORDER-6D%%RED%•%ORANGE%•  %NAME%  %ORANGE%•%RED%•
-ItemDisplay[RARE !ID !ETH PALADIN (fla OR 9fl OR 7fl)]: %PX-62%%DOT-21%%MAP-6D%%RED%• %NAME% %RED%•
-ItemDisplay[MAG !ID ETH PALADIN (fla OR 9fl OR 7fl)]: %PX-60%%DOT-21%%MAP-97%%ORANGE%• %NAME% %ORANGE%•
 ItemDisplay[DIFF<3 CLVL<85 (MAPID>0 MAPID<133) MAG !ID PALADIN (DIN OR SCEPTER)]: %DOT-97%%NAME%
 ItemDisplay[FILTLVL~1-4 RARE !ID PALADIN (DIN OR SCEPTER)]: %DOT-6D%%NAME%
 ItemDisplay[FILTLVL~1-4 MAG !ID PALADIN ((DIN) OR (ETH (SCEPTER)))]: %DOT-97%%NAME%
@@ -2236,9 +2233,9 @@ ItemDisplay[FILTLVL~1-4 RARE !ETH !ID !(DRU OR BAR OR DIN OR NEC) HELM]: %NAME%
 ItemDisplay[DIFF<3 CLVL<85 (MAPID>0 MAPID<133) MAG !ID !ETH EXC CHEST]: %NAME%
 
 // GG Class Specific Eth Rare Weapons (with all rare claws)
-Alias[GG_CLASS_ITEMS_1]: (lax OR 9la OR 7la OR gax OR 9ga OR 7ga OR scy OR 9s8 OR 7s8 OR wsc OR 9wc OR 7wc OR ssp OR 9s9 OR 7s7 OR glv OR 9gl OR 7gl OR tsp OR 9ts OR 7ts OR fla OR 9fl OR 7fl OR SIN OR dir OR 9di OR 7di OR bld OR 9bl OR 7bl OR hxb OR 8hx OR 6hx OR mxb OR 8mx OR 6mx OR am1 OR am6 OR amb OR am2 OR am7 OR amc)
+Alias[GG_CLASS_ITEMS_1]: (lax OR 9la OR 7la OR gax OR 9ga OR 7ga OR scy OR 9s8 OR 7s8 OR wsc OR 9wc OR 7wc OR ssp OR 9s9 OR 7s7 OR glv OR 9gl OR 7gl OR tsp OR 9ts OR 7ts OR SIN OR dir OR 9di OR 7di OR bld OR 9bl OR 7bl OR hxb OR 8hx OR 6hx OR mxb OR 8mx OR 6mx OR am1 OR am6 OR amb OR am2 OR am7 OR amc)
 // GG Class Specific Eth Magic and uneth Rare Weapons (with War Fist family)
-Alias[GG_CLASS_ITEMS_2]: (lax OR 9la OR 7la OR gax OR 9ga OR 7ga OR scy OR 9s8 OR 7s8 OR wsc OR 9wc OR 7wc OR ssp OR 9s9 OR 7s7 OR glv OR 9gl OR 7gl OR tsp OR 9ts OR 7ts OR fla OR 9fl OR 7fl OR dir OR 9di OR 7di OR bld OR 9bl OR 7bl OR hxb OR 8hx OR 6hx OR mxb OR 8mx OR 6mx OR am1 OR am6 OR amb OR am2 OR am7 OR amc OR axf OR 9xf OR 7xf)
+Alias[GG_CLASS_ITEMS_2]: (lax OR 9la OR 7la OR gax OR 9ga OR 7ga OR scy OR 9s8 OR 7s8 OR wsc OR 9wc OR 7wc OR ssp OR 9s9 OR 7s7 OR glv OR 9gl OR 7gl OR tsp OR 9ts OR 7ts OR dir OR 9di OR 7di OR bld OR 9bl OR 7bl OR hxb OR 8hx OR 6hx OR mxb OR 8mx OR 6mx OR am1 OR am6 OR amb OR am2 OR am7 OR amc OR axf OR 9xf OR 7xf)
 
 // Good Specific Eth Magic and uneth Rare Weapons
 Alias[GOOD_WEAPON_ITEMS_1]: (pax OR 9pa OR 7pa OR mst OR 9mt OR 7mt OR mac OR 9ma OR 7ma OR dgr OR 9dg OR 7dg OR wax OR 9wa OR 7wa OR gix OR 9gi OR 7gi OR whm OR 9wh OR 7wh OR mau OR 9m9 OR 7m7 OR gma OR 9gm OR 7gm OR crs OR 9cr OR 7cr OR flb OR 9fb OR 7fb OR gsd OR 9gd OR 7gd OR THROWING OR pik OR 9p9 OR 7p7)
