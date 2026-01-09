@@ -815,7 +815,7 @@ ItemDisplay[t52 TOWN]:%RED% O Warlord of Blood Map O{%WHITE%Immunes:%GRAY%Immune
 ItemDisplay[t53 TOWN]:%RED% O Fallen Gardens Map O{%WHITE%Immunes:%GRAY%Immune-Free Zone%NAME%}%MAP-0B%%CONTINUE%
 ItemDisplay[t54 TOWN]:%RED% O Imperial Palace Map O{%WHITE%Immunes:%GRAY%Immune-Free Zone%NAME%}%MAP-0B%%CONTINUE%
 ItemDisplay[t55 TOWN]:%RED% O Outer Void Map O{%WHITE%Immunes:%GRAY%Immune-Free Zone%NAME%}%MAP-0B%%CONTINUE%
-ItemDisplay[t56 TOWN]:%RED% O New Map O{%WHITE%Immunes:%GRAY%Immune-Free Zone%NAME%}%MAP-0B%%CONTINUE%
+ItemDisplay[t56 TOWN]:%RED% O City of Ureh O{%WHITE%Immunes:%GRAY%Immune-Free Zone%NAME%}%MAP-0B%%CONTINUE%
 
 //Dungeons
 ItemDisplay[t41 TOWN]:%WHITE%(%BLACK%t4%WHITE%)%PURPLE%Cathedral of Light Dungeon%WHITE%(x%QTY%)%CONTINUE%
