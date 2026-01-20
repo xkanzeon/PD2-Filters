@@ -3560,7 +3560,7 @@ ItemDisplay[UNI !ID ba2 ETH]:%DOT-0C% %GOLD%@@@@     %WHITE%ETH %RED%Wildspeaker
 ItemDisplay[UNI !ID 9b8 !ETH]:%GOLD%@@@@     %TAN%Achilles Strike%GOLD%[%BASENAME%]%WHITE%(New)     %GOLD%@@@@
 ItemDisplay[UNI !ID 9b8 ETH]:%GOLD%@@@@     %WHITE%ETH %TAN%Achilles Strike%GOLD%[%BASENAME%]%WHITE%(New)     %GOLD%@@@@
 ItemDisplay[UNI !ID uhc !ETH]:%DOT-0C% %GOLD%@@@@     %RED%Siggards Staunch%GOLD%[%BASENAME%]%WHITE%(New)     %GOLD%@@@@
-ItemDisplay[UNI !ID uhc ETH]:%DOT-0C% %GOLD%@@@@     %WHITE%ETH %RED%Siggards Staunch%GOLD%[%BASENAME%]%WHITE%(New)     %GOLD%@@@@
+ItemDisplay[UNI !ID uhc ETH]:%SOUNDID-2664%%BORDER-62%%RED%@@%ORANGE%@@%YELLOW%@@%GREEN%@@%BLUE%@@%PURPLE%@@    %WHITE%ETH %RED%Siggards Staunch    %RED%@@%ORANGE%@@%YELLOW%@@%GREEN%@@%BLUE%@@%PURPLE%@@
 ItemDisplay[UNI !ID neg !ETH]:%DOT-0C% %GOLD%@@@@     %RED%Sacred Totem%GOLD%[%BASENAME%]%WHITE%(New)     %GOLD%@@@@
 ItemDisplay[UNI !ID neg ETH]:%DOT-0C% %GOLD%@@@@     %WHITE%ETH %RED%Sacred Totem%GOLD%[%BASENAME%]%WHITE%(New)     %GOLD%@@@@
 
@@ -3604,7 +3604,7 @@ ItemDisplay[UNI !ID uui !ETH]: %DOT-0C% %GOLD%@@@@     %RED%Ormus Robes     %GOL
 ItemDisplay[UNI !ID uui ETH]: %DOT-0C% %GOLD%@@@@     %PURPLE%Eth %RED%Ormus robes     %GOLD%@@@@ 
 ItemDisplay[UNI !ID utu !ETH]: %DOT-0C% %GOLD%@@@@     %RED%The Gladiators Bane     %GOLD%@@@@ 
 ItemDisplay[UNI !ID utu ETH]: %DOT-0C% %GOLD%@@@@     %PURPLE%Eth %RED%The Gladiators Bane     %GOLD%@@@@ 
-ItemDisplay[UNI !ID upl !ETH]: %DOT-0C% %GOLD%@@@@     %RED%Arkaines Valor     %GOLD%@@@@ 
+ItemDisplay[UNI !ID upl !ETH]:%SOUNDID-2664% %BORDER-62%%RED%@@%ORANGE%@@%YELLOW%@@%GREEN%@@%BLUE%@@%PURPLE%@@   %RED%Arkaines Valor    %RED%@@%ORANGE%@@%YELLOW%@@%GREEN%@@%BLUE%@@%PURPLE%@@
 ItemDisplay[UNI !ID upl ETH]: %DOT-0C% %GOLD%@@@@     %PURPLE%Eth %RED%Arkaines Valor     %GOLD%@@@@ 
 ItemDisplay[UNI !ID uld !ETH]: %DOT-0C% %GOLD%@@@@     %RED%Leviathan     %GOLD%@@@@ 
 ItemDisplay[UNI !ID uld ETH]: %DOT-0C% %GOLD%@@@@     %PURPLE%Eth %RED%Leviathan     %GOLD%@@@@ 
@@ -3739,7 +3739,7 @@ ItemDisplay[UNI !ID 8rx]:%DOT-0C%%GOLD%@@  %RED%Demon Machine%TAN%[Chu-Ko-Nu] %O
 ItemDisplay[UNI !ID 9gm !ETH]:%DOT-0C%%GOLD%@@    %RED%The Gavel of Pain    %GOLD%@@
 ItemDisplay[UNI !ID 9gm ETH]:%SOUNDID-2664%%BORDER-62%%RED%@@%ORANGE%@@%YELLOW%@@%GREEN%@@%BLUE%@@%PURPLE%@@    %PURPLE%Eth %RED%The Gavel of Pain    %RED%@@%ORANGE%@@%YELLOW%@@%GREEN%@@%BLUE%@@%PURPLE%@@
 ItemDisplay[UNI !ID 7wh !ETH]:%DOT-0C%%GOLD%@  %RED%StoneCrusher %TAN%Or %GREEN%Schaefer'sHammer %ORANGE%(EL) %GOLD%@
-ItemDisplay[UNI !ID 7wh ETH]:%DOT-0C%%GOLD%@  %PURPLE%Eth %RED%StoneCrusher %TAN%Or %GREEN%Schaefer's Hammer %ORANGE%(EL) %GOLD%@
+ItemDisplay[UNI !ID 7wh ETH]:%SOUNDID-2664%%BORDER-62%%RED%@@%ORANGE%@@%YELLOW%@@%GREEN%@@%BLUE%@@%PURPLE%@@ %PURPLE%Eth %RED%Stone %TAN%Or %GREEN%Schaefer %RED%@@%ORANGE%@@%YELLOW%@@%GREEN%@@%BLUE%@@%PURPLE%@@
 ItemDisplay[UNI !ID 7m7 !ETH]:%DOT-0C%%GOLD%@@  %RED%Windhammer%TAN%[Ogre Maul] %ORANGE%(EL) %GOLD%@@
 ItemDisplay[UNI !ID 7m7 ETH]:%SOUNDID-2664%%BORDER-62%%RED%@@%ORANGE%@@%YELLOW%@@%GREEN%@@%BLUE%@@%PURPLE%@@    %PURPLE%Eth %RED%Windhammer    %RED%@@%ORANGE%@@%YELLOW%@@%GREEN%@@%BLUE%@@%PURPLE%@@
 ItemDisplay[UNI !ID am7]:%DOT-0C%%GOLD%@@  %RED%Lycander's Aim%TAN%[Ceremonial Bow] %ORANGE%(EX) %GOLD%@@
@@ -9007,7 +9007,7 @@ ItemDisplay[UNI ned ID !EQUIPPED]:%NAME%{%USAGE_SYMBOL_L%   %SAGE%Poison Strike 
 // Aidans Scar | Blade Sentinel/Cobra Strike | SIN | USE=YES | CORE=YES
 ItemDisplay[UNI 7qr ID !EQUIPPED]:%NAME%{%USAGE_SYMBOL_L%   %SAGE%Blade Sentinel/%GREEN%Cobra Strike %WHITE%:  %GREEN%sin %RED%[Core] %WHITE%| item%GRAY%   %USAGE_SYMBOL_R%%NL%%NAME%}%CONTINUE%
 // Steel Carapace[Shadow Plate] | Util/Zeal/Armageddon | SIN/PAL/DRU | USE=YES | CORE=YES
-ItemDisplay[UNI uul ID !EQUIPPED]:%NAME%{%USAGE_SYMBOL_L%   %RED%Light/%GREEN%Zeal,Sac/%SAGE%Util/%ORANGE%Arma %WHITE%:  %SAGE%dru%WHITE%/%LIGHT_GRAY%sor%WHITE%/%GREEN%sin%WHITE%/%WHITE%pal %RED%[Core] %WHITE%| item   %USAGE_SYMBOL_R%%NL%%NAME%}%CONTINUE%
+ItemDisplay[UNI uul ID !EQUIPPED]:%NAME%{%USAGE_SYMBOL_L%   %RED%Light/%GREEN%Zeal,Sac/%ORANGE%Arma/%SAGE%Util %WHITE%:  %LIGHT_GRAY%sor%WHITE%/%WHITE%pal%WHITE%/%SAGE%dru%WHITE%/%GREEN%sin %RED%[Core] %WHITE%| item   %USAGE_SYMBOL_R%%NL%%NAME%}%CONTINUE%
 
 // ================= UTILITY ITEMS =================
 // Siggards Staunch | Util/Melee/Zeal/Sacrifice | ALL | USE=YES | CORE=NO

@@ -3369,7 +3369,7 @@ ItemDisplay[UNI !ID ush ETH]:%RED%##%PURPLE%##%ORANGE%##    %BORDER-62%%WHITE%(e
 ItemDisplay[UNI !ID uts ETH]:%RED%##%PURPLE%##%ORANGE%##    %BORDER-62%%WHITE%(e) %PURPLE%Spirit Ward    %ORANGE%##%PURPLE%##%RED%##
 ItemDisplay[UNI !ID umb ETH]:%RED%##%PURPLE%##%ORANGE%##    %BORDER-62%%WHITE%(e) %PURPLE%Marrowwalk    %ORANGE%##%PURPLE%##%RED%##
 ItemDisplay[UNI !ID 8s8 ETH]:%RED%##%PURPLE%##%ORANGE%##    %BORDER-62%%WHITE%(e) %PURPLE%Witchwild String    %ORANGE%##%PURPLE%##%RED%##
-ItemDisplay[UNI !ID 7wh ETH]:%RED%##%PURPLE%##%ORANGE%## %BORDER-62%%WHITE%(e) %PURPLE%StoneCrusher %TAN%Or %GREEN%Schaefer'sHammer %ORANGE%##%PURPLE%##%RED%## 
+ItemDisplay[UNI !ID 7wh ETH]:%SOUNDID-2664%%RED%##%PURPLE%##%ORANGE%## %BORDER-62%%WHITE%(e) %PURPLE%StoneCrusher %TAN%Or %GREEN%Schaefer'sHammer %ORANGE%##%PURPLE%##%RED%## 
 ItemDisplay[UNI !ID 7m7 ETH]:%RED%##%PURPLE%##%ORANGE%##    %BORDER-62%%WHITE%(e) %PURPLE%Windhammer    %ORANGE%##%PURPLE%##%RED%##
 ItemDisplay[UNI !ID amb ETH]:%RED%##%PURPLE%##%ORANGE%##    %BORDER-62%%WHITE%(e) %PURPLE%Blood raven's Charge    %ORANGE%##%PURPLE%##%RED%##
 ItemDisplay[UNI !ID bae ETH]:%RED%##%PURPLE%##%ORANGE%##    %BORDER-62%%WHITE%(e) %PURPLE%Halaberd's Reign    %ORANGE%##%PURPLE%##%RED%##
@@ -3851,7 +3851,7 @@ ItemDisplay[UNI !ID ba2 ETH]:%DOT-0C%%ORANGE%++%CORAL%++%SAGE%++    %WHITE%(e) %
 ItemDisplay[UNI !ID 9b8 !ETH]:%ORANGE%++%CORAL%++%SAGE%++    %TAN%Achilles Strike%PURPLE%[%GRAY%%NAME%%PURPLE%]%WHITE%(New)     %SAGE%++%CORAL%++%ORANGE%++
 ItemDisplay[UNI !ID 9b8 ETH]:%ORANGE%++%CORAL%++%SAGE%++    %WHITE%(e) %TAN%Achilles Strike%PURPLE%[%GRAY%%NAME%%PURPLE%]%WHITE%(New)     %SAGE%++%CORAL%++%ORANGE%++
 ItemDisplay[UNI !ID uhc !ETH]:%DOT-0C%%ORANGE%++%CORAL%++%SAGE%++    %RED%Siggards Staunch%PURPLE%[%GRAY%%NAME%%PURPLE%]%WHITE%(New)     %SAGE%++%CORAL%++%ORANGE%++
-ItemDisplay[UNI !ID uhc ETH]:%DOT-0C%%ORANGE%++%CORAL%++%SAGE%++    %WHITE%(e) %RED%Siggards Staunch%PURPLE%[%GRAY%%NAME%%PURPLE%]%WHITE%(New)     %SAGE%++%CORAL%++%ORANGE%++
+ItemDisplay[UNI !ID uhc ETH]:%SOUNDID-2664%%DOT-0C%%ORANGE%++%CORAL%++%SAGE%++    %WHITE%(e) %RED%Siggards Staunch%PURPLE%[%GRAY%%NAME%%PURPLE%]%WHITE%(New)     %SAGE%++%CORAL%++%ORANGE%++
 ItemDisplay[UNI !ID neg !ETH]:%DOT-0C%%ORANGE%++%CORAL%++%SAGE%++    %RED%Sacred Totem%PURPLE%[%GRAY%%NAME%%PURPLE%]%WHITE%(New)     %SAGE%++%CORAL%++%ORANGE%++
 ItemDisplay[UNI !ID neg ETH]:%DOT-0C%%ORANGE%++%CORAL%++%SAGE%++    %WHITE%(e) %RED%Sacred Totem%PURPLE%[%GRAY%%NAME%%PURPLE%]%WHITE%(New)     %SAGE%++%CORAL%++%ORANGE%++
 
@@ -10162,7 +10162,7 @@ ItemDisplay[UNI ned ID !EQUIPPED]:%NAME%{%USAGE_SYMBOL_L%   %SAGE%Poison Strike 
 // Aidans Scar | Blade Sentinel/Cobra Strike | SIN | USE=YES | CORE=YES
 ItemDisplay[UNI 7qr ID !EQUIPPED]:%NAME%{%USAGE_SYMBOL_L%   %SAGE%Blade Sentinel/%GREEN%Cobra Strike %WHITE%:  %GREEN%sin %RED%[Core] %WHITE%| item%GRAY%   %USAGE_SYMBOL_R%%NL%%NAME%}%CONTINUE%
 // Steel Carapace[Shadow Plate] | Util/Zeal/Armageddon | SIN/PAL/DRU | USE=YES | CORE=YES
-ItemDisplay[UNI uul ID !EQUIPPED]:%NAME%{%USAGE_SYMBOL_L%   %RED%Light/%GREEN%Zeal,Sac/%SAGE%Util/%ORANGE%Arma %WHITE%:  %SAGE%dru%WHITE%/%LIGHT_GRAY%sor%WHITE%/%GREEN%sin%WHITE%/%WHITE%pal %RED%[Core] %WHITE%| item   %USAGE_SYMBOL_R%%NL%%NAME%}%CONTINUE%
+ItemDisplay[UNI uul ID !EQUIPPED]:%NAME%{%USAGE_SYMBOL_L%   %RED%Light/%GREEN%Zeal,Sac/%ORANGE%Arma/%SAGE%Util %WHITE%:  %LIGHT_GRAY%sor%WHITE%/%WHITE%pal%WHITE%/%SAGE%dru%WHITE%/%GREEN%sin %RED%[Core] %WHITE%| item   %USAGE_SYMBOL_R%%NL%%NAME%}%CONTINUE%
 
 // ================= UTILITY ITEMS =================
 // Siggards Staunch | Util/Melee/Zeal/Sacrifice | ALL | USE=YES | CORE=NO
