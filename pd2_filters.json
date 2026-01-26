@@ -246,6 +246,11 @@
             },
             "filters": [
                 {
+                    "name": "crafting+revealed.filter",
+                    "url": "https://api.github.com/repos/Phyx10n/PD2-Filter/contents/crafting%2Brevealed.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/Phyx10n/PD2-Filter/main/crafting+revealed.filter"
+                },
+                {
                     "name": "crafting.filter",
                     "url": "https://api.github.com/repos/Phyx10n/PD2-Filter/contents/crafting.filter?ref=main",
                     "download_url": "https://raw.githubusercontent.com/Phyx10n/PD2-Filter/main/crafting.filter"
