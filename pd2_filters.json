@@ -256,9 +256,9 @@
                     "download_url": "https://raw.githubusercontent.com/Phyx10n/PD2-Filter/main/crafting.filter"
                 },
                 {
-                    "name": "loot.filter",
-                    "url": "https://api.github.com/repos/Phyx10n/PD2-Filter/contents/loot.filter?ref=main",
-                    "download_url": "https://raw.githubusercontent.com/Phyx10n/PD2-Filter/main/loot.filter"
+                    "name": "main.filter",
+                    "url": "https://api.github.com/repos/Phyx10n/PD2-Filter/contents/main.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/Phyx10n/PD2-Filter/main/main.filter"
                 },
                 {
                     "name": "revealed.filter",
