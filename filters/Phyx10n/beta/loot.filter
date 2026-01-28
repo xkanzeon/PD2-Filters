@@ -8,9 +8,9 @@ ItemDisplayFilterName[]:Extreme - Hides mid ÿc4uniqueÿc0/ÿc<set ÿc0+ ÿc9armor/we
 Alias[SHOW_R1]:FALSE
 Alias[SHOW_HP]:FALSE
 Alias[SHOW_MP]:FALSE
-Alias[REVEALED]:TRUE
+Alias[REVEALED]:FALSE
 Alias[CRAFTING]:FALSE
-Alias[BETA]:FALSE
+Alias[BETA]:TRUE
 //Notifications
 Alias[NONE_T0]:%NAME%{%NAME%}
 Alias[WHITE_T0]:%NAME%{%NAME%}%PX-1F%%SOUND_0%
