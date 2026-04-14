@@ -272,9 +272,19 @@
                     "download_url": "https://raw.githubusercontent.com/KassahiPD2/Kassahi/main/Meme-Hyper.filter"
                 },
                 {
+                    "name": "Meme-Hyper_beta.filter",
+                    "url": "https://api.github.com/repos/KassahiPD2/Kassahi/contents/Meme-Hyper_beta.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/KassahiPD2/Kassahi/main/Meme-Hyper_beta.filter"
+                },
+                {
                     "name": "Meme.filter",
                     "url": "https://api.github.com/repos/KassahiPD2/Kassahi/contents/Meme.filter?ref=main",
                     "download_url": "https://raw.githubusercontent.com/KassahiPD2/Kassahi/main/Meme.filter"
+                },
+                {
+                    "name": "Meme_beta.filter",
+                    "url": "https://api.github.com/repos/KassahiPD2/Kassahi/contents/Meme_beta.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/KassahiPD2/Kassahi/main/Meme_beta.filter"
                 },
                 {
                     "name": "Mystery-Hyper.filter",
@@ -282,9 +292,19 @@
                     "download_url": "https://raw.githubusercontent.com/KassahiPD2/Kassahi/main/Mystery-Hyper.filter"
                 },
                 {
+                    "name": "Mystery-Hyper_beta.filter",
+                    "url": "https://api.github.com/repos/KassahiPD2/Kassahi/contents/Mystery-Hyper_beta.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/KassahiPD2/Kassahi/main/Mystery-Hyper_beta.filter"
+                },
+                {
                     "name": "Mystery-Luxe.filter",
                     "url": "https://api.github.com/repos/KassahiPD2/Kassahi/contents/Mystery-Luxe.filter?ref=main",
                     "download_url": "https://raw.githubusercontent.com/KassahiPD2/Kassahi/main/Mystery-Luxe.filter"
+                },
+                {
+                    "name": "Mystery-Luxe_beta.filter",
+                    "url": "https://api.github.com/repos/KassahiPD2/Kassahi/contents/Mystery-Luxe_beta.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/KassahiPD2/Kassahi/main/Mystery-Luxe_beta.filter"
                 },
                 {
                     "name": "Mystery.filter",
@@ -292,9 +312,19 @@
                     "download_url": "https://raw.githubusercontent.com/KassahiPD2/Kassahi/main/Mystery.filter"
                 },
                 {
+                    "name": "Mystery_beta.filter",
+                    "url": "https://api.github.com/repos/KassahiPD2/Kassahi/contents/Mystery_beta.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/KassahiPD2/Kassahi/main/Mystery_beta.filter"
+                },
+                {
                     "name": "Regular-Hyper.filter",
                     "url": "https://api.github.com/repos/KassahiPD2/Kassahi/contents/Regular-Hyper.filter?ref=main",
                     "download_url": "https://raw.githubusercontent.com/KassahiPD2/Kassahi/main/Regular-Hyper.filter"
+                },
+                {
+                    "name": "Regular-Hyper_beta.filter",
+                    "url": "https://api.github.com/repos/KassahiPD2/Kassahi/contents/Regular-Hyper_beta.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/KassahiPD2/Kassahi/main/Regular-Hyper_beta.filter"
                 },
                 {
                     "name": "Regular-Luxe.filter",
@@ -302,9 +332,19 @@
                     "download_url": "https://raw.githubusercontent.com/KassahiPD2/Kassahi/main/Regular-Luxe.filter"
                 },
                 {
+                    "name": "Regular-Luxe_beta.filter",
+                    "url": "https://api.github.com/repos/KassahiPD2/Kassahi/contents/Regular-Luxe_beta.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/KassahiPD2/Kassahi/main/Regular-Luxe_beta.filter"
+                },
+                {
                     "name": "Regular.filter",
                     "url": "https://api.github.com/repos/KassahiPD2/Kassahi/contents/Regular.filter?ref=main",
                     "download_url": "https://raw.githubusercontent.com/KassahiPD2/Kassahi/main/Regular.filter"
+                },
+                {
+                    "name": "Regular_beta.filter",
+                    "url": "https://api.github.com/repos/KassahiPD2/Kassahi/contents/Regular_beta.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/KassahiPD2/Kassahi/main/Regular_beta.filter"
                 }
             ]
         }
