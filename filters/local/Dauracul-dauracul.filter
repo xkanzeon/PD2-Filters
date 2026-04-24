@@ -1,49 +1,18 @@
-// DAURACUL'S LOOT FILTER Season 12.1
-// Last updated: 12/15/25
+// DAURACUL'S LOOT FILTER Version 13.0
+// Last updated: 4/23/26
 // For any bug reports/feedback contact @Dauracul in the PD2 Discord #lootfilter channel
 
-// NOTE: IF YOU WISH TO MAKE EDITS TO THIS LOOTFILTER, PLEASE BE AWARE IT USES 'ANSI' ENCODING -- WITHOUT THIS ENCODING, CERTAIN CHARACTERS WILL DISPLAY INCORRECTLY 
-// (In Notepad++, select ANSI from the Encoding menu prior to saving)
-
-// 12.1
-// Fixed display of purple 'catalyzed' tag on maps that have been given a Catalyst Shard
-// Weapon Speed and item quality notes (norm/exceptional/elite) will now be hidden while an item is inside Horadric Cube (to save on character limit for crafting notes) - fixes an issue where sometimes crafting notes are cut off with a "..."
-// Fixed a display issue with upgrade notes on rare/crafted/unique Poleaxes and Nagas
-// Corrected Ruined Cistern Map immunities
-// Corrected normal Arrows and Bolts not properly displaying the normal¹ tag
-// Normal Arrows and Bolts are now properly hidden in maps
-// Uber Ancients loot and Lucion's Vault will now hide all Magic items unless they are Jewelry or Charms
-// Identified Rainbow Facet jewels will now show the mastery/pierce rolls in the item name
-// Added indicator of tri-res on rare/craft/magic items that roll triple resists (should also help save on character limit space)
-
-// KNOWN ISSUES
-// Items that roll All Resist + two additional resists higher than All Resist will not display the additional resists - I tried to get this working but it's too complex unless filtering can perform mathematical functions in the future, would like to do this eventually
-// Sometimes item names will begin to get truncated if too many notes show in the item name
-// Sometimes Crafting notes will begin to get truncated in the Horadric Cube if there are too many affixes on the item
-// Sometimes item notes will begin to get truncated if there are too many affixes on the item (usually this impacts the Weapon Speed line on weapons) 
-
-// 12.0 
-// Significant visual changes - let me know in #lootfilter on Discord for any feedback
-// Non-magic quivers are no longer blanketly hidden after level 6
-// Non-magic quivers will be hidden if they roll 1 socket unless they are normal quality and character level is below 20 (for early game leveling)
-// Normal and Exceptional quality quivers will be hidden in maps (unless rare/unique)
-// Magic quivers are now never hidden due to them being craftable (except in maps, as noted above)
-// All potions except for full rejuvs will be hidden in maps (except for antidotes in Rathma's map)
-// Maps should now hide more clutter items like TP scrolls and ID scrolls, and keys are hidden after level 80 unless in Town
-// Overhauled aesthetic and display of affixes in item names for magic/rare/crafted items -- will now display on all items of this type when ID'd
-// Added a note to magic/rare jewels on how to cube into Jewel Fragments
-// Removed "Runewords:" line on socketed non-magic bases, as it was redundant text/clutter
-// Added drop notifications for new unique map - City of Ureh (t56)
-// Overhauled notes for required stats and level on upgradable rare/unique/set/crafted items -- this will also adjust str/dex based on Eth, and indicate if -requirements exists on the item 
-// Updated crafting recipes to include Quivers (same recipe as Shields)
-// Updated rare/craft/unique Quivers to show upgrade recipes and required level upon upgrading
-// Added new runewords 'Echo' (throwing weapons and quivers), Ancient's Scripture (quivers) and Ancient's Foresight (quivers) - all on Filter Level 1
-// Added socketing recipe to unsocketed non-magic quivers
-// Socket recipes are now visible on Superior non-magic items 
-// Crafting recipes are now visible on rare/magic items while they are inside the Horadric Cube 
-    //***Due to character limits, Rare items inside the Cube need to hide the notes for stat requirements upon upgrading but the upgrade recipe itself should remain visible
-// Touched up starter equipment flavor text
-
+// 13.0
+// Call to Arms can no longer be made in Bows/Crossbows - removed from listed socket recipes on these bases
+// Added new Barb skill Split Throw to staffmods on bases
+// Updated Barb staffmod mastery names to One-Handed and Two-Handed Mastery
+// Enhanced Damage value on Superior Weapons now displays a range of 10-20%
+// Added AR% bonus display on Superior Weapons (10-20% range)
+// Added drop notification for new unique map Djinn's Domain - t57
+// Added drop notification for new unique map Na-Krul's Abyss - t58
+// Added notation for new regular map Kyovoshad and noted its Immunities as Debut Season - t3b
+// Updated S13 Map Immunities
+// Added drop notification for Ears from Corrupted Heroes map event
 
 
 // LET THE FILTERING BEGIN
@@ -54,13 +23,13 @@ ItemDisplayFilterName[]:Mid Runeword Notes (Displayed on socketed non-magic base
 ItemDisplayFilterName[]:High Runeword Notes (Displayed on socketed non-magic bases)
 
 // Release Notes on Identify Scrolls (in Town at Vendors)
-ItemDisplay[isc SHOP]: %NAME%{%NAME%%BLUE%wiki.projectdiablo2.com%NL%%NL%%DARK_GREEN%For full Season 12 patch notes, visit the Project Diablo 2 Wiki:%NL%%DARK_GREEN%(View the filter file for patch notes)%NL%%PURPLE%Season 12: Suffering%NL%%TAN%Last Updated: 12-15-2025%NL%%NL%%ORANGE%the PD2 Discord #lootfilter channel.%NL%For any bug reports or feedback, contact @Dauracul in%NL%runeword recipes on socketed weapon and armor bases.%NL%Use the filter levels in settings to display%NL%%NL%%GOLD%Dauracul's PD2 Loot Filter %RED%v12.1}
+ItemDisplay[isc SHOP]: %NAME%{%NAME%%BLUE%wiki.projectdiablo2.com%NL%%NL%%DARK_GREEN%For full Season 13 patch notes, visit the Project Diablo 2 Wiki:%NL%%DARK_GREEN%(View the filter file for patch notes)%NL%%RED%Season 13: Betrayal%NL%%TAN%Last Updated: 4-23-2026%NL%%NL%%ORANGE%the PD2 Discord #lootfilter channel.%NL%Bug reports or feedback: @Dauracul in%NL%weapon and armor bases. There are no strictness tiers.%NL%Use filter levels to sort through runeword recipes on socketed%NL%%NL%%GOLD%Dauracul's PD2 Loot Filter %RED%v13.0}
 
 // ALIASES
 
 Alias[ALL_UBER_MATS]: (dcso OR dcbl OR dcho OR rtmo OR rtmv OR lucb OR lucc OR lucd OR ubaa OR ubab OR ubac OR pk1 OR pk2 OR pk3 OR dhn OR bey OR mbr)
 
-Alias[ALL_MAPS]: (t11 OR t12 OR t13 OR t14 OR t15 OR t16 OR t17 OR t21 OR t22 OR t23 OR t24 OR t25 OR t26 OR t27 OR t28 OR t31 OR t32 OR t33 OR t34 OR t35 OR t36 OR t37 OR t38 OR t39 OR t3a)
+Alias[ALL_MAPS]: (t11 OR t12 OR t13 OR t14 OR t15 OR t16 OR t17 OR t21 OR t22 OR t23 OR t24 OR t25 OR t26 OR t27 OR t28 OR t31 OR t32 OR t33 OR t34 OR t35 OR t36 OR t37 OR t38 OR t39 OR t3a OR t3b OR t51 OR t52 OR t53 OR t54 OR t55 OR t56 OR t57 OR t58)
 
 Alias[ALL_STACKABLE_QTY_ITEMS]: (RUNE>0 OR GEMLEVEL>3 OR wss OR jewf OR t11 OR t12 OR t13 OR t14 OR t15 OR t16 OR t17 OR t21 OR t22 OR t23 OR t24 OR t25 OR t26 OR t27 OR t28 OR t31 OR t32 OR t33 OR t34 OR t35 OR t36 OR t37 OR t38 OR t39 OR t3a OR dcso OR dcbl OR dcho OR rtmo OR rtmv OR lucb OR lucc OR lucd OR ubaa OR ubab OR ubac OR pk1 OR pk2 OR pk3 OR imma OR irma OR imra OR irra OR upma OR urma OR rera OR rrra OR scou OR fort OR upmp OR scrb OR iwss OR lbox OR lpp OR crfb OR crfc OR crfs OR crfh OR crfv OR crfu OR crfp OR dhn OR bey OR mbr OR tes OR ceh OR bet OR fed OR cm2f OR std OR imrn OR cwss)
 
@@ -70,7 +39,7 @@ Alias[ASSASSIN_STAFFMODS]: (SK251>0 OR SK252>0 OR SK253>0 OR SK254>0 OR SK255>0 
 
 Alias[PALADIN_STAFFMODS]: (SK96>0 OR SK97>0 OR SK98>0 OR SK99>0 OR SK100>0 OR SK101>0 OR SK102>0 OR SK103>0 OR SK104>0 OR SK105>0 OR SK106>0 OR SK107>0 OR SK108>0 OR SK109>0 OR SK110>0 OR SK111>0 OR SK112>0 OR SK113>0 OR SK114>0 OR SK115>0 OR SK116>0 OR SK117>0 OR SK118>0 OR SK119>0 OR SK120>0 OR SK121>0 OR SK122>0 OR SK123>0 OR SK124>0 OR SK125>0 OR SK364>0 OR SK371>0 OR SK378>0)
 
-Alias[BARBARIAN_STAFFMODS]: (SK126>0 OR SK128>0 OR SK130>0 OR SK131>0 OR SK132>0 OR SK133>0 OR SK134>0 OR SK135>0 OR SK137>0 OR SK138>0 OR SK139>0 OR SK140>0 OR SK141>0 OR SK142>0 OR SK143>0 OR SK144>0 OR SK145>0 OR SK146>0 OR SK147>0 OR SK148>0 OR SK149>0 OR SK150>0 OR SK151>0 OR SK152>0 OR SK153>0 OR SK154>0 OR SK155>0 OR SK368>0)
+Alias[BARBARIAN_STAFFMODS]: (SK126>0 OR SK128>0 OR SK130>0 OR SK131>0 OR SK132>0 OR SK133>0 OR SK134>0 OR SK135>0 OR SK137>0 OR SK138>0 OR SK139>0 OR SK140>0 OR SK141>0 OR SK142>0 OR SK143>0 OR SK144>0 OR SK145>0 OR SK146>0 OR SK147>0 OR SK148>0 OR SK149>0 OR SK150>0 OR SK151>0 OR SK152>0 OR SK153>0 OR SK154>0 OR SK155>0 OR SK368>0 OR SK375>0)
 
 Alias[SORCERESS_STAFFMODS]: (SK36>0 OR SK37>0 OR SK38>0 OR SK39>0 OR SK40>0 OR SK41>0 OR SK42>0 OR SK43>0 OR SK44>0 OR SK45>0 OR SK46>0 OR SK47>0 OR SK48>0 OR SK49>0 OR SK50>0 OR SK51>0 OR SK52>0 OR SK53>0 OR SK54>0 OR SK55>0 OR SK56>0 OR SK57>0 OR SK58>0 OR SK59>0 OR SK60>0 OR SK61>0 OR SK62>0 OR SK63>0 OR SK64>0 OR SK65>0 OR SK369>0 OR SK376>0 OR SK383>0)
 
@@ -90,7 +59,7 @@ Alias[QUIVERS]: (aqv OR aqv2 OR aqv3 OR cqv OR cqv2 OR cqv3)
 
 Alias[TOWN]: (MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109)
 
-Alias[PD2Items]: (crfb OR crfc OR crfs OR crfh OR crfv OR crfu OR crfp OR wss OR lbox OR lpp OR iwss OR lsvl OR imrn OR llmr OR imma OR irma OR imra OR irra OR upma OR urma OR rera OR rrra OR scou OR upmp OR scrb OR std OR fort OR iwss OR dcso OR dcbl OR dcho OR rtmo OR rtmv OR lucb OR lucc OR lucd OR ubaa OR ubab OR ubac OR pk1 OR pk2 OR pk3 OR dhn OR bey OR mbr OR t11 OR t12 OR t13 OR t14 OR t15 OR t16 OR t17 OR t21 OR t22 OR t23 OR t24 OR t25 OR t26 OR t27 OR t28 OR t31 OR t32 OR t33 OR t34 OR t35 OR t36 OR t37 OR t38 OR t39 OR t3a OR t51 OR t52 OR t53 OR t54 OR t55 OR t56 OR cm2f OR cwss OR rtp OR rid)
+Alias[PD2Items]: (crfb OR crfc OR crfs OR crfh OR crfv OR crfu OR crfp OR wss OR lbox OR lpp OR iwss OR lsvl OR imrn OR llmr OR imma OR irma OR imra OR irra OR upma OR urma OR rera OR rrra OR scou OR upmp OR scrb OR std OR fort OR iwss OR dcso OR dcbl OR dcho OR rtmo OR rtmv OR lucb OR lucc OR lucd OR ubaa OR ubab OR ubac OR pk1 OR pk2 OR pk3 OR dhn OR bey OR mbr OR t11 OR t12 OR t13 OR t14 OR t15 OR t16 OR t17 OR t21 OR t22 OR t23 OR t24 OR t25 OR t26 OR t27 OR t28 OR t31 OR t32 OR t33 OR t34 OR t35 OR t36 OR t37 OR t38 OR t39 OR t3a OR t51 OR t52 OR t53 OR t54 OR t55 OR t56 OR cm2f OR cwss OR rtp OR rid OR ivea OR ivez OR iveb OR ived OR iven OR ivep OR ives)
 
 Alias[TRIRES]: ((LRES>0 FRES>0 CRES>0 !RES>0) OR (LRES>0 FRES>0 PRES>0 !RES>0) OR (PRES>0 FRES>0 CRES>0 !RES>0) OR (CRES>0 LRES>0 PRES>0 !RES>0))
 
@@ -158,8 +127,8 @@ ItemDisplay[NMAG INF CLVL<3 EQUIPPED SHIELD PALADIN]: %RED%Westmarch Infantry Sh
 ItemDisplay[NMAG INF CLVL<3 EQUIPPED STAFF SORCERESS]: %RED%Ancient Zann Esu Staff{%NAME%%CORAL%%NL%True power instead lies within oneself.%NL%%NL%and brittle. It is little more than an ornament.%NL%An artifact of the old mage clans, decayed}
 
 // Druid
-ItemDisplay[NMAG INF CLVL<3 EQUIPPED CLUB DRUID]: %RED%Rotten Scosglen Branch{%NAME%%CORAL%%NL%This tree will never grow again.%NL%%NL%It is near-death, and barely holds a bond with nature.%NL%A branch of a tree, taken from the College of Túr Dúlra.}
-ItemDisplay[NMAG INF CLVL<3 EQUIPPED SHIELD DRUID]: %RED%Caoi Dúlra Offering{%NAME%%CORAL%Bloodier, more feral offerings will take its place.%NL%%NL%It has been repurposed into a feeble shield.%NL%An old basin, once used to make offerings to the oak Glór-an-Fháidha.} 
+ItemDisplay[NMAG INF CLVL<3 EQUIPPED CLUB DRUID]: %RED%Rotten Scosglen Branch{%NAME%%CORAL%%NL%This tree will never grow again.%NL%%NL%It is near-death, and barely holds a bond with nature.%NL%A branch of a tree, taken from the College of TÃºr DÃºlra.}
+ItemDisplay[NMAG INF CLVL<3 EQUIPPED SHIELD DRUID]: %RED%Caoi DÃºlra Offering{%NAME%%CORAL%Bloodier, more feral offerings will take its place.%NL%%NL%It has been repurposed into a feeble shield.%NL%An old basin, once used to make offerings to the oak GlÃ³r-an-FhÃ¡idha.} 
 
 
 // Superior Tag on Bases
@@ -228,18 +197,35 @@ ItemDisplay[(CL7 OR QUIVERS) AMAZON MAG !ID]: %TEAL%%NAME%{%NAME%}%CONTINUE%
 ItemDisplay[NMAG QUIVERS !RW AMAZON SOCK>1]: %SAGE%%BASENAME%%CONTINUE%
 ItemDisplay[SUP NMAG CL7 !RW AMAZON AMAZON_STAFFMODS]: %RED%Sup %SAGE%%BASENAME%%CONTINUE%
 
-// Show me Enhanced Damage value on Superior Weapons
-ItemDisplay[SUP NMAG WEAPON ED=5]: %GRAY%(%RED%5%%GRAY%) %NAME%%CONTINUE%
-ItemDisplay[SUP NMAG WEAPON ED=6]: %GRAY%(%RED%6%%GRAY%) %NAME%%CONTINUE%
-ItemDisplay[SUP NMAG WEAPON ED=7]: %GRAY%(%RED%7%%GRAY%) %NAME%%CONTINUE%
-ItemDisplay[SUP NMAG WEAPON ED=8]: %GRAY%(%RED%8%%GRAY%) %NAME%%CONTINUE%
-ItemDisplay[SUP NMAG WEAPON ED=9]: %GRAY%(%RED%9%%GRAY%) %NAME%%CONTINUE%
-ItemDisplay[SUP NMAG WEAPON ED=10]: %GRAY%(%RED%10%%GRAY%) %NAME%%CONTINUE%
-ItemDisplay[SUP NMAG WEAPON ED=11]: %GRAY%(%RED%11%%GRAY%) %NAME%%CONTINUE%
-ItemDisplay[SUP NMAG WEAPON ED=12]: %GRAY%(%RED%12%%GRAY%) %NAME%%CONTINUE%
-ItemDisplay[SUP NMAG WEAPON ED=13]: %GRAY%(%RED%13%%GRAY%) %NAME%%CONTINUE%
-ItemDisplay[SUP NMAG WEAPON ED=14]: %GRAY%(%RED%14%%GRAY%) %NAME%%CONTINUE%
-ItemDisplay[SUP NMAG WEAPON ED=15]: %GRAY%(%RED%15%%GRAY%) %NAME%%CONTINUE%
+// Show me Enhanced Damage value on Superior Weapons (with no AR% bonus)
+ItemDisplay[SUP NMAG WEAPON ED=10 !ARPER>0]: %GRAY%(%RED%10%%GRAY%) %NAME%%CONTINUE%
+ItemDisplay[SUP NMAG WEAPON ED=11 !ARPER>0]: %GRAY%(%RED%11%%GRAY%) %NAME%%CONTINUE%
+ItemDisplay[SUP NMAG WEAPON ED=12 !ARPER>0]: %GRAY%(%RED%12%%GRAY%) %NAME%%CONTINUE%
+ItemDisplay[SUP NMAG WEAPON ED=13 !ARPER>0]: %GRAY%(%RED%13%%GRAY%) %NAME%%CONTINUE%
+ItemDisplay[SUP NMAG WEAPON ED=14 !ARPER>0]: %GRAY%(%RED%14%%GRAY%) %NAME%%CONTINUE%
+ItemDisplay[SUP NMAG WEAPON ED=15 !ARPER>0]: %GRAY%(%RED%15%%GRAY%) %NAME%%CONTINUE%
+ItemDisplay[SUP NMAG WEAPON ED=16 !ARPER>0]: %GRAY%(%RED%16%%GRAY%) %NAME%%CONTINUE%
+ItemDisplay[SUP NMAG WEAPON ED=17 !ARPER>0]: %GRAY%(%RED%17%%GRAY%) %NAME%%CONTINUE%
+ItemDisplay[SUP NMAG WEAPON ED=18 !ARPER>0]: %GRAY%(%RED%18%%GRAY%) %NAME%%CONTINUE%
+ItemDisplay[SUP NMAG WEAPON ED=19 !ARPER>0]: %GRAY%(%RED%19%%GRAY%) %NAME%%CONTINUE%
+ItemDisplay[SUP NMAG WEAPON ED=20 !ARPER>0]: %GRAY%(%RED%20%%GRAY%) %NAME%%CONTINUE%
+
+// Show me Attack Rating bonus value on Superior Weapons (with no Enhanced Damage bonus)
+ItemDisplay[SUP NMAG WEAPON ARPER=10 !ED>0]: %GRAY%(%LIGHT_GRAY%10%%GRAY%) %NAME%%CONTINUE%
+ItemDisplay[SUP NMAG WEAPON ARPER=11 !ED>0]: %GRAY%(%LIGHT_GRAY%11%%GRAY%) %NAME%%CONTINUE%
+ItemDisplay[SUP NMAG WEAPON ARPER=12 !ED>0]: %GRAY%(%LIGHT_GRAY%12%%GRAY%) %NAME%%CONTINUE%
+ItemDisplay[SUP NMAG WEAPON ARPER=13 !ED>0]: %GRAY%(%LIGHT_GRAY%13%%GRAY%) %NAME%%CONTINUE%
+ItemDisplay[SUP NMAG WEAPON ARPER=14 !ED>0]: %GRAY%(%LIGHT_GRAY%14%%GRAY%) %NAME%%CONTINUE%
+ItemDisplay[SUP NMAG WEAPON ARPER=15 !ED>0]: %GRAY%(%LIGHT_GRAY%15%%GRAY%) %NAME%%CONTINUE%
+ItemDisplay[SUP NMAG WEAPON ARPER=16 !ED>0]: %GRAY%(%LIGHT_GRAY%16%%GRAY%) %NAME%%CONTINUE%
+ItemDisplay[SUP NMAG WEAPON ARPER=17 !ED>0]: %GRAY%(%LIGHT_GRAY%17%%GRAY%) %NAME%%CONTINUE%
+ItemDisplay[SUP NMAG WEAPON ARPER=18 !ED>0]: %GRAY%(%LIGHT_GRAY%18%%GRAY%) %NAME%%CONTINUE%
+ItemDisplay[SUP NMAG WEAPON ARPER=19 !ED>0]: %GRAY%(%LIGHT_GRAY%19%%GRAY%) %NAME%%CONTINUE%
+ItemDisplay[SUP NMAG WEAPON ARPER=20 !ED>0]: %GRAY%(%LIGHT_GRAY%20%%GRAY%) %NAME%%CONTINUE%
+
+// Show me Enhanced Damage and Attack Rating bonus values on Superior Weapons (when both roll at the same time)
+ItemDisplay[SUP NMAG WEAPON (ED>0 AND ARPER>0)]: %GRAY%(%RED%%ED%%%GRAY%/%LIGHT_GRAY%%ARPER%%%GRAY%) %NAME%%CONTINUE%
+
 
 // Show me Enhanced Defense value on Superior Armors
 ItemDisplay[SUP NMAG ARMOR ED=5]: %GRAY%(%BLUE%5%%GRAY%) %NAME%%CONTINUE%
@@ -404,6 +390,9 @@ ItemDisplay[imrn]: %DOT-62%%NAME%%CONTINUE%
 // Lillith's Mirror
 ItemDisplay[llmr]: %SOUNDID-418%%DOT-62%%NAME%{%NAME%%RED%Resulting items cannot be Transmuted%NL%%WHITE%Only useable with %BLUE%Magic%WHITE%/%YELLOW%Rare%WHITE%/%ORANGE%Crafted %WHITE%Equipment}%CONTINUE%
 
+// Ears from Corrupted Heroes Event
+ItemDisplay[(ivea OR ivez OR iveb OR ived OR iven OR ivep OR ives)]: %DOT-62%%GOLD%%BASENAME%%CONTINUE%
+
 // White Maps Notice
 ItemDisplay[ALL_MAPS NMAG]: %DOT-62%%ORANGE%%NAME%%CONTINUE%
 
@@ -414,7 +403,7 @@ ItemDisplay[ALL_MAPS MAG]: %DOT-62%%BLUE%%NAME%%CONTINUE%
 ItemDisplay[ALL_MAPS RARE]: %DOT-A8%%YELLOW%%NAME%%CONTINUE%
 
 // Unique Maps Notice
-ItemDisplay[(t51 OR t52 OR t53 OR t54 OR t55 OR t56) UNI]: %DOT-61%%GOLD%%NAME%%CONTINUE%
+ItemDisplay[(t51 OR t52 OR t53 OR t54 OR t55 OR t56 OR t57 OR t58) UNI]: %DOT-61%%GOLD%%NAME%%CONTINUE%
 
 // Map Recipes
 // Updated and commented out to prevent redundant/duplicate recipe descriptions. S9 added default recipes to many of these items
@@ -466,7 +455,7 @@ ItemDisplay[rrra]: %TEAL%Infused Horadrim Orb%CONTINUE%
 //ItemDisplay[iwss]: %NAME%{%NAME%%BLUE%Map Contains a Random Event%NL%%WHITE%Transmute with a %ORANGE%Map %WHITE%to add %ORANGE%Catalyzed}%CONTINUE%
 
 // Map has Random Event applied (Catalyst Shard)
-ItemDisplay[(t11 OR t12 OR t13 OR t14 OR t15 OR t16 OR t17 OR t21 OR t22 OR t23 OR t24 OR t25 OR t26 OR t27 OR t28 OR t31 OR t32 OR t33 OR t34 OR t35 OR t36 OR t37 OR t38 OR t39 OR t3a OR t51 OR t52 OR t53 OR t54 OR t55 OR t56) STAT500>0]: %NAME%{%NAME%%PURPLE%Catalyzed%CL%}%CONTINUE%
+ItemDisplay[(t11 OR t12 OR t13 OR t14 OR t15 OR t16 OR t17 OR t21 OR t22 OR t23 OR t24 OR t25 OR t26 OR t27 OR t28 OR t31 OR t32 OR t33 OR t34 OR t35 OR t36 OR t37 OR t38 OR t39 OR t3a OR t3b OR t51 OR t52 OR t53 OR t54 OR t55 OR t56 OR t57 OR t58) STAT500>0]: %NAME%{%NAME%%PURPLE%Catalyzed%CL%}%CONTINUE%
 
 // Gems
 
@@ -521,84 +510,87 @@ ItemDisplay[GEMTYPE=7 GEMLEVEL=5]: %DOT-19%%GRAY%Perfect Skull%CONTINUE%
 
 
 // Show Quantity in Town only for all Stackable Items
-ItemDisplay[ALL_STACKABLE_QTY_ITEMS TOWN QTY>1]: %NAME% %LIGHT_GRAY%×%QTY%%CONTINUE%
+ItemDisplay[ALL_STACKABLE_QTY_ITEMS TOWN QTY>1]: %NAME% %LIGHT_GRAY%Ã—%QTY%%CONTINUE%
 ItemDisplay[ALL_STACKABLE_QTY_ITEMS !TOWN QTY>1]: %NAME%%CONTINUE%
 
 
 // IMMUNES ON MAPS 
 // Display order should be: Physical Magic Fire Lightning Cold Poison 
 
+//Kyovoshad (S13 Debut)
+ItemDisplay[t3b]: %NAME%{%NAME%%CORAL%None - Debut Season%NL%%WHITE%Immunities:}%CONTINUE%
+
 //Ruins of Viz-Jun
-ItemDisplay[t11]: %NAME%{%NAME%%RED%Fire %YELLOW%Lightning%NL%%WHITE%Immunities:}%CONTINUE%
+ItemDisplay[t11]: %NAME%{%NAME%%GOLD%Physical %BLUE%Cold%NL%%WHITE%Immunities:}%CONTINUE%
 
 //Horazon's Memory
-ItemDisplay[t12]: %NAME%{%NAME%%GRAY%Note: Lightning Spires have 1000% Poison Resist%NL% %RED%Fire %BLUE%Cold %NL%%WHITE%Immunities:}%CONTINUE%
+ItemDisplay[t12]: %NAME%{%NAME%%GRAY%Note: Lightning Spires have 1000% Poison Resist%NL% %GOLD%Physical %YELLOW%Lightning %NL%%WHITE%Immunities:}%CONTINUE%
 
 //Bastion Keep
-ItemDisplay[t13]: %NAME%{%NAME%%GOLD%Physical %RED%Fire %BLUE%Cold%NL%%WHITE%Immunities:}%CONTINUE%
+ItemDisplay[t13]: %NAME%{%NAME%%GOLD%Physical %ORANGE%Magic %BLUE%Cold%NL%%WHITE%Immunities:}%CONTINUE%
 
 //Sanatorium
-ItemDisplay[t14]: %NAME%{%NAME%%YELLOW%Lightning %GREEN%Poison%NL%%WHITE%Immunities:}%CONTINUE%
+ItemDisplay[t14]: %NAME%{%NAME%%ORANGE%Magic %YELLOW%Lightning%NL%%WHITE%Immunities:}%CONTINUE%
 
 //Royal Crypts
-ItemDisplay[t15]: %NAME%{%NAME%%ORANGE%Magic %BLUE%Cold %GREEN%Poison%NL%%WHITE%Immunities:}%CONTINUE%
+ItemDisplay[t15]: %NAME%{%NAME%%RED%Fire %BLUE%Cold%NL%%WHITE%Immunities:}%CONTINUE%
 
 //Ruined Cistern
-ItemDisplay[t16]: %NAME%{%NAME%%ORANGE%Magic %YELLOW%Lightning %BLUE%Cold%NL%%WHITE%Immunities:}%CONTINUE%
+ItemDisplay[t16]: %NAME%{%NAME%%ORANGE%Magic %GREEN%Poison%NL%%WHITE%Immunities:}%CONTINUE%
 
 //Halls of Torture 
-ItemDisplay[t17]: %NAME%{%NAME%%CORAL%To Be Determined%NL%%WHITE%Immunities:}%CONTINUE%
+ItemDisplay[t17]: %NAME%{%NAME%%YELLOW%Lightning %BLUE%Cold%NL%%WHITE%Immunities:}%CONTINUE%
 
 //Pthlegethon
-ItemDisplay[t21]: %NAME%{%NAME%%RED%Fire %YELLOW%Lightning%NL%%WHITE%Immunities:}%CONTINUE%
+ItemDisplay[t21]: %NAME%{%NAME%%RED%Fire %GREEN%Poison%NL%%WHITE%Immunities:}%CONTINUE%
 
 //Torajan Jungle
-ItemDisplay[t22]: %NAME%{%NAME%%RED%Fire %YELLOW%Lightning%NL%%WHITE%Immunities:}%CONTINUE%
+ItemDisplay[t22]: %NAME%{%NAME%%BLUE%Cold %GREEN%Poison%NL%%WHITE%Immunities:}%CONTINUE%
 
 //Arreat Battlefield
-ItemDisplay[t23]: %NAME%{%NAME%%RED%Fire %YELLOW%Lightning%NL%%WHITE%Immunities:}%CONTINUE%
+ItemDisplay[t23]: %NAME%{%NAME%%ORANGE%Magic %YELLOW%Lightning %GREEN%Poison%NL%%WHITE%Immunities:}%CONTINUE%
 
 //Tomb of Zoltun Kulle
-ItemDisplay[t24]: %NAME%{%NAME%%GOLD%Physical %YELLOW%Lightning %GREEN%Poison%NL%%WHITE%Immunities:}%CONTINUE%
+ItemDisplay[t24]: %NAME%{%NAME%%GOLD%Physical %GREEN%Poison%NL%%WHITE%Immunities:}%CONTINUE%
 
 //Sewers of Harrogath
-ItemDisplay[t25]: %NAME%{%NAME%%YELLOW%Lightning %GREEN%Poison%NL%%WHITE%Immunities:}%CONTINUE%
+ItemDisplay[t25]: %NAME%{%NAME%%RED%Fire %GREEN%Poison%NL%%WHITE%Immunities:}%CONTINUE%
 
 //Shadows of Westmarch
-ItemDisplay[t26]: %NAME%{%NAME%%GOLD%Physical %GREEN%Poison%NL%%WHITE%Immunities:}%CONTINUE%
+ItemDisplay[t26]: %NAME%{%NAME%%ORANGE%Magic %RED%Fire %YELLOW%Lightning%NL%%WHITE%Immunities:}%CONTINUE%
 
 //Demon Road 
-ItemDisplay[t27]: %NAME%{%NAME%%BLUE%Cold %GREEN%Poison%NL%%WHITE%Immunities:}%CONTINUE%
+ItemDisplay[t27]: %NAME%{%NAME%%GOLD%Physical %RED%Fire %YELLOW%Lightning%NL%%WHITE%Immunities:}%CONTINUE%
 
 //Skovos Stronghold
-ItemDisplay[t28]: %NAME%{%NAME%%GOLD%Physical %RED%Fire %YELLOW%Lightning%NL%%WHITE%Immunities:}%CONTINUE%
+ItemDisplay[t28]: %NAME%{%NAME%%BLUE%Cold %GREEN%Poison%NL%%WHITE%Immunities:}%CONTINUE%
 
 //River of Blood
-ItemDisplay[t31]: %NAME%{%NAME%%ORANGE%Magic %BLUE%Cold %GREEN%Poison%NL%%WHITE%Immunities:}%CONTINUE%
+ItemDisplay[t31]: %NAME%{%NAME%%ORANGE%Magic %YELLOW%Lightning %GREEN%Poison%NL%%WHITE%Immunities:}%CONTINUE%
 
 //Throne of Insanity
-ItemDisplay[t32]: %NAME%{%NAME%%RED%Fire %BLUE%Cold%NL%%WHITE%Immunities:}%CONTINUE%
+ItemDisplay[t32]: %NAME%{%NAME%%GOLD%Physical %GREEN%Poison%NL%%WHITE%Immunities:}%CONTINUE%
 
 //Lost Temple
-ItemDisplay[t33]: %NAME%{%NAME%%RED%Fire %BLUE%Cold%NL%%WHITE%Immunities:}%CONTINUE%
+ItemDisplay[t33]: %NAME%{%NAME%%ORANGE%Magic %BLUE%Cold%NL%%WHITE%Immunities:}%CONTINUE%
 
 //Ancestral Trial
-ItemDisplay[t34]: %NAME%{%NAME%%YELLOW%Lightning %GREEN%Poison%NL%%WHITE%Immunities:}%CONTINUE%
+ItemDisplay[t34]: %NAME%{%NAME%%RED%Fire %YELLOW%Lightning%NL%%WHITE%Immunities:}%CONTINUE%
 
 //Fall of Caldeum
-ItemDisplay[t36]: %NAME%{%NAME%%YELLOW%Lightning %BLUE%Cold%NL%%WHITE%Immunities:}%CONTINUE%
+ItemDisplay[t36]: %NAME%{%NAME%%GOLD%Physical %ORANGE%Magic %YELLOW%Lightning%NL%%WHITE%Immunities:}%CONTINUE%
 
 //Pandemonium Citadel
-ItemDisplay[t37]: %NAME%{%NAME%%GOLD%Physical %YELLOW%Lightning %GREEN%Poison%NL%%WHITE%Immunities:}%CONTINUE%
+ItemDisplay[t37]: %NAME%{%NAME%%ORANGE%Magic %BLUE%Cold%NL%%WHITE%Immunities:}%CONTINUE%
 
 //Canyon of Sescheron
-ItemDisplay[t38]: %NAME%{%NAME%%GOLD%Physical %RED%Fire %GREEN%Poison%NL%%WHITE%Immunities:}%CONTINUE%
+ItemDisplay[t38]: %NAME%{%NAME%%GOLD%Physical %RED%Fire%NL%%WHITE%Immunities:}%CONTINUE%
 
 //Kehjistan Marketplace
-ItemDisplay[t39]: %NAME%{%NAME%%GRAY%Note: Fire Towers have 1000% Poison Resist%NL% %RED%Fire %BLUE%Cold %GREEN%Poison %NL%%WHITE%Immunities:}%CONTINUE%
+ItemDisplay[t39]: %NAME%{%NAME%%GRAY%Note: Fire Towers have 1000% Poison Resist%NL% %GOLD%Physical %RED%Fire %NL%%WHITE%Immunities:}%CONTINUE%
 
 //Ashen Plains
-ItemDisplay[t3a]: %NAME%{%NAME%%ORANGE%Magic %BLUE%Cold %GREEN%Poison%NL%%WHITE%Immunities:}%CONTINUE%
+ItemDisplay[t3a]: %NAME%{%NAME%%RED%Fire %BLUE%Cold%NL%%WHITE%Immunities:}%CONTINUE%
 
 // T4 Dungeons
 ItemDisplay[(t41 OR t42 OR t43) ID]: %DOT-62%%RED%%BASENAME%%CONTINUE%
@@ -2389,6 +2381,18 @@ ItemDisplay[NMAG SOCK>1 !RW BARBARIAN_STAFFMODS]: %NL%%NAME%{%NAME%}%CONTINUE%
 ItemDisplay[NMAG SOCK=0 !RW BARBARIAN_STAFFMODS]: %GRAY%)%NAME%{%NAME%}%CONTINUE%
 ItemDisplay[NMAG SOCK>1 !RW BARBARIAN_STAFFMODS]: %GRAY%)%NAME%{%NAME%}%CONTINUE%
 
+
+
+// Barb Helms with skills to Split Throw
+ItemDisplay[NMAG SOCK=0 !RW SK375=1]: %DARK_GREEN%+1%TAN%splt%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[NMAG SOCK>1 !RW SK375=1]: %DARK_GREEN%+1%TAN%bash%NAME%{%NAME%}%CONTINUE%
+
+ItemDisplay[NMAG SOCK=0 !RW SK375=2]: %DARK_GREEN%+2%TAN%splt%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[NMAG SOCK>1 !RW SK375=2]: %DARK_GREEN%+2%TAN%splt%NAME%{%NAME%}%CONTINUE%
+
+ItemDisplay[NMAG SOCK=0 !RW SK375=3]: %GREEN%+3%TAN%splt%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[NMAG SOCK>1 !RW SK375=3]: %GREEN%+3%TAN%splt%NAME%{%NAME%}%CONTINUE%
+
 // Barb Helms with skills to Bash
 ItemDisplay[NMAG SOCK=0 !RW SK126=1]: %DARK_GREEN%+1%TAN%bash%NAME%{%NAME%}%CONTINUE%
 ItemDisplay[NMAG SOCK>1 !RW SK126=1]: %DARK_GREEN%+1%TAN%bash%NAME%{%NAME%}%CONTINUE%
@@ -2399,15 +2403,15 @@ ItemDisplay[NMAG SOCK>1 !RW SK126=2]: %DARK_GREEN%+2%TAN%bash%NAME%{%NAME%}%CONT
 ItemDisplay[NMAG SOCK=0 !RW SK126=3]: %GREEN%+3%TAN%bash%NAME%{%NAME%}%CONTINUE%
 ItemDisplay[NMAG SOCK>1 !RW SK126=3]: %GREEN%+3%TAN%bash%NAME%{%NAME%}%CONTINUE%
 
-// Barb Helms with skills to General Mastery
-ItemDisplay[NMAG SOCK=0 !RW SK128=1]: %DARK_GREEN%+1%TAN%gnrl%NAME%{%NAME%}%CONTINUE%
-ItemDisplay[NMAG SOCK>1 !RW SK128=1]: %DARK_GREEN%+1%TAN%gnrl%NAME%{%NAME%}%CONTINUE%
+// Barb Helms with skills to One-Handed Mastery
+ItemDisplay[NMAG SOCK=0 !RW SK128=1]: %DARK_GREEN%+1%TAN%oneh%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[NMAG SOCK>1 !RW SK128=1]: %DARK_GREEN%+1%TAN%oneh%NAME%{%NAME%}%CONTINUE%
 
-ItemDisplay[NMAG SOCK=0 !RW SK128=2]: %DARK_GREEN%+2%TAN%gnrl%NAME%{%NAME%}%CONTINUE%
-ItemDisplay[NMAG SOCK>1 !RW SK128=2]: %DARK_GREEN%+2%TAN%gnrl%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[NMAG SOCK=0 !RW SK128=2]: %DARK_GREEN%+2%TAN%oneh%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[NMAG SOCK>1 !RW SK128=2]: %DARK_GREEN%+2%TAN%oneh%NAME%{%NAME%}%CONTINUE%
 
-ItemDisplay[NMAG SOCK=0 !RW SK128=3]: %GREEN%+3%TAN%gnrl%NAME%{%NAME%}%CONTINUE%
-ItemDisplay[NMAG SOCK>1 !RW SK128=3]: %GREEN%+3%TAN%gnrl%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[NMAG SOCK=0 !RW SK128=3]: %GREEN%+3%TAN%oneh%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[NMAG SOCK>1 !RW SK128=3]: %GREEN%+3%TAN%oneh%NAME%{%NAME%}%CONTINUE%
 
 // Barb Helms with skills to Howl
 ItemDisplay[NMAG SOCK=0 !RW SK130=1]: %DARK_GREEN%+1%TAN%howl%NAME%{%NAME%}%CONTINUE%
@@ -2449,15 +2453,15 @@ ItemDisplay[NMAG SOCK>1 !RW SK133=2]: %DARK_GREEN%+2%TAN%dswg%NAME%{%NAME%}%CONT
 ItemDisplay[NMAG SOCK=0 !RW SK133=3]: %GREEN%+3%TAN%dswg%NAME%{%NAME%}%CONTINUE%
 ItemDisplay[NMAG SOCK>1 !RW SK133=3]: %GREEN%+3%TAN%dswg%NAME%{%NAME%}%CONTINUE%
 
-// Barb Helms with skills to Polearm and Spear Mastery
-ItemDisplay[NMAG SOCK=0 !RW SK134=1]: %DARK_GREEN%+1%TAN%pa&s%NAME%{%NAME%}%CONTINUE%
-ItemDisplay[NMAG SOCK>1 !RW SK134=1]: %DARK_GREEN%+1%TAN%pa&s%NAME%{%NAME%}%CONTINUE%
+// Barb Helms with skills to Two-Handed Mastery
+ItemDisplay[NMAG SOCK=0 !RW SK134=1]: %DARK_GREEN%+1%TAN%twoh%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[NMAG SOCK>1 !RW SK134=1]: %DARK_GREEN%+1%TAN%twoh%NAME%{%NAME%}%CONTINUE%
 
-ItemDisplay[NMAG SOCK=0 !RW SK134=2]: %DARK_GREEN%+2%TAN%pa&s%NAME%{%NAME%}%CONTINUE%
-ItemDisplay[NMAG SOCK>1 !RW SK134=2]: %DARK_GREEN%+2%TAN%pa&s%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[NMAG SOCK=0 !RW SK134=2]: %DARK_GREEN%+2%TAN%twoh%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[NMAG SOCK>1 !RW SK134=2]: %DARK_GREEN%+2%TAN%twoh%NAME%{%NAME%}%CONTINUE%
 
-ItemDisplay[NMAG SOCK=0 !RW SK134=3]: %GREEN%+3%TAN%pa&s%NAME%{%NAME%}%CONTINUE%
-ItemDisplay[NMAG SOCK>1 !RW SK134=3]: %GREEN%+3%TAN%pa&s%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[NMAG SOCK=0 !RW SK134=3]: %GREEN%+3%TAN%twoh%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[NMAG SOCK>1 !RW SK134=3]: %GREEN%+3%TAN%twoh%NAME%{%NAME%}%CONTINUE%
 
 // Barb Helms with skills to Throwing Mastery
 ItemDisplay[NMAG SOCK=0 !RW SK135=1]: %DARK_GREEN%+1%TAN%thrw%NAME%{%NAME%}%CONTINUE%
@@ -3364,8 +3368,8 @@ ItemDisplay[NMAG (WP9 OR WP10) SOCK=4 !RW CLVL>64 FILTLVL=3]: %NAME%{%NAME%%TAN%
 ItemDisplay[NMAG (WP9 OR WP10) SOCK=4 !RW CLVL<67 FILTLVL=3]: %NAME%{%NAME%%RED%Hand of Justice: Sur Cham Amn Lo (Level 67)%NL%}%CONTINUE%
 ItemDisplay[NMAG (WP9 OR WP10) SOCK=4 !RW CLVL>66 FILTLVL=3]: %NAME%{%NAME%%TAN%Hand of Justice: %ORANGE%Sur Cham Amn Lo%NL%}%CONTINUE%
 
-ItemDisplay[NMAG (WP9 OR WP10) SOCK=5 !RW CLVL<57 FILTLVL=3]: %NAME%{%NAME%%RED%Call to Arms: Amn Ral Mal Ist Ohm (Level 57)%NL%}%CONTINUE%
-ItemDisplay[NMAG (WP9 OR WP10) SOCK=5 !RW CLVL>56 FILTLVL=3]: %NAME%{%NAME%%TAN%Call to Arms: %ORANGE%Amn Ral Mal Ist Ohm%NL%}%CONTINUE%
+//ItemDisplay[NMAG (WP9 OR WP10) SOCK=5 !RW CLVL<57 FILTLVL=3]: %NAME%{%NAME%%RED%Call to Arms: Amn Ral Mal Ist Ohm (Level 57)%NL%}%CONTINUE%  //Removed in S13
+//ItemDisplay[NMAG (WP9 OR WP10) SOCK=5 !RW CLVL>56 FILTLVL=3]: %NAME%{%NAME%%TAN%Call to Arms: %ORANGE%Amn Ral Mal Ist Ohm%NL%}%CONTINUE%     //Removed in S13
 ItemDisplay[NMAG (WP9 OR WP10) SOCK=5 !RW CLVL<67 FILTLVL=3]: %NAME%{%NAME%%RED%Mist: Cham Shael Gul Thul Ith (Level 67)%NL%}%CONTINUE%
 ItemDisplay[NMAG (WP9 OR WP10) SOCK=5 !RW CLVL>66 FILTLVL=3]: %NAME%{%NAME%%TAN%Mist: %ORANGE%Cham Shael Gul Thul Ith%NL%}%CONTINUE%
 ItemDisplay[NMAG (WP9 OR WP10) SOCK=5 !RW CLVL<69 FILTLVL=3]: %NAME%{%NAME%%RED%Zenith: Jah Zod Ort Thul Ral (Level 69)%NL%}%CONTINUE%
@@ -5580,17 +5584,17 @@ ItemDisplay[NMAG WEAPON !THROW_POTS SOCK=0]: %NAME%{%NAME%%GRAY%Add Sockets: %OR
 
 
 // Tags for Normal, Exceptional, Elite Bases
-ItemDisplay[(NORM OR aqv OR cqv) !(MISC !(aqv OR cqv)) !RW !ASSASSIN !CUBE]: %NAME%%TAN%¹{%NAME%%TAN%¹%WHITE%Normal Quality %CL%}%CONTINUE%
-ItemDisplay[(EXC OR aqv2 OR cqv2) !RW !ASSASSIN !CUBE]: %NAME%%TAN%²{%NAME%%TAN%²%WHITE%Exceptional Quality %CL%}%CONTINUE%
-ItemDisplay[(ELT OR aqv3 OR cqv3) !RW !ASSASSIN !CUBE]: %NAME%%TAN%³{%NAME%%TAN%³%WHITE%Elite Quality %CL%}%CONTINUE%
+ItemDisplay[(NORM OR aqv OR cqv) !(MISC !(aqv OR cqv)) !RW !ASSASSIN !CUBE]: %NAME%%TAN%Â¹{%NAME%%TAN%Â¹%WHITE%Normal Quality %CL%}%CONTINUE%
+ItemDisplay[(EXC OR aqv2 OR cqv2) !RW !ASSASSIN !CUBE]: %NAME%%TAN%Â²{%NAME%%TAN%Â²%WHITE%Exceptional Quality %CL%}%CONTINUE%
+ItemDisplay[(ELT OR aqv3 OR cqv3) !RW !ASSASSIN !CUBE]: %NAME%%TAN%Â³{%NAME%%TAN%Â³%WHITE%Elite Quality %CL%}%CONTINUE%
 
 // Tags for Normal, Exceptional, Elite Bases adjusted to display Kick damage on Set Boots for Assassins
-ItemDisplay[(NORM OR aqv OR cqv) !(MISC !(aqv OR cqv)) !(SET BOOTS) !RW ASSASSIN !CUBE]: %NAME%%TAN%¹{%NAME%%TAN%¹%WHITE%Normal Quality%CL%}%CONTINUE%
-ItemDisplay[(EXC OR aqv2 OR cqv2) !(SET BOOTS) !RW ASSASSIN !CUBE]: %NAME%%TAN%²{%NAME%%TAN%²%WHITE%Exceptional Quality%CL%}%CONTINUE%
-ItemDisplay[(ELT OR aqv3 OR cqv3) !(SET BOOTS) !RW ASSASSIN !CUBE]: %NAME%%TAN%³{%NAME%%TAN%³%WHITE%Elite Quality%CL%}%CONTINUE%
-ItemDisplay[SET BOOTS NORM !RW ASSASSIN !CUBE]: %NAME%%TAN%¹{%NAME%%TAN%¹%WHITE%Normal Quality%CL%}%CONTINUE%
-ItemDisplay[SET BOOTS EXC !RW ASSASSIN !CUBE]: %NAME%%TAN%²{%NAME%%TAN%²%WHITE%Exceptional Quality%CL%}%CONTINUE%
-ItemDisplay[SET BOOTS ELT !RW ASSASSIN !CUBE]: %NAME%%TAN%³{%NAME%%TAN%³%WHITE%Elite Quality%CL%}%CONTINUE%
+ItemDisplay[(NORM OR aqv OR cqv) !(MISC !(aqv OR cqv)) !(SET BOOTS) !RW ASSASSIN !CUBE]: %NAME%%TAN%Â¹{%NAME%%TAN%Â¹%WHITE%Normal Quality%CL%}%CONTINUE%
+ItemDisplay[(EXC OR aqv2 OR cqv2) !(SET BOOTS) !RW ASSASSIN !CUBE]: %NAME%%TAN%Â²{%NAME%%TAN%Â²%WHITE%Exceptional Quality%CL%}%CONTINUE%
+ItemDisplay[(ELT OR aqv3 OR cqv3) !(SET BOOTS) !RW ASSASSIN !CUBE]: %NAME%%TAN%Â³{%NAME%%TAN%Â³%WHITE%Elite Quality%CL%}%CONTINUE%
+ItemDisplay[SET BOOTS NORM !RW ASSASSIN !CUBE]: %NAME%%TAN%Â¹{%NAME%%TAN%Â¹%WHITE%Normal Quality%CL%}%CONTINUE%
+ItemDisplay[SET BOOTS EXC !RW ASSASSIN !CUBE]: %NAME%%TAN%Â²{%NAME%%TAN%Â²%WHITE%Exceptional Quality%CL%}%CONTINUE%
+ItemDisplay[SET BOOTS ELT !RW ASSASSIN !CUBE]: %NAME%%TAN%Â³{%NAME%%TAN%Â³%WHITE%Elite Quality%CL%}%CONTINUE%
 
 // Show me Kick Damage on Set Boots (Assassin Only) - Updated for S5 Damage
 ItemDisplay[lbt SET ASSASSIN]: %NAME%{%NAME%%WHITE%Kick Damage: 3 to 8}%CONTINUE%
@@ -6542,23 +6546,23 @@ ItemDisplay[(cm1 OR cm1p) MAG ID MAXDMG>0]: %TAN%%MAXDMG%%GRAY%max %NAME%{%NAME%
 // HIDING ITEMS
 
 // Hide Lesser Health and Mana potions by CLVL
-ItemDisplay[hp1 CLVL<15]: %RED%!%WHITE%HP%GRAY%°{%GRAY%Minor Healing Potion}
-ItemDisplay[mp1 CLVL<15]: %BLUE%!%WHITE%MP%GRAY%°{%GRAY%Minor Mana Potion}
+ItemDisplay[hp1 CLVL<15]: %RED%!%WHITE%HP%GRAY%Â°{%GRAY%Minor Healing Potion}
+ItemDisplay[mp1 CLVL<15]: %BLUE%!%WHITE%MP%GRAY%Â°{%GRAY%Minor Mana Potion}
 ItemDisplay[hp1 CLVL>14 !SHOP]:
 ItemDisplay[mp1 CLVL>14 !SHOP]:
 
-ItemDisplay[hp2 CLVL<20]: %RED%!%WHITE%HP%GRAY%¹{%GRAY%Light Healing Potion}
-ItemDisplay[mp2 CLVL<20]: %BLUE%!%WHITE%MP%GRAY%¹{%GRAY%Light Mana Potion}
+ItemDisplay[hp2 CLVL<20]: %RED%!%WHITE%HP%GRAY%Â¹{%GRAY%Light Healing Potion}
+ItemDisplay[mp2 CLVL<20]: %BLUE%!%WHITE%MP%GRAY%Â¹{%GRAY%Light Mana Potion}
 ItemDisplay[hp2 CLVL>19 !SHOP]:
 ItemDisplay[mp2 CLVL>19 !SHOP]:
 
-ItemDisplay[hp3 CLVL<25]: %RED%!%WHITE%HP%GRAY%²{%GRAY%Healing Potion}
-ItemDisplay[mp3 CLVL<25]: %BLUE%!%WHITE%MP%GRAY%²{%GRAY%Mana Potion}
+ItemDisplay[hp3 CLVL<25]: %RED%!%WHITE%HP%GRAY%Â²{%GRAY%Healing Potion}
+ItemDisplay[mp3 CLVL<25]: %BLUE%!%WHITE%MP%GRAY%Â²{%GRAY%Mana Potion}
 ItemDisplay[hp3 CLVL>24 !SHOP]:
 ItemDisplay[mp3 CLVL>24 !SHOP]:
 
-ItemDisplay[hp4 CLVL<30]: %RED%!%WHITE%HP%GRAY%³{%GRAY%Greater Healing Potion}
-ItemDisplay[mp4 CLVL<30]: %BLUE%!%WHITE%MP%GRAY%³{%GRAY%Greater Mana Potion}
+ItemDisplay[hp4 CLVL<30]: %RED%!%WHITE%HP%GRAY%Â³{%GRAY%Greater Healing Potion}
+ItemDisplay[mp4 CLVL<30]: %BLUE%!%WHITE%MP%GRAY%Â³{%GRAY%Greater Mana Potion}
 ItemDisplay[hp4 CLVL>29 !SHOP]:
 ItemDisplay[mp4 CLVL>29 !SHOP]:
 
