@@ -372,6 +372,23 @@
         }
     ],
     [
+        "Vylens",
+        {
+            "info": {
+                "name": "Vylens PD2 Filter",
+                "url": "https://api.github.com/repos/Vylens/Vylens-PD2-Filter/contents",
+                "author": "Vylens"
+            },
+            "filters": [
+                {
+                    "name": "Vylens.filter",
+                    "url": "https://api.github.com/repos/Vylens/Vylens-PD2-Filter/contents/Vylens.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/Vylens/Vylens-PD2-Filter/main/Vylens.filter"
+                }
+            ]
+        }
+    ],
+    [
         "Wolfie",
         {
             "info": {
