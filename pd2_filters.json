@@ -80,11 +80,6 @@
                     "download_url": "https://raw.githubusercontent.com/Maaaaaarrk/HiimFilter-PD2-Filter/main/Hiim.filter"
                 },
                 {
-                    "name": "Hiim_Closed_Beta.filter",
-                    "url": "https://api.github.com/repos/Maaaaaarrk/HiimFilter-PD2-Filter/contents/Hiim_Closed_Beta.filter?ref=main",
-                    "download_url": "https://raw.githubusercontent.com/Maaaaaarrk/HiimFilter-PD2-Filter/main/Hiim_Closed_Beta.filter"
-                },
-                {
                     "name": "Hiim_Crafting.filter",
                     "url": "https://api.github.com/repos/Maaaaaarrk/HiimFilter-PD2-Filter/contents/Hiim_Crafting.filter?ref=main",
                     "download_url": "https://raw.githubusercontent.com/Maaaaaarrk/HiimFilter-PD2-Filter/main/Hiim_Crafting.filter"
@@ -163,6 +158,11 @@
                     "name": "Hiim_Vanilla_Plus.filter",
                     "url": "https://api.github.com/repos/Maaaaaarrk/HiimFilter-PD2-Filter/contents/Hiim_Vanilla_Plus.filter?ref=main",
                     "download_url": "https://raw.githubusercontent.com/Maaaaaarrk/HiimFilter-PD2-Filter/main/Hiim_Vanilla_Plus.filter"
+                },
+                {
+                    "name": "Hiim_Vanilla_Plus_Crafting.filter",
+                    "url": "https://api.github.com/repos/Maaaaaarrk/HiimFilter-PD2-Filter/contents/Hiim_Vanilla_Plus_Crafting.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/Maaaaaarrk/HiimFilter-PD2-Filter/main/Hiim_Vanilla_Plus_Crafting.filter"
                 }
             ]
         }
@@ -364,11 +364,6 @@
                     "name": "eqN-All-In-One.filter",
                     "url": "https://api.github.com/repos/eqNj/eqN-PD2-Filter/contents/eqN-All-In-One.filter?ref=main",
                     "download_url": "https://raw.githubusercontent.com/eqNj/eqN-PD2-Filter/main/eqN-All-In-One.filter"
-                },
-                {
-                    "name": "eqN-Potionless.filter",
-                    "url": "https://api.github.com/repos/eqNj/eqN-PD2-Filter/contents/eqN-Potionless.filter?ref=main",
-                    "download_url": "https://raw.githubusercontent.com/eqNj/eqN-PD2-Filter/main/eqN-Potionless.filter"
                 },
                 {
                     "name": "eqN-Specialized-LLD.filter",
