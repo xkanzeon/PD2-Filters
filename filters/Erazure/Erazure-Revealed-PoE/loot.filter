@@ -44,15 +44,15 @@ ItemDisplay[box]:%NAME%{%NAME%%CL%%WHITE%Season 13 - Apr 28th}//
 
 // =====================================  Toggles  ==================================
 
-//  BIG_GG=FALSE + POE_SOUNDS=FALSE  =  Erazure - Main
-Alias[BIG_GG]:FALSE
-Alias[POE_SOUNDS]:FALSE
-
-//  BIG_GG=TRUE  + POE_SOUNDS=FALSE  =  Erazure - BIG GG
-//Alias[BIG_GG]:TRUE
+//  BIG_GG=FALSE + POE_SOUNDS=FALSE  =  Erazure - Main/Revealed
+//Alias[BIG_GG]:FALSE
 //Alias[POE_SOUNDS]:FALSE
 
-//  BIG_GG=FALSE + POE_SOUNDS=TRUE   =  Erazure - Main - PoE
+//  BIG_GG=TRUE  + POE_SOUNDS=FALSE  =  Erazure - BIG GG
+Alias[BIG_GG]:TRUE
+Alias[POE_SOUNDS]:FALSE
+
+//  BIG_GG=FALSE + POE_SOUNDS=TRUE   =  Erazure - Main/Revealed - PoE
 //Alias[BIG_GG]:FALSE
 //Alias[POE_SOUNDS]:TRUE
 

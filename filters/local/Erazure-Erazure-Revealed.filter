@@ -61,8 +61,8 @@ Alias[POE_SOUNDS]:FALSE
 //Alias[POE_SOUNDS]:TRUE
 
 // Displays identified names for unique and set items
-//Alias[REVEALED]:TRUE
-Alias[REVEALED]:FALSE
+Alias[REVEALED]:TRUE
+//Alias[REVEALED]:FALSE
 
 // =====================================  Aliases  ==================================
 
