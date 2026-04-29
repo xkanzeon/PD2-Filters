@@ -8,6 +8,8 @@ ItemDisplayFilterName[]:Extreme - Hides mid ÿc4uniqueÿc0/ÿc<set ÿc0+ ÿc9arm
 Alias[SHOW_R1]:FALSE
 Alias[SHOW_HP]:FALSE
 Alias[SHOW_MP]:FALSE
+Alias[UNI_T1]:FALSE
+Alias[SET_T1]:FALSE
 Alias[REVEALED]:FALSE
 Alias[CRAFTING]:TRUE
 Alias[BETA]:FALSE
@@ -69,6 +71,8 @@ Alias[LVLDIFF]:(IF(MAPTIER==4,92,IF(OR(MAPTIER==3,MAPTIER==5),89,IF(MAPTIER==2,8
 Alias[ELITEDIFF]:(IF(MAPTIER==4,92,IF(OR(MAPTIER==3,MAPTIER==5),89,IF(MAPTIER==2,88,87)))+3+STAT374-CHARSTAT12)
 Alias[MAGICFIND]:(CHARSTAT80*250/(CHARSTAT80+250))
 Alias[MAPMAGICFIND]:((STAT370+CHARSTAT80)*250/((STAT370+CHARSTAT80)+250))
+#\\\
+#///Testing
 #\\\
 #///Name Overrides
 //Catch All
@@ -896,15 +900,30 @@ ItemDisplay[EQUIPPED PALADIN SHIELD]:%NAME% {%WHITE%Max Block Dex: $f(CEIL(CHARS
 ItemDisplay[EQUIPPED (AMAZON OR ASSASSIN OR BARBARIAN) SHIELD]:%NAME% {%WHITE%Max Block Dex: $f(CEIL(CHARSTAT12*150/(CHARSTAT20+25)+15))%CL%%NAME%}%CONTINUE%
 ItemDisplay[EQUIPPED (DRUID OR NECROMANCER OR SORCERESS) SHIELD]:%NAME% {%WHITE%Max Block Dex: $f(CEIL(CHARSTAT12*150/(CHARSTAT20+20)+15))%CL%%NAME%}%CONTINUE%
 //Affix Level
-ItemDisplay[!GROUND ID ((RARE jew) OR (MAG cm3 ILVL>90))]:%NAME%{%WHITE%Reroll Affix Level: %REROLLALVL%%CL%%NAME%}%CONTINUE%
+ItemDisplay[!GROUND ID RARE jew]:%NAME%{%WHITE%Reroll Affix Level: %REROLLALVL%%CL%%NAME%}%CONTINUE%
+ItemDisplay[!GROUND ID MAG cm3 ILVL>90]:%NAME%{%RED%· %WHITE%Reroll Affix Level: %REROLLALVL% %RED%·%CL%%NAME%}%CONTINUE%
+//Map Quality
+ItemDisplay[BETA !GROUND ID !NMAG MAPTIER>0]:%NAME%{%WHITE%Experience: $f(ROUND((1+STAT373/100)*((1+STAT372/100)*%NORM_XP%+(1+MIN(STAT375/100,MAX(STAT372/100,STAT375/200)))*%ELITE_XP%)/2*100))%%CL%%NAME%}%CONTINUE%
+ItemDisplay[BETA !GROUND ID !NMAG MAPTIER>0]:%NAME%{%WHITE%Magic Find: $f(ROUND((%MAPMAGICFIND%/%MAGICFIND%)*((1+STAT372/100)*0.55+(1+MIN(STAT375,MAX(STAT372,STAT375/2))/100)*0.45)*100))%%CL%%NAME%}%CONTINUE%
+//Item Affix Quality:
+ItemDisplay[BETA !GROUND ID (RARE OR CRAFT) amu STAT360=0]:%NAME%{%WHITE%Affix Quality: $f(ROUND((MAX(STAT2/30+MAX(STAT21,STAT23)/13+MAX(STAT22,STAT24)/14+STAT19/240+STAT60/6+STAT62/8+CLSK0/2+TABSK0/2+TABSK1/2+TABSK2/2+TABSK25/2+TABSK26/2+TABSK32/2+TABSK33/2+TABSK41/2+TABSK48/2+TABSK50/2,STAT1/30+STAT9/120+STAT86/5+STAT105/10+STAT138/5+CLSK1/2+CLSK2/2+TABSK8/2+TABSK9/2+TABSK10/2+TABSK16/2+TABSK17/2+TABSK18/2+TABSK34/2+TABSK40/2+TABSK42/2)+STAT0/30+STAT7/60+(STAT39-RES)/40+(STAT41-RES)/40+(STAT43-RES)/40+(STAT45-RES)/40+RES/20+STAT80/25+STAT110/75+CLSK3/2+CLSK4/2+CLSK5/2+CLSK6/2+TABSK24/2+TABSK49/2)/6*100))%%CL%%NAME%}%CONTINUE%
+ItemDisplay[BETA !GROUND ID (RARE OR CRAFT) rin STAT360=0]:%NAME%{%WHITE%Affix Quality: $f(ROUND((MAX(STAT2/15+MAX(STAT21,STAT23)/13+MAX(STAT22,STAT24)/14+STAT19/120+STAT60/8+STAT62/6,STAT1/15+STAT9/120+STAT86/5+STAT105/10+STAT138/5)+STAT0/20+STAT7/40+(STAT39-RES)/30+(STAT41-RES)/30+(STAT43-RES)/30+(STAT45-RES)/30+RES/11+STAT80/25+STAT110/25)/6*100))%%CL%%NAME%}%CONTINUE%
+ItemDisplay[BETA !GROUND ID (RARE OR CRAFT) jew STAT360=0]:%NAME%{%WHITE%Affix Quality: $f(ROUND((MAX(STAT2/9+MAX(STAT17,STAT18)/40+MAX(STAT21,STAT23)/14+MAX(STAT22,STAT24)/15+STAT19/100+STAT501/125,STAT1/9+STAT9/30+STAT86/3+STAT138/3)+STAT0/9+STAT7/8+(STAT39-RES)/30+(STAT41-RES)/30+(STAT43-RES)/30+(STAT45-RES)/30+RES/10+STAT80/15+STAT99/7)/6*100))%%CL%%NAME%}%CONTINUE%
+ItemDisplay[BETA !GROUND ID (RARE OR CRAFT) CIRC STAT360=0]:%NAME%{%WHITE%Affix Quality: $f(ROUND((MAX(STAT2/30+MAX(STAT21,STAT23)/13+MAX(STAT22,STAT24)/14+STAT19/120+STAT60/8+STAT62/8+CLSK0/2+TABSK0/2+TABSK2/2+TABSK32/2+TABSK41/2+TABSK48/2+TABSK50/2,STAT1/30+STAT9/120+STAT86/5+STAT105/20+STAT138/5+CLSK1/2+CLSK2/2+TABSK8/2+TABSK9/2+TABSK10/2+TABSK16/2+TABSK17/2+TABSK18/2+TABSK34/2+TABSK40/2+TABSK42/2)+STAT0/30+STAT7/100+(STAT39-RES)/40+(STAT41-RES)/40+(STAT43-RES)/40+(STAT45-RES)/40+RES/20+STAT80/25+STAT96/30+STAT110/75+STAT194/2+CLSK3/2+CLSK4/2+CLSK5/2+CLSK6/2+TABSK24/2+TABSK49/2)/6*100))%%CL%%NAME%}%CONTINUE%
+ItemDisplay[BETA !GROUND ID (RARE OR CRAFT) BELT STAT360=0]:%NAME%{%WHITE%Affix Quality: $f(ROUND((MAX(STAT19/30,STAT9/20+STAT105/10)+STAT0/30+STAT7/100+STAT36/10+(STAT39-RES)/30+(STAT41-RES)/30+(STAT43-RES)/30+(STAT45-RES)/30+STAT99/24+STAT110/25)/6*100))%%CL%%NAME%}%CONTINUE%
+ItemDisplay[BETA !GROUND ID (RARE OR CRAFT) BOOTS STAT360=0]:%NAME%{%WHITE%Affix Quality: $f(ROUND((MAX(STAT2/15+STAT19/30,STAT9/40)+(STAT39-RES)/40+(STAT41-RES)/40+(STAT43-RES)/40+(STAT45-RES)/40+STAT80/25+STAT96/30+STAT99/10+STAT110/25)/6*100))%%CL%%NAME%}%CONTINUE%
+ItemDisplay[BETA !GROUND ID (RARE OR CRAFT) GLOVES STAT360=0]:%NAME%{%WHITE%Affix Quality: $f(ROUND((MAX(STAT2/15+STAT19/120+STAT60/3+STAT62/3+STAT93/20+STAT136/10+STAT141/10+TABSK0/2+TABSK2/2+TABSK32/2+TABSK41/2+TABSK50/2,STAT9/40+STAT86/5+STAT105/10+STAT138/5)+STAT0/15+(STAT39-RES)/30+(STAT41-RES)/30+(STAT43-RES)/30+(STAT45-RES)/30+STAT80/25+STAT99/10+STAT102/20+STAT110/25)/6*100))%%CL%%NAME%}%CONTINUE%
+ItemDisplay[BETA !GROUND ID (RARE OR CRAFT) CHEST STAT360=0]:%NAME%{%WHITE%Affix Quality: $f(ROUND((MAX(STAT2/30+MAX(STAT17,STAT18)/200+STAT19/240+CLSK0/1,STAT1/30+STAT9/90+STAT86/5+STAT105/20+STAT138/5+CLSK1/1+CLSK2/1)+STAT0/30+STAT7/100+STAT36/25+(STAT39-RES)/40+(STAT41-RES)/40+(STAT43-RES)/40+(STAT45-RES)/40+RES/30+STAT99/24+STAT110/75+STAT194/4+CLSK3/1+CLSK4/1+CLSK5/1+CLSK6/1)/6*100))%%CL%%NAME%}%CONTINUE%
+ItemDisplay[BETA !GROUND ID (RARE OR CRAFT) HELM !CLASS STAT360=0]:%NAME%{%WHITE%Affix Quality: $f(ROUND((MAX(STAT2/30+MAX(STAT17,STAT18)/30+MAX(STAT21,STAT23)/13+MAX(STAT22,STAT24)/14+STAT19/120+STAT60/6+STAT62/6+STAT136/20+STAT141/20+CLSK0/1,STAT1/30+STAT86/5+STAT138/5+CLSK1/1+CLSK2/1)+STAT0/30+STAT7/40+STAT36/15+(STAT39-RES)/40+(STAT41-RES)/40+(STAT43-RES)/40+(STAT45-RES)/40+RES/30+STAT80/25+STAT99/24+STAT194/3+CLSK3/1+CLSK4/1+CLSK5/1+CLSK6/1+TABSK49/2)/6*100))%%CL%%NAME%}%CONTINUE%
+ItemDisplay[BETA !GROUND ID (RARE OR CRAFT) SHIELD !CLASS STAT360=0]:%NAME%{%WHITE%Affix Quality: $f(ROUND((MAX(STAT2/30+MAX(STAT17,STAT18)/160+MAX(STAT22,STAT24)/4+CLSK0/1,STAT1/30+STAT9/90+STAT86/5+STAT105/20+STAT138/5+CLSK1/1+CLSK2/1)+STAT0/30+STAT7/100+STAT36/25+(STAT39-RES)/40+(STAT41-RES)/40+(STAT43-RES)/40+(STAT45-RES)/40+RES/30+STAT99/24+STAT102/20+STAT110/75+STAT194/4+CLSK3/2+CLSK4/1+CLSK5/1+CLSK6/1)/6*100))%%CL%%NAME%}%CONTINUE%
 //Socket Recipes
-ItemDisplay[!EQUIPPED NMAG !INF (HELM OR CIRC OR CHEST OR SHIELD OR QUIVER OR WEAPON) !JUNK SOCK=0]:%NAME%{%GOLD%Cube for Socket Recipe%CL%%NAME%}%CONTINUE%
+//ItemDisplay[!EQUIPPED NMAG !INF (HELM OR CIRC OR CHEST OR SHIELD OR QUIVER OR WEAPON) !JUNK SOCK=0]:%NAME%{%GOLD%Cube for Socket Recipe%CL%%NAME%}%CONTINUE%
 ItemDisplay[!GROUND NMAG !INF (HELM OR CIRC) SOCK=0]:%NAME%{%WHITE%Socket: %ORANGE%Ral %WHITE%+ %ORANGE%Thul %WHITE%+ %BLUE%O%CL%%NAME%}%CONTINUE%
 ItemDisplay[!GROUND NMAG !INF CHEST SOCK=0]:%NAME%{%WHITE%Socket: %ORANGE%Tal %WHITE%+ %ORANGE%Thul %WHITE%+ %YELLOW%O%CL%%NAME%}%CONTINUE%
 ItemDisplay[!GROUND NMAG !INF (SHIELD OR QUIVER) SOCK=0]:%NAME%{%WHITE%Socket: %ORANGE%Tal %WHITE%+ %ORANGE%Amn %WHITE%+ %RED%O%CL%%NAME%}%CONTINUE%
 ItemDisplay[!GROUND NMAG !INF WEAPON !JUNK SOCK=0]:%NAME%{%WHITE%Socket: %ORANGE%Ral %WHITE%+ %ORANGE%Amn %WHITE%+ %PURPLE%O%CL%%NAME%}%CONTINUE%
 //Max Sockets
-ItemDisplay[!EQUIPPED ID (ARMOR OR WEAPON OR QUIVER) SOCK=0 MAXSOCKETS>0]:%NAME%{%WHITE%Max Sockets: $f(MIN(MAXSOCKETS,IF(AND(!NMAG,ONEHAND),4,6),IF(AND(!NMAG,!WEAPON),3,6),IF(STAT360>0,IF(TWOHAND,4,2),6)))%CL%%NAME%}%CONTINUE%
+ItemDisplay[!GROUND ID (ARMOR OR WEAPON OR QUIVER) SOCK=0 MAXSOCKETS>0]:%NAME%{%WHITE%Max Sockets: $f(MIN(MAXSOCKETS,IF(AND(!NMAG,ONEHAND),4,6),IF(AND(!NMAG,!WEAPON),3,6),IF(STAT360>0,IF(TWOHAND,4,2),6)))%CL%%NAME%}%CONTINUE%
 //Upgrade Recipes
 ItemDisplay[!EQUIPPED !CUBE ID !NMAG !MAG !ELT (ARMOR OR WEAPON OR QUIVER)]:%NAME%{%GOLD%Cube for Upgrade Recipe%CL%%NAME%}%CONTINUE%
 ItemDisplay[CUBE ID (RARE OR CRAFT) NORM (ARMOR OR QUIVER)]:%NAME%{%WHITE%Upgrade: %ORANGE%Ral %WHITE%+ %ORANGE%Thul %WHITE%+ %PURPLE%O%CL%%NAME%}%CONTINUE%
@@ -1938,54 +1957,54 @@ ItemDisplay[GROUND !ID RARE]:%HIDE%
 #\\\
 #///Set Items
 //Misc
-ItemDisplay[FILTLVL<4 !ID SET (amu OR rin)]:%GREEN_T1%
+ItemDisplay[(FILTLVL<4 OR SET_T1) !ID SET (amu OR rin)]:%GREEN_T1%
 //Helm
 ItemDisplay[!ID SET !ETH (xhm OR xh9)]:%GREEN_T2%
-ItemDisplay[FILTLVL<4 !ID SET !ETH (xap OR xsk OR uhm OR urn OR uh9 OR ci0 OR ci3)]:%GREEN_T1%
+ItemDisplay[(FILTLVL<4 OR SET_T1) !ID SET !ETH (xap OR xsk OR uhm OR urn OR uh9 OR ci0 OR ci3)]:%GREEN_T1%
 ItemDisplay[!ID SET ETH xhm]:%GREEN_T2%
-ItemDisplay[FILTLVL<4 !ID SET ETH (xap OR xsk OR xh9 OR uhm OR urn OR uh9 OR ci0 OR ci3)]:%GREEN_T1%
+ItemDisplay[(FILTLVL<4 OR SET_T1) !ID SET ETH (xap OR xsk OR xh9 OR uhm OR urn OR uh9 OR ci0 OR ci3)]:%GREEN_T1%
 //Chest
 ItemDisplay[!ID SET !ETH ucl]:%GREEN_T2%
-ItemDisplay[FILTLVL<4 !ID SET !ETH (stu OR xul OR xar OR ult OR uld OR uth OR uul OR uar)]:%GREEN_T1%
-ItemDisplay[FILTLVL<4 !ID SET ETH (stu OR xul OR xar OR ucl OR ult OR uld OR uth OR uul OR uar)]:%GREEN_T1%
+ItemDisplay[(FILTLVL<4 OR SET_T1) !ID SET !ETH (stu OR xul OR xar OR ult OR uld OR uth OR uul OR uar)]:%GREEN_T1%
+ItemDisplay[(FILTLVL<4 OR SET_T1) !ID SET ETH (stu OR xul OR xar OR ucl OR ult OR uld OR uth OR uul OR uar)]:%GREEN_T1%
 //Gloves
 ItemDisplay[!ID SET !ETH (lgl OR xvg OR xmg OR ulg)]:%GREEN_T2%
-ItemDisplay[FILTLVL<4 !ID SET !ETH (xtg OR xhg)]:%GREEN_T1%
+ItemDisplay[(FILTLVL<4 OR SET_T1) !ID SET !ETH (xtg OR xhg)]:%GREEN_T1%
 ItemDisplay[!ID SET ETH (xvg OR ulg)]:%GREEN_T2%
-ItemDisplay[FILTLVL<4 !ID SET ETH (lgl OR xmg OR xtg OR xhg)]:%GREEN_T1%
+ItemDisplay[(FILTLVL<4 OR SET_T1) !ID SET ETH (lgl OR xmg OR xtg OR xhg)]:%GREEN_T1%
 //Belt
-ItemDisplay[FILTLVL<4 !ID SET !ETH (lbl OR zvb OR zmb OR zhb OR utc)]:%GREEN_T1%
-ItemDisplay[FILTLVL<4 !ID SET ETH (lbl OR zvb OR zmb OR zhb OR utc)]:%GREEN_T1%
+ItemDisplay[(FILTLVL<4 OR SET_T1) !ID SET !ETH (lbl OR zvb OR zmb OR zhb OR utc)]:%GREEN_T1%
+ItemDisplay[(FILTLVL<4 OR SET_T1) !ID SET ETH (lbl OR zvb OR zmb OR zhb OR utc)]:%GREEN_T1%
 //Boots
 ItemDisplay[!ID SET !ETH (lbt OR xmb)]:%GREEN_T2%
-ItemDisplay[FILTLVL<4 !ID SET !ETH (vbt OR xtb OR xhb)]:%GREEN_T1%
-ItemDisplay[FILTLVL<4 !ID SET ETH (lbt OR vbt OR xmb OR xhb)]:%GREEN_T1%
+ItemDisplay[(FILTLVL<4 OR SET_T1) !ID SET !ETH (vbt OR xtb OR xhb)]:%GREEN_T1%
+ItemDisplay[(FILTLVL<4 OR SET_T1) !ID SET ETH (lbt OR vbt OR xmb OR xhb)]:%GREEN_T1%
 //Shield
-ItemDisplay[FILTLVL<4 !ID SET !ETH (xml OR uts)]:%GREEN_T1%
-ItemDisplay[FILTLVL<4 !ID SET ETH (xml OR uts)]:%GREEN_T1%
+ItemDisplay[(FILTLVL<4 OR SET_T1) !ID SET !ETH (xml OR uts)]:%GREEN_T1%
+ItemDisplay[(FILTLVL<4 OR SET_T1) !ID SET ETH (xml OR uts)]:%GREEN_T1%
 //Mace
 ItemDisplay[!ID SET !ETH 7ws]:%GREEN_T2%
-ItemDisplay[FILTLVL<4 !ID SET !ETH (9mt OR 7ma OR 7m7)]:%GREEN_T1%
+ItemDisplay[(FILTLVL<4 OR SET_T1) !ID SET !ETH (9mt OR 7ma OR 7m7)]:%GREEN_T1%
 ItemDisplay[!ID SET ETH 7ws]:%GREEN_T2%
-ItemDisplay[FILTLVL<4 !ID SET ETH (9mt OR 7ma)]:%GREEN_T1%
+ItemDisplay[(FILTLVL<4 OR SET_T1) !ID SET ETH (9mt OR 7ma)]:%GREEN_T1%
 //Sword
-ItemDisplay[FILTLVL<4 !ID SET !ETH (7fb OR 7gd)]:%GREEN_T1%
-ItemDisplay[FILTLVL<4 !ID SET ETH (7fb OR 7gd)]:%GREEN_T1%
+ItemDisplay[(FILTLVL<4 OR SET_T1) !ID SET !ETH (7fb OR 7gd)]:%GREEN_T1%
+ItemDisplay[(FILTLVL<4 OR SET_T1) !ID SET ETH (7fb OR 7gd)]:%GREEN_T1%
 //Staff
-ItemDisplay[FILTLVL<4 !ID SET !ETH 6cs]:%GREEN_T1%
-ItemDisplay[FILTLVL<4 !ID SET ETH 6cs]:%GREEN_T1%
+ItemDisplay[(FILTLVL<4 OR SET_T1) !ID SET !ETH 6cs]:%GREEN_T1%
+ItemDisplay[(FILTLVL<4 OR SET_T1) !ID SET ETH 6cs]:%GREEN_T1%
 //Class Armor
-ItemDisplay[FILTLVL<4 !ID SET !ETH (ba5 OR dr8)]:%GREEN_T1%
-ItemDisplay[FILTLVL<4 !ID SET ETH (ba5 OR dr8)]:%GREEN_T1%
+ItemDisplay[(FILTLVL<4 OR SET_T1) !ID SET !ETH (ba5 OR dr8)]:%GREEN_T1%
+ItemDisplay[(FILTLVL<4 OR SET_T1) !ID SET ETH (ba5 OR dr8)]:%GREEN_T1%
 //Class Shield
 ItemDisplay[!ID SET !ETH paf]:%GREEN_T2%
-ItemDisplay[FILTLVL<4 !ID SET !ETH ne9]:%GREEN_T1%
-ItemDisplay[FILTLVL<4 !ID SET ETH (paf OR ne9)]:%GREEN_T1%
+ItemDisplay[(FILTLVL<4 OR SET_T1) !ID SET !ETH ne9]:%GREEN_T1%
+ItemDisplay[(FILTLVL<4 OR SET_T1) !ID SET ETH (paf OR ne9)]:%GREEN_T1%
 //Class Weapon
 ItemDisplay[!ID SET !ETH 7qr]:%GREEN_T2%
-ItemDisplay[FILTLVL<4 !ID SET !ETH (amc OR oba)]:%GREEN_T1%
+ItemDisplay[(FILTLVL<4 OR SET_T1) !ID SET !ETH (amc OR oba)]:%GREEN_T1%
 ItemDisplay[!ID SET ETH 7qr]:%GREEN_T2%
-ItemDisplay[FILTLVL<4 !ID SET ETH oba]:%GREEN_T1%
+ItemDisplay[(FILTLVL<4 OR SET_T1) !ID SET ETH oba]:%GREEN_T1%
 //Catch All
 ItemDisplay[FILTLVL<3 !ID SET]:%GREEN_T0%%TIER-1%
 //Hide
@@ -1999,139 +2018,139 @@ ItemDisplay[!ID UNI (jew OR cm1 OR cm2)]:%GOLD_T5%
 ItemDisplay[!ID UNI (amu OR rin)]:%GOLD_T4%
 ItemDisplay[!ID UNI cm3]:%GOLD_T3%
 ItemDisplay[!ID UNI (cqv3 OR aqv3)]:%GOLD_T2%
-ItemDisplay[FILTLVL<4 !ID UNI (cqv2 OR aqv2)]:%GOLD_T1%
+ItemDisplay[(FILTLVL<4 OR UNI_T1) !ID UNI (cqv2 OR aqv2)]:%GOLD_T1%
 //Helm
 ItemDisplay[!ID UNI !ETH (uhm OR urn OR ci3)]:%GOLD_T5%
 ItemDisplay[!ID UNI !ETH (xh9 OR ci2)]:%GOLD_T4%
 ItemDisplay[!ID UNI !ETH (xhm OR uap OR usk OR uh9)]:%GOLD_T3%
 ItemDisplay[!ID UNI !ETH ulm]:%GOLD_T2%
-ItemDisplay[FILTLVL<4 !ID UNI !ETH (xrn OR xsk)]:%GOLD_T1%
+ItemDisplay[(FILTLVL<4 OR UNI_T1) !ID UNI !ETH (xrn OR xsk)]:%GOLD_T1%
 ItemDisplay[!ID UNI ETH xh9]:%GOLD_T5%
 ItemDisplay[!ID UNI ETH (uhm OR usk OR uh9 OR ci2 OR ci3)]:%GOLD_T3%
 ItemDisplay[!ID UNI ETH (xhm OR uap)]:%GOLD_T2%
-ItemDisplay[FILTLVL<4 !ID UNI ETH (xkp OR xrn OR xsk OR ulm)]:%GOLD_T1%
+ItemDisplay[(FILTLVL<4 OR UNI_T1) !ID UNI ETH (xkp OR xrn OR xsk OR ulm)]:%GOLD_T1%
 //Chest
 ItemDisplay[!ID UNI !ETH (upl OR uar)]:%GOLD_T5%
 ItemDisplay[!ID UNI !ETH (xhn OR uul)]:%GOLD_T4%
 ItemDisplay[!ID UNI !ETH (xea OR uui)]:%GOLD_T3%
 ItemDisplay[!ID UNI !ETH (aar OR ltp OR xpl OR xlt OR xth OR utu OR uld OR utp)]:%GOLD_T2%
-ItemDisplay[FILTLVL<4 !ID UNI !ETH (rng OR scl OR brs OR xui OR xng OR xcl OR xrs OR xld OR xul OR xar OR xtp OR ung)]:%GOLD_T1%
+ItemDisplay[(FILTLVL<4 OR UNI_T1) !ID UNI !ETH (rng OR scl OR brs OR xui OR xng OR xcl OR xrs OR xld OR xul OR xar OR xtp OR ung)]:%GOLD_T1%
 ItemDisplay[!ID UNI ETH (uul OR uar OR utp)]:%GOLD_T5%
 ItemDisplay[!ID UNI ETH xhn]:%GOLD_T4%
 ItemDisplay[!ID UNI ETH (xpl OR upl)]:%GOLD_T3%
 ItemDisplay[!ID UNI ETH (xea OR xrs OR xul OR uui OR utu)]:%GOLD_T2%
-ItemDisplay[FILTLVL<4 !ID UNI ETH (fld OR aar OR ltp OR xui OR xlt OR xld OR xth OR xar OR xtp OR ung)]:%GOLD_T1%
+ItemDisplay[(FILTLVL<4 OR UNI_T1) !ID UNI ETH (fld OR aar OR ltp OR xui OR xlt OR xld OR xth OR xar OR xtp OR ung)]:%GOLD_T1%
 //Gloves
 ItemDisplay[!ID UNI !ETH (xtg OR uvg OR umg OR utg OR uhg)]:%GOLD_T3%
 ItemDisplay[!ID UNI !ETH (tgl OR xvg OR xmg)]:%GOLD_T2%
-ItemDisplay[FILTLVL<4 !ID UNI !ETH (vgl OR mgl OR hgl OR xlg OR xhg OR ulg)]:%GOLD_T1%
+ItemDisplay[(FILTLVL<4 OR UNI_T1) !ID UNI !ETH (vgl OR mgl OR hgl OR xlg OR xhg OR ulg)]:%GOLD_T1%
 ItemDisplay[!ID UNI ETH uhg]:%GOLD_T5%
 ItemDisplay[!ID UNI ETH (xtg OR uvg OR umg OR utg)]:%GOLD_T3%
 ItemDisplay[!ID UNI ETH (xvg OR xmg)]:%GOLD_T2%
-ItemDisplay[FILTLVL<4 !ID UNI ETH (vgl OR tgl OR hgl OR xlg OR xhg OR ulg)]:%GOLD_T1%
+ItemDisplay[(FILTLVL<4 OR UNI_T1) !ID UNI ETH (vgl OR tgl OR hgl OR xlg OR xhg OR ulg)]:%GOLD_T1%
 //Belt
 ItemDisplay[!ID UNI !ETH (ztb OR ulc)]:%GOLD_T5%
 ItemDisplay[!ID UNI !ETH uhc]:%GOLD_T4%
 ItemDisplay[!ID UNI !ETH (zlb OR zhb OR uvc OR umc)]:%GOLD_T3%
 ItemDisplay[!ID UNI !ETH (vbl OR zvb)]:%GOLD_T2%
-ItemDisplay[FILTLVL<4 !ID UNI !ETH (tbl OR zmb)]:%GOLD_T1%
+ItemDisplay[(FILTLVL<4 OR UNI_T1) !ID UNI !ETH (tbl OR zmb)]:%GOLD_T1%
 ItemDisplay[!ID UNI ETH uhc]:%GOLD_T5%
 ItemDisplay[!ID UNI ETH (zlb OR ulc OR uvc)]:%GOLD_T3%
 ItemDisplay[!ID UNI ETH (zvb OR ztb OR zhb OR umc)]:%GOLD_T2%
-ItemDisplay[FILTLVL<4 !ID UNI ETH (tbl OR zmb)]:%GOLD_T1%
+ItemDisplay[(FILTLVL<4 OR UNI_T1) !ID UNI ETH (tbl OR zmb)]:%GOLD_T1%
 //Boots
 ItemDisplay[!ID UNI !ETH xtb]:%GOLD_T4%
 ItemDisplay[!ID UNI !ETH (xhb OR umb OR uhb)]:%GOLD_T3%
 ItemDisplay[!ID UNI !ETH (lbt OR xvb OR xmb)]:%GOLD_T2%
-ItemDisplay[FILTLVL<4 !ID UNI !ETH (mbt OR tbt OR xlb OR ulb OR uvb)]:%GOLD_T1%
+ItemDisplay[(FILTLVL<4 OR UNI_T1) !ID UNI !ETH (mbt OR tbt OR xlb OR ulb OR uvb)]:%GOLD_T1%
 ItemDisplay[!ID UNI ETH xtb]:%GOLD_T4%
 ItemDisplay[!ID UNI ETH (xhb OR uvb OR umb)]:%GOLD_T3%
 ItemDisplay[!ID UNI ETH (tbt OR xvb OR xmb OR uhb)]:%GOLD_T2%
-ItemDisplay[FILTLVL<4 !ID UNI ETH (mbt OR xlb OR ulb)]:%GOLD_T1%
+ItemDisplay[(FILTLVL<4 OR UNI_T1) !ID UNI ETH (mbt OR xlb OR ulb)]:%GOLD_T1%
 //Shield
 ItemDisplay[!ID UNI !ETH uts]:%GOLD_T3%
-ItemDisplay[!ID UNI !ETH (xow OR urg OR uit OR uow)]:%GOLD_T2%
-ItemDisplay[FILTLVL<4 !ID UNI !ETH (xts OR xsh OR xpk OR uml OR ush OR upk)]:%GOLD_T1%
-ItemDisplay[!ID UNI ETH (xow OR uts)]:%GOLD_T2%
-ItemDisplay[FILTLVL<4 !ID UNI ETH (xsh OR uml OR urg OR uow OR upk)]:%GOLD_T1%
+ItemDisplay[!ID UNI !ETH (xow OR xsh OR urg OR uit OR uow)]:%GOLD_T2%
+ItemDisplay[(FILTLVL<4 OR UNI_T1) !ID UNI !ETH (xts OR xpk OR uml OR ush OR upk)]:%GOLD_T1%
+ItemDisplay[!ID UNI ETH (xow OR xsh OR uts)]:%GOLD_T2%
+ItemDisplay[(FILTLVL<4 OR UNI_T1) !ID UNI ETH (uml OR urg OR uow OR upk)]:%GOLD_T1%
 //Axe
 ItemDisplay[!ID UNI !ETH (7mp OR 7wa)]:%GOLD_T2%
-ItemDisplay[FILTLVL<4 !ID UNI !ETH (9la OR 9ba OR 7ha OR 72a OR 7bt OR 7ga OR 7gi OR 7ta OR 7b8)]:%GOLD_T1%
+ItemDisplay[(FILTLVL<4 OR UNI_T1) !ID UNI !ETH (9la OR 9ba OR 7ha OR 72a OR 7bt OR 7ga OR 7gi OR 7ta OR 7b8)]:%GOLD_T1%
 ItemDisplay[!ID UNI ETH (7wa OR 7ga)]:%GOLD_T4%
 ItemDisplay[!ID UNI ETH (72a OR 7bt OR 7gi OR 7b8)]:%GOLD_T3%
 ItemDisplay[!ID UNI ETH (9la OR 7mp OR 7ta)]:%GOLD_T2%
-ItemDisplay[FILTLVL<4 !ID UNI ETH (7ha OR 7ba)]:%GOLD_T1%
+ItemDisplay[(FILTLVL<4 OR UNI_T1) !ID UNI ETH (7ha OR 7ba)]:%GOLD_T1%
 //Bow
 ItemDisplay[!ID UNI !ETH (6lw OR 8mx)]:%GOLD_T3%
 ItemDisplay[!ID UNI !ETH (8cb OR 8s8 OR 6hb OR 6sw OR 8hx OR 8rx)]:%GOLD_T2%
-ItemDisplay[FILTLVL<4 !ID UNI !ETH (8sw OR 8lw OR 6l7 OR 6hx OR 6rx)]:%GOLD_T1%
+ItemDisplay[(FILTLVL<4 OR UNI_T1) !ID UNI !ETH (8sw OR 8lw OR 6l7 OR 6hx OR 6rx)]:%GOLD_T1%
 //Dagger
-ItemDisplay[FILTLVL<4 !ID UNI !ETH (9di OR 9kr OR 9bl OR 7dg OR 7di OR 7kr OR 7bk)]:%GOLD_T1%
+ItemDisplay[(FILTLVL<4 OR UNI_T1) !ID UNI !ETH (9di OR 9kr OR 9bl OR 7dg OR 7di OR 7kr OR 7bk)]:%GOLD_T1%
 ItemDisplay[!ID UNI ETH (9di OR 7kr OR 7bl OR 7bk)]:%GOLD_T2%
-ItemDisplay[FILTLVL<4 !ID UNI ETH (9bl OR 7di)]:%GOLD_T1%
+ItemDisplay[(FILTLVL<4 OR UNI_T1) !ID UNI ETH (9bl OR 7di)]:%GOLD_T1%
 //Mace
 ItemDisplay[!ID UNI !ETH 7ws]:%GOLD_T3%
 ItemDisplay[!ID UNI !ETH (7fl OR 9gm OR 7wh OR 7gm OR 9ws OR 7sc OR 7qs)]:%GOLD_T2%
-ItemDisplay[FILTLVL<4 !ID UNI !ETH (7cl OR 7sp OR 9wh OR 7m7)]:%GOLD_T1%
+ItemDisplay[(FILTLVL<4 OR UNI_T1) !ID UNI !ETH (7cl OR 7sp OR 9wh OR 7m7)]:%GOLD_T1%
 ItemDisplay[!ID UNI ETH (7fl OR 9gm OR 7wh OR 7gm)]:%GOLD_T4%
 ItemDisplay[!ID UNI ETH (7sc OR 7ws)]:%GOLD_T3%
 ItemDisplay[!ID UNI ETH (7m7 OR 9ws OR 7qs)]:%GOLD_T2%
-ItemDisplay[FILTLVL<4 !ID UNI ETH (7cl OR 7sp OR 9wh)]:%GOLD_T1%
+ItemDisplay[(FILTLVL<4 OR UNI_T1) !ID UNI ETH (7cl OR 7sp OR 9wh)]:%GOLD_T1%
 //Polearm
 ItemDisplay[!ID UNI !ETH 7wc]:%GOLD_T3%
 ItemDisplay[!ID UNI !ETH (7vo OR 7pa OR 9s8 OR 7s8)]:%GOLD_T2%
-ItemDisplay[FILTLVL<4 !ID UNI !ETH (7o7 OR 9wc)]:%GOLD_T1%
+ItemDisplay[(FILTLVL<4 OR UNI_T1) !ID UNI !ETH (7o7 OR 9wc)]:%GOLD_T1%
 ItemDisplay[!ID UNI ETH 7wc]:%GOLD_T5%
 ItemDisplay[!ID UNI ETH (7pa OR 7s8)]:%GOLD_T4%
 ItemDisplay[!ID UNI ETH 7vo]:%GOLD_T3%
 ItemDisplay[!ID UNI ETH (7o7 OR 9s8)]:%GOLD_T2%
-ItemDisplay[FILTLVL<4 !ID UNI ETH 9wc]:%GOLD_T1%
+ItemDisplay[(FILTLVL<4 OR UNI_T1) !ID UNI ETH 9wc]:%GOLD_T1%
 //Spear
 ItemDisplay[!ID UNI !ETH 7p7]:%GOLD_T2%
-ItemDisplay[FILTLVL<4 !ID UNI !ETH (7sr OR 7br OR 7st OR 7s7 OR 7ts)]:%GOLD_T1%
+ItemDisplay[(FILTLVL<4 OR UNI_T1) !ID UNI !ETH (7sr OR 7br OR 7st OR 7s7 OR 7ts)]:%GOLD_T1%
 ItemDisplay[!ID UNI ETH 7p7]:%GOLD_T3%
 ItemDisplay[!ID UNI ETH (7sr OR 7br OR 7st OR 7s7 OR 7ts)]:%GOLD_T2%
-ItemDisplay[FILTLVL<4 !ID UNI ETH (9sr OR 7gl)]:%GOLD_T1%
+ItemDisplay[(FILTLVL<4 OR UNI_T1) !ID UNI ETH (9sr OR 7gl)]:%GOLD_T1%
 //Staff
 ItemDisplay[!ID UNI !ETH 6ws]:%GOLD_T5%
 ItemDisplay[!ID UNI !ETH 7gw]:%GOLD_T4%
 ItemDisplay[!ID UNI !ETH (6bs OR 9bw)]:%GOLD_T3%
 ItemDisplay[!ID UNI !ETH (8ws OR 7yw OR 7bw)]:%GOLD_T2%
-ItemDisplay[FILTLVL<4 !ID UNI !ETH (cst OR wst OR 8ls OR 6cs OR 9gw)]:%GOLD_T1%
+ItemDisplay[(FILTLVL<4 OR UNI_T1) !ID UNI !ETH (cst OR wst OR 8ls OR 6cs OR 9gw)]:%GOLD_T1%
 ItemDisplay[!ID UNI ETH 6ws]:%GOLD_T5%
 ItemDisplay[!ID UNI ETH 7gw]:%GOLD_T4%
 ItemDisplay[!ID UNI ETH (8ls OR 6bs OR 9bw)]:%GOLD_T3%
 ItemDisplay[!ID UNI ETH (8ws OR 7yw OR 7bw)]:%GOLD_T2%
-ItemDisplay[FILTLVL<4 !ID UNI ETH (cst OR wst OR 6cs OR 9gw)]:%GOLD_T1%
+ItemDisplay[(FILTLVL<4 OR UNI_T1) !ID UNI ETH (cst OR wst OR 6cs OR 9gw)]:%GOLD_T1%
 //Sword
 ItemDisplay[!ID UNI !ETH (7cr OR 7gd)]:%GOLD_T3%
 ItemDisplay[!ID UNI !ETH 7b7]:%GOLD_T2%
-ItemDisplay[FILTLVL<4 !ID UNI !ETH (gsd OR 9fc OR 9bs OR 9ls OR 9gs OR 9b9 OR 9fb OR 7sm OR 7ls OR 7cm OR 7gs OR 7fb)]:%GOLD_T1%
+ItemDisplay[(FILTLVL<4 OR UNI_T1) !ID UNI !ETH (gsd OR 9fc OR 9bs OR 9ls OR 9gs OR 9b9 OR 9fb OR 7sm OR 7ls OR 7cm OR 7gs OR 7fb)]:%GOLD_T1%
 ItemDisplay[!ID UNI ETH (7b7 OR 7gd)]:%GOLD_T5%
 ItemDisplay[!ID UNI ETH (9bs OR 9gs OR 7fb)]:%GOLD_T3%
 ItemDisplay[!ID UNI ETH (9fb OR 7cm OR 7gs)]:%GOLD_T2%
-ItemDisplay[FILTLVL<4 !ID UNI ETH (gsd OR 9fc OR 9b9 OR 7sm OR 7ls)]:%GOLD_T1%
+ItemDisplay[(FILTLVL<4 OR UNI_T1) !ID UNI ETH (gsd OR 9fc OR 9b9 OR 7sm OR 7ls)]:%GOLD_T1%
 //Class Armor
 ItemDisplay[!ID UNI !ETH dre]:%GOLD_T4%
 ItemDisplay[!ID UNI !ETH (bae OR drc OR drd)]:%GOLD_T3%
 ItemDisplay[!ID UNI !ETH (baf OR dr6 OR dra OR drf)]:%GOLD_T2%
-ItemDisplay[FILTLVL<4 !ID UNI !ETH (baa OR bac OR bad OR dr2 OR drb)]:%GOLD_T1%
+ItemDisplay[(FILTLVL<4 OR UNI_T1) !ID UNI !ETH (baa OR bac OR bad OR dr2 OR drb)]:%GOLD_T1%
 ItemDisplay[!ID UNI ETH (bae OR drc OR drd OR dre)]:%GOLD_T2%
-ItemDisplay[FILTLVL<4 !ID UNI ETH (baa OR bac OR bad OR baf OR dr2 OR dr6 OR dra OR drb OR drf)]:%GOLD_T1%
+ItemDisplay[(FILTLVL<4 OR UNI_T1) !ID UNI ETH (baa OR bac OR bad OR baf OR dr2 OR dr6 OR dra OR drb OR drf)]:%GOLD_T1%
 //Class Shield
 ItemDisplay[!ID UNI !ETH (pa9 OR pae OR paf OR nee OR nef)]:%GOLD_T3%
 ItemDisplay[!ID UNI !ETH (pab OR pac OR nea OR ned)]:%GOLD_T2%
-ItemDisplay[FILTLVL<4 !ID UNI !ETH neg]:%GOLD_T1%
+ItemDisplay[(FILTLVL<4 OR UNI_T1) !ID UNI !ETH neg]:%GOLD_T1%
 ItemDisplay[!ID UNI ETH (pa9 OR pab OR pac OR pae OR paf OR nee OR nef)]:%GOLD_T2%
-ItemDisplay[FILTLVL<4 !ID UNI ETH (nea OR neg OR ned)]:%GOLD_T1%
+ItemDisplay[(FILTLVL<4 OR UNI_T1) !ID UNI ETH (nea OR neg OR ned)]:%GOLD_T1%
 //Class Weapon
 ItemDisplay[!ID UNI !ETH obf]:%GOLD_T4%
 ItemDisplay[!ID UNI !ETH (amb OR amc OR amf OR 9tw OR 7wb OR 7xf OR 7lw OR obc OR obd OR obe)]:%GOLD_T2%
-ItemDisplay[FILTLVL<4 !ID UNI !ETH (am7 OR am9 OR amd OR ame OR ama OR 7tw OR oba)]:%GOLD_T1%
+ItemDisplay[(FILTLVL<4 OR UNI_T1) !ID UNI !ETH (am7 OR am9 OR amd OR ame OR ama OR 7tw OR oba)]:%GOLD_T1%
 ItemDisplay[!ID UNI ETH obf]:%GOLD_T4%
 ItemDisplay[!ID UNI ETH (amd OR amf OR 7wb OR 7xf)]:%GOLD_T3%
 ItemDisplay[!ID UNI ETH (am9 OR ame OR ama OR 9tw OR 7tw OR obc OR obd OR obe)]:%GOLD_T2%
-ItemDisplay[FILTLVL<4 !ID UNI ETH (am5 OR 7cs OR 7lw OR oba)]:%GOLD_T1%
+ItemDisplay[(FILTLVL<4 OR UNI_T1) !ID UNI ETH (am5 OR 7cs OR 7lw OR oba)]:%GOLD_T1%
 //Catch All
 ItemDisplay[FILTLVL<3 !ID UNI]:%GOLD_T0%%TIER-1%
 //Hide
