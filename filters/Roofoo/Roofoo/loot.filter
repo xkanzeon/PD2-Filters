@@ -1,4 +1,4 @@
-//	Roofoo's PD2 Loot Filter for Season 12: ver 13.0.1
+//	Roofoo's PD2 Loot Filter for Season 12: ver 13.0.2
 //
 //	Editor - twitch.tv/roofooevazan
 //	Co-Editor - twitch.tv/enpherno
@@ -16,7 +16,7 @@ ItemDisplayFilterName[]: Strict Filter - w/o Potions
 ItemDisplayFilterName[]: Max-Strictness Filter - Ultra Strict End Game
 
 // Horadric Cube tooltip shows filter credits and the active filter level
-ItemDisplay[box]:%NAME%{%NAME%%NL%%GRAY%item.filter ver 13.0.1 %BLACK%| %GRAY% updated: 2026-04-29%NL%%PURPLE%The GOAT OG Author %WHITE%-%SAGE% Kryszard%NL%%ORANGE%Editors %WHITE%-%SAGE% RoofooEvazan & Enpherno}%CONTINUE%
+ItemDisplay[box]:%NAME%{%NAME%%NL%%GRAY%item.filter ver 13.0.2 %BLACK%| %GRAY% updated: 2026-04-30%NL%%PURPLE%The GOAT OG Author %WHITE%-%SAGE% Kryszard%NL%%ORANGE%Editors %WHITE%-%SAGE% RoofooEvazan & Enpherno}%CONTINUE%
 ItemDisplay[box FILTLVL=0]: %NAME%{%NAME%%NL%%WHITE%You Can Change it in Settings%NL%0 - %TAN%Show All Items%NL%%TAN% Note%WHITE%: Roofoo's PD2 Loot-Filter level:%NL%}
 ItemDisplay[box FILTLVL=1]: %NAME%{%NAME%%NL%%WHITE%You Can Change it in Settings%NL%1 - %TAN%Hide Just Trash Items%NL%%TAN% Note%WHITE%: Roofoo's PD2 Loot-Filter level:%NL%}
 ItemDisplay[box FILTLVL=2]: %NAME%{%NAME%%NL%%WHITE%You Can Change it in Settings%NL%2 - %TAN%More Notify%NL%%TAN% Note%WHITE%: Roofoo's PD2 Loot-Filter level:%NL%}
@@ -238,7 +238,6 @@ ItemDisplay[FL8_ACTIVE FL8_OUTSIDE FL8_UNID (cqv1 OR cqv2 OR cqv3 OR aqv1 OR aqv
 // ===============================
 ItemDisplay[(ARMOR OR WEAPON OR QUIVER) (TOWN OR SHOP) !ID !UNI !RW !SET FILTLVL>7]: %NAME%{%PURPLE%Decrease Your Filter Level in Settings to Display It All The Time%NL%%WHITE%Outside the Town/In the Fight Field it is Going to be %RED%HIDDEN%NL%WARNING%WHITE%: At Current Filter LVL this item is shown %RED%ONLY %WHITE%in Town%CL%%NAME%}%CONTINUE%
 
-
 // Alias definitions
 // Throwing potion aliases
 Alias[THROWPOTS]: (opm OR gpm OR opl OR ops OR gps OR gpl OR tpfs OR tpgs OR tpcs OR tpls OR tpfm OR tpgm OR tpcm OR tplm OR tpfl OR tpgl OR tpcl OR tpll)
@@ -267,7 +266,7 @@ Alias[ENPHBASTARD]: ((bsw) UNI !ID)
 
 // 0 = no star display tier
 Alias[NSUNI1]: ((6hx OR 72a OR 7b8 OR 7bk OR 7bt OR 7gs OR 7sp OR 7sr OR 7st OR 7vo OR 7wa OR 9gm OR 9gw OR 9kr OR 9s8 OR 9wc OR ama OR amc OR gix) UNI !ETH !ID)
-Alias[NSUNI2]: ((hbt OR ltp OR mau OR mbt OR obd OR ulb OR umb OR ung OR upk OR urg OR ush OR uvb OR xar OR xhm OR xth OR xtp OR xul OR zvb) UNI !ETH !ID)
+Alias[NSUNI2]: ((hbt OR ltp OR mbt OR obd OR ulb OR umb OR ung OR upk OR urg OR ush OR uvb OR xar OR xhm OR xth OR xtp OR xul OR zvb) UNI !ETH !ID)
 Alias[NSUNIETH1]: ((7gs OR 7sp OR 9gw OR 9kr OR 9ls OR 9wc OR aar OR ltp OR mbt OR obd OR obe OR ulb OR ulm OR umb OR ung OR upk) UNI ETH !ID)
 Alias[NSUNIETH2]: ((urg OR ush OR uvb OR vbl OR xar OR xhg OR xhm OR xlg OR xmg OR xow OR xtg OR xth OR xtp OR xul OR xvg OR zvb) UNI ETH !ID)
 Alias[NSSET1]: ((7m7 OR 7qr OR 7ws OR uar OR uh9 OR uth OR xh9 OR xhm) SET !ETH !ID)
@@ -280,7 +279,7 @@ Alias[NOSTARSETETH]: (NSSETETH1)
 // 1 = one star display tier
 Alias[OSUNI1]: ((6bs OR 6cs OR 6lw OR 6sw OR 7b7 OR 7bl OR 7bw OR 7cr OR 7ga OR 7gd OR 7gi OR 7gm OR 7ls OR 7lw OR 7m7 OR 7p7 OR 7pa OR 7qs OR 7s8) UNI !ETH !ID)
 Alias[OSUNI2]: ((7sc OR 7ts OR 7wb OR 7wc OR 7ws OR 7xf OR 7yw OR 8cb OR 8hx OR 8mx OR 8rx OR 8ws OR 9bw OR 9ls OR 9m9 OR aar OR amb OR amd OR amf) UNI !ETH !ID)
-Alias[OSUNI3]: ((aqv2 OR aqv3 OR bae OR baf OR cqv2 OR dr6 OR dra OR drb OR drc OR drf OR ned OR nef OR obc OR obe OR pab OR pae OR tgl OR uhl OR uit) UNI !ETH !ID)
+Alias[OSUNI3]: ((aqv2 OR aqv3 OR bae OR baf OR cqv2 OR dr6 OR dra OR drb OR drc OR drf OR ned OR nef OR mau OR obc OR obe OR pab OR pae OR tgl OR uhl OR uit) UNI !ETH !ID)
 Alias[OSUNI4]: ((uld OR ulm OR uow OR utp OR utu OR uvc OR vbl OR xea OR xhg OR xlg OR xmg OR xow OR xpl OR xsh OR xtg OR xvg OR zhb) UNI !ETH !ID)
 Alias[OSUNIETH1]: ((6bs OR 6cs OR 72a OR 7bl OR 7bt OR 7bw OR 7cr OR 7ls OR 7lw OR 7qs OR 7wb OR 7ws OR 7xf OR 7yw OR 8ws OR 9bw OR bae OR baf) UNI ETH !ID)
 Alias[OSUNIETH2]: ((ci2 OR dr6 OR dra OR drb OR drc OR drd OR dre OR drf OR hbt OR ned OR nee OR nef OR obc OR obe OR pab OR pac OR pae OR paf) UNI ETH !ID)
@@ -304,19 +303,17 @@ Alias[THREESTARUNIQUEETH]: (TSUNIETH1 OR TSUNIETH2)
 Alias[THREESTARSET]: (TSSET1)
 Alias[THREESTARSETETH]: (TSSETETH1)
 
-
 // 3 = three star pickup display tier
-Alias[TPUNI1]: ((6ws OR ci2 OR ci3 OR uar OR uhm OR ulc OR upl OR urn) UNI !ETH !ID)
+Alias[TPUNI1]: ((6ws OR ci2 OR ci3 OR uar OR umc OR uhm OR ulc OR upl OR urn) UNI !ETH !ID)
 Alias[TPUNI2]: ((rin OR amu) UNI !ID)
 Alias[TPUNIETH1]: ((6ws OR 7b7 OR 7ga OR 7gd OR 7gi OR 7gm OR 7p7 OR 7pa OR 7s8 OR 7wc) UNI ETH !ID)
-Alias[TPUNIETH2]: ((7wh OR 9m9 OR amd OR amf OR uar OR uhb OR uhm OR urn OR utp OR uul) UNI ETH !ID)
+Alias[TPUNIETH2]: ((7wh OR 9m9 OR amd OR amf OR uar OR uhb OR umc OR uhm OR urn OR utp OR uul) UNI ETH !ID)
 Alias[TPSET1]: (CLVL>999)
 Alias[TPSETETH1]: (CLVL>999)
 Alias[THREESTARPICKUPUNIQUE]: (TPUNI1 OR TPUNI2)
 Alias[THREESTARPICKUPUNIQUEETH]: (TPUNIETH1 OR TPUNIETH2)
 Alias[THREESTARPICKUPSET]: (TPSET1)
 Alias[THREESTARPICKUPSETETH]: (TPSETETH1)
-
 
 // Immortal King armor meme alias
 Alias[TROLLIK]: ((uar) SET !ID)
@@ -326,7 +323,6 @@ Alias[LODLOWRARE1]: ((ne1 OR ne2 OR ne3 OR ne4 OR ne5 OR ne6 OR ne7 OR ne8 OR ne
 
 // Uber key aliases
 Alias[UBERKEYS1]: 
-
 
 // Superior ED aliases for exact ED displays
 // Armor bases
@@ -663,7 +659,6 @@ ItemDisplay[INF !(rin OR amu) ID]: %GRAY%Inf %NAME%%CONTINUE%
 
 // Gambling screen item names
 ItemDisplay[(WEAPON OR ARMOR) NMAG !ID SHOP MAPID<133]: %NAME%
-
 
 // Gheed event gambling unique lists
 ItemDisplay[NMAG !ID SHOP MAPID>132]: %WHITE%But Thankfully %RED%Gheeds Event is an Exception %WHITE%to this Rule%NL%%GRAY%Second Roll of the same Unique will result as %YELLOW%Rare %GRAY%Item%NL%%TAN%Note%WHITE%: Normally Uniques %RED%can't %WHITE%roll twice in the same game!%NL%%NL%%CONTINUE%
@@ -2055,6 +2050,7 @@ ItemDisplay[yps]: %GREEN%!%WHITE%ant{%GREEN%!%WHITE%ant, Perf %GREEN%O%WHITE%, %
 // keys
 ItemDisplay[key]: %GRAY%key%CONTINUE%
 //
+
 // Craft Infusions
 ItemDisplay[(crfb OR crfc OR crfs OR crfh OR crfv OR crfu OR crfp)]: %NAME%{%TAN%Note%WHITE%: Guaranteed:}%CONTINUE%
 //
@@ -2317,7 +2313,6 @@ ItemDisplay[(jew) MAG !ID (ILVL<85)]: %DOT-9B%%BLUE%*%TEAL%   Jewel   %BLUE%*
 
 ItemDisplay[(jew) RARE !ID]: %DOT-A8%%YELLOW%*%YELLOW%*%YELLOW%*%YELLOW%   Jewel%YELLOW%   *%YELLOW%*%YELLOW%*%YELLOW%
 
-
 ItemDisplay[(rin OR amu OR CIRC) RARE !ID]: %DOT-A8%%TAN%*%WHITE%*   %NAME%%WHITE%   *%TAN%*%YELLOW%
 ItemDisplay[(jew) RARE !ID]: %DOT-A8%%YELLOW%*%YELLOW%*%YELLOW%*%YELLOW%   Jewel%YELLOW%   *%YELLOW%*%YELLOW%*%YELLOW%
 
@@ -2405,7 +2400,6 @@ ItemDisplay[HELM RARE !ID FILTLVL<6]: %NAME%
 // FL8 eth spear exception
 // Show allowed eth spear bases at FL8
 ItemDisplay[(pik OR 9p9 OR 7p7) SPEAR ETH !ID (FILTLVL>7)]: %NAME%
-
 
 // Rare eth weapon fallback displays
 ItemDisplay[WEAPON !(hax OR 9ha OR 7ha OR axe OR 9ax OR 7ax OR clb OR 9cl OR 7cl OR spc OR 9sp OR 7sp OR mst OR 9mt OR 7mt OR ssd OR 9ss OR 7ss OR scm OR 9sm OR 7sm OR sbr OR 9sb OR 7sb OR flc OR 9fc OR 7fc OR wsd OR 9wd OR 7wd OR dgr OR 9dg OR 7dg OR dir OR 9di OR 7di OR bld OR 9bl OR 7bl OR STAFF) RARE ETH !ID]: %NAME%
@@ -4477,6 +4471,513 @@ ItemDisplay[(NOTICEME08)]: %NAME%{%DARK_GREEN%Lower Resist Charges%CL%%NAME%}%CO
 // Life Tap Charges
 ItemDisplay[(NOTICEME09)]: %NAME%{%DARK_GREEN%Life Tap Charges%CL%%NAME%}%CONTINUE%
 
+
+
+// BEGIN AUTO PD2TRADER BIS SLAMS
+// Source: PD2 Trader corruption API (48h, ladder=true, hardcore=false)
+// Shows BIS slam when a corruption has samples >= 2; otherwise marks the item as not worth slamming
+// Shows even after corruption because rules intentionally do not require STAT360=0
+// Generated lines: 498; BIS lines: 293; not worth lines: 205; ambiguous item-code groups skipped: 23
+ItemDisplay[2ax SET ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%4os}%CONTINUE%
+ItemDisplay[6cs SET ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Faster Cast Rate, +Fire Skill Damage}%CONTINUE%
+ItemDisplay[7fb SET ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Enhanced Damage, Increased Attack Speed}%CONTINUE%
+ItemDisplay[7gd SET ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Increased Attack Speed}%CONTINUE%
+ItemDisplay[7ls SET ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[7m7 SET ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%6os}%CONTINUE%
+ItemDisplay[7ma SET ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%3os}%CONTINUE%
+ItemDisplay[7qr SET ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%+All Skills}%CONTINUE%
+ItemDisplay[7ws SET ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%+Mana after each Kill}%CONTINUE%
+ItemDisplay[9mt SET ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Faster Cast Rate}%CONTINUE%
+ItemDisplay[9vo SET ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[aar SET ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[amc SET ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Enhanced Damage}%CONTINUE%
+ItemDisplay[ba5 SET ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Cannot Be Frozen}%CONTINUE%
+ItemDisplay[bhm SET ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[brs SET ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[bsd SET ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[bst SET ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[buc SET ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[bwn SET ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[chn SET ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[ci0 SET ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%2os}%CONTINUE%
+ItemDisplay[ci3 SET ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Cold Resist}%CONTINUE%
+ItemDisplay[dgr SET ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[dr8 SET ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%3os}%CONTINUE%
+ItemDisplay[fhl SET ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[ful SET ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[ghm SET ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[gsc SET ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[gth SET ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%3os}%CONTINUE%
+ItemDisplay[gts SET ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[hbl SET ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[hbt SET ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[hgl SET ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[hlm SET ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[kit SET ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%3os}%CONTINUE%
+ItemDisplay[lbb SET ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[lbl SET ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[lbt SET ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Faster Hit Recovery}%CONTINUE%
+ItemDisplay[lea SET ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[lgl SET ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Increased Attack Speed}%CONTINUE%
+ItemDisplay[lrg SET ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[lsd SET ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[ltp SET ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[mbt SET ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[mgl SET ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[mpi SET ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[msk SET ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[ne9 SET ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%3os}%CONTINUE%
+ItemDisplay[oba SET ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%+Enemy Cold Resistance}%CONTINUE%
+ItemDisplay[paf SET ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%+All Skills}%CONTINUE%
+ItemDisplay[qui SET ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[rng SET ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[sbr SET ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[skp SET ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[sml SET ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[spl SET ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[stu SET ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[swb SET ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[tbt SET ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[tow SET ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Cannot Be Frozen}%CONTINUE%
+ItemDisplay[uar SET ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%3os}%CONTINUE%
+ItemDisplay[ucl SET ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Max Poison resistance, Poison Resist}%CONTINUE%
+ItemDisplay[uh9 SET ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%+All Skills}%CONTINUE%
+ItemDisplay[uhm SET ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%3os}%CONTINUE%
+ItemDisplay[uld SET ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%+All Skills}%CONTINUE%
+ItemDisplay[ulg SET ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Increased Attack Speed}%CONTINUE%
+ItemDisplay[ult SET ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[umc SET ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Faster Cast Rate}%CONTINUE%
+ItemDisplay[upl SET ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[urn SET ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%+Mana after each Kill}%CONTINUE%
+ItemDisplay[utc SET ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Faster Cast Rate}%CONTINUE%
+ItemDisplay[uth SET ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%+All Skills}%CONTINUE%
+ItemDisplay[uts SET ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%+All Skills}%CONTINUE%
+ItemDisplay[uui SET ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Cannot Be Frozen}%CONTINUE%
+ItemDisplay[uul SET ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%3os}%CONTINUE%
+ItemDisplay[vbl SET ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[vgl SET ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Enhanced Damage}%CONTINUE%
+ItemDisplay[wsd SET ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[wsp SET ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%2os}%CONTINUE%
+ItemDisplay[wst SET ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[xap SET ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%2os}%CONTINUE%
+ItemDisplay[xar SET ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%+All Skills}%CONTINUE%
+ItemDisplay[xcl SET ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[xh9 SET ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%3os}%CONTINUE%
+ItemDisplay[xhb SET ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Faster Run/Walk}%CONTINUE%
+ItemDisplay[xhg SET ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Enhanced Damage}%CONTINUE%
+ItemDisplay[xhl SET ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[xhm SET ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Cannot Be Frozen}%CONTINUE%
+ItemDisplay[xlb SET ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Extra Gold from Monsters}%CONTINUE%
+ItemDisplay[xmb SET ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%+Mana after each Kill}%CONTINUE%
+ItemDisplay[xmg SET ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Faster Cast Rate}%CONTINUE%
+ItemDisplay[xml SET ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[xrn SET ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[xrs SET ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%3os}%CONTINUE%
+ItemDisplay[xsk SET ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%+All Skills}%CONTINUE%
+ItemDisplay[xtb SET ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Faster Hit Recovery}%CONTINUE%
+ItemDisplay[xtg SET ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Enhanced Damage}%CONTINUE%
+ItemDisplay[xul SET ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%+All Skills}%CONTINUE%
+ItemDisplay[xvg SET ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Chance to Pierce}%CONTINUE%
+ItemDisplay[zhb SET ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Faster Run/Walk}%CONTINUE%
+ItemDisplay[zmb SET ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Better Chance of Getting Magic Items}%CONTINUE%
+ItemDisplay[ztb SET ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[zvb SET ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Chance to Pierce}%CONTINUE%
+ItemDisplay[2ax UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[2hs UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[6bs UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Faster Cast Rate, +Fire Skill Damage}%CONTINUE%
+ItemDisplay[6cs UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%4os}%CONTINUE%
+ItemDisplay[6hb UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Enhanced Damage, +Attack Rating}%CONTINUE%
+ItemDisplay[6hx UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Enhanced Damage, Ignore Target's Defense}%CONTINUE%
+ItemDisplay[6l7 UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Life after each Hit}%CONTINUE%
+ItemDisplay[6lw UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Enhanced Damage, Ignore Target's Defense}%CONTINUE%
+ItemDisplay[6rx UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Enhanced Damage, Increased Attack Speed}%CONTINUE%
+ItemDisplay[6sw UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Enhanced Damage, Increased Attack Speed}%CONTINUE%
+ItemDisplay[6ws UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%6os}%CONTINUE%
+ItemDisplay[72a UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Deadly Strike}%CONTINUE%
+ItemDisplay[7b7 UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Enhanced Damage, Ignore Target's Defense}%CONTINUE%
+ItemDisplay[7b8 UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%+Enemy Poison Resistance}%CONTINUE%
+ItemDisplay[7ba UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%5os}%CONTINUE%
+ItemDisplay[7bk UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Chance of Crushing Blow, Increased Attack Speed}%CONTINUE%
+ItemDisplay[7bl UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Chance of Crushing Blow, Increased Attack Speed}%CONTINUE%
+ItemDisplay[7br UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%5os}%CONTINUE%
+ItemDisplay[7bs UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[7bt UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Enhanced Damage, Increased Attack Speed}%CONTINUE%
+ItemDisplay[7bw UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%+All Skills}%CONTINUE%
+ItemDisplay[7cl UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[7cm UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%4os}%CONTINUE%
+ItemDisplay[7cs UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%+All Skills}%CONTINUE%
+ItemDisplay[7dg UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Faster Cast Rate}%CONTINUE%
+ItemDisplay[7di UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%2os}%CONTINUE%
+ItemDisplay[7fb UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Enhanced Damage, Increased Attack Speed}%CONTINUE%
+ItemDisplay[7ga UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Enhanced Damage, Increased Attack Speed}%CONTINUE%
+ItemDisplay[7gd UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%6os}%CONTINUE%
+ItemDisplay[7gi UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%+Mana after each Kill}%CONTINUE%
+ItemDisplay[7gl UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%3os}%CONTINUE%
+ItemDisplay[7gs UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Enhanced Damage, Ignore Target's Defense}%CONTINUE%
+ItemDisplay[7gw UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%+Enemy Fire Resistance}%CONTINUE%
+ItemDisplay[7ha UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%+Attack Rating against Demons, Damage to Demons}%CONTINUE%
+ItemDisplay[7kr UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Enhanced Damage, Increased Attack Speed}%CONTINUE%
+ItemDisplay[7ls UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%4os}%CONTINUE%
+ItemDisplay[7lw UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%+All Skills}%CONTINUE%
+ItemDisplay[7m7 UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Life after each Hit}%CONTINUE%
+ItemDisplay[7mp UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%4os}%CONTINUE%
+ItemDisplay[7mt UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[7o7 UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Enhanced Damage, Increased Attack Speed}%CONTINUE%
+ItemDisplay[7p7 UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%6os}%CONTINUE%
+ItemDisplay[7pa UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Enhanced Damage, Increased Attack Speed}%CONTINUE%
+ItemDisplay[7qr UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[7qs UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%3os}%CONTINUE%
+ItemDisplay[7s7 UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Better Chance of Getting Magic Items}%CONTINUE%
+ItemDisplay[7s8 UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Enhanced Damage, Deadly Strike}%CONTINUE%
+ItemDisplay[7sb UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[7sm UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[7sp UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[7sr UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Enhanced Damage, Deadly Strike}%CONTINUE%
+ItemDisplay[7st UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Enhanced Damage, Increased Attack Speed}%CONTINUE%
+ItemDisplay[7ta UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%2os}%CONTINUE%
+ItemDisplay[7ts UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%3os}%CONTINUE%
+ItemDisplay[7tw UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%+Attack Rating}%CONTINUE%
+ItemDisplay[7wa UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Enhanced Damage, Deadly Strike}%CONTINUE%
+ItemDisplay[7wb UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Enhanced Damage, Deadly Strike}%CONTINUE%
+ItemDisplay[7wc UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%6os}%CONTINUE%
+ItemDisplay[7ws UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%4os}%CONTINUE%
+ItemDisplay[7xf UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%+All Skills}%CONTINUE%
+ItemDisplay[8bs UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%4os}%CONTINUE%
+ItemDisplay[8cb UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%+Enemy Cold Resistance}%CONTINUE%
+ItemDisplay[8cs UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%4os}%CONTINUE%
+ItemDisplay[8hb UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[8hx UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Enhanced Damage, Ignore Target's Defense}%CONTINUE%
+ItemDisplay[8l8 UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[8lb UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[8ls UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Enhanced Damage, Deadly Strike}%CONTINUE%
+ItemDisplay[8lw UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[8lx UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[8mx UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%+All Skills}%CONTINUE%
+ItemDisplay[8rx UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Enhanced Damage, Deadly Strike}%CONTINUE%
+ItemDisplay[8s8 UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%+Enemy Lightning Resistance}%CONTINUE%
+ItemDisplay[8sb UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[8ss UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[8sw UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%5os}%CONTINUE%
+ItemDisplay[8ws UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%6os}%CONTINUE%
+ItemDisplay[92a UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[92h UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[9ar UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Enhanced Damage}%CONTINUE%
+ItemDisplay[9ax UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[9b7 UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[9b8 UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Enhanced Damage}%CONTINUE%
+ItemDisplay[9b9 UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%4os}%CONTINUE%
+ItemDisplay[9ba UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%3os}%CONTINUE%
+ItemDisplay[9bl UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%2os}%CONTINUE%
+ItemDisplay[9br UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[9bs UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[9bt UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[9bw UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Chance of Crushing Blow}%CONTINUE%
+ItemDisplay[9cl UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[9cm UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[9cr UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[9dg UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[9di UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[9fb UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[9fc UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Faster Cast Rate, +Poison Skill Damage}%CONTINUE%
+ItemDisplay[9fl UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%3os}%CONTINUE%
+ItemDisplay[9ga UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[9gd UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%6os}%CONTINUE%
+ItemDisplay[9gi UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%5os}%CONTINUE%
+ItemDisplay[9gm UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%6os}%CONTINUE%
+ItemDisplay[9gs UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%4os}%CONTINUE%
+ItemDisplay[9gw UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%2os}%CONTINUE%
+ItemDisplay[9h9 UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[9ha UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[9kr UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%3os}%CONTINUE%
+ItemDisplay[9la UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%5os}%CONTINUE%
+ItemDisplay[9ls UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%4os}%CONTINUE%
+ItemDisplay[9m9 UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%6os}%CONTINUE%
+ItemDisplay[9ma UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[9mp UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[9mt UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[9p9 UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%6os}%CONTINUE%
+ItemDisplay[9pa UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[9qs UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%3os}%CONTINUE%
+ItemDisplay[9s8 UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Enhanced Damage, Increased Attack Speed}%CONTINUE%
+ItemDisplay[9sb UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[9sc UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[9sm UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[9sp UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[9sr UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[9ss UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[9st UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[9ta UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%2os}%CONTINUE%
+ItemDisplay[9tk UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%2os}%CONTINUE%
+ItemDisplay[9tr UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[9tw UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Enhanced Damage, Increased Attack Speed}%CONTINUE%
+ItemDisplay[9vo UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[9wa UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[9wc UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%6os}%CONTINUE%
+ItemDisplay[9wd UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[9wh UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%4os}%CONTINUE%
+ItemDisplay[9wn UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[9ws UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%3os}%CONTINUE%
+ItemDisplay[9yw UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%2os}%CONTINUE%
+ItemDisplay[aar UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%3os}%CONTINUE%
+ItemDisplay[am5 UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%2os}%CONTINUE%
+ItemDisplay[am7 UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%5os}%CONTINUE%
+ItemDisplay[am9 UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%6os}%CONTINUE%
+ItemDisplay[ama UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%+Enemy Lightning Resistance}%CONTINUE%
+ItemDisplay[amb UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%+All Skills}%CONTINUE%
+ItemDisplay[amc UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Enhanced Damage, Increased Attack Speed}%CONTINUE%
+ItemDisplay[amd UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Enhanced Damage, Increased Attack Speed}%CONTINUE%
+ItemDisplay[ame UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%5os}%CONTINUE%
+ItemDisplay[amf UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%+Enemy Lightning Resistance}%CONTINUE%
+ItemDisplay[aqv UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[axe UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[ba6 UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%+All Skills}%CONTINUE%
+ItemDisplay[ba7 UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Cannot Be Frozen}%CONTINUE%
+ItemDisplay[baa UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%+All Skills}%CONTINUE%
+ItemDisplay[bac UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%+All Skills}%CONTINUE%
+ItemDisplay[bad UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%3os}%CONTINUE%
+ItemDisplay[bae UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%3os}%CONTINUE%
+ItemDisplay[baf UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%3os}%CONTINUE%
+ItemDisplay[bar UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[bax UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[bhm UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[bld UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%2os}%CONTINUE%
+ItemDisplay[brn UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[brs UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%+All Skills}%CONTINUE%
+ItemDisplay[bsd UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[bsh UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%1os}%CONTINUE%
+ItemDisplay[bst UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%4os}%CONTINUE%
+ItemDisplay[bsw UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[btx UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[buc UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[bwn UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%2os}%CONTINUE%
+ItemDisplay[cap UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[cbw UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[chn UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[ci2 UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%3os}%CONTINUE%
+ItemDisplay[ci3 UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%3os}%CONTINUE%
+ItemDisplay[clb UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[clm UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[cm2 UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[cm3 UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[cqv UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[crn UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%3os}%CONTINUE%
+ItemDisplay[crs UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%4os}%CONTINUE%
+ItemDisplay[cst UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%4os}%CONTINUE%
+ItemDisplay[dgr UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[dir UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[dr2 UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%+All Skills}%CONTINUE%
+ItemDisplay[dr6 UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%+All Skills}%CONTINUE%
+ItemDisplay[dra UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%3os}%CONTINUE%
+ItemDisplay[drb UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%3os}%CONTINUE%
+ItemDisplay[drc UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%+All Skills}%CONTINUE%
+ItemDisplay[drd UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%All Resist, Cold Resist, Fire Resist, Lightning Resist, Poison Resist, Transform Dye}%CONTINUE%
+ItemDisplay[dre UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%+All Skills}%CONTINUE%
+ItemDisplay[drf UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%3os}%CONTINUE%
+ItemDisplay[fhl UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[fla UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[flb UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[flc UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[fld UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%2os}%CONTINUE%
+ItemDisplay[ful UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%PDR%}%CONTINUE%
+ItemDisplay[gax UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[ghm UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%3os}%CONTINUE%
+ItemDisplay[gis UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[gix UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%5os}%CONTINUE%
+ItemDisplay[gma UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%6os}%CONTINUE%
+ItemDisplay[gsc UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[gsd UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%6os}%CONTINUE%
+ItemDisplay[gth UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%3os}%CONTINUE%
+ItemDisplay[gts UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Better Chance of Getting Magic Items}%CONTINUE%
+ItemDisplay[gwn UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[hal UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[hax UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[hbl UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[hbt UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Life after each Kill}%CONTINUE%
+ItemDisplay[hbw UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[hfh UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[hgl UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Increased Attack Speed}%CONTINUE%
+ItemDisplay[hla UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[hlm UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[hst UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[hxb UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[jew UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[kit UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%+All Skills}%CONTINUE%
+ItemDisplay[kri UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%+Enemy Poison Resistance}%CONTINUE%
+ItemDisplay[lax UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[lbb UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%5os}%CONTINUE%
+ItemDisplay[lbl UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[lbt UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[lbw UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[lea UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[lgl UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[lrg UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[lsd UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[lst UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[ltp UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%All Resist, Cold Resist, Fire Resist, Lightning Resist, Poison Resist, Transform Dye}%CONTINUE%
+ItemDisplay[lwb UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[lxb UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[mac UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[mau UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%6os}%CONTINUE%
+ItemDisplay[mbl UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[mbt UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Faster Run/Walk}%CONTINUE%
+ItemDisplay[mgl UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Extra Gold from Monsters}%CONTINUE%
+ItemDisplay[mpi UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[msf UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[msk UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[mst UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[mxb UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%+Mana after each Kill}%CONTINUE%
+ItemDisplay[ne6 UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Cold Resist, Max Cold resistance}%CONTINUE%
+ItemDisplay[nea UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%+All Skills}%CONTINUE%
+ItemDisplay[ned UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%+All Skills}%CONTINUE%
+ItemDisplay[nee UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Cold Resist, Max Cold resistance}%CONTINUE%
+ItemDisplay[nef UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%+All Skills}%CONTINUE%
+ItemDisplay[neg UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%+All Skills}%CONTINUE%
+ItemDisplay[ob6 UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%2os}%CONTINUE%
+ItemDisplay[ob7 UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[oba UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%3os}%CONTINUE%
+ItemDisplay[obc UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%+All Skills}%CONTINUE%
+ItemDisplay[obe UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%+All Skills}%CONTINUE%
+ItemDisplay[obf UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Faster Cast Rate, +Cold Skill Damage}%CONTINUE%
+ItemDisplay[pa3 UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%3os}%CONTINUE%
+ItemDisplay[pa9 UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Poison Resist}%CONTINUE%
+ItemDisplay[pac UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%3os}%CONTINUE%
+ItemDisplay[pae UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%3os}%CONTINUE%
+ItemDisplay[paf UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%+All Skills}%CONTINUE%
+ItemDisplay[pax UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[pik UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[plt UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[qf1 UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[qf2 UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[qui UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[ram UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[rar UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[rbe UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[rng UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%3os}%CONTINUE%
+ItemDisplay[rxb UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%4os}%CONTINUE%
+ItemDisplay[sbb UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[sbr UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[sbw UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[scl UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%2os}%CONTINUE%
+ItemDisplay[scm UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[scp UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[scy UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[skp UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[sml UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[spc UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[spk UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[spl UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[spr UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[spt UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[ssd UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[sst UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[stu UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[swb UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[t51 UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[t52 UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[t53 UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[t54 UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[t55 UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[t56 UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[tbl UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Better Chance of Getting Magic Items}%CONTINUE%
+ItemDisplay[tbt UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%PDR%}%CONTINUE%
+ItemDisplay[tgl UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Faster Cast Rate}%CONTINUE%
+ItemDisplay[tow UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[tri UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[uap UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%+All Skills}%CONTINUE%
+ItemDisplay[uh9 UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Fire Resist, Max Fire resistance}%CONTINUE%
+ItemDisplay[uhb UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%PDR%}%CONTINUE%
+ItemDisplay[uhc UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Faster Cast Rate}%CONTINUE%
+ItemDisplay[uhg UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Enhanced Damage}%CONTINUE%
+ItemDisplay[uhl UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[uit UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%+All Skills}%CONTINUE%
+ItemDisplay[ulb UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Faster Run/Walk}%CONTINUE%
+ItemDisplay[ulc UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Faster Cast Rate}%CONTINUE%
+ItemDisplay[uld UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%3os}%CONTINUE%
+ItemDisplay[ulg UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Extra Gold from Monsters}%CONTINUE%
+ItemDisplay[umb UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%PDR%}%CONTINUE%
+ItemDisplay[umc UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Max Cold resistance, Max Fire resistance, Max Lightning resistance, Max Poison resistance}%CONTINUE%
+ItemDisplay[umg UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Enhanced Damage}%CONTINUE%
+ItemDisplay[uml UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Increase Maximum Life}%CONTINUE%
+ItemDisplay[ung UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%3os}%CONTINUE%
+ItemDisplay[uow UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%+All Skills}%CONTINUE%
+ItemDisplay[upk UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%+All Skills}%CONTINUE%
+ItemDisplay[upl UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%+All Skills}%CONTINUE%
+ItemDisplay[urg UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Indestruct, Enhanced Defense}%CONTINUE%
+ItemDisplay[urn UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%+All Skills}%CONTINUE%
+ItemDisplay[ush UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Lightning Resist}%CONTINUE%
+ItemDisplay[usk UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%+All Skills}%CONTINUE%
+ItemDisplay[utb UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[utg UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Faster Cast Rate}%CONTINUE%
+ItemDisplay[uth UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[utp UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Cannot Be Frozen}%CONTINUE%
+ItemDisplay[uts UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%+All Skills}%CONTINUE%
+ItemDisplay[utu UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%3os}%CONTINUE%
+ItemDisplay[uui UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%+All Skills}%CONTINUE%
+ItemDisplay[uul UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%+All Skills}%CONTINUE%
+ItemDisplay[uvb UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Cold Resist, Max Cold resistance}%CONTINUE%
+ItemDisplay[uvc UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Increased Attack Speed}%CONTINUE%
+ItemDisplay[uvg UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Increased Attack Speed}%CONTINUE%
+ItemDisplay[vbl UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Max Cold resistance, Max Fire resistance, Max Lightning resistance, Max Poison resistance}%CONTINUE%
+ItemDisplay[vbt UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Max Poison resistance, Poison Resist}%CONTINUE%
+ItemDisplay[vgl UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Enhanced Damage}%CONTINUE%
+ItemDisplay[vip UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[vou UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[wax UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[whm UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[wnd UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[wsc UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[wsd UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[wsp UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[wst UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[xap UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%2os}%CONTINUE%
+ItemDisplay[xar UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%PDR%}%CONTINUE%
+ItemDisplay[xcl UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%3os}%CONTINUE%
+ItemDisplay[xea UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%3os}%CONTINUE%
+ItemDisplay[xh9 UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%3os}%CONTINUE%
+ItemDisplay[xhb UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Fire Resist, Max Fire resistance}%CONTINUE%
+ItemDisplay[xhg UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%+Mana after each Kill}%CONTINUE%
+ItemDisplay[xhl UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[xhm UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%+All Skills}%CONTINUE%
+ItemDisplay[xhn UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Indestruct, Enhanced Defense}%CONTINUE%
+ItemDisplay[xit UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%3os}%CONTINUE%
+ItemDisplay[xkp UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Better Chance of Getting Magic Items}%CONTINUE%
+ItemDisplay[xla UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%2os}%CONTINUE%
+ItemDisplay[xlb UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Fire Resist, Max Fire resistance}%CONTINUE%
+ItemDisplay[xld UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%PDR%}%CONTINUE%
+ItemDisplay[xlg UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%+Attack Rating}%CONTINUE%
+ItemDisplay[xlm UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%2os}%CONTINUE%
+ItemDisplay[xlt UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%+All Skills}%CONTINUE%
+ItemDisplay[xmb UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%PDR%}%CONTINUE%
+ItemDisplay[xmg UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%+Attack Rating}%CONTINUE%
+ItemDisplay[xml UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[xng UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Faster Hit Recovery}%CONTINUE%
+ItemDisplay[xow UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%+All Skills}%CONTINUE%
+ItemDisplay[xpk UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%2os}%CONTINUE%
+ItemDisplay[xpl UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Cannot Be Frozen}%CONTINUE%
+ItemDisplay[xrg UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[xrn UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Cannot Be Frozen}%CONTINUE%
+ItemDisplay[xrs UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%3os}%CONTINUE%
+ItemDisplay[xsh UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%+All Skills}%CONTINUE%
+ItemDisplay[xsk UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%3os}%CONTINUE%
+ItemDisplay[xtb UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Faster Run/Walk}%CONTINUE%
+ItemDisplay[xtg UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%+Dexterity, +Energy, +Strength, +Vitality}%CONTINUE%
+ItemDisplay[xth UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%+All Skills}%CONTINUE%
+ItemDisplay[xtp UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%+All Skills}%CONTINUE%
+ItemDisplay[xts UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%3os}%CONTINUE%
+ItemDisplay[xtu UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[xuc UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[xui UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Faster Run/Walk}%CONTINUE%
+ItemDisplay[xul UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%PDR%}%CONTINUE%
+ItemDisplay[xvb UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Fire Resist, Max Fire resistance}%CONTINUE%
+ItemDisplay[xvg UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Deadly Strike}%CONTINUE%
+ItemDisplay[ywn UNI ID]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+ItemDisplay[zhb UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Faster Cast Rate}%CONTINUE%
+ItemDisplay[zlb UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Increased Attack Speed}%CONTINUE%
+ItemDisplay[zmb UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Increased Chance of Blocking}%CONTINUE%
+ItemDisplay[ztb UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Max Cold resistance, Max Fire resistance, Max Lightning resistance, Max Poison resistance}%CONTINUE%
+ItemDisplay[zvb UNI ID]: %NAME%{%NAME%%CL%%PURPLE%BIS Slam: %WHITE%Chance to Pierce}%CONTINUE%
+// END AUTO PD2TRADER BIS SLAMS
+
 // Tooltip description rules end here
 
 // Add quantity to stackable items
@@ -4490,7 +4991,6 @@ ItemDisplay[MAG]: %NAME%%BLUE%{%NAME%}%CONTINUE%
 ItemDisplay[(ARMOR OR WEAPON OR QUIVER) NMAG !ETH (SOCK=0 OR THROWING) !opm]: %NAME%%WHITE%{%NAME%}%CONTINUE%
 ItemDisplay[(ARMOR OR WEAPON OR QUIVER) NMAG !RW (SOCK>0 OR ETH)]: %NAME%%GRAY%{%NAME%}%CONTINUE%
 ItemDisplay[CRAFT]: %NAME%%ORANGE%{%NAME%}%CONTINUE%
-
 
 // Imbue base descriptions
 ItemDisplay[ci3 NMAG !ETH SOCK=0]: %NAME%{%TAN%Note%WHITE%: You can %YELLOW%Imbue %WHITE%it using Charsi quest%CL%%NAME%}%CONTINUE%
@@ -4931,7 +5431,7 @@ ItemDisplay[jew STAT477=4 ]: %NAME%{%TAN%Note%WHITE%: %GRAY%Black %BLUE%Jewel}
 ItemDisplay[jewf ID]: %BLUE%%NAME%{%GRAY%(Stackable Jewel)%NL%%TAN%Note%WHITE%: Use Those in Cube Recipes}
 
 // Standard of Heroes
-ItemDisplay[std]: %PX-9D%%NAME%{%NAME%}//{%WHITE%+10% Experience%NL%+20% Magic&Gold Find%NL%+20% Monster Density%NL%%TAN%Note: %WHITE%Cube it with Map to gain:}
+ItemDisplay[std]: %PX-9D%%NAME%{%NAME%%CL%%WHITE%+10% Experience%NL%+20% Magic&Gold Find%NL%+20% Monster Density%NL%%TAN%Note: %WHITE%Cube it with Map to gain:}%CONTINUE%
 
 // Ear displays
 ItemDisplay[ivea]: %PX-9D%%NAME%{%NAME%}
@@ -4958,7 +5458,7 @@ ItemDisplay[(ARMOR OR WEAPON OR QUIVER) (MAG OR RARE OR SET OR UNI OR CRAFT) ID]
 
 // Project Diablo 2 items
 ItemDisplay[wss]: %MAP-0A%%DOT-66%%NAME% %ORANGE%*{%RED%Warning%WHITE%: It can Brick your Item%NL%%TAN%Note%WHITE%: Use to %RED%Corrupt %WHITE%Item/Map:}
-ItemDisplay[iwss]: %MAP-0A%%DOT-66%%NAME% %ORANGE%*{%WHITE%Random Event to Your Map%NL%%TAN%Note%WHITE%: Use to %PURPLE%Add %WHITE%a Guaranteed}
+ItemDisplay[iwss]: %MAP-0A%%DOT-66%%NAME% %ORANGE%*{%WHITE%Random Event to Your Map%NL%%TAN%Note%WHITE%: Use to %PURPLE%Add %WHITE%a Guaranteed}%CONTINUE%
 ItemDisplay[scrb]: %MAP-A9%%NAME% %ORANGE%*{%NAME%}//{%RED%Group Dungeon%NL%%TAN%Note%WHITE%: Cube it with %GRAY%[%ORANGE%T3%GRAY%] %WHITE%Map to Make:}
 ItemDisplay[ubtm]: %MAP-A9%%GRAY%* %NAME% %GRAY%*{%GRAY%(It will create 3 Portals to come back Max 3 Times)%NL%%TAN%Note%WHITE%: Entrance to Uber Tristram}
 ItemDisplay[imra]: %NAME% %ORANGE%*{%WHITE%Map + %GOLD%Orb %WHITE%+ %BLUE%Jewel %WHITE%+ %ORANGE%Any Rune%NL%%TAN%Note%WHITE%: Imbue White Map to %YELLOW%Rare%WHITE%:%NL%}%CONTINUE%
@@ -4974,34 +5474,34 @@ ItemDisplay[irra]: %NAME% %ORANGE%*{%WHITE%Map + %GOLD%Orb%NL%%TAN%Note%WHITE%: 
 ItemDisplay[rrra]: %NAME% %ORANGE%*{%YELLOW%Map %WHITE%+ %GOLD%Orb%NL%%TAN%Note%WHITE%: ReRoll %YELLOW%Rare %WHITE%Map:%NL%}
 ItemDisplay[urma]: %NAME% %ORANGE%*{%BLUE%Map %WHITE%+ %GOLD%Orb%NL%%TAN%Note%WHITE%: Imbue %BLUE%Magic %WHITE%Map to %YELLOW%Rare%WHITE%:%NL%}
 ItemDisplay[irma]: %NAME% %ORANGE%*{%BLUE%Map %WHITE%+ %GOLD%Orb%NL%%WHITE%ReRoll %BLUE%Magic %WHITE%Map:%NL%%NL%%WHITE%Map + %GOLD%Orb%NL%%TAN%Note%WHITE%: Imbue White Map to %BLUE%Magic%WHITE%:%NL%}
-ItemDisplay[lbox]: %BORDER-0A%%DOT-62%%GREEN%*%PURPLE%*%RED%*       %NAME%       %RED%*%PURPLE%*%GREEN%*{%WHITE%Two-Handed Weapon = 2-4 max%NL%One-Handed Weapon = 1-2 max%NL%Helmet, Chest, Shield = 1-2 max%NL%%TAN%Note%WHITE%: Use to %TAN%Socket %WHITE%an Item}
-ItemDisplay[lpp]: %DOT-0A%%PX-62%%GRAY%*%YELLOW%*   %NAME%   %YELLOW%*%GRAY%*{%WHITE%Two-Handed Weapon = 2-4 max%NL%One-Handed Weapon = 1-2 max%NL%Helmet, Chest, Shield = 1-2 max%NL%%TAN%Note%WHITE%: Use to %TAN%Socket %WHITE%Normal/%BLUE%Magic%WHITE%/%YELLOW%Rare%WHITE%/%ORANGE%Crafted %WHITE%Item}
+ItemDisplay[lbox]: %BORDER-0A%%DOT-62%%GREEN%*%PURPLE%*%RED%*       %NAME%       %RED%*%PURPLE%*%GREEN%*{%WHITE%Two-Handed Weapon = 2-4 max%NL%One-Handed Weapon = 1-2 max%NL%Helmet, Chest, Shield = 1-2 max%NL%%TAN%Note%WHITE%: Use to %TAN%Socket %WHITE%an Item}%CONTINUE%
+ItemDisplay[lpp]: %DOT-0A%%PX-62%%GRAY%*%YELLOW%*   %NAME%   %YELLOW%*%GRAY%*{%WHITE%Two-Handed Weapon = 2-4 max%NL%One-Handed Weapon = 1-2 max%NL%Helmet, Chest, Shield = 1-2 max%NL%%TAN%Note%WHITE%: Use to %TAN%Socket %WHITE%Normal/%BLUE%Magic%WHITE%/%YELLOW%Rare%WHITE%/%ORANGE%Crafted %WHITE%Item}%CONTINUE%
 ItemDisplay[lmal]: %GOLD%%NAME% %ORANGE%*{%WHITE%All Types of Items = 1 max%NL%%TAN%Note%WHITE%: Use to %TAN%Socket %WHITE%an Item}
 ItemDisplay[lsvl]: %BORDER-9B%%DOT-62%%GREEN%*%SAGE%*%WHITE%*%CORAL%*%RED%*        %NAME%        %RED%*%CORAL%*%WHITE%*%SAGE%*%GREEN%*{%TAN%Note%WHITE%: %WHITE%This item is %PURPLE%E%RED%x%ORANGE%t%YELLOW%re%ORANGE%m%RED%e%PURPLE%l%RED%y Rare%WHITE%.}
 ItemDisplay[llmr]: %BORDER-9B%%DOT-62%%GREEN%*%SAGE%*%WHITE%*%CORAL%*%RED%*        %NAME%        %RED%*%CORAL%*%WHITE%*%SAGE%*%GREEN%*{%RED%You Can't remove socketed Misc from it%NL%%WHITE%Their colors will be changed to Black and White.%NL%Can't be used in any cube recipes.%NL%%RED%Warning%WHITE%: Items will be marked as %PURPLE%Mirrored %WHITE%and%NL%%WHITE%Only works with %BLUE%magic%WHITE%/%YELLOW%rare%WHITE%/%ORANGE%craft %WHITE%equipment%NL%%TAN%Note%WHITE%: %WHITE%This item is %PURPLE%E%RED%x%ORANGE%t%YELLOW%re%ORANGE%m%RED%e%PURPLE%l%RED%y Rare%WHITE%.}
 ItemDisplay[rkey]: %MAP-0A%%PX-62%%GRAY%*%LIGHT_GRAY%*%YELLOW%*   %NAME%   %YELLOW%*%LIGHT_GRAY%*%GRAY%*{%NAME%}
-ItemDisplay[imrn]: %BORDER-0A%%DOT-62%%GREEN%*%PURPLE%*%RED%*       %NAME%       %RED%*%PURPLE%*%GREEN%*{%TAN%Note%WHITE%: Use to %CORAL%ReRoll %WHITE%an %GOLD%Unique %WHITE%or %GREEN%Set %WHITE%Item}
+ItemDisplay[imrn]: %BORDER-0A%%DOT-62%%GREEN%*%PURPLE%*%RED%*       %NAME%       %RED%*%PURPLE%*%GREEN%*{%TAN%Note%WHITE%: Use to %CORAL%ReRoll %WHITE%an %GOLD%Unique %WHITE%or %GREEN%Set %WHITE%Item}%CONTINUE%
 
 // DClone, Rathma, and Lucion materials
 ItemDisplay[(dcma OR rtma OR luca) STAT185=0]: %MAP-0A%%PX-62%%GRAY%*%RED%* %NAME% %RED%*%GRAY%*{%BLUE%Tier: 0 (Default)%NL%%RED%Enter at your own risk!%NL%%TAN%Note%WHITE%: %GRAY%Many have entered... Few have returned.}
 ItemDisplay[(dcma OR rtma OR luca) STAT185>0]: %MAP-0A%%PX-62%%GRAY%*%RED%* %NAME% %RED%*%GRAY%*{%RED%Enter at your own risk!%NL%%TAN%Note%WHITE%: %GRAY%Many have entered... Few have returned.}
-ItemDisplay[lucb]: %MAP-0A%%PX-62%%NAME% %RED%*{%TAN%Note%WHITE%: %GRAY%Am I hearing wing beat...? %RED%Lucion%GRAY%...?}
-ItemDisplay[lucc]: %MAP-0A%%PX-62%%NAME% %RED%*{%TAN%Note%WHITE%: %GRAY%Am I hearing wing beat...? %RED%Lucion%GRAY%...?}
-ItemDisplay[lucd]: %MAP-0A%%PX-62%%NAME% %RED%*{%TAN%Note%WHITE%: %GRAY%Am I hearing wing beat...? %RED%Lucion%GRAY%...?}
-ItemDisplay[dcbl OR dcho]: %MAP-0A%%PX-62%%NAME% %RED%*{%TAN%Note%WHITE%: %RED%Diablo Clone %GRAY%walks nearby...}
-ItemDisplay[dcso]: %MAP-0A%%PX-62%%NAME% %RED%*{%TAN%Note%WHITE%: %GRAY%Contains Soul of %RED%Diablo Clone}
+ItemDisplay[lucb]: %MAP-0A%%PX-62%%NAME% %RED%*{%TAN%Note%WHITE%: %GRAY%Am I hearing wing beat...? %RED%Lucion%GRAY%...?}%CONTINUE%
+ItemDisplay[lucc]: %MAP-0A%%PX-62%%NAME% %RED%*{%TAN%Note%WHITE%: %GRAY%Am I hearing wing beat...? %RED%Lucion%GRAY%...?}%CONTINUE%
+ItemDisplay[lucd]: %MAP-0A%%PX-62%%NAME% %RED%*{%TAN%Note%WHITE%: %GRAY%Am I hearing wing beat...? %RED%Lucion%GRAY%...?}%CONTINUE%
+ItemDisplay[dcbl OR dcho]: %MAP-0A%%PX-62%%NAME% %RED%*{%TAN%Note%WHITE%: %RED%Diablo Clone %GRAY%walks nearby...}%CONTINUE%
+ItemDisplay[dcso]: %MAP-0A%%PX-62%%NAME% %RED%*{%TAN%Note%WHITE%: %GRAY%Contains Soul of %RED%Diablo Clone}%CONTINUE%
 ItemDisplay[rtmf]: %MAP-0A%%PX-62%%NAME% %RED%*{%TAN%Note%WHITE%: 2x %ORANGE%Bone Fragments %WHITE%+ %GOLD%Hellfire Torch %WHITE%= %ORANGE%Trang-Oul's Jawbone}
-ItemDisplay[rtmv]: %MAP-0A%%PX-62%%NAME% %RED%*{%TAN%Note%WHITE%: %RED%Rathma %GRAY%is getting closer...}
-ItemDisplay[rtmo]: %MAP-0A%%PX-62%%NAME% %RED%*{%TAN%Note%WHITE%: %RED%Rathma %GRAY%is getting closer...}
-ItemDisplay[cm2f]: %MAP-0A%%PX-62%%NAME% %RED%*{%TAN%Note%WHITE%: %RED%Rathma %GRAY%is getting closer...}
+ItemDisplay[rtmv]: %MAP-0A%%PX-62%%NAME% %RED%*{%TAN%Note%WHITE%: %RED%Rathma %GRAY%is getting closer...}%CONTINUE%
+ItemDisplay[rtmo]: %MAP-0A%%PX-62%%NAME% %RED%*{%TAN%Note%WHITE%: %RED%Rathma %GRAY%is getting closer...}%CONTINUE%
+ItemDisplay[cm2f]: %MAP-0A%%PX-62%%NAME% %RED%*{%TAN%Note%WHITE%: %RED%Rathma %GRAY%is getting closer...}%CONTINUE%
 ItemDisplay[cwss]: %MAP-0A%%DOT-84%%NAME% %GREEN%*{%RED%Warning%WHITE%: You can actually BRICK it%NL%%TAN%Note%WHITE%: Use to %RED%Corrupt %GOLD%Annihilus}
 ItemDisplay[rid]: %MAP-0A%%PX-62%%GRAY%*%LIGHT_GRAY%*%RED%*   %NAME%    %RED%*%LIGHT_GRAY%*%GRAY%*
 ItemDisplay[rtp]: %MAP-0A%%PX-62%%GRAY%*%LIGHT_GRAY%*%BLUE%*   %NAME%    %BLUE%*%LIGHT_GRAY%*%GRAY%*{%TAN%Note%WHITE%: You won't lose it in Cube recipes}
 
 // Uber Ancients
-ItemDisplay[ubaa]: %MAP-0A%%PX-62%%NAME% %RED%*{%TAN%Note%WHITE%: Uber Ancients ingredient from %GRAY%[%DARK_GREEN%T1%GRAY%] %WHITE%Maps}
-ItemDisplay[ubab]: %MAP-0A%%PX-62%%NAME% %RED%*{%TAN%Note%WHITE%: Uber Ancients ingredient from %GRAY%[%TAN%T2%GRAY%] %WHITE%Maps}
-ItemDisplay[ubac]: %MAP-0A%%PX-62%%NAME% %RED%*{%TAN%Note%WHITE%: Uber Ancients ingredient from %GRAY%[%ORANGE%T3%GRAY%] %WHITE%Maps}
+ItemDisplay[ubaa]: %MAP-0A%%PX-62%%NAME% %RED%*{%TAN%Note%WHITE%: Uber Ancients ingredient from %GRAY%[%DARK_GREEN%T1%GRAY%] %WHITE%Maps}%CONTINUE%
+ItemDisplay[ubab]: %MAP-0A%%PX-62%%NAME% %RED%*{%TAN%Note%WHITE%: Uber Ancients ingredient from %GRAY%[%TAN%T2%GRAY%] %WHITE%Maps}%CONTINUE%
+ItemDisplay[ubac]: %MAP-0A%%PX-62%%NAME% %RED%*{%TAN%Note%WHITE%: Uber Ancients ingredient from %GRAY%[%ORANGE%T3%GRAY%] %WHITE%Maps}%CONTINUE%
 ItemDisplay[uba]: %MAP-0A%%PX-62%%GRAY%*%RED%* %NAME% %RED%*%GRAY%*{%TAN%Note%WHITE%: Challenge Yourself, Fight for the Great Loot!}
 
 // Project Diablo 2 maps
@@ -5030,7 +5530,7 @@ ItemDisplay[t11]: %NAME%{%WHITE%Boss Damage: %ORANGE%Magic %BLACK%| %WHITE%Monst
 ItemDisplay[t11]: %NAME%{%RED%F%WHITE%:75 %BLACK%| %BLUE%C%WHITE%:%CORAL%120 %BLACK%| %YELLOW%L%WHITE%:%CORAL%100 %BLACK%| %GREEN%P%WHITE%:80 %BLACK%| %ORANGE%M%WHITE%:50 %BLACK%| %GOLD%P%WHITE%:%CORAL%115%CL%%NAME%}%CONTINUE%
 // Horazon's Memory Map
 ItemDisplay[t12]: %NAME%{%WHITE%Boss Damage: %GOLD%Phys %BLACK%| %WHITE%Monsters Highest Res:%CL%%NAME%}%CONTINUE%
-ItemDisplay[t12]: %NAME%{%RED%F%WHITE%:90 %BLACK%| %BLUE%C%WHITE%:75 %BLACK%| %YELLOW%L%WHITE%:%CORAL%120 %BLACK%| %GREEN%P%WHITE%:%CORAL%1000 %BLACK%| %ORANGE%M%WHITE%:90 %BLACK%| %GOLD%P%WHITE%:%CORAL%115%CL%%NAME%}%CONTINUE%
+ItemDisplay[t12]: %NAME%{%RED%F%WHITE%:90 %BLACK%| %BLUE%C%WHITE%:75 %BLACK%| %YELLOW%L%WHITE%:%CORAL%120 %BLACK%| %GREEN%P%WHITE%:75 %BLACK%| %ORANGE%M%WHITE%:90 %BLACK%| %GOLD%P%WHITE%:%CORAL%115%CL%%NAME%}%CONTINUE%
 // Bastion Keep Map
 ItemDisplay[t13]: %NAME%{%WHITE%Boss Damage: %BLUE%Cold %BLACK%| %WHITE%Monsters Highest Res:%CL%%NAME%}%CONTINUE%
 ItemDisplay[t13]: %NAME%{%RED%F%WHITE%:80 %BLACK%| %BLUE%C%WHITE%:%CORAL%120 %BLACK%| %YELLOW%L%WHITE%:75 %BLACK%| %GREEN%P%WHITE%:85 %BLACK%| %ORANGE%M%WHITE%:%CORAL%105 %BLACK%| %GOLD%P%WHITE%:%CORAL%115%CL%%NAME%}%CONTINUE%
@@ -5162,6 +5662,8 @@ ItemDisplay[MAPTIER>0 STAT411<0 !(STAT412<0) (DRUID OR NECROMANCER) $f(count((CH
 ItemDisplay[MAPTIER>0 STAT411<0 !(STAT412<0) (DRUID OR NECROMANCER) $f(count((CHARSTAT99+STAT411)>=5,(CHARSTAT99+STAT411)>=10,(CHARSTAT99+STAT411)>=16,(CHARSTAT99+STAT411)>=26,(CHARSTAT99+STAT411)>=39,(CHARSTAT99+STAT411)>=56,(CHARSTAT99+STAT411)>=86,(CHARSTAT99+STAT411)>=152,(CHARSTAT99+STAT411)>=377)-count(CHARSTAT99>=5,CHARSTAT99>=10,CHARSTAT99>=16,CHARSTAT99>=26,CHARSTAT99>=39,CHARSTAT99>=56,CHARSTAT99>=86,CHARSTAT99>=152,CHARSTAT99>=377))=0]: %NAME%{%PURPLE%Debuff: %WHITE%FHR %RED%$f(max(0,CHARSTAT99+STAT411))%CL%%NAME%}%CONTINUE%
 ItemDisplay[MAPTIER>0 STAT411<0 !(STAT412<0) SORCERESS $f(count((CHARSTAT99+STAT411)>=5,(CHARSTAT99+STAT411)>=9,(CHARSTAT99+STAT411)>=14,(CHARSTAT99+STAT411)>=20,(CHARSTAT99+STAT411)>=30,(CHARSTAT99+STAT411)>=42,(CHARSTAT99+STAT411)>=60,(CHARSTAT99+STAT411)>=86,(CHARSTAT99+STAT411)>=142,(CHARSTAT99+STAT411)>=280)-count(CHARSTAT99>=5,CHARSTAT99>=9,CHARSTAT99>=14,CHARSTAT99>=20,CHARSTAT99>=30,CHARSTAT99>=42,CHARSTAT99>=60,CHARSTAT99>=86,CHARSTAT99>=142,CHARSTAT99>=280))<0]: %NAME%{%PURPLE%Debuff: %WHITE%FHR %RED%$f(max(0,CHARSTAT99+STAT411)) %GRAY%[%RED%$f(count((CHARSTAT99+STAT411)>=5,(CHARSTAT99+STAT411)>=9,(CHARSTAT99+STAT411)>=14,(CHARSTAT99+STAT411)>=20,(CHARSTAT99+STAT411)>=30,(CHARSTAT99+STAT411)>=42,(CHARSTAT99+STAT411)>=60,(CHARSTAT99+STAT411)>=86,(CHARSTAT99+STAT411)>=142,(CHARSTAT99+STAT411)>=280)-count(CHARSTAT99>=5,CHARSTAT99>=9,CHARSTAT99>=14,CHARSTAT99>=20,CHARSTAT99>=30,CHARSTAT99>=42,CHARSTAT99>=60,CHARSTAT99>=86,CHARSTAT99>=142,CHARSTAT99>=280)) FR%GRAY%]%CL%%NAME%}%CONTINUE%
 ItemDisplay[MAPTIER>0 STAT411<0 !(STAT412<0) SORCERESS $f(count((CHARSTAT99+STAT411)>=5,(CHARSTAT99+STAT411)>=9,(CHARSTAT99+STAT411)>=14,(CHARSTAT99+STAT411)>=20,(CHARSTAT99+STAT411)>=30,(CHARSTAT99+STAT411)>=42,(CHARSTAT99+STAT411)>=60,(CHARSTAT99+STAT411)>=86,(CHARSTAT99+STAT411)>=142,(CHARSTAT99+STAT411)>=280)-count(CHARSTAT99>=5,CHARSTAT99>=9,CHARSTAT99>=14,CHARSTAT99>=20,CHARSTAT99>=30,CHARSTAT99>=42,CHARSTAT99>=60,CHARSTAT99>=86,CHARSTAT99>=142,CHARSTAT99>=280))=0]: %NAME%{%PURPLE%Debuff: %WHITE%FHR %RED%$f(max(0,CHARSTAT99+STAT411))%CL%%NAME%}%CONTINUE%
+ItemDisplay[MAPTIER>0 (STAT428<0 OR STAT429<0 OR STAT430<0 OR STAT431<0)]: %NAME%{%PURPLE%Debuff: %WHITE%Res: %RED%F:$f(min(75+CHARSTAT40+STAT418,CHARSTAT39-100+min(min(STAT428,STAT429),min(STAT430,STAT431))))%BLACK%|%BLUE%C:%RED%$f(min(75+CHARSTAT44+STAT420,CHARSTAT43-100+min(min(STAT428,STAT429),min(STAT430,STAT431))))%BLACK%|%YELLOW%L:%RED%$f(min(75+CHARSTAT42+STAT419,CHARSTAT41-100+min(min(STAT428,STAT429),min(STAT430,STAT431))))%BLACK%|%GREEN%P:%RED%$f(min(75+CHARSTAT46+STAT421,CHARSTAT45-100+min(min(STAT428,STAT429),min(STAT430,STAT431))))%CL%%NAME%}%CONTINUE%
+//ItemDisplay[MAPTIER>0 (STAT451<0 OR STAT452<0)]: %NAME%{%PURPLE%Debuff: %WHITE%IAS %RED%$f(max(0,CHARSTAT93+STAT451)) %BLACK%| %WHITE%FCR %RED%$f(max(0,CHARSTAT105+STAT452))%CL%%NAME%}%CONTINUE%
 
 // Map monster notifications
 ItemDisplay[MAPTIER>0 STAT499>0]: %NAME%{%PURPLE%Mobs: %RED%MoD%CL%%NAME%}%CONTINUE%
@@ -5175,15 +5677,15 @@ ItemDisplay[MAPTIER>0 STAT470>0]: %NAME%{%PURPLE%Mobs: %RED%Souls%CL%%NAME%}%CON
 ItemDisplay[MAPTIER>0 STAT441>0]: %NAME%{%PURPLE%Mobs: %ORANGE%Horde%CL%%NAME%}%CONTINUE%
 ItemDisplay[MAPTIER>0 STAT498>0]: %NAME%{%PURPLE%Mobs: %GREEN%Boss%CL%%NAME%}%CONTINUE%
 // Essences
-ItemDisplay[tes]: %PX-9D%%NAME%{%TAN%Essence %WHITE%from: %BLUE%Andariel %WHITE%or %BLUE%Duriel}
-ItemDisplay[ceh]: %PX-9D%%NAME%{%TAN%Essence %WHITE%from: %TAN%Mephisto}
-ItemDisplay[bet]: %PX-9D%%NAME%{%TAN%Essence %WHITE%from: %RED%Diablo}
-ItemDisplay[fed]: %PX-9D%%NAME%{%TAN%Essence %WHITE%from: %DARK_GREEN%Baal}
+ItemDisplay[tes]: %PX-9D%%NAME%{%TAN%Essence %WHITE%from: %BLUE%Andariel %WHITE%or %BLUE%Duriel}%CONTINUE%
+ItemDisplay[ceh]: %PX-9D%%NAME%{%TAN%Essence %WHITE%from: %TAN%Mephisto}%CONTINUE%
+ItemDisplay[bet]: %PX-9D%%NAME%{%TAN%Essence %WHITE%from: %RED%Diablo}%CONTINUE%
+ItemDisplay[fed]: %PX-9D%%NAME%{%TAN%Essence %WHITE%from: %DARK_GREEN%Baal}%CONTINUE%
 
 // Uber key aliases
-ItemDisplay[pk1]: %DOT-9D%%ORANGE%%NAME%%ORANGE%{%TAN%Key %WHITE%from: %RED%Countess %WHITE%or %RED%Blood Raven}
-ItemDisplay[pk2]: %DOT-9D%%ORANGE%%NAME%%ORANGE%{%TAN%Key %WHITE%from: %BLUE%Summoner %WHITE%or %BLUE%Bloodwitch}
-ItemDisplay[pk3]: %DOT-9D%%ORANGE%%NAME%%ORANGE%{%TAN%Key %WHITE%from: %PURPLE%Nihlathak %WHITE%or %PURPLE%Izual}
+ItemDisplay[pk1]: %DOT-9D%%ORANGE%%NAME%%ORANGE%{%TAN%Key %WHITE%from: %RED%Countess %WHITE%or %RED%Blood Raven}%CONTINUE%
+ItemDisplay[pk2]: %DOT-9D%%ORANGE%%NAME%%ORANGE%{%TAN%Key %WHITE%from: %BLUE%Summoner %WHITE%or %BLUE%Bloodwitch}%CONTINUE%
+ItemDisplay[pk3]: %DOT-9D%%ORANGE%%NAME%%ORANGE%{%TAN%Key %WHITE%from: %PURPLE%Nihlathak %WHITE%or %PURPLE%Izual}%CONTINUE%
 
 // Organs
 ItemDisplay[(mbr OR bey OR dhn)]: %PX-9D%%NAME%{%WHITE%to get %RED%Pandemonium Talisman%NL%%TAN%Note%WHITE%: Cube %ORANGE%One of each %WHITE%of the three Organs}
@@ -5196,27 +5698,9 @@ ItemDisplay[RUNE>19 AND RUNE<26]: %DOT-62%%RED%*     %NAME%%RED%     *{%NAME%}%C
 ItemDisplay[RUNE>25]: %BORDER-62%%GREEN%*%PURPLE%*%RED%*          %NAME%%RED%          *%PURPLE%*%GREEN%*{%NAME%}%CONTINUE%
 
 // Rune notes
+
 ItemDisplay[RUNE>0]: %NAME%{%RUNENAME% %WHITE%is Required for Runewords:%NL%%NAME%}%CONTINUE%
-// BEGIN AUTO PD2TRADER RUNE VALUES
-// Source: PD2 Trader API (48h, ladder=true, hardcore=false)
-// Applies to stackable rune item codes only; Lem is intentionally excluded
-// Static values: Pul, Um, Mal, Ist, Gul, Vex, Sur, Ber
-// Dynamic values: Ohm, Lo, Jah, Cham, Zod; median rounded to nearest 0.05 HR
-// Updated: 2026-04-29T23:59:52.359Z
-ItemDisplay[r21s]: %NAME%{%NAME%%CL%%PURPLE%Current Value: %WHITE%0.03 HR %GRAY%(static)%CL%}%CONTINUE%
-ItemDisplay[r22s]: %NAME%{%NAME%%CL%%PURPLE%Current Value: %WHITE%0.05 HR %GRAY%(static)%CL%}%CONTINUE%
-ItemDisplay[r23s]: %NAME%{%NAME%%CL%%PURPLE%Current Value: %WHITE%0.1 HR %GRAY%(static)%CL%}%CONTINUE%
-ItemDisplay[r24s]: %NAME%{%NAME%%CL%%PURPLE%Current Value: %WHITE%0.15 HR %GRAY%(static)%CL%}%CONTINUE%
-ItemDisplay[r25s]: %NAME%{%NAME%%CL%%PURPLE%Current Value: %WHITE%0.25 HR %GRAY%(static)%CL%}%CONTINUE%
-ItemDisplay[r26s]: %NAME%{%NAME%%CL%%PURPLE%Current Value: %WHITE%0.5 HR %GRAY%(static)%CL%}%CONTINUE%
-ItemDisplay[r27s]: %NAME%{%NAME%%CL%%PURPLE%Current Value: %WHITE%0.85 HR %GRAY%(98 listings)%CL%}%CONTINUE%
-ItemDisplay[r28s]: %NAME%{%NAME%%CL%%PURPLE%Current Value: %WHITE%1 HR %GRAY%(84 listings)%CL%}%CONTINUE%
-ItemDisplay[r29s]: %NAME%{%NAME%%CL%%PURPLE%Current Value: %WHITE%1.5 HR %GRAY%(static)%CL%}%CONTINUE%
-ItemDisplay[r30s]: %NAME%{%NAME%%CL%%PURPLE%Current Value: %WHITE%3 HR %GRAY%(static)%CL%}%CONTINUE%
-ItemDisplay[r31s]: %NAME%{%NAME%%CL%%PURPLE%Current Value: %WHITE%1.65 HR %GRAY%(105 listings)%CL%}%CONTINUE%
-ItemDisplay[r32s]: %NAME%{%NAME%%CL%%PURPLE%Current Value: %WHITE%1.5 HR %GRAY%(75 listings)%CL%}%CONTINUE%
-ItemDisplay[r33s]: %NAME%{%NAME%%CL%%PURPLE%Current Value: %WHITE%3.5 HR %GRAY%(41 listings)%CL%}%CONTINUE%
-// END AUTO PD2TRADER RUNE VALUES
+
 ItemDisplay[(r01 OR r01s)]: %NAME%{Breath of the Dying, Death, Fortitude, Honor,%NL%%NAME%}%CONTINUE%
 ItemDisplay[(r01 OR r01s)]: %NAME%{Malice, Rampage, Steel, Unbending Will,%NL%%NAME%}%CONTINUE%
 ItemDisplay[(r01 OR r01s)]: %NAME%{%GRAY%Voice of Reason, Wind%NL%%NAME%}%CONTINUE%
@@ -5375,6 +5859,51 @@ ItemDisplay[(r31 OR r31s)]: %NAME%{%NAME%%TAN%Note%WHITE%: 2x %ORANGE%Jah %WHITE
 ItemDisplay[(r32 OR r32s)]: %NAME%{%NAME%%TAN%Note%WHITE%: 2x %ORANGE%Cham %WHITE%+ %GRAY%key %WHITE%= %ORANGE%Zod %GRAY%[%GREEN%33%GRAY%]%NL%}%CONTINUE%
 ItemDisplay[(r33 OR r33s)]: %NAME%{%NAME%%TAN%Note%WHITE%: %ORANGE%Zod %WHITE%+ Perf %GRAY%O %WHITE%= Repair any Item %GRAY%(even eth)%NL%}%CONTINUE%
 
+// BEGIN AUTO PD2TRADER RUNE VALUES
+// Source: PD2 Trader API (24H, 48H, 72H, 1W, ladder=true, hardcore=false)
+// Applies to stackable rune item codes and selected currency/material item codes; Lem is intentionally excluded
+// Static values: Pul, Um, Mal, Ist, Gul, Vex, Sur, Ber
+// Dynamic rune values: Ohm, Lo, Jah, Cham, Zod; median rounded to nearest 0.05 HR
+// Dynamic material values: keys, boss materials, and selected utility currency; exact median HR values with WSS converted at 0.01 HR each
+// Updated: 2026-04-30T08:10:31.226Z
+ItemDisplay[r21s]: %NAME%{%NAME%%CL%%PURPLE%24H %WHITE%0.03 HR %PURPLE%48H %WHITE%0.03 HR %PURPLE%72H %WHITE%0.03 HR %PURPLE%1W %WHITE%0.03 HR%CL%%PURPLE%Current Values:%CL%}
+ItemDisplay[r22s]: %NAME%{%NAME%%CL%%PURPLE%24H %WHITE%0.05 HR %PURPLE%48H %WHITE%0.05 HR %PURPLE%72H %WHITE%0.05 HR %PURPLE%1W %WHITE%0.05 HR%CL%%PURPLE%Current Values:%CL%}
+ItemDisplay[r23s]: %NAME%{%NAME%%CL%%PURPLE%24H %WHITE%0.1 HR %PURPLE%48H %WHITE%0.1 HR %PURPLE%72H %WHITE%0.1 HR %PURPLE%1W %WHITE%0.1 HR%CL%%PURPLE%Current Values:%CL%}
+ItemDisplay[r24s]: %NAME%{%NAME%%CL%%PURPLE%24H %WHITE%0.15 HR %PURPLE%48H %WHITE%0.15 HR %PURPLE%72H %WHITE%0.15 HR %PURPLE%1W %WHITE%0.15 HR%CL%%PURPLE%Current Values:%CL%}
+ItemDisplay[r25s]: %NAME%{%NAME%%CL%%PURPLE%24H %WHITE%0.25 HR %PURPLE%48H %WHITE%0.25 HR %PURPLE%72H %WHITE%0.25 HR %PURPLE%1W %WHITE%0.25 HR%CL%%PURPLE%Current Values:%CL%}
+ItemDisplay[r26s]: %NAME%{%NAME%%CL%%PURPLE%24H %WHITE%0.5 HR %PURPLE%48H %WHITE%0.5 HR %PURPLE%72H %WHITE%0.5 HR %PURPLE%1W %WHITE%0.5 HR%CL%%PURPLE%Current Values:%CL%}
+ItemDisplay[r27s]: %NAME%{%NAME%%CL%%PURPLE%24H %WHITE%0.85 HR %PURPLE%48H %WHITE%0.85 HR %PURPLE%72H %WHITE%0.85 HR %PURPLE%1W %WHITE%0.8 HR%CL%%PURPLE%Current Values:%CL%}
+ItemDisplay[r28s]: %NAME%{%NAME%%CL%%PURPLE%24H %WHITE%0.9 HR %PURPLE%48H %WHITE%1 HR %PURPLE%72H %WHITE%1 HR %PURPLE%1W %WHITE%1 HR%CL%%PURPLE%Current Values:%CL%}
+ItemDisplay[r29s]: %NAME%{%NAME%%CL%%PURPLE%24H %WHITE%1.5 HR %PURPLE%48H %WHITE%1.5 HR %PURPLE%72H %WHITE%1.5 HR %PURPLE%1W %WHITE%1.5 HR%CL%%PURPLE%Current Values:%CL%}
+ItemDisplay[r30s]: %NAME%{%NAME%%CL%%PURPLE%24H %WHITE%3 HR %PURPLE%48H %WHITE%3 HR %PURPLE%72H %WHITE%3 HR %PURPLE%1W %WHITE%3 HR%CL%%PURPLE%Current Values:%CL%}
+ItemDisplay[r31s]: %NAME%{%NAME%%CL%%PURPLE%24H %WHITE%1.7 HR %PURPLE%48H %WHITE%1.6 HR %PURPLE%72H %WHITE%1.6 HR %PURPLE%1W %WHITE%1.5 HR%CL%%PURPLE%Current Values:%CL%}
+ItemDisplay[r32s]: %NAME%{%NAME%%CL%%PURPLE%24H %WHITE%1.85 HR %PURPLE%48H %WHITE%1.75 HR %PURPLE%72H %WHITE%1.5 HR %PURPLE%1W %WHITE%1.5 HR%CL%%PURPLE%Current Values:%CL%}
+ItemDisplay[r33s]: %NAME%{%NAME%%CL%%PURPLE%24H %WHITE%3.5 HR %PURPLE%48H %WHITE%3.5 HR %PURPLE%72H %WHITE%3.5 HR %PURPLE%1W %WHITE%3 HR%CL%%PURPLE%Current Values:%CL%}
+ItemDisplay[pk3]: %NAME%{%NAME%%CL%%PURPLE%24H %WHITE%0.09 HR %PURPLE%48H %WHITE%0.1 HR %PURPLE%72H %WHITE%0.1 HR %PURPLE%1W %WHITE%0.1 HR%CL%%PURPLE%Current Values:%CL%}
+ItemDisplay[pk2]: %NAME%{%NAME%%CL%%PURPLE%24H %WHITE%0.08 HR %PURPLE%48H %WHITE%0.08 HR %PURPLE%72H %WHITE%0.08 HR %PURPLE%1W %WHITE%0.08 HR%CL%%PURPLE%Current Values:%CL%}
+ItemDisplay[pk1]: %NAME%{%NAME%%CL%%PURPLE%24H %WHITE%0.1 HR %PURPLE%48H %WHITE%0.1 HR %PURPLE%72H %WHITE%0.1 HR %PURPLE%1W %WHITE%0.09 HR%CL%%PURPLE%Current Values:%CL%}
+ItemDisplay[ubaa]: %NAME%{%NAME%%CL%%PURPLE%24H %WHITE%0.03 HR %PURPLE%48H %WHITE%0.04 HR %PURPLE%72H %WHITE%0.03 HR %PURPLE%1W %WHITE%0.02 HR%CL%%PURPLE%Current Values:%CL%}
+ItemDisplay[ubab]: %NAME%{%NAME%%CL%%PURPLE%24H %WHITE%0.1 HR %PURPLE%48H %WHITE%0.08 HR %PURPLE%72H %WHITE%0.07 HR %PURPLE%1W %WHITE%0.05 HR%CL%%PURPLE%Current Values:%CL%}
+ItemDisplay[ubac]: %NAME%{%NAME%%CL%%PURPLE%24H %WHITE%0.05 HR %PURPLE%48H %WHITE%0.05 HR %PURPLE%72H %WHITE%0.05 HR %PURPLE%1W %WHITE%0.06 HR%CL%%PURPLE%Current Values:%CL%}
+ItemDisplay[dcbl]: %NAME%{%NAME%%CL%%PURPLE%24H %WHITE%0.1 HR %PURPLE%48H %WHITE%0.1 HR %PURPLE%72H %WHITE%0.1 HR %PURPLE%1W %WHITE%0.15 HR%CL%%PURPLE%Current Values:%CL%}
+ItemDisplay[dcso]: %NAME%{%NAME%%CL%%PURPLE%24H %WHITE%0.35 HR %PURPLE%48H %WHITE%0.35 HR %PURPLE%72H %WHITE%0.3 HR %PURPLE%1W %WHITE%0.25 HR%CL%%PURPLE%Current Values:%CL%}
+ItemDisplay[dcho]: %NAME%{%NAME%%CL%%PURPLE%24H %WHITE%0.25 HR %PURPLE%48H %WHITE%0.3 HR %PURPLE%72H %WHITE%0.3 HR %PURPLE%1W %WHITE%0.3 HR%CL%%PURPLE%Current Values:%CL%}
+ItemDisplay[rtmo]: %NAME%{%NAME%%CL%%PURPLE%24H %WHITE%0.03 HR %PURPLE%48H %WHITE%0.02 HR %PURPLE%72H %WHITE%0.02 HR %PURPLE%1W %WHITE%0.03 HR%CL%%PURPLE%Current Values:%CL%}
+ItemDisplay[rtmv]: %NAME%{%NAME%%CL%%PURPLE%24H %WHITE%0.25 HR %PURPLE%48H %WHITE%0.25 HR %PURPLE%72H %WHITE%0.21 HR %PURPLE%1W %WHITE%0.15 HR%CL%%PURPLE%Current Values:%CL%}
+ItemDisplay[cm2f]: %NAME%{%NAME%%CL%%PURPLE%24H %WHITE%0.5 HR %PURPLE%48H %WHITE%0.5 HR %PURPLE%72H %WHITE%0.5 HR %PURPLE%1W %WHITE%0.5 HR%CL%%PURPLE%Current Values:%CL%}
+ItemDisplay[lucb]: %NAME%{%NAME%%CL%%PURPLE%24H %WHITE%0.15 HR %PURPLE%48H %WHITE%0.2 HR %PURPLE%72H %WHITE%0.2 HR %PURPLE%1W %WHITE%0.2 HR%CL%%PURPLE%Current Values:%CL%}
+ItemDisplay[lucc]: %NAME%{%NAME%%CL%%PURPLE%24H %WHITE%0.03 HR %PURPLE%48H %WHITE%0.02 HR %PURPLE%72H %WHITE%0.02 HR %PURPLE%1W %WHITE%0.02 HR%CL%%PURPLE%Current Values:%CL%}
+ItemDisplay[lucd]: %NAME%{%NAME%%CL%%PURPLE%24H %WHITE%0.05 HR %PURPLE%48H %WHITE%0.05 HR %PURPLE%72H %WHITE%0.04 HR %PURPLE%1W %WHITE%0.03 HR%CL%%PURPLE%Current Values:%CL%}
+ItemDisplay[lbox]: %NAME%{%NAME%%CL%%PURPLE%24H %WHITE%0.5 HR %PURPLE%48H %WHITE%0.5 HR %PURPLE%72H %WHITE%0.5 HR %PURPLE%1W %WHITE%0.5 HR%CL%%PURPLE%Current Values:%CL%}
+ItemDisplay[lpp]: %NAME%{%NAME%%CL%%PURPLE%24H %WHITE%0.07 HR %PURPLE%48H %WHITE%0.07 HR %PURPLE%72H %WHITE%0.06 HR %PURPLE%1W %WHITE%0.05 HR%CL%%PURPLE%Current Values:%CL%}
+ItemDisplay[imrn]: %NAME%{%NAME%%CL%%PURPLE%24H %WHITE%0.42 HR %PURPLE%48H %WHITE%0.4 HR %PURPLE%72H %WHITE%0.4 HR %PURPLE%1W %WHITE%0.4 HR%CL%%PURPLE%Current Values:%CL%}
+ItemDisplay[iwss]: %NAME%{%NAME%%CL%%PURPLE%24H %WHITE%0.15 HR %PURPLE%48H %WHITE%0.13 HR %PURPLE%72H %WHITE%0.1 HR %PURPLE%1W %WHITE%0.1 HR%CL%%PURPLE%Current Values:%CL%}
+ItemDisplay[std]: %NAME%{%NAME%%CL%%PURPLE%24H %WHITE%0.05 HR %PURPLE%48H %WHITE%0.05 HR %PURPLE%72H %WHITE%0.05 HR %PURPLE%1W %WHITE%0.05 HR%CL%%PURPLE%Current Values:%CL%}
+ItemDisplay[fed]: %NAME%{%NAME%%CL%%PURPLE%24H %WHITE%0.25 HR %PURPLE%48H %WHITE%0.25 HR %PURPLE%72H %WHITE%0.22 HR %PURPLE%1W %WHITE%0.15 HR%CL%%PURPLE%Current Values:%CL%}
+ItemDisplay[ceh]: %NAME%{%NAME%%CL%%PURPLE%24H %WHITE%0.07 HR %PURPLE%48H %WHITE%0.05 HR %PURPLE%72H %WHITE%0.07 HR %PURPLE%1W %WHITE%0.07 HR%CL%%PURPLE%Current Values:%CL%}
+ItemDisplay[bet]: %NAME%{%NAME%%CL%%PURPLE%24H %WHITE%0.04 HR %PURPLE%48H %WHITE%0.04 HR %PURPLE%72H %WHITE%0.05 HR %PURPLE%1W %WHITE%0.04 HR%CL%%PURPLE%Current Values:%CL%}
+ItemDisplay[tes]: %NAME%{%NAME%%CL%%PURPLE%24H %WHITE%0.02 HR %PURPLE%48H %WHITE%0.02 HR %PURPLE%72H %WHITE%0.02 HR %PURPLE%1W %WHITE%0.02 HR%CL%%PURPLE%Current Values:%CL%}
+// END AUTO PD2TRADER RUNE VALUES
 // Craft Infusions
 ItemDisplay[crfb]: %DOT-66%%ORANGE%[%RED%O%ORANGE%] %NAME%{%NAME%}
 ItemDisplay[crfc]: %DOT-66%%ORANGE%[%PURPLE%O%ORANGE%] %NAME%{%NAME%}
@@ -5405,7 +5934,7 @@ ItemDisplay[NMAG !RW SORSTAFF (FILTLVL<2 OR (CLVL<80 AND FILTLVL~2-5))]: %NAME%{
 ItemDisplay[UNI OR SET OR RW OR CRAFT OR GEMMED OR EQUIPPED OR SHOP OR leg]: %NAME%{%NAME%}
 
 // Unknown item notification fallback
-ItemDisplay[(ILVL>1 OR QTY>0 OR PRICE>1) !(ARMOR OR WEAPON OR amu OR rin OR QUIVER OR cm1 OR cm2 OR cm3 OR jew OR jewf OR RUNE>0 OR GEMTYPE>0 OR MAPTIER>-1 OR hp1 OR mp1 OR hp2 OR mp2 OR hp3 OR mp3 OR hp4 OR mp4 OR hp5 OR mp5 OR pvpp OR rvs OR rvl OR vps OR wms OR yps OR key OR tsc OR isc OR tbk OR ibk OR ear OR bks OR bkd OR box OR vip OR tr1 OR ass OR j34 OR g34 OR xyz OR bbb OR qbr OR qey OR qhr OR mss OR ice OR tr2 OR toa OR tes OR ceh OR bet OR fed OR dhn OR bey OR mbr OR pk1 OR pk2 OR pk3 OR std OR wss OR cwss OR lpp OR lbox OR lmal OR crfb OR crfc OR crfh OR crfs OR crfv OR crfu OR crfp OR rtp OR rid OR rkey OR lsvl OR llmr OR ubtm OR uba OR ubaa OR ubab OR ubac OR dcma OR dcso OR dcho OR dcbl OR rtma OR rtmv OR rtmo OR cm2f OR rtmf OR iwss OR scrb OR upmp OR scou OR irma OR irra OR urma OR rrra OR imma OR imra OR upma OR rera OR fort OR ram OR luca OR lucb OR lucc OR lucd OR imrn OR cm1p OR cm2p OR cm3p)]: %SOUNDID-705%%MAP-0A%%PX-62%%NAME%{%NAME%%CL%%WHITE%Item description will be adjusted later during the season.%CL%%TAN%Note%WHITE%: This item is recently added to the game.}	// notifications for unknown items (the first group of conditions including ilvl/qty/price is a workaround for !GOLD>0 since that doesn't work like other conditions)
+ItemDisplay[(ILVL>1 OR QTY>0 OR PRICE>1) !(ARMOR OR WEAPON OR amu OR rin OR QUIVER OR cm1 OR cm2 OR cm3 OR jew OR jewf OR RUNE>0 OR GEMTYPE>0 OR MAPTIER>-1 OR hp1 OR mp1 OR hp2 OR mp2 OR hp3 OR mp3 OR hp4 OR mp4 OR hp5 OR mp5 OR pvpp OR rvs OR rvl OR vps OR wms OR yps OR key OR tsc OR isc OR tbk OR ibk OR ear OR bks OR bkd OR box OR vip OR tr1 OR ass OR j34 OR g34 OR xyz OR bbb OR qbr OR qey OR qhr OR mss OR ice OR tr2 OR toa OR tes OR ceh OR bet OR fed OR dhn OR bey OR mbr OR pk1 OR pk2 OR pk3 OR std OR wss OR cwss OR lpp OR lbox OR lmal OR crfb OR crfc OR crfh OR crfs OR crfv OR crfu OR crfp OR rtp OR rid OR rkey OR lsvl OR llmr OR ubtm OR uba OR ubaa OR ubab OR ubac OR dcma OR dcso OR dcho OR dcbl OR rtma OR rtmv OR rtmo OR cm2f OR rtmf OR iwss OR scrb OR upmp OR scou OR irma OR irra OR urma OR rrra OR imma OR imra OR upma OR rera OR fort OR ram OR luca OR lucb OR lucc OR lucd OR imrn OR cm1p OR cm2p OR cm3p)]: %SOUNDID-705%%MAP-0A%%PX-62%%NAME%{%NAME%%CL%%WHITE%Item description will be adjusted later during the season.%CL%%TAN%Note%WHITE%: This item is recently added to the game.}	// notifications for unknown items (the first group of conditions including ilvl/qty/price is a workaround for !GOLD>0 since that doesn't work like other conditions)%CONTINUE%
 
 // Hide rare Heavy Bolts
 ItemDisplay[(cqv1 OR cqv2 OR cqv3) RARE]:{%NAME%}
@@ -5445,3 +5974,4 @@ ItemDisplay[(ARMOR OR WEAPON OR QUIVER) !THROWPOTS ((CLVL>30 FILTLVL>0) OR FILTL
 // Size reference: BORDER > MAP > DOT > PX
 // %TIER-X% - just minimap pin w/o chat notify when tier is higher
 // Optional tier display reference
+
