@@ -3865,6 +3865,22 @@ ItemDisplay[UNI !ID uhc ETH]:%SOUNDID-2664%%MAP-0C%%ORANGE%++%CORAL%++%SAGE%++  
 ItemDisplay[UNI !ID neg !ETH]:%MAP-0C%%ORANGE%++%CORAL%++%SAGE%++    %RED%Sacred Totem%PURPLE%[%GRAY%%NAME%%PURPLE%]%WHITE%(New)     %SAGE%++%CORAL%++%ORANGE%++
 ItemDisplay[UNI !ID neg ETH]:%MAP-0C%%ORANGE%++%CORAL%++%SAGE%++    %WHITE%(e) %RED%Sacred Totem%PURPLE%[%GRAY%%NAME%%PURPLE%]%WHITE%(New)     %SAGE%++%CORAL%++%ORANGE%++
 
+//s13
+ItemDisplay[UNI !ID obd !ETH]:%MAP-0C%%ORANGE%++%CORAL%++%SAGE%++     %RED%Embersworn%GOLD%[%BASENAME%]%WHITE%(New)     %ORANGE%++%CORAL%++%SAGE%++
+ItemDisplay[UNI !ID obd ETH]:%MAP-0C%%ORANGE%++%CORAL%++%SAGE%++     %WHITE%[%PURPLE%E%WHITE%t%BLUE%h%WHITE%] %RED%Embersworn%GOLD%[%BASENAME%]%WHITE%(New)     %ORANGE%++%CORAL%++%SAGE%++
+
+ItemDisplay[UNI !ID 7vo !ETH]:%MAP-0C%%ORANGE%++%CORAL%++%SAGE%++     %RED%Giant Maimer%GOLD%[%BASENAME%]%WHITE%(New)     %ORANGE%++%CORAL%++%SAGE%++
+ItemDisplay[UNI !ID 7vo ETH]:%MAP-0C%%ORANGE%++%CORAL%++%SAGE%++     %WHITE%[%PURPLE%E%WHITE%t%BLUE%h%WHITE%] %RED%Giant Maimer%GOLD%[%BASENAME%]%WHITE%(New)     %ORANGE%++%CORAL%++%SAGE%++
+
+ItemDisplay[UNI !ID pab !ETH]:%MAP-0C%%ORANGE%++%CORAL%++%SAGE%++     %RED%Ephemeral%GOLD%[%BASENAME%]%WHITE%(New)     %ORANGE%++%CORAL%++%SAGE%++
+ItemDisplay[UNI !ID pab ETH]:%MAP-0C%%ORANGE%++%CORAL%++%SAGE%++     %WHITE%[%PURPLE%E%WHITE%t%BLUE%h%WHITE%] %RED%Ephemeral%GOLD%[%BASENAME%]%WHITE%(New)     %ORANGE%++%CORAL%++%SAGE%++
+
+ItemDisplay[UNI !ID obe !ETH]:%MAP-0C%%ORANGE%++%CORAL%++%SAGE%++     %RED%Skyfall%GOLD%[%BASENAME%]%WHITE%(New)     %ORANGE%++%CORAL%++%SAGE%++
+ItemDisplay[UNI !ID obe ETH]:%MAP-0C%%ORANGE%++%CORAL%++%SAGE%++     %WHITE%[%PURPLE%E%WHITE%t%BLUE%h%WHITE%] %RED%Skyfall%GOLD%[%BASENAME%]%WHITE%(New)     %ORANGE%++%CORAL%++%SAGE%++
+
+ItemDisplay[UNI !ID 7yw !ETH]:%MAP-0C%%ORANGE%++%CORAL%++%SAGE%++     %RED%Nethercrux%GOLD%[%BASENAME%]%WHITE%(New)     %ORANGE%++%CORAL%++%SAGE%++
+ItemDisplay[UNI !ID 7yw ETH]:%MAP-0C%%ORANGE%++%CORAL%++%SAGE%++     %WHITE%[%PURPLE%E%WHITE%t%BLUE%h%WHITE%] %RED%Nethercrux%GOLD%[%BASENAME%]%WHITE%(New)     %ORANGE%++%CORAL%++%SAGE%++
+
 //s12
 ItemDisplay[UNI !ID 6hb]:%SOUNDID-2664%%MAP-0C% %ORANGE%++%CORAL%++%SAGE%++    %RED%Crackleshot%PURPLE%[%GRAY%%NAME%%PURPLE%]%WHITE%(New)     %SAGE%++%CORAL%++%ORANGE%++
 ItemDisplay[UNI !ID (aqv)]:%GOLD%+%PURPLE%+ %TAN%Balefire%PURPLE%[%GRAY%%NAME%%PURPLE%]%WHITE%(New) %PURPLE%+%GOLD%+
@@ -7529,7 +7545,7 @@ ItemDisplay[(WP11 OR fla OR 9fl OR 7fl) NMAG !RW (SOCK=4)]:%NAME%{%NL%%GOLD%Hear
 ItemDisplay[(WEAPON OR EQ3) NMAG !RW (SOCK=4)]:%NAME%{%NL%%GOLD%Phoenix:%ORANGE%Vex%WHITE%+%RED%Vex%WHITE%+%YELLOW%Lo%WHITE%+%TAN%Jah%NAME%}%CONTINUE%
 ItemDisplay[EQ3 NMAG !RW (SOCK=2)]:%NAME%{%NL%%GOLD%Splendor:%ORANGE%Eth%WHITE%+%RED%Lum%NAME%}%CONTINUE%
 ItemDisplay[EQ3 NMAG !RW (SOCK=2)]:%NAME%{%NL%%GOLD%Ryhme:%ORANGE%Shael%WHITE%+%RED%Eth%NAME%}%CONTINUE%
-ItemDisplay[WEAPON NMAG !RW (SOCK=5)]:%NAME%{%NL%%GOLD%Call to Arms:%ORANGE%Amn%WHITE%+%RED%Ral%WHITE%+%YELLOW%Mal%WHITE%+%BLUE%Ist%WHITE%+%BLUE%Ohm%NAME%}%CONTINUE%
+ItemDisplay[WEAPON !WP9 !WP10 NMAG !RW (SOCK=5)]:%NAME%{%NL%%GOLD%Call to Arms:%ORANGE%Amn%WHITE%+%RED%Ral%WHITE%+%YELLOW%Mal%WHITE%+%BLUE%Ist%WHITE%+%BLUE%Ohm%NAME%}%CONTINUE%
 ItemDisplay[WP13 NMAG !RW (SOCK=4)]:%NAME%{%NL%%GOLD%Holy Thunder:%ORANGE%Eth%WHITE%+%ORANGE%Ral%WHITE%+%YELLOW%Ort%WHITE%+%TAN%Tal%NAME%}%CONTINUE%
 ItemDisplay[(WP11 OR WP1 OR WP13 OR whm OR 9wh OR 7wh OR mau OR 9m9 OR 7m7 OR gma OR 9gm OR 7gm) !RW NMAG (SOCK=5)]:%NAME%{%NL%%GOLD%Beast:%ORANGE%Ber%WHITE%+%ORANGE%Tir%WHITE%+%YELLOW%Um%WHITE%+%TAN%Mal%WHITE%+%GOLD%Lum%NAME%}%CONTINUE%
 ItemDisplay[(WP1 OR whm OR 9wh OR 7wh OR mau OR 9m9 OR 7m7 OR gma OR 9gm OR 7gm OR WP3) NMAG !RW (SOCK=6)]:%NAME%{%NL%%GOLD%Last Wish:%ORANGE%Jah%WHITE%+%RED%Mal%WHITE%+%YELLOW%Jah%WHITE%+%DARK_GREEN%Sur%WHITE%+%GOLD%Jah%WHITE%+%GREEN%Ber%NAME%}%CONTINUE% 
