@@ -1795,6 +1795,7 @@ ItemDisplay[!ID RARE cqv3]:%YELLOW%x ³Check Bolts x{%NAME%}%CONTINUE%
 			
 	\~~~
 
+ItemDisplay[NMAG HELM !DRU !BAR SOCK=2 FILTLVL>1]://
 
 //hide
 //ItemDisplay[!ID RARE HELM !DRU !BAR !CIRC FILTLVL>1]://
