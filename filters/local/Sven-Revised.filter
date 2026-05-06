@@ -90,6 +90,161 @@ Alias[wtf_i]:((!ID UNI uh9 MAPID=137) OR (!ID UNI rar) OR (!ID UNI uth) OR (!ID 
 Alias[caster_i]:(CLUB OR SCEPTER OR WAND OR STAFF OR (DAGGER !THROWING) OR DRU OR BAR OR DIN OR NEC OR SIN OR SOR)
 Alias[caster2_i]:(STAFF OR WAND OR SOR)
 Alias[caster3_i]:(STAFF OR WAND OR SOR OR NEC OR SCEPTER OR (DAGGER !THROWING) OR SIN OR DRU OR BAR)
+/~~~//good vs bad item groups
+//1h axe
+Alias[bad_rw_1haxe]:((7mp OR 9mp OR mpi OR 9ha OR hax OR 9ax OR axe OR 92a OR 2ax OR 9wa OR wax) OR (7wa (SOCK=3 OR SOCK=2)) OR (72a (SOCK=4 OR SOCK=3 OR SOCK=2)))
+Alias[bad_rare_1haxe]:(7ha OR 9ha OR hax OR 72a OR 92a OR 2ax OR 7mp OR 9mp OR mpi)
+Alias[good_slow_rw_1haxe]:((7ax (SOCK=4 OR SOCK=3 OR SOCK=2 OR SOCK=0)) OR (72a (SOCK=5 OR SOCK=0)) OR )
+Alias[good_fast_rw_1haxe]:((7ha (SOCK=3 OR SOCK=2 OR SOCK=0)) OR (7wa (SOCK=6 OR SOCK=5 OR SOCK=4 OR SOCK=0)))
+Alias[good_slow_rare_1haxe]:(7ax OR 9ax OR axe)
+Alias[good_fast_rare_1haxe]:(7wa OR 9wa OR wax)
+//2h AXE
+Alias[bad_rw_2haxe]:((7la OR 9la OR lax OR 7bt OR 9bt OR btx OR 9gi OR gix OR 9ga OR gax OR bax OR 9ba) OR (7ga (SOCK=5 OR SOCK=4 OR SOCK=3 OR SOCK=2)))
+Alias[bad_rare_2haxe]:(lax OR 9la OR 7la OR 7bt OR 9bt OR btx OR 7ba OR 9ba OR bax)
+Alias[good_slow_rw_2haxe]:(7gi (SOCK=6 OR SOCK=5 OR SOCK=4 OR SOCK=3 OR SOCK=2 OR SOCK=0))
+Alias[good_fast_rw_2haxe]:((7ga (SOCK=6 OR SOCK=0)) OR (7ba (SOCK=5 OR SOCK=4 OR SOCK=3 OR SOCK=2 OR SOCK=0)))
+Alias[good_slow_rare_2haxe]:(gix OR 9gi OR 7gi)
+Alias[good_fast_rare_2haxe]:(7ga OR 9ga OR gax)
+//1h CLUB
+Alias[bad_rw_1hclub]:(7cl OR 9cl OR clb OR 9sp OR spc)
+Alias[bad_rare_1hclub]:(7cl OR 9cl OR clb)
+Alias[good_rw_1hclub]:((7sp (SOCK=3 OR SOCK=2 OR SOCK=0)))
+Alias[good_rare_1hclub]:(7sp OR 9sp OR spc)
+//TMACE
+Alias[bad_rw_tmace]:((mac OR 9ma OR mst OR 9mt OR fla OR 9fl) OR (7fl (SOCK=3 OR SOCK=2)))
+Alias[bad_rare_tmace]:(mac OR 9ma OR 7ma)
+Alias[good_slow_rw_tmace]:((7fl (SOCK=5 OR SOCK=4 OR SOCK=0)) OR (7mt (SOCK=3 OR SOCK=2 OR SOCK=0)))
+Alias[good_fast_rw_tmace]:((7fl (SOCK=5 OR SOCK=4 OR SOCK=0)) OR (7ma (SOCK=3 OR SOCK=2 OR SOCK=0)))
+Alias[good_slow_rare_tmace]:(mst OR 9mt OR 7mt)
+Alias[good_fast_rare_tmace]:(fla OR 9fl OR 7fl)
+//1h hammer
+Alias[bad_rw_1hhammer]:(whm OR 9wh)
+Alias[good_rw_1hhammer]:((7wh (SOCK=4 OR SOCK=3 OR SOCK=2 OR SOCK=0)))
+Alias[good_rare_1hhammer]:(whm OR 9wh OR 7wh)
+//2h hammer
+Alias[bad_rw_2hhammer]:(mau OR 9m9 OR gma OR 9gm)
+Alias[good_tight_rw_2hhammer]:(7m7 (SOCK=6 OR SOCK=5 OR SOCK=4 OR SOCK=3 OR SOCK=2 OR SOCK=0))
+Alias[good_loose_rw_2hhammer]:(7gm (SOCK=6 OR SOCK=5 OR SOCK=4 OR SOCK=3 OR SOCK=2 OR SOCK=0))
+Alias[good_tight_rare_2hhammer]:(7m7 OR 9m9 OR mau)
+Alias[good_loose_rare_2hhammer]:(7gm OR 9gm OR gma)
+//1h swords
+Alias[bad_rw_1hsword]:((7ss OR 9ss OR ssd OR 7sm OR 9sm OR scm OR 7sb OR 9sb OR sbr OR 7fc OR 9fc OR flc OR 9wd OR 7ls OR wsd OR 9bs OR bsd OR 9cr OR crs OR lsd OR 9ls OR 7wd OR 7ls) OR (7bs (SOCK=3 OR SOCK=2)))
+Alias[bad_rare_1hsword]:(7ss OR 9ss OR ssd OR lsd OR 7sm OR 9ls OR 9sm OR scm OR 7sb OR 9sb OR sbr OR 7fc OR 9fc OR 7ls OR flc)
+Alias[good_slow_rw_1hsword]:((7cr (SOCK=6 OR SOCK=5 OR SOCK=4 OR SOCK=3 OR SOCK=2 OR SOCK=0) OR (7bs (SOCK=4 OR SOCK=0)) OR (7wd (SOCK=3 OR SOCK=2 OR SOCK=0))))
+Alias[good_fast_rw_1hsword]:((7cr (SOCK=6 OR SOCK=5 OR SOCK=4 OR SOCK=3 OR SOCK=2 OR SOCK=0) OR (7bs (SOCK=4 OR SOCK=0)) OR (7wd (SOCK=3 OR SOCK=2 OR SOCK=0))))
+Alias[good_rare_1hsword]:(bsd OR 9bs OR 7bs OR 7cr OR 9cr OR crs)
+//2h swords
+Alias[bad_rw_2hsword]:((72h OR 92h OR 2hs OR 7cm OR 9cm OR clm OR 7gs OR 9gs OR gis OR 9gd OR gsd OR 9fb OR 9b9 OR bsw OR flb) OR (7gd (SOCK=4 OR SOCK=3 OR SOCK=2)))
+Alias[bad_rare_2hsword]:(72h OR 92h OR 2hs OR 7cm OR 9cm OR clm OR 7gs OR 9gs OR gis OR 7b7 OR 9b9 OR bsw OR 7fb OR 9fb OR flb)
+Alias[good_slow_rw_2hsword]:((7gd (SOCK=6 OR SOCK=0)) OR (7fb (SOCK=5 OR SOCK=4 OR SOCK=3 OR SOCK=2 OR SOCK=0)))
+Alias[good_fast_rw_2hsword]:((7gd (SOCK=6 OR SOCK=5 OR SOCK=0)) OR (7b7 (SOCK=4 OR SOCK=3 OR SOCK=2 OR SOCK=0)))
+Alias[good_rare_2hsword]:(7gd OR 9gd OR gsd)
+//DAGGER
+Alias[bad_rw_dagger]:((7dg OR 9dg OR dgr OR dir OR 9di OR kri OR 9kr OR bld OR 9bl OR bld) OR (7kr (SOCK=2)))
+Alias[bad_rare_dagger]:(7dg OR 9dg OR dgr OR dir OR 9di OR 7di OR 9bl OR bld OR 7bl)
+Alias[good_slow_rw_dagger]:((7kr (SOCK=3 OR SOCK=0)) OR (7di (SOCK=2 OR SOCK=0)))
+Alias[good_fast_rw_dagger]:((7kr (SOCK=3 OR SOCK=0)) OR (7bl (SOCK=2 OR SOCK=0)))
+Alias[good_rare_dagger]:(kri OR 9kr OR 7kr)
+//throwing knife
+Alias[bad_rw_tknife]:(tkf OR 9tk OR bkf OR 9bk)
+Alias[good_slow_rw_tknife]:(7tk (SOCK=2 OR SOCK=0))
+Alias[good_fast_rw_tknife]:(7bk (SOCK=2 OR SOCK=0))
+Alias[good_slow_rare_tknife]:(tkf OR 9tk OR 7tk)
+Alias[good_fast_rare_tknife]:(7bk OR 9bk OR bkf)
+//throwing axe
+Alias[bad_rw_taxe]:((bal OR 9b8 OR tax OR 9ta) OR (7b8 (SOCK=2)))
+Alias[bad_rare_taxe]:(tax OR 9ta OR 7ta)
+Alias[good_slow_rw_taxe]:((7b8 (SOCK=3 OR SOCK=0)) OR (7ta (SOCK=2 OR SOCK=0)))
+Alias[good_fast_rw_taxe]:(7b8 (SOCK=3 OR SOCK=2 OR SOCK=0))
+Alias[good_rare_taxe]:(bal OR 9b8 OR 7b8)
+//throwing spear
+Alias[bad_rw_tspear]:((jav OR 9ja OR 7ja OR pil OR 9pi OR 7pi OR ssp OR 9s9 OR glv OR 9gl OR tsp OR 9ts) OR (7gl (SOCK=2)) OR (7ts (SOCK=2)))
+Alias[bad_rare_tspear]:(jav OR 9ja OR 7ja OR pil OR 9pi OR 7pi OR 7s7 OR 9s9 OR ssp)
+Alias[good_slow_rw_tspear]:((7gl (SOCK=3 OR SOCK=0)) OR (7s7 (SOCK=2 OR SOCK=0)))
+Alias[good_fast_rw_tspear]:((7ts (SOCK=3 OR SOCK=0)) OR (7s7 (SOCK=2 OR SOCK=0)))
+Alias[good_slow_rare_tspear]:(7gl OR 9gl OR glv)
+Alias[good_fast_rare_tspear]:(7ts OR 9ts OR tsp)
+//2h spear
+Alias[bad_rw_2hspear]:(tri OR 9tr OR 7tr OR brn OR 9br OR 7br OR spt OR 9st OR 7st OR 9p9 OR pik OR 9sr OR spr)
+Alias[bad_rare_2hspear]:(tri OR 9tr OR 7tr OR brn OR 9br OR 7br OR spt OR 9st OR 7st)
+Alias[good_slow_rw_2hspear]:(7p7 (SOCK=6 OR SOCK=5 OR SOCK=4 OR SOCK=3 OR SOCK=2 OR SOCK=0))
+Alias[good_fast_rw_2hspear]:(7sr (SOCK=6 OR SOCK=5 OR SOCK=4 OR SOCK=3 OR SOCK=2 OR SOCK=0))
+Alias[good_slow_rare_2hspear]:(pik OR 9p9 OR 7p7)
+Alias[good_fast_rare_2hspear]:(spr OR 9sr OR 7sr)
+//polearm
+Alias[bad_rw_polearm]:(bar OR 9b7 OR 7o7 OR vou OR 9vo OR 7vo OR scy OR 9s8 OR 7s8 OR pax OR hal OR wsc OR 9pa OR 9h9 OR 9wc)
+Alias[bad_rare_polearm]:(bar OR 9b7 OR 7o7 OR vou OR 9vo OR 7vo OR scy OR 9s8 OR 7s8 OR pax OR 9pa OR 7pa)
+Alias[good_slow_rw_polearm]:((7pa (SOCK=6 OR SOCK=5 OR SOCK=4 OR SOCK=3 OR SOCK=2 OR SOCK=0)) OR (7h7 (SOCK=6 OR SOCK=5 OR SOCK=4 OR SOCK=3 OR SOCK=2 OR SOCK=0)))
+Alias[good_fast_rw_polearm]:((7h7 (SOCK=6 OR SOCK=5 OR SOCK=4 OR SOCK=3 OR SOCK=2 OR SOCK=0)) OR (7wc (SOCK=6 OR SOCK=5 OR SOCK=4 OR SOCK=3 OR SOCK=2 OR SOCK=0)))
+Alias[good_rare_polearm]:(hal OR 9h9 OR 7h7 OR wsc OR 9wc OR 7wc)
+//bow
+Alias[bad_rw_bow]:((sbw OR hbw OR 8sb OR 8hb OR 6sb OR 6hb OR cbw OR 8cb OR 6cb OR swb OR 8sw OR 6sw OR lwb OR 8lw OR 6lw OR sbb OR lbb OR 8s8 OR 8l8 OR lbw OR 8lb) OR (6l7 (SOCK=5 OR SOCK=4 OR SOCK=3 OR SOCK=2)))
+Alias[bad_rare_bow]:(sbw OR hbw OR 8sb OR 8hb OR 6sb OR 6hb OR cbw OR 8cb OR 6cb OR swb OR 8sw OR 6sw OR lwb OR 8lw OR 6lw OR sbb OR 8s8 OR sbb OR 8s8 OR 6s7)
+Alias[good_slow_rw_bow]:((6l7 (SOCK=6 OR SOCK=0)) OR (6s7 (SOCK=5 OR SOCK=4 OR SOCK=3 OR SOCK=2 OR SOCK=0)))
+Alias[good_fast_rw_bow]:((6lb (SOCK=6 OR SOCK=0)) OR (6s7 (SOCK=5 OR SOCK=4 OR SOCK=3 OR SOCK=2 OR SOCK=0)))
+Alias[good_slow_rare_bow]:(lbb OR 8l8 OR 6l7)
+Alias[good_fast_rare_bow]:(6lb OR 8lb OR lbw)
+//xbow
+Alias[bad_rw_xbow]:((lxb OR 8lx OR 6lx OR mxb OR hxb OR rxb OR 8mx OR 8hx OR 8rx) OR (6rx (SOCK=4 OR SOCK=3 OR SOCK=2)))
+Alias[bad_rare_xbow]:(lxb OR mxb OR 8lx OR 8mx OR 6lx OR 6mx OR rxb OR 8rx OR 6rx)
+Alias[good_slow_rw_xbow]:(6hx (SOCK=6 OR SOCK=5 OR SOCK=4 OR SOCK=3 OR SOCK=2 OR SOCK=0))
+Alias[good_fast_rw_xbow]:((6rx (SOCK=5 OR SOCK=0)) OR (6hx (SOCK=6 OR SOCK=0)) OR  (6mx (SOCK=4 OR SOCK=3 OR SOCK=2 OR SOCK=0)))
+Alias[good_rare_xbow]:(hxb OR 8hx OR 6hx)
+//staff
+Alias[bad_rw_staff]:(sst OR 8ss OR 6ss OR lst OR cst OR bst OR wst OR 8ls OR 8cs OR 8bs OR 8ws)
+Alias[bad_rare_staff]:(sst OR lst OR cst OR bst OR 8ss OR 8ls OR 8cs OR 8bs OR 6ss OR 6ls OR 6cs OR 6bs)
+Alias[good_slow_rw_staff]:((6ws (SOCK=6 OR SOCK=5 OR SOCK=4 OR SOCK=3 OR SOCK=2 OR SOCK=0)) OR (6bs (SOCK=4 OR SOCK=3 OR SOCK=2 OR SOCK=0)) OR (6cs (SOCK=4 OR SOCK=3 OR SOCK=2 OR SOCK=0)) OR (6ls (SOCK=4 OR SOCK=3 OR SOCK=2 OR SOCK=0)))
+Alias[good_fast_rw_staff]:((6ws (SOCK=6 OR SOCK=5 OR SOCK=4 OR SOCK=3 OR SOCK=2 OR SOCK=0)) OR (6bs (SOCK=4 OR SOCK=3 OR SOCK=2 OR SOCK=0)) OR (6cs (SOCK=4 OR SOCK=3 OR SOCK=2 OR SOCK=0)) OR (6ls (SOCK=4 OR SOCK=3 OR SOCK=2 OR SOCK=0)))
+Alias[good_rare_staff]:(wst OR 8ws OR 6ws)
+//scepter
+Alias[bad_rare_scepter]:(scp OR gsc OR 9sc OR 9qs OR 7sc OR 7qs)
+Alias[good_slow_rw_scepter]:((7ws (SOCK=5 OR SOCK=4 OR SOCK=0)) OR (7qs (SOCK=3 OR SOCK=2 OR SOCK=0)))
+Alias[good_fast_rw_scepter]:((7ws (SOCK=5 OR SOCK=4 OR SOCK=0)) OR (7sc (SOCK=3 OR SOCK=2 OR SOCK=0)))
+Alias[good_rare_scepter]:(wsp OR 9ws OR 7ws)
+//claw
+Alias[bad_rare_claw]:(ces OR clw OR btl OR 9cs OR 9lw OR 9tw OR 7cs OR 7lw OR 7tw OR wrb OR 9wb OR 7wb)
+Alias[good_slow_rw_claw]:(7xf (SOCK=3 OR SOCK=2 OR SOCK=0))
+Alias[good_fast_rw_claw]:(7qr (SOCK=3 OR SOCK=2 OR SOCK=0))
+Alias[good_slow_rare_claw]:(axf OR 9xf OR 7xf)
+Alias[good_fast_rare_claw]:(skr OR 9qr OR 7qr OR ktr OR 9ar OR 7ar)
+//zon bow
+Alias[bad_rw_zbow]:(am1 OR am6 OR am2 OR am7)
+Alias[good_slow_rw_zbow]:(amc (SOCK=5 OR SOCK=4 OR SOCK=3 OR SOCK=2 OR SOCK=0))
+Alias[good_fast_rw_zbow]:(amb (SOCK=5 OR SOCK=4 OR SOCK=3 OR SOCK=2 OR SOCK=0))
+Alias[good_slow_rare_zbow]:(am2 OR am7 OR amc)
+Alias[good_fast_rare_zbow]:(am1 OR am6 OR amb)
+//zon 2hspear
+Alias[bad_rw_zspear]:(am3 OR am8 OR am4 OR am9)
+Alias[good_fast_rw_zspear]:(amd (SOCK=6 OR SOCK=5 OR SOCK=4 OR SOCK=3 OR SOCK=2 OR SOCK=0))
+Alias[good_slow_rw_zspear]:(ame (SOCK=6 OR SOCK=5 OR SOCK=4 OR SOCK=3 OR SOCK=2 OR SOCK=0))
+Alias[good_slow_rare_zspear]:(am3 OR am8 OR amd)
+Alias[good_fast_rare_zspear]:(am4 OR am9 OR ame)
+//zon throw
+Alias[bad_rw_zthrow]:(am5 OR ama)
+Alias[good_rw_zthrow]:(amf (SOCK=2 OR SOCK=0))
+Alias[good_rare_zthrow]:(am5 OR ama OR amf)
+//wand
+Alias[good_rw_wand]:(WAND (SOCK=2 OR SOCK=0))
+Alias[good_rare_wand]:WAND
+//orbs
+Alias[bad_rw_orb]:(ob1 OR ob2 OR ob3 OR ob4 OR ob6 OR ob7 OR ob8 OR ob9 OR obb OR obc OR obd OR obe)
+Alias[bad_rare_orb]:(ob1 OR ob2 OR ob3 OR ob4 OR ob6 OR ob7 OR ob8 OR ob9 OR obb OR obc OR obd OR obe)
+Alias[good_rw_orb]:((ob5 (SOCK=3 OR SOCK=2 OR SOCK=0)) OR (oba (SOCK=3 OR SOCK=2 OR SOCK=0)) OR (obf (SOCK=3 OR SOCK=2 OR SOCK=0)))
+Alias[good_rare_orb]:(ob5 OR oba OR obf)
+//pally shields
+Alias[bad_rw_pshield]:(pa1 OR pa2 OR pa3 OR pa4 OR pa5 OR pa6 OR pa7 OR pa8 OR pa9 OR paa)
+Alias[good_rw_pshield]:((ELT DIN (SOCK=4 OR SOCK=3 OR SOCK=0)))
+Alias[good_rare_pshield]:DIN
+//shields
+Alias[bad_rw_shield]:(buc OR sml OR lrg OR spk OR kit OR bsh OR xuc OR xml OR xrg OR xpk OR xit OR uuc OR uml OR urg OR upk OR ush OR tow OR gts OR xow OR xts)
+Alias[bad_rare_shield]:(buc OR sml OR lrg OR spk OR bsh OR xuc OR xml OR xrg OR xpk OR uuc OR uml OR urg OR upk OR ush)
+Alias[good_rw_shield]:((uts (SOCK=4 OR SOCK=3 OR SOCK=0)) OR (uow (SOCK=4 OR SOCK=3 OR SOCK=0)) OR (uit (SOCK=4 OR SOCK=3 OR SOCK=0)))
+Alias[good_rare_shield]:(gts OR xts OR uts OR uow OR xow OR tow OR kit OR xit OR uit)
+//brick eth bases to rare
+Alias[eth_brick_to_rare]:(7wa OR bsd OR 9bs OR 7bs OR 9wa OR wax OR 7ax OR 9ax OR axe OR 7gi OR 9gi OR gix OR 7ga OR 9ga OR gax OR 7sp OR 9sp OR spc OR 7fl OR 9fl OR fla OR 7mt OR 9mt OR mst OR 7wh OR 9wh OR whm OR 7m7 OR 9m9 OR mau OR 7gm OR 9gm OR gma OR crs OR 9cr OR 7gd OR 9gd OR gsd OR 7kr OR 9kr OR kri OR 7bk OR 9bk OR bkf OR 7tk OR 9tk OR tkf OR 7b8 OR 9b8 OR bal OR 7ts OR 9ts OR tsp OR 7gl OR 9gl OR glv OR pik OR 9p9 OR 7p7 OR 7sr OR 9sr OR spr OR hal OR wsc OR 9h9 OR 9wc OR 7h7 OR 7wc OR wsp OR 9ws OR 7ws OR ktr OR 9ar OR 7ar OR axf OR 9xf OR 7xf OR am3 OR am4 OR am8 OR am9 OR amd OR ame OR am5 OR ama OR amf)
+
+\~~~
+
 //both
 Alias[craftme_i]:(WEAPON OR ARMOR) //revisit this
 //quivers
@@ -735,9 +890,6 @@ ItemDisplay[gpgs OR gpg]:%WHITE%(%GREEN%O%WHITE%)%ORANGE%Perfect%CONTINUE%//emer
 ItemDisplay[gprs OR gpr]:%WHITE%(%RED%O%WHITE%)%ORANGE%Perfect%CONTINUE%//ruby
 ItemDisplay[gpws OR gpw]:%WHITE%(%WHITE%O%WHITE%)%ORANGE%Perfect%CONTINUE%//dia
 ItemDisplay[skzs OR skz]:%WHITE%(%GRAY%O%WHITE%)%ORANGE%Perfect %PURPLE%Skull%CONTINUE%//skul
-\~~~
-/~~~//Charms		
-ItemDisplay[!ID MAG CHARM]:%ORANGE%@ %BASENAME% @%CONTINUE%
 \~~~
 /~~~//Runes
 //Runes		
@@ -1540,6 +1692,9 @@ ItemDisplay[!ID (MAG OR RARE) arrows_i]:Arrows%CONTINUE%
 ItemDisplay[!ID (MAG OR RARE) bolts_i]:Bolts%CONTINUE%	
 \~~~			
 /~~~//weapons
+
+
+
 ItemDisplay[!ID (MAG OR RARE) 1H AXE !THROWING]:Axe%CONTINUE%	
 ItemDisplay[!ID (MAG OR RARE) 2H AXE]:2H Axe%CONTINUE%	
 ItemDisplay[!ID (MAG OR RARE) 1H CLUB]:Club%CONTINUE%		
@@ -1565,6 +1720,11 @@ ItemDisplay[!ID (MAG OR RARE) ZON !BOW !JAV]:Zon Spear%CONTINUE%
 ItemDisplay[!ID (MAG OR RARE) ZON !BOW !SPEAR]:Zon Jav%CONTINUE%	
 ItemDisplay[!ID (MAG OR RARE) WAND]:Wand%CONTINUE%		
 ItemDisplay[!ID (MAG OR RARE) SOR]:Orb%CONTINUE%	
+
+
+
+
+
 \~~~
 
 \~~~	
@@ -1574,13 +1734,19 @@ ItemDisplay[NMAG (WEAPON OR ARMOR) SUP !RW !misc_i !quest_i]:%BASENAME%{%NAME%}%
 ItemDisplay[(NORM OR normquiver_i) !misc_i !quest_i]:¹%NAME%{%NAME%}%CONTINUE%
 ItemDisplay[(EXC OR excquiver_i) !misc_i !quest_i]:²%NAME%{%NAME%}%CONTINUE%
 ItemDisplay[(ELT OR eltquiver_i) !misc_i !quest_i]:³%NAME%{%NAME%}%CONTINUE%
+
+
+
+
+
+
 \~~~
 /~~~//coloring
 ItemDisplay[UNI]:%GOLD%%NAME%{%NAME%}%CONTINUE%
 ItemDisplay[SET]:%GREEN%%NAME%{%NAME%}%CONTINUE%
 ItemDisplay[RARE !jew]:%YELLOW%%NAME%{%NAME%}%CONTINUE%	
 ItemDisplay[RARE ID jew]:%YELLOW%%NAME%{%NAME%}%CONTINUE%			
-ItemDisplay[MAG !jew]:%BLUE%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[MAG !jew !CHARM]:%BLUE%%NAME%{%NAME%}%CONTINUE%
 ItemDisplay[MAG ID jew]:%BLUE%%NAME%{%NAME%}%CONTINUE%		
 ItemDisplay[CRAFT]:%ORANGE%%NAME%{%NAME%}%CONTINUE%	
 ItemDisplay[!ZON SUP ETH NMAG !RW ED=20 AR=0]:%PURPLE%%NAME%{%NAME%}%CONTINUE%	//change this to only show up on good bases not all bases	
@@ -1593,29 +1759,41 @@ ItemDisplay[ZON MULTI188,2=3 SUP ETH NMAG !RW ED=15 AR>0]:%PURPLE%%NAME%{%NAME%}
 ItemDisplay[NMAG (WEAPON OR ARMOR) !RW]:%WHITE%%NAME%{%NAME%}%CONTINUE%
 ItemDisplay[RW]:%TEAL%%NAME%{%NAME%}%CONTINUE%
 ItemDisplay[!ID (jew OR jewf) (MAG OR RARE)]:%ORANGE%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[MAG !ID CHARM]:%ORANGE%%NAME%{%NAME%}%CONTINUE%
 \~~~
 /~~~//Styles	
 //Misc
-ItemDisplay[!ID UNI (NORM OR normquiver_i) !misc_i]:%GOLD%o %NAME% %GOLD%o%{%NAME%}CONTINUE%				
+ItemDisplay[!ID UNI (NORM OR normquiver_i) !misc_i]:%GOLD%%NAME%%{%NAME%}CONTINUE%				
 ItemDisplay[!ID !misc_i (UNI OR SET) (EXC OR excquiver_i)]:%ORANGE%O %NAME% %ORANGE%O{%NAME%}%CONTINUE%
 ItemDisplay[!ID !misc_i (UNI OR SET) (ELT OR eltquiver_i)]:%RED%O %NAME% %RED%O{%NAME%}%CONTINUE%
+ItemDisplay[MAG !ID CHARM ILVL>89]:%TEAL%²%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[MAG !ID CHARM ILVL<90]:%GRAY%¹%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[MAG ID CHARM ILVL>89]:%TEAL%²%BLUE%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[MAG ID CHARM ILVL<90]:%GRAY%¹%BLUE%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[MAG jew ILVL>84]:%TEAL%²%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[MAG jew ILVL<85]:%GRAY%¹%NAME%{%NAME%}%CONTINUE%	
+ItemDisplay[MAG amu ILVL>89]:%TEAL%²%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[MAG amu ILVL<90]:%GRAY%¹%NAME%{%NAME%}%CONTINUE%
 //Green
-ItemDisplay[!ID SET NORM !misc_i]:%GREEN%o %NAME% %GREEN%o{%NAME%}%CONTINUE%	
+ItemDisplay[!ID SET NORM !misc_i]:%GREEN%%NAME%{%NAME%}%CONTINUE%	
 ItemDisplay[!ID SET rin]:%GREEN%*** %NAME%%GREEN% ***{%NAME%}%CONTINUE%
 ItemDisplay[!ID SET amu]:%GREEN%ooo %NAME%%GREEN% ooo{%NAME%}%CONTINUE%
 //Blue
-ItemDisplay[!ID MAG CIRC]:%YELLOW%oO %NAME% %YELLOW%Oo{%NAME%}%CONTINUE%
+ItemDisplay[!ID MAG CIRC]:%BLUE%oO %NAME% %BLUE%Oo{%NAME%}%CONTINUE%
 ItemDisplay[!ID MAG amu]:%BLUE%o %NAME% %BLUE%o{%NAME%}%CONTINUE%
 ItemDisplay[!ID MAG rin]:%BLUE%* %NAME% %BLUE%*{%NAME%}%CONTINUE%	
 ItemDisplay[!ID MAG (WEAPON OR ARMOR OR QUIVER) !CIRC]:%BLUE%+ %NAME% %BLUE%+{%NAME%}%CONTINUE%		
 //YELLOW
-ItemDisplay[!ID RARE CIRC]:%YELLOW%o%RED%O %NAME% %RED%O%YELLOW%o{%NAME%}%CONTINUE%
+ItemDisplay[!ID RARE CIRC]:%YELLOW%oO %NAME%%YELLOW% Oo{%NAME%}%CONTINUE%
 ItemDisplay[!ID RARE amu]:%YELLOW%oo %NAME%%YELLOW% oo{%NAME%}%CONTINUE%
 ItemDisplay[!ID RARE rin]:%YELLOW%** %NAME%%YELLOW% **{%NAME%}%CONTINUE%
-ItemDisplay[!ID RARE (WEAPON OR ARMOR OR QUIVER) !CIRC]:%YELLOW%+ %NAME% %YELLOW%+{%NAME%}%CONTINUE%		
+ItemDisplay[!ID RARE (WEAPON OR ARMOR OR QUIVER) !CIRC]:%YELLOW%+ %NAME% %YELLOW%+{%NAME%}%CONTINUE%	
+	
 //ORANGE
 ItemDisplay[!ID RARE jew]:%YELLOW%oo%RED%O %NAME% %RED%O%YELLOW%oo{%NAME%}%CONTINUE%
-ItemDisplay[!ID MAG jew]:%BLUE%o %NAME% %BLUE%o{%NAME%}%CONTINUE%
+ItemDisplay[!ID MAG jew]:%BLUE%o %NAME% %BLUE%o{%NAME%}%CONTINUE%		
+ItemDisplay[!ID MAG CHARM]:%ORANGE%@ %NAME%%ORANGE% @%CONTINUE%
+
 \~~~	
 /~~~//Tags		
 //head
@@ -1625,45 +1803,52 @@ ItemDisplay[NMAG MULTI188,2>0]:%SAGE%%MULTI188,2%jav|%NAME%{%NAME%}%CONTINUE%
 //pally shield automods
 ItemDisplay[NMAG DIN RES=30]:%PURPLE%%RES%res|%NAME%{%NAME%}%CONTINUE%
 ItemDisplay[NMAG DIN RES<30 RES>25]:%SAGE%%RES%res|%NAME%{%NAME%}%CONTINUE%
-ItemDisplay[NMAG DIN RES>0 RES<26]:%SAGE%%RES%res|%NAME%{%NAME%}%CONTINUE%				
+ItemDisplay[NMAG DIN RES>0 RES<26]:%BLUE%%RES%res|%NAME%{%NAME%}%CONTINUE%				
 ItemDisplay[NMAG DIN EDAM=65]:%PURPLE%%EDAM%ed|%NAME%{%NAME%}%CONTINUE%
 ItemDisplay[NMAG DIN EDAM>54 EDAM<65]:%SAGE%%EDAM%ed|%NAME%{%NAME%}%CONTINUE%
-ItemDisplay[NMAG DIN EDAM<55 EDAM>0]:%SAGE%%EDAM%ed|%NAME%{%NAME%}%CONTINUE%				
+ItemDisplay[NMAG DIN EDAM<55 EDAM>0]:%BLUE%%EDAM%ed|%NAME%{%NAME%}%CONTINUE%				
 //superior tag
-ItemDisplay[NMAG SUP !GLOVES !BOOTS !BELT !caster2_i (WEAPON OR ARMOR) ED=20 AR=0]:%RED%%ED%ed|%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[NMAG SUP !GLOVES !BOOTS !BELT !caster2_i (WEAPON OR ARMOR) ED=20 AR=0]:%TEAL%perf|%RED%%ED%ed|%NAME%{%NAME%}%CONTINUE%
 ItemDisplay[NMAG SUP !GLOVES !BOOTS !BELT !caster2_i (WEAPON OR ARMOR) ED>15 ED<20 AR=0]:%GOLD%%ED%ed|%NAME%{%NAME%}%CONTINUE%
 ItemDisplay[NMAG SUP !GLOVES !BOOTS !BELT !caster2_i (WEAPON OR ARMOR) ED>0 ED<16 AR=0]:%BLUE%%ED%ed|%NAME%{%NAME%}%CONTINUE%
-ItemDisplay[NMAG SUP !GLOVES !BOOTS !BELT !caster2_i (WEAPON OR ARMOR) ED=15 AR>0]:%RED%%ED%ed|%AR%ar|%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[NMAG SUP !GLOVES !BOOTS !BELT !caster2_i (WEAPON OR ARMOR) ED=15 AR>0]:%TEAL%perf|%RED%%ED%ed|%AR%ar|%NAME%{%NAME%}%CONTINUE%
 ItemDisplay[NMAG SUP !GLOVES !BOOTS !BELT !caster2_i (WEAPON OR ARMOR) ED>10 ED<15 AR>0]:%GOLD%%ED%ed|%AR%ar|%NAME%{%NAME%}%CONTINUE%
 ItemDisplay[NMAG SUP !GLOVES !BOOTS !BELT !caster2_i (WEAPON OR ARMOR) ED>0 ED<11 AR>0]:%BLUE%%ED%ed|%AR%ar|%NAME%{%NAME%}%CONTINUE%
 //eth tag
-ItemDisplay[ETH (WEAPON OR ARMOR)]:%GRAY%eth|%NAME%{%NAME%}%CONTINUE%		
+ItemDisplay[ETH (WEAPON OR ARMOR)]:%BLACK%+ %GRAY%Eth|%NAME%{%NAME%}%CONTINUE%		
 //imbue cs tag
-ItemDisplay[NMAG !RW 7cr !INF !SUP (SOCK=0)]:%TAN%imbue me|%NAME%{%NAME%}%CONTINUE%		
-//craft me tag
-ItemDisplay[(RARE OR MAG) !STAT360=0 ETH !CIRC !NEC !SOR craftme_i !(crs OR 9cr) !DAGGER !CLUB !CHEST !STAFF !HELM !(SHIELD !DIN) !(bsd OR hax OR 9ha OR 7ha OR mpi OR 9mp OR 7mp OR 72a OR 92a OR 2ax OR 7la OR 9la OR lax OR bax OR 9ba OR 7ba OR 7bt OR 9bt OR btx OR 7cl OR 9cl OR clb OR 7ma OR 9ma OR mac OR 7ss OR 9ss OR ssd OR 7sm OR 9sm OR scm OR 7sb OR 9sb OR sbr OR 7fc OR 9fc OR flc OR 7ls OR 9ls OR lsd OR 7wd OR 9wd OR wsd OR 2hs OR 92h OR 72h OR 7cm OR 9cm OR clm OR 7gs OR 9gs OR gis OR 7b7 OR 9b9 OR bsw OR 7fb OR 9fb OR flb OR 7di OR 9di OR dir OR dgr OR 9dg OR 7dg OR 7bl OR 9bl OR bld OR 7ta OR 9ta OR tax OR 7ja OR 9ja OR jav OR 7pi OR 9pi OR pil OR 7s7 OR 9s9 OR ssp OR 7tr OR 9tr OR tri OR brn OR 9br OR 7br OR spt OR 9st OR 7st OR 7o7 OR 9b7 OR bar OR vou OR 9vo OR 7vo OR 7s8 OR 9s8 OR scy OR pax OR 9pa OR 7pa OR 7wc OR 9wc OR wsc OR 6sb OR 8sb OR sbw OR hbw OR 8hb OR 6hb OR 6cb OR 8cb OR cbw OR sbb OR 8s8 OR 6s7 OR 6sw OR 8sw OR swb OR 6lx OR 8lx OR lxb OR 6lw OR 8lw OR lwb OR 6mx OR 8mx OR mxb OR rxb OR 8rx OR 6rx OR 6ss OR 8ss OR sst OR lst OR 8ls OR 6ls OR 6cs OR 8cs OR cst OR bst OR 8bs OR 6bs OR 7sc OR 9sc OR scp OR gsc OR 9qs OR 7qs OR 7ar OR 9ar OR ktr OR wrb OR 9wb OR 7wb OR ces OR 9cs OR 7cs OR 7lw OR 9lw OR clw OR btl OR 9tw OR 7tw OR obb OR ob6 OR ob1 OR ob2 OR ob7 OR obc OR ob3 OR ob8 OR obd OR ob4 OR ob9 OR obe)]:%ORANGE%craft me|%NAME%{%NAME%}%CONTINUE% 		
-ItemDisplay[(RARE OR MAG) !STAT360=0 ETH (crs OR 9cr)]:%PURPLE%craft me|%NAME%{%NAME%}%CONTINUE%			
+ItemDisplay[NMAG !RW 7cr !INF !SUP (SOCK=0)]:%NAME%%TAN%|imbue me{%NAME%}%CONTINUE%		
+//craft me tag	
+ItemDisplay[(RARE OR MAG OR SET OR UNI) ETH !STAT360=0 (eth_brick_to_rare)]:%NAME%%ORANGE%|craft me{%NAME%}%CONTINUE%		
 //brick me tag
-ItemDisplay[NMAG STAT360=0 (CIRC OR (ETH (crs OR 9cr))) SOCK=0]:%RED%brick me|%NAME%{%NAME%}%CONTINUE%	
-ItemDisplay[MAG STAT360=0 CIRC]:%RED%brick me|%NAME%{%NAME%}%CONTINUE%			
-ItemDisplay[(SET OR UNI) (ci0 OR ci2) STAT360=0]:%RED%brick me|%NAME%{%NAME%}%CONTINUE%	
-ItemDisplay[SET ci3 STAT360=0]:%RED%brick me|%NAME%{%NAME%}%CONTINUE%			
-ItemDisplay[(RARE OR MAG OR CRAFT OR UNI) STAT360=0 (ETH (crs OR 9cr))]:%RED%brick me|%NAME%{%NAME%}%CONTINUE%	 		
-ItemDisplay[(RARE OR MAG OR CRAFT) STAT360=0 ETH !CIRC !NEC !SOR craftme_i !(crs OR 9cr) !DAGGER !CLUB !CHEST !STAFF !HELM !(SHIELD !DIN) !(bsd OR hax OR 9ha OR 7ha OR mpi OR 9mp OR 7mp OR 72a OR 92a OR 2ax OR 7la OR 9la OR lax OR bax OR 9ba OR 7ba OR 7bt OR 9bt OR btx OR 7cl OR 9cl OR clb OR 7ma OR 9ma OR mac OR 7ss OR 9ss OR ssd OR 7sm OR 9sm OR scm OR 7sb OR 9sb OR sbr OR 7fc OR 9fc OR flc OR 7ls OR 9ls OR lsd OR 7wd OR 9wd OR wsd OR 2hs OR 92h OR 72h OR 7cm OR 9cm OR clm OR 7gs OR 9gs OR gis OR 7b7 OR 9b9 OR bsw OR 7fb OR 9fb OR flb OR 7di OR 9di OR dir OR dgr OR 9dg OR 7dg OR 7bl OR 9bl OR bld OR 7ta OR 9ta OR tax OR 7ja OR 9ja OR jav OR 7pi OR 9pi OR pil OR 7s7 OR 9s9 OR ssp OR 7tr OR 9tr OR tri OR brn OR 9br OR 7br OR spt OR 9st OR 7st OR 7o7 OR 9b7 OR bar OR vou OR 9vo OR 7vo OR 7s8 OR 9s8 OR scy OR pax OR 9pa OR 7pa OR 7wc OR 9wc OR wsc OR 6sb OR 8sb OR sbw OR hbw OR 8hb OR 6hb OR 6cb OR 8cb OR cbw OR sbb OR 8s8 OR 6s7 OR 6sw OR 8sw OR swb OR 6lx OR 8lx OR lxb OR 6lw OR 8lw OR lwb OR 6mx OR 8mx OR mxb OR rxb OR 8rx OR 6rx OR 6ss OR 8ss OR sst OR lst OR 8ls OR 6ls OR 6cs OR 8cs OR cst OR bst OR 8bs OR 6bs OR 7sc OR 9sc OR scp OR gsc OR 9qs OR 7qs OR 7ar OR 9ar OR ktr OR wrb OR 9wb OR 7wb OR ces OR 9cs OR 7cs OR 7lw OR 9lw OR clw OR btl OR 9tw OR 7tw OR obb OR ob6 OR ob1 OR ob2 OR ob7 OR obc OR ob3 OR ob8 OR obd OR ob4 OR ob9 OR obe)]:%RED%brick me|%NAME%{%NAME%}%CONTINUE%		
+ItemDisplay[(NMAG OR RARE OR MAG OR CRAFT OR SET OR UNI) STAT360=0 SOCK=0 ((ETH eth_brick_to_rare) OR (CIRC))]:%NAME%%RED%|brick me{%NAME%}%CONTINUE%
 //reroll me tag
-ItemDisplay[ID RARE jew STAT360=0 REROLLALVL>65]:%TEAL%re-roll me|%NAME%{%NAME%}%CONTINUE%
-ItemDisplay[MAG jew STAT360=0 ILVL>84]:%TEAL%2|%NAME%{%NAME%}%CONTINUE%
-ItemDisplay[MAG jew STAT360=0 ILVL<85]:%GRAY%1|%NAME%{%NAME%}%CONTINUE%	
-ItemDisplay[ID RARE CIRC !ci3 STAT360=0 REROLLALVL>85]:%TEAL%re-roll me|%NAME%{%NAME%}%CONTINUE%		
-ItemDisplay[ID RARE ci3 STAT360=0]:%TEAL%re-roll me|%NAME%{%NAME%}%CONTINUE%		
-ItemDisplay[MAG CHARM ILVL>90]:%TEAL%re-roll me|%NAME%{%NAME%}%CONTINUE%	 
+ItemDisplay[ID RARE jew STAT360=0 REROLLALVL>65]:%NAME%%TEAL%|re-roll me{%NAME%}%CONTINUE%			
+ItemDisplay[MAG CHARM ILVL>90]:%NAME%%TEAL%|re-roll me{%NAME%}%CONTINUE%
 //high ilvl tag
-ItemDisplay[MAG amu ILVL>89]:%ORANGE%High ilvl|%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[MAG amu ILVL>89]:%NAME%%ORANGE%|High ilvl{%NAME%}%CONTINUE%
 //tail
 //socket tag
-ItemDisplay[SOCK>0 !RW (WEAPON OR ARMOR OR QUIVER)]:%NAME%%YELLOW%|%SOCKETS%os{%NAME%}%CONTINUE%
-ItemDisplay[(NMAG OR MAG OR RARE) (WEAPON OR ARMOR) GROUND !ID (PRICE=35000 OR (caster3_i) OR (caster2_i))]:%NAME%%TAN%|${%NAME%}%CONTINUE%
+ItemDisplay[SOCK>0 !RW (WEAPON OR ARMOR)]:%NAME%%YELLOW%|%SOCKETS%os{%NAME%}%CONTINUE%
+ItemDisplay[SOCK>0 !RW (QUIVER)]:%WHITE%%NAME%%YELLOW%|%SOCKETS%os{%NAME%}%CONTINUE%
+//Money tag
+ItemDisplay[(NMAG OR MAG OR RARE) (WEAPON OR ARMOR) !CHEST GROUND !ID (PRICE=35000 OR (caster3_i) OR (caster2_i))]:%NAME%%TAN%|${%NAME%}%CONTINUE%
 ItemDisplay[(NMAG OR MAG OR RARE) (WEAPON OR ARMOR) GROUND ID PRICE=35000]:%NAME%%TAN%|${%NAME%}%CONTINUE%
+//good/bad  tag
+ItemDisplay[NMAG (bad_rw_1haxe OR bad_rw_1hclub OR bad_rw_1hhammer OR bad_rw_1hsword OR bad_rw_2haxe OR bad_rw_2hhammer OR bad_rw_2hspear OR bad_rw_2hsword OR bad_rw_bow OR bad_rw_dagger OR bad_rw_orb OR bad_rw_polearm OR bad_rw_pshield OR bad_rw_shield OR bad_rw_staff OR bad_rw_taxe OR bad_rw_tknife OR bad_rw_tmace OR bad_rw_tspear OR bad_rw_xbow OR bad_rw_zbow OR bad_rw_zspear OR bad_rw_zthrow)]:%NAME%%CORAL%|b%CONTINUE%
+ItemDisplay[NMAG (good_rw_1hclub OR good_rw_1hhammer OR good_rw_orb OR good_rw_pshield OR good_rw_shield OR good_rw_wand OR good_rw_zthrow)]:%NAME%%TEAL%|g%CONTINUE%
+ItemDisplay[NMAG (good_fast_rw_1haxe OR good_fast_rw_1hsword OR good_fast_rw_2haxe OR good_fast_rw_2hspear OR good_fast_rw_2hsword OR good_fast_rw_bow OR good_fast_rw_claw OR good_fast_rw_dagger OR good_fast_rw_polearm OR good_fast_rw_scepter OR good_fast_rw_staff OR good_fast_rw_taxe OR good_fast_rw_tknife OR good_fast_rw_tmace OR good_fast_rw_tspear OR good_fast_rw_xbow OR good_fast_rw_zbow OR good_fast_rw_zspear)]:%NAME%%TEAL%|g%CONTINUE%
+ItemDisplay[NMAG (good_slow_rw_1haxe OR good_slow_rw_1hsword OR good_slow_rw_2haxe OR good_slow_rw_2hspear OR good_slow_rw_2hsword OR good_slow_rw_bow OR good_slow_rw_claw OR good_slow_rw_dagger OR good_slow_rw_polearm OR good_slow_rw_scepter OR good_slow_rw_staff OR good_slow_rw_taxe OR good_slow_rw_tknife OR good_slow_rw_tmace OR good_slow_rw_tspear OR good_slow_rw_xbow OR good_slow_rw_zbow OR good_slow_rw_zspear)]:%NAME%%TEAL%|g%CONTINUE%
+ItemDisplay[NMAG (good_tight_rw_2hhammer)]:%NAME%%TEAL%|g%CONTINUE%
+ItemDisplay[NMAG (good_loose_rw_2hhammer)]:%NAME%%TEAL%|g%CONTINUE%
+ItemDisplay[!ID (MAG OR RARE) (bad_rare_1haxe OR bad_rare_1hclub OR bad_rare_1hsword OR bad_rare_2haxe OR bad_rare_2hspear OR bad_rare_2hsword OR bad_rare_bow OR bad_rare_claw OR bad_rare_dagger OR bad_rare_orb OR bad_rare_polearm OR bad_rare_scepter OR bad_rare_shield OR bad_rare_staff OR bad_rare_taxe OR bad_rare_tmace OR bad_rare_tspear OR bad_rare_xbow)]:%NAME%%CORAL%|b%CONTINUE%
+ItemDisplay[!ID (MAG OR RARE) (good_rare_1hclub OR good_rare_1hhammer OR good_rare_1hsword OR good_rare_2hsword OR good_rare_dagger OR good_rare_orb OR good_rare_polearm OR good_rare_pshield OR good_rare_scepter OR good_rare_shield OR good_rare_staff OR good_rare_taxe OR good_rare_wand OR good_rare_xbow OR good_rare_zthrow)]:%NAME%%TEAL%|g%CONTINUE%
+ItemDisplay[!ID (MAG OR RARE) (good_slow_rare_1haxe OR good_slow_rare_2haxe OR good_slow_rare_2hspear OR good_slow_rare_bow OR good_slow_rare_claw OR good_slow_rare_tknife OR good_slow_rare_tmace OR good_slow_rare_tspear OR good_slow_rare_zbow OR good_slow_rare_zspear)]:%NAME%%TEAL%|g%CONTINUE%
+ItemDisplay[!ID (MAG OR RARE) (good_fast_rare_1haxe OR good_fast_rare_2haxe OR good_fast_rare_2hspear OR good_fast_rare_bow OR good_fast_rare_claw OR good_fast_rare_tknife OR good_fast_rare_tmace OR good_fast_rare_tspear OR good_fast_rare_zbow OR good_fast_rare_zspear)]:%NAME%%TEAL%|g%CONTINUE%
+ItemDisplay[!ID (MAG OR RARE) (good_tight_rare_2hhammer)]:%NAME%%TEAL%|g%CONTINUE%
+ItemDisplay[!ID (MAG OR RARE) (good_loose_rare_2hhammer)]:%NAME%%TEAL%|g%CONTINUE%
+
+
 \~~~
 /~~~//Staffmods
 /~~~//Global
@@ -3392,13 +3577,14 @@ ItemDisplay[(BOW OR XBOW) (MAG OR RARE) H_ED_A5]:%NAME%{%CL%%BLUE%*%YELLOW%*%RED
 //bow xbow craft
 ItemDisplay[(BOW OR XBOW) (CRAFT) H_ED_A6]:%NAME%{%CL%%BLUE%*%YELLOW%*%RED%*%PURPLE%High ED%PURPLE%%BLUE%*%YELLOW%*%RED%*%NAME%}%CONTINUE%
 
-ItemDisplay[WEAPON RARE ID ED>399]:%CL%%PURPLE%%ED%% Enhanced Damage%CL%%NAME%{%NAME%}%CONTINUE%
-ItemDisplay[WEAPON RARE ID ED>299 ED<400]:%CL%%YELLOW%%ED%% Enhanced Damage%CL%%NAME%{%NAME%}%CONTINUE%
-ItemDisplay[WEAPON RARE ID ED>199 ED<300]:%CL%%WHITE%%ED%% Enhanced Damage%CL%%NAME%{%NAME%}%CONTINUE%
-ItemDisplay[WEAPON RARE ID ED>0 ED<200]:%CL%%GRAY%%ED%% Enhanced Damage%CL%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[WEAPON (RARE OR MAG OR CRAFT) ID ED>399]:%PURPLE%%ED%% Edam%CL%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[WEAPON (RARE OR MAG OR CRAFT) ID ED>299 ED<400]:%LIGHT_GRAY%%ED%% Edam%CL%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[WEAPON (RARE OR MAG OR CRAFT) ID ED>199 ED<300]:%LIGHT_GRAY%%ED%% Edam%CL%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[WEAPON (RARE OR MAG OR CRAFT) ID ED>0 ED<200]:%LIGHT_GRAY%%ED%% Edam%CL%%NAME%{%NAME%}%CONTINUE%
 
-ItemDisplay[HELM RARE ID EDAM>0]:%CL%%YELLOW%%EDAM%% Enhanced Damage%CL%%NAME%{%NAME%}%CONTINUE%
-ItemDisplay[CHEST RARE ID EDAM>0]:%CL%%YELLOW%%EDAM%% Enhanced Damage%CL%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[HELM (RARE OR MAG OR CRAFT) ID EDAM>0]:%LIGHT_GRAY%%EDAM%% Edam%CL%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[CHEST (RARE OR MAG OR CRAFT) ID EDAM>0]:%LIGHT_GRAY%%EDAM%% Edam%CL%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[DIN (RARE OR MAG OR CRAFT) ID EDAM>0]:%LIGHT_GRAY%%EDAM%% Edam%CL%%NAME%{%NAME%}%CONTINUE%
 
 ItemDisplay[t21]:%NAME%{%WHITE%Immunes:%RED%120% %GREEN%120%%CL%%NAME%}%CONTINUE%
 ItemDisplay[t33]:%NAME%{%WHITE%Immunes:%BLUE%120% %ORANGE%105%%CL%%NAME%}%CONTINUE%
@@ -3442,6 +3628,11 @@ ItemDisplay[t58]:%NAME%{%WHITE%Immunes:%GRAY%Immune-Free Zone%NAME%}%CONTINUE%
 //
 
 /~~~//Hide
+//early notifying
+ItemDisplay[NMAG ELT DIN RES=30]:%NAME%{%NAME%}%MAP-9B%%CONTINUE%
+ItemDisplay[NMAG ELT DIN EDAM=65]:%NAME%{%NAME%}%MAP-9B%%CONTINUE%
+ItemDisplay[NMAG ELT SUP !GLOVES !BOOTS !BELT !caster2_i (WEAPON OR ARMOR) ED=20 AR=0]:%NAME%{%NAME%}%MAP-9B%%CONTINUE%
+ItemDisplay[NMAG ELT SUP !GLOVES !BOOTS !BELT !caster2_i (WEAPON OR ARMOR) ED=15 AR>0]:%NAME%{%NAME%}%MAP-9B%%CONTINUE%
 	/~~~//resource potions
 		ItemDisplay[(hp5 OR mp5) !town_l GROUND (FILTLVL=2 OR FILTLVL=4 OR FILTLVL=6 OR FILTLVL=8 OR FILTLVL=10)]://
 		ItemDisplay[(hp4 OR mp4) !town_l GROUND (FILTLVL=2 OR FILTLVL=4 OR FILTLVL=6 OR FILTLVL=8 OR FILTLVL=10)]://	
@@ -3572,6 +3763,8 @@ ItemDisplay[t58]:%NAME%{%WHITE%Immunes:%GRAY%Immune-Free Zone%NAME%}%CONTINUE%
 		ItemDisplay[sku !town_l GROUND FILTLVL=2]://		
 	\~~~
 	/~~~//NMAG	
+		
+	
 		//general
 		ItemDisplay[INF !town_l GROUND]:// inferior
 		ItemDisplay[NMAG (GLOVES OR BELT OR BOOTS) (FILTLVL>4 OR (CLVL>25 FILTLVL>2)) !town_l GROUND]://hide white non-rw bases
@@ -3579,6 +3772,7 @@ ItemDisplay[t58]:%NAME%{%WHITE%Immunes:%GRAY%Immune-Free Zone%NAME%}%CONTINUE%
 		ItemDisplay[NMAG SUP !ETH !RW !CIRC !caster_i (EDAM=0 OR AR=0) WEAPON (FILTLVL>4 OR (CLVL>25 FILTLVL>2)) !town_l GROUND]://hide sup weps that have zero enhanced dmg
 		ItemDisplay[NMAG SUP !ETH !RW !CIRC !caster_i EDEF=0 ARMOR (FILTLVL>4 OR (CLVL>25 FILTLVL>2)) !town_l GROUND]://hide sup armor that has zero ehance def and zero enhanced dmg
 		ItemDisplay[NMAG SOCK=1 (ARMOR OR WEAPON OR QUIVER) !CIRC (FILTLVL>4 OR (CLVL>25 FILTLVL>2)) !town_l GROUND]://
+		ItemDisplay[NMAG ETH !SUP ARMOR FILTLVL>6]:// Hide non sup eth armors
 		/~~~//armor
 			//quivers
 			ItemDisplay[NMAG QUIVER (SOCK=0 OR SOCK=2) (FILTLVL>4 OR (CLVL>35 FILTLVL>2)) !town_l GROUND]://
@@ -3604,7 +3798,7 @@ ItemDisplay[t58]:%NAME%{%WHITE%Immunes:%GRAY%Immune-Free Zone%NAME%}%CONTINUE%
 			ItemDisplay[NMAG !RW DRU (MULTI107,221+MULTI107,222+MULTI107,223+MULTI107,224+MULTI107,225+MULTI107,226+MULTI107,227+MULTI107,228+MULTI107,229+MULTI107,230+MULTI107,231+MULTI107,232+MULTI107,233+MULTI107,234+MULTI107,235+MULTI107,236+MULTI107,237+MULTI107,238+MULTI107,239+MULTI107,240+MULTI107,241+MULTI107,242+MULTI107,243+MULTI107,244+MULTI107,245+MULTI107,246+MULTI107,247+MULTI107,248+MULTI107,249+MULTI107,250+MULTI107,370<6) FILTLVL>6 !town_l GROUND]://				
 			
 			//circlets
-			ItemDisplay[NMAG !RW CIRC FILTLVL>8 !town_l GROUND]://
+
 			
 			//chests
 			ItemDisplay[NMAG !RW NORM CHEST (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]://
@@ -3831,9 +4025,14 @@ ItemDisplay[t58]:%NAME%{%WHITE%Immunes:%GRAY%Immune-Free Zone%NAME%}%CONTINUE%
 		ItemDisplay[!ID MAG (pab OR pa6 OR pa1 OR pac OR pa7 OR pa2 OR pad OR pa8 OR pa3 OR paf OR paa OR pa5 OR ulb OR xlb OR lbt OR uvb OR xvb OR vbt OR umb OR xmb OR mbt OR utb OR xtb OR tbt) PRICE=35000 FILTLVL>6 !town_l GROUND]://
 				
 		ItemDisplay[!ID MAG rin (FILTLVL>4 OR (FILTLVL>2 CLVL>45)) !town_l GROUND]://
-		ItemDisplay[!ID MAG amu !ILVL>89 FILTLVL>6 !town_l GROUND]://
+		ItemDisplay[!ID MAG amu !ILVL>89 FILTLVL>4 !town_l GROUND]://
+		ItemDisplay[!ID MAG amu ILVL>89 FILTLVL>6 !town_l GROUND]://		
 		ItemDisplay[!ID MAG QUIVER (FILTLVL>4 OR (FILTLVL>2 CLVL>45)) !town_l GROUND]://
 		ItemDisplay[!ID MAG GLOVES FILTLVL>4 !town_l GROUND]://
+		
+		ItemDisplay[MAG !ID CHARM ILVL<90 !town_l GROUND FILTLVL>8]://
+		ItemDisplay[MAG !ID jew ILVL<85 !town_l GROUND FILTLVL>8]://			
+		
 	\~~~	
 	
 	/~~~//Rare
@@ -3847,6 +4046,7 @@ ItemDisplay[t58]:%NAME%{%WHITE%Immunes:%GRAY%Immune-Free Zone%NAME%}%CONTINUE%
 		ItemDisplay[!ID RARE SHIELD !DIN !NEC FILTLVL>6 !town_l GROUND]://		
 		ItemDisplay[!ID RARE (DIN OR NEC) FILTLVL>8 !town_l GROUND]://		
 		ItemDisplay[!ID RARE BELT FILTLVL>8 !town_l GROUND]://
+		ItemDisplay[!ID RARE WAND FILTLVL>6 !town_l GROUND]://
 			
 	\~~~
 \~~~//end hidden
@@ -3917,32 +4117,29 @@ ItemDisplay[RUNE<19]:%NAME%{%NAME%}%DOT-0B%%CONTINUE%
 ItemDisplay[UNI]:%NAME%{%NAME%}%MAP-D3%%CONTINUE%
 ItemDisplay[SET]:%NAME%{%NAME%}%MAP-7D%%CONTINUE%
 ItemDisplay[skz OR skzs OR skl OR skls]:%NAME%{%NAME%}%MAP-9B%%CONTINUE%//p skulls
-ItemDisplay[CHARM]:%NAME%{%NAME%}%DOT-0B%%CONTINUE%//Charms
+ItemDisplay[CHARM !ID]:%NAME%{%NAME%}%DOT-0B%%CONTINUE%//Charms
 ItemDisplay[MAG jew]:%NAME%{%NAME%}%DOT-0B%%CONTINUE%//Jewels
 ItemDisplay[RARE jew]:%NAME%{%NAME%}%MAP-9B%%CONTINUE%//Jewels
 ItemDisplay[t5map_i]:%NAME%{%NAME%}%BORDER-55%%CONTINUE%//unique maps
-ItemDisplay[t123map_i]:%NAME%{%NAME%}%MAP-9B%%CONTINUE%//maps
+ItemDisplay[t123map_i]:%NAME%{%NAME%}%MAP-0B%%CONTINUE%//maps
 
-ItemDisplay[quest_i]:%NAME%{%NAME%}%MAP-9B%%CONTINUE%//maps
-ItemDisplay[rrorb_i]:%NAME%{%NAME%}%MAP-9B%%CONTINUE%//maps
+ItemDisplay[quest_i]:%NAME%{%NAME%}%DOT-0B%%CONTINUE%//maps
+ItemDisplay[rrorb_i]:%NAME%{%NAME%}%DOT-0B%%CONTINUE%//maps
 ItemDisplay[pemap_i]:%NAME%{%NAME%}%MAP-9B%%CONTINUE%//purple Items
 ItemDisplay[psock_i]:%NAME%{%NAME%}%MAP-9B%%CONTINUE%//purple Items
-ItemDisplay[rsock_i]:%NAME%{%NAME%}%MAP-9B%%CONTINUE%//red Items
-ItemDisplay[pcurrency_i]:%NAME%{%NAME%}%MAP-9B%%CONTINUE%//red Items
-ItemDisplay[rcurrency_i]:%NAME%{%NAME%}%MAP-9B%%CONTINUE%//red Items
+ItemDisplay[rsock_i]:%NAME%{%NAME%}%BORDER-55%%CONTINUE%//red Items
+ItemDisplay[pcurrency_i]:%NAME%{%NAME%}%BORDER-55%%CONTINUE%//red Items
+ItemDisplay[rcurrency_i]:%NAME%{%NAME%}%BORDER-55%%CONTINUE%//red Items
 
 
-ItemDisplay[rcurrency2_i]:%NAME%{%NAME%}%MAP-9B%%CONTINUE%//red Items
-ItemDisplay[rainbow1_i]:%NAME%{%NAME%}%MAP-9B%%CONTINUE%//gg Items
-ItemDisplay[rainbow2_i]:%NAME%{%NAME%}%MAP-9B%%CONTINUE%//red Items//gg Items
-ItemDisplay[wtf_i]:%NAME%{%NAME%}%MAP-9B%%CONTINUE%//gg Items
+ItemDisplay[rcurrency2_i]:%NAME%{%NAME%}%BORDER-55%%CONTINUE%//red Items
+ItemDisplay[rainbow1_i]:%NAME%{%NAME%}%BORDER-55%%CONTINUE%//gg Items
+ItemDisplay[rainbow2_i]:%NAME%{%NAME%}%BORDER-55%%CONTINUE%//red Items//gg Items
+ItemDisplay[wtf_i]:%NAME%{%NAME%}%BORDER-55%%CONTINUE%//gg Items
 
-ItemDisplay[NMAG DIN RES=30]:%NAME%{%NAME%}%MAP-9B%%CONTINUE%
-ItemDisplay[NMAG DIN EDAM=65]:%NAME%{%NAME%}%MAP-9B%%CONTINUE%
-ItemDisplay[NMAG SUP !GLOVES !BOOTS !BELT !caster2_i (WEAPON OR ARMOR) ED=20 AR=0]:%NAME%{%NAME%}%MAP-9B%%CONTINUE%
-ItemDisplay[NMAG SUP !GLOVES !BOOTS !BELT !caster2_i (WEAPON OR ARMOR) ED=15 AR>0]:%NAME%{%NAME%}%MAP-9B%%CONTINUE%
-ItemDisplay[ETH !ID RARE]:%NAME%{%NAME%}%DOT-0B%%CONTINUE%//eth rare Items
-ItemDisplay[ETH !ID MAG]:%NAME%{%NAME%}%DOT-0B%%CONTINUE%//eth Mag items
+
+ItemDisplay[ETH !ID RARE eth_brick_to_rare]:%NAME%{%NAME%}%DOT-0B%%CONTINUE%//eth rare Items
+ItemDisplay[ETH !ID MAG eth_brick_to_rare]:%NAME%{%NAME%}%DOT-0B%%CONTINUE%//eth Mag items
 \~~~
 
 
