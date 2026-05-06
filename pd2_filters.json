@@ -297,11 +297,6 @@
                     "name": "Hiim_Vanilla_Plus.filter",
                     "url": "https://api.github.com/repos/Maaaaaarrk/HiimFilter-PD2-Filter/contents/filtergroups/hiimvanillaplus/Hiim_Vanilla_Plus.filter?ref=main",
                     "download_url": "https://raw.githubusercontent.com/Maaaaaarrk/HiimFilter-PD2-Filter/main/filtergroups/hiimvanillaplus/Hiim_Vanilla_Plus.filter"
-                },
-                {
-                    "name": "Hiim_Vanilla_Plus_Crafting.filter",
-                    "url": "https://api.github.com/repos/Maaaaaarrk/HiimFilter-PD2-Filter/contents/filtergroups/hiimvanillaplus/Hiim_Vanilla_Plus_Crafting.filter?ref=main",
-                    "download_url": "https://raw.githubusercontent.com/Maaaaaarrk/HiimFilter-PD2-Filter/main/filtergroups/hiimvanillaplus/Hiim_Vanilla_Plus_Crafting.filter"
                 }
             ]
         }
@@ -587,6 +582,11 @@
                 "author": "Sven"
             },
             "filters": [
+                {
+                    "name": "Revised.filter",
+                    "url": "https://api.github.com/repos/StandInTheRiver/Sven-s-Filter/contents/Revised.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/StandInTheRiver/Sven-s-Filter/main/Revised.filter"
+                },
                 {
                     "name": "loot.filter",
                     "url": "https://api.github.com/repos/StandInTheRiver/Sven-s-Filter/contents/loot.filter?ref=main",
