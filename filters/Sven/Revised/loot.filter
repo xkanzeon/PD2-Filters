@@ -38,6 +38,7 @@ Alias[outervoid_l]:(MAPID=180)
 Alias[ureh_l]:(MAPID=195 OR MAPID=196)
 \~~~
 /~~~ ////Item groups
+/~~~//maps
 //T1 map
 Alias[t1map_i]:(t21 OR t33 OR t34 OR t24 OR t11 OR t22 OR t26 OR t36)
 //T2 map
@@ -50,7 +51,8 @@ Alias[t4map_i]:(t41 OR t42 OR t43 OR t44)
 Alias[t5map_i]:(t51 OR t52 OR t53 OR t54 OR t55 OR t56 OR t57 OR t58)
 //All 3 tiers
 Alias[t123map_i]:(t12 OR t22 OR t23 OR t15 OR t25 OR t26 OR t17 OR t36 OR t11 OR t13 OR t24 OR t27 OR t28 OR t31 OR t33 OR t34 OR t14 OR t16 OR t21 OR t32 OR t37 OR t38 OR t39 OR t3a OR t35 OR t3b)
-//runes
+\~~~
+/~~~//runes
 Alias[pul_i]:(r21s OR r21)
 Alias[um_i]:(r22s OR r22)
 Alias[mal_i]:(r23s OR r23)
@@ -70,7 +72,15 @@ Alias[rune3_i]:(r18s OR r18 OR r19s OR r19 OR r20s OR r20 OR r21s OR r21 OR r22s
 Alias[rune4_i]:(r25s OR r25 OR r26s OR r26 OR r27s OR r27 OR r28s OR r28 OR r29s OR r29) //red
 Alias[rune5_i]:(r30s OR r30 OR r31s OR r31 OR r32s OR r32 OR r33s OR r33) //rainbow
 Alias[rune6_i]:(r01s OR r01 OR r02s OR r02 OR r03s OR r03 OR r04s OR r04 OR r05s OR r05 OR r06s OR r06 OR r07s OR r07 OR r08s OR r08 OR r09s OR r09 OR r10s OR r10 OR r11s OR r11 OR r12s OR r12 OR r13s OR r13 OR r14s OR r14 OR r15s OR r15 OR r16s OR r16 OR r17s OR r17 OR r18s OR r18 OR r19s OR r19 OR r20s OR r20 OR r21s OR r21 OR r22s OR r22 OR r23s OR r23 OR r24s OR r24 OR r25s OR r25 OR r26s OR r26 OR r27s OR r27 OR r28s OR r28 OR r29s OR r29 OR r30s OR r30 OR r31s OR r31 OR r32s OR r32 OR r33s OR r33)
-//misc
+\~~~
+/~~~//misc
+Alias[hidden_nmag]://%WHITE%+
+Alias[hidden_mag]://%BLUE%+
+Alias[hidden_rare]:%YELLOW%+
+Alias[hidden_set]:%GREEN%+
+Alias[hidden_uni]:%GOLD%+
+Alias[hidden_orange]:%ORANGE%+
+
 Alias[quest_i]:(bks OR bkd OR tr1 OR ass OR box OR j34 OR g34 OR xyz OR bbb OR qbr OR qey OR qhr OR mss OR ice OR tr2 OR hdm OR msf OR vip OR hst OR g33 OR qf1 OR qf2 OR hfh OR leg OR ear)
 Alias[rrorb_i]:(imra OR rera OR upma OR imma OR scou OR fort OR upmp OR irra OR rrra OR urma OR irma)
 Alias[misc_i]:((MISC OR JEWELRY OR CHARM) !QUIVER)
@@ -86,6 +96,8 @@ Alias[rcurrency2_i]:(dcso OR dcho OR lucb OR cwss OR (!ID UNI cm1) OR (!ID UNI c
 Alias[rainbow1_i]:(rtp OR rkey OR rid)
 Alias[rainbow2_i]:(lsvl OR llmr)
 Alias[wtf_i]:((!ID UNI uh9 MAPID=137) OR (!ID UNI rar) OR (!ID UNI uth) OR (!ID UNI utb) OR (!ID UNI rbe) OR (!ID UNI 7bs) OR (!ID UNI 7qr) OR (!ID UNI ram))
+\~~~
+/~~~//weapons and armors
 //Weapons
 Alias[caster_i]:(CLUB OR SCEPTER OR WAND OR STAFF OR (DAGGER !THROWING) OR DRU OR BAR OR DIN OR NEC OR SIN OR SOR)
 Alias[caster2_i]:(STAFF OR WAND OR SOR)
@@ -240,10 +252,25 @@ Alias[bad_rw_shield]:(buc OR sml OR lrg OR spk OR kit OR bsh OR xuc OR xml OR xr
 Alias[bad_rare_shield]:(buc OR sml OR lrg OR spk OR bsh OR xuc OR xml OR xrg OR xpk OR uuc OR uml OR urg OR upk OR ush)
 Alias[good_rw_shield]:((uts (SOCK=4 OR SOCK=3 OR SOCK=0)) OR (uow (SOCK=4 OR SOCK=3 OR SOCK=0)) OR (uit (SOCK=4 OR SOCK=3 OR SOCK=0)))
 Alias[good_rare_shield]:(gts OR xts OR uts OR uow OR xow OR tow OR kit OR xit OR uit)
+//helm
+Alias[bad_rw_helm]:(cap OR skp OR hlm OR fhl OR msk OR bhm OR ghm OR crn OR xap OR xkp OR xlm OR xhl OR xsk OR xh9 OR xhm OR xrn OR uap OR ukp OR hlm OR uhl)
+Alias[bad_rare_helm]:(cap OR skp OR hlm OR fhl OR msk OR bhm OR ghm OR crn OR xap OR xkp OR xlm OR xhl OR xsk OR xh9 OR xhm OR xrn OR uap OR ukp OR hlm OR uhl)
+Alias[good_rw_helm]:(usk OR uh9 OR uhm OR urn)
+Alias[good_rare_helm]:(msk OR bhm OR ghm OR crn OR xrn OR xhm OR xh9 OR xsk OR urn OR uhm OR uh9 OR usk)
+//chest
+Alias[bad_rw_chest]:(qui OR lea OR hla OR stu OR rng OR scl OR chn OR brs OR spl OR plt OR fld OR gth OR ltp OR ful OR aar OR xul OR xea OR xla OR xtu OR xng OR xcl OR xhn OR xrs OR xpl OR xlt OR xld OR xth OR xtp OR xul OR xar)
+Alias[good_rw_chest]:(uui OR uea OR ula OR utu OR ung OR ucl OR uhn OR urs OR upl OR ult OR uld OR uth OR utp OR uul OR uar)
 //brick eth bases to rare
 Alias[eth_brick_to_rare]:(7wa OR bsd OR 9bs OR 7bs OR 9wa OR wax OR 7ax OR 9ax OR axe OR 7gi OR 9gi OR gix OR 7ga OR 9ga OR gax OR 7sp OR 9sp OR spc OR 7fl OR 9fl OR fla OR 7mt OR 9mt OR mst OR 7wh OR 9wh OR whm OR 7m7 OR 9m9 OR mau OR 7gm OR 9gm OR gma OR crs OR 9cr OR 7gd OR 9gd OR gsd OR 7kr OR 9kr OR kri OR 7bk OR 9bk OR bkf OR 7tk OR 9tk OR tkf OR 7b8 OR 9b8 OR bal OR 7ts OR 9ts OR tsp OR 7gl OR 9gl OR glv OR pik OR 9p9 OR 7p7 OR 7sr OR 9sr OR spr OR hal OR wsc OR 9h9 OR 9wc OR 7h7 OR 7wc OR wsp OR 9ws OR 7ws OR ktr OR 9ar OR 7ar OR axf OR 9xf OR 7xf OR am3 OR am4 OR am8 OR am9 OR amd OR ame OR am5 OR ama OR amf)
-
+//Set groups
+Alias[class_set_gear]:(xsk OR xh9 OR uh9 OR uth OR urn OR ci3 OR xul OR xar OR ucl OR uld OR uul OR uar OR xmg OR xtg OR xhg OR xmb OR xtb OR xhb OR zvb OR zmb OR zhb OR utc OR dr8 OR ba5 OR paf OR ne9 OR 9mt OR 7m7 OR 7ws OR 7qr OR oba OR amc)
+Alias[good_mid_set_gear]:(uhm OR xhm OR ulg OR 7fb OR 7gd OR 6cs)
+Alias[good_low_set_gear]:(lea OR stu OR xap OR ci0 OR lgl OR lbt OR vbt OR lbl OR tow OR kit)
+//unique groups
+Alias[good_mid_unique_gear]:(xh9 OR xhm OR xrn OR ci2 OR xea OR xui OR xhn OR xpl OR xlt OR xld OR xth OR xtp OR xar OR xpk OR xsh OR xow OR xts OR xlg OR xvg OR xmg OR xtg OR xhg OR xlb OR xvb OR xmb OR xtb OR xhb OR zlb OR zvb OR ztb OR zhb OR dr6 OR dra OR ba6 OR ba7 OR baa OR pa9 OR ne6 OR nea OR 9gi OR 9wh OR 9m9 OR 9gm OR 9fc OR 9bs OR 9ls OR 9gs OR 9kr OR 9ta OR 9s8 OR 9wc OR 8cb OR 8mx OR 8hx OR 8rx OR 8ls OR 8ws OR 9bw OR 9gw OR 9sc OR 9ws OR 9tw OR 9ar OR ob6 OR ob7 OR oba OR ama)
+Alias[good_low_unique_gear]:(skp OR crn OR qui OR lea OR rng OR ltp OR aar OR tow OR vgl OR mgl OR tgl OR lbt OR tbt OR lbl OR vbl OR tbl OR gix OR ssd OR dgr OR dr2)
 \~~~
+
 
 //both
 Alias[craftme_i]:(WEAPON OR ARMOR) //revisit this
@@ -263,15 +290,25 @@ Alias[badeltshield_i]:(uuc OR uml)
 //Gheeds
 Alias[gheeds_i]:!ID UNI CHARM
 \~~~
+\~~~
 /~~~//item mods
-Alias[low_sup_ed]:ED<12 ED>0
-Alias[high_sup_ed]:ED>11 ED<15
+Alias[low_sup_ed]:((ED>0 ED<11 AR>0) OR (ED>0 ED<16 AR=0))
+Alias[high_sup_ed]:((ED>10 ED<15 AR>0) OR (ED>15 ED<20 AR=0))
 Alias[bad_res_pal]:RES<20 RES>0
 Alias[low_res_pal]:RES<24 RES>19
 Alias[high_res_pal]:RES>24 RES<30
 Alias[bad_edam_pal]:EDAM<51 EDAM>0
 Alias[low_edam_pal]:EDAM<55 EDAM>50
 Alias[high_edam_pal]:EDAM>54 EDAM<65
+
+ItemDisplay[NMAG SUP !GLOVES !BOOTS !BELT !caster2_i (WEAPON OR ARMOR) ED=20 AR=0]:%TEAL%perf|%RED%%ED%ed|%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[NMAG SUP !GLOVES !BOOTS !BELT !caster2_i (WEAPON OR ARMOR) ED>15 ED<20 AR=0]:%GOLD%%ED%ed|%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[NMAG SUP !GLOVES !BOOTS !BELT !caster2_i (WEAPON OR ARMOR) ED>0 ED<16 AR=0]:%BLUE%%ED%ed|%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[NMAG SUP !GLOVES !BOOTS !BELT !caster2_i (WEAPON OR ARMOR) ED=15 AR>0]:%TEAL%perf|%RED%%ED%ed|%AR%ar|%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[NMAG SUP !GLOVES !BOOTS !BELT !caster2_i (WEAPON OR ARMOR) ED>10 ED<15 AR>0]:%GOLD%%ED%ed|%AR%ar|%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[NMAG SUP !GLOVES !BOOTS !BELT !caster2_i (WEAPON OR ARMOR) ED>0 ED<11 AR>0]:%BLUE%%ED%ed|%AR%ar|%NAME%{%NAME%}%CONTINUE%
+
+
 \~~~
 \~~~
 /~~~//kryzard gambling screen
@@ -975,7 +1012,7 @@ ItemDisplay[rainbow1_i]:%PURPLE%O  %BLUE%O  %GREEN%O  %YELLOW%O  %ORANGE%O  %RED
 ItemDisplay[rainbow2_i]:%BLACK%O  O  O  O  O  O %TEAL%%NAME%%BLACK% O  O  O  O  O  O%CONTINUE%
 ItemDisplay[wtf_i]:%BLACK%!!! %WHITE%WTF %BLACK%WHAT %GRAY%THE %WHITE%FUCK %WHITE%WHAT %GRAY%THE %BLACK%FUCK %WHITE%WTF %BLACK%!!!%CONTINUE%
 \~~~
-/~~~//names
+/~~~//NAMES FOR UNIQUES AND SETS
 /~~~//Armor
 /~~~//unique
 /~~~//helm
@@ -1821,7 +1858,7 @@ ItemDisplay[NMAG !RW 7cr !INF !SUP (SOCK=0)]:%NAME%%TAN%|imbue me{%NAME%}%CONTIN
 //craft me tag	
 ItemDisplay[(RARE OR MAG OR SET OR UNI) ETH !STAT360=0 (eth_brick_to_rare)]:%NAME%%ORANGE%|craft me{%NAME%}%CONTINUE%		
 //brick me tag
-ItemDisplay[(NMAG OR RARE OR MAG OR CRAFT OR SET OR UNI) STAT360=0 SOCK=0 ((ETH eth_brick_to_rare) OR (CIRC))]:%NAME%%RED%|brick me{%NAME%}%CONTINUE%
+ItemDisplay[(NMAG OR RARE OR MAG OR CRAFT OR SET OR UNI) STAT360=0 SOCK=0 ((ETH eth_brick_to_rare) OR (!ETH CIRC))]:%NAME%%RED%|brick me{%NAME%}%CONTINUE%
 //reroll me tag
 ItemDisplay[ID RARE jew STAT360=0 REROLLALVL>65]:%NAME%%TEAL%|re-roll me{%NAME%}%CONTINUE%			
 ItemDisplay[MAG CHARM ILVL>90]:%NAME%%TEAL%|re-roll me{%NAME%}%CONTINUE%
@@ -1835,19 +1872,20 @@ ItemDisplay[SOCK>0 !RW (QUIVER)]:%WHITE%%NAME%%YELLOW%|%SOCKETS%os{%NAME%}%CONTI
 ItemDisplay[(NMAG OR MAG OR RARE) (WEAPON OR ARMOR) !CHEST GROUND !ID (PRICE=35000 OR (caster3_i) OR (caster2_i))]:%NAME%%TAN%|${%NAME%}%CONTINUE%
 ItemDisplay[(NMAG OR MAG OR RARE) (WEAPON OR ARMOR) GROUND ID PRICE=35000]:%NAME%%TAN%|${%NAME%}%CONTINUE%
 //good/bad  tag
-ItemDisplay[NMAG (bad_rw_1haxe OR bad_rw_1hclub OR bad_rw_1hhammer OR bad_rw_1hsword OR bad_rw_2haxe OR bad_rw_2hhammer OR bad_rw_2hspear OR bad_rw_2hsword OR bad_rw_bow OR bad_rw_dagger OR bad_rw_orb OR bad_rw_polearm OR bad_rw_pshield OR bad_rw_shield OR bad_rw_staff OR bad_rw_taxe OR bad_rw_tknife OR bad_rw_tmace OR bad_rw_tspear OR bad_rw_xbow OR bad_rw_zbow OR bad_rw_zspear OR bad_rw_zthrow)]:%NAME%%CORAL%|b%CONTINUE%
-ItemDisplay[NMAG (good_rw_1hclub OR good_rw_1hhammer OR good_rw_orb OR good_rw_pshield OR good_rw_shield OR good_rw_wand OR good_rw_zthrow)]:%NAME%%TEAL%|g%CONTINUE%
+ItemDisplay[NMAG (bad_rw_1haxe OR bad_rw_chest OR bad_rw_helm OR bad_rw_1hclub OR bad_rw_1hhammer OR bad_rw_1hsword OR bad_rw_2haxe OR bad_rw_2hhammer OR bad_rw_2hspear OR bad_rw_2hsword OR bad_rw_bow OR bad_rw_dagger OR bad_rw_orb OR bad_rw_polearm OR bad_rw_pshield OR bad_rw_shield OR bad_rw_staff OR bad_rw_taxe OR bad_rw_tknife OR bad_rw_tmace OR bad_rw_tspear OR bad_rw_xbow OR bad_rw_zbow OR bad_rw_zspear OR bad_rw_zthrow)]:%NAME%%CORAL%|b%CONTINUE%
+ItemDisplay[NMAG (good_rw_1hclub OR good_rw_chest OR good_rw_helm OR good_rw_1hhammer OR good_rw_orb OR good_rw_pshield OR good_rw_shield OR good_rw_wand OR good_rw_zthrow)]:%NAME%%TEAL%|g%CONTINUE%
 ItemDisplay[NMAG (good_fast_rw_1haxe OR good_fast_rw_1hsword OR good_fast_rw_2haxe OR good_fast_rw_2hspear OR good_fast_rw_2hsword OR good_fast_rw_bow OR good_fast_rw_claw OR good_fast_rw_dagger OR good_fast_rw_polearm OR good_fast_rw_scepter OR good_fast_rw_staff OR good_fast_rw_taxe OR good_fast_rw_tknife OR good_fast_rw_tmace OR good_fast_rw_tspear OR good_fast_rw_xbow OR good_fast_rw_zbow OR good_fast_rw_zspear)]:%NAME%%TEAL%|g%CONTINUE%
 ItemDisplay[NMAG (good_slow_rw_1haxe OR good_slow_rw_1hsword OR good_slow_rw_2haxe OR good_slow_rw_2hspear OR good_slow_rw_2hsword OR good_slow_rw_bow OR good_slow_rw_claw OR good_slow_rw_dagger OR good_slow_rw_polearm OR good_slow_rw_scepter OR good_slow_rw_staff OR good_slow_rw_taxe OR good_slow_rw_tknife OR good_slow_rw_tmace OR good_slow_rw_tspear OR good_slow_rw_xbow OR good_slow_rw_zbow OR good_slow_rw_zspear)]:%NAME%%TEAL%|g%CONTINUE%
 ItemDisplay[NMAG (good_tight_rw_2hhammer)]:%NAME%%TEAL%|g%CONTINUE%
 ItemDisplay[NMAG (good_loose_rw_2hhammer)]:%NAME%%TEAL%|g%CONTINUE%
-ItemDisplay[!ID (MAG OR RARE) (bad_rare_1haxe OR bad_rare_1hclub OR bad_rare_1hsword OR bad_rare_2haxe OR bad_rare_2hspear OR bad_rare_2hsword OR bad_rare_bow OR bad_rare_claw OR bad_rare_dagger OR bad_rare_orb OR bad_rare_polearm OR bad_rare_scepter OR bad_rare_shield OR bad_rare_staff OR bad_rare_taxe OR bad_rare_tmace OR bad_rare_tspear OR bad_rare_xbow)]:%NAME%%CORAL%|b%CONTINUE%
-ItemDisplay[!ID (MAG OR RARE) (good_rare_1hclub OR good_rare_1hhammer OR good_rare_1hsword OR good_rare_2hsword OR good_rare_dagger OR good_rare_orb OR good_rare_polearm OR good_rare_pshield OR good_rare_scepter OR good_rare_shield OR good_rare_staff OR good_rare_taxe OR good_rare_wand OR good_rare_xbow OR good_rare_zthrow)]:%NAME%%TEAL%|g%CONTINUE%
+ItemDisplay[!ID (MAG OR RARE) (bad_rare_1haxe OR bad_rare_helm OR bad_rare_1hclub OR bad_rare_1hsword OR bad_rare_2haxe OR bad_rare_2hspear OR bad_rare_2hsword OR bad_rare_bow OR bad_rare_claw OR bad_rare_dagger OR bad_rare_orb OR bad_rare_polearm OR bad_rare_scepter OR bad_rare_shield OR bad_rare_staff OR bad_rare_taxe OR bad_rare_tmace OR bad_rare_tspear OR bad_rare_xbow)]:%NAME%%CORAL%|b%CONTINUE%
+ItemDisplay[!ID (MAG OR RARE) (good_rare_1hclub OR good_rare_helm OR good_rare_1hhammer OR good_rare_1hsword OR good_rare_2hsword OR good_rare_dagger OR good_rare_orb OR good_rare_polearm OR good_rare_pshield OR good_rare_scepter OR good_rare_shield OR good_rare_staff OR good_rare_taxe OR good_rare_wand OR good_rare_xbow OR good_rare_zthrow)]:%NAME%%TEAL%|g%CONTINUE%
 ItemDisplay[!ID (MAG OR RARE) (good_slow_rare_1haxe OR good_slow_rare_2haxe OR good_slow_rare_2hspear OR good_slow_rare_bow OR good_slow_rare_claw OR good_slow_rare_tknife OR good_slow_rare_tmace OR good_slow_rare_tspear OR good_slow_rare_zbow OR good_slow_rare_zspear)]:%NAME%%TEAL%|g%CONTINUE%
 ItemDisplay[!ID (MAG OR RARE) (good_fast_rare_1haxe OR good_fast_rare_2haxe OR good_fast_rare_2hspear OR good_fast_rare_bow OR good_fast_rare_claw OR good_fast_rare_tknife OR good_fast_rare_tmace OR good_fast_rare_tspear OR good_fast_rare_zbow OR good_fast_rare_zspear)]:%NAME%%TEAL%|g%CONTINUE%
 ItemDisplay[!ID (MAG OR RARE) (good_tight_rare_2hhammer)]:%NAME%%TEAL%|g%CONTINUE%
 ItemDisplay[!ID (MAG OR RARE) (good_loose_rare_2hhammer)]:%NAME%%TEAL%|g%CONTINUE%
 
+//ItemDisplay[!ID (MAG OR RARE) (BAR OR DRU OR NEC OR DIN OR SOR OR bad_rare_1haxe OR bad_rare_1hclub OR bad_rare_1hsword OR bad_rare_2haxe OR bad_rare_2hspear OR bad_rare_2hsword OR bad_rare_bow OR bad_rare_claw OR bad_rare_dagger OR bad_rare_orb OR bad_rare_polearm OR bad_rare_scepter OR bad_rare_shield OR bad_rare_staff OR bad_rare_taxe OR bad_rare_tmace OR bad_rare_tspear OR bad_rare_xbow) PRICE=35000 FILTLVL>4 !town_l GROUND]:%YELLOW%$$$
 
 \~~~
 /~~~//Staffmods
@@ -2538,7 +2576,7 @@ ItemDisplay[(CHEST OR (WEAPON AND !THROWPOTS) OR HELM OR CIRC OR SHIELD) INF NMA
 //Notes about Max Sockets in NMAG items
 ItemDisplay[NMAG SOCK=0 MAXSOCKETS>0 !GROUND]:%NAME%{%NAME%%CL%%WHITE%Maximum Sockets: %TAN%[%WHITE%%MAXSOCKETS%%TAN%]}%CONTINUE%
 
-//Notes about possible RuneWords
+/~~~//Notes about possible RuneWords
 //Chest, Head, Shield, Quiver
 ItemDisplay[CHEST SOCK=2 NMAG !RW !GROUND]:%NAME%{%GRAY%Prudence, Smoke, Stealth%CL%%TAN%Note%WHITE%: Possible RuneWords:}%CONTINUE%
 ItemDisplay[CHEST SOCK=3 NMAG !RW !GROUND]:%NAME%{%GRAY%Principle, Rain, Treachery, Wealth%CL%Gloom, Hustle, Lionheart, Myth, Peace,%CL%Dragon, Duress, Enigma, Enlightenment,%CL%%TAN%Note%WHITE%: Possible RuneWords: %GRAY%Bone, }%CONTINUE%
@@ -3530,8 +3568,10 @@ ItemDisplay[(r32 OR r32s)]:%NAME%{%NAME%%TAN%Note%WHITE%: 2x %ORANGE%Cham %WHITE
 ItemDisplay[(r33 OR r33s)]:%NAME%{%NAME%%TAN%Note%WHITE%: %ORANGE%Zod %WHITE%+ Perf %GRAY%O %WHITE%= Repair any Item %GRAY%(even eth)%CL%}%CONTINUE%
 
 
+\~~~
 
-//how to add tri res
+
+/~~~//how to add tri res and steve descriotions
 //1 set the alias up
 //2 add the alias tag to itemdisplay
 
@@ -3582,9 +3622,49 @@ ItemDisplay[WEAPON (RARE OR MAG OR CRAFT) ID ED>299 ED<400]:%LIGHT_GRAY%%ED%% Ed
 ItemDisplay[WEAPON (RARE OR MAG OR CRAFT) ID ED>199 ED<300]:%LIGHT_GRAY%%ED%% Edam%CL%%NAME%{%NAME%}%CONTINUE%
 ItemDisplay[WEAPON (RARE OR MAG OR CRAFT) ID ED>0 ED<200]:%LIGHT_GRAY%%ED%% Edam%CL%%NAME%{%NAME%}%CONTINUE%
 
-ItemDisplay[HELM (RARE OR MAG OR CRAFT) ID EDAM>0]:%LIGHT_GRAY%%EDAM%% Edam%CL%%NAME%{%NAME%}%CONTINUE%
-ItemDisplay[CHEST (RARE OR MAG OR CRAFT) ID EDAM>0]:%LIGHT_GRAY%%EDAM%% Edam%CL%%NAME%{%NAME%}%CONTINUE%
-ItemDisplay[DIN (RARE OR MAG OR CRAFT) ID EDAM>0]:%LIGHT_GRAY%%EDAM%% Edam%CL%%NAME%{%NAME%}%CONTINUE%
+
+ItemDisplay[(HELM OR CHEST OR SHIELD OR CIRC) (RARE OR MAG OR CRAFT) ID EDAM>0]:%LIGHT_GRAY%%EDAM%% ed%CL%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR BELT) (RARE OR MAG OR CRAFT) ID STAT36>0]:%LIGHT_GRAY%%STAT36%% pdr%CL%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR BELT OR GLOVES OR BOOTS) (RARE OR MAG OR CRAFT) ID FCR>0]:%LIGHT_GRAY%%FCR%% fcr%CL%%NAME%{%NAME%}%CONTINUE%
+
+ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR GLOVES) (RARE OR MAG OR CRAFT) ID ALLSK>0]:%LIGHT_GRAY%+%ALLSK% all skills%CL%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR GLOVES) (RARE OR MAG OR CRAFT) ID CLSK0>0]:%LIGHT_GRAY%+%CLSK0% Zon skills%CL%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR GLOVES) (RARE OR MAG OR CRAFT) ID CLSK1>0]:%LIGHT_GRAY%+%CLSK1% Sorc skills%CL%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR GLOVES) (RARE OR MAG OR CRAFT) ID CLSK2>0]:%LIGHT_GRAY%+%CLSK2% Necro skills%CL%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR GLOVES) (RARE OR MAG OR CRAFT) ID CLSK3>0]:%LIGHT_GRAY%+%CLSK3% Pally skills%CL%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR GLOVES) (RARE OR MAG OR CRAFT) ID CLSK4>0]:%LIGHT_GRAY%+%CLSK4% Barb skills%CL%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR GLOVES) (RARE OR MAG OR CRAFT) ID CLSK5>0]:%LIGHT_GRAY%+%CLSK5% Dudu skills%CL%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR GLOVES) (RARE OR MAG OR CRAFT) ID CLSK6>0]:%LIGHT_GRAY%+%CLSK6% Assa skills%CL%%NAME%{%NAME%}%CONTINUE%
+
+ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR GLOVES) (RARE OR MAG OR CRAFT) ID TABSK0>0]:%LIGHT_GRAY%+%TABSK0% bowa%CL%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR GLOVES) (RARE OR MAG OR CRAFT) ID TABSK1>0]:%LIGHT_GRAY%+%TABSK1% passive%CL%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR GLOVES) (RARE OR MAG OR CRAFT) ID TABSK2>0]:%LIGHT_GRAY%+%TABSK2% java%CL%%NAME%{%NAME%}%CONTINUE%
+
+ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR GLOVES) (RARE OR MAG OR CRAFT) ID TABSK8>0]:%LIGHT_GRAY%+%TABSK8% fire%CL%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR GLOVES) (RARE OR MAG OR CRAFT) ID TABSK9>0]:%LIGHT_GRAY%+%TABSK9% lite%CL%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR GLOVES) (RARE OR MAG OR CRAFT) ID TABSK10>0]:%LIGHT_GRAY%+%TABSK10% cold%CL%%NAME%{%NAME%}%CONTINUE%
+
+ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR GLOVES) (RARE OR MAG OR CRAFT) ID TABSK16>0]:%LIGHT_GRAY%+%TABSK16% curses%CL%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR GLOVES) (RARE OR MAG OR CRAFT) ID TABSK17>0]:%LIGHT_GRAY%+%TABSK17% pnb%CL%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR GLOVES) (RARE OR MAG OR CRAFT) ID TABSK18>0]:%LIGHT_GRAY%+%TABSK18% n sum%CL%%NAME%{%NAME%}%CONTINUE%
+
+ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR GLOVES) (RARE OR MAG OR CRAFT) ID TABSK24>0]:%LIGHT_GRAY%+%TABSK24% pcomb%CL%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR GLOVES) (RARE OR MAG OR CRAFT) ID TABSK25>0]:%LIGHT_GRAY%+%TABSK25% off a%CL%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR GLOVES) (RARE OR MAG OR CRAFT) ID TABSK26>0]:%LIGHT_GRAY%+%TABSK26% deff a%CL%%NAME%{%NAME%}%CONTINUE%
+
+ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR GLOVES) (RARE OR MAG OR CRAFT) ID TABSK32>0]:%LIGHT_GRAY%+%TABSK32% bcomb%CL%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR GLOVES) (RARE OR MAG OR CRAFT) ID TABSK33>0]:%LIGHT_GRAY%+%TABSK33% mast%CL%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR GLOVES) (RARE OR MAG OR CRAFT) ID TABSK34>0]:%LIGHT_GRAY%+%TABSK34% singer%CL%%NAME%{%NAME%}%CONTINUE%
+
+ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR GLOVES) (RARE OR MAG OR CRAFT) ID TABSK40>0]:%LIGHT_GRAY%+%TABSK40% d sum%CL%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR GLOVES) (RARE OR MAG OR CRAFT) ID TABSK41>0]:%LIGHT_GRAY%+%TABSK41% ss%CL%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR GLOVES) (RARE OR MAG OR CRAFT) ID TABSK42>0]:%LIGHT_GRAY%+%TABSK42% ele%CL%%NAME%{%NAME%}%CONTINUE%
+
+ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR GLOVES) (RARE OR MAG OR CRAFT) ID TABSK48>0]:%LIGHT_GRAY%+%TABSK48% trap%CL%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR GLOVES) (RARE OR MAG OR CRAFT) ID TABSK49>0]:%LIGHT_GRAY%+%TABSK49% shadow%CL%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR GLOVES) (RARE OR MAG OR CRAFT) ID TABSK50>0:%LIGHT_GRAY%+%TABSK50% ma%CL%%NAME%{%NAME%}%CONTINUE%
+
+
 
 ItemDisplay[t21]:%NAME%{%WHITE%Immunes:%RED%120% %GREEN%120%%CL%%NAME%}%CONTINUE%
 ItemDisplay[t33]:%NAME%{%WHITE%Immunes:%BLUE%120% %ORANGE%105%%CL%%NAME%}%CONTINUE%
@@ -3622,6 +3702,7 @@ ItemDisplay[t57]:%NAME%{%WHITE%Immunes:%RED%110% %YELLOW%120% %BLUE%145% %GREEN%
 ItemDisplay[t58]:%NAME%{%WHITE%Immunes:%GRAY%Immune-Free Zone%NAME%}%CONTINUE%
 //ALL ITEM DESCRIPTIONS CLOSER - DESCRIPTIONS ABOVE THIS LINE
 \~~~
+\~~~
 
 
 //
@@ -3629,10 +3710,10 @@ ItemDisplay[t58]:%NAME%{%WHITE%Immunes:%GRAY%Immune-Free Zone%NAME%}%CONTINUE%
 
 /~~~//Hide
 //early notifying
-ItemDisplay[NMAG ELT DIN RES=30]:%NAME%{%NAME%}%MAP-9B%%CONTINUE%
-ItemDisplay[NMAG ELT DIN EDAM=65]:%NAME%{%NAME%}%MAP-9B%%CONTINUE%
-ItemDisplay[NMAG ELT SUP !GLOVES !BOOTS !BELT !caster2_i (WEAPON OR ARMOR) ED=20 AR=0]:%NAME%{%NAME%}%MAP-9B%%CONTINUE%
-ItemDisplay[NMAG ELT SUP !GLOVES !BOOTS !BELT !caster2_i (WEAPON OR ARMOR) ED=15 AR>0]:%NAME%{%NAME%}%MAP-9B%%CONTINUE%
+ItemDisplay[NMAG ELT DIN !bad_rw_pshield RES=30]:%NAME%{%NAME%}%MAP-9B%%CONTINUE%
+ItemDisplay[NMAG ELT DIN !bad_rw_pshield EDAM=65]:%NAME%{%NAME%}%MAP-9B%%CONTINUE%
+ItemDisplay[NMAG ELT SUP !GLOVES !BOOTS !BELT !caster2_i (WEAPON OR ARMOR) !(bad_rw_1haxe OR bad_rw_helm OR bad_rw_chest OR bad_rw_1hclub OR bad_rw_1hhammer OR bad_rw_1hsword OR bad_rw_2haxe OR bad_rw_2hhammer OR bad_rw_2hspear OR bad_rw_2hsword OR bad_rw_bow OR bad_rw_dagger OR bad_rw_orb OR bad_rw_polearm OR bad_rw_pshield OR bad_rw_shield OR bad_rw_staff OR bad_rw_taxe OR bad_rw_tknife OR bad_rw_tmace OR bad_rw_tspear OR bad_rw_xbow OR bad_rw_zbow OR bad_rw_zspear OR bad_rw_zthrow) ED=20 AR=0]:%NAME%{%NAME%}%MAP-9B%%CONTINUE%
+ItemDisplay[NMAG ELT SUP !GLOVES !BOOTS !BELT !caster2_i (WEAPON OR ARMOR) !(bad_rw_1haxe OR bad_rw_helm OR bad_rw_chest OR bad_rw_1hclub OR bad_rw_1hhammer OR bad_rw_1hsword OR bad_rw_2haxe OR bad_rw_2hhammer OR bad_rw_2hspear OR bad_rw_2hsword OR bad_rw_bow OR bad_rw_dagger OR bad_rw_orb OR bad_rw_polearm OR bad_rw_pshield OR bad_rw_shield OR bad_rw_staff OR bad_rw_taxe OR bad_rw_tknife OR bad_rw_tmace OR bad_rw_tspear OR bad_rw_xbow OR bad_rw_zbow OR bad_rw_zspear OR bad_rw_zthrow) ED=15 AR>0]:%NAME%{%NAME%}%MAP-9B%%CONTINUE%
 	/~~~//resource potions
 		ItemDisplay[(hp5 OR mp5) !town_l GROUND (FILTLVL=2 OR FILTLVL=4 OR FILTLVL=6 OR FILTLVL=8 OR FILTLVL=10)]://
 		ItemDisplay[(hp4 OR mp4) !town_l GROUND (FILTLVL=2 OR FILTLVL=4 OR FILTLVL=6 OR FILTLVL=8 OR FILTLVL=10)]://	
@@ -3766,10 +3847,14 @@ ItemDisplay[NMAG ELT SUP !GLOVES !BOOTS !BELT !caster2_i (WEAPON OR ARMOR) ED=15
 		
 	
 		//general
+		
+		ItemDisplay[NMAG (bad_rw_1haxe OR bad_rw_helm OR bad_rw_chest OR bad_rw_1hclub OR bad_rw_1hhammer OR bad_rw_1hsword OR bad_rw_2haxe OR bad_rw_2hhammer OR bad_rw_2hspear OR bad_rw_2hsword OR bad_rw_bow OR bad_rw_dagger OR bad_rw_orb OR bad_rw_polearm OR bad_rw_pshield OR bad_rw_shield OR bad_rw_staff OR bad_rw_taxe OR bad_rw_tknife OR bad_rw_tmace OR bad_rw_tspear OR bad_rw_xbow OR bad_rw_zbow OR bad_rw_zspear OR bad_rw_zthrow) GROUND !town_l FILTLVL>4]:%HIDDEN_NMAG%
+			
+		
 		ItemDisplay[INF !town_l GROUND]:// inferior
 		ItemDisplay[NMAG (GLOVES OR BELT OR BOOTS) (FILTLVL>4 OR (CLVL>25 FILTLVL>2)) !town_l GROUND]://hide white non-rw bases
 		ItemDisplay[NMAG !(SUP OR ETH) !RW !CIRC !caster_i (WEAPON OR ARMOR) (FILTLVL>4 OR (CLVL>25 FILTLVL>2)) !town_l GROUND]://hide plain bases that aren't caster that are either not sup or not eth
-		ItemDisplay[NMAG SUP !ETH !RW !CIRC !caster_i (EDAM=0 OR AR=0) WEAPON (FILTLVL>4 OR (CLVL>25 FILTLVL>2)) !town_l GROUND]://hide sup weps that have zero enhanced dmg
+		ItemDisplay[NMAG SUP !ETH !RW !CIRC !caster_i EDAM=0 AR=0 WEAPON (FILTLVL>4 OR (CLVL>25 FILTLVL>2)) !town_l GROUND]://hide sup weps that have zero enhanced dmg
 		ItemDisplay[NMAG SUP !ETH !RW !CIRC !caster_i EDEF=0 ARMOR (FILTLVL>4 OR (CLVL>25 FILTLVL>2)) !town_l GROUND]://hide sup armor that has zero ehance def and zero enhanced dmg
 		ItemDisplay[NMAG SOCK=1 (ARMOR OR WEAPON OR QUIVER) !CIRC (FILTLVL>4 OR (CLVL>25 FILTLVL>2)) !town_l GROUND]://
 		ItemDisplay[NMAG ETH !SUP ARMOR FILTLVL>6]:// Hide non sup eth armors
@@ -3779,7 +3864,7 @@ ItemDisplay[NMAG ELT SUP !GLOVES !BOOTS !BELT !caster2_i (WEAPON OR ARMOR) ED=15
 			//regular helms
 			ItemDisplay[NMAG !RW NORM HELM !BAR !DRU !CIRC (FILTLVL>4 OR (CLVL>35 FILTLVL>2)) !town_l GROUND]://
 			ItemDisplay[NMAG !RW EXC HELM !BAR !DRU !CIRC (FILTLVL>4 OR (CLVL>55 FILTLVL>2)) !town_l GROUND]://
-			ItemDisplay[NMAG !RW badelthelm_i !CIRC (FILTLVL>4 OR (CLVL>55 FILTLVL>2)) !town_l GROUND]://
+			//ItemDisplay[NMAG !RW badelthelm_i !CIRC (FILTLVL>4 OR (CLVL>55 FILTLVL>2)) !town_l GROUND]://
 			ItemDisplay[NMAG !RW HELM !BAR !DRU !CIRC SOCK=2 (FILTLVL>4 OR (CLVL>55 FILTLVL>2)) !town_l GROUND]://
 			ItemDisplay[NMAG !RW HELM !BAR !DRU !CIRC SUP !ETH high_sup_ed FILTLVL>8 !town_l GROUND]://
 			ItemDisplay[NMAG !RW HELM !BAR !DRU !CIRC SUP !ETH low_sup_ed FILTLVL>6 !town_l GROUND]://
@@ -3790,15 +3875,15 @@ ItemDisplay[NMAG ELT SUP !GLOVES !BOOTS !BELT !caster2_i (WEAPON OR ARMOR) ED=15
 			ItemDisplay[NMAG NORM !RW (DRU OR BAR) (FILTLVL>4 OR (FILTLVL>2 CLVL>30)) !town_l GROUND]://normal bases cant roll 3 sockets so aren't useful for any rw's beyond leveling		
 			ItemDisplay[NMAG !RW BAR !(MULTI107,375>2 OR MULTI107,133>2 OR MULTI107,134>2 OR MULTI107,126>2 OR MULTI107,128>2 OR MULTI107,130>2 OR MULTI107,131>2 OR MULTI107,132>2 OR MULTI107,135>2 OR MULTI107,137>2 OR MULTI107,138>2 OR MULTI107,139>2 OR MULTI107,140>2 OR MULTI107,141>2 OR MULTI107,142>2 OR MULTI107,143>2 OR MULTI107,144>2 OR MULTI107,145>2 OR MULTI107,146>2 OR MULTI107,147>2 OR MULTI107,148>2 OR MULTI107,149>2 OR MULTI107,150>2 OR MULTI107,151>2 OR MULTI107,152>2 OR MULTI107,153>2 OR MULTI107,154>2 OR MULTI107,155>2 OR MULTI107,368>2) (FILTLVL>4 OR (CLVL>35 FILTLVL>2)) !town_l GROUND]:// less than +3 don't show
 			ItemDisplay[NMAG !RW BAR MULTI107,133=0 MULTI107,375=0 MULTI107,134=0 MULTI107,126=0 MULTI107,128=0 MULTI107,130=0 MULTI107,131=0 MULTI107,132=0 MULTI107,135=0 MULTI107,137=0 MULTI107,138=0 MULTI107,139=0 MULTI107,140=0 MULTI107,141=0 MULTI107,142=0 MULTI107,143=0 MULTI107,144=0 MULTI107,145=0 MULTI107,146=0 MULTI107,147=0 MULTI107,148=0 MULTI107,149=0 MULTI107,150=0 MULTI107,151=0 MULTI107,152=0 MULTI107,153=0 MULTI107,154=0 MULTI107,155=0 MULTI107,368=0 (FILTLVL>4 OR (CLVL>35 FILTLVL>2)) !town_l GROUND]:// zero staffmods
-			ItemDisplay[NMAG !RW BAR !(MULTI107,375+MULTI107,133+MULTI107,134+MULTI107,126+MULTI107,128+MULTI107,130+MULTI107,131+MULTI107,132+MULTI107,135+MULTI107,137+MULTI107,138+MULTI107,139+MULTI107,140+MULTI107,141+MULTI107,142+MULTI107,143+MULTI107,144+MULTI107,145+MULTI107,146+MULTI107,147+MULTI107,148+MULTI107,149+MULTI107,150+MULTI107,151+MULTI107,152+MULTI107,153+MULTI107,154+MULTI107,155+MULTI107,368=9) FILTLVL>8 !town_l GROUND]:// less than 3/3/3
-			ItemDisplay[NMAG !RW BAR (MULTI107,375+MULTI107,133+MULTI107,134+MULTI107,126+MULTI107,128+MULTI107,130+MULTI107,131+MULTI107,132+MULTI107,135+MULTI107,137+MULTI107,138+MULTI107,139+MULTI107,140+MULTI107,141+MULTI107,142+MULTI107,143+MULTI107,144+MULTI107,145+MULTI107,146+MULTI107,147+MULTI107,148+MULTI107,149+MULTI107,150+MULTI107,151+MULTI107,152+MULTI107,153+MULTI107,154+MULTI107,155+MULTI107,368<6) FILTLVL>6 !town_l GROUND]:// 
+			ItemDisplay[NMAG !RW BAR !(MULTI107,375+MULTI107,133+MULTI107,134+MULTI107,126+MULTI107,128+MULTI107,130+MULTI107,131+MULTI107,132+MULTI107,135+MULTI107,137+MULTI107,138+MULTI107,139+MULTI107,140+MULTI107,141+MULTI107,142+MULTI107,143+MULTI107,144+MULTI107,145+MULTI107,146+MULTI107,147+MULTI107,148+MULTI107,149+MULTI107,150+MULTI107,151+MULTI107,152+MULTI107,153+MULTI107,154+MULTI107,155+MULTI107,368=9) FILTLVL>6 !town_l GROUND]:// less than 3/3/3
+			ItemDisplay[NMAG !RW BAR (MULTI107,375+MULTI107,133+MULTI107,134+MULTI107,126+MULTI107,128+MULTI107,130+MULTI107,131+MULTI107,132+MULTI107,135+MULTI107,137+MULTI107,138+MULTI107,139+MULTI107,140+MULTI107,141+MULTI107,142+MULTI107,143+MULTI107,144+MULTI107,145+MULTI107,146+MULTI107,147+MULTI107,148+MULTI107,149+MULTI107,150+MULTI107,151+MULTI107,152+MULTI107,153+MULTI107,154+MULTI107,155+MULTI107,368<6) FILTLVL>4 !town_l GROUND]:// 
 			ItemDisplay[NMAG !RW DRU !(MULTI107,221>2 OR MULTI107,222>2 OR MULTI107,223>2 OR MULTI107,224>2 OR MULTI107,225>2 OR MULTI107,226>2 OR MULTI107,227>2 OR MULTI107,228>2 OR MULTI107,229>2 OR MULTI107,230>2 OR MULTI107,231>2 OR MULTI107,232>2 OR MULTI107,233>2 OR MULTI107,234>2 OR MULTI107,235>2 OR MULTI107,236>2 OR MULTI107,237>2 OR MULTI107,238>2 OR MULTI107,239>2 OR MULTI107,240>2 OR MULTI107,241>2 OR MULTI107,242>2 OR MULTI107,243>2 OR MULTI107,244>2 OR MULTI107,245>2 OR MULTI107,246>2 OR MULTI107,247>2 OR MULTI107,248>2 OR MULTI107,249>2 OR MULTI107,250>2 OR MULTI107,370>2) (FILTLVL>4 OR (CLVL>35 FILTLVL>2)) !town_l GROUND]://
 			ItemDisplay[NMAG !RW DRU MULTI107,221=0 MULTI107,222=0 MULTI107,223=0 MULTI107,224=0 MULTI107,225=0 MULTI107,226=0 MULTI107,227=0 MULTI107,228=0 MULTI107,229=0 MULTI107,230=0 MULTI107,231=0 MULTI107,232=0 MULTI107,233=0 MULTI107,234=0 MULTI107,235=0 MULTI107,236=0 MULTI107,237=0 MULTI107,238=0 MULTI107,239=0 MULTI107,240=0 MULTI107,241=0 MULTI107,242=0 MULTI107,243=0 MULTI107,244=0 MULTI107,245=0 MULTI107,246=0 MULTI107,247=0 MULTI107,248=0 MULTI107,249=0 MULTI107,250=0 MULTI107,370=0 (FILTLVL>4 OR (CLVL>35 FILTLVL>2)) !town_l GROUND]://
-			ItemDisplay[NMAG !RW DRU !(MULTI107,221+MULTI107,222+MULTI107,223+MULTI107,224+MULTI107,225+MULTI107,226+MULTI107,227+MULTI107,228+MULTI107,229+MULTI107,230+MULTI107,231+MULTI107,232+MULTI107,233+MULTI107,234+MULTI107,235+MULTI107,236+MULTI107,237+MULTI107,238+MULTI107,239+MULTI107,240+MULTI107,241+MULTI107,242+MULTI107,243+MULTI107,244+MULTI107,245+MULTI107,246+MULTI107,247+MULTI107,248+MULTI107,249+MULTI107,250+MULTI107,370=9) FILTLVL>8 !town_l GROUND]://
-			ItemDisplay[NMAG !RW DRU (MULTI107,221+MULTI107,222+MULTI107,223+MULTI107,224+MULTI107,225+MULTI107,226+MULTI107,227+MULTI107,228+MULTI107,229+MULTI107,230+MULTI107,231+MULTI107,232+MULTI107,233+MULTI107,234+MULTI107,235+MULTI107,236+MULTI107,237+MULTI107,238+MULTI107,239+MULTI107,240+MULTI107,241+MULTI107,242+MULTI107,243+MULTI107,244+MULTI107,245+MULTI107,246+MULTI107,247+MULTI107,248+MULTI107,249+MULTI107,250+MULTI107,370<6) FILTLVL>6 !town_l GROUND]://				
+			ItemDisplay[NMAG !RW DRU !(MULTI107,221+MULTI107,222+MULTI107,223+MULTI107,224+MULTI107,225+MULTI107,226+MULTI107,227+MULTI107,228+MULTI107,229+MULTI107,230+MULTI107,231+MULTI107,232+MULTI107,233+MULTI107,234+MULTI107,235+MULTI107,236+MULTI107,237+MULTI107,238+MULTI107,239+MULTI107,240+MULTI107,241+MULTI107,242+MULTI107,243+MULTI107,244+MULTI107,245+MULTI107,246+MULTI107,247+MULTI107,248+MULTI107,249+MULTI107,250+MULTI107,370=9) FILTLVL>6 !town_l GROUND]://
+			ItemDisplay[NMAG !RW DRU (MULTI107,221+MULTI107,222+MULTI107,223+MULTI107,224+MULTI107,225+MULTI107,226+MULTI107,227+MULTI107,228+MULTI107,229+MULTI107,230+MULTI107,231+MULTI107,232+MULTI107,233+MULTI107,234+MULTI107,235+MULTI107,236+MULTI107,237+MULTI107,238+MULTI107,239+MULTI107,240+MULTI107,241+MULTI107,242+MULTI107,243+MULTI107,244+MULTI107,245+MULTI107,246+MULTI107,247+MULTI107,248+MULTI107,249+MULTI107,250+MULTI107,370<6) FILTLVL>4 !town_l GROUND]://				
 			
 			//circlets
-
+			ItemDisplay[NMAG CIRC (SOCK=2 OR SOCK=3) FILTLVL>4]://
 			
 			//chests
 			ItemDisplay[NMAG !RW NORM CHEST (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]://
@@ -3830,152 +3915,152 @@ ItemDisplay[NMAG ELT SUP !GLOVES !BOOTS !BELT !caster2_i (WEAPON OR ARMOR) ED=15
 		\~~~
 		/~~~//Weapons
 			//1h axes
-			ItemDisplay[NMAG 1H AXE !THROWING (NORM OR EXC) (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]://
-			ItemDisplay[NMAG 7mp (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]:// never good
-			ItemDisplay[NMAG 7wa !ETH !SUP (SOCK=3 OR SOCK=2) (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]://
-			ItemDisplay[NMAG 72a !ETH !SUP (SOCK=4 OR SOCK=3 OR SOCK=2) (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]://
+			//ItemDisplay[NMAG  1H AXE !THROWING (NORM OR EXC) (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]://
+			//ItemDisplay[NMAG 7mp (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]:// never good
+			//ItemDisplay[NMAG 7wa !ETH !SUP (SOCK=3 OR SOCK=2) (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]://
+			//ItemDisplay[NMAG 72a !ETH !SUP (SOCK=4 OR SOCK=3 OR SOCK=2) (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]://
 			
 			ItemDisplay[NMAG 1H AXE !THROWING ELT SUP !ETH high_sup_ed FILTLVL>8 !town_l GROUND]://
 			ItemDisplay[NMAG 1H AXE !THROWING ELT SUP !ETH low_sup_ed FILTLVL>6 !town_l GROUND]://			
 			//2h axes
-			ItemDisplay[NMAG 2H AXE (NORM OR EXC) (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]://
-			ItemDisplay[NMAG (7la OR 7bt) (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]:// never good
-			ItemDisplay[NMAG 7ga !ETH !SUP (SOCK=5 OR SOCK=4 OR SOCK=3 OR SOCK=2) (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]://
+			//ItemDisplay[NMAG 2H AXE (NORM OR EXC) (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]://
+			//ItemDisplay[NMAG (7la OR 7bt) (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]:// never good
+			//ItemDisplay[NMAG 7ga !ETH !SUP (SOCK=5 OR SOCK=4 OR SOCK=3 OR SOCK=2) (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]://
 			
 			ItemDisplay[NMAG 2H AXE ELT SUP !ETH high_sup_ed FILTLVL>8 !town_l GROUND]://
 			ItemDisplay[NMAG 2H AXE ELT SUP !ETH low_sup_ed FILTLVL>6 !town_l GROUND]://
 			//1h club
 			ItemDisplay[NMAG !RW CLUB !(MULTI107,221>2 OR MULTI107,222>2 OR MULTI107,223>2 OR MULTI107,224>2 OR MULTI107,225>2 OR MULTI107,226>2 OR MULTI107,227>2 OR MULTI107,228>2 OR MULTI107,229>2 OR MULTI107,230>2 OR MULTI107,231>2 OR MULTI107,232>2 OR MULTI107,233>2 OR MULTI107,234>2 OR MULTI107,235>2 OR MULTI107,236>2 OR MULTI107,237>2 OR MULTI107,238>2 OR MULTI107,239>2 OR MULTI107,240>2 OR MULTI107,241>2 OR MULTI107,242>2 OR MULTI107,243>2 OR MULTI107,244>2 OR MULTI107,245>2 OR MULTI107,246>2 OR MULTI107,247>2 OR MULTI107,248>2 OR MULTI107,249>2 OR MULTI107,250>2 OR MULTI107,370>2) (FILTLVL>4 OR (CLVL>35 FILTLVL>2)) !town_l GROUND]://
 			ItemDisplay[NMAG !RW CLUB MULTI107,221=0 MULTI107,222=0 MULTI107,223=0 MULTI107,224=0 MULTI107,225=0 MULTI107,226=0 MULTI107,227=0 MULTI107,228=0 MULTI107,229=0 MULTI107,230=0 MULTI107,231=0 MULTI107,232=0 MULTI107,233=0 MULTI107,234=0 MULTI107,235=0 MULTI107,236=0 MULTI107,237=0 MULTI107,238=0 MULTI107,239=0 MULTI107,240=0 MULTI107,241=0 MULTI107,242=0 MULTI107,243=0 MULTI107,244=0 MULTI107,245=0 MULTI107,246=0 MULTI107,247=0 MULTI107,248=0 MULTI107,249=0 MULTI107,250=0 MULTI107,370=0 (FILTLVL>4 OR (CLVL>35 FILTLVL>2)) !town_l GROUND]://
-			ItemDisplay[NMAG !RW CLUB !(MULTI107,221+MULTI107,222+MULTI107,223+MULTI107,224+MULTI107,225+MULTI107,226+MULTI107,227+MULTI107,228+MULTI107,229+MULTI107,230+MULTI107,231+MULTI107,232+MULTI107,233+MULTI107,234+MULTI107,235+MULTI107,236+MULTI107,237+MULTI107,238+MULTI107,239+MULTI107,240+MULTI107,241+MULTI107,242+MULTI107,243+MULTI107,244+MULTI107,245+MULTI107,246+MULTI107,247+MULTI107,248+MULTI107,249+MULTI107,250+MULTI107,370=9) FILTLVL>8 !town_l GROUND]://
-			ItemDisplay[NMAG !RW CLUB (MULTI107,221+MULTI107,222+MULTI107,223+MULTI107,224+MULTI107,225+MULTI107,226+MULTI107,227+MULTI107,228+MULTI107,229+MULTI107,230+MULTI107,231+MULTI107,232+MULTI107,233+MULTI107,234+MULTI107,235+MULTI107,236+MULTI107,237+MULTI107,238+MULTI107,239+MULTI107,240+MULTI107,241+MULTI107,242+MULTI107,243+MULTI107,244+MULTI107,245+MULTI107,246+MULTI107,247+MULTI107,248+MULTI107,249+MULTI107,250+MULTI107,370<6) FILTLVL>6 !town_l GROUND]://				
+			ItemDisplay[NMAG !RW CLUB !(MULTI107,221+MULTI107,222+MULTI107,223+MULTI107,224+MULTI107,225+MULTI107,226+MULTI107,227+MULTI107,228+MULTI107,229+MULTI107,230+MULTI107,231+MULTI107,232+MULTI107,233+MULTI107,234+MULTI107,235+MULTI107,236+MULTI107,237+MULTI107,238+MULTI107,239+MULTI107,240+MULTI107,241+MULTI107,242+MULTI107,243+MULTI107,244+MULTI107,245+MULTI107,246+MULTI107,247+MULTI107,248+MULTI107,249+MULTI107,250+MULTI107,370=9) FILTLVL>6 !town_l GROUND]://
+			ItemDisplay[NMAG !RW CLUB (MULTI107,221+MULTI107,222+MULTI107,223+MULTI107,224+MULTI107,225+MULTI107,226+MULTI107,227+MULTI107,228+MULTI107,229+MULTI107,230+MULTI107,231+MULTI107,232+MULTI107,233+MULTI107,234+MULTI107,235+MULTI107,236+MULTI107,237+MULTI107,238+MULTI107,239+MULTI107,240+MULTI107,241+MULTI107,242+MULTI107,243+MULTI107,244+MULTI107,245+MULTI107,246+MULTI107,247+MULTI107,248+MULTI107,249+MULTI107,250+MULTI107,370<6) FILTLVL>4 !town_l GROUND]://				
 			
 			//tmace
-			ItemDisplay[NMAG TMACE !fla (NORM OR EXC) (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]://
-			ItemDisplay[NMAG 7fl !ETH !SUP (SOCK=3 OR SOCK=2) (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]://
+			//ItemDisplay[NMAG TMACE !fla (NORM OR EXC) (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]://
+			//ItemDisplay[NMAG 7fl !ETH !SUP (SOCK=3 OR SOCK=2) (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]://
 			
 			ItemDisplay[NMAG TMACE ELT SUP !ETH high_sup_ed FILTLVL>8 !town_l GROUND]://
 			ItemDisplay[NMAG TMACE ELT SUP !ETH low_sup_ed FILTLVL>6 !town_l GROUND]://	
 			//1h hammer
-			ItemDisplay[NMAG 1H HAMMER (NORM OR EXC) (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]://
+			//ItemDisplay[NMAG 1H HAMMER (NORM OR EXC) (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]://
 			
 			ItemDisplay[NMAG 1H HAMMER ELT SUP !ETH high_sup_ed FILTLVL>8 !town_l GROUND]://
 			ItemDisplay[NMAG 1H HAMMER ELT SUP !ETH low_sup_ed FILTLVL>6 !town_l GROUND]://				
 			//2h hammer
-			ItemDisplay[NMAG 2H HAMMER (NORM OR EXC) (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]://
+			//ItemDisplay[NMAG 2H HAMMER (NORM OR EXC) (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]://
 			
 			ItemDisplay[NMAG 2H HAMMER ELT SUP !ETH high_sup_ed FILTLVL>8 !town_l GROUND]://
 			ItemDisplay[NMAG 2H HAMMER ELT SUP !ETH low_sup_ed FILTLVL>6 !town_l GROUND]://	
 			//1h sword
-			ItemDisplay[NMAG 1H SWORD !(crs OR 9cr OR bsd) (NORM OR EXC) (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]://
-			ItemDisplay[NMAG (7ss OR 7sm OR 7sb OR 7fc) (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]:// never good
-			ItemDisplay[NMAG 7bs !ETH !SUP (SOCK=3 OR SOCK=2) (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]://
+			//ItemDisplay[NMAG 1H SWORD !(crs OR 9cr OR bsd) (NORM OR EXC) (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]://
+			//ItemDisplay[NMAG (7ss OR 7sm OR 7sb OR 7fc) (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]:// never good
+			//ItemDisplay[NMAG 7bs !ETH !SUP (SOCK=3 OR SOCK=2) (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]://
 			
 			ItemDisplay[NMAG 1H SWORD ELT SUP !ETH high_sup_ed FILTLVL>8 !town_l GROUND]://
 			ItemDisplay[NMAG 1H SWORD ELT SUP !ETH low_sup_ed FILTLVL>6 !town_l GROUND]://	
 			//2h sword
-			ItemDisplay[NMAG 2H SWORD (NORM OR EXC) (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]://
-			ItemDisplay[NMAG (72h OR 7cm OR 7gs) (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]:// never good
-			ItemDisplay[NMAG 7gd !ETH !SUP (SOCK=4 OR SOCK=3 OR SOCK=2) (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]://		
+			//ItemDisplay[NMAG 2H SWORD (NORM OR EXC) (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]://
+			//ItemDisplay[NMAG (72h OR 7cm OR 7gs) (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]:// never good
+			//ItemDisplay[NMAG 7gd !ETH !SUP (SOCK=4 OR SOCK=3 OR SOCK=2) (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]://		
 			
 			ItemDisplay[NMAG 2H SWORD ELT SUP !ETH high_sup_ed FILTLVL>8 !town_l GROUND]://
 			ItemDisplay[NMAG 2H SWORD ELT SUP !ETH low_sup_ed FILTLVL>6 !town_l GROUND]://	
 			//dagger			
 			ItemDisplay[NMAG DAGGER !THROWING !MULTI107,73=3 (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]://
-			ItemDisplay[NMAG DAGGER !THROWING SOCK=2 (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]://
-			ItemDisplay[NMAG DAGGER !THROWING SOCK=2 (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]://
-			ItemDisplay[NMAG DAGGER !THROWING !(9kr OR 7kr) (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]://
+			//ItemDisplay[NMAG DAGGER !THROWING SOCK=2 (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]://
+			//ItemDisplay[NMAG DAGGER !THROWING SOCK=2 (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]://
+			//ItemDisplay[NMAG DAGGER !THROWING !(9kr OR 7kr) (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]://
 			//throwing knife
-			ItemDisplay[NMAG THROWING DAGGER (NORM OR EXC) (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]://				
+			//ItemDisplay[NMAG THROWING DAGGER (NORM OR EXC) (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]://				
 			ItemDisplay[NMAG THROWING DAGGER ELT SUP !ETH high_sup_ed FILTLVL>8 !town_l GROUND]://
 			ItemDisplay[NMAG THROWING DAGGER ELT SUP !ETH low_sup_ed FILTLVL>6 !town_l GROUND]://	
-			ItemDisplay[NMAG THROWING DAGGER ELT !SUP ETH FILTLVL>6 !town_l GROUND]://
+			//ItemDisplay[NMAG THROWING DAGGER ELT !SUP ETH FILTLVL>6 !town_l GROUND]://
 				
 			//throwing axe
-			ItemDisplay[NMAG THROWING AXE (NORM OR EXC) (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]://	
+			//ItemDisplay[NMAG THROWING AXE (NORM OR EXC) (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]://	
 			
 			ItemDisplay[NMAG THROWING AXE ELT SUP !ETH high_sup_ed FILTLVL>8 !town_l GROUND]://
 			ItemDisplay[NMAG THROWING AXE ELT SUP !ETH low_sup_ed FILTLVL>6 !town_l GROUND]://	
 			//Throwing spear
-			ItemDisplay[NMAG JAV !ZON (NORM OR EXC) (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]://
-			ItemDisplay[NMAG (7pi OR 7ja) (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]:// never good
-			ItemDisplay[NMAG (7ts OR 7gl) !ETH !SUP SOCK=2 (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]://
+			//ItemDisplay[NMAG JAV !ZON (NORM OR EXC) (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]://
+			//ItemDisplay[NMAG (7pi OR 7ja) (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]:// never good
+			//ItemDisplay[NMAG (7ts OR 7gl) !ETH !SUP SOCK=2 (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]://
 			
 			ItemDisplay[NMAG JAV !ZON ELT SUP !ETH high_sup_ed FILTLVL>8 !town_l GROUND]://
 			ItemDisplay[NMAG JAV !ZON ELT SUP !ETH low_sup_ed FILTLVL>6 !town_l GROUND]://
 			//2h spear
-			ItemDisplay[NMAG SPEAR !ZON (NORM OR EXC) (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]://
-			ItemDisplay[NMAG (7tr OR 7br OR 7st) (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]:// never good
+			//ItemDisplay[NMAG SPEAR !ZON (NORM OR EXC) (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]://
+			//ItemDisplay[NMAG (7tr OR 7br OR 7st) (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]:// never good
 			
 			ItemDisplay[NMAG SPEAR !ZON ELT SUP !ETH high_sup_ed FILTLVL>8 !town_l GROUND]://
 			ItemDisplay[NMAG SPEAR !ZON ELT SUP !ETH low_sup_ed FILTLVL>6 !town_l GROUND]://
 			//polearm
-			ItemDisplay[NMAG POLEARM (NORM OR EXC) (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]://
-			ItemDisplay[NMAG (7o7 OR 7vo OR 7s8) (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]:// never good
+			//ItemDisplay[NMAG POLEARM (NORM OR EXC) (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]://
+			//ItemDisplay[NMAG (7o7 OR 7vo OR 7s8) (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]:// never good
 			
 			ItemDisplay[NMAG POLEARM ELT SUP !ETH high_sup_ed FILTLVL>8 !town_l GROUND]://
 			ItemDisplay[NMAG POLEARM ELT SUP !ETH low_sup_ed FILTLVL>6 !town_l GROUND]://
 			//bow
-			ItemDisplay[NMAG BOW !ZON (NORM OR EXC) (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]://
-			ItemDisplay[NMAG (6sb OR 6hb OR 6cb OR 6sw) (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]:// never good
-			ItemDisplay[NMAG (6lb OR 6l7) !ETH !SUP (SOCK=5 OR SOCK=4 OR SOCK=3 OR SOCK=2) (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]:// never good		
+			//ItemDisplay[NMAG BOW !ZON (NORM OR EXC) (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]://
+			//ItemDisplay[NMAG (6sb OR 6hb OR 6cb OR 6sw) (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]:// never good
+			//ItemDisplay[NMAG (6lb OR 6l7) !ETH !SUP (SOCK=5 OR SOCK=4 OR SOCK=3 OR SOCK=2) (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]:// never good		
 			
 			ItemDisplay[NMAG BOW !ZON ELT SUP high_sup_ed FILTLVL>8 !town_l GROUND]://
 			ItemDisplay[NMAG BOW !ZON ELT SUP low_sup_ed FILTLVL>6 !town_l GROUND]://
 			//crossbow
-			ItemDisplay[NMAG XBOW (NORM OR EXC) (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]://
-			ItemDisplay[NMAG 6lx (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]:// never good			
-			ItemDisplay[NMAG 6rx !ETH !SUP (SOCK=4 OR SOCK=3 OR SOCK=2) (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]:// never good		
+			//ItemDisplay[NMAG XBOW (NORM OR EXC) (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]://
+			//ItemDisplay[NMAG 6lx (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]:// never good			
+			//ItemDisplay[NMAG 6rx !ETH !SUP (SOCK=4 OR SOCK=3 OR SOCK=2) (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]:// never good		
 			
 			ItemDisplay[NMAG XBOW ELT SUP high_sup_ed FILTLVL>8 !town_l GROUND]://
 			ItemDisplay[NMAG XBOW ELT SUP low_sup_ed FILTLVL>6 !town_l GROUND]://
 			//STAFF
-			ItemDisplay[NMAG STAFF (NORM OR EXC) (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]://			
+			//ItemDisplay[NMAG STAFF (NORM OR EXC) (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]://			
 
 			ItemDisplay[NMAG !RW STAFF !(MULTI107,57>2 OR MULTI107,36>2 OR MULTI107,37>2 OR MULTI107,38>2 OR MULTI107,39>2 OR MULTI107,40>2 OR MULTI107,41>2 OR MULTI107,42>2 OR MULTI107,43>2 OR MULTI107,44>2 OR MULTI107,45>2 OR MULTI107,46>2 OR MULTI107,47>2 OR MULTI107,48>2 OR MULTI107,49>2 OR MULTI107,50>2 OR MULTI107,51>2 OR MULTI107,52>2 OR MULTI107,53>2 OR MULTI107,54>2 OR MULTI107,55>2 OR MULTI107,56>2 OR MULTI107,58>2 OR MULTI107,59>2 OR MULTI107,60>2 OR MULTI107,61>2 OR MULTI107,62>2 OR MULTI107,63>2 OR MULTI107,64>2 OR MULTI107,65>2 OR MULTI107,369>2 OR MULTI107,376>2 OR MULTI107,383>2) (FILTLVL>4 OR (CLVL>35 FILTLVL>2)) !town_l GROUND]://
 			ItemDisplay[NMAG !RW STAFF MULTI107,57=0 MULTI107,36=0 MULTI107,37=0 MULTI107,38=0 MULTI107,39=0 MULTI107,40=0 MULTI107,41=0 MULTI107,42=0 MULTI107,43=0 MULTI107,44=0 MULTI107,45=0 MULTI107,46=0 MULTI107,47=0 MULTI107,48=0 MULTI107,49=0 MULTI107,50=0 MULTI107,51=0 MULTI107,52=0 MULTI107,53=0 MULTI107,54=0 MULTI107,55=0 MULTI107,56=0 MULTI107,58=0 MULTI107,59=0 MULTI107,60=0 MULTI107,61=0 MULTI107,62=0 MULTI107,63=0 MULTI107,64=0 MULTI107,65=0 MULTI107,369=0 MULTI107,376=0 MULTI107,383=0 (FILTLVL>4 OR (CLVL>35 FILTLVL>2)) !town_l GROUND]://
-			ItemDisplay[NMAG !RW STAFF !(MULTI107,57+MULTI107,36+MULTI107,37+MULTI107,38+MULTI107,39+MULTI107,40+MULTI107,41+MULTI107,42+MULTI107,43+MULTI107,44+MULTI107,45+MULTI107,46+MULTI107,47+MULTI107,48+MULTI107,49+MULTI107,50+MULTI107,51+MULTI107,52+MULTI107,53+MULTI107,54+MULTI107,55+MULTI107,56+MULTI107,58+MULTI107,59+MULTI107,60+MULTI107,61+MULTI107,62+MULTI107,63+MULTI107,64+MULTI107,65+MULTI107,369+MULTI107,376+MULTI107,383=9) FILTLVL>8 !town_l GROUND]://
-			ItemDisplay[NMAG !RW STAFF (MULTI107,57+MULTI107,36+MULTI107,37+MULTI107,38+MULTI107,39+MULTI107,40+MULTI107,41+MULTI107,42+MULTI107,43+MULTI107,44+MULTI107,45+MULTI107,46+MULTI107,47+MULTI107,48+MULTI107,49+MULTI107,50+MULTI107,51+MULTI107,52+MULTI107,53+MULTI107,54+MULTI107,55+MULTI107,56+MULTI107,58+MULTI107,59+MULTI107,60+MULTI107,61+MULTI107,62+MULTI107,63+MULTI107,64+MULTI107,65+MULTI107,369+MULTI107,376+MULTI107,383<6) FILTLVL>6 !town_l GROUND]://				
+			ItemDisplay[NMAG !RW STAFF !(MULTI107,57+MULTI107,36+MULTI107,37+MULTI107,38+MULTI107,39+MULTI107,40+MULTI107,41+MULTI107,42+MULTI107,43+MULTI107,44+MULTI107,45+MULTI107,46+MULTI107,47+MULTI107,48+MULTI107,49+MULTI107,50+MULTI107,51+MULTI107,52+MULTI107,53+MULTI107,54+MULTI107,55+MULTI107,56+MULTI107,58+MULTI107,59+MULTI107,60+MULTI107,61+MULTI107,62+MULTI107,63+MULTI107,64+MULTI107,65+MULTI107,369+MULTI107,376+MULTI107,383=9) FILTLVL>6 !town_l GROUND]://
+			ItemDisplay[NMAG !RW STAFF (MULTI107,57+MULTI107,36+MULTI107,37+MULTI107,38+MULTI107,39+MULTI107,40+MULTI107,41+MULTI107,42+MULTI107,43+MULTI107,44+MULTI107,45+MULTI107,46+MULTI107,47+MULTI107,48+MULTI107,49+MULTI107,50+MULTI107,51+MULTI107,52+MULTI107,53+MULTI107,54+MULTI107,55+MULTI107,56+MULTI107,58+MULTI107,59+MULTI107,60+MULTI107,61+MULTI107,62+MULTI107,63+MULTI107,64+MULTI107,65+MULTI107,369+MULTI107,376+MULTI107,383<6) FILTLVL>4 !town_l GROUND]://				
 			//orb
 			ItemDisplay[NMAG SOR SOCK=2 (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]://	
-			ItemDisplay[NMAG SOR !(oba OR obf) (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]://				
+			//ItemDisplay[NMAG SOR !(oba OR obf) (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]://				
 			ItemDisplay[NMAG !RW SOR !(MULTI107,57>2 OR MULTI107,36>2 OR MULTI107,37>2 OR MULTI107,38>2 OR MULTI107,39>2 OR MULTI107,40>2 OR MULTI107,41>2 OR MULTI107,42>2 OR MULTI107,43>2 OR MULTI107,44>2 OR MULTI107,45>2 OR MULTI107,46>2 OR MULTI107,47>2 OR MULTI107,48>2 OR MULTI107,49>2 OR MULTI107,50>2 OR MULTI107,51>2 OR MULTI107,52>2 OR MULTI107,53>2 OR MULTI107,54>2 OR MULTI107,55>2 OR MULTI107,56>2 OR MULTI107,58>2 OR MULTI107,59>2 OR MULTI107,60>2 OR MULTI107,61>2 OR MULTI107,62>2 OR MULTI107,63>2 OR MULTI107,64>2 OR MULTI107,65>2 OR MULTI107,369>2 OR MULTI107,376>2 OR MULTI107,383>2) (FILTLVL>4 OR (CLVL>35 FILTLVL>2)) !town_l GROUND]://
 			ItemDisplay[NMAG !RW SOR MULTI107,57=0 MULTI107,36=0 MULTI107,37=0 MULTI107,38=0 MULTI107,39=0 MULTI107,40=0 MULTI107,41=0 MULTI107,42=0 MULTI107,43=0 MULTI107,44=0 MULTI107,45=0 MULTI107,46=0 MULTI107,47=0 MULTI107,48=0 MULTI107,49=0 MULTI107,50=0 MULTI107,51=0 MULTI107,52=0 MULTI107,53=0 MULTI107,54=0 MULTI107,55=0 MULTI107,56=0 MULTI107,58=0 MULTI107,59=0 MULTI107,60=0 MULTI107,61=0 MULTI107,62=0 MULTI107,63=0 MULTI107,64=0 MULTI107,65=0 MULTI107,369=0 MULTI107,376=0 MULTI107,383=0 (FILTLVL>4 OR (CLVL>35 FILTLVL>2)) !town_l GROUND]://
-			ItemDisplay[NMAG !RW SOR !(MULTI107,57+MULTI107,36+MULTI107,37+MULTI107,38+MULTI107,39+MULTI107,40+MULTI107,41+MULTI107,42+MULTI107,43+MULTI107,44+MULTI107,45+MULTI107,46+MULTI107,47+MULTI107,48+MULTI107,49+MULTI107,50+MULTI107,51+MULTI107,52+MULTI107,53+MULTI107,54+MULTI107,55+MULTI107,56+MULTI107,58+MULTI107,59+MULTI107,60+MULTI107,61+MULTI107,62+MULTI107,63+MULTI107,64+MULTI107,65+MULTI107,369+MULTI107,376+MULTI107,383=9) FILTLVL>8 !town_l GROUND]://
-			ItemDisplay[NMAG !RW SOR (MULTI107,57+MULTI107,36+MULTI107,37+MULTI107,38+MULTI107,39+MULTI107,40+MULTI107,41+MULTI107,42+MULTI107,43+MULTI107,44+MULTI107,45+MULTI107,46+MULTI107,47+MULTI107,48+MULTI107,49+MULTI107,50+MULTI107,51+MULTI107,52+MULTI107,53+MULTI107,54+MULTI107,55+MULTI107,56+MULTI107,58+MULTI107,59+MULTI107,60+MULTI107,61+MULTI107,62+MULTI107,63+MULTI107,64+MULTI107,65+MULTI107,369+MULTI107,376+MULTI107,383<6) FILTLVL>6 !town_l GROUND]://							
+			ItemDisplay[NMAG !RW SOR !(MULTI107,57+MULTI107,36+MULTI107,37+MULTI107,38+MULTI107,39+MULTI107,40+MULTI107,41+MULTI107,42+MULTI107,43+MULTI107,44+MULTI107,45+MULTI107,46+MULTI107,47+MULTI107,48+MULTI107,49+MULTI107,50+MULTI107,51+MULTI107,52+MULTI107,53+MULTI107,54+MULTI107,55+MULTI107,56+MULTI107,58+MULTI107,59+MULTI107,60+MULTI107,61+MULTI107,62+MULTI107,63+MULTI107,64+MULTI107,65+MULTI107,369+MULTI107,376+MULTI107,383=9) FILTLVL>6 !town_l GROUND]://
+			ItemDisplay[NMAG !RW SOR (MULTI107,57+MULTI107,36+MULTI107,37+MULTI107,38+MULTI107,39+MULTI107,40+MULTI107,41+MULTI107,42+MULTI107,43+MULTI107,44+MULTI107,45+MULTI107,46+MULTI107,47+MULTI107,48+MULTI107,49+MULTI107,50+MULTI107,51+MULTI107,52+MULTI107,53+MULTI107,54+MULTI107,55+MULTI107,56+MULTI107,58+MULTI107,59+MULTI107,60+MULTI107,61+MULTI107,62+MULTI107,63+MULTI107,64+MULTI107,65+MULTI107,369+MULTI107,376+MULTI107,383<6) FILTLVL>4 !town_l GROUND]://							
 			//SCEPTER
 			ItemDisplay[NMAG SCEPTER SOCK=2 (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]://	
 
 			ItemDisplay[NMAG !RW SCEPTER !(MULTI107,96>2 OR MULTI107,97>2 OR MULTI107,98>2 OR MULTI107,99>2 OR MULTI107,100>2 OR MULTI107,101>2 OR MULTI107,102>2 OR MULTI107,103>2 OR MULTI107,104>2 OR MULTI107,105>2 OR MULTI107,106>2 OR MULTI107,107>2 OR MULTI107,108>2 OR MULTI107,109>2 OR MULTI107,110>2 OR MULTI107,111>2 OR MULTI107,112>2 OR MULTI107,113>2 OR MULTI107,114>2 OR MULTI107,115>2 OR MULTI107,116>2 OR MULTI107,117>2 OR MULTI107,118>2 OR MULTI107,119>2 OR MULTI107,120>2 OR MULTI107,121>2 OR MULTI107,122>2 OR MULTI107,123>2 OR MULTI107,124>2 OR MULTI107,125>2 OR MULTI107,364>2 OR MULTI107,371>2 OR MULTI107,378>2) (FILTLVL>4 OR (CLVL>35 FILTLVL>2)) !town_l GROUND]://
 			ItemDisplay[NMAG !RW SCEPTER MULTI107,96=0 MULTI107,97=0 MULTI107,98=0 MULTI107,99=0 MULTI107,100=0 MULTI107,101=0 MULTI107,102=0 MULTI107,103=0 MULTI107,104=0 MULTI107,105=0 MULTI107,106=0 MULTI107,107=0 MULTI107,108=0 MULTI107,109=0 MULTI107,110=0 MULTI107,111=0 MULTI107,112=0 MULTI107,113=0 MULTI107,114=0 MULTI107,115=0 MULTI107,116=0 MULTI107,117=0 MULTI107,118=0 MULTI107,119=0 MULTI107,120=0 MULTI107,121=0 MULTI107,122=0 MULTI107,123=0 MULTI107,124=0 MULTI107,125=0 MULTI107,364=0 MULTI107,371=0 MULTI107,378=0 (FILTLVL>4 OR (CLVL>35 FILTLVL>2)) !town_l GROUND]://
-			ItemDisplay[NMAG !RW SCEPTER !(MULTI107,96+MULTI107,97+MULTI107,98+MULTI107,99+MULTI107,100+MULTI107,101+MULTI107,102+MULTI107,103+MULTI107,104+MULTI107,105+MULTI107,106+MULTI107,107+MULTI107,108+MULTI107,109+MULTI107,110+MULTI107,111+MULTI107,112+MULTI107,113+MULTI107,114+MULTI107,115+MULTI107,116+MULTI107,117+MULTI107,118+MULTI107,119+MULTI107,120+MULTI107,121+MULTI107,122+MULTI107,123+MULTI107,124+MULTI107,125+MULTI107,364+MULTI107,371+MULTI107,378=9) FILTLVL>8 !town_l GROUND]://
-			ItemDisplay[NMAG !RW SCEPTER (MULTI107,96+MULTI107,97+MULTI107,98+MULTI107,99+MULTI107,100+MULTI107,101+MULTI107,102+MULTI107,103+MULTI107,104+MULTI107,105+MULTI107,106+MULTI107,107+MULTI107,108+MULTI107,109+MULTI107,110+MULTI107,111+MULTI107,112+MULTI107,113+MULTI107,114+MULTI107,115+MULTI107,116+MULTI107,117+MULTI107,118+MULTI107,119+MULTI107,120+MULTI107,121+MULTI107,122+MULTI107,123+MULTI107,124+MULTI107,125+MULTI107,364+MULTI107,371+MULTI107,378<6) FILTLVL>6 !town_l GROUND]://				
+			ItemDisplay[NMAG !RW SCEPTER !(MULTI107,96+MULTI107,97+MULTI107,98+MULTI107,99+MULTI107,100+MULTI107,101+MULTI107,102+MULTI107,103+MULTI107,104+MULTI107,105+MULTI107,106+MULTI107,107+MULTI107,108+MULTI107,109+MULTI107,110+MULTI107,111+MULTI107,112+MULTI107,113+MULTI107,114+MULTI107,115+MULTI107,116+MULTI107,117+MULTI107,118+MULTI107,119+MULTI107,120+MULTI107,121+MULTI107,122+MULTI107,123+MULTI107,124+MULTI107,125+MULTI107,364+MULTI107,371+MULTI107,378=9) FILTLVL>6 !town_l GROUND]://
+			ItemDisplay[NMAG !RW SCEPTER (MULTI107,96+MULTI107,97+MULTI107,98+MULTI107,99+MULTI107,100+MULTI107,101+MULTI107,102+MULTI107,103+MULTI107,104+MULTI107,105+MULTI107,106+MULTI107,107+MULTI107,108+MULTI107,109+MULTI107,110+MULTI107,111+MULTI107,112+MULTI107,113+MULTI107,114+MULTI107,115+MULTI107,116+MULTI107,117+MULTI107,118+MULTI107,119+MULTI107,120+MULTI107,121+MULTI107,122+MULTI107,123+MULTI107,124+MULTI107,125+MULTI107,364+MULTI107,371+MULTI107,378<6) FILTLVL>4 !town_l GROUND]://				
 			
 			//CLAW
 			ItemDisplay[NMAG !RW SIN !(ETH SUP ED>12) !(MULTI107,251>2 OR MULTI107,252>2 OR MULTI107,253>2 OR MULTI107,254>2 OR MULTI107,255>2 OR MULTI107,256>2 OR MULTI107,257>2 OR MULTI107,258>2 OR MULTI107,259>2 OR MULTI107,260>2 OR MULTI107,261>2 OR MULTI107,262>2 OR MULTI107,263>2 OR MULTI107,264>2 OR MULTI107,265>2 OR MULTI107,266>2 OR MULTI107,267>2 OR MULTI107,268>2 OR MULTI107,269>2 OR MULTI107,270>2 OR MULTI107,271>2 OR MULTI107,272>2 OR MULTI107,273>2 OR MULTI107,274>2 OR MULTI107,275>2 OR MULTI107,276>2 OR MULTI107,277>2 OR MULTI107,278>2 OR MULTI107,279>2 OR MULTI107,280>2 OR MULTI107,366>2) (FILTLVL>4 OR (CLVL>35 FILTLVL>2)) !town_l GROUND]://
 			ItemDisplay[NMAG !RW SIN !(ETH SUP ED>12) MULTI107,251=0 MULTI107,252=0 MULTI107,253=0 MULTI107,254=0 MULTI107,255=0 MULTI107,256=0 MULTI107,257=0 MULTI107,258=0 MULTI107,259=0 MULTI107,260=0 MULTI107,261=0 MULTI107,262=0 MULTI107,263=0 MULTI107,264=0 MULTI107,265=0 MULTI107,266=0 MULTI107,267=0 MULTI107,268=0 MULTI107,269=0 MULTI107,270=0 MULTI107,271=0 MULTI107,272=0 MULTI107,273=0 MULTI107,274=0 MULTI107,275=0 MULTI107,276=0 MULTI107,277=0 MULTI107,278=0 MULTI107,279=0 MULTI107,280=0 MULTI107,366=0 (FILTLVL>4 OR (CLVL>35 FILTLVL>2)) !town_l GROUND]://
-			ItemDisplay[NMAG !RW SIN !(ETH SUP ED>12) !(MULTI107,251+MULTI107,252+MULTI107,253+MULTI107,254+MULTI107,255+MULTI107,256+MULTI107,257+MULTI107,258+MULTI107,259+MULTI107,260+MULTI107,261+MULTI107,262+MULTI107,263+MULTI107,264+MULTI107,265+MULTI107,266+MULTI107,267+MULTI107,268+MULTI107,269+MULTI107,270+MULTI107,271+MULTI107,272+MULTI107,273+MULTI107,274+MULTI107,275+MULTI107,276+MULTI107,277+MULTI107,278+MULTI107,279+MULTI107,280+MULTI107,366=9) FILTLVL>8 !town_l GROUND]://
-			ItemDisplay[NMAG !RW SIN !(ETH SUP ED>12) (MULTI107,251+MULTI107,252+MULTI107,253+MULTI107,254+MULTI107,255+MULTI107,256+MULTI107,257+MULTI107,258+MULTI107,259+MULTI107,260+MULTI107,261+MULTI107,262+MULTI107,263+MULTI107,264+MULTI107,265+MULTI107,266+MULTI107,267+MULTI107,268+MULTI107,269+MULTI107,270+MULTI107,271+MULTI107,272+MULTI107,273+MULTI107,274+MULTI107,275+MULTI107,276+MULTI107,277+MULTI107,278+MULTI107,279+MULTI107,280+MULTI107,366<6) FILTLVL>6 !town_l GROUND]://				
+			ItemDisplay[NMAG !RW SIN !(ETH SUP ED>12) !(MULTI107,251+MULTI107,252+MULTI107,253+MULTI107,254+MULTI107,255+MULTI107,256+MULTI107,257+MULTI107,258+MULTI107,259+MULTI107,260+MULTI107,261+MULTI107,262+MULTI107,263+MULTI107,264+MULTI107,265+MULTI107,266+MULTI107,267+MULTI107,268+MULTI107,269+MULTI107,270+MULTI107,271+MULTI107,272+MULTI107,273+MULTI107,274+MULTI107,275+MULTI107,276+MULTI107,277+MULTI107,278+MULTI107,279+MULTI107,280+MULTI107,366=9) FILTLVL>6 !town_l GROUND]://
+			ItemDisplay[NMAG !RW SIN !(ETH SUP ED>12) (MULTI107,251+MULTI107,252+MULTI107,253+MULTI107,254+MULTI107,255+MULTI107,256+MULTI107,257+MULTI107,258+MULTI107,259+MULTI107,260+MULTI107,261+MULTI107,262+MULTI107,263+MULTI107,264+MULTI107,265+MULTI107,266+MULTI107,267+MULTI107,268+MULTI107,269+MULTI107,270+MULTI107,271+MULTI107,272+MULTI107,273+MULTI107,274+MULTI107,275+MULTI107,276+MULTI107,277+MULTI107,278+MULTI107,279+MULTI107,280+MULTI107,366<6) FILTLVL>4 !town_l GROUND]://				
 			//WAND
 			ItemDisplay[NMAG !RW WAND !(MULTI107,89>2 OR MULTI107,66>2 OR MULTI107,67>2 OR MULTI107,68>2 OR MULTI107,69>2 OR MULTI107,70>2 OR MULTI107,71>2 OR MULTI107,72>2 OR MULTI107,73>2 OR MULTI107,74>2 OR MULTI107,75>2 OR MULTI107,76>2 OR MULTI107,77>2 OR MULTI107,78>2 OR MULTI107,79>2 OR MULTI107,80>2 OR MULTI107,81>2 OR MULTI107,82>2 OR MULTI107,83>2 OR MULTI107,84>2 OR MULTI107,85>2 OR MULTI107,86>2 OR MULTI107,87>2 OR MULTI107,88>2 OR MULTI107,90>2 OR MULTI107,91>2 OR MULTI107,92>2 OR MULTI107,93>2 OR MULTI107,94>2 OR MULTI107,95>2 OR MULTI107,367>2 OR MULTI107,374>2 OR MULTI107,381>2) (FILTLVL>4 OR (CLVL>35 FILTLVL>2)) !town_l GROUND]://
 			ItemDisplay[NMAG !RW WAND (MULTI107,89=0 MULTI107,66=0 MULTI107,67=0 MULTI107,68=0 MULTI107,69=0 MULTI107,70=0 MULTI107,71=0 MULTI107,72=0 MULTI107,73=0 MULTI107,74=0 MULTI107,75=0 MULTI107,76=0 MULTI107,77=0 MULTI107,78=0 MULTI107,79=0 MULTI107,80=0 MULTI107,81=0 MULTI107,82=0 MULTI107,83=0 MULTI107,84=0 MULTI107,85=0 MULTI107,86=0 MULTI107,87=0 MULTI107,88=0 MULTI107,90=0 MULTI107,91=0 MULTI107,92=0 MULTI107,93=0 MULTI107,94=0 MULTI107,95=0 MULTI107,367=0 MULTI107,374=0 MULTI107,381=0 (FILTLVL>4 OR (CLVL>35 FILTLVL>2)) !town_l GROUND]://
-			ItemDisplay[NMAG !RW WAND !(MULTI107,89+MULTI107,66+MULTI107,67+MULTI107,68+MULTI107,69+MULTI107,70+MULTI107,71+MULTI107,72+MULTI107,73+MULTI107,74+MULTI107,75+MULTI107,76+MULTI107,77+MULTI107,78+MULTI107,79+MULTI107,80+MULTI107,81+MULTI107,82+MULTI107,83+MULTI107,84+MULTI107,85+MULTI107,86+MULTI107,87+MULTI107,88+MULTI107,90+MULTI107,91+MULTI107,92+MULTI107,93+MULTI107,94+MULTI107,95+MULTI107,367+MULTI107,374+MULTI107,381=9) FILTLVL>8 !town_l GROUND]://
-			ItemDisplay[NMAG !RW WAND (MULTI107,89+MULTI107,66+MULTI107,67+MULTI107,68+MULTI107,69+MULTI107,70+MULTI107,71+MULTI107,72+MULTI107,73+MULTI107,74+MULTI107,75+MULTI107,76+MULTI107,77+MULTI107,78+MULTI107,79+MULTI107,80+MULTI107,81+MULTI107,82+MULTI107,83+MULTI107,84+MULTI107,85+MULTI107,86+MULTI107,87+MULTI107,88+MULTI107,90+MULTI107,91+MULTI107,92+MULTI107,93+MULTI107,94+MULTI107,95+MULTI107,367+MULTI107,374+MULTI107,381<6) FILTLVL>6 !town_l GROUND]://					
+			ItemDisplay[NMAG !RW WAND !(MULTI107,89+MULTI107,66+MULTI107,67+MULTI107,68+MULTI107,69+MULTI107,70+MULTI107,71+MULTI107,72+MULTI107,73+MULTI107,74+MULTI107,75+MULTI107,76+MULTI107,77+MULTI107,78+MULTI107,79+MULTI107,80+MULTI107,81+MULTI107,82+MULTI107,83+MULTI107,84+MULTI107,85+MULTI107,86+MULTI107,87+MULTI107,88+MULTI107,90+MULTI107,91+MULTI107,92+MULTI107,93+MULTI107,94+MULTI107,95+MULTI107,367+MULTI107,374+MULTI107,381=9) FILTLVL>6 !town_l GROUND]://
+			ItemDisplay[NMAG !RW WAND (MULTI107,89+MULTI107,66+MULTI107,67+MULTI107,68+MULTI107,69+MULTI107,70+MULTI107,71+MULTI107,72+MULTI107,73+MULTI107,74+MULTI107,75+MULTI107,76+MULTI107,77+MULTI107,78+MULTI107,79+MULTI107,80+MULTI107,81+MULTI107,82+MULTI107,83+MULTI107,84+MULTI107,85+MULTI107,86+MULTI107,87+MULTI107,88+MULTI107,90+MULTI107,91+MULTI107,92+MULTI107,93+MULTI107,94+MULTI107,95+MULTI107,367+MULTI107,374+MULTI107,381<6) FILTLVL>4 !town_l GROUND]://					
 			//zon bow
-			ItemDisplay[NMAG ZON !JAV !SPEAR (NORM OR EXC) (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]://	
+			//ItemDisplay[NMAG ZON !JAV !SPEAR (NORM OR EXC) (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]://	
 			ItemDisplay[NMAG ZON !JAV !SPEAR MULTI188,0=0 (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]://	
 			
 			ItemDisplay[NMAG ZON !JAV !SPEAR MULTI188,0<3 ELT SUP high_sup_ed FILTLVL>8 !town_l GROUND]://
 			ItemDisplay[NMAG ZON !JAV !SPEAR MULTI188,0<3 ELT SUP low_sup_ed FILTLVL>6 !town_l GROUND]://			
 			//zon spear
-			ItemDisplay[NMAG ZON !JAV !BOW (NORM OR EXC) (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]://	
+			//ItemDisplay[NMAG ZON !JAV !BOW (NORM OR EXC) (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]://	
 			ItemDisplay[NMAG ZON !JAV !BOW MULTI188,2=0 (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]://	
 			
 			ItemDisplay[NMAG ZON !JAV !BOW MULTI188,2<3 ELT !ETH SUP high_sup_ed FILTLVL>8 !town_l GROUND]://
 			ItemDisplay[NMAG ZON !JAV !BOW MULTI188,2<3 ELT !ETH SUP low_sup_ed FILTLVL>6 !town_l GROUND]://	
 			ItemDisplay[NMAG ETH !SUP ZON !JAV !BOW FILTLVL>6 !town_l GROUND]://
 			//zon jav
-			ItemDisplay[NMAG ZON !SPEAR !BOW (NORM OR EXC) (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]://	
+			//ItemDisplay[NMAG ZON !SPEAR !BOW (NORM OR EXC) (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]://	
 			ItemDisplay[NMAG ZON !SPEAR !BOW MULTI188,2=0 (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]://	
 			
 			ItemDisplay[NMAG ZON !SPEAR !BOW MULTI188,2<3 ELT !ETH SUP high_sup_ed FILTLVL>8 !town_l GROUND]://
@@ -3983,17 +4068,17 @@ ItemDisplay[NMAG ELT SUP !GLOVES !BOOTS !BELT !caster2_i (WEAPON OR ARMOR) ED=15
 
 			//special
 			//cta & hoto & spirit
-			ItemDisplay[NMAG fla !ETH (SOCK=3 OR SOCK=2) (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]://
-			ItemDisplay[NMAG fla !ETH (SOCK=5 OR SOCK=4) FILTLVL>6 !town_l GROUND]://
-			ItemDisplay[NMAG fla ETH (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]://
-			ItemDisplay[NMAG crs !ETH (SOCK=3 OR SOCK=2) (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]://
-			ItemDisplay[NMAG crs !ETH (SOCK=5 OR SOCK=4) FILTLVL>6 !town_l GROUND]://
-			ItemDisplay[NMAG bsd ETH (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]:// 
-			ItemDisplay[NMAG bsd (SOCK=3 OR SOCK=2) (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]:// 			
-			ItemDisplay[NMAG bsd SOCK=4 (FILTLVL>4 OR (CLVL>45 FILTLVL>6)) !town_l GROUND]:// 
-			ItemDisplay[NMAG (bsd OR fla) FILTLVL>6 !town_l GROUND]://
-			ItemDisplay[NMAG crs !ETH FILTLVL>6 !town_l GROUND]://
-			ItemDisplay[NMAG crs ETH SOCK>0 FILTLVL>6 !town_l GROUND]://
+			//ItemDisplay[NMAG fla !ETH (SOCK=3 OR SOCK=2) (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]://
+			//ItemDisplay[NMAG fla !ETH (SOCK=5 OR SOCK=4) FILTLVL>6 !town_l GROUND]://
+			//ItemDisplay[NMAG fla ETH (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]://
+			//ItemDisplay[NMAG crs !ETH (SOCK=3 OR SOCK=2) (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]://
+			//ItemDisplay[NMAG crs !ETH (SOCK=5 OR SOCK=4) FILTLVL>6 !town_l GROUND]://
+			//ItemDisplay[NMAG bsd ETH (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]:// 
+			//ItemDisplay[NMAG bsd (SOCK=3 OR SOCK=2) (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]:// 			
+			//ItemDisplay[NMAG bsd SOCK=4 (FILTLVL>4 OR (CLVL>45 FILTLVL>6)) !town_l GROUND]:// 
+			//ItemDisplay[NMAG (bsd OR fla) FILTLVL>6 !town_l GROUND]://
+			//ItemDisplay[NMAG crs !ETH FILTLVL>6 !town_l GROUND]://
+			//ItemDisplay[NMAG crs ETH SOCK>0 FILTLVL>6 !town_l GROUND]://
 			
 
 		\~~~
@@ -4004,51 +4089,85 @@ ItemDisplay[NMAG ELT SUP !GLOVES !BOOTS !BELT !caster2_i (WEAPON OR ARMOR) ED=15
 			//show all eth magic items
 			//show all items that cant be shopped or gambled
 		ItemDisplay[!ID MAG ETH NEC (FILTLVL>4 OR (FILTLVL>2 CLVL>30)) !town_l GROUND]:// you don't craft eth nec shields
-		ItemDisplay[!ID MAG NORM !ETH (ARMOR OR WEAPON) !(ZON OR SOR OR NEC OR (SIN !shopableclaw_i) OR DIN OR BAR OR DRU OR CIRC OR GLOVES) !PRICE=35000 (FILTLVL>4 OR (FILTLVL>2 CLVL>30)) !town_l GROUND]://
-		ItemDisplay[!ID MAG EXC !ETH (ARMOR OR WEAPON) !(ZON OR SOR OR NEC OR (SIN !shopableclaw_i) OR DIN OR BAR OR DRU OR CIRC OR GLOVES) !PRICE=35000 (FILTLVL>4 OR (FILTLVL>2 CLVL>50)) !town_l GROUND]://			
-		ItemDisplay[!ID MAG ELT !ETH (ARMOR OR WEAPON) !(ZON OR SOR OR NEC OR (SIN !shopableclaw_i) OR DIN OR BAR OR DRU OR CIRC OR GLOVES) !PRICE=35000 (FILTLVL>4 OR (FILTLVL>2 CLVL>70)) !town_l GROUND]://	
+		ItemDisplay[!ID MAG NORM !ETH (ARMOR OR WEAPON) !(ZON OR SOR OR NEC OR (SIN !shopableclaw_i) OR DIN OR BAR OR DRU OR CIRC OR GLOVES) !PRICE=35000 (FILTLVL>4 OR (FILTLVL>2 CLVL>30)) !town_l GROUND]:%HIDDEN_MAG%%CONTINUE%
+		ItemDisplay[!ID MAG EXC !ETH (ARMOR OR WEAPON) !(ZON OR SOR OR NEC OR (SIN !shopableclaw_i) OR DIN OR BAR OR DRU OR CIRC OR GLOVES) !PRICE=35000 (FILTLVL>4 OR (FILTLVL>2 CLVL>50)) !town_l GROUND]:%HIDDEN_MAG%%CONTINUE%		
+		ItemDisplay[!ID MAG ELT !ETH (ARMOR OR WEAPON) !(ZON OR SOR OR NEC OR (SIN !shopableclaw_i) OR DIN OR BAR OR DRU OR CIRC OR GLOVES) !PRICE=35000 (FILTLVL>4 OR (FILTLVL>2 CLVL>70)) !town_l GROUND]:%HIDDEN_MAG%%CONTINUE%	
 		ItemDisplay[!ID MAG !ETH (ARMOR OR WEAPON) !(ZON OR SOR OR NEC OR (SIN !shopableclaw_i) OR DIN OR BAR OR DRU OR CIRC OR GLOVES) PRICE=35000 FILTLVL>4 !town_l GROUND]:// hide the things that are just showing up because they are good to vendor
 		
-		ItemDisplay[!ID MAG NEC FILTLVL>4 !town_l GROUND]://			
-		ItemDisplay[!ID MAG (DRU OR BAR) FILTLVL>4 !town_l GROUND]://		
-		ItemDisplay[!ID MAG DIN FILTLVL>4 !town_l GROUND]://
-		ItemDisplay[!ID ETH MAG HELM FILTLVL>4 !town_l GROUND]://
-		ItemDisplay[!ID MAG ZON !ETH FILTLVL>6 !town_l GROUND]://
-		ItemDisplay[!ID MAG SIN !ETH FILTLVL>4 !town_l GROUND]://		
+		ItemDisplay[!ID MAG NEC FILTLVL>4 !town_l GROUND]:%HIDDEN_MAG%%CONTINUE%			
+		ItemDisplay[!ID MAG (DRU OR BAR) FILTLVL>4 !town_l GROUND]:%HIDDEN_MAG%%CONTINUE%		
+		ItemDisplay[!ID MAG DIN FILTLVL>4 !town_l GROUND]:%HIDDEN_MAG%%CONTINUE%
+		ItemDisplay[!ID ETH MAG HELM FILTLVL>4 !town_l GROUND]:%HIDDEN_MAG%%CONTINUE%
+		ItemDisplay[!ID MAG ZON !ETH FILTLVL>4 !town_l GROUND]:%HIDDEN_MAG%%CONTINUE%
+		ItemDisplay[!ID MAG SIN !ETH FILTLVL>4 !town_l GROUND]:%HIDDEN_MAG%%CONTINUE%		
 		
 		//bad crafting bases weapons
-		ItemDisplay[!ID MAG (hax OR 9ha OR 7ha OR mpi OR 9mp OR 7mp OR 72a OR 92a OR 2ax OR 7la OR 9la OR lax OR bax OR 9ba OR 7ba OR 7bt OR 9bt OR btx OR 7cl OR 9cl OR clb OR 7ma OR 9ma OR mac OR 7ss OR 9ss OR ssd OR 7sm OR 9sm OR scm OR 7sb OR 9sb OR sbr OR 7fc OR 9fc OR flc OR 7ls OR 9ls OR lsd OR 7wd OR 9wd OR wsd OR 2hs OR 92h OR 72h OR 7cm OR 9cm OR clm OR 7gs OR 9gs OR gis OR 7b7 OR 9b9 OR bsw OR 7fb OR 9fb OR flb OR 7di OR 9di OR dir OR dgr OR 9dg OR 7dg OR 7bl OR 9bl OR bld OR 7ta OR 9ta OR tax OR 7ja OR 9ja OR jav OR 7pi OR 9pi OR pil OR 7s7 OR 9s9 OR ssp OR 7tr OR 9tr OR tri OR brn OR 9br OR 7br OR spt OR 9st OR 7st OR 7o7 OR 9b7 OR bar OR vou OR 9vo OR 7vo OR 7s8 OR 9s8 OR scy OR pax OR 9pa OR 7pa OR 7wc OR 9wc OR wsc OR 6sb OR 8sb OR sbw OR hbw OR 8hb OR 6hb OR 6cb OR 8cb OR cbw OR sbb OR 8s8 OR 6s7 OR 6sw OR 8sw OR swb OR 6lx OR 8lx OR lxb OR 6lw OR 8lw OR lwb OR 6mx OR 8mx OR mxb OR rxb OR 8rx OR 6rx OR 6ss OR 8ss OR sst OR lst OR 8ls OR 6ls OR 6cs OR 8cs OR cst OR bst OR 8bs OR 6bs OR 7sc OR 9sc OR scp OR gsc OR 9qs OR 7qs OR 7ar OR 9ar OR ktr OR wrb OR 9wb OR 7wb OR ces OR 9cs OR 7cs OR 7lw OR 9lw OR clw OR btl OR 9tw OR 7tw OR obb OR ob6 OR ob1 OR ob2 OR ob7 OR obc OR ob3 OR ob8 OR obd OR ob4 OR ob9 OR obe) !PRICE=35000 FILTLVL>4 !town_l GROUND]://		
-		ItemDisplay[!ID MAG (hax OR 9ha OR 7ha OR mpi OR 9mp OR 7mp OR 72a OR 92a OR 2ax OR 7la OR 9la OR lax OR bax OR 9ba OR 7ba OR 7bt OR 9bt OR btx OR 7cl OR 9cl OR clb OR 7ma OR 9ma OR mac OR 7ss OR 9ss OR ssd OR 7sm OR 9sm OR scm OR 7sb OR 9sb OR sbr OR 7fc OR 9fc OR flc OR 7ls OR 9ls OR lsd OR 7wd OR 9wd OR wsd OR 2hs OR 92h OR 72h OR 7cm OR 9cm OR clm OR 7gs OR 9gs OR gis OR 7b7 OR 9b9 OR bsw OR 7fb OR 9fb OR flb OR 7di OR 9di OR dir OR dgr OR 9dg OR 7dg OR 7bl OR 9bl OR bld OR 7ta OR 9ta OR tax OR 7ja OR 9ja OR jav OR 7pi OR 9pi OR pil OR 7s7 OR 9s9 OR ssp OR 7tr OR 9tr OR tri OR brn OR 9br OR 7br OR spt OR 9st OR 7st OR 7o7 OR 9b7 OR bar OR vou OR 9vo OR 7vo OR 7s8 OR 9s8 OR scy OR pax OR 9pa OR 7pa OR 7wc OR 9wc OR wsc OR 6sb OR 8sb OR sbw OR hbw OR 8hb OR 6hb OR 6cb OR 8cb OR cbw OR sbb OR 8s8 OR 6s7 OR 6sw OR 8sw OR swb OR 6lx OR 8lx OR lxb OR 6lw OR 8lw OR lwb OR 6mx OR 8mx OR mxb OR rxb OR 8rx OR 6rx OR 6ss OR 8ss OR sst OR lst OR 8ls OR 6ls OR 6cs OR 8cs OR cst OR bst OR 8bs OR 6bs OR 7sc OR 9sc OR scp OR gsc OR 9qs OR 7qs OR 7ar OR 9ar OR ktr OR wrb OR 9wb OR 7wb OR ces OR 9cs OR 7cs OR 7lw OR 9lw OR clw OR btl OR 9tw OR 7tw OR obb OR ob6 OR ob1 OR ob2 OR ob7 OR obc OR ob3 OR ob8 OR obd OR ob4 OR ob9 OR obe) PRICE=35000 FILTLVL>6 !town_l GROUND]://		
+		//ItemDisplay[!ID MAG (hax OR 9ha OR 7ha OR mpi OR 9mp OR 7mp OR 72a OR 92a OR 2ax OR 7la OR 9la OR lax OR bax OR 9ba OR 7ba OR 7bt OR 9bt OR btx OR 7cl OR 9cl OR clb OR 7ma OR 9ma OR mac OR 7ss OR 9ss OR ssd OR 7sm OR 9sm OR scm OR 7sb OR 9sb OR sbr OR 7fc OR 9fc OR flc OR 7ls OR 9ls OR lsd OR 7wd OR 9wd OR wsd OR 2hs OR 92h OR 72h OR 7cm OR 9cm OR clm OR 7gs OR 9gs OR gis OR 7b7 OR 9b9 OR bsw OR 7fb OR 9fb OR flb OR 7di OR 9di OR dir OR dgr OR 9dg OR 7dg OR 7bl OR 9bl OR bld OR 7ta OR 9ta OR tax OR 7ja OR 9ja OR jav OR 7pi OR 9pi OR pil OR 7s7 OR 9s9 OR ssp OR 7tr OR 9tr OR tri OR brn OR 9br OR 7br OR spt OR 9st OR 7st OR 7o7 OR 9b7 OR bar OR vou OR 9vo OR 7vo OR 7s8 OR 9s8 OR scy OR pax OR 9pa OR 7pa OR 7wc OR 9wc OR wsc OR 6sb OR 8sb OR sbw OR hbw OR 8hb OR 6hb OR 6cb OR 8cb OR cbw OR sbb OR 8s8 OR 6s7 OR 6sw OR 8sw OR swb OR 6lx OR 8lx OR lxb OR 6lw OR 8lw OR lwb OR 6mx OR 8mx OR mxb OR rxb OR 8rx OR 6rx OR 6ss OR 8ss OR sst OR lst OR 8ls OR 6ls OR 6cs OR 8cs OR cst OR bst OR 8bs OR 6bs OR 7sc OR 9sc OR scp OR gsc OR 9qs OR 7qs OR 7ar OR 9ar OR ktr OR wrb OR 9wb OR 7wb OR ces OR 9cs OR 7cs OR 7lw OR 9lw OR clw OR btl OR 9tw OR 7tw OR obb OR ob6 OR ob1 OR ob2 OR ob7 OR obc OR ob3 OR ob8 OR obd OR ob4 OR ob9 OR obe) !PRICE=35000 FILTLVL>4 !town_l GROUND]:%HIDDEN_MAG%%CONTINUE%	
+		//ItemDisplay[!ID MAG (hax OR 9ha OR 7ha OR mpi OR 9mp OR 7mp OR 72a OR 92a OR 2ax OR 7la OR 9la OR lax OR bax OR 9ba OR 7ba OR 7bt OR 9bt OR btx OR 7cl OR 9cl OR clb OR 7ma OR 9ma OR mac OR 7ss OR 9ss OR ssd OR 7sm OR 9sm OR scm OR 7sb OR 9sb OR sbr OR 7fc OR 9fc OR flc OR 7ls OR 9ls OR lsd OR 7wd OR 9wd OR wsd OR 2hs OR 92h OR 72h OR 7cm OR 9cm OR clm OR 7gs OR 9gs OR gis OR 7b7 OR 9b9 OR bsw OR 7fb OR 9fb OR flb OR 7di OR 9di OR dir OR dgr OR 9dg OR 7dg OR 7bl OR 9bl OR bld OR 7ta OR 9ta OR tax OR 7ja OR 9ja OR jav OR 7pi OR 9pi OR pil OR 7s7 OR 9s9 OR ssp OR 7tr OR 9tr OR tri OR brn OR 9br OR 7br OR spt OR 9st OR 7st OR 7o7 OR 9b7 OR bar OR vou OR 9vo OR 7vo OR 7s8 OR 9s8 OR scy OR pax OR 9pa OR 7pa OR 7wc OR 9wc OR wsc OR 6sb OR 8sb OR sbw OR hbw OR 8hb OR 6hb OR 6cb OR 8cb OR cbw OR sbb OR 8s8 OR 6s7 OR 6sw OR 8sw OR swb OR 6lx OR 8lx OR lxb OR 6lw OR 8lw OR lwb OR 6mx OR 8mx OR mxb OR rxb OR 8rx OR 6rx OR 6ss OR 8ss OR sst OR lst OR 8ls OR 6ls OR 6cs OR 8cs OR cst OR bst OR 8bs OR 6bs OR 7sc OR 9sc OR scp OR gsc OR 9qs OR 7qs OR 7ar OR 9ar OR ktr OR wrb OR 9wb OR 7wb OR ces OR 9cs OR 7cs OR 7lw OR 9lw OR clw OR btl OR 9tw OR 7tw OR obb OR ob6 OR ob1 OR ob2 OR ob7 OR obc OR ob3 OR ob8 OR obd OR ob4 OR ob9 OR obe) PRICE=35000 FILTLVL>6 !town_l GROUND]:%HIDDEN_MAG%%CONTINUE%		
 	
+		ItemDisplay[!ID MAG (bad_rare_1haxe OR bad_rare_helm OR bad_rare_1hclub OR bad_rare_1hsword OR bad_rare_2haxe OR bad_rare_2hspear OR bad_rare_2hsword OR bad_rare_bow OR bad_rare_claw OR bad_rare_dagger OR bad_rare_orb OR bad_rare_polearm OR bad_rare_scepter OR bad_rare_shield OR bad_rare_staff OR bad_rare_taxe OR bad_rare_tmace OR bad_rare_tspear OR bad_rare_xbow) !PRICE=35000 FILTLVL>4 !town_l GROUND]:%HIDDEN_MAG%%CONTINUE%
+		ItemDisplay[!ID MAG (bad_rare_1haxe OR bad_rare_helm OR bad_rare_1hclub OR bad_rare_1hsword OR bad_rare_2haxe OR bad_rare_2hspear OR bad_rare_2hsword OR bad_rare_bow OR bad_rare_claw OR bad_rare_dagger OR bad_rare_orb OR bad_rare_polearm OR bad_rare_scepter OR bad_rare_shield OR bad_rare_staff OR bad_rare_taxe OR bad_rare_tmace OR bad_rare_tspear OR bad_rare_xbow) PRICE=35000 FILTLVL>6 !town_l GROUND]:%HIDDEN_MAG%%CONTINUE%
 
-		ItemDisplay[!ID MAG (pab OR pa6 OR pa1 OR pac OR pa7 OR pa2 OR pad OR pa8 OR pa3 OR paf OR paa OR pa5 OR ulb OR xlb OR lbt OR uvb OR xvb OR vbt OR umb OR xmb OR mbt OR utb OR xtb OR tbt) !PRICE=35000 FILTLVL>4 !town_l GROUND]://
-		ItemDisplay[!ID MAG (pab OR pa6 OR pa1 OR pac OR pa7 OR pa2 OR pad OR pa8 OR pa3 OR paf OR paa OR pa5 OR ulb OR xlb OR lbt OR uvb OR xvb OR vbt OR umb OR xmb OR mbt OR utb OR xtb OR tbt) PRICE=35000 FILTLVL>6 !town_l GROUND]://
+		//ItemDisplay[!ID MAG (pab OR pa6 OR pa1 OR pac OR pa7 OR pa2 OR pad OR pa8 OR pa3 OR paf OR paa OR pa5 OR ulb OR xlb OR lbt OR uvb OR xvb OR vbt OR umb OR xmb OR mbt OR utb OR xtb OR tbt) !PRICE=35000 FILTLVL>4 !town_l GROUND]:%HIDDEN_MAG%%CONTINUE%
+		//ItemDisplay[!ID MAG (pab OR pa6 OR pa1 OR pac OR pa7 OR pa2 OR pad OR pa8 OR pa3 OR paf OR paa OR pa5 OR ulb OR xlb OR lbt OR uvb OR xvb OR vbt OR umb OR xmb OR mbt OR utb OR xtb OR tbt) PRICE=35000 FILTLVL>6 !town_l GROUND]:%HIDDEN_MAG%%CONTINUE%
 				
-		ItemDisplay[!ID MAG rin (FILTLVL>4 OR (FILTLVL>2 CLVL>45)) !town_l GROUND]://
-		ItemDisplay[!ID MAG amu !ILVL>89 FILTLVL>4 !town_l GROUND]://
-		ItemDisplay[!ID MAG amu ILVL>89 FILTLVL>6 !town_l GROUND]://		
-		ItemDisplay[!ID MAG QUIVER (FILTLVL>4 OR (FILTLVL>2 CLVL>45)) !town_l GROUND]://
-		ItemDisplay[!ID MAG GLOVES FILTLVL>4 !town_l GROUND]://
+		ItemDisplay[!ID MAG rin (FILTLVL>4 OR (FILTLVL>2 CLVL>45)) !town_l GROUND]:%HIDDEN_MAG%%CONTINUE%
+		ItemDisplay[!ID MAG amu !ILVL>89 FILTLVL>4 !town_l GROUND]:%HIDDEN_MAG%%CONTINUE%
+		ItemDisplay[!ID MAG amu ILVL>89 FILTLVL>6 !town_l GROUND]:%HIDDEN_MAG%%CONTINUE%		
+		ItemDisplay[!ID MAG QUIVER (FILTLVL>4 OR (FILTLVL>2 CLVL>45)) !town_l GROUND]:%HIDDEN_MAG%%CONTINUE%
+		ItemDisplay[!ID MAG GLOVES FILTLVL>4 !town_l GROUND]:%HIDDEN_MAG%%CONTINUE%
 		
-		ItemDisplay[MAG !ID CHARM ILVL<90 !town_l GROUND FILTLVL>8]://
-		ItemDisplay[MAG !ID jew ILVL<85 !town_l GROUND FILTLVL>8]://			
+		ItemDisplay[MAG !ID CHARM ILVL<90 !town_l GROUND FILTLVL>8]:%HIDDEN_ORANGE%%CONTINUE%
+		ItemDisplay[MAG !ID jew ILVL<85 !town_l GROUND FILTLVL>8]:%HIDDEN_ORANGE%%CONTINUE%	
+
+		ItemDisplay[MAG !ID SOR !town_l GROUND FILTLVL>4]:%HIDDEN_MAG%%CONTINUE%
+		
+		ItemDisplay[MAG !ID ETH CHEST !town_l GROUND FILTLVL>4]:%HIDDEN_MAG%%CONTINUE%
 		
 	\~~~	
 	
 	/~~~//Rare
 		//bad crafting bases weapons
-		ItemDisplay[!ID RARE (hax OR 9ha OR 7ha OR mpi OR 9mp OR 7mp OR 72a OR 92a OR 2ax OR 7la OR 9la OR lax OR bax OR 9ba OR 7ba OR 7bt OR 9bt OR btx OR 7cl OR 9cl OR clb OR 7ma OR 9ma OR mac OR 7ss OR 9ss OR ssd OR 7sm OR 9sm OR scm OR 7sb OR 9sb OR sbr OR 7fc OR 9fc OR flc OR 7ls OR 9ls OR lsd OR 7wd OR 9wd OR wsd OR 2hs OR 92h OR 72h OR 7cm OR 9cm OR clm OR 7gs OR 9gs OR gis OR 7b7 OR 9b9 OR bsw OR 7fb OR 9fb OR flb OR 7di OR 9di OR dir OR dgr OR 9dg OR 7dg OR 7bl OR 9bl OR bld OR 7ta OR 9ta OR tax OR 7ja OR 9ja OR jav OR 7pi OR 9pi OR pil OR 7s7 OR 9s9 OR ssp OR 7tr OR 9tr OR tri OR brn OR 9br OR 7br OR spt OR 9st OR 7st OR 7o7 OR 9b7 OR bar OR vou OR 9vo OR 7vo OR 7s8 OR 9s8 OR scy OR pax OR 9pa OR 7pa OR 7wc OR 9wc OR wsc OR 6sb OR 8sb OR sbw OR hbw OR 8hb OR 6hb OR 6cb OR 8cb OR cbw OR sbb OR 8s8 OR 6s7 OR 6sw OR 8sw OR swb OR 6lx OR 8lx OR lxb OR 6lw OR 8lw OR lwb OR 6mx OR 8mx OR mxb OR rxb OR 8rx OR 6rx OR 6ss OR 8ss OR sst OR lst OR 8ls OR 6ls OR 6cs OR 8cs OR cst OR bst OR 8bs OR 6bs OR 7sc OR 9sc OR scp OR gsc OR 9qs OR 7qs OR 7ar OR 9ar OR ktr OR wrb OR 9wb OR 7wb OR ces OR 9cs OR 7cs OR 7lw OR 9lw OR clw OR btl OR 9tw OR 7tw OR obb OR ob6 OR ob1 OR ob2 OR ob7 OR obc OR ob3 OR ob8 OR obd OR ob4 OR ob9 OR obe) !PRICE=35000 FILTLVL>4 !town_l GROUND]://
-		ItemDisplay[!ID RARE (hax OR 9ha OR 7ha OR mpi OR 9mp OR 7mp OR 72a OR 92a OR 2ax OR 7la OR 9la OR lax OR bax OR 9ba OR 7ba OR 7bt OR 9bt OR btx OR 7cl OR 9cl OR clb OR 7ma OR 9ma OR mac OR 7ss OR 9ss OR ssd OR 7sm OR 9sm OR scm OR 7sb OR 9sb OR sbr OR 7fc OR 9fc OR flc OR 7ls OR 9ls OR lsd OR 7wd OR 9wd OR wsd OR 2hs OR 92h OR 72h OR 7cm OR 9cm OR clm OR 7gs OR 9gs OR gis OR 7b7 OR 9b9 OR bsw OR 7fb OR 9fb OR flb OR 7di OR 9di OR dir OR dgr OR 9dg OR 7dg OR 7bl OR 9bl OR bld OR 7ta OR 9ta OR tax OR 7ja OR 9ja OR jav OR 7pi OR 9pi OR pil OR 7s7 OR 9s9 OR ssp OR 7tr OR 9tr OR tri OR brn OR 9br OR 7br OR spt OR 9st OR 7st OR 7o7 OR 9b7 OR bar OR vou OR 9vo OR 7vo OR 7s8 OR 9s8 OR scy OR pax OR 9pa OR 7pa OR 7wc OR 9wc OR wsc OR 6sb OR 8sb OR sbw OR hbw OR 8hb OR 6hb OR 6cb OR 8cb OR cbw OR sbb OR 8s8 OR 6s7 OR 6sw OR 8sw OR swb OR 6lx OR 8lx OR lxb OR 6lw OR 8lw OR lwb OR 6mx OR 8mx OR mxb OR rxb OR 8rx OR 6rx OR 6ss OR 8ss OR sst OR lst OR 8ls OR 6ls OR 6cs OR 8cs OR cst OR bst OR 8bs OR 6bs OR 7sc OR 9sc OR scp OR gsc OR 9qs OR 7qs OR 7ar OR 9ar OR ktr OR wrb OR 9wb OR 7wb OR ces OR 9cs OR 7cs OR 7lw OR 9lw OR clw OR btl OR 9tw OR 7tw OR obb OR ob6 OR ob1 OR ob2 OR ob7 OR obc OR ob3 OR ob8 OR obd OR ob4 OR ob9 OR obe) PRICE=35000 FILTLVL>6 !town_l GROUND]://
+		//ItemDisplay[!ID RARE (hax OR 9ha OR 7ha OR mpi OR 9mp OR 7mp OR 72a OR 92a OR 2ax OR 7la OR 9la OR lax OR bax OR 9ba OR 7ba OR 7bt OR 9bt OR btx OR 7cl OR 9cl OR clb OR 7ma OR 9ma OR mac OR 7ss OR 9ss OR ssd OR 7sm OR 9sm OR scm OR 7sb OR 9sb OR sbr OR 7fc OR 9fc OR flc OR 7ls OR 9ls OR lsd OR 7wd OR 9wd OR wsd OR 2hs OR 92h OR 72h OR 7cm OR 9cm OR clm OR 7gs OR 9gs OR gis OR 7b7 OR 9b9 OR bsw OR 7fb OR 9fb OR flb OR 7di OR 9di OR dir OR dgr OR 9dg OR 7dg OR 7bl OR 9bl OR bld OR 7ta OR 9ta OR tax OR 7ja OR 9ja OR jav OR 7pi OR 9pi OR pil OR 7s7 OR 9s9 OR ssp OR 7tr OR 9tr OR tri OR brn OR 9br OR 7br OR spt OR 9st OR 7st OR 7o7 OR 9b7 OR bar OR vou OR 9vo OR 7vo OR 7s8 OR 9s8 OR scy OR pax OR 9pa OR 7pa OR 7wc OR 9wc OR wsc OR 6sb OR 8sb OR sbw OR hbw OR 8hb OR 6hb OR 6cb OR 8cb OR cbw OR sbb OR 8s8 OR 6s7 OR 6sw OR 8sw OR swb OR 6lx OR 8lx OR lxb OR 6lw OR 8lw OR lwb OR 6mx OR 8mx OR mxb OR rxb OR 8rx OR 6rx OR 6ss OR 8ss OR sst OR lst OR 8ls OR 6ls OR 6cs OR 8cs OR cst OR bst OR 8bs OR 6bs OR 7sc OR 9sc OR scp OR gsc OR 9qs OR 7qs OR 7ar OR 9ar OR ktr OR wrb OR 9wb OR 7wb OR ces OR 9cs OR 7cs OR 7lw OR 9lw OR clw OR btl OR 9tw OR 7tw OR obb OR ob6 OR ob1 OR ob2 OR ob7 OR obc OR ob3 OR ob8 OR obd OR ob4 OR ob9 OR obe) !PRICE=35000 FILTLVL>4 !town_l GROUND]:%HIDDEN_RARE%%CONTINUE%
+		//ItemDisplay[!ID RARE (hax OR 9ha OR 7ha OR mpi OR 9mp OR 7mp OR 72a OR 92a OR 2ax OR 7la OR 9la OR lax OR bax OR 9ba OR 7ba OR 7bt OR 9bt OR btx OR 7cl OR 9cl OR clb OR 7ma OR 9ma OR mac OR 7ss OR 9ss OR ssd OR 7sm OR 9sm OR scm OR 7sb OR 9sb OR sbr OR 7fc OR 9fc OR flc OR 7ls OR 9ls OR lsd OR 7wd OR 9wd OR wsd OR 2hs OR 92h OR 72h OR 7cm OR 9cm OR clm OR 7gs OR 9gs OR gis OR 7b7 OR 9b9 OR bsw OR 7fb OR 9fb OR flb OR 7di OR 9di OR dir OR dgr OR 9dg OR 7dg OR 7bl OR 9bl OR bld OR 7ta OR 9ta OR tax OR 7ja OR 9ja OR jav OR 7pi OR 9pi OR pil OR 7s7 OR 9s9 OR ssp OR 7tr OR 9tr OR tri OR brn OR 9br OR 7br OR spt OR 9st OR 7st OR 7o7 OR 9b7 OR bar OR vou OR 9vo OR 7vo OR 7s8 OR 9s8 OR scy OR pax OR 9pa OR 7pa OR 7wc OR 9wc OR wsc OR 6sb OR 8sb OR sbw OR hbw OR 8hb OR 6hb OR 6cb OR 8cb OR cbw OR sbb OR 8s8 OR 6s7 OR 6sw OR 8sw OR swb OR 6lx OR 8lx OR lxb OR 6lw OR 8lw OR lwb OR 6mx OR 8mx OR mxb OR rxb OR 8rx OR 6rx OR 6ss OR 8ss OR sst OR lst OR 8ls OR 6ls OR 6cs OR 8cs OR cst OR bst OR 8bs OR 6bs OR 7sc OR 9sc OR scp OR gsc OR 9qs OR 7qs OR 7ar OR 9ar OR ktr OR wrb OR 9wb OR 7wb OR ces OR 9cs OR 7cs OR 7lw OR 9lw OR clw OR btl OR 9tw OR 7tw OR obb OR ob6 OR ob1 OR ob2 OR ob7 OR obc OR ob3 OR ob8 OR obd OR ob4 OR ob9 OR obe) PRICE=35000 FILTLVL>6 !town_l GROUND]:%HIDDEN_RARE%%CONTINUE%
+
+
+		ItemDisplay[!ID RARE (bad_rare_1haxe OR bad_rare_helm OR bad_rare_1hclub OR bad_rare_1hsword OR bad_rare_2haxe OR bad_rare_2hspear OR bad_rare_2hsword OR bad_rare_bow OR bad_rare_claw OR bad_rare_dagger OR bad_rare_orb OR bad_rare_polearm OR bad_rare_scepter OR bad_rare_shield OR bad_rare_staff OR bad_rare_taxe OR bad_rare_tmace OR bad_rare_tspear OR bad_rare_xbow) !PRICE=35000 FILTLVL>4 !town_l GROUND]:%HIDDEN_RARE%%CONTINUE%
+		ItemDisplay[!ID RARE (bad_rare_1haxe OR bad_rare_helm OR bad_rare_1hclub OR bad_rare_1hsword OR bad_rare_2haxe OR bad_rare_2hspear OR bad_rare_2hsword OR bad_rare_bow OR bad_rare_claw OR bad_rare_dagger OR bad_rare_orb OR bad_rare_polearm OR bad_rare_scepter OR bad_rare_shield OR bad_rare_staff OR bad_rare_taxe OR bad_rare_tmace OR bad_rare_tspear OR bad_rare_xbow) PRICE=35000 FILTLVL>6 !town_l GROUND]:%HIDDEN_RARE%%CONTINUE%
+
 			
 		//bad crafting bases magic
-		ItemDisplay[!ID RARE HELM !DRU !BAR FILTLVL>6 !town_l GROUND]://
-		ItemDisplay[!ID RARE (DRU OR BAR) FILTLVL>8 !town_l GROUND]://		
-		ItemDisplay[!ID RARE SHIELD !DIN !NEC FILTLVL>6 !town_l GROUND]://		
-		ItemDisplay[!ID RARE (DIN OR NEC) FILTLVL>8 !town_l GROUND]://		
-		ItemDisplay[!ID RARE BELT FILTLVL>8 !town_l GROUND]://
-		ItemDisplay[!ID RARE WAND FILTLVL>6 !town_l GROUND]://
-			
+		ItemDisplay[!ID RARE HELM !DRU !BAR FILTLVL>6 !town_l GROUND]:%HIDDEN_RARE%%CONTINUE%
+		ItemDisplay[!ID RARE (DRU OR BAR) FILTLVL>8 !town_l GROUND]:%HIDDEN_RARE%%CONTINUE%	
+		ItemDisplay[!ID RARE SHIELD !DIN !NEC FILTLVL>6 !town_l GROUND]:%HIDDEN_RARE%%CONTINUE%
+		ItemDisplay[!ID RARE (DIN OR NEC) FILTLVL>8 !town_l GROUND]:%HIDDEN_RARE%%CONTINUE%	
+		ItemDisplay[!ID RARE BELT FILTLVL>8 !town_l GROUND]:%HIDDEN_RARE%%CONTINUE%
+		ItemDisplay[!ID RARE WAND FILTLVL>6 !town_l GROUND]:%HIDDEN_RARE%%CONTINUE%
 	\~~~
+	
+
+
+//uniques and SETS
+ItemDisplay[!ID SET NORM !rin !amu !(good_low_set_gear) !(class_set_gear) !town_l GROUND FILTLVL>6]:%HIDDEN_SET%%CONTINUE%
+ItemDisplay[!ID SET EXC !rin !amu !(good_mid_set_gear) !(class_set_gear) !town_l GROUND FILTLVL>6]:%HIDDEN_SET%%CONTINUE%
+ItemDisplay[!ID SET ELT !rin !amu !(good_mid_set_gear) !(class_set_gear) !town_l GROUND FILTLVL>6]:%HIDDEN_SET%%CONTINUE%
+
+ItemDisplay[!ID UNI NORM !rin !amu !jew !(good_low_unique_gear) !(good_mid_unique_gear) !town_l GROUND FILTLVL>6]:%HIDDEN_UNI%%CONTINUE%
+ItemDisplay[!ID UNI EXC !rin !amu !jew !(good_low_unique_gear) !(good_mid_unique_gear) !town_l GROUND FILTLVL>6]:%HIDDEN_UNI%%CONTINUE%
+
+
+ItemDisplay[(gzvs OR gzv) !town_l GROUND FILTLVL>8]:
+ItemDisplay[(glys OR gly) !town_l GROUND FILTLVL>8]:
+ItemDisplay[(glbs OR glb) !town_l GROUND FILTLVL>8]:
+ItemDisplay[(glgs OR glg) !town_l GROUND FILTLVL>8]:
+ItemDisplay[(glrs OR glr) !town_l GROUND FILTLVL>8]:
+ItemDisplay[(glws OR glw) !town_l GROUND FILTLVL>8]:
+
+
+
+
+
+
 \~~~//end hidden
 
 
