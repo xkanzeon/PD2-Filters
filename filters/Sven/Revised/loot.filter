@@ -111,12 +111,12 @@ Alias[good_fast_rw_1haxe]:((7ha (SOCK=3 OR SOCK=2 OR SOCK=0)) OR (7wa (SOCK=6 OR
 Alias[good_slow_rare_1haxe]:(7ax OR 9ax OR axe)
 Alias[good_fast_rare_1haxe]:(7wa OR 9wa OR wax)
 //2h AXE
-Alias[bad_rw_2haxe]:((7la OR 9la OR lax OR 7bt OR 9bt OR btx OR 9gi OR gix OR 9ga OR gax OR bax OR 9ba) OR (7ga (SOCK=5 OR SOCK=4 OR SOCK=3 OR SOCK=2)))
+Alias[bad_rw_2haxe]:(( 7ba OR 9ba OR bax OR 7la OR 9la OR lax OR 7bt OR 9bt OR btx OR 9gi OR gix OR 9ga OR gax OR bax OR 9ba) OR (7ga (SOCK=5 OR SOCK=4 OR SOCK=3 OR SOCK=2)))
 Alias[bad_rare_2haxe]:(lax OR 9la OR 7la OR 7bt OR 9bt OR btx OR 7ba OR 9ba OR bax)
 Alias[good_slow_rw_2haxe]:(7gi (SOCK=6 OR SOCK=5 OR SOCK=4 OR SOCK=3 OR SOCK=2 OR SOCK=0))
 Alias[good_fast_rw_2haxe]:((7ga (SOCK=6 OR SOCK=0)) OR (7ba (SOCK=5 OR SOCK=4 OR SOCK=3 OR SOCK=2 OR SOCK=0)))
 Alias[good_slow_rare_2haxe]:(gix OR 9gi OR 7gi)
-Alias[good_fast_rare_2haxe]:(7ga OR 9ga OR gax)
+Alias[good_fast_rare_2haxe]:(7ga OR 9ga OR gax)  
 //1h CLUB
 Alias[bad_rw_1hclub]:(7cl OR 9cl OR clb OR 9sp OR spc)
 Alias[bad_rare_1hclub]:(7cl OR 9cl OR clb)
@@ -265,7 +265,7 @@ Alias[eth_brick_to_rare]:(gax OR pik OR 9p9 OR 7p7 OR mau OR gma OR 9m9 OR 9gm O
 //Set groups
 Alias[class_set_gear]:(xsk OR xh9 OR uh9 OR uth OR urn OR ci3 OR xul OR xar OR ucl OR uld OR uul OR uar OR xmg OR xtg OR xhg OR xmb OR xtb OR xhb OR zvb OR zmb OR zhb OR utc OR dr8 OR ba5 OR paf OR ne9 OR 9mt OR 7m7 OR 7ws OR 7qr OR oba OR amc)
 Alias[good_mid_set_gear]:(uhm OR xhm OR ulg OR 7fb OR 7gd OR 6cs)
-Alias[good_low_set_gear]:(lea OR stu OR xap OR ci0 OR lgl OR lbt OR vbt OR lbl OR tow OR kit)
+Alias[good_low_set_gear]:(lea OR stu OR xap OR lgl OR lbt OR vbt OR lbl OR tow OR kit)
 //unique groups
 Alias[good_mid_unique_gear]:(xh9 OR xhm OR xrn OR ci2 OR xea OR xui OR xhn OR xpl OR xlt OR xld OR xth OR xtp OR xar OR xpk OR xsh OR xow OR xts OR xlg OR xvg OR xmg OR xtg OR xhg OR xlb OR xvb OR xmb OR xtb OR xhb OR zlb OR zvb OR ztb OR zhb OR dr6 OR dra OR ba6 OR ba7 OR baa OR pa9 OR ne6 OR nea OR 9gi OR 9wh OR 9m9 OR 9gm OR 9fc OR 9bs OR 9ls OR 9gs OR 9kr OR 9ta OR 9s8 OR 9wc OR 8cb OR 8mx OR 8hx OR 8rx OR 8ls OR 8ws OR 9bw OR 9gw OR 9sc OR 9ws OR 9tw OR 9ar OR ob6 OR ob7 OR oba OR ama)
 Alias[good_low_unique_gear]:(skp OR crn OR qui OR lea OR rng OR ltp OR aar OR tow OR vgl OR mgl OR tgl OR lbt OR tbt OR lbl OR vbl OR tbl OR gix OR ssd OR dgr OR dr2)
@@ -1871,19 +1871,19 @@ ItemDisplay[MAG CHARM ILVL>90]:%NAME%%TEAL%|reroll{%NAME%}%CONTINUE%
 ItemDisplay[SOCK>0 !RW (WEAPON OR ARMOR)]:%NAME%%YELLOW%|%SOCKETS%os{%NAME%}%CONTINUE%
 ItemDisplay[SOCK>0 !RW (QUIVER)]:%WHITE%%NAME%%YELLOW%|%SOCKETS%os{%NAME%}%CONTINUE%
 //Money tag
-ItemDisplay[(NMAG OR MAG OR RARE) (WEAPON OR ARMOR) !CHEST GROUND !ID (PRICE=35000 OR (caster3_i) OR (caster2_i)) !(good_tight_rare_2hhammer) !(good_loose_rare_2hhammer) !(good_fast_rare_1haxe OR good_fast_rare_2haxe OR good_fast_rare_2hspear OR good_fast_rare_bow OR good_fast_rare_claw OR good_fast_rare_tknife OR good_fast_rare_tmace OR good_fast_rare_tspear OR good_fast_rare_zbow OR good_fast_rare_zspear) !(good_slow_rare_1haxe OR good_slow_rare_2haxe OR good_slow_rare_2hspear OR good_slow_rare_bow OR good_slow_rare_claw OR good_slow_rare_tknife OR good_slow_rare_tmace OR good_slow_rare_tspear OR good_slow_rare_zbow OR good_slow_rare_zspear) !(good_rare_1hclub OR good_rare_helm OR good_rare_1hhammer OR good_rare_1hsword OR good_rare_2hsword OR good_rare_dagger OR good_rare_orb OR good_rare_polearm OR good_rare_pshield OR good_rare_scepter OR good_rare_shield OR good_rare_staff OR good_rare_taxe OR good_rare_wand OR good_rare_xbow OR good_rare_zthrow) !(good_tight_rw_2hhammer) !(good_loose_rw_2hhammer) !(good_rw_1hclub OR good_rw_chest OR good_rw_helm OR good_rw_1hhammer OR good_rw_orb OR good_rw_pshield OR good_rw_shield OR good_rw_wand OR good_rw_zthrow) !(good_fast_rw_1haxe OR good_fast_rw_1hsword OR good_fast_rw_2haxe OR good_fast_rw_2hspear OR good_fast_rw_2hsword OR good_fast_rw_bow OR good_fast_rw_claw OR good_fast_rw_dagger OR good_fast_rw_polearm OR good_fast_rw_scepter OR good_fast_rw_staff OR good_fast_rw_taxe OR good_fast_rw_tknife OR good_fast_rw_tmace OR good_fast_rw_tspear OR good_fast_rw_xbow OR good_fast_rw_zbow OR good_fast_rw_zspear) !(good_slow_rw_1haxe OR good_slow_rw_1hsword OR good_slow_rw_2haxe OR good_slow_rw_2hspear OR good_slow_rw_2hsword OR good_slow_rw_bow OR good_slow_rw_claw OR good_slow_rw_dagger OR good_slow_rw_polearm OR good_slow_rw_scepter OR good_slow_rw_staff OR good_slow_rw_taxe OR good_slow_rw_tknife OR good_slow_rw_tmace OR good_slow_rw_tspear OR good_slow_rw_xbow OR good_slow_rw_zbow OR good_slow_rw_zspear)]:%NAME%%TAN%|${%NAME%}%CONTINUE%
+ItemDisplay[(NMAG OR MAG OR RARE) (WEAPON OR ARMOR) !CHEST GROUND !ID (PRICE=35000 OR (caster3_i) OR (caster2_i)) !(good_tight_rare_2hhammer) !(good_loose_rare_2hhammer) !(good_fast_rare_1haxe OR good_fast_rare_2haxe OR good_fast_rare_2hspear OR good_fast_rare_bow OR good_fast_rare_claw OR good_fast_rare_tmace OR good_fast_rare_tspear OR good_fast_rare_zbow OR good_fast_rare_zspear) !(good_slow_rare_1haxe OR good_slow_rare_2haxe OR good_slow_rare_2hspear OR good_slow_rare_bow OR good_slow_rare_claw OR good_slow_rare_tmace OR good_slow_rare_tspear OR good_slow_rare_zbow OR good_slow_rare_zspear) !(good_rare_1hclub OR good_rare_helm OR good_rare_1hhammer OR good_rare_1hsword OR good_rare_2hsword OR good_rare_dagger OR good_rare_orb OR good_rare_polearm OR good_rare_pshield OR good_rare_scepter OR good_rare_shield OR good_rare_staff OR good_rare_taxe OR good_rare_wand OR good_rare_xbow OR good_rare_zthrow) !(good_tight_rw_2hhammer) !(good_loose_rw_2hhammer) !(good_rw_1hclub OR good_rw_chest OR good_rw_helm OR good_rw_1hhammer OR good_rw_orb OR good_rw_pshield OR good_rw_shield OR good_rw_wand OR good_rw_zthrow) !(good_fast_rw_1haxe OR good_fast_rw_1hsword OR good_fast_rw_2haxe OR good_fast_rw_2hspear OR good_fast_rw_2hsword OR good_fast_rw_bow OR good_fast_rw_claw OR good_fast_rw_dagger OR good_fast_rw_polearm OR good_fast_rw_scepter OR good_fast_rw_staff OR good_fast_rw_taxe OR good_fast_rw_tmace OR good_fast_rw_tspear OR good_fast_rw_xbow OR good_fast_rw_zbow OR good_fast_rw_zspear) !(good_slow_rw_1haxe OR good_slow_rw_1hsword OR good_slow_rw_2haxe OR good_slow_rw_2hspear OR good_slow_rw_2hsword OR good_slow_rw_bow OR good_slow_rw_claw OR good_slow_rw_dagger OR good_slow_rw_polearm OR good_slow_rw_scepter OR good_slow_rw_staff OR good_slow_rw_taxe OR good_slow_rw_tmace OR good_slow_rw_tspear OR good_slow_rw_xbow OR good_slow_rw_zbow OR good_slow_rw_zspear)]:%NAME%%TAN%|${%NAME%}%CONTINUE%
 ItemDisplay[(NMAG OR MAG OR RARE) (WEAPON OR ARMOR) GROUND ID PRICE=35000]:%NAME%%TAN%|${%NAME%}%CONTINUE%
 //good/bad  tag
-ItemDisplay[NMAG (bad_rw_1haxe OR bad_rw_chest OR bad_rw_helm OR bad_rw_1hclub OR bad_rw_1hhammer OR bad_rw_1hsword OR bad_rw_2haxe OR bad_rw_2hhammer OR bad_rw_2hspear OR bad_rw_2hsword OR bad_rw_bow OR bad_rw_dagger OR bad_rw_orb OR bad_rw_polearm OR bad_rw_pshield OR bad_rw_shield OR bad_rw_staff OR bad_rw_taxe OR bad_rw_tknife OR bad_rw_tmace OR bad_rw_tspear OR bad_rw_xbow OR bad_rw_zbow OR bad_rw_zspear OR bad_rw_zthrow)]:%NAME%%CORAL%|b%CONTINUE%
+ItemDisplay[NMAG (bad_rw_1haxe OR bad_rw_chest OR bad_rw_helm OR bad_rw_1hclub OR bad_rw_1hhammer OR bad_rw_1hsword OR bad_rw_2haxe OR bad_rw_2hhammer OR bad_rw_2hspear OR bad_rw_2hsword OR bad_rw_bow OR bad_rw_dagger OR bad_rw_orb OR bad_rw_polearm OR bad_rw_pshield OR bad_rw_shield OR bad_rw_staff OR bad_rw_taxe OR bad_rw_tmace OR bad_rw_tspear OR bad_rw_xbow OR bad_rw_zbow OR bad_rw_zspear OR bad_rw_zthrow)]:%NAME%%CORAL%|b%CONTINUE%
 ItemDisplay[NMAG (good_rw_1hclub OR good_rw_chest OR good_rw_helm OR good_rw_1hhammer OR good_rw_orb OR good_rw_pshield OR good_rw_shield OR good_rw_wand OR good_rw_zthrow)]:%NAME%%TEAL%|g%CONTINUE%
-ItemDisplay[NMAG (good_fast_rw_1haxe OR good_fast_rw_1hsword OR good_fast_rw_2haxe OR good_fast_rw_2hspear OR good_fast_rw_2hsword OR good_fast_rw_bow OR good_fast_rw_claw OR good_fast_rw_dagger OR good_fast_rw_polearm OR good_fast_rw_scepter OR good_fast_rw_staff OR good_fast_rw_taxe OR good_fast_rw_tknife OR good_fast_rw_tmace OR good_fast_rw_tspear OR good_fast_rw_xbow OR good_fast_rw_zbow OR good_fast_rw_zspear)]:%NAME%%TEAL%|g%CONTINUE%
-ItemDisplay[NMAG (good_slow_rw_1haxe OR good_slow_rw_1hsword OR good_slow_rw_2haxe OR good_slow_rw_2hspear OR good_slow_rw_2hsword OR good_slow_rw_bow OR good_slow_rw_claw OR good_slow_rw_dagger OR good_slow_rw_polearm OR good_slow_rw_scepter OR good_slow_rw_staff OR good_slow_rw_taxe OR good_slow_rw_tknife OR good_slow_rw_tmace OR good_slow_rw_tspear OR good_slow_rw_xbow OR good_slow_rw_zbow OR good_slow_rw_zspear)]:%NAME%%TEAL%|g%CONTINUE%
+ItemDisplay[NMAG (good_fast_rw_1haxe OR good_fast_rw_1hsword OR good_fast_rw_2haxe OR good_fast_rw_2hspear OR good_fast_rw_2hsword OR good_fast_rw_bow OR good_fast_rw_claw OR good_fast_rw_dagger OR good_fast_rw_polearm OR good_fast_rw_scepter OR good_fast_rw_staff OR good_fast_rw_taxe OR good_fast_rw_tmace OR good_fast_rw_tspear OR good_fast_rw_xbow OR good_fast_rw_zbow OR good_fast_rw_zspear)]:%NAME%%TEAL%|g%CONTINUE%
+ItemDisplay[NMAG (good_slow_rw_1haxe OR good_slow_rw_1hsword OR good_slow_rw_2haxe OR good_slow_rw_2hspear OR good_slow_rw_2hsword OR good_slow_rw_bow OR good_slow_rw_claw OR good_slow_rw_dagger OR good_slow_rw_polearm OR good_slow_rw_scepter OR good_slow_rw_staff OR good_slow_rw_taxe OR good_slow_rw_tmace OR good_slow_rw_tspear OR good_slow_rw_xbow OR good_slow_rw_zbow OR good_slow_rw_zspear)]:%NAME%%TEAL%|g%CONTINUE%
 ItemDisplay[NMAG (good_tight_rw_2hhammer)]:%NAME%%TEAL%|g%CONTINUE%
 ItemDisplay[NMAG (good_loose_rw_2hhammer)]:%NAME%%TEAL%|g%CONTINUE%
 ItemDisplay[!ID (MAG OR RARE) (bad_rare_1haxe OR bad_rare_helm OR bad_rare_1hclub OR bad_rare_1hsword OR bad_rare_2haxe OR bad_rare_2hspear OR bad_rare_2hsword OR bad_rare_bow OR bad_rare_claw OR bad_rare_dagger OR bad_rare_orb OR bad_rare_polearm OR bad_rare_scepter OR bad_rare_shield OR bad_rare_staff OR bad_rare_taxe OR bad_rare_tmace OR bad_rare_tspear OR bad_rare_xbow)]:%NAME%%CORAL%|b%CONTINUE%
 ItemDisplay[!ID (MAG OR RARE) (good_rare_1hclub OR good_rare_helm OR good_rare_1hhammer OR good_rare_1hsword OR good_rare_2hsword OR good_rare_dagger OR good_rare_orb OR good_rare_polearm OR good_rare_pshield OR good_rare_scepter OR good_rare_shield OR good_rare_staff OR good_rare_taxe OR good_rare_wand OR good_rare_xbow OR good_rare_zthrow)]:%NAME%%TEAL%|g%CONTINUE%
-ItemDisplay[!ID (MAG OR RARE) (good_slow_rare_1haxe OR good_slow_rare_2haxe OR good_slow_rare_2hspear OR good_slow_rare_bow OR good_slow_rare_claw OR good_slow_rare_tknife OR good_slow_rare_tmace OR good_slow_rare_tspear OR good_slow_rare_zbow OR good_slow_rare_zspear)]:%NAME%%TEAL%|g%CONTINUE%
-ItemDisplay[!ID (MAG OR RARE) (good_fast_rare_1haxe OR good_fast_rare_2haxe OR good_fast_rare_2hspear OR good_fast_rare_bow OR good_fast_rare_claw OR good_fast_rare_tknife OR good_fast_rare_tmace OR good_fast_rare_tspear OR good_fast_rare_zbow OR good_fast_rare_zspear)]:%NAME%%TEAL%|g%CONTINUE%
+ItemDisplay[!ID (MAG OR RARE) (good_slow_rare_1haxe OR good_slow_rare_2haxe OR good_slow_rare_2hspear OR good_slow_rare_bow OR good_slow_rare_claw OR good_slow_rare_tmace OR good_slow_rare_tspear OR good_slow_rare_zbow OR good_slow_rare_zspear)]:%NAME%%TEAL%|g%CONTINUE%
+ItemDisplay[!ID (MAG OR RARE) (good_fast_rare_1haxe OR good_fast_rare_2haxe OR good_fast_rare_2hspear OR good_fast_rare_bow OR good_fast_rare_claw OR good_fast_rare_tmace OR good_fast_rare_tspear OR good_fast_rare_zbow OR good_fast_rare_zspear)]:%NAME%%TEAL%|g%CONTINUE%
 ItemDisplay[!ID (MAG OR RARE) (good_tight_rare_2hhammer)]:%NAME%%TEAL%|g%CONTINUE%
 ItemDisplay[!ID (MAG OR RARE) (good_loose_rare_2hhammer)]:%NAME%%TEAL%|g%CONTINUE%
 
@@ -3714,8 +3714,8 @@ ItemDisplay[t58]:%NAME%{%WHITE%Immunes:%GRAY%Immune-Free Zone%NAME%}%CONTINUE%
 //early notifying
 ItemDisplay[NMAG ELT DIN !bad_rw_pshield RES=30]:%NAME%{%NAME%}%MAP-9B%%CONTINUE%
 ItemDisplay[NMAG ELT DIN !bad_rw_pshield EDAM=65]:%NAME%{%NAME%}%MAP-9B%%CONTINUE%
-ItemDisplay[NMAG ELT SUP !GLOVES !BOOTS !BELT !caster2_i (WEAPON OR ARMOR) !(bad_rw_1haxe OR bad_rw_helm OR bad_rw_chest OR bad_rw_1hclub OR bad_rw_1hhammer OR bad_rw_1hsword OR bad_rw_2haxe OR bad_rw_2hhammer OR bad_rw_2hspear OR bad_rw_2hsword OR bad_rw_bow OR bad_rw_dagger OR bad_rw_orb OR bad_rw_polearm OR bad_rw_pshield OR bad_rw_shield OR bad_rw_staff OR bad_rw_taxe OR bad_rw_tknife OR bad_rw_tmace OR bad_rw_tspear OR bad_rw_xbow OR bad_rw_zbow OR bad_rw_zspear OR bad_rw_zthrow) ED=20 AR=0]:%NAME%{%NAME%}%MAP-9B%%CONTINUE%
-ItemDisplay[NMAG ELT SUP !GLOVES !BOOTS !BELT !caster2_i (WEAPON OR ARMOR) !(bad_rw_1haxe OR bad_rw_helm OR bad_rw_chest OR bad_rw_1hclub OR bad_rw_1hhammer OR bad_rw_1hsword OR bad_rw_2haxe OR bad_rw_2hhammer OR bad_rw_2hspear OR bad_rw_2hsword OR bad_rw_bow OR bad_rw_dagger OR bad_rw_orb OR bad_rw_polearm OR bad_rw_pshield OR bad_rw_shield OR bad_rw_staff OR bad_rw_taxe OR bad_rw_tknife OR bad_rw_tmace OR bad_rw_tspear OR bad_rw_xbow OR bad_rw_zbow OR bad_rw_zspear OR bad_rw_zthrow) ED=15 AR>0]:%NAME%{%NAME%}%MAP-9B%%CONTINUE%
+ItemDisplay[NMAG ELT SUP !GLOVES !BOOTS !BELT !caster2_i (WEAPON OR ARMOR) !(bad_rw_1haxe OR bad_rw_helm OR bad_rw_chest OR bad_rw_1hclub OR bad_rw_1hhammer OR bad_rw_1hsword OR bad_rw_2haxe OR bad_rw_2hhammer OR bad_rw_2hspear OR bad_rw_2hsword OR bad_rw_bow OR bad_rw_dagger OR bad_rw_orb OR bad_rw_polearm OR bad_rw_pshield OR bad_rw_shield OR bad_rw_staff OR bad_rw_taxe OR bad_rw_tmace OR bad_rw_tspear OR bad_rw_xbow OR bad_rw_zbow OR bad_rw_zspear OR bad_rw_zthrow) ED=20 AR=0]:%NAME%{%NAME%}%MAP-9B%%CONTINUE%
+ItemDisplay[NMAG ELT SUP !GLOVES !BOOTS !BELT !caster2_i (WEAPON OR ARMOR) !(bad_rw_1haxe OR bad_rw_helm OR bad_rw_chest OR bad_rw_1hclub OR bad_rw_1hhammer OR bad_rw_1hsword OR bad_rw_2haxe OR bad_rw_2hhammer OR bad_rw_2hspear OR bad_rw_2hsword OR bad_rw_bow OR bad_rw_dagger OR bad_rw_orb OR bad_rw_polearm OR bad_rw_pshield OR bad_rw_shield OR bad_rw_staff OR bad_rw_taxe OR bad_rw_tmace OR bad_rw_tspear OR bad_rw_xbow OR bad_rw_zbow OR bad_rw_zspear OR bad_rw_zthrow) ED=15 AR>0]:%NAME%{%NAME%}%MAP-9B%%CONTINUE%
 	/~~~//resource potions
 		ItemDisplay[(hp5 OR mp5) !town_l GROUND (FILTLVL=2 OR FILTLVL=4 OR FILTLVL=6 OR FILTLVL=8 OR FILTLVL=10)]://
 		ItemDisplay[(hp4 OR mp4) !town_l GROUND (FILTLVL=2 OR FILTLVL=4 OR FILTLVL=6 OR FILTLVL=8 OR FILTLVL=10)]://	
@@ -3850,7 +3850,7 @@ ItemDisplay[NMAG ELT SUP !GLOVES !BOOTS !BELT !caster2_i (WEAPON OR ARMOR) !(bad
 	
 		//general
 		
-		ItemDisplay[NMAG !(quest_i) (bad_rw_1haxe OR bad_rw_helm OR bad_rw_chest OR bad_rw_1hclub OR bad_rw_1hhammer OR bad_rw_1hsword OR bad_rw_2haxe OR bad_rw_2hhammer OR bad_rw_2hspear OR bad_rw_2hsword OR bad_rw_bow OR bad_rw_dagger OR bad_rw_orb OR bad_rw_polearm OR bad_rw_pshield OR bad_rw_shield OR bad_rw_staff OR bad_rw_taxe OR bad_rw_tknife OR bad_rw_tmace OR bad_rw_tspear OR bad_rw_xbow OR bad_rw_zbow OR bad_rw_zspear OR bad_rw_zthrow) GROUND !town_l FILTLVL>4]:%HIDDEN_NMAG%
+		ItemDisplay[NMAG !(quest_i) (bad_rw_1haxe OR bad_rw_helm OR bad_rw_chest OR bad_rw_1hclub OR bad_rw_1hhammer OR bad_rw_1hsword OR bad_rw_2haxe OR bad_rw_2hhammer OR bad_rw_2hspear OR bad_rw_2hsword OR bad_rw_bow OR bad_rw_dagger OR bad_rw_orb OR bad_rw_polearm OR bad_rw_pshield OR bad_rw_shield OR bad_rw_staff OR bad_rw_taxe OR bad_rw_tmace OR bad_rw_tspear OR bad_rw_xbow OR bad_rw_zbow OR bad_rw_zspear OR bad_rw_zthrow) GROUND !town_l FILTLVL>4]:%HIDDEN_NMAG%
 			
 		
 		ItemDisplay[INF !town_l GROUND]:// inferior
@@ -3976,6 +3976,7 @@ ItemDisplay[NMAG ELT SUP !GLOVES !BOOTS !BELT !caster2_i (WEAPON OR ARMOR) !(bad
 			//ItemDisplay[NMAG THROWING DAGGER (NORM OR EXC) (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]://				
 			ItemDisplay[NMAG !(quest_i) THROWING DAGGER ELT SUP !ETH high_sup_ed FILTLVL>8 !town_l GROUND]://
 			ItemDisplay[NMAG !(quest_i) THROWING DAGGER ELT SUP !ETH low_sup_ed FILTLVL>6 !town_l GROUND]://	
+			ItemDisplay[NMAG THROWING DAGGER ETH !SUP !town_l FILTLVL>6]://
 			//ItemDisplay[NMAG THROWING DAGGER ELT !SUP ETH FILTLVL>6 !town_l GROUND]://
 				
 			//throwing axe
@@ -4091,71 +4092,75 @@ ItemDisplay[NMAG ELT SUP !GLOVES !BOOTS !BELT !caster2_i (WEAPON OR ARMOR) !(bad
 			//show all eth magic items
 			//show all items that cant be shopped or gambled
 		ItemDisplay[!ID MAG ETH NEC (FILTLVL>4 OR (FILTLVL>2 CLVL>30)) !town_l GROUND]:// you don't craft eth nec shields
-		ItemDisplay[!ID MAG NORM !ETH (ARMOR OR WEAPON) !(ZON OR SOR OR NEC OR (SIN !shopableclaw_i) OR DIN OR BAR OR DRU OR CIRC OR GLOVES) !PRICE=35000 (FILTLVL>4 OR (FILTLVL>2 CLVL>30)) !town_l GROUND]:%HIDDEN_MAG%%CONTINUE%
-		ItemDisplay[!ID MAG EXC !ETH (ARMOR OR WEAPON) !(ZON OR SOR OR NEC OR (SIN !shopableclaw_i) OR DIN OR BAR OR DRU OR CIRC OR GLOVES) !PRICE=35000 (FILTLVL>4 OR (FILTLVL>2 CLVL>50)) !town_l GROUND]:%HIDDEN_MAG%%CONTINUE%		
-		ItemDisplay[!ID MAG ELT !ETH (ARMOR OR WEAPON) !(ZON OR SOR OR NEC OR (SIN !shopableclaw_i) OR DIN OR BAR OR DRU OR CIRC OR GLOVES) !PRICE=35000 (FILTLVL>4 OR (FILTLVL>2 CLVL>70)) !town_l GROUND]:%HIDDEN_MAG%%CONTINUE%	
+		ItemDisplay[!ID MAG NORM !ETH (ARMOR OR WEAPON) !(ZON OR SOR OR NEC OR (SIN !shopableclaw_i) OR DIN OR BAR OR DRU OR CIRC OR GLOVES) !PRICE=35000 (FILTLVL>4 OR (FILTLVL>2 CLVL>30)) !town_l GROUND]://
+		ItemDisplay[!ID MAG EXC !ETH (ARMOR OR WEAPON) !(ZON OR SOR OR NEC OR (SIN !shopableclaw_i) OR DIN OR BAR OR DRU OR CIRC OR GLOVES) !PRICE=35000 (FILTLVL>4 OR (FILTLVL>2 CLVL>50)) !town_l GROUND]://		
+		ItemDisplay[!ID MAG ELT !ETH (ARMOR OR WEAPON) !(ZON OR SOR OR NEC OR (SIN !shopableclaw_i) OR DIN OR BAR OR DRU OR CIRC OR GLOVES) !PRICE=35000 (FILTLVL>4 OR (FILTLVL>2 CLVL>70)) !town_l GROUND]://	
 		ItemDisplay[!ID MAG !ETH (ARMOR OR WEAPON) !(ZON OR SOR OR NEC OR (SIN !shopableclaw_i) OR DIN OR BAR OR DRU OR CIRC OR GLOVES) PRICE=35000 FILTLVL>4 !town_l GROUND]:// hide the things that are just showing up because they are good to vendor
 		
-		ItemDisplay[!ID MAG NEC FILTLVL>4 !town_l GROUND]:%HIDDEN_MAG%%CONTINUE%			
-		ItemDisplay[!ID MAG (DRU OR BAR) FILTLVL>4 !town_l GROUND]:%HIDDEN_MAG%%CONTINUE%		
-		ItemDisplay[!ID MAG DIN FILTLVL>4 !town_l GROUND]:%HIDDEN_MAG%%CONTINUE%
-		ItemDisplay[!ID ETH MAG HELM FILTLVL>4 !town_l GROUND]:%HIDDEN_MAG%%CONTINUE%
-		ItemDisplay[!ID MAG ZON !ETH FILTLVL>4 !town_l GROUND]:%HIDDEN_MAG%%CONTINUE%
-		ItemDisplay[!ID MAG SIN !ETH FILTLVL>4 !town_l GROUND]:%HIDDEN_MAG%%CONTINUE%		
+		ItemDisplay[!ID MAG NEC FILTLVL>4 !town_l GROUND]://			
+		ItemDisplay[!ID MAG (DRU OR BAR) FILTLVL>4 !town_l GROUND]://		
+		ItemDisplay[!ID MAG DIN FILTLVL>4 !town_l GROUND]://
+		ItemDisplay[!ID ETH MAG HELM FILTLVL>4 !town_l GROUND]://
+		ItemDisplay[!ID MAG ZON !ETH FILTLVL>4 !town_l GROUND]://
+		ItemDisplay[!ID MAG SIN !ETH FILTLVL>4 !town_l GROUND]://		
 		
 		//bad crafting bases weapons
-		//ItemDisplay[!ID MAG (hax OR 9ha OR 7ha OR mpi OR 9mp OR 7mp OR 72a OR 92a OR 2ax OR 7la OR 9la OR lax OR bax OR 9ba OR 7ba OR 7bt OR 9bt OR btx OR 7cl OR 9cl OR clb OR 7ma OR 9ma OR mac OR 7ss OR 9ss OR ssd OR 7sm OR 9sm OR scm OR 7sb OR 9sb OR sbr OR 7fc OR 9fc OR flc OR 7ls OR 9ls OR lsd OR 7wd OR 9wd OR wsd OR 2hs OR 92h OR 72h OR 7cm OR 9cm OR clm OR 7gs OR 9gs OR gis OR 7b7 OR 9b9 OR bsw OR 7fb OR 9fb OR flb OR 7di OR 9di OR dir OR dgr OR 9dg OR 7dg OR 7bl OR 9bl OR bld OR 7ta OR 9ta OR tax OR 7ja OR 9ja OR jav OR 7pi OR 9pi OR pil OR 7s7 OR 9s9 OR ssp OR 7tr OR 9tr OR tri OR brn OR 9br OR 7br OR spt OR 9st OR 7st OR 7o7 OR 9b7 OR bar OR vou OR 9vo OR 7vo OR 7s8 OR 9s8 OR scy OR pax OR 9pa OR 7pa OR 7wc OR 9wc OR wsc OR 6sb OR 8sb OR sbw OR hbw OR 8hb OR 6hb OR 6cb OR 8cb OR cbw OR sbb OR 8s8 OR 6s7 OR 6sw OR 8sw OR swb OR 6lx OR 8lx OR lxb OR 6lw OR 8lw OR lwb OR 6mx OR 8mx OR mxb OR rxb OR 8rx OR 6rx OR 6ss OR 8ss OR sst OR lst OR 8ls OR 6ls OR 6cs OR 8cs OR cst OR bst OR 8bs OR 6bs OR 7sc OR 9sc OR scp OR gsc OR 9qs OR 7qs OR 7ar OR 9ar OR ktr OR wrb OR 9wb OR 7wb OR ces OR 9cs OR 7cs OR 7lw OR 9lw OR clw OR btl OR 9tw OR 7tw OR obb OR ob6 OR ob1 OR ob2 OR ob7 OR obc OR ob3 OR ob8 OR obd OR ob4 OR ob9 OR obe) !PRICE=35000 FILTLVL>4 !town_l GROUND]:%HIDDEN_MAG%%CONTINUE%	
-		//ItemDisplay[!ID MAG (hax OR 9ha OR 7ha OR mpi OR 9mp OR 7mp OR 72a OR 92a OR 2ax OR 7la OR 9la OR lax OR bax OR 9ba OR 7ba OR 7bt OR 9bt OR btx OR 7cl OR 9cl OR clb OR 7ma OR 9ma OR mac OR 7ss OR 9ss OR ssd OR 7sm OR 9sm OR scm OR 7sb OR 9sb OR sbr OR 7fc OR 9fc OR flc OR 7ls OR 9ls OR lsd OR 7wd OR 9wd OR wsd OR 2hs OR 92h OR 72h OR 7cm OR 9cm OR clm OR 7gs OR 9gs OR gis OR 7b7 OR 9b9 OR bsw OR 7fb OR 9fb OR flb OR 7di OR 9di OR dir OR dgr OR 9dg OR 7dg OR 7bl OR 9bl OR bld OR 7ta OR 9ta OR tax OR 7ja OR 9ja OR jav OR 7pi OR 9pi OR pil OR 7s7 OR 9s9 OR ssp OR 7tr OR 9tr OR tri OR brn OR 9br OR 7br OR spt OR 9st OR 7st OR 7o7 OR 9b7 OR bar OR vou OR 9vo OR 7vo OR 7s8 OR 9s8 OR scy OR pax OR 9pa OR 7pa OR 7wc OR 9wc OR wsc OR 6sb OR 8sb OR sbw OR hbw OR 8hb OR 6hb OR 6cb OR 8cb OR cbw OR sbb OR 8s8 OR 6s7 OR 6sw OR 8sw OR swb OR 6lx OR 8lx OR lxb OR 6lw OR 8lw OR lwb OR 6mx OR 8mx OR mxb OR rxb OR 8rx OR 6rx OR 6ss OR 8ss OR sst OR lst OR 8ls OR 6ls OR 6cs OR 8cs OR cst OR bst OR 8bs OR 6bs OR 7sc OR 9sc OR scp OR gsc OR 9qs OR 7qs OR 7ar OR 9ar OR ktr OR wrb OR 9wb OR 7wb OR ces OR 9cs OR 7cs OR 7lw OR 9lw OR clw OR btl OR 9tw OR 7tw OR obb OR ob6 OR ob1 OR ob2 OR ob7 OR obc OR ob3 OR ob8 OR obd OR ob4 OR ob9 OR obe) PRICE=35000 FILTLVL>6 !town_l GROUND]:%HIDDEN_MAG%%CONTINUE%		
+		//ItemDisplay[!ID MAG (hax OR 9ha OR 7ha OR mpi OR 9mp OR 7mp OR 72a OR 92a OR 2ax OR 7la OR 9la OR lax OR bax OR 9ba OR 7ba OR 7bt OR 9bt OR btx OR 7cl OR 9cl OR clb OR 7ma OR 9ma OR mac OR 7ss OR 9ss OR ssd OR 7sm OR 9sm OR scm OR 7sb OR 9sb OR sbr OR 7fc OR 9fc OR flc OR 7ls OR 9ls OR lsd OR 7wd OR 9wd OR wsd OR 2hs OR 92h OR 72h OR 7cm OR 9cm OR clm OR 7gs OR 9gs OR gis OR 7b7 OR 9b9 OR bsw OR 7fb OR 9fb OR flb OR 7di OR 9di OR dir OR dgr OR 9dg OR 7dg OR 7bl OR 9bl OR bld OR 7ta OR 9ta OR tax OR 7ja OR 9ja OR jav OR 7pi OR 9pi OR pil OR 7s7 OR 9s9 OR ssp OR 7tr OR 9tr OR tri OR brn OR 9br OR 7br OR spt OR 9st OR 7st OR 7o7 OR 9b7 OR bar OR vou OR 9vo OR 7vo OR 7s8 OR 9s8 OR scy OR pax OR 9pa OR 7pa OR 7wc OR 9wc OR wsc OR 6sb OR 8sb OR sbw OR hbw OR 8hb OR 6hb OR 6cb OR 8cb OR cbw OR sbb OR 8s8 OR 6s7 OR 6sw OR 8sw OR swb OR 6lx OR 8lx OR lxb OR 6lw OR 8lw OR lwb OR 6mx OR 8mx OR mxb OR rxb OR 8rx OR 6rx OR 6ss OR 8ss OR sst OR lst OR 8ls OR 6ls OR 6cs OR 8cs OR cst OR bst OR 8bs OR 6bs OR 7sc OR 9sc OR scp OR gsc OR 9qs OR 7qs OR 7ar OR 9ar OR ktr OR wrb OR 9wb OR 7wb OR ces OR 9cs OR 7cs OR 7lw OR 9lw OR clw OR btl OR 9tw OR 7tw OR obb OR ob6 OR ob1 OR ob2 OR ob7 OR obc OR ob3 OR ob8 OR obd OR ob4 OR ob9 OR obe) !PRICE=35000 FILTLVL>4 !town_l GROUND]://	
+		//ItemDisplay[!ID MAG (hax OR 9ha OR 7ha OR mpi OR 9mp OR 7mp OR 72a OR 92a OR 2ax OR 7la OR 9la OR lax OR bax OR 9ba OR 7ba OR 7bt OR 9bt OR btx OR 7cl OR 9cl OR clb OR 7ma OR 9ma OR mac OR 7ss OR 9ss OR ssd OR 7sm OR 9sm OR scm OR 7sb OR 9sb OR sbr OR 7fc OR 9fc OR flc OR 7ls OR 9ls OR lsd OR 7wd OR 9wd OR wsd OR 2hs OR 92h OR 72h OR 7cm OR 9cm OR clm OR 7gs OR 9gs OR gis OR 7b7 OR 9b9 OR bsw OR 7fb OR 9fb OR flb OR 7di OR 9di OR dir OR dgr OR 9dg OR 7dg OR 7bl OR 9bl OR bld OR 7ta OR 9ta OR tax OR 7ja OR 9ja OR jav OR 7pi OR 9pi OR pil OR 7s7 OR 9s9 OR ssp OR 7tr OR 9tr OR tri OR brn OR 9br OR 7br OR spt OR 9st OR 7st OR 7o7 OR 9b7 OR bar OR vou OR 9vo OR 7vo OR 7s8 OR 9s8 OR scy OR pax OR 9pa OR 7pa OR 7wc OR 9wc OR wsc OR 6sb OR 8sb OR sbw OR hbw OR 8hb OR 6hb OR 6cb OR 8cb OR cbw OR sbb OR 8s8 OR 6s7 OR 6sw OR 8sw OR swb OR 6lx OR 8lx OR lxb OR 6lw OR 8lw OR lwb OR 6mx OR 8mx OR mxb OR rxb OR 8rx OR 6rx OR 6ss OR 8ss OR sst OR lst OR 8ls OR 6ls OR 6cs OR 8cs OR cst OR bst OR 8bs OR 6bs OR 7sc OR 9sc OR scp OR gsc OR 9qs OR 7qs OR 7ar OR 9ar OR ktr OR wrb OR 9wb OR 7wb OR ces OR 9cs OR 7cs OR 7lw OR 9lw OR clw OR btl OR 9tw OR 7tw OR obb OR ob6 OR ob1 OR ob2 OR ob7 OR obc OR ob3 OR ob8 OR obd OR ob4 OR ob9 OR obe) PRICE=35000 FILTLVL>6 !town_l GROUND]://		
 	
-		ItemDisplay[!ID MAG (bad_rare_1haxe OR bad_rare_helm OR bad_rare_1hclub OR bad_rare_1hsword OR bad_rare_2haxe OR bad_rare_2hspear OR bad_rare_2hsword OR bad_rare_bow OR bad_rare_claw OR bad_rare_dagger OR bad_rare_orb OR bad_rare_polearm OR bad_rare_scepter OR bad_rare_shield OR bad_rare_staff OR bad_rare_taxe OR bad_rare_tmace OR bad_rare_tspear OR bad_rare_xbow) !PRICE=35000 FILTLVL>4 !town_l GROUND]:%HIDDEN_MAG%%CONTINUE%
-		ItemDisplay[!ID MAG (bad_rare_1haxe OR bad_rare_helm OR bad_rare_1hclub OR bad_rare_1hsword OR bad_rare_2haxe OR bad_rare_2hspear OR bad_rare_2hsword OR bad_rare_bow OR bad_rare_claw OR bad_rare_dagger OR bad_rare_orb OR bad_rare_polearm OR bad_rare_scepter OR bad_rare_shield OR bad_rare_staff OR bad_rare_taxe OR bad_rare_tmace OR bad_rare_tspear OR bad_rare_xbow) PRICE=35000 FILTLVL>6 !town_l GROUND]:%HIDDEN_MAG%%CONTINUE%
+		ItemDisplay[!ID MAG (bad_rare_1haxe OR bad_rare_helm OR bad_rare_1hclub OR bad_rare_1hsword OR bad_rare_2haxe OR bad_rare_2hspear OR bad_rare_2hsword OR bad_rare_bow OR bad_rare_claw OR bad_rare_dagger OR bad_rare_orb OR bad_rare_polearm OR bad_rare_scepter OR bad_rare_shield OR bad_rare_staff OR bad_rare_taxe OR bad_rare_tmace OR bad_rare_tspear OR bad_rare_xbow) !PRICE=35000 FILTLVL>4 !town_l GROUND]://
+		ItemDisplay[!ID MAG (bad_rare_1haxe OR bad_rare_helm OR bad_rare_1hclub OR bad_rare_1hsword OR bad_rare_2haxe OR bad_rare_2hspear OR bad_rare_2hsword OR bad_rare_bow OR bad_rare_claw OR bad_rare_dagger OR bad_rare_orb OR bad_rare_polearm OR bad_rare_scepter OR bad_rare_shield OR bad_rare_staff OR bad_rare_taxe OR bad_rare_tmace OR bad_rare_tspear OR bad_rare_xbow) PRICE=35000 FILTLVL>6 !town_l GROUND]://
 
-		//ItemDisplay[!ID MAG (pab OR pa6 OR pa1 OR pac OR pa7 OR pa2 OR pad OR pa8 OR pa3 OR paf OR paa OR pa5 OR ulb OR xlb OR lbt OR uvb OR xvb OR vbt OR umb OR xmb OR mbt OR utb OR xtb OR tbt) !PRICE=35000 FILTLVL>4 !town_l GROUND]:%HIDDEN_MAG%%CONTINUE%
-		//ItemDisplay[!ID MAG (pab OR pa6 OR pa1 OR pac OR pa7 OR pa2 OR pad OR pa8 OR pa3 OR paf OR paa OR pa5 OR ulb OR xlb OR lbt OR uvb OR xvb OR vbt OR umb OR xmb OR mbt OR utb OR xtb OR tbt) PRICE=35000 FILTLVL>6 !town_l GROUND]:%HIDDEN_MAG%%CONTINUE%
+		//ItemDisplay[!ID MAG (pab OR pa6 OR pa1 OR pac OR pa7 OR pa2 OR pad OR pa8 OR pa3 OR paf OR paa OR pa5 OR ulb OR xlb OR lbt OR uvb OR xvb OR vbt OR umb OR xmb OR mbt OR utb OR xtb OR tbt) !PRICE=35000 FILTLVL>4 !town_l GROUND]://
+		//ItemDisplay[!ID MAG (pab OR pa6 OR pa1 OR pac OR pa7 OR pa2 OR pad OR pa8 OR pa3 OR paf OR paa OR pa5 OR ulb OR xlb OR lbt OR uvb OR xvb OR vbt OR umb OR xmb OR mbt OR utb OR xtb OR tbt) PRICE=35000 FILTLVL>6 !town_l GROUND]://
 				
-		ItemDisplay[!ID MAG rin (FILTLVL>4 OR (FILTLVL>2 CLVL>45)) !town_l GROUND]:%HIDDEN_MAG%%CONTINUE%
-		ItemDisplay[!ID MAG amu !ILVL>89 FILTLVL>4 !town_l GROUND]:%HIDDEN_MAG%%CONTINUE%
-		ItemDisplay[!ID MAG amu ILVL>89 FILTLVL>6 !town_l GROUND]:%HIDDEN_MAG%%CONTINUE%		
-		ItemDisplay[!ID MAG QUIVER (FILTLVL>4 OR (FILTLVL>2 CLVL>45)) !town_l GROUND]:%HIDDEN_MAG%%CONTINUE%
-		ItemDisplay[!ID MAG GLOVES FILTLVL>4 !town_l GROUND]:%HIDDEN_MAG%%CONTINUE%
+		ItemDisplay[!ID MAG rin (FILTLVL>4 OR (FILTLVL>2 CLVL>45)) !town_l GROUND]://
+		ItemDisplay[!ID MAG amu !ILVL>89 FILTLVL>4 !town_l GROUND]://
+		ItemDisplay[!ID MAG amu ILVL>89 FILTLVL>6 !town_l GROUND]://		
+		ItemDisplay[!ID MAG QUIVER (FILTLVL>4 OR (FILTLVL>2 CLVL>45)) !town_l GROUND]://
+		ItemDisplay[!ID MAG GLOVES FILTLVL>4 !town_l GROUND]://
 		
-		ItemDisplay[MAG !ID CHARM ILVL<90 !town_l GROUND FILTLVL>8]:%HIDDEN_ORANGE%%CONTINUE%
-		ItemDisplay[MAG !ID jew ILVL<85 !town_l GROUND FILTLVL>8]:%HIDDEN_ORANGE%%CONTINUE%	
+		ItemDisplay[MAG !ID CHARM ILVL<90 !town_l GROUND FILTLVL>8]://
+		ItemDisplay[MAG !ID jew ILVL<85 !town_l GROUND FILTLVL>8]://	
 
-		ItemDisplay[MAG !ID SOR !town_l GROUND FILTLVL>4]:%HIDDEN_MAG%%CONTINUE%
+		ItemDisplay[MAG !ID SOR !town_l GROUND FILTLVL>4]://
 		
-		ItemDisplay[MAG !ID ETH (BOOTS OR CHEST OR BELT OR GLOVES OR HELM) !CIRC !town_l GROUND FILTLVL>4]:%HIDDEN_MAG%%CONTINUE%		
+		ItemDisplay[MAG !ID ETH (BOOTS OR CHEST OR BELT OR GLOVES OR HELM OR SHIELD) !CIRC !town_l GROUND FILTLVL>4]://
+		ItemDisplay[MAG !ID ETH WEAPON !town_l GROUND FILTLVL>4 !(eth_brick_to_rare)]://
+		
+		
+		
 		
 	\~~~	
 	
 	/~~~//Rare
 		//bad crafting bases weapons
-		//ItemDisplay[!ID RARE (hax OR 9ha OR 7ha OR mpi OR 9mp OR 7mp OR 72a OR 92a OR 2ax OR 7la OR 9la OR lax OR bax OR 9ba OR 7ba OR 7bt OR 9bt OR btx OR 7cl OR 9cl OR clb OR 7ma OR 9ma OR mac OR 7ss OR 9ss OR ssd OR 7sm OR 9sm OR scm OR 7sb OR 9sb OR sbr OR 7fc OR 9fc OR flc OR 7ls OR 9ls OR lsd OR 7wd OR 9wd OR wsd OR 2hs OR 92h OR 72h OR 7cm OR 9cm OR clm OR 7gs OR 9gs OR gis OR 7b7 OR 9b9 OR bsw OR 7fb OR 9fb OR flb OR 7di OR 9di OR dir OR dgr OR 9dg OR 7dg OR 7bl OR 9bl OR bld OR 7ta OR 9ta OR tax OR 7ja OR 9ja OR jav OR 7pi OR 9pi OR pil OR 7s7 OR 9s9 OR ssp OR 7tr OR 9tr OR tri OR brn OR 9br OR 7br OR spt OR 9st OR 7st OR 7o7 OR 9b7 OR bar OR vou OR 9vo OR 7vo OR 7s8 OR 9s8 OR scy OR pax OR 9pa OR 7pa OR 7wc OR 9wc OR wsc OR 6sb OR 8sb OR sbw OR hbw OR 8hb OR 6hb OR 6cb OR 8cb OR cbw OR sbb OR 8s8 OR 6s7 OR 6sw OR 8sw OR swb OR 6lx OR 8lx OR lxb OR 6lw OR 8lw OR lwb OR 6mx OR 8mx OR mxb OR rxb OR 8rx OR 6rx OR 6ss OR 8ss OR sst OR lst OR 8ls OR 6ls OR 6cs OR 8cs OR cst OR bst OR 8bs OR 6bs OR 7sc OR 9sc OR scp OR gsc OR 9qs OR 7qs OR 7ar OR 9ar OR ktr OR wrb OR 9wb OR 7wb OR ces OR 9cs OR 7cs OR 7lw OR 9lw OR clw OR btl OR 9tw OR 7tw OR obb OR ob6 OR ob1 OR ob2 OR ob7 OR obc OR ob3 OR ob8 OR obd OR ob4 OR ob9 OR obe) !PRICE=35000 FILTLVL>4 !town_l GROUND]:%HIDDEN_RARE%%CONTINUE%
-		//ItemDisplay[!ID RARE (hax OR 9ha OR 7ha OR mpi OR 9mp OR 7mp OR 72a OR 92a OR 2ax OR 7la OR 9la OR lax OR bax OR 9ba OR 7ba OR 7bt OR 9bt OR btx OR 7cl OR 9cl OR clb OR 7ma OR 9ma OR mac OR 7ss OR 9ss OR ssd OR 7sm OR 9sm OR scm OR 7sb OR 9sb OR sbr OR 7fc OR 9fc OR flc OR 7ls OR 9ls OR lsd OR 7wd OR 9wd OR wsd OR 2hs OR 92h OR 72h OR 7cm OR 9cm OR clm OR 7gs OR 9gs OR gis OR 7b7 OR 9b9 OR bsw OR 7fb OR 9fb OR flb OR 7di OR 9di OR dir OR dgr OR 9dg OR 7dg OR 7bl OR 9bl OR bld OR 7ta OR 9ta OR tax OR 7ja OR 9ja OR jav OR 7pi OR 9pi OR pil OR 7s7 OR 9s9 OR ssp OR 7tr OR 9tr OR tri OR brn OR 9br OR 7br OR spt OR 9st OR 7st OR 7o7 OR 9b7 OR bar OR vou OR 9vo OR 7vo OR 7s8 OR 9s8 OR scy OR pax OR 9pa OR 7pa OR 7wc OR 9wc OR wsc OR 6sb OR 8sb OR sbw OR hbw OR 8hb OR 6hb OR 6cb OR 8cb OR cbw OR sbb OR 8s8 OR 6s7 OR 6sw OR 8sw OR swb OR 6lx OR 8lx OR lxb OR 6lw OR 8lw OR lwb OR 6mx OR 8mx OR mxb OR rxb OR 8rx OR 6rx OR 6ss OR 8ss OR sst OR lst OR 8ls OR 6ls OR 6cs OR 8cs OR cst OR bst OR 8bs OR 6bs OR 7sc OR 9sc OR scp OR gsc OR 9qs OR 7qs OR 7ar OR 9ar OR ktr OR wrb OR 9wb OR 7wb OR ces OR 9cs OR 7cs OR 7lw OR 9lw OR clw OR btl OR 9tw OR 7tw OR obb OR ob6 OR ob1 OR ob2 OR ob7 OR obc OR ob3 OR ob8 OR obd OR ob4 OR ob9 OR obe) PRICE=35000 FILTLVL>6 !town_l GROUND]:%HIDDEN_RARE%%CONTINUE%
+		//ItemDisplay[!ID RARE (hax OR 9ha OR 7ha OR mpi OR 9mp OR 7mp OR 72a OR 92a OR 2ax OR 7la OR 9la OR lax OR bax OR 9ba OR 7ba OR 7bt OR 9bt OR btx OR 7cl OR 9cl OR clb OR 7ma OR 9ma OR mac OR 7ss OR 9ss OR ssd OR 7sm OR 9sm OR scm OR 7sb OR 9sb OR sbr OR 7fc OR 9fc OR flc OR 7ls OR 9ls OR lsd OR 7wd OR 9wd OR wsd OR 2hs OR 92h OR 72h OR 7cm OR 9cm OR clm OR 7gs OR 9gs OR gis OR 7b7 OR 9b9 OR bsw OR 7fb OR 9fb OR flb OR 7di OR 9di OR dir OR dgr OR 9dg OR 7dg OR 7bl OR 9bl OR bld OR 7ta OR 9ta OR tax OR 7ja OR 9ja OR jav OR 7pi OR 9pi OR pil OR 7s7 OR 9s9 OR ssp OR 7tr OR 9tr OR tri OR brn OR 9br OR 7br OR spt OR 9st OR 7st OR 7o7 OR 9b7 OR bar OR vou OR 9vo OR 7vo OR 7s8 OR 9s8 OR scy OR pax OR 9pa OR 7pa OR 7wc OR 9wc OR wsc OR 6sb OR 8sb OR sbw OR hbw OR 8hb OR 6hb OR 6cb OR 8cb OR cbw OR sbb OR 8s8 OR 6s7 OR 6sw OR 8sw OR swb OR 6lx OR 8lx OR lxb OR 6lw OR 8lw OR lwb OR 6mx OR 8mx OR mxb OR rxb OR 8rx OR 6rx OR 6ss OR 8ss OR sst OR lst OR 8ls OR 6ls OR 6cs OR 8cs OR cst OR bst OR 8bs OR 6bs OR 7sc OR 9sc OR scp OR gsc OR 9qs OR 7qs OR 7ar OR 9ar OR ktr OR wrb OR 9wb OR 7wb OR ces OR 9cs OR 7cs OR 7lw OR 9lw OR clw OR btl OR 9tw OR 7tw OR obb OR ob6 OR ob1 OR ob2 OR ob7 OR obc OR ob3 OR ob8 OR obd OR ob4 OR ob9 OR obe) !PRICE=35000 FILTLVL>4 !town_l GROUND]://
+		//ItemDisplay[!ID RARE (hax OR 9ha OR 7ha OR mpi OR 9mp OR 7mp OR 72a OR 92a OR 2ax OR 7la OR 9la OR lax OR bax OR 9ba OR 7ba OR 7bt OR 9bt OR btx OR 7cl OR 9cl OR clb OR 7ma OR 9ma OR mac OR 7ss OR 9ss OR ssd OR 7sm OR 9sm OR scm OR 7sb OR 9sb OR sbr OR 7fc OR 9fc OR flc OR 7ls OR 9ls OR lsd OR 7wd OR 9wd OR wsd OR 2hs OR 92h OR 72h OR 7cm OR 9cm OR clm OR 7gs OR 9gs OR gis OR 7b7 OR 9b9 OR bsw OR 7fb OR 9fb OR flb OR 7di OR 9di OR dir OR dgr OR 9dg OR 7dg OR 7bl OR 9bl OR bld OR 7ta OR 9ta OR tax OR 7ja OR 9ja OR jav OR 7pi OR 9pi OR pil OR 7s7 OR 9s9 OR ssp OR 7tr OR 9tr OR tri OR brn OR 9br OR 7br OR spt OR 9st OR 7st OR 7o7 OR 9b7 OR bar OR vou OR 9vo OR 7vo OR 7s8 OR 9s8 OR scy OR pax OR 9pa OR 7pa OR 7wc OR 9wc OR wsc OR 6sb OR 8sb OR sbw OR hbw OR 8hb OR 6hb OR 6cb OR 8cb OR cbw OR sbb OR 8s8 OR 6s7 OR 6sw OR 8sw OR swb OR 6lx OR 8lx OR lxb OR 6lw OR 8lw OR lwb OR 6mx OR 8mx OR mxb OR rxb OR 8rx OR 6rx OR 6ss OR 8ss OR sst OR lst OR 8ls OR 6ls OR 6cs OR 8cs OR cst OR bst OR 8bs OR 6bs OR 7sc OR 9sc OR scp OR gsc OR 9qs OR 7qs OR 7ar OR 9ar OR ktr OR wrb OR 9wb OR 7wb OR ces OR 9cs OR 7cs OR 7lw OR 9lw OR clw OR btl OR 9tw OR 7tw OR obb OR ob6 OR ob1 OR ob2 OR ob7 OR obc OR ob3 OR ob8 OR obd OR ob4 OR ob9 OR obe) PRICE=35000 FILTLVL>6 !town_l GROUND]://
 
 
-		ItemDisplay[!ID RARE (bad_rare_1haxe OR bad_rare_helm OR bad_rare_1hclub OR bad_rare_1hsword OR bad_rare_2haxe OR bad_rare_2hspear OR bad_rare_2hsword OR bad_rare_bow OR bad_rare_claw OR bad_rare_dagger OR bad_rare_orb OR bad_rare_polearm OR bad_rare_scepter OR bad_rare_shield OR bad_rare_staff OR bad_rare_taxe OR bad_rare_tmace OR bad_rare_tspear OR bad_rare_xbow) !PRICE=35000 FILTLVL>4 !town_l GROUND]:%HIDDEN_RARE%%CONTINUE%
-		ItemDisplay[!ID RARE (bad_rare_1haxe OR bad_rare_helm OR bad_rare_1hclub OR bad_rare_1hsword OR bad_rare_2haxe OR bad_rare_2hspear OR bad_rare_2hsword OR bad_rare_bow OR bad_rare_claw OR bad_rare_dagger OR bad_rare_orb OR bad_rare_polearm OR bad_rare_scepter OR bad_rare_shield OR bad_rare_staff OR bad_rare_taxe OR bad_rare_tmace OR bad_rare_tspear OR bad_rare_xbow) PRICE=35000 FILTLVL>6 !town_l GROUND]:%HIDDEN_RARE%%CONTINUE%
+		ItemDisplay[!ID RARE ((THROWING DAGGER) OR bad_rare_1haxe OR bad_rare_helm OR bad_rare_1hclub OR bad_rare_1hsword OR bad_rare_2haxe OR bad_rare_2hspear OR bad_rare_2hsword OR bad_rare_bow OR bad_rare_claw OR bad_rare_dagger OR bad_rare_orb OR bad_rare_polearm OR bad_rare_scepter OR bad_rare_shield OR bad_rare_staff OR bad_rare_taxe OR bad_rare_tmace OR bad_rare_tspear OR bad_rare_xbow) !PRICE=35000 FILTLVL>4 !town_l GROUND]://
+		ItemDisplay[!ID RARE ((THROWING DAGGER) OR bad_rare_1haxe OR bad_rare_helm OR bad_rare_1hclub OR bad_rare_1hsword OR bad_rare_2haxe OR bad_rare_2hspear OR bad_rare_2hsword OR bad_rare_bow OR bad_rare_claw OR bad_rare_dagger OR bad_rare_orb OR bad_rare_polearm OR bad_rare_scepter OR bad_rare_shield OR bad_rare_staff OR bad_rare_taxe OR bad_rare_tmace OR bad_rare_tspear OR bad_rare_xbow) PRICE=35000 FILTLVL>6 !town_l GROUND]://
 
 			
 		//bad crafting bases magic
-		ItemDisplay[!ID RARE HELM !DRU !BAR FILTLVL>8 !town_l GROUND]:%HIDDEN_RARE%%CONTINUE%
-		ItemDisplay[!ID RARE (DRU OR BAR) FILTLVL>8 !town_l GROUND]:%HIDDEN_RARE%%CONTINUE%	
-		ItemDisplay[!ID RARE SHIELD !DIN !NEC FILTLVL>8 !town_l GROUND]:%HIDDEN_RARE%%CONTINUE%
-		ItemDisplay[!ID RARE (DIN OR NEC) FILTLVL>8 !town_l GROUND]:%HIDDEN_RARE%%CONTINUE%	
-		ItemDisplay[!ID RARE BELT FILTLVL>8 !town_l GROUND]:%HIDDEN_RARE%%CONTINUE%
-		ItemDisplay[!ID RARE WAND FILTLVL>6 !town_l GROUND]:%HIDDEN_RARE%%CONTINUE%
+		ItemDisplay[!ID RARE HELM !DRU !BAR FILTLVL>8 !town_l GROUND]://
+		ItemDisplay[!ID RARE (DRU OR BAR) FILTLVL>8 !town_l GROUND]://	
+		ItemDisplay[!ID RARE SHIELD !DIN !NEC FILTLVL>8 !town_l GROUND]://
+		ItemDisplay[!ID RARE (DIN OR NEC) FILTLVL>8 !town_l GROUND]://	
+		ItemDisplay[!ID RARE BELT FILTLVL>8 !town_l GROUND]://
+		ItemDisplay[!ID RARE WAND FILTLVL>6 !town_l GROUND]://
 	\~~~
 	
 
 
 //uniques and SETS
-ItemDisplay[!ID SET NORM !rin !amu !(good_low_set_gear) !(class_set_gear) !town_l GROUND FILTLVL>6]:%HIDDEN_SET%%CONTINUE%
-ItemDisplay[!ID SET EXC !rin !amu !(good_mid_set_gear) !(class_set_gear) !town_l GROUND FILTLVL>6]:%HIDDEN_SET%%CONTINUE%
-ItemDisplay[!ID SET ELT !rin !amu !(good_mid_set_gear) !(class_set_gear) !town_l GROUND FILTLVL>6]:%HIDDEN_SET%%CONTINUE%
+ItemDisplay[!ID SET NORM !rin !amu !(good_low_set_gear) !(class_set_gear) !town_l GROUND FILTLVL>6]://
+ItemDisplay[!ID SET EXC !rin !amu !(good_mid_set_gear) !(class_set_gear) !town_l GROUND FILTLVL>6]://
+ItemDisplay[!ID SET ELT !rin !amu !(good_mid_set_gear) !(class_set_gear) !town_l GROUND FILTLVL>6]://
 
-ItemDisplay[!ID UNI NORM !rin !amu !jew !CHARM !(t5map_i) !(good_low_unique_gear) !(good_mid_unique_gear) !town_l GROUND FILTLVL>6]:%HIDDEN_UNI%%CONTINUE%
-ItemDisplay[!ID UNI EXC !rin !amu !jew !CHARM !(t5map_i) !(good_low_unique_gear) !(good_mid_unique_gear) !town_l GROUND FILTLVL>6]:%HIDDEN_UNI%%CONTINUE%
+ItemDisplay[!ID UNI NORM !rin !amu !jew !CHARM !(t5map_i) !(good_low_unique_gear) !(good_mid_unique_gear) !town_l GROUND FILTLVL>6]://
+ItemDisplay[!ID UNI EXC !rin !amu !jew !CHARM !(t5map_i) !(good_low_unique_gear) !(good_mid_unique_gear) !town_l GROUND FILTLVL>6]://
 
 
 ItemDisplay[(gzvs OR gzv) !town_l GROUND FILTLVL>8]:
