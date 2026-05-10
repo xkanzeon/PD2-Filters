@@ -569,6 +569,11 @@
                     "name": "RoofooMystery.filter",
                     "url": "https://api.github.com/repos/RoofooEvazan/Roofoo-s-PD2-Loot-Filter/contents/RoofooMystery.filter?ref=main",
                     "download_url": "https://raw.githubusercontent.com/RoofooEvazan/Roofoo-s-PD2-Loot-Filter/main/RoofooMystery.filter"
+                },
+                {
+                    "name": "RoofooSlamfestBETA.filter",
+                    "url": "https://api.github.com/repos/RoofooEvazan/Roofoo-s-PD2-Loot-Filter/contents/RoofooSlamfestBETA.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/RoofooEvazan/Roofoo-s-PD2-Loot-Filter/main/RoofooSlamfestBETA.filter"
                 }
             ]
         }
