@@ -106,7 +106,7 @@ Alias[caster3_i]:(STAFF OR WAND OR SOR OR NEC OR SCEPTER OR (DAGGER !THROWING) O
 //1h axe
 Alias[bad_rw_1haxe]:((7mp OR 9mp OR mpi OR 9ha OR hax OR 9ax OR axe OR 92a OR 2ax OR 9wa OR wax) OR (7wa (SOCK=3 OR SOCK=2)) OR (72a (SOCK=4 OR SOCK=3 OR SOCK=2)))
 Alias[bad_rare_1haxe]:(7ha OR 9ha OR hax OR 72a OR 92a OR 2ax OR 7mp OR 9mp OR mpi)
-Alias[good_slow_rw_1haxe]:((7ax (SOCK=4 OR SOCK=3 OR SOCK=2 OR SOCK=0)) OR (72a (SOCK=5 OR SOCK=0)) OR )
+Alias[good_slow_rw_1haxe]:((7ax (SOCK=4 OR SOCK=3 OR SOCK=2 OR SOCK=0)) OR (72a (SOCK=5 OR SOCK=0)))
 Alias[good_fast_rw_1haxe]:((7ha (SOCK=3 OR SOCK=2 OR SOCK=0)) OR (7wa (SOCK=6 OR SOCK=5 OR SOCK=4 OR SOCK=0)))
 Alias[good_slow_rare_1haxe]:(7ax OR 9ax OR axe)
 Alias[good_fast_rare_1haxe]:(7wa OR 9wa OR wax)
@@ -288,7 +288,7 @@ Alias[badelthelm_i]:(uap OR ukp OR ulm OR uhl)
 Alias[badeltshield_i]:(uuc OR uml)
 //
 //Gheeds
-Alias[gheeds_i]:!ID UNI CHARM
+Alias[gheeds_i]:!ID UNI cm3
 \~~~
 \~~~
 /~~~//item mods
@@ -4100,7 +4100,7 @@ ItemDisplay[NMAG ELT SUP !GLOVES !BOOTS !BELT !caster2_i (WEAPON OR ARMOR) !(bad
 		ItemDisplay[!ID MAG (DRU OR BAR) FILTLVL>4 !town_l GROUND]://		
 		ItemDisplay[!ID MAG DIN FILTLVL>4 !town_l GROUND]://
 		ItemDisplay[!ID ETH MAG HELM FILTLVL>4 !town_l GROUND]://
-		ItemDisplay[!ID MAG ZON !ETH FILTLVL>4 !town_l GROUND]://
+		ItemDisplay[!ID MAG ZON !BOW !ETH FILTLVL>4 !town_l GROUND]://
 		ItemDisplay[!ID MAG SIN !ETH FILTLVL>4 !town_l GROUND]://		
 		
 		//bad crafting bases weapons
