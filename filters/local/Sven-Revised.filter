@@ -141,10 +141,10 @@ Alias[good_tight_rare_2hhammer]:(7m7 OR 9m9 OR mau)
 Alias[good_loose_rare_2hhammer]:(7gm OR 9gm OR gma)
 //1h swords
 Alias[bad_rw_1hsword]:((7ss OR 9ss OR ssd OR 7sm OR 9sm OR scm OR 7sb OR 9sb OR sbr OR 7fc OR 9fc OR flc OR 9wd OR 7ls OR wsd OR 9bs OR bsd OR 9cr OR crs OR lsd OR 9ls OR 7wd OR 7ls) OR (7bs (SOCK=3 OR SOCK=2)))
-Alias[bad_rare_1hsword]:(7ss OR 9ss OR ssd OR lsd OR 7sm OR 9ls OR 9sm OR scm OR 7sb OR 9sb OR sbr OR 7fc OR 9fc OR 7ls OR flc OR wsd OR 9wd)
-Alias[good_slow_rw_1hsword]:((7cr (SOCK=6 OR SOCK=5 OR SOCK=4 OR SOCK=3 OR SOCK=2 OR SOCK=0) OR (7bs (SOCK=4 OR SOCK=0)) OR (7wd (SOCK=3 OR SOCK=2 OR SOCK=0))))
-Alias[good_fast_rw_1hsword]:((7cr (SOCK=6 OR SOCK=5 OR SOCK=4 OR SOCK=3 OR SOCK=2 OR SOCK=0) OR (7bs (SOCK=4 OR SOCK=0)) OR (7wd (SOCK=3 OR SOCK=2 OR SOCK=0))))
-Alias[good_rare_1hsword]:(bsd OR 9bs OR 7bs OR 7cr OR 9cr OR crs)
+Alias[bad_rare_1hsword]:(7ss OR bsd OR 9bs OR 7bs OR 9ss OR ssd OR lsd OR 7sm OR 9ls OR 9sm OR scm OR 7sb OR 9sb OR sbr OR 7fc OR 9fc OR 7ls OR flc OR wsd OR 9wd)
+Alias[good_slow_rw_1hsword]:((7bs (SOCK=4 OR SOCK=0)) OR (7wd (SOCK=3 OR SOCK=2 OR SOCK=0)))
+Alias[good_fast_rw_1hsword]:((7cr (SOCK=6 OR SOCK=5 OR SOCK=4 OR SOCK=3 OR SOCK=2 OR SOCK=0)))
+Alias[good_rare_1hsword]:(7cr OR 9cr OR crs)
 //2h swords
 Alias[bad_rw_2hsword]:((72h OR 92h OR 2hs OR 7cm OR 9cm OR clm OR 7gs OR 9gs OR gis OR 9gd OR gsd OR 9fb OR 9b9 OR bsw OR flb) OR (7gd (SOCK=4 OR SOCK=3 OR SOCK=2)))
 Alias[bad_rare_2hsword]:(72h OR 92h OR 2hs OR 7cm OR 9cm OR clm OR 7gs OR 9gs OR gis OR 7b7 OR 9b9 OR bsw OR 7fb OR 9fb OR flb)
@@ -4100,7 +4100,7 @@ ItemDisplay[NMAG ELT SUP !GLOVES !BOOTS !BELT !caster2_i (WEAPON OR ARMOR) !(bad
 		ItemDisplay[!ID MAG (DRU OR BAR) FILTLVL>4 !town_l GROUND]://		
 		ItemDisplay[!ID MAG DIN FILTLVL>4 !town_l GROUND]://
 		ItemDisplay[!ID ETH MAG HELM FILTLVL>4 !town_l GROUND]://
-		ItemDisplay[!ID MAG ZON !BOW !ETH FILTLVL>4 !town_l GROUND]://
+		ItemDisplay[!ID MAG ZON !ETH FILTLVL>6 !town_l GROUND]://
 		ItemDisplay[!ID MAG SIN !ETH FILTLVL>4 !town_l GROUND]://		
 		
 		//bad crafting bases weapons
@@ -4126,6 +4126,7 @@ ItemDisplay[NMAG ELT SUP !GLOVES !BOOTS !BELT !caster2_i (WEAPON OR ARMOR) !(bad
 		
 		ItemDisplay[MAG !ID ETH (BOOTS OR CHEST OR BELT OR GLOVES OR HELM OR SHIELD) !CIRC !town_l GROUND FILTLVL>4]://
 		ItemDisplay[MAG !ID ETH WEAPON !town_l GROUND FILTLVL>4 !(eth_brick_to_rare)]://
+		ItemDisplay[MAG !ID CIRC !town_l GROUND FILTLVL>6]://
 		
 		
 		
@@ -4148,7 +4149,9 @@ ItemDisplay[NMAG ELT SUP !GLOVES !BOOTS !BELT !caster2_i (WEAPON OR ARMOR) !(bad
 		ItemDisplay[!ID RARE SHIELD !DIN !NEC FILTLVL>8 !town_l GROUND]://
 		ItemDisplay[!ID RARE (DIN OR NEC) FILTLVL>8 !town_l GROUND]://	
 		ItemDisplay[!ID RARE BELT FILTLVL>8 !town_l GROUND]://
-		ItemDisplay[!ID RARE WAND FILTLVL>6 !town_l GROUND]://
+		ItemDisplay[!ID RARE (WAND OR NEC) FILTLVL>6 !town_l GROUND]://
+		ItemDisplay[!ID RARE (good_fast_rare_1haxe OR good_slow_rare_1haxe) !town_l GROUND FILTLVL>6]://
+		
 	\~~~
 	
 
