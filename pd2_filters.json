@@ -478,6 +478,68 @@
         }
     ],
     [
+        "Philanthropy777",
+        {
+            "info": {
+                "name": "Kassahi & Philanthropy777 Filter",
+                "url": "https://api.github.com/repos/Maaaaaarrk/HiimFilter-PD2-Filter/contents/filtergroups/phil777",
+                "author": "Philanthropy777"
+            },
+            "filters": [
+                {
+                    "name": "Kassahi_Mystery_Phil777.filter",
+                    "url": "https://api.github.com/repos/Maaaaaarrk/HiimFilter-PD2-Filter/contents/filtergroups/phil777/Kassahi_Mystery_Phil777.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/Maaaaaarrk/HiimFilter-PD2-Filter/main/filtergroups/phil777/Kassahi_Mystery_Phil777.filter"
+                },
+                {
+                    "name": "Kassahi_Phil777.filter",
+                    "url": "https://api.github.com/repos/Maaaaaarrk/HiimFilter-PD2-Filter/contents/filtergroups/phil777/Kassahi_Phil777.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/Maaaaaarrk/HiimFilter-PD2-Filter/main/filtergroups/phil777/Kassahi_Phil777.filter"
+                },
+                {
+                    "name": "Kassahi_Phil777_Crafting.filter",
+                    "url": "https://api.github.com/repos/Maaaaaarrk/HiimFilter-PD2-Filter/contents/filtergroups/phil777/Kassahi_Phil777_Crafting.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/Maaaaaarrk/HiimFilter-PD2-Filter/main/filtergroups/phil777/Kassahi_Phil777_Crafting.filter"
+                },
+                {
+                    "name": "Kassahi_Phil777_Crafting_Amazon_Focused.filter",
+                    "url": "https://api.github.com/repos/Maaaaaarrk/HiimFilter-PD2-Filter/contents/filtergroups/phil777/Kassahi_Phil777_Crafting_Amazon_Focused.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/Maaaaaarrk/HiimFilter-PD2-Filter/main/filtergroups/phil777/Kassahi_Phil777_Crafting_Amazon_Focused.filter"
+                },
+                {
+                    "name": "Kassahi_Phil777_Crafting_Assassin_Focused.filter",
+                    "url": "https://api.github.com/repos/Maaaaaarrk/HiimFilter-PD2-Filter/contents/filtergroups/phil777/Kassahi_Phil777_Crafting_Assassin_Focused.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/Maaaaaarrk/HiimFilter-PD2-Filter/main/filtergroups/phil777/Kassahi_Phil777_Crafting_Assassin_Focused.filter"
+                },
+                {
+                    "name": "Kassahi_Phil777_Crafting_Barbarian_Focused.filter",
+                    "url": "https://api.github.com/repos/Maaaaaarrk/HiimFilter-PD2-Filter/contents/filtergroups/phil777/Kassahi_Phil777_Crafting_Barbarian_Focused.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/Maaaaaarrk/HiimFilter-PD2-Filter/main/filtergroups/phil777/Kassahi_Phil777_Crafting_Barbarian_Focused.filter"
+                },
+                {
+                    "name": "Kassahi_Phil777_Crafting_Druid_Focused.filter",
+                    "url": "https://api.github.com/repos/Maaaaaarrk/HiimFilter-PD2-Filter/contents/filtergroups/phil777/Kassahi_Phil777_Crafting_Druid_Focused.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/Maaaaaarrk/HiimFilter-PD2-Filter/main/filtergroups/phil777/Kassahi_Phil777_Crafting_Druid_Focused.filter"
+                },
+                {
+                    "name": "Kassahi_Phil777_Crafting_Necromancer_Focused.filter",
+                    "url": "https://api.github.com/repos/Maaaaaarrk/HiimFilter-PD2-Filter/contents/filtergroups/phil777/Kassahi_Phil777_Crafting_Necromancer_Focused.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/Maaaaaarrk/HiimFilter-PD2-Filter/main/filtergroups/phil777/Kassahi_Phil777_Crafting_Necromancer_Focused.filter"
+                },
+                {
+                    "name": "Kassahi_Phil777_Crafting_Paladin_Focused.filter",
+                    "url": "https://api.github.com/repos/Maaaaaarrk/HiimFilter-PD2-Filter/contents/filtergroups/phil777/Kassahi_Phil777_Crafting_Paladin_Focused.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/Maaaaaarrk/HiimFilter-PD2-Filter/main/filtergroups/phil777/Kassahi_Phil777_Crafting_Paladin_Focused.filter"
+                },
+                {
+                    "name": "Kassahi_Phil777_Crafting_Sorceress_Focused.filter",
+                    "url": "https://api.github.com/repos/Maaaaaarrk/HiimFilter-PD2-Filter/contents/filtergroups/phil777/Kassahi_Phil777_Crafting_Sorceress_Focused.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/Maaaaaarrk/HiimFilter-PD2-Filter/main/filtergroups/phil777/Kassahi_Phil777_Crafting_Sorceress_Focused.filter"
+                }
+            ]
+        }
+    ],
+    [
         "Phyx10n",
         {
             "info": {
