@@ -767,5 +767,22 @@
                 }
             ]
         }
+    ],
+    [
+        "huns1313",
+        {
+            "info": {
+                "name": "THE MATRIX ARCHITECT",
+                "url": "https://api.github.com/repos/huns1313/THE-MATRIX-ARCHITECT/contents",
+                "author": "huns1313"
+            },
+            "filters": [
+                {
+                    "name": "MATRIX.filter",
+                    "url": "https://api.github.com/repos/huns1313/THE-MATRIX-ARCHITECT/contents/MATRIX.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/huns1313/THE-MATRIX-ARCHITECT/main/MATRIX.filter"
+                }
+            ]
+        }
     ]
 ]
