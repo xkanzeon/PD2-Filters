@@ -41,7 +41,7 @@ ItemDisplay[UNI ELT]:  %SOUNDID-746%%MAP-0B%%DOT-62%%RED%>> %GREEN%[%RED%Y%ORANG
 ItemDisplay[SET ELT]:  %SOUNDID-746%%MAP-0B%%DOT-62%%DARK_GREEN%>> %GREEN%[Ya!!%GOLD%Set%BLUE%] %WHITE%%NAME% %DARK_GREEN%<<
 ItemDisplay[UNI EXC]:  %SOUNDID-737%%MAP-0B%%DOT-62%%TEAL%[NM.Unique] >> %WHITE%%NAME%%TEAL% <<
 ItemDisplay[SET EXC]:  %SOUNDID-737%%MAP-0B%%DOT-62%%DARK_GREEN%[NM.Set] >> %WHITE%%NAME%%DARK_GREEN% <<
-ItemDisplay[UNI NORM]: %SOUNDID-737%%MAP-0B%%LIGHT_GRAY%[n.Unique] %WHITE%%NAME%
+ItemDisplay[UNI NORM]: %SOUNDID-737%%MAP-0B%%GRAY%[n.Unique] %WHITE%%NAME%
 ItemDisplay[SET NORM]: %SOUNDID-737%%DARK_GREEN%[n.Set] %WHITE%%NAME%
 
 // =============================================================================
@@ -51,26 +51,39 @@ ItemDisplay[ETH SUP]:  %GRAY%[ETH] %GOLD%[SUP] %NAME% %CONTINUE%
 ItemDisplay[ETH !SUP]: %GRAY%[ETH] %NAME% %CONTINUE%
 ItemDisplay[!ETH SUP]: %GOLD%[SUP] %NAME% %CONTINUE%
 
-
 // =============================================================================
 // [1. ACCESSORY ARCHITECT] - TIERED AMULET, RING & CHARM LOGIC
 // =============================================================================
-// --- [ CRAFTING PRIORITY ] ---
-ItemDisplay[amu MAG ILVL>85]:  %BORDER-59%%MAP-0B%%DOT-59%%ORANGE%[CRAFT-AMULET] %BLUE%%NAME%{%ORANGE%Caster Craft: %WHITE%Ral + Perfect Amethyst} %CONTINUE%
-ItemDisplay[amu RARE ILVL>85]: %BORDER-59%%MAP-0B%%DOT-59%%ORANGE%[CRAFT-AMULET] %YELLOW%%NAME%{%ORANGE%Caster Craft: %WHITE%Ral + Perfect Amethyst} %CONTINUE%
 
-ItemDisplay[FILTLVL<3 rin MAG ILVL>85]:  %BORDER-59%%MAP-0B%%DOT-59%%ORANGE%[CRAFT-RING] %BLUE%%NAME%{%ORANGE%Caster Craft: %WHITE%Amn + Perfect Amethyst%NL%%RED%Blood Craft: %WHITE%Sol + Perfect Ruby} %CONTINUE%
-ItemDisplay[rin RARE ILVL>85]: %BORDER-59%%MAP-0B%%DOT-59%%ORANGE%[CRAFT-RING] %YELLOW%%NAME%{%ORANGE%Caster Craft: %WHITE%Amn + Perfect Amethyst%NL%%RED%Blood Craft: %WHITE%Sol + Perfect Ruby} %CONTINUE%
+// --- [ CRAFTING PRIORITY ] ---
+ItemDisplay[amu MAG ILVL>85]:   %BORDER-59%%MAP-0B%%DOT-59%%ORANGE%[CRAFT-AMULET] %BLUE%%NAME%{%ORANGE%Caster Craft: %WHITE%Ral + Perfect Amethyst} %CONTINUE%
+ItemDisplay[amu RARE ILVL>85]:  %BORDER-59%%MAP-0B%%DOT-59%%ORANGE%[CRAFT-AMULET] %YELLOW%%NAME%{%ORANGE%Caster Craft: %WHITE%Ral + Perfect Amethyst} %CONTINUE%
+ItemDisplay[amu CRAFT ILVL>85]: %BORDER-59%%MAP-0B%%DOT-59%%ORANGE%[CRAFT-AMULET] %ORANGE%%NAME%{%ORANGE%Caster Craft: %WHITE%Ral + Perfect Amethyst} %CONTINUE%
+Bobwhy1313
+ItemDisplay[FILTLVL<3 rin MAG ILVL>85]:   %BORDER-59%%MAP-0B%%DOT-59%%ORANGE%[CRAFT-RING] %BLUE%%NAME%{%ORANGE%Caster Craft: %WHITE%Amn + Perfect Amethyst%NL%%RED%Blood Craft: %WHITE%Sol + Perfect Ruby} %CONTINUE%
+ItemDisplay[rin RARE ILVL>85]:  %BORDER-59%%MAP-0B%%DOT-59%%ORANGE%[CRAFT-RING] %YELLOW%%NAME%{%ORANGE%Caster Craft: %WHITE%Amn + Perfect Amethyst%NL%%RED%Blood Craft: %WHITE%Sol + Perfect Ruby} %CONTINUE%
+ItemDisplay[rin CRAFT ILVL>85]: %BORDER-59%%MAP-0B%%DOT-59%%ORANGE%[CRAFT-RING] %ORANGE%%NAME%{%ORANGE%Caster Craft: %WHITE%Amn + Perfect Amethyst%NL%%RED%Blood Craft: %WHITE%Sol + Perfect Ruby} %CONTINUE%
 
 // --- [ AMULETS ] ---
 ItemDisplay[amu MAG ILVL>85]:   %PURPLE%[Ya!!Base] %NAME% L%ILVL% %TIER-9%
 ItemDisplay[amu RARE ILVL>85]:  %PURPLE%[Ya!!Rare] %NAME% L%ILVL% %TIER-9%
-ItemDisplay[amu CRAFT ILVL>85]: %PURPLE%[Ya!!Rare] %ORANGE%%NAME% L%ILVL% %TIER-9%
+ItemDisplay[amu CRAFT ILVL>85]: %PURPLE%[Ya!!Rare] %NAME% L%ILVL% %TIER-9%
 
 // --- [ RINGS ] ---
 ItemDisplay[FILTLVL<3 rin MAG ILVL>85]:   %PURPLE%[Ya!!Base] %NAME% L%ILVL% %TIER-9%
 ItemDisplay[rin RARE ILVL>85]:  %PURPLE%[Ya!!Rare] %NAME% L%ILVL% %TIER-9%
-ItemDisplay[rin CRAFT ILVL>85]: %PURPLE%[Ya!!Rare] %ORANGE%%NAME% L%ILVL% %TIER-9%
+ItemDisplay[rin CRAFT ILVL>85]: %PURPLE%[Ya!!Rare] %NAME% L%ILVL% %TIER-9%
+
+// --- [ AMULETS ] ---
+ItemDisplay[amu MAG ILVL>85]:   %PURPLE%[Ya!!Base] %NAME% L%ILVL% %TIER-9%
+ItemDisplay[amu RARE ILVL>85]:  %PURPLE%[Ya!!Rare] %NAME% L%ILVL% %TIER-9%
+ItemDisplay[amu CRAFT ILVL>85]: %PURPLE%[Ya!!Rare] %NAME% L%ILVL% %TIER-9%
+
+// --- [ RINGS ] ---
+ItemDisplay[FILTLVL<3 rin MAG ILVL>85]:   %PURPLE%[Ya!!Base] %NAME% L%ILVL% %TIER-9%
+ItemDisplay[rin RARE ILVL>85]:  %PURPLE%[Ya!!Rare] %NAME% L%ILVL% %TIER-9%
+ItemDisplay[rin CRAFT ILVL>85]: %PURPLE%[Ya!!Rare] %NAME% L%ILVL% %TIER-9%
+
 
 // --- [ ABSOLUTE SILENCE BLOCKERS ] ---
 ItemDisplay[FILTLVL=3 !CRAFT (amu OR rin) MAG]:
@@ -173,15 +186,33 @@ ItemDisplay[hp5 FILTLVL<3]:                     %SOUNDID-300%%TAN%[SUPER]
 ItemDisplay[FILTLVL=1 mp5]:                     %BLUE%[MANA]
 ItemDisplay[yps]:                               %BLACK%[ANTIDOTE]
 
-ItemDisplay[gpv OR gpvs OR gpy OR gpys OR gpb OR gpbs OR gpg OR gpgs OR gpr OR gprs OR gpw OR gpws OR skz OR skzs]: %PURPLE% Perfect %WHITE%x%QTY%
-ItemDisplay[gzv OR gzvs OR gly OR glys OR glb OR glbs OR glg OR glgs OR glr OR glrs OR glw OR glws OR skl OR skls]: %CORAL% Flawless %WHITE%x%QTY%
+// --- PERFECT GEMS ---
+ItemDisplay[gpv OR gpvs]:                       %SOUNDID-2669%%WHITE%Perfect %PURPLE%Amethyst
+ItemDisplay[gpr OR gprs]:                       %SOUNDID-2669%%WHITE%Perfect %RED%Ruby
+ItemDisplay[gpb OR gpbs]:                       %SOUNDID-2669%%WHITE%Perfect %BLUE%Sapphire
+ItemDisplay[gpg OR gpgs]:                       %SOUNDID-2669%%WHITE%Perfect %GREEN%Emerald
+ItemDisplay[gpy OR gpys]:                       %SOUNDID-2669%%WHITE%Perfect %YELLOW%Topaz
+ItemDisplay[gpw OR gpws]:                       %SOUNDID-2669%%WHITE%Perfect %LIGHT_GRAY%Diamond
+ItemDisplay[skz OR skzs]:                       %SOUNDID-2669%%WHITE%Perfect %GRAY%Skull
+
+// --- FLAWLESS GEMS ---
+ItemDisplay[gzv OR gzvs]:                       %SOUNDID-241%%TEAL%FLAWLESS %PURPLE%Amethyst
+ItemDisplay[glr OR glrs]:                       %SOUNDID-241%%TEAL%FLAWLESS %RED%Ruby
+ItemDisplay[glb OR glbs]:                       %SOUNDID-241%%TEAL%FLAWLESS %BLUE%Sapphire
+ItemDisplay[glg OR glgs]:                       %SOUNDID-241%%TEAL%FLAWLESS %GREEN%Emerald
+ItemDisplay[gly OR glys]:                       %SOUNDID-241%%TEAL%FLAWLESS %YELLOW%Topaz
+ItemDisplay[glw OR glws]:                       %SOUNDID-241%%TEAL%FLAWLESS %LIGHT_GRAY%Diamond
+ItemDisplay[skl OR skls]:                       %SOUNDID-241%%TEAL%FLAWLESS %GRAY%Skull
+
 ItemDisplay[GEMTYPE>0 QTY>1]:                   %NAME% x%QTY% %CONTINUE%
 ItemDisplay[tpfs OR tpfm OR tpfl OR tpgs OR tpgm OR tpgl OR tpcs OR tpcm OR tpcl OR tpls OR tplm OR tpll]:          %NAME% %CONTINUE%
 
 // --- THE MATRIX VACUUM (SILENCE) ---
 ItemDisplay[FILTLVL>1 (hp1 OR hp2 OR hp3 OR hp4 OR mp1 OR mp2 OR mp3 OR mp4 OR mp5)]: 
 ItemDisplay[FILTLVL>1 (isc OR tsc OR vps OR wms)]:
-
+// --- THE MATRIX VACUUM (SILENCE) ---
+ItemDisplay[FILTLVL>1 (hp1 OR hp2 OR hp3 OR hp4 OR mp1 OR mp2 OR mp3 OR mp4 OR mp5)]: 
+ItemDisplay[FILTLVL>1 (isc OR tsc OR vps OR wms)]:
 
 // =============================================================================
 // [3.0 ABSOLUTE PRIORITY: CLASS BASES & QUEST] - ALWAYS VISIBLE
