@@ -1080,7 +1080,7 @@ ItemDisplay[!ID UNI upl]:Arkaine's Valor%CONTINUE%
 ItemDisplay[!ID UNI uld]:Leviathan%CONTINUE%
 ItemDisplay[!ID UNI utp]:Purgatory%CONTINUE%
 ItemDisplay[!ID UNI uul]:Steel Carapace%CONTINUE%
-ItemDisplay[!ID UNI uar]:Tyrael's???%CONTINUE%//tyraels
+ItemDisplay[!ID UNI uar]:Tyrael's???%CONTINUE%
 ItemDisplay[!ID UNI ung]:Wraithskin%CONTINUE%				
 \~~~			
 /~~~//shield
@@ -4195,7 +4195,7 @@ ItemDisplay[RUNE>24 !town_l]:%NAME%{%NAME%}%SOUNDID-4319%%CONTINUE%
 ItemDisplay[RUNE>19 RUNE<25 !town_l]:%NAME%{%NAME%}%SOUNDID-4215%%CONTINUE%
 
 //gg items
-ItemDisplay[!ID UNI uar !town_l]:%NAME%{%NAME%}%SOUNDID-4611%CONTINUE%//Tyreals
+ItemDisplay[!ID UNI uar !town_l]:%NAME%{%NAME%}%SOUNDID-4611%%CONTINUE%//Tyreals
 ItemDisplay[rtp !town_l]:%NAME%{%NAME%}%SOUNDID-2556%%CONTINUE%//navigator
 ItemDisplay[rid !town_l]:%NAME%{%NAME%}%SOUNDID-3132%%CONTINUE%//almanac
 ItemDisplay[rkey !town_l]:%NAME%{%NAME%}%SOUNDID-4701%%CONTINUE%//skeleton key
