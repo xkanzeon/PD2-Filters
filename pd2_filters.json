@@ -678,49 +678,69 @@
         {
             "info": {
                 "name": "Kassahi's PD2 Filter",
-                "url": "https://api.github.com/repos/KassahiPD2/Kassahi/contents",
+                "url": "https://api.github.com/repos/Maaaaaarrk/HiimFilter-PD2-Filter/contents/filtergroups/kassahi",
                 "author": "Kassahi"
             },
             "filters": [
                 {
-                    "name": "Meme-Hyper.filter",
-                    "url": "https://api.github.com/repos/KassahiPD2/Kassahi/contents/Meme-Hyper.filter?ref=main",
-                    "download_url": "https://raw.githubusercontent.com/KassahiPD2/Kassahi/main/Meme-Hyper.filter"
+                    "name": "Kassahi.filter",
+                    "url": "https://api.github.com/repos/Maaaaaarrk/HiimFilter-PD2-Filter/contents/filtergroups/kassahi/Kassahi.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/Maaaaaarrk/HiimFilter-PD2-Filter/main/filtergroups/kassahi/Kassahi.filter"
                 },
                 {
-                    "name": "Meme.filter",
-                    "url": "https://api.github.com/repos/KassahiPD2/Kassahi/contents/Meme.filter?ref=main",
-                    "download_url": "https://raw.githubusercontent.com/KassahiPD2/Kassahi/main/Meme.filter"
+                    "name": "Kassahi_Hyper.filter",
+                    "url": "https://api.github.com/repos/Maaaaaarrk/HiimFilter-PD2-Filter/contents/filtergroups/kassahi/Kassahi_Hyper.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/Maaaaaarrk/HiimFilter-PD2-Filter/main/filtergroups/kassahi/Kassahi_Hyper.filter"
                 },
                 {
-                    "name": "Mystery-Hyper.filter",
-                    "url": "https://api.github.com/repos/KassahiPD2/Kassahi/contents/Mystery-Hyper.filter?ref=main",
-                    "download_url": "https://raw.githubusercontent.com/KassahiPD2/Kassahi/main/Mystery-Hyper.filter"
+                    "name": "Kassahi_Hyper_beta.filter",
+                    "url": "https://api.github.com/repos/Maaaaaarrk/HiimFilter-PD2-Filter/contents/filtergroups/kassahi/Kassahi_Hyper_beta.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/Maaaaaarrk/HiimFilter-PD2-Filter/main/filtergroups/kassahi/Kassahi_Hyper_beta.filter"
                 },
                 {
-                    "name": "Mystery-Luxe.filter",
-                    "url": "https://api.github.com/repos/KassahiPD2/Kassahi/contents/Mystery-Luxe.filter?ref=main",
-                    "download_url": "https://raw.githubusercontent.com/KassahiPD2/Kassahi/main/Mystery-Luxe.filter"
+                    "name": "Kassahi_Meme.filter",
+                    "url": "https://api.github.com/repos/Maaaaaarrk/HiimFilter-PD2-Filter/contents/filtergroups/kassahi/Kassahi_Meme.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/Maaaaaarrk/HiimFilter-PD2-Filter/main/filtergroups/kassahi/Kassahi_Meme.filter"
                 },
                 {
-                    "name": "Mystery.filter",
-                    "url": "https://api.github.com/repos/KassahiPD2/Kassahi/contents/Mystery.filter?ref=main",
-                    "download_url": "https://raw.githubusercontent.com/KassahiPD2/Kassahi/main/Mystery.filter"
+                    "name": "Kassahi_Meme_Hyper.filter",
+                    "url": "https://api.github.com/repos/Maaaaaarrk/HiimFilter-PD2-Filter/contents/filtergroups/kassahi/Kassahi_Meme_Hyper.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/Maaaaaarrk/HiimFilter-PD2-Filter/main/filtergroups/kassahi/Kassahi_Meme_Hyper.filter"
                 },
                 {
-                    "name": "Regular-Hyper.filter",
-                    "url": "https://api.github.com/repos/KassahiPD2/Kassahi/contents/Regular-Hyper.filter?ref=main",
-                    "download_url": "https://raw.githubusercontent.com/KassahiPD2/Kassahi/main/Regular-Hyper.filter"
+                    "name": "Kassahi_Meme_Hyper_beta.filter",
+                    "url": "https://api.github.com/repos/Maaaaaarrk/HiimFilter-PD2-Filter/contents/filtergroups/kassahi/Kassahi_Meme_Hyper_beta.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/Maaaaaarrk/HiimFilter-PD2-Filter/main/filtergroups/kassahi/Kassahi_Meme_Hyper_beta.filter"
                 },
                 {
-                    "name": "Regular-Luxe.filter",
-                    "url": "https://api.github.com/repos/KassahiPD2/Kassahi/contents/Regular-Luxe.filter?ref=main",
-                    "download_url": "https://raw.githubusercontent.com/KassahiPD2/Kassahi/main/Regular-Luxe.filter"
+                    "name": "Kassahi_Meme_beta.filter",
+                    "url": "https://api.github.com/repos/Maaaaaarrk/HiimFilter-PD2-Filter/contents/filtergroups/kassahi/Kassahi_Meme_beta.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/Maaaaaarrk/HiimFilter-PD2-Filter/main/filtergroups/kassahi/Kassahi_Meme_beta.filter"
                 },
                 {
-                    "name": "Regular.filter",
-                    "url": "https://api.github.com/repos/KassahiPD2/Kassahi/contents/Regular.filter?ref=main",
-                    "download_url": "https://raw.githubusercontent.com/KassahiPD2/Kassahi/main/Regular.filter"
+                    "name": "Kassahi_Mystery.filter",
+                    "url": "https://api.github.com/repos/Maaaaaarrk/HiimFilter-PD2-Filter/contents/filtergroups/kassahi/Kassahi_Mystery.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/Maaaaaarrk/HiimFilter-PD2-Filter/main/filtergroups/kassahi/Kassahi_Mystery.filter"
+                },
+                {
+                    "name": "Kassahi_Mystery_Hyper.filter",
+                    "url": "https://api.github.com/repos/Maaaaaarrk/HiimFilter-PD2-Filter/contents/filtergroups/kassahi/Kassahi_Mystery_Hyper.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/Maaaaaarrk/HiimFilter-PD2-Filter/main/filtergroups/kassahi/Kassahi_Mystery_Hyper.filter"
+                },
+                {
+                    "name": "Kassahi_Mystery_Hyper_beta.filter",
+                    "url": "https://api.github.com/repos/Maaaaaarrk/HiimFilter-PD2-Filter/contents/filtergroups/kassahi/Kassahi_Mystery_Hyper_beta.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/Maaaaaarrk/HiimFilter-PD2-Filter/main/filtergroups/kassahi/Kassahi_Mystery_Hyper_beta.filter"
+                },
+                {
+                    "name": "Kassahi_Mystery_beta.filter",
+                    "url": "https://api.github.com/repos/Maaaaaarrk/HiimFilter-PD2-Filter/contents/filtergroups/kassahi/Kassahi_Mystery_beta.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/Maaaaaarrk/HiimFilter-PD2-Filter/main/filtergroups/kassahi/Kassahi_Mystery_beta.filter"
+                },
+                {
+                    "name": "Kassahi_beta.filter",
+                    "url": "https://api.github.com/repos/Maaaaaarrk/HiimFilter-PD2-Filter/contents/filtergroups/kassahi/Kassahi_beta.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/Maaaaaarrk/HiimFilter-PD2-Filter/main/filtergroups/kassahi/Kassahi_beta.filter"
                 }
             ]
         }
