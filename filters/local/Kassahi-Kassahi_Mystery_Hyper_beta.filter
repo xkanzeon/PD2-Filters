@@ -9,7 +9,7 @@ ItemDisplayFilterName[]: ÿc1High roller ÿc5(ÿc;Rejuvesÿc5)
 ItemDisplayFilterName[]: ÿc13 Min Mapper ÿc5(ÿc;Rejuvesÿc5)
 ItemDisplayFilterName[]: ÿc13 Min Mapper ÿc5(No Rejuves)
 ItemDisplayFilterName[]: ÿc1No Items Out of Town ÿc5(ÿc;Rejuvesÿc5)
-ItemDisplay[box]: %NAME%{Send Feedback via PD2 Discord #lootfilter%CL%Last updated October 10th%CL%Season 14 - build 23%CL%Kassahi - Mystery - Hyper -}%CONTINUE%
+ItemDisplay[box]: %NAME%{Send Feedback via PD2 Discord #lootfilter%CL%Last updated October 11th%CL%Season 14 - build 44%CL%Kassahi - Mystery - Hyper -}%CONTINUE%
 Alias[IN_TOWN]: (MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109)
 ItemDisplay[box FILTLVL=0]: %NAME%{%NAME% OFF}%CONTINUE%
 ItemDisplay[box FILTLVL=1]: %NAME%{%NAME% Base (1)}%CONTINUE%
@@ -51,6 +51,102 @@ ItemDisplay[GOLD<7500 FILTLVL~5-6 CLVL>79 !MAPID=83]:
 ItemDisplay[GOLD<10000 FILTLVL~7-8 CLVL>79 !MAPID=83]:
 ItemDisplay[GOLD<25000 FILTLVL~9-10 CLVL>79 !MAPID=83]:
 ItemDisplay[GOLD<999999 FILTLVL>10 CLVL>79 !MAPID=83]:
+Alias[SITE_FX]: FALSE
+Alias[DISP_CWSS]: %WSS_SHARD%
+Alias[DISP_IWSS]: %WSS_SHARD%
+Alias[DISP_LMAL]: %NAME%
+Alias[DISP_TOA]: %TOKEN_PARTS%
+Alias[FX_BOSS_MAT]:
+Alias[FX_ESSENCE]:
+Alias[FX_GEM_STACK]:
+Alias[FX_INFUSION]:
+Alias[FX_JEWF]:
+Alias[FX_PD2_GG]:
+Alias[FX_PD2_RARE]:
+Alias[FX_PGEM_STACK]:
+Alias[FX_RKEY]:
+Alias[FX_RTP_RID]:
+Alias[FX_STARS_3]:
+Alias[FX_UBA]:
+Alias[FX_UBA_PARTS]:
+Alias[FX_UBER_KEY]:
+Alias[FX_UBER_ORGAN]:
+Alias[FX_UBTM]:
+Alias[FX_UNID_3STAR]:
+Alias[FX_UNID_GG]:
+Alias[FX_UNID_RARE_SUPER]:
+Alias[FX_VIAL_MIRROR]:
+Alias[FX_WSS]:
+Alias[PHIL777_STYLE]: FALSE
+Alias[QTY_TAG]: %TAN%x%WHITE%%QTY%
+Alias[SLAMMED_TAG]: *
+Alias[DESECRATED_TAG]: %GOLD%*
+Alias[VENDOR_GOLD_TAG]: %ORANGE%• %WHITE%$
+Alias[RUNE_LOW_RANGE]: (RUNE<20)
+Alias[MYSTERY_COLOR]: %RED%
+Alias[MYSTERY_TOP_NAME]: GG Mystery
+Alias[MYSTERY_QTY]: (QTY=1)
+Alias[REJUV_SMALL_LABEL]: %PURPLE%° %WHITE%35% %PURPLE%°
+Alias[REJUV_FULL_LABEL]: %PURPLE%° %WHITE%Juice %PURPLE%°
+Alias[LBL_ISC_1]: %DARK_GREEN%· %RED%id
+Alias[LBL_TSC_1]: %DARK_GREEN%· %BLUE%tp
+Alias[LBL_TBK_1]: %RED%Low qty %NAME%
+Alias[LBL_IBK_1]: %RED%· %WHITE%id Tome
+Alias[LBL_TBK_2]: %BLUE%· %WHITE%tp Tome
+Alias[LBL_HP1_1]: %RED%° %WHITE%h1 %RED%°
+Alias[LBL_HP2_1]: %RED%° %WHITE%h2 %RED%°
+Alias[LBL_HP3_1]: %RED%° %WHITE%h3 %RED%°
+Alias[LBL_HP4_1]: %RED%° %WHITE%h4 %RED%°
+Alias[LBL_HP5_1]: %RED%° %WHITE%h5 %RED%°
+Alias[LBL_HP5_2]: %RED%° %WHITE%h %RED%°
+Alias[LBL_MP1_1]: %BLUE%° %WHITE%m1 %BLUE%°
+Alias[LBL_MP2_1]: %BLUE%° %WHITE%m2 %BLUE%°
+Alias[LBL_MP3_1]: %BLUE%° %WHITE%m3 %BLUE%°
+Alias[LBL_MP4_1]: %BLUE%° %WHITE%m4 %BLUE%°
+Alias[LBL_MP5_1]: %BLUE%° %WHITE%m5 %BLUE%°
+Alias[LBL_MP5_2]: %BLUE%° %WHITE%m %BLUE%°
+Alias[LBL_VPS_1]: %SAGE%· %WHITE%s %SAGE%·{%GRAY%(Time Stack)%NL%%WHITE%For 30s%NL%%TAN%Infinite Stamina:}
+Alias[LBL_YPS_1]: %GREEN%° %WHITE%a %GREEN%°{Good Luck on Rathma}
+Alias[LBL_YPS_2]: %GREEN%° %WHITE%a %GREEN%°{%NAME%%CL%%BLUE%Reward: Tainted World Stone Shard (Annihilus Corruption)%CL%%GRAY%---------%CL%%ORANGE%Hellfire Torch%CL%%ORANGE%Trang-Oul's Jawbone %WHITE%- drops from any undead enemy%CL%%ORANGE%Splinter of the Void %WHITE%- drops from Shadow of Mendeln map event%CL%%GRAY%Materials:%CL%%GRAY%--------%CL%%PURPLE%Overcap 25% T0 / 33% T2 Res%CL%%GREEN%Psn 85% T0 / 90% T2 | PLR 100% T0 / 150% T2%CL%%BLUE%Cold 85% T0 / 90% T2 %RED%Fire 85% T0 / T2%CL%%WHITE%Recommended Resistance:%CL%%GRAY%--------%CL%%GOLD%Voidstone - Rathma boss fight}
+Alias[LBL_YPS_3]: %GREEN%° %WHITE%a %GREEN%°{%NAME%}
+Alias[LBL_YPS_4]: %GREEN%° %WHITE%a %GREEN%°{%NAME%}
+Alias[LBL_WMS_1]: %YELLOW%· %WHITE%t %YELLOW%·{%GRAY%(Time Stack)%NL%%WHITE%+25 Cold Res For 30s%NL%%TAN%Instantly Thaws Character:}
+Alias[LBL_WMS_2]: %YELLOW%· %WHITE%t %YELLOW%·{%GRAY%(Time Stack)%NL%%WHITE%+25 Cold Res For 30s%NL%%TAN%Instantly Thaws Character:}
+Alias[LBL_PVPP_1]: %ORANGE%%NAME%{%NAME%}
+Alias[LBL_TPFS_1]: %RED%· %WHITE%f1 %RED%·{%NAME%%BLUE%Deals Fire Damage and Reduces Enemy Fire Resist%CL%%TAN%Small%CL%%GRAY%Fulminating Potion}
+Alias[LBL_TPGS_1]: %GREEN%· %WHITE%p1 %GREEN%·{%NAME%%BLUE%Deals Poison Damage and Reduces Enemy Poison Resist%CL%%TAN%Small%CL%%GRAY%Strangling Gas Potion}
+Alias[LBL_TPCS_1]: %BLUE%· %WHITE%c1 %BLUE%·{%NAME%%BLUE%Deals Cold Damage and Reduces Enemy Cold Resist%CL%%TAN%Small%CL%%GRAY%Chilling Potion}
+Alias[LBL_TPLS_1]: %YELLOW%· %WHITE%l1 %YELLOW%·{%NAME%%BLUE%Deals Lightning Damage and Reduces Enemy Lightning Resist%CL%%TAN%Small%CL%%GRAY%Charged Potion}
+Alias[LBL_TPFM_1]: %RED%· %WHITE%f2 %RED%·{%NAME%%BLUE%Deals Fire Damage and Reduces Enemy Fire Resist%CL%%TAN%Medium%CL%%GRAY%Exploding Potion}
+Alias[LBL_TPGM_1]: %GREEN%· %WHITE%p2 %GREEN%·{%NAME%%BLUE%Deals Poison Damage and Reduces Enemy Poison Resist%CL%%TAN%Medium%CL%%GRAY%Choking Gas Potion}
+Alias[LBL_TPCM_1]: %BLUE%· %WHITE%c2 %BLUE%·{%NAME%%BLUE%Deals Cold Damage and Reduces Enemy Cold Resist%CL%%TAN%Medium%CL%%GRAY%Frost Potion}
+Alias[LBL_TPLM_1]: %YELLOW%· %WHITE%l2 %YELLOW%·{%NAME%%BLUE%Deals Lightning Damage and Reduces Enemy Lightning Resist%CL%%TAN%Medium%CL%%GRAY%Static Potion}
+Alias[LBL_TPFL_1]: %RED%· %WHITE%f3 %RED%·{%NAME%%BLUE%Deals Fire Damage and Reduces Enemy Fire Resist%CL%%TAN%Large%CL%%GRAY%Oil Potion}
+Alias[LBL_TPGL_1]: %GREEN%· %WHITE%p3 %GREEN%·{%NAME%%BLUE%Deals Poison Damage and Reduces Enemy Poison Resist%CL%%TAN%Large%CL%%GRAY%Rancid Gas Potion}
+Alias[LBL_TPCL_1]: %BLUE%· %WHITE%c3 %BLUE%·{%NAME%%BLUE%Deals Cold Damage and Reduces Enemy Cold Resist%CL%%TAN%Large%CL%%GRAY%Freezing Potion}
+Alias[LBL_TPLL_1]: %YELLOW%· %WHITE%l3 %YELLOW%·{%NAME%%BLUE%Deals Lightning Damage and Reduces Enemy Lightning Resist%CL%%TAN%Large%CL%%GRAY%Shock Potion}
+Alias[QST_BKS]: %MAP-51%%GOLD%Scroll of Inifuss %RED%•{%TAN%Now Rests Treehead Woodfist%NL%Ageless, protected by Wilds%NL%Torn Bark of The Sacred Tree}
+Alias[QST_BKD]: %MAP-51%%GOLD%Key to the Cairn Stones %RED%•{%TAN%Find The Sage Deckard Cain%NL%Behest a Demigod Imp, Rakanishu%NL%A portal to Tristram Awaits}
+Alias[QST_LEG]: %MAP-51%%WHITE%Wirt's Leg{%TAN%Cube w/ Tome of Town Portal in Act 1 to open Cow Level}
+Alias[QST_HDM]: %MAP-51%%GOLD%Horadric Malus %RED%•{%TAN%Bestowed to The Sisters of The Sightless Eye%NL%Enchanted by Ancient Horadric Mages%NL%Crafted in Necessity of The Sin War}
+Alias[QST_ASS]: %MAP-51%%GOLD%Book of Skill %RED%•{%GOLD%Right Click to Read%NL%%GRAY%(Grants +1 Skill Point Permanently)%NL%%NL%%TAN%Learned Are Those Who Stay Awhile And Listen.}
+Alias[QST_HST]: %MAP-51%%GOLD%Horadric Staff %RED%•{%TAN%The Mage Clans United%NL%In Archangel Tyrael Confided%NL%The Dark Exile Provided}
+Alias[QST_VIP]: %MAP-51%%GOLD%Amulet of the Viper %RED%•{%TAN%Fangskin The Salamander Abides%NL%An Endless Eclipse, Buried in Scales%NL%Amidst The Darkness, An Amulet Unworn}
+Alias[QST_MSF]: %MAP-51%%GOLD%Staff of Kings %RED%•{%TAN%A Relic of Royalty, withered of Dust%NL%Beneath The Tunnels Woven of Arthropods}
+Alias[QST_J34]: %MAP-51%%GOLD%Jade Figurine %RED%•{%TAN%The Mage Clans United%NL%In Archangel Tyrael Confided%NL%The Dark Exile Provided}
+Alias[QST_G34]: %MAP-51%%GOLD%Golden Bird %RED%•{%TAN%Death is The Life After%NL%The Ashes of Ku Y'leh%NL%An Urn of Immortality}
+Alias[QST_XYZ]: %MAP-51%%GOLD%Potion of Life %RED%•{%GOLD%Right Click to Drink%NL%%GRAY%(Grants +20 to Maximum Life Permanently)%NL%%NL%%TAN%Forever is Composed of Nows.}
+Alias[QST_G33]: %MAP-51%%GOLD%Gidbinn %RED%•{%TAN%Lost in Fervor of Zakarum%NL%Furnished by Skatsimi%NL%Point Edged of Sorcery}
+Alias[QST_QEY]: %MAP-51%%GOLD%Khalim's Eye %RED%•{%TAN%Conception is Evoked Through The Medium of The Eye.}
+Alias[QST_QBR]: %MAP-51%%GOLD%Khalim's Brain %RED%•{%TAN%The Brain is a Commodity Used to Fertilize Ideas.}
+Alias[QST_QHR]: %MAP-51%%GOLD%Khalim's Heart %RED%•{%TAN%The Heart Has Its Reasons of Which Reason Knows Nothing.}
+Alias[QST_QF1]: %MAP-51%%GOLD%Khalim's Flail %RED%•{%TAN%Que-Hegan of Zakarum%NL%Khalim The Uncorruptible}
+Alias[QST_QF2]: %MAP-51%%GOLD%Khalim's Will %RED%•{%TAN%Will is to Grace as The Horse is to The Rider.}
+Alias[QST_BBB]: %MAP-51%%GOLD%Lam Esen's Tome %RED%•{%TAN%Prime Evil Influences%NL%Ancient Kehjani Mysticism%NL%Within Can be Known:}
+Alias[QST_MSS]: %GOLD%Mephisto's Soulstone %RED%•{%TAN%Doomed to Black Abyss%NL%Hatred Unbound Eminates}
+Alias[QST_HFH]: %MAP-51%%GOLD%Hellforge Hammer %RED%•{%TAN%Forger of Shadowfang%NL%Legend of The Burning Hells}
+Alias[QST_ICE]: %MAP-51%%GOLD%Malah's Potion %RED%•{%TAN%What is Man But a Mass of Thawing Clay•}
+Alias[QST_TR2]: %MAP-51%%GOLD%Scroll of Resistance %RED%•{%GOLD%Right Click to Read%NL%%GRAY%(Grants +10 to All Resistances Permanently)%NL%%NL%%TAN%Where There is Power, There is Resistance.}
 Alias[GEN_ITEM]: %NAME%
 Alias[GEN_ALT]: %NAME%
 Alias[TOKEN_PARTS]: %SOUNDID-4715%%PX-9B%%DOT-62%%PURPLE%«%BLACK%·%RED%»  %NAME%  %RED%«%BLACK%·%PURPLE%»
@@ -230,14 +326,14 @@ Alias[FESTERING_ESS_VALUE]: 0.25
 Alias[BURNING_ESS_VALUE]: 0.09
 Alias[CHARGED_ESS_VALUE]: 0.15
 Alias[TWISTED_ESS_VALUE]: 0.07
-Alias[4_STAR_UNIQUE]: (6ws OR 7bl OR 7cr OR 7gw OR 7pa OR 7wh OR 7ws OR amd OR amf OR bae OR ci2 OR ci3 OR drd OR dre OR pac OR paf OR uar OR uh9 OR uhc OR uhg OR uhm OR ulc OR ulm OR umc OR umg OR ung OR upl OR urn OR usk OR utg OR uts OR uul OR uvg OR xhb OR xvb)
-Alias[3_STAR_UNIQUE]: (6bs OR 6lw OR 6sw OR 7b7 OR 7gd OR 7gi OR 7gm OR 7lw OR 7p7 OR 7s8 OR 7wc OR 7xf OR 8mx OR 8rx OR 8ws OR ame OR aqv3 OR cqv3 OR ned OR neg OR obe OR pa9 OR tgl OR uap OR uit OR uow OR uui OR uvc OR xh9 OR xhm OR xhn OR xlt OR xmb OR xow OR xsh OR xtb OR xtg OR zhb OR zlb OR ztb)
+Alias[4_STAR_UNIQUE]: (6ws OR 7bl OR 7cr OR 7gw OR 7pa OR 7wh OR 7ws OR 8ws OR amd OR amf OR bae OR ci2 OR ci3 OR drd OR dre OR pac OR paf OR uar OR uh9 OR uhc OR uhg OR uhm OR ulc OR ulm OR umc OR umg OR ung OR upl OR urn OR urs OR usk OR utg OR uts OR uul OR uvg OR xhb OR xvb)
+Alias[3_STAR_UNIQUE]: (6bs OR 6lw OR 6sw OR 7b7 OR 7gd OR 7gi OR 7gm OR 7lw OR 7p7 OR 7s8 OR 7wc OR 7xf OR 8mx OR 8rx OR ame OR aqv3 OR cqv3 OR ned OR neg OR obe OR pa9 OR tgl OR uap OR uit OR uow OR uuc OR uui OR uvc OR xh9 OR xhm OR xhn OR xlt OR xmb OR xow OR xsh OR xtb OR xtg OR zhb OR zlb OR ztb)
 Alias[2_STAR_UNIQUE]: (7bt OR 7bw OR 7fl OR 7gs OR 7m7 OR 7sr OR 7ts OR 7vo OR 7wa OR 7wb OR 8ls OR 9bw OR 9fc OR 9gw OR 9ls OR 9m9 OR 9s8 OR 9tw OR 9wc OR 9wn OR amb OR amc OR aqv2 OR ba6 OR baa OR bad OR baf OR cqv2 OR dr6 OR dra OR drb OR drc OR gsd OR ltp OR nee OR nef OR oba OR obc OR obd OR obf OR pab OR pae OR tbl OR tbt OR uhb OR uhl OR ulb OR uld OR ulg OR umb OR upk OR urg OR ush OR utu OR uvb OR xap OR xea OR xhg OR xlb OR xlg OR xmg OR xpl OR xth OR xtp OR xvg OR zvb)
 Alias[1_STAR_UNIQUE]: (6cs OR 72a OR 7br OR 7dg OR 7di OR 7ls OR 7ta OR 7tw OR 7yw OR 8cs OR 8hx OR 8s8 OR 9gd OR 9gm OR aar OR ama OR ba7 OR drf OR gix OR hgl OR mbt OR mgl OR nea OR utp OR vgl OR xar OR xld OR xrn OR xui OR xul)
 Alias[0_STAR_UNIQUE]: (7b8 OR 7fb OR 8cb OR 9di OR 9kr OR bac OR brs OR kri OR lbb OR vbt OR xcl OR xkp OR xts)
 Alias[NO_STAR_UNIQUE]: (6l7 OR 7sm OR 8lb OR 8sw OR 9b9 OR 9fl OR 9la OR 9sr OR cap OR dgr OR fhl OR lgl OR uml)
-Alias[4_STAR_ETH_UNIQUE]: (6ws OR 7b7 OR 7b8 OR 7bl OR 7cr OR 7gd OR 7gm OR 7gw OR 7m7 OR 7p7 OR 7pa OR 7s8 OR 7wa OR 7wc OR 7wh OR 7ws OR 8ls OR 9gm OR 9la OR 9m9 OR aar OR ama OR amd OR ame OR amf OR bae OR ci3 OR drd OR pac OR paf OR uar OR uh9 OR uhc OR uhg OR uhm OR umc OR umg OR ung OR urn OR usk OR utg OR utp OR uul OR uvg OR xhb OR xlt OR xvb)
-Alias[3_STAR_ETH_UNIQUE]: (6bs OR 6lw OR 6sw OR 7gi OR 7lw OR 7xf OR 8mx OR 8rx OR 8ws OR aqv3 OR ci2 OR cqv3 OR dre OR neg OR obe OR pa9 OR tgl OR ulc OR ulm OR uow OR upl OR uts OR uvc OR xh9 OR xhm OR xhn OR xmb OR xow OR xsh OR xtb OR xtg OR zlb)
+Alias[4_STAR_ETH_UNIQUE]: (6ws OR 7b7 OR 7b8 OR 7bl OR 7cr OR 7gd OR 7gm OR 7gw OR 7m7 OR 7p7 OR 7pa OR 7s8 OR 7wa OR 7wc OR 7wh OR 7ws OR 8ls OR 8ws OR 9gm OR 9la OR 9m9 OR aar OR ama OR amd OR ame OR amf OR bae OR ci3 OR drd OR pac OR paf OR uar OR uh9 OR uhc OR uhg OR uhm OR umc OR umg OR ung OR urn OR urs OR usk OR utg OR utp OR uul OR uvg OR xhb OR xlt OR xvb)
+Alias[3_STAR_ETH_UNIQUE]: (6bs OR 6lw OR 6sw OR 7gi OR 7lw OR 7xf OR 8mx OR 8rx OR aqv3 OR ci2 OR cqv3 OR dre OR neg OR obe OR pa9 OR tgl OR ulc OR ulm OR uow OR upl OR uts OR uuc OR uvc OR xh9 OR xhm OR xhn OR xmb OR xow OR xsh OR xtb OR xtg OR zlb)
 Alias[2_STAR_ETH_UNIQUE]: (7bt OR 7bw OR 7fl OR 7gs OR 7sr OR 7ts OR 7vo OR 7wb OR 9bw OR 9fc OR 9gw OR 9ls OR 9s8 OR 9tw OR 9wc OR 9wn OR amb OR amc OR aqv2 OR ba6 OR baa OR bad OR baf OR cqv2 OR dr6 OR dra OR drb OR drc OR gsd OR ltp OR ned OR nee OR nef OR oba OR obc OR obd OR obf OR pab OR pae OR tbl OR tbt OR uhb OR uhl OR uit OR ulb OR uld OR ulg OR umb OR upk OR urg OR ush OR utu OR uui OR uvb OR xap OR xea OR xhg OR xlb OR xlg OR xmg OR xpl OR xth OR xtp OR xvg OR zhb OR ztb OR zvb)
 Alias[1_STAR_ETH_UNIQUE]: (6cs OR 72a OR 7br OR 7dg OR 7di OR 7ls OR 7ta OR 7tw OR 7yw OR 8cs OR 8hx OR 8s8 OR 9gd OR ba7 OR drf OR gix OR hgl OR mbt OR mgl OR nea OR uap OR vgl OR xar OR xld OR xrn OR xui OR xul)
 Alias[0_STAR_ETH_UNIQUE]: (7fb OR 8cb OR 9di OR 9kr OR bac OR brs OR kri OR lbb OR vbt OR xcl OR xkp OR xts)
@@ -278,7 +374,7 @@ Alias[PTSAMU_LLDCASTER]:(LIFE*4+STR*10+DEX*10+CRES*3+FRES*3+LRES*3+PRES*3+FCR*15
 Alias[PTSAMU_PVM]:(LIFE*3+STR*6+DEX*9+CRES*3+FRES*3+LRES*3+PRES*3+FCR*15+STAT3*6+STAT86*72+STAT80*9)
 Alias[PTSAMU_HLDCASTER]:(LIFE*3+STR*6+DEX*9+CRES*3+FRES*3+LRES*3+PRES*3+FCR*15+STAT3*6+REPLIFE*12)
 Alias[PTSJEW_MELEE]:(CRES+FRES+LRES+PRES+MINDMG*6+MAXDMG*5+IAS*9+EDAM*4+STAT121*3+STAT122*3+STAT501+STAT99*6+STAT91*-4.8)
-Alias[PTSJEW_CASTER]:(STAT86*14+STAT138*14+STR*3+DEX*3+CRES+FRES+LRES+PRES+STAT99*4+STAT91*-1.6)
+Alias[PTSJEW_CASTER]:(STAT86*14+STAT138*14+STR*3+DEX*3+CRES+FRES+LRES+PRES+STAT99*4+STAT91*-1.6+(STAT329+STAT330+STAT331)*4.8+STAT357*8)
 Alias[PTSJEW_LLD]:(LIFE*2+MANA*2+STR*10+DEX*8+CRES+FRES+LRES+PRES+MINDMG*5+MAXDMG*5+EDAM*4+STAT122+STAT99+AR+STAT91*-3.2)
 Alias[AMU_TREE_ONLY]:(TABSK0>1 OR TABSK2>1 OR TABSK1>1 OR TABSK8>1 OR TABSK9>1 OR TABSK10>1 OR TABSK16>1 OR TABSK17>1 OR TABSK18>1 OR TABSK24>1 OR TABSK25>1 OR TABSK33>1 OR TABSK34>1 OR TABSK40>1 OR TABSK41>1 OR TABSK42>1 OR TABSK48>1 OR TABSK49>1 OR TABSK50>1)
 Alias[AMU_WITH_ANY_CLASS]:(TABSK0>1 OR TABSK2>1 OR TABSK1>1 OR TABSK8>1 OR TABSK9>1 OR TABSK10>1 OR TABSK16>1 OR TABSK17>1 OR TABSK18>1 OR TABSK24>1 OR TABSK25>1 OR TABSK33>1 OR TABSK34>1 OR TABSK40>1 OR TABSK41>1 OR TABSK42>1 OR TABSK48>1 OR TABSK49>1 OR TABSK50>1 OR CLSK0>0 OR CLSK1>0 OR CLSK2>0 OR CLSK3>0 OR CLSK4>0 OR CLSK5>0 OR CLSK6>0)
@@ -288,106 +384,10 @@ Alias[PTS_AMU_DIV]:144
 Alias[PTS_MELEEJEW_DIV]:72
 Alias[PTS_CASTERJEW_DIV]:24
 Alias[PTS_LLDJEW_DIV]:48
-Alias[SITE_FX]: FALSE
-Alias[DISP_CWSS]: %WSS_SHARD%
-Alias[DISP_IWSS]: %WSS_SHARD%
-Alias[DISP_LMAL]: %NAME%
-Alias[DISP_TOA]: %TOKEN_PARTS%
-Alias[FX_BOSS_MAT]:
-Alias[FX_ESSENCE]:
-Alias[FX_GEM_STACK]:
-Alias[FX_INFUSION]:
-Alias[FX_JEWF]:
-Alias[FX_PD2_GG]:
-Alias[FX_PD2_RARE]:
-Alias[FX_PGEM_STACK]:
-Alias[FX_RKEY]:
-Alias[FX_RTP_RID]:
-Alias[FX_STARS_3]:
-Alias[FX_UBA]:
-Alias[FX_UBA_PARTS]:
-Alias[FX_UBER_KEY]:
-Alias[FX_UBER_ORGAN]:
-Alias[FX_UBTM]:
-Alias[FX_UNID_3STAR]:
-Alias[FX_UNID_GG]:
-Alias[FX_UNID_RARE_SUPER]:
-Alias[FX_VIAL_MIRROR]:
-Alias[FX_WSS]:
-Alias[PHIL777_STYLE]: FALSE
-Alias[QTY_TAG]: %TAN%x%WHITE%%QTY%
-Alias[SLAMMED_TAG]: *
-Alias[DESECRATED_TAG]: %GOLD%*
-Alias[VENDOR_GOLD_TAG]: %ORANGE%• %WHITE%$
-Alias[RUNE_LOW_RANGE]: (RUNE<20)
-Alias[MYSTERY_COLOR]: %RED%
-Alias[MYSTERY_TOP_NAME]: GG Mystery
-Alias[MYSTERY_QTY]: (QTY=1)
-Alias[REJUV_SMALL_LABEL]: %PURPLE%° %WHITE%35% %PURPLE%°
-Alias[REJUV_FULL_LABEL]: %PURPLE%° %WHITE%Juice %PURPLE%°
-Alias[LBL_ISC_1]: %DARK_GREEN%· %RED%id
-Alias[LBL_TSC_1]: %DARK_GREEN%· %BLUE%tp
-Alias[LBL_TBK_1]: %RED%Low qty %NAME%
-Alias[LBL_IBK_1]: %RED%· %WHITE%id Tome
-Alias[LBL_TBK_2]: %BLUE%· %WHITE%tp Tome
-Alias[LBL_HP1_1]: %RED%° %WHITE%h1 %RED%°
-Alias[LBL_HP2_1]: %RED%° %WHITE%h2 %RED%°
-Alias[LBL_HP3_1]: %RED%° %WHITE%h3 %RED%°
-Alias[LBL_HP4_1]: %RED%° %WHITE%h4 %RED%°
-Alias[LBL_HP5_1]: %RED%° %WHITE%h5 %RED%°
-Alias[LBL_HP5_2]: %RED%° %WHITE%h %RED%°
-Alias[LBL_MP1_1]: %BLUE%° %WHITE%m1 %BLUE%°
-Alias[LBL_MP2_1]: %BLUE%° %WHITE%m2 %BLUE%°
-Alias[LBL_MP3_1]: %BLUE%° %WHITE%m3 %BLUE%°
-Alias[LBL_MP4_1]: %BLUE%° %WHITE%m4 %BLUE%°
-Alias[LBL_MP5_1]: %BLUE%° %WHITE%m5 %BLUE%°
-Alias[LBL_MP5_2]: %BLUE%° %WHITE%m %BLUE%°
-Alias[LBL_VPS_1]: %SAGE%· %WHITE%s %SAGE%·{%GRAY%(Time Stack)%NL%%WHITE%For 30s%NL%%TAN%Infinite Stamina:}
-Alias[LBL_YPS_1]: %GREEN%° %WHITE%a %GREEN%°{Good Luck on Rathma}
-Alias[LBL_YPS_2]: %GREEN%° %WHITE%a %GREEN%°{%NAME%%CL%%BLUE%Reward: Tainted World Stone Shard (Annihilus Corruption)%CL%%GRAY%---------%CL%%ORANGE%Hellfire Torch%CL%%ORANGE%Trang-Oul's Jawbone %WHITE%- drops from any undead enemy%CL%%ORANGE%Splinter of the Void %WHITE%- drops from Shadow of Mendeln map event%CL%%GRAY%Materials:%CL%%GRAY%--------%CL%%PURPLE%Overcap 25% T0 / 33% T2 Res%CL%%GREEN%Psn 85% T0 / 90% T2 | PLR 100% T0 / 150% T2%CL%%BLUE%Cold 85% T0 / 90% T2 %RED%Fire 85% T0 / T2%CL%%WHITE%Recommended Resistance:%CL%%GRAY%--------%CL%%GOLD%Voidstone - Rathma boss fight}
-Alias[LBL_YPS_3]: %GREEN%° %WHITE%a %GREEN%°{%NAME%}
-Alias[LBL_YPS_4]: %GREEN%° %WHITE%a %GREEN%°{%NAME%}
-Alias[LBL_WMS_1]: %YELLOW%· %WHITE%t %YELLOW%·{%GRAY%(Time Stack)%NL%%WHITE%+25 Cold Res For 30s%NL%%TAN%Instantly Thaws Character:}
-Alias[LBL_WMS_2]: %YELLOW%· %WHITE%t %YELLOW%·{%GRAY%(Time Stack)%NL%%WHITE%+25 Cold Res For 30s%NL%%TAN%Instantly Thaws Character:}
-Alias[LBL_PVPP_1]: %ORANGE%%NAME%{%NAME%}
-Alias[LBL_TPFS_1]: %RED%· %WHITE%f1 %RED%·{%NAME%%BLUE%Deals Fire Damage and Reduces Enemy Fire Resist%CL%%TAN%Small%CL%%GRAY%Fulminating Potion}
-Alias[LBL_TPGS_1]: %GREEN%· %WHITE%p1 %GREEN%·{%NAME%%BLUE%Deals Poison Damage and Reduces Enemy Poison Resist%CL%%TAN%Small%CL%%GRAY%Strangling Gas Potion}
-Alias[LBL_TPCS_1]: %BLUE%· %WHITE%c1 %BLUE%·{%NAME%%BLUE%Deals Cold Damage and Reduces Enemy Cold Resist%CL%%TAN%Small%CL%%GRAY%Chilling Potion}
-Alias[LBL_TPLS_1]: %YELLOW%· %WHITE%l1 %YELLOW%·{%NAME%%BLUE%Deals Lightning Damage and Reduces Enemy Lightning Resist%CL%%TAN%Small%CL%%GRAY%Charged Potion}
-Alias[LBL_TPFM_1]: %RED%· %WHITE%f2 %RED%·{%NAME%%BLUE%Deals Fire Damage and Reduces Enemy Fire Resist%CL%%TAN%Medium%CL%%GRAY%Exploding Potion}
-Alias[LBL_TPGM_1]: %GREEN%· %WHITE%p2 %GREEN%·{%NAME%%BLUE%Deals Poison Damage and Reduces Enemy Poison Resist%CL%%TAN%Medium%CL%%GRAY%Choking Gas Potion}
-Alias[LBL_TPCM_1]: %BLUE%· %WHITE%c2 %BLUE%·{%NAME%%BLUE%Deals Cold Damage and Reduces Enemy Cold Resist%CL%%TAN%Medium%CL%%GRAY%Frost Potion}
-Alias[LBL_TPLM_1]: %YELLOW%· %WHITE%l2 %YELLOW%·{%NAME%%BLUE%Deals Lightning Damage and Reduces Enemy Lightning Resist%CL%%TAN%Medium%CL%%GRAY%Static Potion}
-Alias[LBL_TPFL_1]: %RED%· %WHITE%f3 %RED%·{%NAME%%BLUE%Deals Fire Damage and Reduces Enemy Fire Resist%CL%%TAN%Large%CL%%GRAY%Oil Potion}
-Alias[LBL_TPGL_1]: %GREEN%· %WHITE%p3 %GREEN%·{%NAME%%BLUE%Deals Poison Damage and Reduces Enemy Poison Resist%CL%%TAN%Large%CL%%GRAY%Rancid Gas Potion}
-Alias[LBL_TPCL_1]: %BLUE%· %WHITE%c3 %BLUE%·{%NAME%%BLUE%Deals Cold Damage and Reduces Enemy Cold Resist%CL%%TAN%Large%CL%%GRAY%Freezing Potion}
-Alias[LBL_TPLL_1]: %YELLOW%· %WHITE%l3 %YELLOW%·{%NAME%%BLUE%Deals Lightning Damage and Reduces Enemy Lightning Resist%CL%%TAN%Large%CL%%GRAY%Shock Potion}
-Alias[QST_BKS]: %MAP-51%%GOLD%Scroll of Inifuss %RED%•{%TAN%Now Rests Treehead Woodfist%NL%Ageless, protected by Wilds%NL%Torn Bark of The Sacred Tree}
-Alias[QST_BKD]: %MAP-51%%GOLD%Key to the Cairn Stones %RED%•{%TAN%Find The Sage Deckard Cain%NL%Behest a Demigod Imp, Rakanishu%NL%A portal to Tristram Awaits}
-Alias[QST_LEG]: %MAP-51%%WHITE%Wirt's Leg{%TAN%Cube w/ Tome of Town Portal in Act 1 to open Cow Level}
-Alias[QST_HDM]: %MAP-51%%GOLD%Horadric Malus %RED%•{%TAN%Bestowed to The Sisters of The Sightless Eye%NL%Enchanted by Ancient Horadric Mages%NL%Crafted in Necessity of The Sin War}
-Alias[QST_ASS]: %MAP-51%%GOLD%Book of Skill %RED%•{%GOLD%Right Click to Read%NL%%GRAY%(Grants +1 Skill Point Permanently)%NL%%NL%%TAN%Learned Are Those Who Stay Awhile And Listen.}
-Alias[QST_HST]: %MAP-51%%GOLD%Horadric Staff %RED%•{%TAN%The Mage Clans United%NL%In Archangel Tyrael Confided%NL%The Dark Exile Provided}
-Alias[QST_VIP]: %MAP-51%%GOLD%Amulet of the Viper %RED%•{%TAN%Fangskin The Salamander Abides%NL%An Endless Eclipse, Buried in Scales%NL%Amidst The Darkness, An Amulet Unworn}
-Alias[QST_MSF]: %MAP-51%%GOLD%Staff of Kings %RED%•{%TAN%A Relic of Royalty, withered of Dust%NL%Beneath The Tunnels Woven of Arthropods}
-Alias[QST_J34]: %MAP-51%%GOLD%Jade Figurine %RED%•{%TAN%The Mage Clans United%NL%In Archangel Tyrael Confided%NL%The Dark Exile Provided}
-Alias[QST_G34]: %MAP-51%%GOLD%Golden Bird %RED%•{%TAN%Death is The Life After%NL%The Ashes of Ku Y'leh%NL%An Urn of Immortality}
-Alias[QST_XYZ]: %MAP-51%%GOLD%Potion of Life %RED%•{%GOLD%Right Click to Drink%NL%%GRAY%(Grants +20 to Maximum Life Permanently)%NL%%NL%%TAN%Forever is Composed of Nows.}
-Alias[QST_G33]: %MAP-51%%GOLD%Gidbinn %RED%•{%TAN%Lost in Fervor of Zakarum%NL%Furnished by Skatsimi%NL%Point Edged of Sorcery}
-Alias[QST_QEY]: %MAP-51%%GOLD%Khalim's Eye %RED%•{%TAN%Conception is Evoked Through The Medium of The Eye.}
-Alias[QST_QBR]: %MAP-51%%GOLD%Khalim's Brain %RED%•{%TAN%The Brain is a Commodity Used to Fertilize Ideas.}
-Alias[QST_QHR]: %MAP-51%%GOLD%Khalim's Heart %RED%•{%TAN%The Heart Has Its Reasons of Which Reason Knows Nothing.}
-Alias[QST_QF1]: %MAP-51%%GOLD%Khalim's Flail %RED%•{%TAN%Que-Hegan of Zakarum%NL%Khalim The Uncorruptible}
-Alias[QST_QF2]: %MAP-51%%GOLD%Khalim's Will %RED%•{%TAN%Will is to Grace as The Horse is to The Rider.}
-Alias[QST_BBB]: %MAP-51%%GOLD%Lam Esen's Tome %RED%•{%TAN%Prime Evil Influences%NL%Ancient Kehjani Mysticism%NL%Within Can be Known:}
-Alias[QST_MSS]: %GOLD%Mephisto's Soulstone %RED%•{%TAN%Doomed to Black Abyss%NL%Hatred Unbound Eminates}
-Alias[QST_HFH]: %MAP-51%%GOLD%Hellforge Hammer %RED%•{%TAN%Forger of Shadowfang%NL%Legend of The Burning Hells}
-Alias[QST_ICE]: %MAP-51%%GOLD%Malah's Potion %RED%•{%TAN%What is Man But a Mass of Thawing Clay•}
-Alias[QST_TR2]: %MAP-51%%GOLD%Scroll of Resistance %RED%•{%GOLD%Right Click to Read%NL%%GRAY%(Grants +10 to All Resistances Permanently)%NL%%NL%%TAN%Where There is Power, There is Resistance.}
 Alias[SOCK_QUIVER_1]: (aqv OR cqv)
 Alias[SOCK_QUIVER_2]: (aqv2 OR aqv3 OR cqv2 OR cqv3)
-Alias[SOCK_HELM_2]: (cap OR xap OR uap OR skp OR xkp OR ukp OR hlm OR xlm OR fhl OR xhl OR bhm OR xh9 OR ci1)
 Alias[SOCK_HELM_2_3]: (msk OR ghm OR crn)
+Alias[SOCK_HELM_2]: (cap OR xap OR uap OR skp OR xkp OR ukp OR hlm OR xlm OR fhl OR xhl OR bhm OR xh9 OR ci1)
 Alias[SOCK_HELM_3]: (xsk OR xhm OR xrn OR usk OR uh9 OR uhm OR urn OR ci2 OR ci3 OR ulm OR uhl)
 Alias[SOCK_CHEST_2]: (qui OR lea OR hla OR stu OR scl OR chn)
 Alias[SOCK_SHIELD_1]: (buc OR xuc)
@@ -397,13 +397,13 @@ Alias[SOCK_SHIELD_ELITE_TOP]: (uit OR uow OR uts)
 Alias[SOCK_WEAP_1]: (dgr OR dir OR wnd OR ywn OR 9wn OR tkf OR tax OR jav)
 Alias[SOCK_WEAP_6]: (9mp OR 9wa OR 7mp OR 7wa OR 9ga OR 9gi OR 7ga OR 7gi OR 9m9 OR 9gm OR 7m7 OR 7gm OR 7cr OR 9gd OR 7gd OR 9st OR 9p9 OR 7st OR 7p7 OR 9h9 OR 9wc OR 7h7 OR 7wc OR 8l8 OR 8lw OR 6l7 OR 6lw OR 8hx OR 6hx OR 8ws OR 6ws OR am8 OR am9 OR amd OR ame OR 7sr)
 Alias[SOCK_WEAP_2_3]: (kri OR clw OR btl OR skr OR ob5)
+Alias[SOCK_WEAP_3_4_5]: (fla OR flb OR brn OR scy OR pax OR 9s8 OR 9pa OR lbw OR 8lb OR sbb OR swb OR am1 OR am2 OR am6 OR rxb)
+Alias[SOCK_WEAP_3_4_6]: (mau OR gma OR crs OR 9cr OR gsd OR spt OR pik OR hal OR wsc OR lbb OR lwb OR hxb OR am3 OR am4 OR 6lb)
 Alias[SOCK_WEAP_3_4]: (whm OR bsd OR lsd OR clm OR gis OR bsw OR tri OR vou OR hbw OR cbw OR mxb)
 Alias[SOCK_WEAP_4_5]: (2ax OR bax OR btx)
 Alias[SOCK_WEAP_4_6]: (mpi OR wax OR gax OR gix)
 Alias[SOCK_CHEST_3]: (rng OR xng OR xcl OR xhn OR brs OR xrs OR xpl OR xlt OR xld OR ltp OR xtp OR spl OR plt OR fld OR xui OR xea OR xla OR xtu)
 Alias[SOCK_CHEST_4]: (uui OR uea OR ula OR utu OR ung OR ucl OR uhn OR urs OR upl OR ult OR uld OR uth OR utp OR uul OR uar OR gth OR ful OR aar OR xth OR xul OR xar)
-Alias[SOCK_WEAP_3_4_5]: (fla OR flb OR brn OR scy OR pax OR 9s8 OR 9pa OR lbw OR 8lb OR sbb OR swb OR am1 OR am2 OR am6 OR rxb)
-Alias[SOCK_WEAP_3_4_6]: (mau OR gma OR crs OR 9cr OR gsd OR spt OR pik OR hal OR wsc OR lbb OR lwb OR hxb OR am3 OR am4 OR 6lb)
 ItemDisplay[(SET OR UNI) !ID !jew]: %BASENAME%%CONTINUE%
 ItemDisplay[(NMAG OR MAG OR RARE OR CRAFT) !RW (rin OR amu OR jew OR ARMOR OR WEAPON)]: %BASENAME%%CONTINUE%
 ItemDisplay[MAG (cm1 OR cm2 OR cm3) !STASH !INVENTORY]: %BASENAME%%CONTINUE%
@@ -504,6 +504,7 @@ ItemDisplay[UNI !ID scl]: Hawkmail%CONTINUE%
 ItemDisplay[UNI !ID xcl]: Crow Caw%CONTINUE%
 ItemDisplay[UNI !ID brs]: Venom Ward%CONTINUE%
 ItemDisplay[UNI !ID xrs]: Duriel's Shell%CONTINUE%
+ItemDisplay[UNI !ID urs]: Spectral Plate%CONTINUE%
 ItemDisplay[UNI !ID chn]: Sparking Mail%CONTINUE%
 ItemDisplay[UNI !ID xhn]: Shaftstop%CONTINUE%
 ItemDisplay[UNI !ID uhn]: Cage of the Unsullied%CONTINUE%
@@ -531,6 +532,7 @@ ItemDisplay[UNI !ID uar INVENTORY]: Templar%WHITE%/%PURPLE%Tyrael%CONTINUE%
 ItemDisplay[UNI !ID rar]: Cage of the Unsullied%CONTINUE%
 ItemDisplay[UNI !ID buc]: Pelta Lunata%CONTINUE%
 ItemDisplay[UNI !ID xuc]: Visceratuant%CONTINUE%
+ItemDisplay[UNI !ID uuc]: Warriv's Warder%CONTINUE%
 ItemDisplay[UNI !ID sml]: Umbral Disk%CONTINUE%
 ItemDisplay[UNI !ID xml]: Moser's Blessed Circle%CONTINUE%
 ItemDisplay[UNI !ID uml]: Blackoak Shield%CONTINUE%
@@ -1089,6 +1091,7 @@ ItemDisplay[t14]: Sanatorium%CONTINUE%
 ItemDisplay[t15]: Royal Crypts%CONTINUE%
 ItemDisplay[t16]: Ruined Cistern%CONTINUE%
 ItemDisplay[t17]: Halls of Torture%CONTINUE%
+ItemDisplay[t18]: Poisoned Well%CONTINUE%
 ItemDisplay[t21]: Phlegethon%CONTINUE%
 ItemDisplay[t22]: Torajan Jungle%CONTINUE%
 ItemDisplay[t23]: Arreat Battlefield%CONTINUE%
@@ -1097,6 +1100,8 @@ ItemDisplay[t25]: Sewers of Harrogath%CONTINUE%
 ItemDisplay[t26]: Shadows of Westmarch%CONTINUE%
 ItemDisplay[t27]: Demon Road%CONTINUE%
 ItemDisplay[t28]: Skovos Stronghold%CONTINUE%
+ItemDisplay[t29]: Dark Temple%CONTINUE%
+ItemDisplay[t2a]: Descent from Mount Arreat%CONTINUE%
 ItemDisplay[t31]: River of Blood%CONTINUE%
 ItemDisplay[t32]: Throne of Insanity%CONTINUE%
 ItemDisplay[t33]: Lost Temple%CONTINUE%
@@ -1137,7 +1142,6 @@ ItemDisplay[NMAG MAPTIER=2]: %ORANGE%%NAME% %ORANGE%•%CONTINUE%
 ItemDisplay[NMAG MAPTIER=3 !t35]: %RED%%NAME% %RED%•%CONTINUE%
 ItemDisplay[NMAG MAPTIER=4]: %PURPLE%%NAME% %PURPLE%•%CONTINUE%
 ItemDisplay[!(ARMOR OR WEAPON OR tbk OR ibk OR key OR rkey OR rid OR rtp OR aqv OR aqv2 OR aqv3 OR cqv OR cqv2 OR cqv3) QTY>1 QTY<51]: %NAME% %QTY_TAG%%CONTINUE%
-ItemDisplay[((gzv OR glw OR glg OR glr OR glb OR gly OR skl OR gpv OR gpw OR gpg OR gpr OR gpb OR gpy OR skz) OR (RUNE>0 QTY=0))]: %RED%Unstacked %NAME%%CONTINUE%
 ItemDisplay[lbox MYSTERY_QTY !IN_TOWN]: %MYSTERY_COLOR%Lil Mystery%CONTINUE%
 ItemDisplay[(rkey OR rtp OR rid) MYSTERY_QTY !IN_TOWN]: %MYSTERY_COLOR%Big Mystery%CONTINUE%
 ItemDisplay[(lsvl OR llmr) MYSTERY_QTY !IN_TOWN]: %MYSTERY_COLOR%%MYSTERY_TOP_NAME%%CONTINUE%
@@ -1981,6 +1985,8 @@ ItemDisplay[SET !ID FILTLVL<5 0_STAR_SET]: %GREEN%%NAME%
 ItemDisplay[SET !ID FILTLVL<7 LLD_SET]: %SET_TIER1_ITEM%%TIER-6%
 ItemDisplay[UNI !ID MAPID=137]: %NAME%
 ItemDisplay[UNI !ID (MAPID=161 OR MAPID=162 OR MAPID=163)]: %NAME%
+ItemDisplay[UNI !ID !ALLDISCOVERED !jew FILTLVL<9]:  %DOT-D3%%NAME%
+ItemDisplay[SET !ID !ALLDISCOVERED FILTLVL<9]:  %DOT-D3%%NAME%
 ItemDisplay[UNI !ID (MAPID=181 OR MAPID=182)]: %DOT-D3%%NAME%
 ItemDisplay[SET !ID (MAPID=181 OR MAPID=182)]: %DOT-7D%%NAME%
 ItemDisplay[UNI !ID ETH FILTLVL<7 !(7ba OR 7cs OR 7gl)]: %PX-D3%%TIER-6%%NAME%
@@ -6011,7 +6017,7 @@ ItemDisplay[!SHOP NMAG DIFF<2 FILTLVL=2 PRICE>29999 (WP12 OR WP4 OR WP13 OR CL6 
 ItemDisplay[STAT360=0 GROUND FILTLVL>4 !CLASS (HELM OR CIRC) ID (MAG OR RARE OR CRAFT) !(FCR>0 OR STAT141>0 OR STAT136>0 OR CLSK0>0 OR CLSK1>0 OR CLSK2>0 OR CLSK3>0 OR CLSK4>0 OR CLSK5>0 OR CLSK6>0 OR FRW>0 OR TABSK0>0 OR TABSK1>0 OR TABSK2>0 OR TABSK8>0 OR TABSK9>0 OR TABSK10>0 OR TABSK16>0 OR TABSK17>0 OR TABSK18>0 OR TABSK24>0 OR TABSK25>0 OR TABSK26>0 OR TABSK32>0 OR TABSK33>0 OR TABSK34>0 OR TABSK40>0 OR TABSK41>0 OR TABSK42>0 OR TABSK48>0 OR TABSK49>0 OR TABSK50>0)]:
 ItemDisplay[STAT360=0 GROUND FILTLVL>4 GLOVES ID (MAG OR RARE OR CRAFT) !(IAS>0 OR FCR>0 OR TABSK0>0 OR TABSK1>0 OR TABSK2>0 OR TABSK50>0)]:
 ItemDisplay[STAT360=0 GROUND FILTLVL>4 BELT ID (MAG OR RARE OR CRAFT) !(FCR>0 OR IAS>0 OR FHR>0 OR (FRES+CRES+LRES+PRES>29) OR STAT36>0)]:
-ItemDisplay[STAT360=0 GROUND FILTLVL>4 CHEST ID (MAG OR RARE OR CRAFT) !(SOCK>2 OR STAT36>0 OR EDAM>0 OR CLSK0>0 OR CLSK1>0 OR CLSK2>0 OR CLSK3>0 OR CLSK4>0 OR CLSK5>0 OR CLSK6>0 OR FCR>0 OR IAS>0 OR FHR>0 OR (FRES+CRES+LRES+PRES>29) OR STAT110>0)]:
+ItemDisplay[STAT360=0 GROUND FILTLVL>4 CHEST ID (MAG OR RARE OR CRAFT) !(SOCK>3 OR STAT36>9 OR EDAM>99 OR ((CLSK0>0 OR CLSK1>0 OR CLSK2>0 OR CLSK3>0 OR CLSK4>0 OR CLSK5>0 OR CLSK6>0) (LIFE>29 OR STR>14 OR DEX>14 OR FCR>0 OR STAT110>0 OR SOCK>1)))]:
 ItemDisplay[STAT360=0 GROUND FILTLVL>4 !CLASS SHIELD ID (MAG OR RARE OR CRAFT) !(SOCK>3 OR STAT36>0 OR EDAM>0 OR CLSK0>0 OR CLSK1>0 OR CLSK2>0 OR CLSK3>0 OR CLSK4>0 OR CLSK5>0 OR CLSK6>0 OR FCR>0 OR IAS>0 OR FHR>0 OR (FRES+CRES+LRES+PRES>29) OR STAT110>0)]:
 ItemDisplay[STAT360=0 GROUND FILTLVL>4 BOOTS ID (MAG OR RARE OR CRAFT) !(FRW>0 AND (FRES+CRES+LRES+PRES>29))]:
 ItemDisplay[STAT360=0 GROUND FILTLVL>4 SOR ID (MAG OR RARE OR CRAFT) !(CLSK1>0 OR TABSK8>0 OR TABSK9>0 OR TABSK10>0)]:
@@ -6098,7 +6104,7 @@ ItemDisplay[NMAG !ID SHOP hla]: %GOLD%Skin of the Flayed One%CL%The Centurion%CL
 ItemDisplay[NMAG !ID SHOP stu]: %GOLD%The Gladiator's Bane%CL%Iron Pelt%CL%Twitchthroe%CL%%NAME%%CONTINUE%
 ItemDisplay[NMAG !ID SHOP rng]: %GOLD%Wraithskin%CL%Spirit Forge%CL%Darkglow%CL%%NAME%%CONTINUE%
 ItemDisplay[NMAG !ID SHOP scl]: %GOLD%Crow Caw%CL%Hawkmail%CL%%NAME%%CONTINUE%
-ItemDisplay[NMAG !ID SHOP brs]: %GOLD%Duriel's Shell%CL%Venom Ward%CL%%NAME%%CONTINUE%
+ItemDisplay[NMAG !ID SHOP brs]: %GOLD%Spectral Plate%CL%Duriel's Shell%CL%Venom Ward%CL%%NAME%%CONTINUE%
 ItemDisplay[NMAG !ID SHOP chn]: %GOLD%Shaftstop%CL%Sparking Mail%CL%%NAME%%CONTINUE%
 ItemDisplay[NMAG !ID SHOP spl]: %GOLD%Arkaine's Valor%CL%Skullder's Ire%CL%Iceblink%CL%%NAME%%CONTINUE%
 ItemDisplay[NMAG !ID SHOP ltp]: %GOLD%Purgatory%CL%Que-Hegan's Wisdom%CL%Heavenly Garb%CL%%NAME%%CONTINUE%
@@ -6130,7 +6136,7 @@ ItemDisplay[NMAG !ID SHOP ghm]: %GOLD%Nightwing's Veil%CL%Veil of Steel%CL%Valky
 ItemDisplay[NMAG !ID SHOP msk]: %GOLD%Andariel's Visage%CL%Blackhorn's Face%CL%The Face of Horror%CL%%NAME%%CONTINUE%
 ItemDisplay[NMAG !ID SHOP crn]: %GOLD%Crown of Ages%CL%Crown of Thieves%CL%Undead Crown%CL%%NAME%%CONTINUE%
 ItemDisplay[NMAG !ID SHOP bhm]: %GOLD%Giant Skull%CL%Vampire Gaze%CL%Wormskull%CL%%NAME%%CONTINUE%
-ItemDisplay[NMAG !ID SHOP buc]: %GOLD%Visceratuant%CL%Pelta Lunata%CL%%NAME%%CONTINUE%
+ItemDisplay[NMAG !ID SHOP buc]: %GOLD%Warriv's Warder%CL%Visceratuant%CL%Pelta Lunata%CL%%NAME%%CONTINUE%
 ItemDisplay[NMAG !ID SHOP sml]: %GOLD%Blackoak Shield%CL%Moser's Blessed Circle%CL%Umbral Disk%CL%%NAME%%CONTINUE%
 ItemDisplay[NMAG !ID SHOP lrg]: %GOLD%Twilight's Reflection%CL%Stormchaser%CL%Stormguild%CL%%NAME%%CONTINUE%
 ItemDisplay[NMAG !ID SHOP kit]: %GOLD%Stormshield%CL%Tiamat's Rebuke%CL%Steelclash%CL%%NAME%%CONTINUE%
