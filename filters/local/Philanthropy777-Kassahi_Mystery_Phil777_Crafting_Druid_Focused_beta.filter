@@ -9,7 +9,7 @@ ItemDisplayFilterName[]: ÿc1High roller ÿc5(ÿc;Rejuvesÿc5)
 ItemDisplayFilterName[]: ÿc13 Min Mapper ÿc5(ÿc;Rejuvesÿc5)
 ItemDisplayFilterName[]: ÿc13 Min Mapper ÿc5(No Rejuves)
 ItemDisplayFilterName[]: ÿc1No Items Out of Town ÿc5(ÿc;Rejuvesÿc5)
-ItemDisplay[box]: %NAME%{Send Feedback via PD2 Discord #lootfilter%CL%Last updated October 11th%CL%Season 14 - build 44%CL%Kassahi - Mystery - Phil777 - Druid - Crafting -}%CONTINUE%
+ItemDisplay[box]: %NAME%{Send Feedback via PD2 Discord #lootfilter%CL%Last updated October 11th%CL%Season 14 - build 46%CL%Kassahi - Mystery - Phil777 - Druid - Crafting -}%CONTINUE%
 Alias[IN_TOWN]: (MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109)
 ItemDisplay[box FILTLVL=0]: %NAME%{%NAME% OFF}%CONTINUE%
 ItemDisplay[box FILTLVL=1]: %NAME%{%NAME% Base (1)}%CONTINUE%
@@ -30,7 +30,7 @@ ItemDisplay[FILTLVL=0 (hp1 OR hp2 OR hp3 OR hp4 OR hp5 OR mp1 OR mp2 OR mp3 OR m
 ItemDisplay[FILTLVL=0]: %NAME%{%NAME%}
 ItemDisplay[amu STAT206>0 (MAPID=188 OR MAPID=189)]: %MAP-58%%BLACK%<%RED%!%BLACK%> %BLACK%<%RED%!%BLACK%> %BLACK%<%RED%!%BLACK%>   %RED%Amulet   %BLACK%<%RED%!%BLACK%> %BLACK%<%RED%!%BLACK%> %BLACK%<%RED%!%BLACK%>%CL%%ORANGE%Did it live?{%NAME%}
 ItemDisplay[INF PRICE=1 DIFF<1]: %NAME%{%BLACK%~%CL%%BLUE%tinyurl.com/HiimPD2%CL%%BLACK%~%CL%%GOLD%Hiim Mapping Build Tier Lists:%CL%%BLACK%~%CL%%NAME%}%CONTINUE%
-ItemDisplay[(ARMOR OR WEAPON) INF !SHOP]:{%NAME%}
+ItemDisplay[(ARMOR OR WEAPON) INF !SHOP !(SWORD SOCK=4)]:{%NAME%}
 ItemDisplay[ear]:
 ItemDisplay[NMAG ID (ARMOR OR WEAPON) SOCK=1 !leg CLVL>80]:
 ItemDisplay[NMAG ID (ARMOR OR WEAPON) SOCK=1 !leg CLVL>60 FILTLVL>2]:
@@ -2781,7 +2781,7 @@ ItemDisplay[(MAG OR RARE) CL4 MAPID=83 FILTLVL<8]: %NAME%%TIER-2%
 ItemDisplay[QUIVER MAG !ID AMAZON FILTLVL<3]: %QUIVER_MAG_AMA%
 ItemDisplay[QUIVER RARE !ID AMAZON FILTLVL<5]: %QUIVER_RARE_AMA%
 ItemDisplay[QUIVER RARE !ID AMAZON FILTLVL<7]: %QUIVER_RARE_AMA_TIGHT%
-ItemDisplay[QUIVER NMAG]:
+ItemDisplay[QUIVER NMAG SOCK<2]:
 ItemDisplay[QUIVER MAG !ID FILTLVL<7]:%NAME%
 ItemDisplay[QUIVER MAG !ID]:
 ItemDisplay[QUIVER RARE !ID FILTLVL<9]:%NAME%
@@ -6965,7 +6965,7 @@ ItemDisplay[(wsp OR 9ws OR 7ws) !INF NMAG !RW (SOCK=0 OR SOCK=4) FILTLVL<3]: %NA
 ItemDisplay[crs NMAG !INF !SUP SOCK=0 (ILVL>25 AND ILVL<41) CLVL<85 FILTLVL<3]: %NAME% %DOT-76%%DARK_GREEN%[Larzuk 4os]{%NAME%}
 ItemDisplay[crs NMAG !INF !SUP SOCK=0 ILVL>40 FILTLVL<3]: %NAME%{%NAME%}
 ItemDisplay[(bsd OR lsd) NMAG !INF !SUP SOCK=0 ILVL>25 CLVL<80 FILTLVL<3]: %NAME% %DOT-76%%DARK_GREEN%[Larzuk 4os]{%NAME%}
-ItemDisplay[(crs OR bsd OR lsd) NMAG !INF !RW SOCK=4 FILTLVL<3]: %NAME% %DOT-76%%DARK_GREEN%[Spirit]{%NAME%}
+ItemDisplay[(crs OR bsd OR lsd) NMAG !RW SOCK=4 FILTLVL<3]: %NAME% %DOT-76%%DARK_GREEN%[Spirit]{%NAME%}
 ItemDisplay[crs ILVL>25 NMAG !INF !RW !ETH SOCK>4 FILTLVL<5]: %NAME%{%NAME%}
 ItemDisplay[(72h OR 7fb OR 7gd OR 7gs OR 7ls) ETH NMAG !RW !INF (SOCK=0 OR SOCK>2) FILTLVL<7]: %NAME%{%NAME%}
 ItemDisplay[7fb ETH NMAG !RW (SOCK=0 OR SOCK>1) FILTLVL<7]: %NAME%{%NAME%}
@@ -7190,7 +7190,7 @@ ItemDisplay[(HELM OR CIRC OR BAR OR DRU) NMAG !RW SOCK=3 FILTLVL<3]: %NAME% %LEV
 ItemDisplay[CHEST NMAG !RW SOCK=3 FILTLVL<3]: %NAME% %LEVELING_TAG%{%RED%3os Chest Base%CL%%NAME%}
 ItemDisplay[(CHEST OR HELM) NMAG DIFF<1 FILTLVL<3 SOCK>1]: %RARE_PLUS%{%NAME%}
 ItemDisplay[(CHEST OR HELM) NMAG DIFF<2 FILTLVL<3 SOCK>2]: %RARE_PLUS%{%NAME%}
-ItemDisplay[SHIELD NMAG DIFF<2 FILTLVL<3 SOCK=3]: %RARE_PLUS%{%NAME%}
+ItemDisplay[SHIELD NMAG FILTLVL<3 SOCK=3]: %RARE_PLUS%{%NAME%}
 ItemDisplay[WEAPON ELT MAG CLVL<80 FILTLVL<2]: %NAME%{%NAME%}
 ItemDisplay[WEAPON EXC MAG DIFF<2 FILTLVL<2]: %NAME%{%NAME%}
 ItemDisplay[WEAPON ETH CLVL<80 FILTLVL<2]: %NAME%{%NAME%}
