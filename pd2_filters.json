@@ -1058,6 +1058,11 @@
                     "download_url": "https://raw.githubusercontent.com/RoofooEvazan/Roofoo-s-PD2-Loot-Filter/main/RoofooMystery.filter"
                 },
                 {
+                    "name": "RoofooMysteryBETA.filter",
+                    "url": "https://api.github.com/repos/RoofooEvazan/Roofoo-s-PD2-Loot-Filter/contents/RoofooMysteryBETA.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/RoofooEvazan/Roofoo-s-PD2-Loot-Filter/main/RoofooMysteryBETA.filter"
+                },
+                {
                     "name": "RoofooSlamfestBETA.filter",
                     "url": "https://api.github.com/repos/RoofooEvazan/Roofoo-s-PD2-Loot-Filter/contents/RoofooSlamfestBETA.filter?ref=main",
                     "download_url": "https://raw.githubusercontent.com/RoofooEvazan/Roofoo-s-PD2-Loot-Filter/main/RoofooSlamfestBETA.filter"
@@ -1141,14 +1146,29 @@
             },
             "filters": [
                 {
+                    "name": "eqN-All-In-One-beta.filter",
+                    "url": "https://api.github.com/repos/eqNj/eqN-PD2-Filter/contents/eqN-All-In-One-beta.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/eqNj/eqN-PD2-Filter/main/eqN-All-In-One-beta.filter"
+                },
+                {
                     "name": "eqN-All-In-One.filter",
                     "url": "https://api.github.com/repos/eqNj/eqN-PD2-Filter/contents/eqN-All-In-One.filter?ref=main",
                     "download_url": "https://raw.githubusercontent.com/eqNj/eqN-PD2-Filter/main/eqN-All-In-One.filter"
                 },
                 {
+                    "name": "eqN-Specialized-LLD-beta.filter",
+                    "url": "https://api.github.com/repos/eqNj/eqN-PD2-Filter/contents/eqN-Specialized-LLD-beta.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/eqNj/eqN-PD2-Filter/main/eqN-Specialized-LLD-beta.filter"
+                },
+                {
                     "name": "eqN-Specialized-LLD.filter",
                     "url": "https://api.github.com/repos/eqNj/eqN-PD2-Filter/contents/eqN-Specialized-LLD.filter?ref=main",
                     "download_url": "https://raw.githubusercontent.com/eqNj/eqN-PD2-Filter/main/eqN-Specialized-LLD.filter"
+                },
+                {
+                    "name": "eqN-Specialized-SSF-beta.filter",
+                    "url": "https://api.github.com/repos/eqNj/eqN-PD2-Filter/contents/eqN-Specialized-SSF-beta.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/eqNj/eqN-PD2-Filter/main/eqN-Specialized-SSF-beta.filter"
                 },
                 {
                     "name": "eqN-Specialized-SSF.filter",
