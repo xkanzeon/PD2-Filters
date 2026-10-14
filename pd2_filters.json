@@ -185,6 +185,11 @@
                     "download_url": "https://raw.githubusercontent.com/Maaaaaarrk/HiimFilter-PD2-Filter/main/filtergroups/hiimhyper/Hiim_Grail.filter"
                 },
                 {
+                    "name": "Hiim_Grail_No_beta.filter",
+                    "url": "https://api.github.com/repos/Maaaaaarrk/HiimFilter-PD2-Filter/contents/filtergroups/hiimhyper/Hiim_Grail_No_beta.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/Maaaaaarrk/HiimFilter-PD2-Filter/main/filtergroups/hiimhyper/Hiim_Grail_No_beta.filter"
+                },
+                {
                     "name": "Hiim_Grail_beta.filter",
                     "url": "https://api.github.com/repos/Maaaaaarrk/HiimFilter-PD2-Filter/contents/filtergroups/hiimhyper/Hiim_Grail_beta.filter?ref=main",
                     "download_url": "https://raw.githubusercontent.com/Maaaaaarrk/HiimFilter-PD2-Filter/main/filtergroups/hiimhyper/Hiim_Grail_beta.filter"
@@ -317,6 +322,11 @@
                     "download_url": "https://raw.githubusercontent.com/Maaaaaarrk/HiimFilter-PD2-Filter/main/filtergroups/hiimtalrasha/Hiim_Grail.filter"
                 },
                 {
+                    "name": "Hiim_Grail_No_beta.filter",
+                    "url": "https://api.github.com/repos/Maaaaaarrk/HiimFilter-PD2-Filter/contents/filtergroups/hiimtalrasha/Hiim_Grail_No_beta.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/Maaaaaarrk/HiimFilter-PD2-Filter/main/filtergroups/hiimtalrasha/Hiim_Grail_No_beta.filter"
+                },
+                {
                     "name": "Hiim_Grail_beta.filter",
                     "url": "https://api.github.com/repos/Maaaaaarrk/HiimFilter-PD2-Filter/contents/filtergroups/hiimtalrasha/Hiim_Grail_beta.filter?ref=main",
                     "download_url": "https://raw.githubusercontent.com/Maaaaaarrk/HiimFilter-PD2-Filter/main/filtergroups/hiimtalrasha/Hiim_Grail_beta.filter"
@@ -447,6 +457,11 @@
                     "name": "Hiim_Grail.filter",
                     "url": "https://api.github.com/repos/Maaaaaarrk/HiimFilter-PD2-Filter/contents/filtergroups/hiimvanillaplus/Hiim_Grail.filter?ref=main",
                     "download_url": "https://raw.githubusercontent.com/Maaaaaarrk/HiimFilter-PD2-Filter/main/filtergroups/hiimvanillaplus/Hiim_Grail.filter"
+                },
+                {
+                    "name": "Hiim_Grail_No_beta.filter",
+                    "url": "https://api.github.com/repos/Maaaaaarrk/HiimFilter-PD2-Filter/contents/filtergroups/hiimvanillaplus/Hiim_Grail_No_beta.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/Maaaaaarrk/HiimFilter-PD2-Filter/main/filtergroups/hiimvanillaplus/Hiim_Grail_No_beta.filter"
                 },
                 {
                     "name": "Hiim_Grail_beta.filter",
@@ -584,6 +599,11 @@
                     "name": "Hiim_Grail.filter",
                     "url": "https://api.github.com/repos/Maaaaaarrk/HiimFilter-PD2-Filter/contents/Hiim_Grail.filter?ref=main",
                     "download_url": "https://raw.githubusercontent.com/Maaaaaarrk/HiimFilter-PD2-Filter/main/Hiim_Grail.filter"
+                },
+                {
+                    "name": "Hiim_Grail_No_beta.filter",
+                    "url": "https://api.github.com/repos/Maaaaaarrk/HiimFilter-PD2-Filter/contents/Hiim_Grail_No_beta.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/Maaaaaarrk/HiimFilter-PD2-Filter/main/Hiim_Grail_No_beta.filter"
                 },
                 {
                     "name": "Hiim_Grail_beta.filter",

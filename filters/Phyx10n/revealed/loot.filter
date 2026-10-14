@@ -2,8 +2,9 @@
 //Filter Levels
 ItemDisplayFilterName[]:Starter - Hides ÿc5inferior/1os ÿc0bases + tp/id scrolls + misc potions
 ItemDisplayFilterName[]:Relaxed - Hides low ÿc9weapons ÿc0+ ÿc3armor/weapon/ring ÿc0+ below flawless
-ItemDisplayFilterName[]:Strict - Hides low ÿc4uniqueÿc0/ÿc<set ÿc0+ ÿc9mid armor/weapon ÿc0+ ÿc3amulet/large charm ÿc0+ low bases + potions
-ItemDisplayFilterName[]:Extreme - Hides mid ÿc4uniqueÿc0/ÿc<set ÿc0+ ÿc9armor/weapon/jewelry ÿc0+ ÿc3low charm/jewel ÿc0+ mid bases + flawless
+ItemDisplayFilterName[]:Semi-Strict - Hides low ÿc4uniqueÿc0/ÿc<set ÿc0+ ÿc9mid armor/weapon ÿc0+ ÿc3amulet/large charm ÿc0+ low bases + potions
+ItemDisplayFilterName[]:Strict - Hides mid ÿc4uniqueÿc0/ÿc<set ÿc0+ ÿc3low charm/jewel ÿc0+ mid bases + flawless
+ItemDisplayFilterName[]:Extreme - Hides ÿc9armor/weapon/jewelry
 //Toggles
 Alias[SHOW_R1]:FALSE
 Alias[SHOW_HP]:FALSE
@@ -1910,15 +1911,15 @@ ItemDisplay[FILTLVL<4 !ID MAG cm1 ALVL>47]:%BLUE_T1%
 ItemDisplay[FILTLVL<4 !ID MAG cm3 ALVL>49]:%BLUE_T1%
 ItemDisplay[FILTLVL<3 !ID MAG amu ALVL>59]:%BLUE_T1%
 //Skill
-ItemDisplay[FILTLVL<3 !ID MAG (CIRC OR WAND OR SIN OR NEC OR SOR) ILVL>64 ALVL>59]:%BLUE_T1%
+ItemDisplay[FILTLVL<3 !ID MAG (CIRC OR WAND OR SIN OR NEC OR SOR) ALVL>59]:%BLUE_T1%
 //Crafting Bases
-ItemDisplay[CRAFTING !ID (MAG OR RARE) ETH (gax OR 9ga OR 7ga OR mau OR 9m9 OR 7m7 OR flb OR 9fb OR 7fb OR gsd OR 9gd OR 7gd OR glv OR 9gl OR 7gl OR pik OR 9p9 OR 7p7 OR axf OR 9xf OR 7xf) CRAFTALVL>75]:%BLUE_T1%
-ItemDisplay[CRAFTING AMAZON !ID (MAG OR RARE) (am2 OR am7 OR amc) CRAFTALVL>75]:%BLUE_T1%
-ItemDisplay[CRAFTING ASSASSIN !ID (MAG OR RARE) ETH (ktr OR 9ar OR 7ar OR skr OR 9qr OR 7qr) CRAFTALVL>75]:%BLUE_T1%
-ItemDisplay[CRAFTING BARBARIAN !ID (MAG OR RARE) ETH (gix OR 9gi OR 7gi OR whm OR 9wh OR 7wh OR gma OR 9gm OR 7gm OR gis OR 9gs OR 7gs OR pil OR 9pi OR 7pi OR ssp OR 9s9 OR 7s7 OR tsp OR 9ts OR 7ts) CRAFTALVL>75]:%BLUE_T1%
-ItemDisplay[CRAFTING DRUID !ID (MAG OR RARE) ETH (btx OR 9bt OR 7bt OR gix OR 9gi OR 7gi) CRAFTALVL>75]:%BLUE_T1%
-ItemDisplay[CRAFTING PALADIN !ID (MAG OR RARE) ETH (mac OR 9ma OR 7ma OR mst OR 9mt OR 7mt OR fla OR 9fl OR 7fl) CRAFTALVL>75]:%BLUE_T1%
-ItemDisplay[CRAFTING SORCERESS !ID (MAG OR RARE) (ob5 OR oba OR obf) CRAFTALVL>75]:%BLUE_T1%
+ItemDisplay[CRAFTING !ID (MAG OR RARE) ETH (gax OR 9ga OR 7ga OR mau OR 9m9 OR 7m7 OR flb OR 9fb OR 7fb OR gsd OR 9gd OR 7gd OR glv OR 9gl OR 7gl OR pik OR 9p9 OR 7p7 OR axf OR 9xf OR 7xf) CRAFTALVL>59]:%BLUE_T1%
+ItemDisplay[CRAFTING AMAZON !ID (MAG OR RARE) (am2 OR am7 OR amc) CRAFTALVL>59]:%BLUE_T1%
+ItemDisplay[CRAFTING ASSASSIN !ID (MAG OR RARE) ETH (ktr OR 9ar OR 7ar OR skr OR 9qr OR 7qr) CRAFTALVL>59]:%BLUE_T1%
+ItemDisplay[CRAFTING BARBARIAN !ID (MAG OR RARE) ETH (gix OR 9gi OR 7gi OR whm OR 9wh OR 7wh OR gma OR 9gm OR 7gm OR gis OR 9gs OR 7gs OR pil OR 9pi OR 7pi OR ssp OR 9s9 OR 7s7 OR tsp OR 9ts OR 7ts) CRAFTALVL>59]:%BLUE_T1%
+ItemDisplay[CRAFTING DRUID !ID (MAG OR RARE) ETH (btx OR 9bt OR 7bt OR gix OR 9gi OR 7gi) CRAFTALVL>59]:%BLUE_T1%
+ItemDisplay[CRAFTING PALADIN !ID (MAG OR RARE) ETH (mac OR 9ma OR 7ma OR mst OR 9mt OR 7mt OR fla OR 9fl OR 7fl) CRAFTALVL>59]:%BLUE_T1%
+ItemDisplay[CRAFTING SORCERESS !ID (MAG OR RARE) (ob5 OR oba OR obf) CRAFTALVL>59]:%BLUE_T1%
 //Catch All
 ItemDisplay[FILTLVL<2 !ID MAG]:%SHOW%
 //Hide
@@ -1927,20 +1928,20 @@ ItemDisplay[GROUND !ID MAG]:%HIDE%
 #///Rare Items
 //Misc
 ItemDisplay[!ID RARE jew]:%YELLOW_T1%
-ItemDisplay[FILTLVL<4 !ID RARE amu ILVL>84 ALVL>89]:%YELLOW_T1%
-ItemDisplay[FILTLVL<4 !ID RARE rin ILVL>84 ALVL>80]:%YELLOW_T1%
-ItemDisplay[FILTLVL<3 !ID RARE QUIVER ILVL>84 ALVL>76]:%YELLOW_T1%
+ItemDisplay[FILTLVL<5 !ID RARE amu ALVL>89]:%YELLOW_T1%
+ItemDisplay[FILTLVL<5 !ID RARE rin ALVL>80]:%YELLOW_T1%
+ItemDisplay[FILTLVL<5 !ID RARE QUIVER ALVL>68]:%YELLOW_T1%
 //Armor
-ItemDisplay[!ID RARE CIRC]:%YELLOW_T1%
-ItemDisplay[FILTLVL<4 !ID RARE HELM ILVL>84 ALVL>80]:%YELLOW_T1%
-ItemDisplay[FILTLVL<4 !ID RARE CHEST ILVL>84 ALVL>84]:%YELLOW_T1%
-ItemDisplay[FILTLVL<4 !ID RARE GLOVES ILVL>84 ALVL>74]:%YELLOW_T1%
-ItemDisplay[FILTLVL<4 !ID RARE BELT ILVL>84 ALVL>69]:%YELLOW_T1%
-ItemDisplay[FILTLVL<4 !ID RARE BOOTS ILVL>84 ALVL>69]:%YELLOW_T1%
-ItemDisplay[FILTLVL<4 !ID RARE SHIELD ILVL>84 ALVL>84]:%YELLOW_T1%
+ItemDisplay[FILTLVL<5 !ID RARE CIRC ALVL>89]:%YELLOW_T1%
+ItemDisplay[FILTLVL<5 !ID RARE HELM ALVL>74 MAXSOCKETS>2]:%YELLOW_T1%
+ItemDisplay[FILTLVL<5 !ID RARE CHEST ALVL>74 MAXSOCKETS>3]:%YELLOW_T1%
+ItemDisplay[FILTLVL<5 !ID RARE GLOVES ALVL>57]:%YELLOW_T1%
+ItemDisplay[FILTLVL<5 !ID RARE BELT ALVL>64]:%YELLOW_T1%
+ItemDisplay[FILTLVL<5 !ID RARE BOOTS ALVL>50]:%YELLOW_T1%
+ItemDisplay[FILTLVL<5 !ID RARE SHIELD ALVL>74 MAXSOCKETS>3]:%YELLOW_T1%
 //Weapons
-ItemDisplay[(FILTLVL<4 OR ETH) !ID RARE (gax OR 9ga OR 7ga OR mau OR 9m9 OR 7m7 OR flb OR 9fb OR 7fb OR gsd OR 9gd OR 7gd OR glv OR 9gl OR 7gl OR pik OR 9p9 OR 7p7 OR axf OR 9xf OR 7xf) ILVL>84 ALVL>75]:%YELLOW_T1%
-ItemDisplay[(FILTLVL<3 OR (FILTLVL<4 ETH)) !ID RARE (gix OR 9gi OR 7gi OR whm OR 9wh OR 7wh OR gma OR 9gm OR 7gm OR gis OR 9gs OR 7gs OR pil OR 9pi OR 7pi OR ssp OR 9s9 OR 7s7 OR tsp OR 9ts OR 7ts OR ktr OR 9ar OR 7ar OR skr OR 9qr OR 7qr OR am2 OR am7 OR amc) ILVL>84 ALVL>75]:%YELLOW_T1%
+ItemDisplay[(FILTLVL<5 OR ETH) !ID RARE (gax OR 9ga OR 7ga OR mau OR 9m9 OR 7m7 OR flb OR 9fb OR 7fb OR gsd OR 9gd OR 7gd OR glv OR 9gl OR 7gl OR pik OR 9p9 OR 7p7 OR axf OR 9xf OR 7xf) ILVL>84 ALVL>59]:%YELLOW_T1%
+ItemDisplay[(FILTLVL<3 OR (FILTLVL<4 ETH)) !ID RARE (gix OR 9gi OR 7gi OR whm OR 9wh OR 7wh OR gma OR 9gm OR 7gm OR gis OR 9gs OR 7gs OR pil OR 9pi OR 7pi OR ssp OR 9s9 OR 7s7 OR tsp OR 9ts OR 7ts OR ktr OR 9ar OR 7ar OR skr OR 9qr OR 7qr OR am2 OR am7 OR amc) ILVL>84 ALVL>59]:%YELLOW_T1%
 //Catch All
 ItemDisplay[FILTLVL<3 !ID RARE]:%SHOW%
 //Hide
