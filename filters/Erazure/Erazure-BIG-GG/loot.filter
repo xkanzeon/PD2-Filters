@@ -6,9 +6,9 @@ ItemDisplayFilterName[]:ÿc3Stricter Filtering//
 ItemDisplayFilterName[]:ÿc3Stricter Filtering ÿc0- ÿc4Hides ÿc;35%//
 ItemDisplayFilterName[]:ÿc"Advanced Filtering//
 ItemDisplayFilterName[]:ÿc"Advanced Filtering ÿc0- ÿc4Hides ÿc;35%//
-ItemDisplayFilterName[]:ÿc"Advanced Filtering ÿc0- ÿc4Hides ÿc;35%//
+ItemDisplayFilterName[]:ÿc"Advanced Filtering ÿc0- ÿc4Hides ÿc;35%ÿc0, ÿc3Magic Amuletsÿc0, ÿc3Large Charms//
 ItemDisplayFilterName[]:ÿc;Endgame Filtering ÿc0- ÿc4Hides ÿc;35%//
-ItemDisplayFilterName[]:ÿc;Endgame Filtering ÿc0- ÿc4Hides ÿc;35%//
+ItemDisplayFilterName[]:ÿc;Endgame Filtering ÿc0- ÿc4Hides ÿc;35%ÿc0, ÿc3Large Charms//
 ItemDisplayFilterName[]:ÿc;Endgame Filtering ÿc0- ÿc4Hides ÿc;35%ÿc0, ÿc3Crafting Bases//
 ItemDisplayFilterName[]:ÿc;Endgame Filtering ÿc0- ÿc4Hides ÿc;35%ÿc0, ÿc'Flawless ÿc0Gemsÿc0, ÿc3Large Charms//
 ItemDisplayFilterName[]:ÿc1Extreme Filtering! ÿc0- ÿc4Hides ÿc;35%ÿc0, ÿc3Crafting Basesÿc0, ÿc'Flawless ÿc0Gemsÿc0, ÿc3Large Charms//
@@ -39,7 +39,9 @@ ItemDisplay[box FILTLVL=0]:%NAME%{%GRAY%Levels 8-9-10-11 Hide Most Lower Value a
 ItemDisplay[box FILTLVL=0]:%NAME%{%GRAY%Level 12 Hides Crafting Bases, Flawless Gems, Low Value Items%CL%%NAME%}%CONTINUE%//
 
 ItemDisplay[box CLVL<50 !FILTLVL=0]:%NAME%{%NAME%%CL%%GRAY%For %GOLD%Increase and Decrease Filter Level%CL%%GRAY%For %GOLD%Always Show Items %GRAY%and Hotkeys%CL%Open Settings to Create a Toggle}%CONTINUE%//
-ItemDisplay[!BIG_GG !POE_SOUNDS !REVEALED box]:%NAME%{%NAME%%CL%%TEAL%Erazure - Main}%CONTINUE%//
+// Erazure - Main's name here: a style variant built from it (styles/, tools/build.py) puts in its own
+Alias[MAIN_VERSION_NAME]:Erazure - Main
+ItemDisplay[!BIG_GG !POE_SOUNDS !REVEALED box]:%NAME%{%NAME%%CL%%TEAL%%MAIN_VERSION_NAME%}%CONTINUE%//
 ItemDisplay[!BIG_GG !POE_SOUNDS REVEALED box]:%NAME%{%NAME%%CL%%TEAL%Erazure - Revealed}%CONTINUE%//
 ItemDisplay[!BIG_GG POE_SOUNDS !REVEALED box]:%NAME%{%NAME%%CL%%TEAL%Erazure - Main - PoE}%CONTINUE%//
 ItemDisplay[!BIG_GG POE_SOUNDS REVEALED box]:%NAME%{%NAME%%CL%%TEAL%Erazure - Revealed - PoE}%CONTINUE%//
@@ -259,6 +261,12 @@ Alias[MAGIC_ETH_CRAFT_RIGHT]:%BLUE%< %ORANGE%•
 // Magic Charms
 Alias[MAGIC_CHARM_LEFT]:%TEAL%\(%PURPLE%(
 Alias[MAGIC_CHARM_RIGHT]:%PURPLE%)%TEAL%)/
+
+// Rare Jewels: the name between (x and x)
+Alias[RARE_JEWEL_NAME]:%TAN%(x  %YELLOW%%NAME%  %TAN%x)
+
+// Magic Jewels: the name between (x and x)
+Alias[MAGIC_JEWEL_NAME]:%TAN%(x  %BLUE%Jewel  %TAN%x)
 
 // Blue Teal Highlight
 Alias[HIGHLIGHT_1_LEFT]:%BLUE%***%TEAL%****
@@ -5179,8 +5187,8 @@ ItemDisplay[RARE]:%YELLOW%%NAME%%CONTINUE%//
 ItemDisplay[ETH RARE]:%WHITE%Eth %NAME%{%NAME%}%CONTINUE%//
 
 // Rare Jewels
-ItemDisplay[!POE_SOUNDS RARE !ID jew]:%RARE_HIGH_VALUE_LEFT%  %TAN%(x  %YELLOW%%NAME%  %TAN%x)  %RARE_HIGH_VALUE_RIGHT%%YELLOW%%BORDER-8F%%MAP-9B%%DOT-5E%%PX-6D%%SOUNDID-31%// All unidentified rare Jewels
-ItemDisplay[POE_SOUNDS RARE !ID jew]:%RARE_HIGH_VALUE_LEFT%  %TAN%(x  %YELLOW%%NAME%  %TAN%x)  %RARE_HIGH_VALUE_RIGHT%%YELLOW%%BORDER-8F%%MAP-9B%%DOT-5E%%PX-6D%%SOUNDID-4715%// All unidentified rare Jewels
+ItemDisplay[!POE_SOUNDS RARE !ID jew]:%RARE_HIGH_VALUE_LEFT%  %RARE_JEWEL_NAME%  %RARE_HIGH_VALUE_RIGHT%%YELLOW%%BORDER-8F%%MAP-9B%%DOT-5E%%PX-6D%%SOUNDID-31%// All unidentified rare Jewels
+ItemDisplay[POE_SOUNDS RARE !ID jew]:%RARE_HIGH_VALUE_LEFT%  %RARE_JEWEL_NAME%  %RARE_HIGH_VALUE_RIGHT%%YELLOW%%BORDER-8F%%MAP-9B%%DOT-5E%%PX-6D%%SOUNDID-4715%// All unidentified rare Jewels
 
 // Filter level 12 
 ItemDisplay[RARE !ID (CIRC OR rin OR amu) FILTLVL=12]:%NAME%%DOT-5E%%PX-6D%%TIER-0%// No notifications or flair for rare circlets, rings, or amulets on filter level 12
@@ -5228,41 +5236,41 @@ ItemDisplay[RARE !ID HELM !CIRC !DRU !BAR (msk OR xsk OR usk OR ghm OR xhm OR uh
 // Rare Clubs
 ItemDisplay[RARE !ID !DRUID FILTLVL>7 (clb OR spc OR 9cl OR 9sp OR 7cl OR 7sp) !TOWN]:// Hide Clubs on filter levels 8+
 ItemDisplay[RARE !ID DRUID (FILTLVL~2-7 OR (FILTLVL=1 CLVL>49)) (clb OR spc OR 9cl OR 9sp OR 7cl OR 7sp) CLVL<80]:%YELLOW%•  %NAME%  •%YELLOW%// 
-ItemDisplay[RARE !ID DRUID FILTLVL=1 CLVL<50 (clb OR spc OR 9cl OR 9sp OR 7cl OR 7sp)]:%RARE_MEDIUM_VALUE_LEFT%  %NAME%  %RARE_MEDIUM_VALUE_RIGHT%%YELLOW%%BORDER-8F%%MAP-9B%%DOT-5E%%PX-6D%// 
+ItemDisplay[RARE !ID DRUID FILTLVL<2 CLVL<50 (clb OR spc OR 9cl OR 9sp OR 7cl OR 7sp)]:%RARE_MEDIUM_VALUE_LEFT%  %NAME%  %RARE_MEDIUM_VALUE_RIGHT%%YELLOW%%BORDER-8F%%MAP-9B%%DOT-5E%%PX-6D%// 
 // Rare Druid Pelts
 ItemDisplay[RARE !ID !DRUID FILTLVL>7 DRU !TOWN]:// Hide Druid Pelts on filter levels 8+
 ItemDisplay[RARE !ID DRUID (FILTLVL~2-7 OR (FILTLVL=1 CLVL>49)) DRU CLVL<80]:%YELLOW%•  %NAME%  •%YELLOW%// 
-ItemDisplay[RARE !ID DRUID FILTLVL=1 CLVL<50 DRU]:%RARE_MEDIUM_VALUE_LEFT%  %NAME%  %RARE_MEDIUM_VALUE_RIGHT%%YELLOW%%BORDER-8F%%MAP-9B%%DOT-5E%%PX-6D%// 
+ItemDisplay[RARE !ID DRUID FILTLVL<2 CLVL<50 DRU]:%RARE_MEDIUM_VALUE_LEFT%  %NAME%  %RARE_MEDIUM_VALUE_RIGHT%%YELLOW%%BORDER-8F%%MAP-9B%%DOT-5E%%PX-6D%// 
 
 // Rare Barbarian Helms
 ItemDisplay[RARE !ID (FILTLVL=10 OR FILTLVL=12) BAR !TOWN]:// Hide Barbarian Helms on filter levels 10 and 12+
 ItemDisplay[RARE !ID BARBARIAN (FILTLVL~2-7 OR (FILTLVL=1 CLVL>49)) BAR CLVL<80]:%YELLOW%•  %NAME%  •%YELLOW%// 
-ItemDisplay[RARE !ID BARBARIAN FILTLVL=1 CLVL<50 BAR]:%RARE_MEDIUM_VALUE_LEFT%  %NAME%  %RARE_MEDIUM_VALUE_RIGHT%%YELLOW%%BORDER-8F%%MAP-9B%%DOT-5E%%PX-6D%// 
+ItemDisplay[RARE !ID BARBARIAN FILTLVL<2 CLVL<50 BAR]:%RARE_MEDIUM_VALUE_LEFT%  %NAME%  %RARE_MEDIUM_VALUE_RIGHT%%YELLOW%%BORDER-8F%%MAP-9B%%DOT-5E%%PX-6D%// 
 
 // Rare Sorceress Orbs
 ItemDisplay[RARE !ID !SORCERESS FILTLVL>7 SOR !TOWN]:// Hide all Sorceress Orbs for non-Sorceresses on filter levels 8+
 ItemDisplay[RARE !ID SORCERESS FILTLVL>7 SOR !(ob5 OR oba OR obf) !TOWN]:// Hide all but 3 slots Sorceress Orbs on filter levels 8+ for Sorceresses
 ItemDisplay[RARE !ID SORCERESS (FILTLVL~2-7 OR (FILTLVL=1 CLVL>49)) SOR CLVL<80]:%YELLOW%•  %NAME%  •%YELLOW%// 
-ItemDisplay[RARE !ID SORCERESS FILTLVL=1 CLVL<50 SOR]:%RARE_MEDIUM_VALUE_LEFT%  %NAME%  %RARE_MEDIUM_VALUE_RIGHT%%YELLOW%%BORDER-8F%%MAP-9B%%DOT-5E%%PX-6D%// 
+ItemDisplay[RARE !ID SORCERESS FILTLVL<2 CLVL<50 SOR]:%RARE_MEDIUM_VALUE_LEFT%  %NAME%  %RARE_MEDIUM_VALUE_RIGHT%%YELLOW%%BORDER-8F%%MAP-9B%%DOT-5E%%PX-6D%// 
 // Rare Staves
 ItemDisplay[RARE !ID !SORCERESS FILTLVL>7 STAFF !TOWN]:// Hide Staves on filter levels 8+
 ItemDisplay[RARE !ID SORCERESS FILTLVL>7 STAFF !(wst OR 8ws OR 6ws) !TOWN]:// Hide Staves on filter levels 8+
 ItemDisplay[RARE !ID SORCERESS (FILTLVL~2-7 OR (FILTLVL=1 CLVL>49)) STAFF CLVL<80]:%YELLOW%•  %NAME%  •%YELLOW%// 
-ItemDisplay[RARE !ID SORCERESS FILTLVL=1 CLVL<50 STAFF]:%RARE_MEDIUM_VALUE_LEFT%  %NAME%  %RARE_MEDIUM_VALUE_RIGHT%%YELLOW%%BORDER-8F%%MAP-9B%%DOT-5E%%PX-6D%// 
+ItemDisplay[RARE !ID SORCERESS FILTLVL<2 CLVL<50 STAFF]:%RARE_MEDIUM_VALUE_LEFT%  %NAME%  %RARE_MEDIUM_VALUE_RIGHT%%YELLOW%%BORDER-8F%%MAP-9B%%DOT-5E%%PX-6D%// 
 
 // Rare Wands
 ItemDisplay[RARE !ID !NECROMANCER FILTLVL>7 WAND !TOWN]:// Hide Wands on filter levels 8+
 ItemDisplay[RARE !ID NECROMANCER (FILTLVL~2-7 OR (FILTLVL=1 CLVL>49)) WAND CLVL<80]:%YELLOW%•  %NAME%  •%YELLOW%// 
-ItemDisplay[RARE !ID NECROMANCER FILTLVL=1 CLVL<50 WAND]:%RARE_MEDIUM_VALUE_LEFT%  %NAME%  %RARE_MEDIUM_VALUE_RIGHT%%YELLOW%%BORDER-8F%%MAP-9B%%DOT-5E%%PX-6D%// 
+ItemDisplay[RARE !ID NECROMANCER FILTLVL<2 CLVL<50 WAND]:%RARE_MEDIUM_VALUE_LEFT%  %NAME%  %RARE_MEDIUM_VALUE_RIGHT%%YELLOW%%BORDER-8F%%MAP-9B%%DOT-5E%%PX-6D%// 
 // Rare Necromancer Heads
 ItemDisplay[RARE !ID !NECROMANCER FILTLVL>7 NEC !TOWN]:// Hide Necromancer Heads on filter levels 8+
 ItemDisplay[RARE !ID NECROMANCER (FILTLVL~2-7 OR (FILTLVL=1 CLVL>49)) NEC CLVL<80]:%YELLOW%•  %NAME%  •%YELLOW%// 
-ItemDisplay[RARE !ID NECROMANCER FILTLVL=1 CLVL<50 NEC]:%RARE_MEDIUM_VALUE_LEFT%  %NAME%  %RARE_MEDIUM_VALUE_RIGHT%%YELLOW%%BORDER-8F%%MAP-9B%%DOT-5E%%PX-6D%// 
+ItemDisplay[RARE !ID NECROMANCER FILTLVL<2 CLVL<50 NEC]:%RARE_MEDIUM_VALUE_LEFT%  %NAME%  %RARE_MEDIUM_VALUE_RIGHT%%YELLOW%%BORDER-8F%%MAP-9B%%DOT-5E%%PX-6D%// 
 
 // Rare Scepters
 ItemDisplay[RARE !ID !PALADIN FILTLVL>7 SCEPTER !TOWN]:// Hide Scepters on filter levels 8+
 ItemDisplay[RARE !ID PALADIN (FILTLVL~2-7 OR (FILTLVL=1 CLVL>49)) SCEPTER CLVL<80]:%YELLOW%•  %NAME%  •%YELLOW%// 
-ItemDisplay[RARE !ID PALADIN FILTLVL=1 CLVL<50 SCEPTER]:%RARE_MEDIUM_VALUE_LEFT%  %NAME%  %RARE_MEDIUM_VALUE_RIGHT%%YELLOW%%BORDER-8F%%MAP-9B%%DOT-5E%%PX-6D%// 
+ItemDisplay[RARE !ID PALADIN FILTLVL<2 CLVL<50 SCEPTER]:%RARE_MEDIUM_VALUE_LEFT%  %NAME%  %RARE_MEDIUM_VALUE_RIGHT%%YELLOW%%BORDER-8F%%MAP-9B%%DOT-5E%%PX-6D%// 
 // Rare Paladin Shields
 ItemDisplay[RARE !ID DIN (ALVL>84 OR CRAFTALVL>84) FILTLVL~0-7]:%RARE_MEDIUM_VALUE_LEFT%  %NAME%  %RARE_MEDIUM_VALUE_RIGHT%%YELLOW%%BORDER-8F%%MAP-9B%%DOT-5E%%PX-6D%%TIER-0%//
 ItemDisplay[RARE !ID DIN NORM !PALADIN FILTLVL>7 !TOWN]:// Hide Normal quality Rare Paladin Shields on filter levels 8+
@@ -5274,7 +5282,7 @@ ItemDisplay[RARE !ID SIN NORM !ASSASSIN (wrb OR ces OR clw OR !ETH) FILTLVL>7 !T
 ItemDisplay[RARE !ID SIN EXC !ASSASSIN (9wb OR 9cs OR 9lw OR !ETH) FILTLVL>7 !TOWN]:// Hide Exceptional quality Rare Claws on filter levels 8+
 ItemDisplay[RARE !ID SIN ELT !ASSASSIN (7wb OR 7cs OR 7lw OR !ETH) FILTLVL>7 !TOWN]:// Hide Elite quality Rare Claws After on filter levels 8+
 ItemDisplay[RARE !ID SIN ASSASSIN (FILTLVL~2-7 OR (FILTLVL=1 CLVL>49)) CLVL<80]:%YELLOW%•  %NAME%  •%YELLOW%// 
-ItemDisplay[RARE !ID SIN ASSASSIN FILTLVL=1 CLVL<50]:%RARE_MEDIUM_VALUE_LEFT%  %NAME%  %RARE_MEDIUM_VALUE_RIGHT%%YELLOW%%BORDER-8F%%MAP-9B%%DOT-5E%%PX-6D%// 
+ItemDisplay[RARE !ID SIN ASSASSIN FILTLVL<2 CLVL<50]:%RARE_MEDIUM_VALUE_LEFT%  %NAME%  %RARE_MEDIUM_VALUE_RIGHT%%YELLOW%%BORDER-8F%%MAP-9B%%DOT-5E%%PX-6D%// 
 // Rare Daggers
 ItemDisplay[RARE !ID NORM !ETH !THROWING DAGGER FILTLVL>2 !TOWN]:// Hide non-Ethereal Normal quality Rare Daggers on filter levels 3+
 ItemDisplay[RARE !ID EXC !ETH !THROWING DAGGER FILTLVL>7 !TOWN]:// Hide non-Ethereal Exceptional quality Rare Daggers on filter levels 8+
@@ -5395,17 +5403,17 @@ ItemDisplay[MAG]:%BLUE%%NAME%{%NAME%}%CONTINUE%//
 ItemDisplay[ETH MAG]:%WHITE%Eth %NAME%{%NAME%}%CONTINUE%//
 
 // Magic Amulets
-ItemDisplay[MAG !ID amu FILTLVL>7 !TOWN]:// Hide unidentified magic amulets on filter levels 8+
+ItemDisplay[MAG !ID amu FILTLVL>6 !TOWN]:// Hide unidentified magic amulets on filter levels 7+
 
-ItemDisplay[MAG !ID amu CLVL>79 FILTLVL<8]:%NAME%// No map or chat notification for magic amulets past level 80
-ItemDisplay[MAG !ID amu CLVL<80 FILTLVL<8]:%TAN%o  %NAME%  %TAN%o%BLUE%%BORDER-91%%MAP-97%%DOT-5A%%PX-DA%// All unidentified amulets
+ItemDisplay[MAG !ID amu CLVL>79 FILTLVL<7]:%NAME%// No map or chat notification for magic amulets past level 80
+ItemDisplay[MAG !ID amu CLVL<80 FILTLVL<7]:%TAN%o  %NAME%  %TAN%o%BLUE%%BORDER-91%%MAP-97%%DOT-5A%%PX-DA%// All unidentified amulets
 
 // Magic Charms
 
-// Hide all Large Charms on Filter Levels 11-12
-ItemDisplay[MAG !ID (FILTLVL~11-12) cm2 !TOWN]://
-// Hide Large Charms that aren't item level 90+ on Filter Levels 8-10
-ItemDisplay[MAG !ID ILVL<90 (FILTLVL~8-10) cm2 !TOWN]://
+// Hide all Large Charms on Filter Levels 7, 9 and 11-12
+ItemDisplay[MAG !ID (FILTLVL=7 OR FILTLVL=9 OR FILTLVL~11-12) cm2 !TOWN]://
+// Hide Large Charms that aren't item level 90+ on Filter Levels 8 and 10
+ItemDisplay[MAG !ID ILVL<90 (FILTLVL=8 OR FILTLVL=10) cm2 !TOWN]://
 // Hide Small and Grand Charms that aren't item level 90+ on Filter Level 12
 ItemDisplay[MAG !ID ILVL<90 FILTLVL=12 (cm1 OR cm3) !TOWN]://
 
@@ -5426,7 +5434,7 @@ ItemDisplay[MAG !ID (cm1 OR cm3) FILTLVL~5-11 ILVL<90]:%NAME%%MAP-91%%DOT-C5%%PX
 ItemDisplay[MAG !ID (cm1 OR cm3) FILTLVL<5]:%NAME%%BORDER-8F%%MAP-91%%DOT-C5%%PX-9F%%CONTINUE%//
 
 // Large Charms
-ItemDisplay[MAG !ID cm2 FILTLVL<8]:%NAME%%BORDER-8F%%MAP-91%%DOT-C5%%PX-9F%%CONTINUE%//
+ItemDisplay[MAG !ID cm2 FILTLVL<7]:%NAME%%BORDER-8F%%MAP-91%%DOT-C5%%PX-9F%%CONTINUE%//
 
 // Charm Symbols
 // Small and Grand Charms
@@ -5434,9 +5442,9 @@ ItemDisplay[MAG !ID (cm1 OR cm3) ILVL>89]:%TEAL%\%BLUE%(%PURPLE%(  %NAME%  %PURP
 ItemDisplay[MAG !ID (cm1 OR cm3) FILTLVL<5 ILVL<90]:%TEAL%\%BLUE%(%PURPLE%(  %NAME%  %PURPLE%)%BLUE%)%TEAL%/%BLUE%{%NAME%}//
 ItemDisplay[MAG !ID (cm1 OR cm3) FILTLVL>4 ILVL<90]:%TEAL%\%BLUE%((  %NAME%  %BLUE%))%TEAL%/%BLUE%{%NAME%}//
 // Large Charms
-ItemDisplay[MAG !ID cm2 FILTLVL~8-10 ILVL>89]:%PURPLE%-  %NAME%  %PURPLE%-%BLUE%{%NAME%}//
-ItemDisplay[MAG !ID cm2 FILTLVL~8-10 ILVL<90]:%TEAL%-  %NAME%  %TEAL%-%BLUE%{%NAME%}//
-ItemDisplay[MAG !ID cm2 FILTLVL<8]:%TEAL%\%BLUE%(%PURPLE%(  %NAME%  %PURPLE%)%BLUE%)%TEAL%/%BLUE%{%NAME%}//
+ItemDisplay[MAG !ID cm2 (FILTLVL=8 OR FILTLVL=10) ILVL>89]:%PURPLE%-  %NAME%  %PURPLE%-%BLUE%{%NAME%}//
+ItemDisplay[MAG !ID cm2 (FILTLVL=8 OR FILTLVL=10) ILVL<90]:%TEAL%-  %NAME%  %TEAL%-%BLUE%{%NAME%}//
+ItemDisplay[MAG !ID cm2 FILTLVL<7]:%TEAL%\%BLUE%(%PURPLE%(  %NAME%  %PURPLE%)%BLUE%)%TEAL%/%BLUE%{%NAME%}//
 
 // Magic Rings
 ItemDisplay[MAG !ID rin CLVL>79 FILTLVL>2 !TOWN]:// Hide unidentified magic rings on filter level 3 or higher
@@ -5452,11 +5460,11 @@ ItemDisplay[MAG !ID !ETH CIRC FILTLVL<5]:%TAN%o  %NAME%  %TAN%o%BLUE%%BORDER-91%
 ItemDisplay[jewf QTY>1]:%TAN%(x %BLUE%Jewel %TAN%x) %WHITE%Fragments %TAN%x %WHITE%%QTY%{%BLUE%Jewel %WHITE%when crafting%CL%%WHITE%Use in place of a}%MAP-91%%DOT-97%%PX-A6%// Jewel fragments
 ItemDisplay[jewf QTY=1]:%TAN%(x %BLUE%Jewel %TAN%x) %WHITE%Fragment{%BLUE%Jewel %WHITE%when crafting%CL%%WHITE%Use in place of a}%MAP-91%%DOT-97%%PX-A6%// Jewel fragments
 
-ItemDisplay[MAG !ID jew MAPID~183-184]:%TAN%(x  %BLUE%Jewel  %TAN%x)%BLUE%%DOT-97%%PX-0E%%TIER-0%// All unidentified magic jewels
-ItemDisplay[MAG !ID jew CLVL>29 FILTLVL~5-11 !MAPID~183-184]:%TAN%(x  %BLUE%Jewel  %TAN%x)%BLUE%%DOT-97%%PX-0E%// All unidentified magic jewels
-ItemDisplay[MAG !ID jew CLVL>29 FILTLVL=12 !MAPID~183-184]:%TAN%(x  %BLUE%Jewel  %TAN%x)%BLUE%%DOT-97%%PX-0E%%TIER-0%// All unidentified magic jewels
-ItemDisplay[MAG !ID jew CLVL>29 FILTLVL<5 !MAPID~183-184]:%TAN%* %BLUE%>  %TAN%(x  %BLUE%Jewel  %TAN%x)  %BLUE%< %TAN%*%BLUE%%MAP-91%%DOT-97%%PX-0E%// All unidentified magic jewels
-ItemDisplay[MAG !ID jew CLVL<30 FILTLVL<12]:%TAN%* %BLUE%>  %TAN%(x  %BLUE%Jewel  %TAN%x)  %BLUE%< %TAN%*%BLUE%%MAP-91%%DOT-97%%PX-0E%// All unidentified magic jewels
+ItemDisplay[MAG !ID jew MAPID~183-184]:%MAGIC_JEWEL_NAME%%BLUE%%DOT-97%%PX-0E%%TIER-0%// All unidentified magic jewels
+ItemDisplay[MAG !ID jew CLVL>29 FILTLVL~5-11 !MAPID~183-184]:%MAGIC_JEWEL_NAME%%BLUE%%DOT-97%%PX-0E%// All unidentified magic jewels
+ItemDisplay[MAG !ID jew CLVL>29 FILTLVL=12 !MAPID~183-184]:%MAGIC_JEWEL_NAME%%BLUE%%DOT-97%%PX-0E%%TIER-0%// All unidentified magic jewels
+ItemDisplay[MAG !ID jew CLVL>29 FILTLVL<5 !MAPID~183-184]:%TAN%* %BLUE%>  %MAGIC_JEWEL_NAME%  %BLUE%< %TAN%*%BLUE%%MAP-91%%DOT-97%%PX-0E%// All unidentified magic jewels
+ItemDisplay[MAG !ID jew CLVL<30 FILTLVL<12]:%TAN%* %BLUE%>  %MAGIC_JEWEL_NAME%  %BLUE%< %TAN%*%BLUE%%MAP-91%%DOT-97%%PX-0E%// All unidentified magic jewels
 
 // Magic Amazon Spears
 

@@ -63,6 +63,11 @@
                     "download_url": "https://raw.githubusercontent.com/FiltersBy-Erazure/PD2-Loot-Filter/main/Erazure-Main.filter"
                 },
                 {
+                    "name": "Erazure-Minimal.filter",
+                    "url": "https://api.github.com/repos/FiltersBy-Erazure/PD2-Loot-Filter/contents/Erazure-Minimal.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/FiltersBy-Erazure/PD2-Loot-Filter/main/Erazure-Minimal.filter"
+                },
+                {
                     "name": "Erazure-Revealed-BIG-GG-PoE.filter",
                     "url": "https://api.github.com/repos/FiltersBy-Erazure/PD2-Loot-Filter/contents/Erazure-Revealed-BIG-GG-PoE.filter?ref=main",
                     "download_url": "https://raw.githubusercontent.com/FiltersBy-Erazure/PD2-Loot-Filter/main/Erazure-Revealed-BIG-GG-PoE.filter"
@@ -725,11 +730,6 @@
                     "name": "Vylens.filter",
                     "url": "https://api.github.com/repos/Vylens/Vylens-PD2-Filter/contents/Vylens.filter?ref=main",
                     "download_url": "https://raw.githubusercontent.com/Vylens/Vylens-PD2-Filter/main/Vylens.filter"
-                },
-                {
-                    "name": "Vylens_beta.filter",
-                    "url": "https://api.github.com/repos/Vylens/Vylens-PD2-Filter/contents/Vylens_beta.filter?ref=main",
-                    "download_url": "https://raw.githubusercontent.com/Vylens/Vylens-PD2-Filter/main/Vylens_beta.filter"
                 }
             ]
         }
