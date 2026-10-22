@@ -1,6 +1,7 @@
 //	Roofoo's PD2 Loot Filter for Season 12: ver 13.0.8
-//	BETA for Season 14: holy grail tags (found items hide unless the filter shows them specifically),
-//	HiimFilter skill weapon bases on every level, and a cleaned-up filter. Made with PD2 Filter Forge.
+//	BETA for Season 14: holy grail tags (found items hide only outside town and while unidentified), every item shows in town
+//	(with a warning when it's hidden outside), identified uniques and sets always show,
+//	staff mod weapon bases on every level, and a cleaned-up filter. Made with PD2 Filter Forge.
 //
 //	Editor - twitch.tv/roofooevazan
 //	Co-Editor - twitch.tv/enpherno
@@ -20,13 +21,13 @@ ItemDisplayFilterName[]: Max-Strictness Filter - No Large Charms
 
 //=================== HOLY GRAIL ===================
 // Made in PD2 Filter Forge (Season 14): tags uniques and sets you haven't found yet, and hides the ones you have. Does nothing on older game versions.
-//@ffg options {"uniques":true,"sets":true,"mark":true,"markText":" [GRAIL]","markColor":"PURPLE","unid":"any","hide":"always","keepExtra":[],"hideAnyway":[],"icon":{"size":"border","hex":"9B"},"sound":4715}
+//@ffg options {"uniques":true,"sets":true,"mark":true,"markText":" [GRAIL]","markColor":"PURPLE","unid":"any","hide":"always","keepExtra":[],"hideAnyway":[],"icon":{"size":"border","hex":"9B"},"sound":4715,"outsideTownOnly":true,"unidOnly":true}
 ItemDisplay[UNI !((7qs OR 9bw OR ba6 OR jew) !ID) !ALLDISCOVERED]: %NAME%%PURPLE% [GRAIL]%BORDER-9B%%SOUNDID-4715%%CONTINUE% //@ffg uni new
 ItemDisplay[UNI (7qs OR 9bw OR ba6 OR jew) !ID !ANYDISCOVERED]: %NAME%%PURPLE% [GRAIL]%BORDER-9B%%SOUNDID-4715%%CONTINUE% //@ffg uni new variants
-ItemDisplay[UNI !(!ALLDISCOVERED) !(6bs OR 6cs OR 6hx OR 6lw OR 6sw OR 6ws OR 72a OR 7b7 OR 7b8 OR 7bk OR 7bl OR 7bt OR 7bw OR 7cr OR 7fl OR 7ga OR 7gd OR 7gi OR 7gm OR 7gs OR 7gw OR 7ls OR 7lw OR 7m7 OR 7p7 OR 7pa OR 7qs OR 7s8 OR 7sc OR 7sp OR 7sr OR 7st OR 7ts OR 7vo OR 7wa OR 7wb OR 7wc OR 7wh OR 7ws OR 7xf OR 7yw OR 8cb OR 8hx OR 8mx OR 8rx OR 8ws OR 9bw OR 9gm OR 9gw OR 9kr OR 9m9 OR 9p9 OR 9s8 OR 9wc OR aar OR ama OR amb OR amc OR amd OR amf OR amu OR aqv2 OR aqv3 OR bae OR baf OR bsw OR ci2 OR ci3 OR cm1 OR cm2 OR cm3 OR cqv2 OR cqv3 OR dr6 OR dra OR drb OR drc OR drd OR dre OR drf OR gix OR hbt OR jew OR ltp OR mau OR mbt OR ned OR nee OR nef OR obc OR obd OR obe OR obf OR pa9 OR pab OR pac OR pae OR paf OR pik OR ram OR rar OR rbe OR rin OR tgl OR uap OR uar OR uh9 OR uhb OR uhc OR uhg OR uhl OR uhm OR uit OR ulb OR ulc OR uld OR ulm OR umb OR umc OR umg OR ung OR uow OR upk OR upl OR urg OR urn OR ush OR usk OR utg OR utp OR uts OR utu OR uui OR uul OR uvb OR uvc OR uvg OR vbl OR xar OR xea OR xh9 OR xhb OR xhg OR xhm OR xhn OR xlg OR xlt OR xmb OR xmg OR xow OR xpl OR xsh OR xtb OR xtg OR xth OR xtp OR xul OR xvb OR xvg OR zhb OR zlb OR ztb OR zvb)]: //@ffg uni found
-ItemDisplay[UNI !(!ANYDISCOVERED) (7qs OR 9bw OR ba6 OR jew) !ID !(6bs OR 6cs OR 6hx OR 6lw OR 6sw OR 6ws OR 72a OR 7b7 OR 7b8 OR 7bk OR 7bl OR 7bt OR 7bw OR 7cr OR 7fl OR 7ga OR 7gd OR 7gi OR 7gm OR 7gs OR 7gw OR 7ls OR 7lw OR 7m7 OR 7p7 OR 7pa OR 7qs OR 7s8 OR 7sc OR 7sp OR 7sr OR 7st OR 7ts OR 7vo OR 7wa OR 7wb OR 7wc OR 7wh OR 7ws OR 7xf OR 7yw OR 8cb OR 8hx OR 8mx OR 8rx OR 8ws OR 9bw OR 9gm OR 9gw OR 9kr OR 9m9 OR 9p9 OR 9s8 OR 9wc OR aar OR ama OR amb OR amc OR amd OR amf OR amu OR aqv2 OR aqv3 OR bae OR baf OR bsw OR ci2 OR ci3 OR cm1 OR cm2 OR cm3 OR cqv2 OR cqv3 OR dr6 OR dra OR drb OR drc OR drd OR dre OR drf OR gix OR hbt OR jew OR ltp OR mau OR mbt OR ned OR nee OR nef OR obc OR obd OR obe OR obf OR pa9 OR pab OR pac OR pae OR paf OR pik OR ram OR rar OR rbe OR rin OR tgl OR uap OR uar OR uh9 OR uhb OR uhc OR uhg OR uhl OR uhm OR uit OR ulb OR ulc OR uld OR ulm OR umb OR umc OR umg OR ung OR uow OR upk OR upl OR urg OR urn OR ush OR usk OR utg OR utp OR uts OR utu OR uui OR uul OR uvb OR uvc OR uvg OR vbl OR xar OR xea OR xh9 OR xhb OR xhg OR xhm OR xhn OR xlg OR xlt OR xmb OR xmg OR xow OR xpl OR xsh OR xtb OR xtg OR xth OR xtp OR xul OR xvb OR xvg OR zhb OR zlb OR ztb OR zvb)]: //@ffg uni variants
+ItemDisplay[UNI !(!ALLDISCOVERED) !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109) !ID !(6bs OR 6cs OR 6hx OR 6lw OR 6sw OR 6ws OR 72a OR 7b7 OR 7b8 OR 7bk OR 7bl OR 7bt OR 7bw OR 7cr OR 7fl OR 7ga OR 7gd OR 7gi OR 7gm OR 7gs OR 7gw OR 7ls OR 7lw OR 7m7 OR 7p7 OR 7pa OR 7qs OR 7s8 OR 7sc OR 7sp OR 7sr OR 7st OR 7ts OR 7vo OR 7wa OR 7wb OR 7wc OR 7wh OR 7ws OR 7xf OR 7yw OR 8cb OR 8hx OR 8mx OR 8rx OR 8ws OR 9bw OR 9gm OR 9gw OR 9kr OR 9m9 OR 9p9 OR 9s8 OR 9wc OR aar OR ama OR amb OR amc OR amd OR amf OR amu OR aqv2 OR aqv3 OR bae OR baf OR bsw OR ci2 OR ci3 OR cm1 OR cm2 OR cm3 OR cqv2 OR cqv3 OR dr6 OR dra OR drb OR drc OR drd OR dre OR drf OR gix OR hbt OR jew OR ltp OR mau OR mbt OR ned OR nee OR nef OR obc OR obd OR obe OR obf OR pa9 OR pab OR pac OR pae OR paf OR pik OR ram OR rar OR rbe OR rin OR tgl OR uap OR uar OR uh9 OR uhb OR uhc OR uhg OR uhl OR uhm OR uit OR ulb OR ulc OR uld OR ulm OR umb OR umc OR umg OR ung OR uow OR upk OR upl OR urg OR urn OR ush OR usk OR utg OR utp OR uts OR utu OR uui OR uul OR uvb OR uvc OR uvg OR vbl OR xar OR xea OR xh9 OR xhb OR xhg OR xhm OR xhn OR xlg OR xlt OR xmb OR xmg OR xow OR xpl OR xsh OR xtb OR xtg OR xth OR xtp OR xul OR xvb OR xvg OR zhb OR zlb OR ztb OR zvb)]: //@ffg uni found
+ItemDisplay[UNI !(!ANYDISCOVERED) (7qs OR 9bw OR ba6 OR jew) !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109) !ID !(6bs OR 6cs OR 6hx OR 6lw OR 6sw OR 6ws OR 72a OR 7b7 OR 7b8 OR 7bk OR 7bl OR 7bt OR 7bw OR 7cr OR 7fl OR 7ga OR 7gd OR 7gi OR 7gm OR 7gs OR 7gw OR 7ls OR 7lw OR 7m7 OR 7p7 OR 7pa OR 7qs OR 7s8 OR 7sc OR 7sp OR 7sr OR 7st OR 7ts OR 7vo OR 7wa OR 7wb OR 7wc OR 7wh OR 7ws OR 7xf OR 7yw OR 8cb OR 8hx OR 8mx OR 8rx OR 8ws OR 9bw OR 9gm OR 9gw OR 9kr OR 9m9 OR 9p9 OR 9s8 OR 9wc OR aar OR ama OR amb OR amc OR amd OR amf OR amu OR aqv2 OR aqv3 OR bae OR baf OR bsw OR ci2 OR ci3 OR cm1 OR cm2 OR cm3 OR cqv2 OR cqv3 OR dr6 OR dra OR drb OR drc OR drd OR dre OR drf OR gix OR hbt OR jew OR ltp OR mau OR mbt OR ned OR nee OR nef OR obc OR obd OR obe OR obf OR pa9 OR pab OR pac OR pae OR paf OR pik OR ram OR rar OR rbe OR rin OR tgl OR uap OR uar OR uh9 OR uhb OR uhc OR uhg OR uhl OR uhm OR uit OR ulb OR ulc OR uld OR ulm OR umb OR umc OR umg OR ung OR uow OR upk OR upl OR urg OR urn OR ush OR usk OR utg OR utp OR uts OR utu OR uui OR uul OR uvb OR uvc OR uvg OR vbl OR xar OR xea OR xh9 OR xhb OR xhg OR xhm OR xhn OR xlg OR xlt OR xmb OR xmg OR xow OR xpl OR xsh OR xtb OR xtg OR xth OR xtp OR xul OR xvb OR xvg OR zhb OR zlb OR ztb OR zvb)]: //@ffg uni variants
 ItemDisplay[SET !ALLDISCOVERED]: %NAME%%PURPLE% [GRAIL]%BORDER-9B%%SOUNDID-4715%%CONTINUE% //@ffg set new
-ItemDisplay[SET !(!ALLDISCOVERED) !(7m7 OR 7qr OR 7ws OR amu OR dr8 OR lbt OR ne9 OR rin OR uar OR ucl OR uh9 OR utc OR uth OR xar OR xh9 OR xhm OR xmg OR xul)]: //@ffg set found
+ItemDisplay[SET !(!ALLDISCOVERED) !(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109) !ID !(7m7 OR 7qr OR 7ws OR amu OR dr8 OR lbt OR ne9 OR rin OR uar OR ucl OR uh9 OR utc OR uth OR xar OR xh9 OR xhm OR xmg OR xul)]: //@ffg set found
 
 // Horadric Cube tooltip shows filter credits and the active filter level
 ItemDisplay[box]:%NAME%%CONTINUE%
@@ -95,7 +96,7 @@ Alias[FL8_ID_MR]: (ID (MAG OR RARE))
 // FL9 charm override
 ItemDisplay[FILTLVL=9 cm2 MAG ID]: %NAME%{%NAME%}%CONTINUE%
 ItemDisplay[FILTLVL=9 FL8_OUTSIDE cm2 MAG !ID]:
-ItemDisplay[FILTLVL=9 FL8_OUTSIDE rin SET]:
+ItemDisplay[FILTLVL=9 FL8_OUTSIDE rin SET !ID]:
 ItemDisplay[FILTLVL=9 FL8_OUTSIDE yps]:
 
 // FL8/9 quick-pass rules
@@ -682,11 +683,15 @@ ItemDisplay[(ubtm OR dcma OR dcso OR dcbl OR dcho OR rtma OR rtmv OR rtmo OR cm2
 ItemDisplay[MAPTIER>0 !ID UNI]: %SOUNDID-35%%NAME%{%NAME%}%CONTINUE% //hellforgesmash - for unique maps
 
 // Gold hiding thresholds
+ItemDisplay[(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109) (GOLD<100 (CLVL>11 OR FILTLVL>5))]: %NAME%{%PURPLE%Decrease Your Filter Level in Settings to Display It All The Time%NL%%WHITE%Outside the Town/In the Fight Field it is Going to be %RED%HIDDEN%NL%WARNING%WHITE%: At Current Filter LVL this item is shown %RED%ONLY %WHITE%in Town%CL%%NAME%} // Filter Forge: shows it in town, with a warning
 ItemDisplay[GOLD<100 (CLVL>11 OR FILTLVL>5)]:
+ItemDisplay[(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109) (GOLD<200 (CLVL>23 OR FILTLVL>5))]: %NAME%{%PURPLE%Decrease Your Filter Level in Settings to Display It All The Time%NL%%WHITE%Outside the Town/In the Fight Field it is Going to be %RED%HIDDEN%NL%WARNING%WHITE%: At Current Filter LVL this item is shown %RED%ONLY %WHITE%in Town%CL%%NAME%} // Filter Forge: shows it in town, with a warning
 ItemDisplay[GOLD<200 (CLVL>23 OR FILTLVL>5)]:
 ItemDisplay[GOLD<400 (CLVL>39 OR FILTLVL>5)]:
+ItemDisplay[(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109) (GOLD<1000 CLVL>79)]: %NAME%{%PURPLE%Decrease Your Filter Level in Settings to Display It All The Time%NL%%WHITE%Outside the Town/In the Fight Field it is Going to be %RED%HIDDEN%NL%WARNING%WHITE%: At Current Filter LVL this item is shown %RED%ONLY %WHITE%in Town%CL%%NAME%} // Filter Forge: shows it in town, with a warning
 ItemDisplay[GOLD<1000 CLVL>79]:
 ItemDisplay[GOLD<2000 CLVL>79 FILTLVL>1]:
+ItemDisplay[(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109) (GOLD<3000 CLVL>79 FILTLVL>5)]: %NAME%{%PURPLE%Decrease Your Filter Level in Settings to Display It All The Time%NL%%WHITE%Outside the Town/In the Fight Field it is Going to be %RED%HIDDEN%NL%WARNING%WHITE%: At Current Filter LVL this item is shown %RED%ONLY %WHITE%in Town%CL%%NAME%} // Filter Forge: shows it in town, with a warning
 ItemDisplay[GOLD<3000 CLVL>79 FILTLVL>5]:
 ItemDisplay[GOLD<5000 CLVL>79 FILTLVL>7]:
 
@@ -2080,6 +2085,7 @@ ItemDisplay[ETH OR (DIN NMAG !RW RES>0) OR (DIN NMAG !RW EDAM>0) OR ((AMASTAFF O
 // Health & Mana & Rejuvenation Potions
 ItemDisplay[rvl]: %PURPLE%R %WHITE%Full{%WHITE%Full Rejuvenation Potion}%CONTINUE%
 ItemDisplay[rvs]: %PURPLE%r %WHITE%35%{%PURPLE%r %WHITE%35%, Perf %YELLOW%O%WHITE%, %BLUE%Ring %WHITE%= Light Res %BLUE%Ring%NL%%WHITE%3x %PURPLE%r %WHITE%35% = %PURPLE%R%WHITE% Full%NL%%TAN% Note%WHITE%: Crafting Recipes:%NL%Rejuvenation Potion}%CONTINUE%
+ItemDisplay[(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109) (rvs FILTLVL>7 (rvs))]: %NAME%{%PURPLE%Decrease Your Filter Level in Settings to Display It All The Time%NL%%WHITE%Outside the Town/In the Fight Field it is Going to be %RED%HIDDEN%NL%WARNING%WHITE%: At Current Filter LVL this item is shown %RED%ONLY %WHITE%in Town%CL%%NAME%} // Filter Forge: shows it in town, with a warning
 ItemDisplay[rvs FILTLVL>7]: {%NAME%}%CONTINUE%
 ItemDisplay[hp5]: %RED%!%WHITE%Hp{%WHITE%Super Healing Potion}%CONTINUE%
 ItemDisplay[mp5]: %BLUE%!%WHITE%Mp{%WHITE%Super Mana Potion}%CONTINUE%
@@ -2091,8 +2097,11 @@ ItemDisplay[mp1]: %BLUE%!%WHITE%minor mp{%WHITE%Minor Mana Potion}%CONTINUE%
 ItemDisplay[mp2]: %BLUE%!%WHITE%light mp{%WHITE%Light Mana Potion}%CONTINUE%
 ItemDisplay[mp3]: %BLUE%!%WHITE%mana{%WHITE%Mana Potion}%CONTINUE%
 ItemDisplay[mp4]: %BLUE%!%WHITE%great mp{%WHITE%Greater Mana Potion}%CONTINUE%
+ItemDisplay[(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109) ((hp1 OR hp2 OR hp3 OR mp1 OR mp2 OR mp3) ((FILTLVL>0 DIFF>0) OR (FILTLVL=3 OR FILTLVL=5 OR FILTLVL>6)) !SHOP)]: %NAME%{%PURPLE%Decrease Your Filter Level in Settings to Display It All The Time%NL%%WHITE%Outside the Town/In the Fight Field it is Going to be %RED%HIDDEN%NL%WARNING%WHITE%: At Current Filter LVL this item is shown %RED%ONLY %WHITE%in Town%CL%%NAME%} // Filter Forge: shows it in town, with a warning
 ItemDisplay[(hp1 OR hp2 OR hp3 OR mp1 OR mp2 OR mp3) ((FILTLVL>0 DIFF>0) OR (FILTLVL=3 OR FILTLVL=5 OR FILTLVL>6)) !SHOP]: {%NAME%}
+ItemDisplay[(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109) ((hp4 OR mp4) ((FILTLVL>0 DIFF>1) OR (FILTLVL=3 OR FILTLVL=5 OR FILTLVL>6)) !SHOP)]: %NAME%{%PURPLE%Decrease Your Filter Level in Settings to Display It All The Time%NL%%WHITE%Outside the Town/In the Fight Field it is Going to be %RED%HIDDEN%NL%WARNING%WHITE%: At Current Filter LVL this item is shown %RED%ONLY %WHITE%in Town%CL%%NAME%} // Filter Forge: shows it in town, with a warning
 ItemDisplay[(hp4 OR mp4) ((FILTLVL>0 DIFF>1) OR (FILTLVL=3 OR FILTLVL=5 OR FILTLVL>6)) !SHOP]: {%NAME%}
+ItemDisplay[(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109) ((hp5 OR mp5) (FILTLVL=3 OR FILTLVL=5 OR FILTLVL>6) !SHOP)]: %NAME%{%PURPLE%Decrease Your Filter Level in Settings to Display It All The Time%NL%%WHITE%Outside the Town/In the Fight Field it is Going to be %RED%HIDDEN%NL%WARNING%WHITE%: At Current Filter LVL this item is shown %RED%ONLY %WHITE%in Town%CL%%NAME%} // Filter Forge: shows it in town, with a warning
 ItemDisplay[(hp5 OR mp5) (FILTLVL=3 OR FILTLVL=5 OR FILTLVL>6) !SHOP]: {%NAME%}
 
 // Utilities
@@ -2100,6 +2109,7 @@ ItemDisplay[tsc]: %BLUE%* %GRAY%tp %WHITE%scroll{%RED%Warning%WHITE%: You gonna 
 ItemDisplay[isc]: %RED%* %GRAY%id %WHITE%scroll{%WHITE%Scroll of Identify}%CONTINUE%
 ItemDisplay[vps]: %GREEN%!%WHITE%stamina{%GRAY%(time stack)%NL%%WHITE%Gives infinite stamina for 30s%NL%%TAN%Note%WHITE%: Instantly restores stamina%NL%Stamina Potion}%CONTINUE%
 ItemDisplay[wms]: %GREEN%!%WHITE%thaw{%GREEN%!%WHITE%thaw, Perf %BLUE%O%WHITE%, %BLUE%Ring %WHITE%= Cold Res %BLUE%Ring%NL%%GRAY%(time stack)%NL%%WHITE%Gives +25 Cold Res for 30s%NL%%TAN%Note%WHITE%: Instantly thaws character%NL%Thawing Potion}%CONTINUE%
+ItemDisplay[(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109) ((tsc OR isc OR vps) FILTLVL>0 (CLVL>30 OR FILTLVL>5) !SHOP (isc OR tsc OR vps))]: %NAME%{%PURPLE%Decrease Your Filter Level in Settings to Display It All The Time%NL%%WHITE%Outside the Town/In the Fight Field it is Going to be %RED%HIDDEN%NL%WARNING%WHITE%: At Current Filter LVL this item is shown %RED%ONLY %WHITE%in Town%CL%%NAME%} // Filter Forge: shows it in town, with a warning
 ItemDisplay[(tsc OR isc OR vps) FILTLVL>0 (CLVL>30 OR FILTLVL>5) !SHOP]: {%NAME%}%CONTINUE%
 ItemDisplay[wms FILTLVL>0 (CHARSTAT118>1 OR CHARSTAT153>0) !SHOP]: {%NAME%}%CONTINUE%
 ItemDisplay[yps FL9_MARKER_OK]: %GREEN%!%WHITE%ant{%GREEN%!%WHITE%ant, Perf %GREEN%O%WHITE%, %BLUE%Ring %WHITE%= Psn Res %BLUE%Ring%NL%%GRAY%(time stack)%NL%%WHITE%Gives +25 Psn Res for 30s%NL%%TAN%Note%WHITE%: Instantly cures poison%NL%Antidote Potion}
@@ -2117,10 +2127,15 @@ ItemDisplay[rkey (TOWN OR MAPID>132)]: %NAME%{%TAN%Note%WHITE%: You won't lose i
 
 // Choking, Exploding, Fulminating, Oil, Rancid, Strangling, and New PD2 Throwing Potions
 ItemDisplay[opm OR tpfm]: %NAME%{%WHITE%Exoplo. Potion, Perf %RED%O%WHITE%, %BLUE%Ring %WHITE%= Fire Res %BLUE%Ring%NL%%TAN%Note%WHITE%: Crafting Recipe:}%CONTINUE%
+ItemDisplay[(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109) ((opm OR tpfm) FILTLVL>0 (CLVL>79 OR FILTLVL>5))]: %NAME%{%PURPLE%Decrease Your Filter Level in Settings to Display It All The Time%NL%%WHITE%Outside the Town/In the Fight Field it is Going to be %RED%HIDDEN%NL%WARNING%WHITE%: At Current Filter LVL this item is shown %RED%ONLY %WHITE%in Town%CL%%NAME%} // Filter Forge: shows it in town, with a warning
 ItemDisplay[(opm OR tpfm) FILTLVL>0 (CLVL>79 OR FILTLVL>5)]: {%NAME%}
+ItemDisplay[(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109) ((gpm OR opl OR ops OR gps OR gpl) FILTLVL>0 (CLVL>23 OR FILTLVL>5))]: %NAME%{%PURPLE%Decrease Your Filter Level in Settings to Display It All The Time%NL%%WHITE%Outside the Town/In the Fight Field it is Going to be %RED%HIDDEN%NL%WARNING%WHITE%: At Current Filter LVL this item is shown %RED%ONLY %WHITE%in Town%CL%%NAME%} // Filter Forge: shows it in town, with a warning
 ItemDisplay[(gpm OR opl OR ops OR gps OR gpl) FILTLVL>0 (CLVL>23 OR FILTLVL>5)]: {%NAME%}
+ItemDisplay[(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109) ((tpfs OR tpgs OR tpcs OR tpls) FILTLVL>0 (CLVL>17 OR FILTLVL>5))]: %NAME%{%PURPLE%Decrease Your Filter Level in Settings to Display It All The Time%NL%%WHITE%Outside the Town/In the Fight Field it is Going to be %RED%HIDDEN%NL%WARNING%WHITE%: At Current Filter LVL this item is shown %RED%ONLY %WHITE%in Town%CL%%NAME%} // Filter Forge: shows it in town, with a warning
 ItemDisplay[(tpfs OR tpgs OR tpcs OR tpls) FILTLVL>0 (CLVL>17 OR FILTLVL>5)]: {%NAME%}
+ItemDisplay[(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109) ((tpfm OR tpgm OR tpcm OR tplm) FILTLVL>0 (CLVL>23 OR FILTLVL>5))]: %NAME%{%PURPLE%Decrease Your Filter Level in Settings to Display It All The Time%NL%%WHITE%Outside the Town/In the Fight Field it is Going to be %RED%HIDDEN%NL%WARNING%WHITE%: At Current Filter LVL this item is shown %RED%ONLY %WHITE%in Town%CL%%NAME%} // Filter Forge: shows it in town, with a warning
 ItemDisplay[(tpfm OR tpgm OR tpcm OR tplm) FILTLVL>0 (CLVL>23 OR FILTLVL>5)]: {%NAME%}
+ItemDisplay[(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109) ((tpfl OR tpgl OR tpcl OR tpll) FILTLVL>0 (CLVL>39 OR FILTLVL>5))]: %NAME%{%PURPLE%Decrease Your Filter Level in Settings to Display It All The Time%NL%%WHITE%Outside the Town/In the Fight Field it is Going to be %RED%HIDDEN%NL%WARNING%WHITE%: At Current Filter LVL this item is shown %RED%ONLY %WHITE%in Town%CL%%NAME%} // Filter Forge: shows it in town, with a warning
 ItemDisplay[(tpfl OR tpgl OR tpcl OR tpll) FILTLVL>0 (CLVL>39 OR FILTLVL>5)]: {%NAME%}
 
 // Gems
@@ -2164,7 +2179,9 @@ ItemDisplay[GEMTYPE=6 GEM>3]: %NAME% %ORANGE%[%YELLOW%O%ORANGE%]{%NAME%}%CONTINU
 ItemDisplay[GEMTYPE=7 GEM<4 !(skl OR skz)]: %NAME% %ORANGE%[%GRAY%*%ORANGE%]{%NAME%}%CONTINUE%
 ItemDisplay[GEMTYPE=7 GEM>3]: %NAME% %ORANGE%[%GRAY%O%ORANGE%]{%NAME%}%CONTINUE%
 // hiding low ones
+ItemDisplay[(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109) (GEM<3 FILTLVL>0 (DIFF>0 OR FILTLVL>5) !(gzv OR gpv OR glw OR gpw OR glg OR gpg OR glr OR gpr OR glb OR gpb OR gly OR gpy OR skl OR skz) (gcb OR gcg OR gcr OR gcv OR gcw OR gcy OR gfb OR gfg OR gfr OR gfv OR gfw OR gfy OR skc OR skf))]: %NAME%{%PURPLE%Decrease Your Filter Level in Settings to Display It All The Time%NL%%WHITE%Outside the Town/In the Fight Field it is Going to be %RED%HIDDEN%NL%WARNING%WHITE%: At Current Filter LVL this item is shown %RED%ONLY %WHITE%in Town%CL%%NAME%} // Filter Forge: shows it in town, with a warning
 ItemDisplay[GEM<3 FILTLVL>0 (DIFF>0 OR FILTLVL>5) !(gzv OR gpv OR glw OR gpw OR glg OR gpg OR glr OR gpr OR glb OR gpb OR gly OR gpy OR skl OR skz)]:{%NAME%}%CONTINUE%
+ItemDisplay[(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109) (GEM<4 FILTLVL>0 (DIFF>1 OR FILTLVL>5) !(gzv OR gpv OR glw OR gpw OR glg OR gpg OR glr OR gpr OR glb OR gpb OR gly OR gpy OR skl OR skz) (gsb OR gsg OR gsr OR gsv OR gsw OR gsy OR sku))]: %NAME%{%PURPLE%Decrease Your Filter Level in Settings to Display It All The Time%NL%%WHITE%Outside the Town/In the Fight Field it is Going to be %RED%HIDDEN%NL%WARNING%WHITE%: At Current Filter LVL this item is shown %RED%ONLY %WHITE%in Town%CL%%NAME%} // Filter Forge: shows it in town, with a warning
 ItemDisplay[GEM<4 FILTLVL>0 (DIFF>1 OR FILTLVL>5) !(gzv OR gpv OR glw OR gpw OR glg OR gpg OR glr OR gpr OR glb OR gpb OR gly OR gpy OR skl OR skz)]:{%NAME%}%CONTINUE%
 // ping for flawlesses and perfects
 ItemDisplay[(skl OR skls)]: %DOT-70%%TIER-3%%NAME%{%NAME%}%CONTINUE%
@@ -2173,6 +2190,7 @@ ItemDisplay[(glr OR glrs) FILTLVL>7]: %DOT-70%%TIER-3%%NAME%{%NAME%}%CONTINUE%
 ItemDisplay[(gpv OR gpvs OR gpy OR gpys OR gpb OR gpbs OR gpg OR gpgs OR gpr OR gprs OR gpw OR gpws OR skz OR skzs)]: %DOT-70%%NAME%{%NAME%}%CONTINUE%
 
 // Hide Flawlesses on Max Strict Level
+ItemDisplay[(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109) ((GEM<4 OR (gzv OR gzvs OR gly OR glys OR glb OR glbs OR glg OR glgs OR glw OR glws)) FILTLVL>7 (glb OR glg OR glw OR gly OR gzv))]: %NAME%{%PURPLE%Decrease Your Filter Level in Settings to Display It All The Time%NL%%WHITE%Outside the Town/In the Fight Field it is Going to be %RED%HIDDEN%NL%WARNING%WHITE%: At Current Filter LVL this item is shown %RED%ONLY %WHITE%in Town%CL%%NAME%} // Filter Forge: shows it in town, with a warning
 ItemDisplay[(GEM<4 OR (gzv OR gzvs OR gly OR glys OR glb OR glbs OR glg OR glgs OR glw OR glws)) FILTLVL>7]: {%NAME%}%CONTINUE%
 
 // Rune appearance
@@ -2183,6 +2201,7 @@ ItemDisplay[RUNE>25]: %ORANGE%%RUNENAME% Rune %GRAY%[%GREEN%%RUNENUM%%GRAY%]{%NA
 
 // All Charms
 // 1) Filter level 8+: hide sub-90 unid magic GCs
+ItemDisplay[(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109) ((cm1 OR cm2 OR cm3) MAG !ID (ILVL<90) (FILTLVL>7))]: %NAME%{%PURPLE%Decrease Your Filter Level in Settings to Display It All The Time%NL%%WHITE%Outside the Town/In the Fight Field it is Going to be %RED%HIDDEN%NL%WARNING%WHITE%: At Current Filter LVL this item is shown %RED%ONLY %WHITE%in Town%CL%%NAME%} // Filter Forge: shows it in town, with a warning
 ItemDisplay[(cm1 OR cm2 OR cm3) MAG !ID (ILVL<90) (FILTLVL>7)]: {%NAME%}
 
 // 2) Filter level 8+: special display for ilvl 90+ unid magic GCs
@@ -2482,14 +2501,17 @@ ItemDisplay[BAR BARBARIAN RARE !ID]: %NAME%
 ItemDisplay[(SIN OR (DAGGER !THROWING)) ASSASSIN RARE !ID]: %NAME%
 
 // Hide unid magic rings and amulets at FL8
+ItemDisplay[(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109) ((rin OR amu) MAG !ID FILTLVL>7)]: %NAME%{%PURPLE%Decrease Your Filter Level in Settings to Display It All The Time%NL%%WHITE%Outside the Town/In the Fight Field it is Going to be %RED%HIDDEN%NL%WARNING%WHITE%: At Current Filter LVL this item is shown %RED%ONLY %WHITE%in Town%CL%%NAME%} // Filter Forge: shows it in town, with a warning
 ItemDisplay[(rin OR amu) MAG !ID FILTLVL>7]: {%NAME%}
 
 // Circlet fallback displays
+ItemDisplay[(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109) (CIRC MAG !ID FILTLVL>7)]: %NAME%{%PURPLE%Decrease Your Filter Level in Settings to Display It All The Time%NL%%WHITE%Outside the Town/In the Fight Field it is Going to be %RED%HIDDEN%NL%WARNING%WHITE%: At Current Filter LVL this item is shown %RED%ONLY %WHITE%in Town%CL%%NAME%} // Filter Forge: shows it in town, with a warning
 ItemDisplay[CIRC MAG !ID FILTLVL>7]: {%NAME%}
 ItemDisplay[CIRC (MAG OR RARE) !ID]: %NAME%
 
 // Rare glove, belt, and boot fallback displays
 // Filter level 7+ hides unid rare gloves
+ItemDisplay[(MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109) ((lgl OR vgl OR mgl OR tgl OR hgl OR xlg OR xvg OR xmg OR xtg OR xhg OR ulg OR uvg OR umg OR utg OR uhg) RARE !ID (FILTLVL>6))]: %NAME%{%PURPLE%Decrease Your Filter Level in Settings to Display It All The Time%NL%%WHITE%Outside the Town/In the Fight Field it is Going to be %RED%HIDDEN%NL%WARNING%WHITE%: At Current Filter LVL this item is shown %RED%ONLY %WHITE%in Town%CL%%NAME%} // Filter Forge: shows it in town, with a warning
 ItemDisplay[(lgl OR vgl OR mgl OR tgl OR hgl OR xlg OR xvg OR xmg OR xtg OR xhg OR ulg OR uvg OR umg OR utg OR uhg) RARE !ID (FILTLVL>6)]:{%NAME%}
 ItemDisplay[(GLOVES OR BOOTS OR BELT) RARE !ID]: %NAME%
 
@@ -4581,119 +4603,11 @@ ItemDisplay[(NOTICEME09)]: %NAME%{%DARK_GREEN%Life Tap Charges%CL%%NAME%}%CONTIN
 // Slam names come from canonical corruption codes so native item stats do not pollute the label
 // Items without enough priced corruption samples would be marked as not worth slamming; those lines are commented out until 2026-10-30 (first week of the season)
 // Shows even after corruption on FL8 because rules intentionally do not require STAT360=0
-// Generated lines: 548; BIS lines: 25; not worth lines: 523; ambiguous item-code groups skipped: 10
-// ItemDisplay[2ax SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[6cs SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[7fb SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[7gd SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[7ls SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[7m7 SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[7ma SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[7qr SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[7ws SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[9mt SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[9vo SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[aar SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[amc SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[ba5 SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[bhm SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[brs SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[bsd SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[bst SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[buc SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[bwn SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[chn SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[ci0 SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[ci3 SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[dgr SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[dr8 SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[fhl SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[ful SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[ghm SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[gsc SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[gth SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[gts SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[hbl SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[hbt SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[hgl SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[hlm SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[kit SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[lbb SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[lbl SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[lbt SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[lea SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[lgl SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[lrg SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[lsd SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[ltp SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[mbt SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[mgl SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[mpi SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[msk SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[ne9 SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[oba SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[paf SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[qui SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[rng SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[sbr SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[skp SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[sml SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[spl SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[stu SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[swb SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[tbt SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[tow SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[uar SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[ucl SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[uh9 SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[uhm SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[uld SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[ulg SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[ult SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[umc SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[upl SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[urn SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[utc SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[uth SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[uts SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[uui SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[uul SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[vbl SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[vgl SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[wsd SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[wsp SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[wst SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[xap SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[xar SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[xcl SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[xh9 SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[xhb SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[xhg SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[xhl SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[xhm SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[xlb SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[xmb SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[xmg SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[xml SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[xrn SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[xrs SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[xsk SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[xtb SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[xtg SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-ItemDisplay[xul SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%PURPLE%BIS: %WHITE%3os %GRAY%[0.8-1 HR]}%CONTINUE%
-// ItemDisplay[xvg SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[zhb SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[zmb SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[ztb SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[zvb SET ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[2ax UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[2hs UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[6bs UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+// Generated lines: 300; BIS lines: 5; not worth lines: 295; ambiguous item-code groups skipped: 10
 // ItemDisplay[6cs UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-ItemDisplay[6hb UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%PURPLE%BIS: %WHITE%-Enemy L Res %GRAY%[3-15 HR]}%CONTINUE%
 // ItemDisplay[6hx UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[6l7 UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-ItemDisplay[6lw UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%PURPLE%BIS: %WHITE%6os %GRAY%[12-14 HR]}%CONTINUE%
+// ItemDisplay[6lw UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[6rx UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[6sw UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[6ws UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
@@ -4708,12 +4622,10 @@ ItemDisplay[6lw UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%PURPLE%BIS: %WHITE%6os %GRA
 // ItemDisplay[7bt UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[7bw UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[7cl UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-ItemDisplay[7cm UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%PURPLE%BIS: %WHITE%4os %GRAY%[0.5-6 HR]}%CONTINUE%
 // ItemDisplay[7cr UNI ID FILTLVL=8 MULTI151,110=6]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[7cr UNI ID FILTLVL=8 !(MULTI151,110=6)]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[7cs UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[7dg UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[7di UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[7fb UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[7fl UNI ID FILTLVL=8 MULTI200,15388=15]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[7fl UNI ID FILTLVL=8 MULTI198,2713=20]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
@@ -4736,7 +4648,6 @@ ItemDisplay[7m7 UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%PURPLE%BIS: %WHITE%6os %GRA
 // ItemDisplay[7p7 UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[7pa UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[7qr UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[7qs UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[7s7 UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[7s8 UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[7sb UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
@@ -4745,20 +4656,14 @@ ItemDisplay[7m7 UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%PURPLE%BIS: %WHITE%6os %GRA
 // ItemDisplay[7sm UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[7sp UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[7sr UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[7st UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[7ta UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[7ts UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[7tw UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[7vo UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[7vo UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[7wa UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[7wb UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[7wc UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[7wh UNI ID FILTLVL=8 MULTI198,2713=20]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[7wh UNI ID FILTLVL=8 STAT116>20]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[7ws UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[7xf UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[7yw UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[8bs UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[8cb UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[8cs UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
@@ -4778,10 +4683,8 @@ ItemDisplay[7m7 UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%PURPLE%BIS: %WHITE%6os %GRA
 // ItemDisplay[8ws UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[92a UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[92h UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[9ar UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[9ax UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[9b7 UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[9b8 UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[9b9 UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[9ba UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[9bl UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
@@ -4836,15 +4739,12 @@ ItemDisplay[7m7 UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%PURPLE%BIS: %WHITE%6os %GRA
 // ItemDisplay[9ws UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[9yw UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[aar UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[am5 UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[am7 UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[am9 UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[ama UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[amb UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[amc UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[amd UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[ame UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-ItemDisplay[amf UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%PURPLE%BIS: %WHITE%2os %GRAY%[0.4-2 HR]}%CONTINUE%
+// ItemDisplay[amf UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // // ItemDisplay[amu UNI ID FILTLVL=8 STAT89>2]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // // ItemDisplay[amu UNI ID FILTLVL=8 (STAT32>9 STAT32<100)]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // // ItemDisplay[amu UNI ID FILTLVL=8 (STAT31>4 STAT31<11)]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
@@ -4853,143 +4753,56 @@ ItemDisplay[amf UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%PURPLE%BIS: %WHITE%2os %GRA
 // // ItemDisplay[amu UNI ID FILTLVL=8 MANA>44]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // // ItemDisplay[amu UNI ID FILTLVL=8 (STAT127>1 !STAT121>49)]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // // ItemDisplay[amu UNI ID FILTLVL=8 MULTI198,4239=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[amu UNI ID FILTLVL=8 IAS>19]: %NAME%{%NAME%%CL%%PURPLE%BIS: %WHITE%ICB + +Skills %GRAY%[15 HR]}%CONTINUE%
-// ItemDisplay[amu UNI ID FILTLVL=8 MULTI201,4876=10]: %NAME%{%NAME%%CL%%PURPLE%BIS: %WHITE%ED + All Attr, All Res %GRAY%[25 HR]}%CONTINUE%
-// ItemDisplay[amu UNI ID FILTLVL=8 STAT121>49]: %NAME%{%NAME%%CL%%PURPLE%BIS: %WHITE%Max All Res + +Skills, CBF %GRAY%[50 HR]}%CONTINUE%
-// ItemDisplay[amu UNI ID FILTLVL=8 SK90>24]: %NAME%{%NAME%%CL%%PURPLE%BIS: %WHITE%Str + Max All Res %GRAY%[4 HR]}%CONTINUE%
-// ItemDisplay[aqv UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[aqv2 UNI ID FILTLVL=8 CRES>49]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[aqv2 UNI ID FILTLVL=8 !(CRES>49)]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[aqv3 UNI ID FILTLVL=8 MULTI201,2728=35]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[aqv3 UNI ID FILTLVL=8 CLSK0=2]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[aqv3 UNI ID FILTLVL=8 TABSK1=2]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[axe UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[ba6 UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[ba7 UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+// // ItemDisplay[amu UNI ID FILTLVL=8 IAS>19]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+// // ItemDisplay[amu UNI ID FILTLVL=8 MULTI201,4876=10]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+// // ItemDisplay[amu UNI ID FILTLVL=8 STAT121>49]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+// // ItemDisplay[amu UNI ID FILTLVL=8 SK90>24]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[baa UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[bac UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[bad UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[bae UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[baf UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[bar UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[bax UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[bhm UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[bld UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[brn UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[brs UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[bsd UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[bsh UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[bst UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[bsw UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[btx UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[buc UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[bwn UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[cap UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[cbw UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[chn UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[ci2 UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[ci3 UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[clb UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[clm UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[cqv UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[cqv2 UNI ID FILTLVL=8 MULTI201,4255=10]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[cqv2 UNI ID FILTLVL=8 TABSK0=2]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[cqv3 UNI ID FILTLVL=8 IAS<0]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[cqv3 UNI ID FILTLVL=8 FCR>19]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[cqv3 UNI ID FILTLVL=8 MULTI126,4=3]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[crn UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[cst UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[dgr UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[dir UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[dr2 UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[dr6 UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[dra UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[drb UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[drc UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[drd UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[dre UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[drf UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[fhl UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[fla UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[flb UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[flc UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[fld UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[ful UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[gax UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[ghm UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[gis UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[gix UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[gma UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[gsc UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[gsd UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[gth UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[gts UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[gwn UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[hal UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[hax UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[hbl UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[hbt UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[hbw UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[hfh UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[hgl UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[hla UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[hlm UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[hst UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[hxb UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[kit UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[kri UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[lax UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[lbb UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[lbl UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[lbt UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[lbw UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[lea UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[lgl UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[lrg UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[lsd UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[lst UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[ltp UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[lwb UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[lxb UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[mac UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[mau UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[mbl UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[mbt UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[mgl UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[mpi UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[msf UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[msk UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[mst UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[mxb UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[ne6 UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[nea UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[ned UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-ItemDisplay[nee UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%PURPLE%BIS: %WHITE%3os %GRAY%[1.25-2.5 HR]}%CONTINUE%
+// ItemDisplay[nee UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[nef UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[neg UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[ob6 UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[ob7 UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[oba UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[obc UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[obd UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[obe UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[obe UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-ItemDisplay[obf UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%PURPLE%BIS: %WHITE%3os %GRAY%[1-20 HR]}%CONTINUE%
-// ItemDisplay[pa3 UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
+// ItemDisplay[obf UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[pa9 UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[pab UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[pac UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[pae UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[paf UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[pax UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[pik UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[plt UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[qf1 UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[qf2 UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[qui UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[ram UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[rar UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[rbe UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[rin UNI ID FILTLVL=8 STAT35=3]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[rin UNI ID FILTLVL=8 LIFE=20]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[rin UNI ID FILTLVL=8 (STAT23=1 STAT24=120)]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
@@ -5001,72 +4814,42 @@ ItemDisplay[obf UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%PURPLE%BIS: %WHITE%3os %GRA
 // ItemDisplay[rin UNI ID FILTLVL=8 MULTI204,15106>0]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[rin UNI ID FILTLVL=8 MULTI198,15390=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[rng UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[rxb UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[sbb UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[sbr UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[sbw UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[scl UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[scm UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[scp UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[scy UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[skp UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[sml UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[spc UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[spk UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[spl UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[spr UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[spt UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[ssd UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[sst UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[stu UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[swb UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[t51 UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[t52 UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[t53 UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[t54 UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[t55 UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[t56 UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[t57 UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[t58 UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[tbl UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[tbt UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-ItemDisplay[tgl UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%PURPLE%BIS: %WHITE%IAS %GRAY%[0.5-1 HR]}%CONTINUE%
+// ItemDisplay[tgl UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[tow UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[tri UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[uap UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[uar UNI ID FILTLVL=8 FRW>44]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[uar UNI ID FILTLVL=8 FHR>19]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[uhb UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[uhc UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[uhg UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[uhl UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[uhm UNI ID FILTLVL=8 STAT31=140]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-ItemDisplay[uhm UNI ID FILTLVL=8 STAT118>0]: %NAME%{%NAME%%CL%%PURPLE%BIS: %WHITE%3os %GRAY%[5-6.5 HR]}%CONTINUE%
+// ItemDisplay[uhm UNI ID FILTLVL=8 STAT118>0]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[uit UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[ula UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 ItemDisplay[ulb UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%PURPLE%BIS: %WHITE%FRW %GRAY%[4-9 HR]}%CONTINUE%
 // ItemDisplay[ulc UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[uld UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[ulg UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[umb UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-ItemDisplay[umc UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%PURPLE%BIS: %WHITE%FRW %GRAY%[3-6 HR]}%CONTINUE%
+// ItemDisplay[umc UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[umg UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[uml UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[ung UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-ItemDisplay[uow UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%PURPLE%BIS: %WHITE%+Skills %GRAY%[15-25 HR]}%CONTINUE%
+// ItemDisplay[uow UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[upk UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[upl UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[urg UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[urn UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[ush UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[usk UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[utb UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[utg UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[uth UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[utp UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-ItemDisplay[uts UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%PURPLE%BIS: %WHITE%3os %GRAY%[4-60 HR]}%CONTINUE%
+// ItemDisplay[uts UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[utu UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-ItemDisplay[uui UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%PURPLE%BIS: %WHITE%2os %GRAY%[1 HR]}%CONTINUE%
+// ItemDisplay[uui UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[uul UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[uvb UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[uvc UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
@@ -5075,24 +4858,16 @@ ItemDisplay[uui UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%PURPLE%BIS: %WHITE%2os %GRA
 // ItemDisplay[vbt UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[vgl UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[vip UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[vou UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[wax UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[whm UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[wnd UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[wsc UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[wsd UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[wsp UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[wst UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[xap UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[xar UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[xcl UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[xea UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[xh9 UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-ItemDisplay[xhb UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%PURPLE%BIS: %WHITE%Max C Res %GRAY%[3 HR]}%CONTINUE%
+// ItemDisplay[xhb UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[xhg UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[xhl UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[xhm UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-ItemDisplay[xhn UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%PURPLE%BIS: %WHITE%1os %GRAY%[0.75-1 HR]}%CONTINUE%
+// ItemDisplay[xhn UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[xit UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[xkp UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[xla UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
@@ -5101,7 +4876,7 @@ ItemDisplay[xhn UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%PURPLE%BIS: %WHITE%1os %GRA
 // ItemDisplay[xlg UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[xlm UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[xlt UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-ItemDisplay[xmb UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%PURPLE%BIS: %WHITE%All Res %GRAY%[0.75-2 HR]}%CONTINUE%
+// ItemDisplay[xmb UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[xmg UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[xml UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[xng UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
@@ -5124,7 +4899,6 @@ ItemDisplay[xmb UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%PURPLE%BIS: %WHITE%All Res 
 // ItemDisplay[xul UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[xvb UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[xvg UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
-// ItemDisplay[ywn UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 // ItemDisplay[zhb UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
 ItemDisplay[zlb UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%PURPLE%BIS: %WHITE%FHR %GRAY%[1-2 HR]}%CONTINUE%
 // ItemDisplay[zmb UNI ID FILTLVL=8]: %NAME%{%NAME%%CL%%RED%Not worth slamming}%CONTINUE%
@@ -5210,49 +4984,48 @@ ItemDisplay[(uit OR uow OR uts) !INF NMAG !RW (SOCK=0 OR SOCK=4) FILTLVL<6]: %NA
 // Splendor Shields
 ItemDisplay[NEC (SK67>2 OR SK74>2 OR SK94>2 OR SK75>2 OR SK70>2 OR SK84>2 OR SK83>2 OR SK89>2 OR SK92>2 OR SK93>2 OR SK79>2 OR SK80>2 OR SK85>2 OR SK95>2 OR SK374>2 OR SK381>2) !INF !ETH !SOCK=1 NMAG !RW FILTLVL<6]: %NAME%{%NAME%}
 // Weapon bases
-// NMAG skill weapon bases (HiimFilter list, every filter level)
-// Source: github.com/Maaaaaarrk/HiimFilter-PD2-Filter builderfilter/08-nmag/29-Tags_Nmag_bases[ALL].filter
-ItemDisplay[(wsp OR 9ws) !INF !ETH NMAG !RW (SOCK=5 OR SOCK=0) SK378>0 (SK118>2 OR SK102>2 OR SK114>2)]: %DOT-D6%%TIER-5%%NAME%{%TAN%Note%WHITE%: LLD base%CL%%NAME%}
+// NMAG skill weapon bases (every filter level)
+ItemDisplay[(wsp OR 9ws) !INF !ETH NMAG !RW (SOCK=5 OR SOCK=0) SK378>0 (SK118>2 OR SK102>2 OR SK114>2)]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: LLD base%CL%%NAME%}
 ItemDisplay[(cst OR 8cs OR bst OR 8bs OR wst OR 8ws) SK46>2 (SK60>2 OR SK50>2) !INF !ETH NMAG !RW SOCK=4]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: GG LLD Insight Base%CL%%NAME%}
-ItemDisplay[(cst OR 8cs OR bst OR 8bs OR wst OR 8ws) SK46>2 (SK60>2 OR SK50>2) !INF !ETH NMAG !RW SOCK=0]: %DOT-D6%%TIER-5%%NAME%{%TAN%Note%WHITE%: Must roll 4 open sockets for LLD%CL%%NAME%}
-ItemDisplay[(cst OR 8cs OR bst OR 8bs OR wst OR 8ws) (SK46>2 OR SK60>2 OR SK50>2) !INF !ETH NMAG !RW SOCK=4]: %DOT-D6%%TIER-3%%NAME%{%TAN%Note%WHITE%: LLD Insight Base%CL%%NAME%}
-ItemDisplay[(8cs OR 8bs OR wst OR 8ws) (SK46>2 OR SK60>2 OR SK50>2) !INF !ETH NMAG !RW SOCK=0]: %DOT-D6%%TIER-3%%NAME%{%TAN%Note%WHITE%: Must roll 4 open sockets for LLD%CL%%NAME%}
+ItemDisplay[(cst OR 8cs OR bst OR 8bs OR wst OR 8ws) SK46>2 (SK60>2 OR SK50>2) !INF !ETH NMAG !RW SOCK=0]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: Must roll 4 open sockets for LLD%CL%%NAME%}
+ItemDisplay[(cst OR 8cs OR bst OR 8bs OR wst OR 8ws) (SK46>2 OR SK60>2 OR SK50>2) !INF !ETH NMAG !RW SOCK=4]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: LLD Insight Base%CL%%NAME%}
+ItemDisplay[(8cs OR 8bs OR wst OR 8ws) (SK46>2 OR SK60>2 OR SK50>2) !INF !ETH NMAG !RW SOCK=0]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: Must roll 4 open sockets for LLD%CL%%NAME%}
 ItemDisplay[7ws SK123>2 (SK96>2 OR SK107>2) NMAG !INF !ETH SOCK=4 !RW]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: HOJ base%CL%%NAME%}
 ItemDisplay[7ws SK123>2 (SK96>2 OR SK107>2) NMAG !INF !ETH SOCK=0 !RW]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: Must roll 4 open sockets for HOJ%CL%%NAME%}
-ItemDisplay[7ws (SK123>2 OR SK96>2) NMAG !INF !ETH SOCK=4 !RW EDAM>4]: %DOT-D6%%TIER-7%%NAME%{%TAN%Note%WHITE%: HOJ base%CL%%NAME%}
-ItemDisplay[7ws (SK123>2 OR SK96>2) NMAG !INF !ETH SOCK=0 !RW EDAM>4]: %DOT-D6%%TIER-7%%NAME%{%TAN%Note%WHITE%: Must roll 4 open sockets for HOJ%CL%%NAME%}
-ItemDisplay[7ws SK102>2 NMAG !INF SOCK=4 !ETH !RW]: %DOT-D6%%TIER-5%%NAME%{%TAN%Note%WHITE%: HOJ base%CL%%NAME%}
-ItemDisplay[7ws SK102>2 NMAG !INF SOCK=0 !ETH !RW]: %DOT-D6%%TIER-5%%NAME%{%TAN%Note%WHITE%: Must roll 4 open sockets for HOJ%CL%%NAME%}
-ItemDisplay[(wsp OR 9ws OR 7ws) SK117>2 NMAG !INF (SOCK=0 OR SOCK=5) !RW]: %DOT-D6%%TIER-7%%NAME%{%TAN%Note%WHITE%: CTA base%CL%%NAME%}
-ItemDisplay[(wsp OR 9ws OR 7ws) SK119>2 NMAG !INF (SOCK=0 OR SOCK=5) !RW]: %DOT-D6%%TIER-3%%NAME%{%TAN%Note%WHITE%: CTA base%CL%%NAME%}
+ItemDisplay[7ws (SK123>2 OR SK96>2) NMAG !INF !ETH SOCK=4 !RW EDAM>4]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: HOJ base%CL%%NAME%}
+ItemDisplay[7ws (SK123>2 OR SK96>2) NMAG !INF !ETH SOCK=0 !RW EDAM>4]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: Must roll 4 open sockets for HOJ%CL%%NAME%}
+ItemDisplay[7ws SK102>2 NMAG !INF SOCK=4 !ETH !RW]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: HOJ base%CL%%NAME%}
+ItemDisplay[7ws SK102>2 NMAG !INF SOCK=0 !ETH !RW]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: Must roll 4 open sockets for HOJ%CL%%NAME%}
+ItemDisplay[(wsp OR 9ws OR 7ws) SK117>2 NMAG !INF (SOCK=0 OR SOCK=5) !RW]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: CTA base%CL%%NAME%}
+ItemDisplay[(wsp OR 9ws OR 7ws) SK119>2 NMAG !INF (SOCK=0 OR SOCK=5) !RW]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: CTA base%CL%%NAME%}
 ItemDisplay[7xf !RW SK263>2 SK252>2 ETH !INF SOCK=3 NMAG]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: GG Chaos base%CL%%NAME%}
 ItemDisplay[7xf !RW SK263>2 SK252>2 ETH !INF SOCK=0 NMAG]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: Larzuk for 3 sockets for GG Chaos base%CL%%NAME%}
 ItemDisplay[7xf !RW (SK263>2 OR SK252>2) ETH !INF SOCK=3 NMAG]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: Chaos base%CL%%NAME%}
 ItemDisplay[7xf !RW (SK263>2 OR SK252>2) ETH !INF SOCK=0 NMAG]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: Larzuk for 3 sockets for GG Chaos base%CL%%NAME%}
-ItemDisplay[7xf !RW (SK275>0 OR SK252>0 OR SK263>0) ETH !INF SOCK=3 NMAG]: %DOT-D6%%TIER-5%%NAME%{%TAN%Note%WHITE%: Chaos base%CL%%NAME%}
-ItemDisplay[7xf !RW (SK275>0 OR SK252>0 OR SK263>0) ETH !INF SOCK=0 NMAG]: %DOT-D6%%TIER-5%%NAME%{%TAN%Note%WHITE%: Larzuk for 3 sockets for Chaos base%CL%%NAME%}
-ItemDisplay[(7ar OR 7tw OR 7qr OR 9tw) (SK275>0 OR SK252>0) ETH !INF (SOCK=0 OR SOCK=3) NMAG]: %DOT-D6%%TIER-3%%NAME%{%NAME%}
-ItemDisplay[(7ar OR 7tw OR 7qr OR 9tw) (SK275>0 OR SK252>0) ETH (SOCK=0 OR SOCK=3) SUP NMAG]: %DOT-D6%%TIER-3%%NAME%{%NAME%}
-ItemDisplay[!RW NMAG !INF SCEPTER !scp (SK101>2 OR SK112>2 OR SK121>2) (SOCK=0 OR SOCK=3)]: %DOT-D6%%TIER-3%%NAME%{%TAN%Note%WHITE%: Plague Base%CL%%NAME%}
-ItemDisplay[!RW NMAG !INF (9cl OR 9sp OR 7cl OR 7sp) (SK229>2 OR SK234>2 OR SK244>2) (SOCK=0 OR SOCK=3)]: %DOT-D6%%TIER-5%%NAME%{%TAN%Note%WHITE%: Plague Base%CL%%NAME%}
-ItemDisplay[!RW SK222>2 NMAG (9cl OR 9sp OR 7cl OR 7sp) (SK226>0 OR SK224>0) (9cl OR 9sp OR 7cl OR 7sp) (SOCK=0 OR SOCK=3)]: %DOT-D6%%TIER-5%%NAME%{%TAN%Note%WHITE%: Plague Base%CL%%NAME%}
+ItemDisplay[7xf !RW (SK275>0 OR SK252>0 OR SK263>0) ETH !INF SOCK=3 NMAG]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: Chaos base%CL%%NAME%}
+ItemDisplay[7xf !RW (SK275>0 OR SK252>0 OR SK263>0) ETH !INF SOCK=0 NMAG]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: Larzuk for 3 sockets for Chaos base%CL%%NAME%}
+ItemDisplay[(7ar OR 7tw OR 7qr OR 9tw) (SK275>0 OR SK252>0) ETH !INF (SOCK=0 OR SOCK=3) NMAG]: %DOT-D6%%NAME%{%NAME%}
+ItemDisplay[(7ar OR 7tw OR 7qr OR 9tw) (SK275>0 OR SK252>0) ETH (SOCK=0 OR SOCK=3) SUP NMAG]: %DOT-D6%%NAME%{%NAME%}
+ItemDisplay[!RW NMAG !INF SCEPTER !scp (SK101>2 OR SK112>2 OR SK121>2) (SOCK=0 OR SOCK=3)]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: Plague Base%CL%%NAME%}
+ItemDisplay[!RW NMAG !INF (9cl OR 9sp OR 7cl OR 7sp) (SK229>2 OR SK234>2 OR SK244>2) (SOCK=0 OR SOCK=3)]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: Plague Base%CL%%NAME%}
+ItemDisplay[!RW SK222>2 NMAG (9cl OR 9sp OR 7cl OR 7sp) (SK226>0 OR SK224>0) (9cl OR 9sp OR 7cl OR 7sp) (SOCK=0 OR SOCK=3)]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: Plague Base%CL%%NAME%}
 ItemDisplay[!RW NMAG !INF (wsp OR 9ws OR 7ws) SOCK=0 SK118>2 SK99>2]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: 3os for Plague Base%CL%%WHITE%5os for Beast Base%CL%%NAME%}
-ItemDisplay[!RW NMAG !INF (wsp OR 9ws OR 7ws) SOCK=0 (SK118>2 OR SK99>2)]: %DOT-D6%%TIER-5%%NAME%{%TAN%Note%WHITE%: 3os for Plague Base%CL%%WHITE%5os for Beast Base%CL%%NAME%}
+ItemDisplay[!RW NMAG !INF (wsp OR 9ws OR 7ws) SOCK=0 (SK118>2 OR SK99>2)]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: 3os for Plague Base%CL%%WHITE%5os for Beast Base%CL%%NAME%}
 ItemDisplay[!RW NMAG !INF SCEPTER !scp SOCK=0 SK118>2 SK99>2]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: 3os for Plague Base%CL%%NAME%}
-ItemDisplay[!RW NMAG !INF SCEPTER !scp SOCK=0 (SK118>2 OR SK99>2)]: %DOT-D6%%TIER-5%%NAME%{%TAN%Note%WHITE%: 3os for Plague Base%CL%%NAME%}
+ItemDisplay[!RW NMAG !INF SCEPTER !scp SOCK=0 (SK118>2 OR SK99>2)]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: 3os for Plague Base%CL%%NAME%}
 ItemDisplay[!RW NMAG !INF SCEPTER SOCK=3 SK118>2 SK99>2]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: Plague Base%CL%%NAME%}
-ItemDisplay[!RW NMAG !INF SCEPTER SOCK=3 (SK118>2 OR SK99>2)]: %DOT-D6%%TIER-5%%NAME%{%TAN%Note%WHITE%: Plague Base%CL%%NAME%}
+ItemDisplay[!RW NMAG !INF SCEPTER SOCK=3 (SK118>2 OR SK99>2)]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: Plague Base%CL%%NAME%}
 ItemDisplay[!RW NMAG !INF SCEPTER SOCK=5 SK118>2 SK99>2]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: Beast Base%CL%%NAME%}
-ItemDisplay[!RW NMAG !INF SCEPTER SOCK=5 (SK118>2 OR SK99>2)]: %DOT-D6%%TIER-5%%NAME%{%TAN%Note%WHITE%: Beast Base%CL%%NAME%}
+ItemDisplay[!RW NMAG !INF SCEPTER SOCK=5 (SK118>2 OR SK99>2)]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: Beast Base%CL%%NAME%}
 ItemDisplay[!RW SK222>2 SK226>0 SK224>0 (9cl OR 9sp OR 7cl OR 7sp) SOCK=3 NMAG]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: Plague base%CL%%NAME%}
-ItemDisplay[!RW SK222>2 (SK226>0 OR SK224>0) (9cl OR 9sp OR 7cl OR 7sp) SOCK=0 NMAG]: %DOT-D6%%TIER-5%%NAME%{%TAN%Note%WHITE%: 3os for Plague Base%CL%%NAME%}
-ItemDisplay[!RW SK222>2 (SK226>0 OR SK224>0) (9cl OR 9sp OR 7cl OR 7sp) SOCK=3 NMAG]: %DOT-D6%%TIER-5%%NAME%{%TAN%Note%WHITE%: Plague base%CL%%NAME%}
-ItemDisplay[(ob5 OR oba OR obf) (SK40>2 OR SK52>2) !INF (SOCK=0 OR SOCK=3) NMAG]: %DOT-D6%%TIER-3%%NAME%{%NAME%}
-ItemDisplay[(7kr OR 9kr OR kri) (SOCK=0 OR SOCK=3) !ETH NMAG SK73>2]: %DOT-D6%%TIER-5%%NAME%{%NAME%}
-ItemDisplay[(amc OR amb) NMAG EDAM>0 !RW TABSK0>2 (SOCK=0 OR SOCK=4 OR SOCK=3 OR SOCK=5)]: %DOT-D6%%TIER-5%%NAME%{%NAME%}
-ItemDisplay[(amc OR amb) NMAG EDAM>14 !RW TABSK0>2 (SOCK=0 OR SOCK=4 OR SOCK=3 OR SOCK=5)]: %DOT-D6%%TIER-7%%NAME%{%NAME%}
-ItemDisplay[(amc OR amb) NMAG !INF !RW TABSK0>2 (SOCK=0 OR SOCK=4)]: %DOT-D6%%TIER-3%%NAME%{%NAME%}
-ItemDisplay[(amc OR amb) NMAG !INF !RW TABSK0>2 (SOCK=3 OR SOCK=5)]: %DOT-D6%%TIER-3%%NAME%{%NAME%}
+ItemDisplay[!RW SK222>2 (SK226>0 OR SK224>0) (9cl OR 9sp OR 7cl OR 7sp) SOCK=0 NMAG]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: 3os for Plague Base%CL%%NAME%}
+ItemDisplay[!RW SK222>2 (SK226>0 OR SK224>0) (9cl OR 9sp OR 7cl OR 7sp) SOCK=3 NMAG]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: Plague base%CL%%NAME%}
+ItemDisplay[(ob5 OR oba OR obf) (SK40>2 OR SK52>2) !INF (SOCK=0 OR SOCK=3) NMAG]: %DOT-D6%%NAME%{%NAME%}
+ItemDisplay[(7kr OR 9kr OR kri) (SOCK=0 OR SOCK=3) !ETH NMAG SK73>2]: %DOT-D6%%NAME%{%NAME%}
+ItemDisplay[(amc OR amb) NMAG EDAM>0 !RW TABSK0>2 (SOCK=0 OR SOCK=4 OR SOCK=3 OR SOCK=5)]: %DOT-D6%%NAME%{%NAME%}
+ItemDisplay[(amc OR amb) NMAG EDAM>14 !RW TABSK0>2 (SOCK=0 OR SOCK=4 OR SOCK=3 OR SOCK=5)]: %DOT-D6%%NAME%{%NAME%}
+ItemDisplay[(amc OR amb) NMAG !INF !RW TABSK0>2 (SOCK=0 OR SOCK=4)]: %DOT-D6%%NAME%{%NAME%}
+ItemDisplay[(amc OR amb) NMAG !INF !RW TABSK0>2 (SOCK=3 OR SOCK=5)]: %DOT-D6%%NAME%{%NAME%}
 ItemDisplay[WAND !(wnd OR ywn OR 9wn) SK94>2 SK68>0 (SK91>0 OR SK95>0) !SOCK=1 NMAG !RW]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: GG Dominion Base%CL%%NAME%}
 ItemDisplay[WAND !(wnd OR ywn OR 9wn) SK85>2 SK68>0 SK95>0 !SOCK=1 NMAG !RW]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: GG Dominion Base%CL%%NAME%}
 ItemDisplay[WAND !(wnd OR ywn OR 9wn) SK85>2 (SK68>0 OR SK95>0) !SOCK=1 NMAG !RW]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: Dominion Base%CL%%NAME%}
@@ -5260,31 +5033,31 @@ ItemDisplay[WAND !(wnd OR ywn OR 9wn) SK94>2 (SK367>0 OR SK68>0 OR SK91>0 OR SK9
 ItemDisplay[WAND !(wnd OR ywn OR 9wn) SK85>2 (SK367>0 OR SK68>0 OR SK95>0) !SOCK=1 NMAG !RW]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: Dominion Base%CL%%NAME%}
 ItemDisplay[WAND !(wnd OR ywn OR 9wn) SK91>2 SK68>0 (SK95>0 OR SK367>2) !SOCK=1 NMAG !RW]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: Dominion Base%CL%%NAME%}
 ItemDisplay[WAND !(wnd OR ywn OR 9wn) SK91>2 SK95>0 SK367>2 !SOCK=1 NMAG !RW]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: Dominion Base%CL%%NAME%}
-ItemDisplay[WAND !(wnd OR ywn OR 9wn) (SK94>2 OR SK85>2) !SOCK=1 NMAG !RW]: %DOT-D6%%TIER-5%%NAME%{%TAN%Note%WHITE%: Dominion Base%CL%%NAME%}
-ItemDisplay[WAND !(wnd OR ywn OR 9wn) SK91>2 (SK68>0 OR SK95>0 OR SK367>2) !SOCK=1 NMAG !RW]: %DOT-D6%%TIER-5%%NAME%{%TAN%Note%WHITE%: Dominion Base%CL%%NAME%}
-ItemDisplay[WAND !(wnd OR ywn OR 9wn) SK91>0 SK68>0 (SK95>0 OR SK367>2) !SOCK=1 NMAG !RW]: %DOT-D6%%TIER-5%%NAME%{%TAN%Note%WHITE%: Dominion Base%CL%%NAME%}
-ItemDisplay[WAND !(wnd OR ywn OR 9wn) SK91>0 SK95>0 SK367>2 !SOCK=1 NMAG !RW]: %DOT-D6%%TIER-5%%NAME%{%TAN%Note%WHITE%: Dominion Base%CL%%NAME%}
-ItemDisplay[WAND !(wnd OR ywn OR 9wn) SK91>0 (SK68>0 OR SK367>2 OR SK95>0) !SOCK=1 NMAG !RW]: %DOT-D6%%TIER-3%%NAME%{%TAN%Note%WHITE%: Dominion Base%CL%%NAME%}
-ItemDisplay[WAND !(wnd OR ywn OR 9wn) SK95>0 (SK68>0 OR SK367>2) !SOCK=1 NMAG !RW]: %DOT-D6%%TIER-3%%NAME%{%TAN%Note%WHITE%: Dominion Base%CL%%NAME%}
-ItemDisplay[WAND !(wnd OR ywn OR 9wn) SK68>0 SK367>2 !SOCK=1 NMAG !RW]: %DOT-D6%%TIER-3%%NAME%{%TAN%Note%WHITE%: Dominion Base%CL%%NAME%}
+ItemDisplay[WAND !(wnd OR ywn OR 9wn) (SK94>2 OR SK85>2) !SOCK=1 NMAG !RW]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: Dominion Base%CL%%NAME%}
+ItemDisplay[WAND !(wnd OR ywn OR 9wn) SK91>2 (SK68>0 OR SK95>0 OR SK367>2) !SOCK=1 NMAG !RW]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: Dominion Base%CL%%NAME%}
+ItemDisplay[WAND !(wnd OR ywn OR 9wn) SK91>0 SK68>0 (SK95>0 OR SK367>2) !SOCK=1 NMAG !RW]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: Dominion Base%CL%%NAME%}
+ItemDisplay[WAND !(wnd OR ywn OR 9wn) SK91>0 SK95>0 SK367>2 !SOCK=1 NMAG !RW]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: Dominion Base%CL%%NAME%}
+ItemDisplay[WAND !(wnd OR ywn OR 9wn) SK91>0 (SK68>0 OR SK367>2 OR SK95>0) !SOCK=1 NMAG !RW]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: Dominion Base%CL%%NAME%}
+ItemDisplay[WAND !(wnd OR ywn OR 9wn) SK95>0 (SK68>0 OR SK367>2) !SOCK=1 NMAG !RW]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: Dominion Base%CL%%NAME%}
+ItemDisplay[WAND !(wnd OR ywn OR 9wn) SK68>0 SK367>2 !SOCK=1 NMAG !RW]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: Dominion Base%CL%%NAME%}
 ItemDisplay[(6ls OR 6cs OR 6bs OR 6ws) (SK48>2 OR SK38>2 OR SK53>2) SK63>0 SK54>0 NMAG !RW SOCK=4]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: GG Infinity base%CL%%NAME%}
 ItemDisplay[(6ls OR 6cs OR 6bs OR 6ws) (SK48>2 OR SK38>2 OR SK53>2) SK63>0 SK54>0 NMAG !RW SOCK=0]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: Hit 4 sockets for GG Infinity base%CL%%NAME%}
 ItemDisplay[(6ls OR 6cs OR 6bs OR 6ws) (SK48>2 OR SK38>2 OR SK53>2) (SK63>0 OR SK54>0) NMAG !RW SOCK=4]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: Infinity base%CL%%NAME%}
 ItemDisplay[(6ls OR 6cs OR 6bs OR 6ws) (SK48>2 OR SK38>2 OR SK53>2) (SK63>0 OR SK54>0) NMAG !RW SOCK=0]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: Hit 4 sockets for Infinity base%CL%%NAME%}
-ItemDisplay[(6ls OR 6cs OR 6bs OR 6ws) (SK48>2 OR SK38>2 OR SK53>2) NMAG !RW SOCK=4]: %DOT-D6%%TIER-5%%NAME%{%TAN%Note%WHITE%: Good Infinity base%CL%%NAME%}
-ItemDisplay[(6ls OR 6cs OR 6bs OR 6ws) (SK48>2 OR SK38>2 OR SK53>2) NMAG !RW SOCK=0]: %DOT-D6%%TIER-5%%NAME%{%TAN%Note%WHITE%: Hit 4 sockets for Infinity base%CL%%NAME%}
-ItemDisplay[6ws (SK59>2 OR SK39>2) (SK65>2 OR SK46>0) NMAG !RW SOCK=6 ILVL>25]: %DOT-D6%%TIER-5%%NAME%{%TAN%Note%WHITE%: Good Obsession base%CL%%NAME%}
-ItemDisplay[6ws (SK59>2 OR SK39>2) (SK65>2 OR SK46>0) NMAG !RW SOCK=0 ILVL>25]: %DOT-D6%%TIER-5%%NAME%{%TAN%Note%WHITE%: Hit 6 sockets for Good Obsession base%CL%%NAME%}
-ItemDisplay[6ws SK59>2 SK39>2 NMAG !RW SOCK=6 ILVL>25]: %DOT-D6%%TIER-5%%NAME%{%TAN%Note%WHITE%: Good Obsession base%CL%%NAME%}
-ItemDisplay[6ws SK59>2 SK39>2 NMAG !RW SOCK=0 ILVL>25]: %DOT-D6%%TIER-5%%NAME%{%TAN%Note%WHITE%: Hit 6 sockets for Good Obsession base%CL%%NAME%}
-ItemDisplay[6ws (SK59>2 OR SK39>2) NMAG !RW SOCK=6 ILVL>25]: %DOT-D6%%TIER-3%%NAME%{%TAN%Note%WHITE%: Obsession base%CL%%NAME%}
-ItemDisplay[6ws (SK59>2 OR SK39>2) NMAG !RW SOCK=0 ILVL>25]: %DOT-D6%%TIER-3%%NAME%{%TAN%Note%WHITE%: Hit 6 sockets for Obsession base%CL%%NAME%}
-ItemDisplay[6ws (SK56>2 OR SK62>2) SK61>2 NMAG !RW SOCK=6 ILVL>25]: %DOT-D6%%TIER-7%%NAME%{%TAN%Note%WHITE%: Good Obsession base%CL%%NAME%}
-ItemDisplay[6ws (SK56>2 OR SK62>2) SK61>2 NMAG !RW SOCK=0 ILVL>25]: %DOT-D6%%TIER-7%%NAME%{%TAN%Note%WHITE%: Hit 6 sockets for Good Obsession base%CL%%NAME%}
-ItemDisplay[6ws (SK56>2 OR SK62>2) (SK61>2 OR SK60>0) NMAG !RW SOCK=6 ILVL>25]: %DOT-D6%%TIER-5%%NAME%{%TAN%Note%WHITE%: Good Obsession base%CL%%NAME%}
-ItemDisplay[6ws (SK56>2 OR SK62>2) (SK61>2 OR SK60>0) NMAG !RW SOCK=0 ILVL>25]: %DOT-D6%%TIER-5%%NAME%{%TAN%Note%WHITE%: Hit 6 sockets for Good Obsession base%CL%%NAME%}
-ItemDisplay[6ws (SK56>2 OR SK62>2 OR SK39>2 OR SK59>2 OR SK53>2 OR SK38>2) NMAG !RW SOCK=6 ILVL>25]: %DOT-D6%%TIER-3%%NAME%{%TAN%Note%WHITE%: Obsession base%CL%%NAME%}
-ItemDisplay[6ws (SK56>2 OR SK62>2 OR SK39>2 OR SK59>2 OR SK53>2 OR SK38>2) NMAG !RW SOCK=0 ILVL>25]: %DOT-D6%%TIER-3%%NAME%{%TAN%Note%WHITE%: Hit 6 sockets for Obsession base%CL%%NAME%}
+ItemDisplay[(6ls OR 6cs OR 6bs OR 6ws) (SK48>2 OR SK38>2 OR SK53>2) NMAG !RW SOCK=4]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: Good Infinity base%CL%%NAME%}
+ItemDisplay[(6ls OR 6cs OR 6bs OR 6ws) (SK48>2 OR SK38>2 OR SK53>2) NMAG !RW SOCK=0]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: Hit 4 sockets for Infinity base%CL%%NAME%}
+ItemDisplay[6ws (SK59>2 OR SK39>2) (SK65>2 OR SK46>0) NMAG !RW SOCK=6 ILVL>25]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: Good Obsession base%CL%%NAME%}
+ItemDisplay[6ws (SK59>2 OR SK39>2) (SK65>2 OR SK46>0) NMAG !RW SOCK=0 ILVL>25]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: Hit 6 sockets for Good Obsession base%CL%%NAME%}
+ItemDisplay[6ws SK59>2 SK39>2 NMAG !RW SOCK=6 ILVL>25]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: Good Obsession base%CL%%NAME%}
+ItemDisplay[6ws SK59>2 SK39>2 NMAG !RW SOCK=0 ILVL>25]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: Hit 6 sockets for Good Obsession base%CL%%NAME%}
+ItemDisplay[6ws (SK59>2 OR SK39>2) NMAG !RW SOCK=6 ILVL>25]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: Obsession base%CL%%NAME%}
+ItemDisplay[6ws (SK59>2 OR SK39>2) NMAG !RW SOCK=0 ILVL>25]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: Hit 6 sockets for Obsession base%CL%%NAME%}
+ItemDisplay[6ws (SK56>2 OR SK62>2) SK61>2 NMAG !RW SOCK=6 ILVL>25]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: Good Obsession base%CL%%NAME%}
+ItemDisplay[6ws (SK56>2 OR SK62>2) SK61>2 NMAG !RW SOCK=0 ILVL>25]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: Hit 6 sockets for Good Obsession base%CL%%NAME%}
+ItemDisplay[6ws (SK56>2 OR SK62>2) (SK61>2 OR SK60>0) NMAG !RW SOCK=6 ILVL>25]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: Good Obsession base%CL%%NAME%}
+ItemDisplay[6ws (SK56>2 OR SK62>2) (SK61>2 OR SK60>0) NMAG !RW SOCK=0 ILVL>25]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: Hit 6 sockets for Good Obsession base%CL%%NAME%}
+ItemDisplay[6ws (SK56>2 OR SK62>2 OR SK39>2 OR SK59>2 OR SK53>2 OR SK38>2) NMAG !RW SOCK=6 ILVL>25]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: Obsession base%CL%%NAME%}
+ItemDisplay[6ws (SK56>2 OR SK62>2 OR SK39>2 OR SK59>2 OR SK53>2 OR SK38>2) NMAG !RW SOCK=0 ILVL>25]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: Hit 6 sockets for Obsession base%CL%%NAME%}
 ItemDisplay[(wst OR 8ws OR 6ws) SK58>0 (SK50>0 OR SK60>0) SK57>0 !INF NMAG !RW SOCK=0]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: Roll 5 open sockets for CTA Base%CL%%WHITE%Roll 4 open sockets for Memory Base%CL%%NAME%}
 ItemDisplay[(wst OR 8ws OR 6ws) SK58>0 (SK50>0 OR SK60>0) SK57>0 !INF NMAG !RW SOCK=5]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: CTA base%CL%%NAME%}
 ItemDisplay[(wst OR 8ws OR 6ws) (SK58>0 OR SK57>0) SK50>0 SK60>0 !INF NMAG !RW SOCK=0]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: Roll 5 open sockets for CTA Base%CL%%WHITE%Roll 4 open sockets for Memory Base%CL%%NAME%}
@@ -5293,44 +5066,44 @@ ItemDisplay[(wst OR 8ws OR 6ws) SK50>0 SK60>0 !INF NMAG !RW SOCK=0]: %DOT-D6%%NA
 ItemDisplay[(wst OR 8ws OR 6ws) SK50>0 SK60>0 !INF NMAG !RW SOCK=5]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: CTA base%CL%%NAME%}
 ItemDisplay[(wst OR 8ws OR 6ws) (SK50>2 OR SK60>2) !INF NMAG !RW SOCK=0]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: Roll 5 open sockets for CTA Base%CL%%WHITE%Roll 4 open sockets for Memory Base%CL%%NAME%}
 ItemDisplay[(wst OR 8ws OR 6ws) (SK50>2 OR SK60>2) !INF NMAG !RW SOCK=5]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: CTA base%CL%%NAME%}
-ItemDisplay[(wst OR 8ws OR 6ws) (SK58>0 OR SK57>0) (SK50>0 OR SK60>0) !INF NMAG !RW SOCK=0]: %DOT-D6%%TIER-7%%NAME%{%TAN%Note%WHITE%: Roll 5 open sockets for CTA Base%CL%%WHITE%Roll 4 open sockets for Memory Base%CL%%NAME%}
-ItemDisplay[(wst OR 8ws OR 6ws) (SK58>0 OR SK57>0) (SK50>0 OR SK60>0) !INF NMAG !RW SOCK=5]: %DOT-D6%%TIER-7%%NAME%{%TAN%Note%WHITE%: CTA base%CL%%NAME%}
-ItemDisplay[(wst OR 8ws OR 6ws) (SK58>0 OR SK50>0 OR SK60>0) !INF NMAG !RW SOCK=0]: %DOT-D6%%TIER-5%%NAME%{%TAN%Note%WHITE%: Roll 5 open sockets for CTA Base%CL%%WHITE%Roll 4 open sockets for Memory Base%CL%%NAME%}
-ItemDisplay[(wst OR 8ws OR 6ws) (SK58>0 OR SK50>0 OR SK60>0) !INF NMAG !RW SOCK=5]: %DOT-D6%%TIER-5%%NAME%{%TAN%Note%WHITE%: CTA base%CL%%NAME%}
+ItemDisplay[(wst OR 8ws OR 6ws) (SK58>0 OR SK57>0) (SK50>0 OR SK60>0) !INF NMAG !RW SOCK=0]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: Roll 5 open sockets for CTA Base%CL%%WHITE%Roll 4 open sockets for Memory Base%CL%%NAME%}
+ItemDisplay[(wst OR 8ws OR 6ws) (SK58>0 OR SK57>0) (SK50>0 OR SK60>0) !INF NMAG !RW SOCK=5]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: CTA base%CL%%NAME%}
+ItemDisplay[(wst OR 8ws OR 6ws) (SK58>0 OR SK50>0 OR SK60>0) !INF NMAG !RW SOCK=0]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: Roll 5 open sockets for CTA Base%CL%%WHITE%Roll 4 open sockets for Memory Base%CL%%NAME%}
+ItemDisplay[(wst OR 8ws OR 6ws) (SK58>0 OR SK50>0 OR SK60>0) !INF NMAG !RW SOCK=5]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: CTA base%CL%%NAME%}
 ItemDisplay[STAFF SK57>2 SK63>2 (SK50>0 OR SK60>0) !INF NMAG !RW SOCK=4]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: MEMORY base%CL%%NAME%}
 ItemDisplay[STAFF !(sst OR 8ss OR 6ss OR lst OR 8ls) SK57>2 SK63>2 (SK50>0 OR SK60>0) !INF NMAG !RW SOCK=0]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: Roll 4 open sockets for Memory Base%CL%%NAME%}
-ItemDisplay[STAFF SK57>2 SK63>2 !INF NMAG !RW SOCK=4]: %DOT-D6%%TIER-7%%NAME%{%TAN%Note%WHITE%: MEMORY base%CL%%NAME%}
-ItemDisplay[STAFF !(sst OR 8ss OR 6ss OR lst OR 8ls) SK57>2 SK63>2 !INF NMAG !RW SOCK=0]: %DOT-D6%%TIER-7%%NAME%{%TAN%Note%WHITE%: Roll 4 open sockets for Memory Base%CL%%NAME%}
-ItemDisplay[STAFF SK58>2 (SK50>0 OR SK60>0) SK57>0 !INF NMAG !RW SOCK=4]: %DOT-D6%%TIER-5%%NAME%{%TAN%Note%WHITE%: MEMORY base%CL%%NAME%}
-ItemDisplay[STAFF SK58>0 (SK50>0 OR SK60>0) !INF NMAG !RW SOCK=4]: %DOT-D6%%TIER-3%%NAME%{%TAN%Note%WHITE%: MEMORY base%CL%%NAME%}
-ItemDisplay[STAFF SK57>0 (SK50>0 OR SK60>0 OR SK63>2) !INF NMAG !RW SOCK=4]: %DOT-D6%%TIER-3%%NAME%{%TAN%Note%WHITE%: MEMORY base%CL%%NAME%}
+ItemDisplay[STAFF SK57>2 SK63>2 !INF NMAG !RW SOCK=4]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: MEMORY base%CL%%NAME%}
+ItemDisplay[STAFF !(sst OR 8ss OR 6ss OR lst OR 8ls) SK57>2 SK63>2 !INF NMAG !RW SOCK=0]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: Roll 4 open sockets for Memory Base%CL%%NAME%}
+ItemDisplay[STAFF SK58>2 (SK50>0 OR SK60>0) SK57>0 !INF NMAG !RW SOCK=4]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: MEMORY base%CL%%NAME%}
+ItemDisplay[STAFF SK58>0 (SK50>0 OR SK60>0) !INF NMAG !RW SOCK=4]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: MEMORY base%CL%%NAME%}
+ItemDisplay[STAFF SK57>0 (SK50>0 OR SK60>0 OR SK63>2) !INF NMAG !RW SOCK=4]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: MEMORY base%CL%%NAME%}
 ItemDisplay[STAFF SK40>2 SK52>2 !INF NMAG !RW SOCK=4]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: MEMORY base%CL%%NAME%}
 ItemDisplay[STAFF !(sst OR 8ss OR 6ss OR lst OR 8ls) SK40>2 SK52>2 !INF NMAG !RW SOCK=0]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: Roll 4 open sockets for Memory Base%CL%%NAME%}
-ItemDisplay[NMAG STAFF ELT !RW !(8ss OR 8ls OR 6ss OR 6ls) (SK56>2 OR SK51>2 OR SK62>2) SK61>0 (SOCK=0 OR SOCK=4)]: %NAME%{%TAN%Note%WHITE%: Memory Base%CL%%NAME%}
-ItemDisplay[NMAG STAFF ELT !RW !(8ss OR 8ls OR 6ss OR 6ls) (SK369>2 OR SK64>2 OR SK44>2 OR SK59>2) SK65>0 (SOCK=0 OR SOCK=4)]: %NAME%{%TAN%Note%WHITE%: Memory Base%CL%%NAME%}
-ItemDisplay[NMAG STAFF ELT !RW !(8ss OR 8ls OR 6ss OR 6ls) (SK38>2 OR SK47>2 OR SK48>2) SK63>0 (SOCK=0 OR SOCK=4)]: %NAME%{%TAN%Note%WHITE%: Memory Base%CL%%NAME%}
-ItemDisplay[NMAG STAFF ELT !RW !(8ss OR 8ls OR 6ss OR 6ls) SK40>2 SK52>2 (SOCK=0 OR SOCK=4)]: %NAME%{%TAN%Note%WHITE%: Memory Base%CL%%NAME%}
-ItemDisplay[(6ls OR 6cs OR 6bs OR 6ws) (SK47>2 OR SK376>2 OR SK61>2) NMAG !RW !SOCK=1]: %DOT-D6%%TIER-5%%NAME%{%NAME%}
-ItemDisplay[(6ls OR 6cs OR 6bs OR 6ws) (SK44>2 OR SK64>2 OR SK65>2) NMAG !RW (SOCK=0 OR SOCK=5)]: %DOT-D6%%TIER-5%%NAME%{%NAME%}
-ItemDisplay[(cst OR bst OR 8cs OR 8bs OR 6cs OR 6bs OR wst OR 8ws OR 6ws) SK58>2 NMAG !RW (SOCK=0 OR SOCK=4 OR SOCK=5)]: %DOT-D6%%TIER-5%%NAME%{%NAME%}
-ItemDisplay[(cst OR bst OR 8cs OR 8bs OR 6cs OR 6bs OR wst OR 8ws OR 6ws) SK50>0 SK58>0 NMAG !RW (SOCK=0 OR SOCK=4 OR SOCK=5)]: %DOT-D6%%TIER-3%%NAME%{%NAME%}
-ItemDisplay[(amd OR ame) TABSK2>2 !ETH !INF NMAG !RW (SOCK=0 OR SOCK=4)]: %DOT-D6%%TIER-5%%NAME%{%NAME%}
-ItemDisplay[SIN !(ktr OR wrb OR axf OR ces) SK278>2 (SK258>2 OR SK267>2 OR SK277>2) !INF NMAG !RW (SOCK=0 OR SOCK=3)]: %DOT-D6%%TIER-5%%NAME%{%TAN%Note%WHITE%: Venom Pre-buff%CL%%NAME%}
-ItemDisplay[SIN !(ktr OR wrb OR axf OR ces) SK278>2 (SK258>0 OR SK267>0 OR SK277>0) !INF NMAG !RW (SOCK=0 OR SOCK=3)]: %DOT-D6%%TIER-5%%NAME%{%TAN%Note%WHITE%: Venom Pre-buff%CL%%NAME%}
-ItemDisplay[SIN !(ktr OR wrb OR axf OR ces) SK278>2 !INF NMAG !RW (SOCK=0 OR SOCK=3)]: %DOT-D6%%TIER-5%%NAME%{%TAN%Note%WHITE%: Venom Pre-buff%CL%%NAME%}
-ItemDisplay[(9tw OR btl OR 7tw) SK252>2 SK263>2 !INF NMAG !RW (SOCK=0 OR SOCK=3)]: %DOT-D6%%TIER-5%%NAME%{%TAN%Note%WHITE%: Venom RW%CL%%NAME%}
-ItemDisplay[(9tw OR btl OR 7tw) (SK252>2 OR SK263>2) !INF NMAG !RW (SOCK=0 OR SOCK=3)]: %DOT-D6%%TIER-5%%NAME%{%TAN%Note%WHITE%: Venom RW%CL%%NAME%}
-ItemDisplay[(9tw OR btl OR 7tw) SK252>0 SK263>0 !INF NMAG !RW (SOCK=0 OR SOCK=3)]: %DOT-D6%%TIER-3%%NAME%{%TAN%Note%WHITE%: Venom RW%CL%%NAME%}
-ItemDisplay[(9tw OR btl OR 7tw) SK257>2 SK263>2 SK275>2 !INF NMAG !RW (SOCK=0 OR SOCK=3)]: %DOT-D6%%TIER-5%%NAME%{%TAN%Note%WHITE%: Venom RW%CL%%NAME%}
-ItemDisplay[(9tw OR btl OR 7tw) SK257>2 (SK252>2 OR SK263>2 OR SK275>2) !INF NMAG !RW (SOCK=0 OR SOCK=3)]: %DOT-D6%%TIER-5%%NAME%{%TAN%Note%WHITE%: Venom RW%CL%%NAME%}
-ItemDisplay[(9tw OR btl OR 7tw) SK257>2 SK263>0 SK275>0 !INF NMAG !RW (SOCK=0 OR SOCK=3)]: %DOT-D6%%TIER-3%%NAME%{%TAN%Note%WHITE%: Venom RW%CL%%NAME%}
-ItemDisplay[(9tw OR btl OR 7tw) (SK259>2 OR SK262>2 OR SK271>2 OR SK274>2 OR SK269>2 OR SK366>2 OR SK280>2) !INF NMAG !RW (SOCK=0 OR SOCK=3)]: %DOT-D6%%TIER-3%%NAME%{%NAME%}
-ItemDisplay[SIN !(ktr OR wrb OR axf OR ces) (SK262>2 OR SK271>2 OR SK276>2 OR SK366>2) !INF (SOCK=0 OR SOCK=3) !RW NMAG]: %DOT-D6%%TIER-5%%NAME%{%NAME%}
-ItemDisplay[9tw (SK259>2 OR SK262>2 OR SK271>2 OR SK274>2 OR SK269>2 OR SK366>2 OR SK280>2) !INF NMAG !RW (SOCK=0 OR SOCK=3)]: %DOT-D6%%TIER-5%%NAME%{%NAME%}
-ItemDisplay[7xf ETH SK257>2 SK252>2 SK263>2 !INF NMAG !RW (SOCK=0 OR SOCK=3)]: %DOT-D6%%TIER-5%%NAME%{%NAME%}
-ItemDisplay[7xf ETH SK257>2 (SK252>2 OR SK263>2) !INF NMAG !RW (SOCK=0 OR SOCK=3)]: %DOT-D6%%TIER-5%%NAME%{%NAME%}
+ItemDisplay[NMAG STAFF ELT !RW !(8ss OR 8ls OR 6ss OR 6ls) (SK56>2 OR SK51>2 OR SK62>2) SK61>0 (SOCK=0 OR SOCK=4)]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: Memory Base%CL%%NAME%}
+ItemDisplay[NMAG STAFF ELT !RW !(8ss OR 8ls OR 6ss OR 6ls) (SK369>2 OR SK64>2 OR SK44>2 OR SK59>2) SK65>0 (SOCK=0 OR SOCK=4)]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: Memory Base%CL%%NAME%}
+ItemDisplay[NMAG STAFF ELT !RW !(8ss OR 8ls OR 6ss OR 6ls) (SK38>2 OR SK47>2 OR SK48>2) SK63>0 (SOCK=0 OR SOCK=4)]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: Memory Base%CL%%NAME%}
+ItemDisplay[NMAG STAFF ELT !RW !(8ss OR 8ls OR 6ss OR 6ls) SK40>2 SK52>2 (SOCK=0 OR SOCK=4)]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: Memory Base%CL%%NAME%}
+ItemDisplay[(6ls OR 6cs OR 6bs OR 6ws) (SK47>2 OR SK376>2 OR SK61>2) NMAG !RW !SOCK=1]: %DOT-D6%%NAME%{%NAME%}
+ItemDisplay[(6ls OR 6cs OR 6bs OR 6ws) (SK44>2 OR SK64>2 OR SK65>2) NMAG !RW (SOCK=0 OR SOCK=5)]: %DOT-D6%%NAME%{%NAME%}
+ItemDisplay[(cst OR bst OR 8cs OR 8bs OR 6cs OR 6bs OR wst OR 8ws OR 6ws) SK58>2 NMAG !RW (SOCK=0 OR SOCK=4 OR SOCK=5)]: %DOT-D6%%NAME%{%NAME%}
+ItemDisplay[(cst OR bst OR 8cs OR 8bs OR 6cs OR 6bs OR wst OR 8ws OR 6ws) SK50>0 SK58>0 NMAG !RW (SOCK=0 OR SOCK=4 OR SOCK=5)]: %DOT-D6%%NAME%{%NAME%}
+ItemDisplay[(amd OR ame) TABSK2>2 !ETH !INF NMAG !RW (SOCK=0 OR SOCK=4)]: %DOT-D6%%NAME%{%NAME%}
+ItemDisplay[SIN !(ktr OR wrb OR axf OR ces) SK278>2 (SK258>2 OR SK267>2 OR SK277>2) !INF NMAG !RW (SOCK=0 OR SOCK=3)]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: Venom Pre-buff%CL%%NAME%}
+ItemDisplay[SIN !(ktr OR wrb OR axf OR ces) SK278>2 (SK258>0 OR SK267>0 OR SK277>0) !INF NMAG !RW (SOCK=0 OR SOCK=3)]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: Venom Pre-buff%CL%%NAME%}
+ItemDisplay[SIN !(ktr OR wrb OR axf OR ces) SK278>2 !INF NMAG !RW (SOCK=0 OR SOCK=3)]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: Venom Pre-buff%CL%%NAME%}
+ItemDisplay[(9tw OR btl OR 7tw) SK252>2 SK263>2 !INF NMAG !RW (SOCK=0 OR SOCK=3)]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: Venom RW%CL%%NAME%}
+ItemDisplay[(9tw OR btl OR 7tw) (SK252>2 OR SK263>2) !INF NMAG !RW (SOCK=0 OR SOCK=3)]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: Venom RW%CL%%NAME%}
+ItemDisplay[(9tw OR btl OR 7tw) SK252>0 SK263>0 !INF NMAG !RW (SOCK=0 OR SOCK=3)]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: Venom RW%CL%%NAME%}
+ItemDisplay[(9tw OR btl OR 7tw) SK257>2 SK263>2 SK275>2 !INF NMAG !RW (SOCK=0 OR SOCK=3)]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: Venom RW%CL%%NAME%}
+ItemDisplay[(9tw OR btl OR 7tw) SK257>2 (SK252>2 OR SK263>2 OR SK275>2) !INF NMAG !RW (SOCK=0 OR SOCK=3)]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: Venom RW%CL%%NAME%}
+ItemDisplay[(9tw OR btl OR 7tw) SK257>2 SK263>0 SK275>0 !INF NMAG !RW (SOCK=0 OR SOCK=3)]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: Venom RW%CL%%NAME%}
+ItemDisplay[(9tw OR btl OR 7tw) (SK259>2 OR SK262>2 OR SK271>2 OR SK274>2 OR SK269>2 OR SK366>2 OR SK280>2) !INF NMAG !RW (SOCK=0 OR SOCK=3)]: %DOT-D6%%NAME%{%NAME%}
+ItemDisplay[SIN !(ktr OR wrb OR axf OR ces) (SK262>2 OR SK271>2 OR SK276>2 OR SK366>2) !INF (SOCK=0 OR SOCK=3) !RW NMAG]: %DOT-D6%%NAME%{%NAME%}
+ItemDisplay[9tw (SK259>2 OR SK262>2 OR SK271>2 OR SK274>2 OR SK269>2 OR SK366>2 OR SK280>2) !INF NMAG !RW (SOCK=0 OR SOCK=3)]: %DOT-D6%%NAME%{%NAME%}
+ItemDisplay[7xf ETH SK257>2 SK252>2 SK263>2 !INF NMAG !RW (SOCK=0 OR SOCK=3)]: %DOT-D6%%NAME%{%NAME%}
+ItemDisplay[7xf ETH SK257>2 (SK252>2 OR SK263>2) !INF NMAG !RW (SOCK=0 OR SOCK=3)]: %DOT-D6%%NAME%{%NAME%}
 ItemDisplay[(ob5 OR oba OR obf) SK40>2 SK52>2 !INF NMAG !RW SOCK=0]: %DOT-D6%%NAME%{%TAN%Note%WHITE%: PLAGUE base%CL%%NAME%}
-ItemDisplay[WAND !(wnd OR ywn OR 9wn) (SK67>2 OR SK74>2 OR SK84>2 OR SK83>2 OR SK92>2) !INF NMAG !RW !SOCK=1]: %DOT-D6%%TIER-3%%NAME%{%NAME%}
+ItemDisplay[WAND !(wnd OR ywn OR 9wn) (SK67>2 OR SK74>2 OR SK84>2 OR SK83>2 OR SK92>2) !INF NMAG !RW !SOCK=1]: %DOT-D6%%NAME%{%NAME%}
 ItemDisplay[amf TABSK2=3 ETH !RW ETH (SOCK=0 OR SOCK=2 OR SOCK=3) NMAG]: %DOT-D6%%NAME%{%NAME%}
 
 // FL8 dagger base handling is handled by the strict block above
@@ -6048,7 +5821,7 @@ ItemDisplay[(r33 OR r33s)]: %NAME%{%NAME%%TAN%Note%WHITE%: %ORANGE%Zod %WHITE%+ 
 // Dynamic rune values: Ohm, Lo, Jah, Cham, Zod; median rounded to nearest 0.05 HR with 30% timeline sanity check
 // Dynamic material values: keys, boss materials, and selected utility currency; exact median HR values with WSS converted at 0.01 HR each
 // Horadric Cube rune values: dynamic PD2 Trader runes only
-// Updated: 2026-10-20T16:13:25.071Z
+// Updated: 2026-10-22T02:57:43.621Z
 // Price data through: 2026-10-18T21:18:38.520Z
 ItemDisplay[box]: %NAME%{%NAME%%CL%%BLACK%|}%CONTINUE%
 ItemDisplay[box]: %NAME%{%NAME%%CL%%RED%Ohm: %PURPLE%24H %WHITE%0.85  %PURPLE%48H %WHITE%0.85  %PURPLE%72H %WHITE%0.85  %PURPLE%1W %WHITE%0.85 HR}%CONTINUE%
@@ -6056,44 +5829,44 @@ ItemDisplay[box]: %NAME%{%NAME%%CL%%RED%Lo: %PURPLE%24H %WHITE%1  %PURPLE%48H %W
 ItemDisplay[box]: %NAME%{%NAME%%CL%%RED%Jah: %PURPLE%24H %WHITE%1.75  %PURPLE%48H %WHITE%1.75  %PURPLE%72H %WHITE%1.75  %PURPLE%1W %WHITE%1.75 HR  }%CONTINUE%
 ItemDisplay[box]: %NAME%{%NAME%%CL%%RED%Cham: %PURPLE%24H %WHITE%2.5  %PURPLE%48H %WHITE%2.5  %PURPLE%72H %WHITE%2.5  %PURPLE%1W %WHITE%2.5 HR         }%CONTINUE%
 ItemDisplay[box]: %NAME%{%NAME%%CL%%RED%Zod: %PURPLE%24H %WHITE%7  %PURPLE%48H %WHITE%7  %PURPLE%72H %WHITE%7  %PURPLE%1W %WHITE%7 HR               }%CONTINUE%
-ItemDisplay[box]: %NAME%{%NAME%%CL%%PURPLE%Current Values:%CL%%BLACK%|%CL%%GOLD%Updated: 2026-10-20 16:13:25 UTC%CL%%BLACK%|%CL%}
-ItemDisplay[(r21 OR r21s)]: %NAME%{%NAME%%CL%%BLACK%|%CL%%RED%Rune Stack Value: %WHITE%$f(round(QTY*0.03*100)/100) HR %PURPLE%at 24H Prices%CL%%PURPLE%24H %WHITE%0.03 HR %PURPLE%48H %WHITE%0.03 HR %PURPLE%72H %WHITE%0.03 HR %PURPLE%1W %WHITE%0.03 HR%CL%%PURPLE%Current Values:%CL%%BLACK%|%CL%%GOLD%Updated: 2026-10-20 16:13:25 UTC%CL%%BLACK%|%CL%}
-ItemDisplay[(r22 OR r22s)]: %NAME%{%NAME%%CL%%BLACK%|%CL%%RED%Rune Stack Value: %WHITE%$f(round(QTY*0.05*100)/100) HR %PURPLE%at 24H Prices%CL%%PURPLE%24H %WHITE%0.05 HR %PURPLE%48H %WHITE%0.05 HR %PURPLE%72H %WHITE%0.05 HR %PURPLE%1W %WHITE%0.05 HR%CL%%PURPLE%Current Values:%CL%%BLACK%|%CL%%GOLD%Updated: 2026-10-20 16:13:25 UTC%CL%%BLACK%|%CL%}
-ItemDisplay[(r23 OR r23s)]: %NAME%{%NAME%%CL%%BLACK%|%CL%%RED%Rune Stack Value: %WHITE%$f(round(QTY*0.1*100)/100) HR %PURPLE%at 24H Prices%CL%%PURPLE%24H %WHITE%0.1 HR %PURPLE%48H %WHITE%0.1 HR %PURPLE%72H %WHITE%0.1 HR %PURPLE%1W %WHITE%0.1 HR%CL%%PURPLE%Current Values:%CL%%BLACK%|%CL%%GOLD%Updated: 2026-10-20 16:13:25 UTC%CL%%BLACK%|%CL%}
-ItemDisplay[(r24 OR r24s)]: %NAME%{%NAME%%CL%%BLACK%|%CL%%RED%Rune Stack Value: %WHITE%$f(round(QTY*0.15*100)/100) HR %PURPLE%at 24H Prices%CL%%PURPLE%24H %WHITE%0.15 HR %PURPLE%48H %WHITE%0.15 HR %PURPLE%72H %WHITE%0.15 HR %PURPLE%1W %WHITE%0.15 HR%CL%%PURPLE%Current Values:%CL%%BLACK%|%CL%%GOLD%Updated: 2026-10-20 16:13:25 UTC%CL%%BLACK%|%CL%}
-ItemDisplay[(r25 OR r25s)]: %NAME%{%NAME%%CL%%BLACK%|%CL%%RED%Rune Stack Value: %WHITE%$f(round(QTY*0.25*100)/100) HR %PURPLE%at 24H Prices%CL%%PURPLE%24H %WHITE%0.25 HR %PURPLE%48H %WHITE%0.25 HR %PURPLE%72H %WHITE%0.25 HR %PURPLE%1W %WHITE%0.25 HR%CL%%PURPLE%Current Values:%CL%%BLACK%|%CL%%GOLD%Updated: 2026-10-20 16:13:25 UTC%CL%%BLACK%|%CL%}
-ItemDisplay[(r26 OR r26s)]: %NAME%{%NAME%%CL%%BLACK%|%CL%%RED%Rune Stack Value: %WHITE%$f(round(QTY*0.5*100)/100) HR %PURPLE%at 24H Prices%CL%%PURPLE%24H %WHITE%0.5 HR %PURPLE%48H %WHITE%0.5 HR %PURPLE%72H %WHITE%0.5 HR %PURPLE%1W %WHITE%0.5 HR%CL%%PURPLE%Current Values:%CL%%BLACK%|%CL%%GOLD%Updated: 2026-10-20 16:13:25 UTC%CL%%BLACK%|%CL%}
-ItemDisplay[(r27 OR r27s)]: %NAME%{%NAME%%CL%%BLACK%|%CL%%RED%Rune Stack Value: %WHITE%$f(round(QTY*0.85*100)/100) HR %PURPLE%at 24H Prices%CL%%PURPLE%24H %WHITE%0.85 HR %PURPLE%48H %WHITE%0.85 HR %PURPLE%72H %WHITE%0.85 HR %PURPLE%1W %WHITE%0.85 HR%CL%%PURPLE%Current Values:%CL%%BLACK%|%CL%%GOLD%Updated: 2026-10-20 16:13:25 UTC%CL%%BLACK%|%CL%}
-ItemDisplay[(r28 OR r28s)]: %NAME%{%NAME%%CL%%BLACK%|%CL%%RED%Rune Stack Value: %WHITE%$f(round(QTY*1*100)/100) HR %PURPLE%at 24H Prices%CL%%PURPLE%24H %WHITE%1 HR %PURPLE%48H %WHITE%1 HR %PURPLE%72H %WHITE%1 HR %PURPLE%1W %WHITE%1 HR%CL%%PURPLE%Current Values:%CL%%BLACK%|%CL%%GOLD%Updated: 2026-10-20 16:13:25 UTC%CL%%BLACK%|%CL%}
-ItemDisplay[(r29 OR r29s)]: %NAME%{%NAME%%CL%%BLACK%|%CL%%RED%Rune Stack Value: %WHITE%$f(round(QTY*1.5*100)/100) HR %PURPLE%at 24H Prices%CL%%PURPLE%24H %WHITE%1.5 HR %PURPLE%48H %WHITE%1.5 HR %PURPLE%72H %WHITE%1.5 HR %PURPLE%1W %WHITE%1.5 HR%CL%%PURPLE%Current Values:%CL%%BLACK%|%CL%%GOLD%Updated: 2026-10-20 16:13:25 UTC%CL%%BLACK%|%CL%}
-ItemDisplay[(r30 OR r30s)]: %NAME%{%NAME%%CL%%BLACK%|%CL%%RED%Rune Stack Value: %WHITE%$f(round(QTY*3*100)/100) HR %PURPLE%at 24H Prices%CL%%PURPLE%24H %WHITE%3 HR %PURPLE%48H %WHITE%3 HR %PURPLE%72H %WHITE%3 HR %PURPLE%1W %WHITE%3 HR%CL%%PURPLE%Current Values:%CL%%BLACK%|%CL%%GOLD%Updated: 2026-10-20 16:13:25 UTC%CL%%BLACK%|%CL%}
-ItemDisplay[(r31 OR r31s)]: %NAME%{%NAME%%CL%%BLACK%|%CL%%RED%Rune Stack Value: %WHITE%$f(round(QTY*1.75*100)/100) HR %PURPLE%at 24H Prices%CL%%PURPLE%24H %WHITE%1.75 HR %PURPLE%48H %WHITE%1.75 HR %PURPLE%72H %WHITE%1.75 HR %PURPLE%1W %WHITE%1.75 HR%CL%%PURPLE%Current Values:%CL%%BLACK%|%CL%%GOLD%Updated: 2026-10-20 16:13:25 UTC%CL%%BLACK%|%CL%}
-ItemDisplay[(r32 OR r32s)]: %NAME%{%NAME%%CL%%BLACK%|%CL%%RED%Rune Stack Value: %WHITE%$f(round(QTY*2.5*100)/100) HR %PURPLE%at 24H Prices%CL%%PURPLE%24H %WHITE%2.5 HR %PURPLE%48H %WHITE%2.5 HR %PURPLE%72H %WHITE%2.5 HR %PURPLE%1W %WHITE%2.5 HR%CL%%PURPLE%Current Values:%CL%%BLACK%|%CL%%GOLD%Updated: 2026-10-20 16:13:25 UTC%CL%%BLACK%|%CL%}
-ItemDisplay[(r33 OR r33s)]: %NAME%{%NAME%%CL%%BLACK%|%CL%%RED%Rune Stack Value: %WHITE%$f(round(QTY*7*100)/100) HR %PURPLE%at 24H Prices%CL%%PURPLE%24H %WHITE%7 HR %PURPLE%48H %WHITE%7 HR %PURPLE%72H %WHITE%7 HR %PURPLE%1W %WHITE%7 HR%CL%%PURPLE%Current Values:%CL%%BLACK%|%CL%%GOLD%Updated: 2026-10-20 16:13:25 UTC%CL%%BLACK%|%CL%}
-ItemDisplay[pk3]: %NAME%{%NAME%%CL%%BLACK%|%CL%%RED%Stack Value: %WHITE%$f(round(QTY*0.1*100)/100) HR %PURPLE%at 24H Prices%CL%%PURPLE%24H %WHITE%0.1 HR %PURPLE%48H %WHITE%0.1 HR %PURPLE%72H %WHITE%0.1 HR %PURPLE%1W %WHITE%0.1 HR%CL%%PURPLE%Current Values:%CL%%BLACK%|%CL%%GOLD%Updated: 2026-10-20 16:13:25 UTC%CL%%BLACK%|%CL%}
-ItemDisplay[pk2]: %NAME%{%NAME%%CL%%BLACK%|%CL%%RED%Stack Value: %WHITE%$f(round(QTY*0.08*100)/100) HR %PURPLE%at 24H Prices%CL%%PURPLE%24H %WHITE%0.08 HR %PURPLE%48H %WHITE%0.08 HR %PURPLE%72H %WHITE%0.08 HR %PURPLE%1W %WHITE%0.08 HR%CL%%PURPLE%Current Values:%CL%%BLACK%|%CL%%GOLD%Updated: 2026-10-20 16:13:25 UTC%CL%%BLACK%|%CL%}
-ItemDisplay[pk1]: %NAME%{%NAME%%CL%%BLACK%|%CL%%RED%Stack Value: %WHITE%$f(round(QTY*0.1*100)/100) HR %PURPLE%at 24H Prices%CL%%PURPLE%24H %WHITE%0.1 HR %PURPLE%48H %WHITE%0.1 HR %PURPLE%72H %WHITE%0.1 HR %PURPLE%1W %WHITE%0.1 HR%CL%%PURPLE%Current Values:%CL%%BLACK%|%CL%%GOLD%Updated: 2026-10-20 16:13:25 UTC%CL%%BLACK%|%CL%}
-ItemDisplay[ubaa]: %NAME%{%NAME%%CL%%BLACK%|%CL%%RED%Stack Value: %WHITE%$f(round(QTY*0.05*100)/100) HR %PURPLE%at 24H Prices%CL%%PURPLE%24H %WHITE%0.05 HR %PURPLE%48H %WHITE%0.05 HR %PURPLE%72H %WHITE%0.05 HR %PURPLE%1W %WHITE%0.05 HR%CL%%PURPLE%Current Values:%CL%%BLACK%|%CL%%GOLD%Updated: 2026-10-20 16:13:25 UTC%CL%%BLACK%|%CL%}
-ItemDisplay[ubab]: %NAME%{%NAME%%CL%%BLACK%|%CL%%RED%Stack Value: %WHITE%$f(round(QTY*0.1*100)/100) HR %PURPLE%at 24H Prices%CL%%PURPLE%24H %WHITE%0.1 HR %PURPLE%48H %WHITE%0.1 HR %PURPLE%72H %WHITE%0.1 HR %PURPLE%1W %WHITE%0.1 HR%CL%%PURPLE%Current Values:%CL%%BLACK%|%CL%%GOLD%Updated: 2026-10-20 16:13:25 UTC%CL%%BLACK%|%CL%}
-ItemDisplay[ubac]: %NAME%{%NAME%%CL%%BLACK%|%CL%%RED%Stack Value: %WHITE%$f(round(QTY*0.04*100)/100) HR %PURPLE%at 24H Prices%CL%%PURPLE%24H %WHITE%0.04 HR %PURPLE%48H %WHITE%0.04 HR %PURPLE%72H %WHITE%0.04 HR %PURPLE%1W %WHITE%0.04 HR%CL%%PURPLE%Current Values:%CL%%BLACK%|%CL%%GOLD%Updated: 2026-10-20 16:13:25 UTC%CL%%BLACK%|%CL%}
-ItemDisplay[dcbl]: %NAME%{%NAME%%CL%%BLACK%|%CL%%RED%Stack Value: %WHITE%$f(round(QTY*0.05*100)/100) HR %PURPLE%at 24H Prices%CL%%PURPLE%24H %WHITE%0.05 HR %PURPLE%48H %WHITE%0.05 HR %PURPLE%72H %WHITE%0.05 HR %PURPLE%1W %WHITE%0.05 HR%CL%%PURPLE%Current Values:%CL%%BLACK%|%CL%%GOLD%Updated: 2026-10-20 16:13:25 UTC%CL%%BLACK%|%CL%}
-ItemDisplay[dcso]: %NAME%{%NAME%%CL%%BLACK%|%CL%%RED%Stack Value: %WHITE%$f(round(QTY*1*100)/100) HR %PURPLE%at 24H Prices%CL%%PURPLE%24H %WHITE%1 HR %PURPLE%48H %WHITE%1 HR %PURPLE%72H %WHITE%1 HR %PURPLE%1W %WHITE%1 HR%CL%%PURPLE%Current Values:%CL%%BLACK%|%CL%%GOLD%Updated: 2026-10-20 16:13:25 UTC%CL%%BLACK%|%CL%}
-ItemDisplay[dcho]: %NAME%{%NAME%%CL%%BLACK%|%CL%%RED%Stack Value: %WHITE%$f(round(QTY*0.15*100)/100) HR %PURPLE%at 24H Prices%CL%%PURPLE%24H %WHITE%0.15 HR %PURPLE%48H %WHITE%0.15 HR %PURPLE%72H %WHITE%0.15 HR %PURPLE%1W %WHITE%0.15 HR%CL%%PURPLE%Current Values:%CL%%BLACK%|%CL%%GOLD%Updated: 2026-10-20 16:13:25 UTC%CL%%BLACK%|%CL%}
-ItemDisplay[rtmo]: %NAME%{%NAME%%CL%%BLACK%|%CL%%RED%Stack Value: %WHITE%$f(round(QTY*0.03*100)/100) HR %PURPLE%at 24H Prices%CL%%PURPLE%24H %WHITE%0.03 HR %PURPLE%48H %WHITE%0.03 HR %PURPLE%72H %WHITE%0.03 HR %PURPLE%1W %WHITE%0.03 HR%CL%%PURPLE%Current Values:%CL%%BLACK%|%CL%%GOLD%Updated: 2026-10-20 16:13:25 UTC%CL%%BLACK%|%CL%}
-ItemDisplay[rtmv]: %NAME%{%NAME%%CL%%BLACK%|%CL%%RED%Stack Value: %WHITE%$f(round(QTY*0.75*100)/100) HR %PURPLE%at 24H Prices%CL%%PURPLE%24H %WHITE%0.75 HR %PURPLE%48H %WHITE%0.75 HR %PURPLE%72H %WHITE%0.75 HR %PURPLE%1W %WHITE%0.75 HR%CL%%PURPLE%Current Values:%CL%%BLACK%|%CL%%GOLD%Updated: 2026-10-20 16:13:25 UTC%CL%%BLACK%|%CL%}
-ItemDisplay[cm2f]: %NAME%{%NAME%%CL%%BLACK%|%CL%%RED%Stack Value: %WHITE%$f(round(QTY*0.5*100)/100) HR %PURPLE%at 24H Prices%CL%%PURPLE%24H %WHITE%0.5 HR %PURPLE%48H %WHITE%0.5 HR %PURPLE%72H %WHITE%0.5 HR %PURPLE%1W %WHITE%0.5 HR%CL%%PURPLE%Current Values:%CL%%BLACK%|%CL%%GOLD%Updated: 2026-10-20 16:13:25 UTC%CL%%BLACK%|%CL%}
-ItemDisplay[lucb]: %NAME%{%NAME%%CL%%BLACK%|%CL%%RED%Stack Value: %WHITE%$f(round(QTY*0.75*100)/100) HR %PURPLE%at 24H Prices%CL%%PURPLE%24H %WHITE%0.75 HR %PURPLE%48H %WHITE%0.75 HR %PURPLE%72H %WHITE%0.75 HR %PURPLE%1W %WHITE%0.75 HR%CL%%PURPLE%Current Values:%CL%%BLACK%|%CL%%GOLD%Updated: 2026-10-20 16:13:25 UTC%CL%%BLACK%|%CL%}
-ItemDisplay[lucc]: %NAME%{%NAME%%CL%%BLACK%|%CL%%RED%Stack Value: %WHITE%$f(round(QTY*0.1*100)/100) HR %PURPLE%at 24H Prices%CL%%PURPLE%24H %WHITE%0.1 HR %PURPLE%48H %WHITE%0.1 HR %PURPLE%72H %WHITE%0.1 HR %PURPLE%1W %WHITE%0.1 HR%CL%%PURPLE%Current Values:%CL%%BLACK%|%CL%%GOLD%Updated: 2026-10-20 16:13:25 UTC%CL%%BLACK%|%CL%}
-ItemDisplay[lucd]: %NAME%{%NAME%%CL%%BLACK%|%CL%%RED%Stack Value: %WHITE%$f(round(QTY*0.2*100)/100) HR %PURPLE%at 24H Prices%CL%%PURPLE%24H %WHITE%0.2 HR %PURPLE%48H %WHITE%0.2 HR %PURPLE%72H %WHITE%0.2 HR %PURPLE%1W %WHITE%0.2 HR%CL%%PURPLE%Current Values:%CL%%BLACK%|%CL%%GOLD%Updated: 2026-10-20 16:13:25 UTC%CL%%BLACK%|%CL%}
-ItemDisplay[lbox]: %NAME%{%NAME%%CL%%BLACK%|%CL%%RED%Stack Value: %WHITE%$f(round(QTY*1*100)/100) HR %PURPLE%at 24H Prices%CL%%PURPLE%24H %WHITE%1 HR %PURPLE%48H %WHITE%1 HR %PURPLE%72H %WHITE%1 HR %PURPLE%1W %WHITE%1 HR%CL%%PURPLE%Current Values:%CL%%BLACK%|%CL%%GOLD%Updated: 2026-10-20 16:13:25 UTC%CL%%BLACK%|%CL%}
-ItemDisplay[lpp]: %NAME%{%NAME%%CL%%BLACK%|%CL%%RED%Stack Value: %WHITE%$f(round(QTY*0.1*100)/100) HR %PURPLE%at 24H Prices%CL%%PURPLE%24H %WHITE%0.1 HR %PURPLE%48H %WHITE%0.1 HR %PURPLE%72H %WHITE%0.1 HR %PURPLE%1W %WHITE%0.1 HR%CL%%PURPLE%Current Values:%CL%%BLACK%|%CL%%GOLD%Updated: 2026-10-20 16:13:25 UTC%CL%%BLACK%|%CL%}
-ItemDisplay[imrn]: %NAME%{%NAME%%CL%%BLACK%|%CL%%RED%Stack Value: %WHITE%$f(round(QTY*0.53*100)/100) HR %PURPLE%at 24H Prices%CL%%PURPLE%24H %WHITE%0.53 HR %PURPLE%48H %WHITE%0.53 HR %PURPLE%72H %WHITE%0.53 HR %PURPLE%1W %WHITE%0.53 HR%CL%%PURPLE%Current Values:%CL%%BLACK%|%CL%%GOLD%Updated: 2026-10-20 16:13:25 UTC%CL%%BLACK%|%CL%}
-ItemDisplay[iwss]: %NAME%{%NAME%%CL%%BLACK%|%CL%%RED%Stack Value: %WHITE%$f(round(QTY*0.25*100)/100) HR %PURPLE%at 24H Prices%CL%%PURPLE%24H %WHITE%0.25 HR %PURPLE%48H %WHITE%0.25 HR %PURPLE%72H %WHITE%0.25 HR %PURPLE%1W %WHITE%0.25 HR%CL%%PURPLE%Current Values:%CL%%BLACK%|%CL%%GOLD%Updated: 2026-10-20 16:13:25 UTC%CL%%BLACK%|%CL%}
-ItemDisplay[std]: %NAME%{%NAME%%CL%%BLACK%|%CL%%RED%Stack Value: %WHITE%$f(round(QTY*5.5*100)/100) HR %PURPLE%at 24H Prices%CL%%PURPLE%24H %WHITE%5.5 HR %PURPLE%48H %WHITE%5.5 HR %PURPLE%72H %WHITE%5.5 HR %PURPLE%1W %WHITE%5.5 HR%CL%%PURPLE%Current Values:%CL%%BLACK%|%CL%%GOLD%Updated: 2026-10-20 16:13:25 UTC%CL%%BLACK%|%CL%}
-ItemDisplay[fed]: %NAME%{%NAME%%CL%%BLACK%|%CL%%RED%Stack Value: %WHITE%$f(round(QTY*0.25*100)/100) HR %PURPLE%at 24H Prices%CL%%PURPLE%24H %WHITE%0.25 HR %PURPLE%48H %WHITE%0.25 HR %PURPLE%72H %WHITE%0.25 HR %PURPLE%1W %WHITE%0.25 HR%CL%%PURPLE%Current Values:%CL%%BLACK%|%CL%%GOLD%Updated: 2026-10-20 16:13:25 UTC%CL%%BLACK%|%CL%}
-ItemDisplay[ceh]: %NAME%{%NAME%%CL%%BLACK%|%CL%%RED%Stack Value: %WHITE%$f(round(QTY*0.1*100)/100) HR %PURPLE%at 24H Prices%CL%%PURPLE%24H %WHITE%0.1 HR %PURPLE%48H %WHITE%0.1 HR %PURPLE%72H %WHITE%0.1 HR %PURPLE%1W %WHITE%0.1 HR%CL%%PURPLE%Current Values:%CL%%BLACK%|%CL%%GOLD%Updated: 2026-10-20 16:13:25 UTC%CL%%BLACK%|%CL%}
-ItemDisplay[bet]: %NAME%{%NAME%%CL%%BLACK%|%CL%%RED%Stack Value: %WHITE%$f(round(QTY*0.05*100)/100) HR %PURPLE%at 24H Prices%CL%%PURPLE%24H %WHITE%0.05 HR %PURPLE%48H %WHITE%0.05 HR %PURPLE%72H %WHITE%0.05 HR %PURPLE%1W %WHITE%0.05 HR%CL%%PURPLE%Current Values:%CL%%BLACK%|%CL%%GOLD%Updated: 2026-10-20 16:13:25 UTC%CL%%BLACK%|%CL%}
-ItemDisplay[tes]: %NAME%{%NAME%%CL%%BLACK%|%CL%%RED%Stack Value: %WHITE%$f(round(QTY*0.03*100)/100) HR %PURPLE%at 24H Prices%CL%%PURPLE%24H %WHITE%0.03 HR %PURPLE%48H %WHITE%0.03 HR %PURPLE%72H %WHITE%0.03 HR %PURPLE%1W %WHITE%0.03 HR%CL%%PURPLE%Current Values:%CL%%BLACK%|%CL%%GOLD%Updated: 2026-10-20 16:13:25 UTC%CL%%BLACK%|%CL%}
+ItemDisplay[box]: %NAME%{%NAME%%CL%%PURPLE%Current Values:%CL%%BLACK%|%CL%%GOLD%Updated: 2026-10-22 02:57:43 UTC%CL%%BLACK%|%CL%}
+ItemDisplay[(r21 OR r21s)]: %NAME%{%NAME%%CL%%BLACK%|%CL%%RED%Rune Stack Value: %WHITE%$f(round(QTY*0.03*100)/100) HR %PURPLE%at 24H Prices%CL%%PURPLE%24H %WHITE%0.03 HR %PURPLE%48H %WHITE%0.03 HR %PURPLE%72H %WHITE%0.03 HR %PURPLE%1W %WHITE%0.03 HR%CL%%PURPLE%Current Values:%CL%%BLACK%|%CL%%GOLD%Updated: 2026-10-22 02:57:43 UTC%CL%%BLACK%|%CL%}
+ItemDisplay[(r22 OR r22s)]: %NAME%{%NAME%%CL%%BLACK%|%CL%%RED%Rune Stack Value: %WHITE%$f(round(QTY*0.05*100)/100) HR %PURPLE%at 24H Prices%CL%%PURPLE%24H %WHITE%0.05 HR %PURPLE%48H %WHITE%0.05 HR %PURPLE%72H %WHITE%0.05 HR %PURPLE%1W %WHITE%0.05 HR%CL%%PURPLE%Current Values:%CL%%BLACK%|%CL%%GOLD%Updated: 2026-10-22 02:57:43 UTC%CL%%BLACK%|%CL%}
+ItemDisplay[(r23 OR r23s)]: %NAME%{%NAME%%CL%%BLACK%|%CL%%RED%Rune Stack Value: %WHITE%$f(round(QTY*0.1*100)/100) HR %PURPLE%at 24H Prices%CL%%PURPLE%24H %WHITE%0.1 HR %PURPLE%48H %WHITE%0.1 HR %PURPLE%72H %WHITE%0.1 HR %PURPLE%1W %WHITE%0.1 HR%CL%%PURPLE%Current Values:%CL%%BLACK%|%CL%%GOLD%Updated: 2026-10-22 02:57:43 UTC%CL%%BLACK%|%CL%}
+ItemDisplay[(r24 OR r24s)]: %NAME%{%NAME%%CL%%BLACK%|%CL%%RED%Rune Stack Value: %WHITE%$f(round(QTY*0.15*100)/100) HR %PURPLE%at 24H Prices%CL%%PURPLE%24H %WHITE%0.15 HR %PURPLE%48H %WHITE%0.15 HR %PURPLE%72H %WHITE%0.15 HR %PURPLE%1W %WHITE%0.15 HR%CL%%PURPLE%Current Values:%CL%%BLACK%|%CL%%GOLD%Updated: 2026-10-22 02:57:43 UTC%CL%%BLACK%|%CL%}
+ItemDisplay[(r25 OR r25s)]: %NAME%{%NAME%%CL%%BLACK%|%CL%%RED%Rune Stack Value: %WHITE%$f(round(QTY*0.25*100)/100) HR %PURPLE%at 24H Prices%CL%%PURPLE%24H %WHITE%0.25 HR %PURPLE%48H %WHITE%0.25 HR %PURPLE%72H %WHITE%0.25 HR %PURPLE%1W %WHITE%0.25 HR%CL%%PURPLE%Current Values:%CL%%BLACK%|%CL%%GOLD%Updated: 2026-10-22 02:57:43 UTC%CL%%BLACK%|%CL%}
+ItemDisplay[(r26 OR r26s)]: %NAME%{%NAME%%CL%%BLACK%|%CL%%RED%Rune Stack Value: %WHITE%$f(round(QTY*0.5*100)/100) HR %PURPLE%at 24H Prices%CL%%PURPLE%24H %WHITE%0.5 HR %PURPLE%48H %WHITE%0.5 HR %PURPLE%72H %WHITE%0.5 HR %PURPLE%1W %WHITE%0.5 HR%CL%%PURPLE%Current Values:%CL%%BLACK%|%CL%%GOLD%Updated: 2026-10-22 02:57:43 UTC%CL%%BLACK%|%CL%}
+ItemDisplay[(r27 OR r27s)]: %NAME%{%NAME%%CL%%BLACK%|%CL%%RED%Rune Stack Value: %WHITE%$f(round(QTY*0.85*100)/100) HR %PURPLE%at 24H Prices%CL%%PURPLE%24H %WHITE%0.85 HR %PURPLE%48H %WHITE%0.85 HR %PURPLE%72H %WHITE%0.85 HR %PURPLE%1W %WHITE%0.85 HR%CL%%PURPLE%Current Values:%CL%%BLACK%|%CL%%GOLD%Updated: 2026-10-22 02:57:43 UTC%CL%%BLACK%|%CL%}
+ItemDisplay[(r28 OR r28s)]: %NAME%{%NAME%%CL%%BLACK%|%CL%%RED%Rune Stack Value: %WHITE%$f(round(QTY*1*100)/100) HR %PURPLE%at 24H Prices%CL%%PURPLE%24H %WHITE%1 HR %PURPLE%48H %WHITE%1 HR %PURPLE%72H %WHITE%1 HR %PURPLE%1W %WHITE%1 HR%CL%%PURPLE%Current Values:%CL%%BLACK%|%CL%%GOLD%Updated: 2026-10-22 02:57:43 UTC%CL%%BLACK%|%CL%}
+ItemDisplay[(r29 OR r29s)]: %NAME%{%NAME%%CL%%BLACK%|%CL%%RED%Rune Stack Value: %WHITE%$f(round(QTY*1.5*100)/100) HR %PURPLE%at 24H Prices%CL%%PURPLE%24H %WHITE%1.5 HR %PURPLE%48H %WHITE%1.5 HR %PURPLE%72H %WHITE%1.5 HR %PURPLE%1W %WHITE%1.5 HR%CL%%PURPLE%Current Values:%CL%%BLACK%|%CL%%GOLD%Updated: 2026-10-22 02:57:43 UTC%CL%%BLACK%|%CL%}
+ItemDisplay[(r30 OR r30s)]: %NAME%{%NAME%%CL%%BLACK%|%CL%%RED%Rune Stack Value: %WHITE%$f(round(QTY*3*100)/100) HR %PURPLE%at 24H Prices%CL%%PURPLE%24H %WHITE%3 HR %PURPLE%48H %WHITE%3 HR %PURPLE%72H %WHITE%3 HR %PURPLE%1W %WHITE%3 HR%CL%%PURPLE%Current Values:%CL%%BLACK%|%CL%%GOLD%Updated: 2026-10-22 02:57:43 UTC%CL%%BLACK%|%CL%}
+ItemDisplay[(r31 OR r31s)]: %NAME%{%NAME%%CL%%BLACK%|%CL%%RED%Rune Stack Value: %WHITE%$f(round(QTY*1.75*100)/100) HR %PURPLE%at 24H Prices%CL%%PURPLE%24H %WHITE%1.75 HR %PURPLE%48H %WHITE%1.75 HR %PURPLE%72H %WHITE%1.75 HR %PURPLE%1W %WHITE%1.75 HR%CL%%PURPLE%Current Values:%CL%%BLACK%|%CL%%GOLD%Updated: 2026-10-22 02:57:43 UTC%CL%%BLACK%|%CL%}
+ItemDisplay[(r32 OR r32s)]: %NAME%{%NAME%%CL%%BLACK%|%CL%%RED%Rune Stack Value: %WHITE%$f(round(QTY*2.5*100)/100) HR %PURPLE%at 24H Prices%CL%%PURPLE%24H %WHITE%2.5 HR %PURPLE%48H %WHITE%2.5 HR %PURPLE%72H %WHITE%2.5 HR %PURPLE%1W %WHITE%2.5 HR%CL%%PURPLE%Current Values:%CL%%BLACK%|%CL%%GOLD%Updated: 2026-10-22 02:57:43 UTC%CL%%BLACK%|%CL%}
+ItemDisplay[(r33 OR r33s)]: %NAME%{%NAME%%CL%%BLACK%|%CL%%RED%Rune Stack Value: %WHITE%$f(round(QTY*7*100)/100) HR %PURPLE%at 24H Prices%CL%%PURPLE%24H %WHITE%7 HR %PURPLE%48H %WHITE%7 HR %PURPLE%72H %WHITE%7 HR %PURPLE%1W %WHITE%7 HR%CL%%PURPLE%Current Values:%CL%%BLACK%|%CL%%GOLD%Updated: 2026-10-22 02:57:43 UTC%CL%%BLACK%|%CL%}
+ItemDisplay[pk3]: %NAME%{%NAME%%CL%%BLACK%|%CL%%RED%Stack Value: %WHITE%$f(round(QTY*0.1*100)/100) HR %PURPLE%at 24H Prices%CL%%PURPLE%24H %WHITE%0.1 HR %PURPLE%48H %WHITE%0.1 HR %PURPLE%72H %WHITE%0.1 HR %PURPLE%1W %WHITE%0.1 HR%CL%%PURPLE%Current Values:%CL%%BLACK%|%CL%%GOLD%Updated: 2026-10-22 02:57:43 UTC%CL%%BLACK%|%CL%}
+ItemDisplay[pk2]: %NAME%{%NAME%%CL%%BLACK%|%CL%%RED%Stack Value: %WHITE%$f(round(QTY*0.08*100)/100) HR %PURPLE%at 24H Prices%CL%%PURPLE%24H %WHITE%0.08 HR %PURPLE%48H %WHITE%0.08 HR %PURPLE%72H %WHITE%0.08 HR %PURPLE%1W %WHITE%0.08 HR%CL%%PURPLE%Current Values:%CL%%BLACK%|%CL%%GOLD%Updated: 2026-10-22 02:57:43 UTC%CL%%BLACK%|%CL%}
+ItemDisplay[pk1]: %NAME%{%NAME%%CL%%BLACK%|%CL%%RED%Stack Value: %WHITE%$f(round(QTY*0.1*100)/100) HR %PURPLE%at 24H Prices%CL%%PURPLE%24H %WHITE%0.1 HR %PURPLE%48H %WHITE%0.1 HR %PURPLE%72H %WHITE%0.1 HR %PURPLE%1W %WHITE%0.1 HR%CL%%PURPLE%Current Values:%CL%%BLACK%|%CL%%GOLD%Updated: 2026-10-22 02:57:43 UTC%CL%%BLACK%|%CL%}
+ItemDisplay[ubaa]: %NAME%{%NAME%%CL%%BLACK%|%CL%%RED%Stack Value: %WHITE%$f(round(QTY*0.05*100)/100) HR %PURPLE%at 24H Prices%CL%%PURPLE%24H %WHITE%0.05 HR %PURPLE%48H %WHITE%0.05 HR %PURPLE%72H %WHITE%0.05 HR %PURPLE%1W %WHITE%0.05 HR%CL%%PURPLE%Current Values:%CL%%BLACK%|%CL%%GOLD%Updated: 2026-10-22 02:57:43 UTC%CL%%BLACK%|%CL%}
+ItemDisplay[ubab]: %NAME%{%NAME%%CL%%BLACK%|%CL%%RED%Stack Value: %WHITE%$f(round(QTY*0.1*100)/100) HR %PURPLE%at 24H Prices%CL%%PURPLE%24H %WHITE%0.1 HR %PURPLE%48H %WHITE%0.1 HR %PURPLE%72H %WHITE%0.1 HR %PURPLE%1W %WHITE%0.1 HR%CL%%PURPLE%Current Values:%CL%%BLACK%|%CL%%GOLD%Updated: 2026-10-22 02:57:43 UTC%CL%%BLACK%|%CL%}
+ItemDisplay[ubac]: %NAME%{%NAME%%CL%%BLACK%|%CL%%RED%Stack Value: %WHITE%$f(round(QTY*0.04*100)/100) HR %PURPLE%at 24H Prices%CL%%PURPLE%24H %WHITE%0.04 HR %PURPLE%48H %WHITE%0.04 HR %PURPLE%72H %WHITE%0.04 HR %PURPLE%1W %WHITE%0.04 HR%CL%%PURPLE%Current Values:%CL%%BLACK%|%CL%%GOLD%Updated: 2026-10-22 02:57:43 UTC%CL%%BLACK%|%CL%}
+ItemDisplay[dcbl]: %NAME%{%NAME%%CL%%BLACK%|%CL%%RED%Stack Value: %WHITE%$f(round(QTY*0.05*100)/100) HR %PURPLE%at 24H Prices%CL%%PURPLE%24H %WHITE%0.05 HR %PURPLE%48H %WHITE%0.05 HR %PURPLE%72H %WHITE%0.05 HR %PURPLE%1W %WHITE%0.05 HR%CL%%PURPLE%Current Values:%CL%%BLACK%|%CL%%GOLD%Updated: 2026-10-22 02:57:43 UTC%CL%%BLACK%|%CL%}
+ItemDisplay[dcso]: %NAME%{%NAME%%CL%%BLACK%|%CL%%RED%Stack Value: %WHITE%$f(round(QTY*1*100)/100) HR %PURPLE%at 24H Prices%CL%%PURPLE%24H %WHITE%1 HR %PURPLE%48H %WHITE%1 HR %PURPLE%72H %WHITE%1 HR %PURPLE%1W %WHITE%1 HR%CL%%PURPLE%Current Values:%CL%%BLACK%|%CL%%GOLD%Updated: 2026-10-22 02:57:43 UTC%CL%%BLACK%|%CL%}
+ItemDisplay[dcho]: %NAME%{%NAME%%CL%%BLACK%|%CL%%RED%Stack Value: %WHITE%$f(round(QTY*0.15*100)/100) HR %PURPLE%at 24H Prices%CL%%PURPLE%24H %WHITE%0.15 HR %PURPLE%48H %WHITE%0.15 HR %PURPLE%72H %WHITE%0.15 HR %PURPLE%1W %WHITE%0.15 HR%CL%%PURPLE%Current Values:%CL%%BLACK%|%CL%%GOLD%Updated: 2026-10-22 02:57:43 UTC%CL%%BLACK%|%CL%}
+ItemDisplay[rtmo]: %NAME%{%NAME%%CL%%BLACK%|%CL%%RED%Stack Value: %WHITE%$f(round(QTY*0.03*100)/100) HR %PURPLE%at 24H Prices%CL%%PURPLE%24H %WHITE%0.03 HR %PURPLE%48H %WHITE%0.03 HR %PURPLE%72H %WHITE%0.03 HR %PURPLE%1W %WHITE%0.03 HR%CL%%PURPLE%Current Values:%CL%%BLACK%|%CL%%GOLD%Updated: 2026-10-22 02:57:43 UTC%CL%%BLACK%|%CL%}
+ItemDisplay[rtmv]: %NAME%{%NAME%%CL%%BLACK%|%CL%%RED%Stack Value: %WHITE%$f(round(QTY*0.75*100)/100) HR %PURPLE%at 24H Prices%CL%%PURPLE%24H %WHITE%0.75 HR %PURPLE%48H %WHITE%0.75 HR %PURPLE%72H %WHITE%0.75 HR %PURPLE%1W %WHITE%0.75 HR%CL%%PURPLE%Current Values:%CL%%BLACK%|%CL%%GOLD%Updated: 2026-10-22 02:57:43 UTC%CL%%BLACK%|%CL%}
+ItemDisplay[cm2f]: %NAME%{%NAME%%CL%%BLACK%|%CL%%RED%Stack Value: %WHITE%$f(round(QTY*0.5*100)/100) HR %PURPLE%at 24H Prices%CL%%PURPLE%24H %WHITE%0.5 HR %PURPLE%48H %WHITE%0.5 HR %PURPLE%72H %WHITE%0.5 HR %PURPLE%1W %WHITE%0.5 HR%CL%%PURPLE%Current Values:%CL%%BLACK%|%CL%%GOLD%Updated: 2026-10-22 02:57:43 UTC%CL%%BLACK%|%CL%}
+ItemDisplay[lucb]: %NAME%{%NAME%%CL%%BLACK%|%CL%%RED%Stack Value: %WHITE%$f(round(QTY*0.75*100)/100) HR %PURPLE%at 24H Prices%CL%%PURPLE%24H %WHITE%0.75 HR %PURPLE%48H %WHITE%0.75 HR %PURPLE%72H %WHITE%0.75 HR %PURPLE%1W %WHITE%0.75 HR%CL%%PURPLE%Current Values:%CL%%BLACK%|%CL%%GOLD%Updated: 2026-10-22 02:57:43 UTC%CL%%BLACK%|%CL%}
+ItemDisplay[lucc]: %NAME%{%NAME%%CL%%BLACK%|%CL%%RED%Stack Value: %WHITE%$f(round(QTY*0.1*100)/100) HR %PURPLE%at 24H Prices%CL%%PURPLE%24H %WHITE%0.1 HR %PURPLE%48H %WHITE%0.1 HR %PURPLE%72H %WHITE%0.1 HR %PURPLE%1W %WHITE%0.1 HR%CL%%PURPLE%Current Values:%CL%%BLACK%|%CL%%GOLD%Updated: 2026-10-22 02:57:43 UTC%CL%%BLACK%|%CL%}
+ItemDisplay[lucd]: %NAME%{%NAME%%CL%%BLACK%|%CL%%RED%Stack Value: %WHITE%$f(round(QTY*0.2*100)/100) HR %PURPLE%at 24H Prices%CL%%PURPLE%24H %WHITE%0.2 HR %PURPLE%48H %WHITE%0.2 HR %PURPLE%72H %WHITE%0.2 HR %PURPLE%1W %WHITE%0.2 HR%CL%%PURPLE%Current Values:%CL%%BLACK%|%CL%%GOLD%Updated: 2026-10-22 02:57:43 UTC%CL%%BLACK%|%CL%}
+ItemDisplay[lbox]: %NAME%{%NAME%%CL%%BLACK%|%CL%%RED%Stack Value: %WHITE%$f(round(QTY*1*100)/100) HR %PURPLE%at 24H Prices%CL%%PURPLE%24H %WHITE%1 HR %PURPLE%48H %WHITE%1 HR %PURPLE%72H %WHITE%1 HR %PURPLE%1W %WHITE%1 HR%CL%%PURPLE%Current Values:%CL%%BLACK%|%CL%%GOLD%Updated: 2026-10-22 02:57:43 UTC%CL%%BLACK%|%CL%}
+ItemDisplay[lpp]: %NAME%{%NAME%%CL%%BLACK%|%CL%%RED%Stack Value: %WHITE%$f(round(QTY*0.1*100)/100) HR %PURPLE%at 24H Prices%CL%%PURPLE%24H %WHITE%0.1 HR %PURPLE%48H %WHITE%0.1 HR %PURPLE%72H %WHITE%0.1 HR %PURPLE%1W %WHITE%0.1 HR%CL%%PURPLE%Current Values:%CL%%BLACK%|%CL%%GOLD%Updated: 2026-10-22 02:57:43 UTC%CL%%BLACK%|%CL%}
+ItemDisplay[imrn]: %NAME%{%NAME%%CL%%BLACK%|%CL%%RED%Stack Value: %WHITE%$f(round(QTY*0.53*100)/100) HR %PURPLE%at 24H Prices%CL%%PURPLE%24H %WHITE%0.53 HR %PURPLE%48H %WHITE%0.53 HR %PURPLE%72H %WHITE%0.53 HR %PURPLE%1W %WHITE%0.53 HR%CL%%PURPLE%Current Values:%CL%%BLACK%|%CL%%GOLD%Updated: 2026-10-22 02:57:43 UTC%CL%%BLACK%|%CL%}
+ItemDisplay[iwss]: %NAME%{%NAME%%CL%%BLACK%|%CL%%RED%Stack Value: %WHITE%$f(round(QTY*0.15*100)/100) HR %PURPLE%at 24H Prices%CL%%PURPLE%24H %WHITE%0.15 HR %PURPLE%48H %WHITE%0.15 HR %PURPLE%72H %WHITE%0.15 HR %PURPLE%1W %WHITE%0.15 HR%CL%%PURPLE%Current Values:%CL%%BLACK%|%CL%%GOLD%Updated: 2026-10-22 02:57:43 UTC%CL%%BLACK%|%CL%}
+ItemDisplay[std]: %NAME%{%NAME%%CL%%BLACK%|%CL%%RED%Stack Value: %WHITE%$f(round(QTY*5.5*100)/100) HR %PURPLE%at 24H Prices%CL%%PURPLE%24H %WHITE%5.5 HR %PURPLE%48H %WHITE%5.5 HR %PURPLE%72H %WHITE%5.5 HR %PURPLE%1W %WHITE%5.5 HR%CL%%PURPLE%Current Values:%CL%%BLACK%|%CL%%GOLD%Updated: 2026-10-22 02:57:43 UTC%CL%%BLACK%|%CL%}
+ItemDisplay[fed]: %NAME%{%NAME%%CL%%BLACK%|%CL%%RED%Stack Value: %WHITE%$f(round(QTY*0.25*100)/100) HR %PURPLE%at 24H Prices%CL%%PURPLE%24H %WHITE%0.25 HR %PURPLE%48H %WHITE%0.25 HR %PURPLE%72H %WHITE%0.25 HR %PURPLE%1W %WHITE%0.25 HR%CL%%PURPLE%Current Values:%CL%%BLACK%|%CL%%GOLD%Updated: 2026-10-22 02:57:43 UTC%CL%%BLACK%|%CL%}
+ItemDisplay[ceh]: %NAME%{%NAME%%CL%%BLACK%|%CL%%RED%Stack Value: %WHITE%$f(round(QTY*0.1*100)/100) HR %PURPLE%at 24H Prices%CL%%PURPLE%24H %WHITE%0.1 HR %PURPLE%48H %WHITE%0.1 HR %PURPLE%72H %WHITE%0.1 HR %PURPLE%1W %WHITE%0.1 HR%CL%%PURPLE%Current Values:%CL%%BLACK%|%CL%%GOLD%Updated: 2026-10-22 02:57:43 UTC%CL%%BLACK%|%CL%}
+ItemDisplay[bet]: %NAME%{%NAME%%CL%%BLACK%|%CL%%RED%Stack Value: %WHITE%$f(round(QTY*0.05*100)/100) HR %PURPLE%at 24H Prices%CL%%PURPLE%24H %WHITE%0.05 HR %PURPLE%48H %WHITE%0.05 HR %PURPLE%72H %WHITE%0.05 HR %PURPLE%1W %WHITE%0.05 HR%CL%%PURPLE%Current Values:%CL%%BLACK%|%CL%%GOLD%Updated: 2026-10-22 02:57:43 UTC%CL%%BLACK%|%CL%}
+ItemDisplay[tes]: %NAME%{%NAME%%CL%%BLACK%|%CL%%RED%Stack Value: %WHITE%$f(round(QTY*0.03*100)/100) HR %PURPLE%at 24H Prices%CL%%PURPLE%24H %WHITE%0.03 HR %PURPLE%48H %WHITE%0.03 HR %PURPLE%72H %WHITE%0.03 HR %PURPLE%1W %WHITE%0.03 HR%CL%%PURPLE%Current Values:%CL%%BLACK%|%CL%%GOLD%Updated: 2026-10-22 02:57:43 UTC%CL%%BLACK%|%CL%}
 // END AUTO PD2TRADER RUNE VALUES
 // Craft Infusions
 ItemDisplay[crfb]: %NAME%%CONTINUE%{%RED%Amulet%WHITE% FRW | LPK | Life%CL%%RED%Ring%WHITE% Str | LL | Life%CL%%RED%Belt%WHITE% OW | LL | Life%CL%%RED%Gloves%WHITE% CB | LL | Life%CL%%RED%Boots%WHITE% OW | LL | Life%CL%%RED%Helm%WHITE% CB | LL | Life%CL%%RED%Armor%WHITE% LPK | EDef | Max Life%CL%%RED%Quiver%WHITE% CB | Life | LL%CL%%RED%Shield%WHITE% Block | LL | Max Life%CL%%RED%Weapon%WHITE% EDam | LL | Life}

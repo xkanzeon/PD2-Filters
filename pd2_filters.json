@@ -73,6 +73,21 @@
                     "download_url": "https://raw.githubusercontent.com/FiltersBy-Erazure/PD2-Loot-Filter/main/Erazure-Main.filter"
                 },
                 {
+                    "name": "Erazure-Minimal-BIG-GG.filter",
+                    "url": "https://api.github.com/repos/FiltersBy-Erazure/PD2-Loot-Filter/contents/Erazure-Minimal-BIG-GG.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/FiltersBy-Erazure/PD2-Loot-Filter/main/Erazure-Minimal-BIG-GG.filter"
+                },
+                {
+                    "name": "Erazure-Minimal-PoE.filter",
+                    "url": "https://api.github.com/repos/FiltersBy-Erazure/PD2-Loot-Filter/contents/Erazure-Minimal-PoE.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/FiltersBy-Erazure/PD2-Loot-Filter/main/Erazure-Minimal-PoE.filter"
+                },
+                {
+                    "name": "Erazure-Minimal-Revealed.filter",
+                    "url": "https://api.github.com/repos/FiltersBy-Erazure/PD2-Loot-Filter/contents/Erazure-Minimal-Revealed.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/FiltersBy-Erazure/PD2-Loot-Filter/main/Erazure-Minimal-Revealed.filter"
+                },
+                {
                     "name": "Erazure-Minimal.filter",
                     "url": "https://api.github.com/repos/FiltersBy-Erazure/PD2-Loot-Filter/contents/Erazure-Minimal.filter?ref=main",
                     "download_url": "https://raw.githubusercontent.com/FiltersBy-Erazure/PD2-Loot-Filter/main/Erazure-Minimal.filter"
