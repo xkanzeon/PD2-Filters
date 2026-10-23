@@ -1,19 +1,18 @@
 // DAURACUL'S LOOT FILTER Version 14.0
-// Last updated: 10/19/2026
+// Last updated: 10/22/2026
 // For any bug reports/feedback contact @Dauracul in the PD2 Discord #lootfilter channel
 
 // Checklist: 
-// S13 Kyovoshad will need immunes updated (t3b)
-// Review map immunes if there is an immune reshuffle
 // Possibly do something with new grail keywords COMPENDIUM, PREVIEW (compendium slot with no item), GUILDVAULT, TROPHYCASE
 
 // 14.0
-// New maps Poisoned Well, Descent from Mt Arreat, and Dark Temple updated to state no immunes (debut season)
+// New maps Poisoned Well, Descent from Mt Arreat, and Fortress of Aranoch updated to state no immunes (debut season)
 // Kyovoshad (S13 debut map) still pending immunes
 // TOWN Alias now also includes Guild halls
 // Non-magic bases now display recipes for new Runewords: Finesse, Deception, Madness, Jealousy
 // Jewels now display elemental mastery rolls in item names
 // S14 Alternate Edition skins have been given a unique flavor name and color
+// Updated immunes on S13 map Kyovoshad (t3b)
 
 
 // LET THE FILTERING BEGIN
@@ -24,7 +23,7 @@ ItemDisplayFilterName[]:Mid Runeword Recipes
 ItemDisplayFilterName[]:High Runeword Recipes
 
 // Release Notes on Identify Scrolls (in Town at Vendors)
-ItemDisplay[isc SHOP]: %NAME%{%NAME%%BLUE%wiki.projectdiablo2.com%NL%%NL%%DARK_GREEN%For full patch notes, visit the Project Diablo 2 Wiki:%NL%%DARK_GREEN%(View the filter file for patch notes)%NL%%YELLOW%Season 14: Alliance%NL%%TAN%Last Updated: 10-19-2026%NL%%NL%%ORANGE%the PD2 Discord #lootfilter channel.%NL%Bug reports or feedback: @Dauracul in%NL%%CORAL%There are no strictness tiers.%NL%%ORANGE%on socketed weapon and armor bases.%NL%Filter levels will sort runeword recipes %NL%%NL%%GOLD%Dauracul's PD2 Loot Filter %YELLOW%v14.0}
+ItemDisplay[isc SHOP]: %NAME%{%NAME%%BLUE%wiki.projectdiablo2.com%NL%%NL%%DARK_GREEN%For full patch notes, visit the Project Diablo 2 Wiki:%NL%%DARK_GREEN%(View the filter file for patch notes)%NL%%YELLOW%Season 14: Alliance%NL%%TAN%Last Updated: 10-22-2026%NL%%NL%%ORANGE%the PD2 Discord #lootfilter channel.%NL%Bug reports or feedback: @Dauracul in%NL%%CORAL%There are no strictness tiers.%NL%%ORANGE%on socketed weapon and armor bases.%NL%Filter levels will sort runeword recipes %NL%%NL%%GOLD%Dauracul's PD2 Loot Filter %YELLOW%v14.0}
 
 // ALIASES
 
@@ -525,14 +524,14 @@ ItemDisplay[ALL_STACKABLE_QTY_ITEMS !TOWN QTY>1]: %NAME%%CONTINUE%
 //Poisoned Well (S14 Debut)
 ItemDisplay[t18]: %NAME%{%NAME%%CORAL%None - Debut Season%NL%%WHITE%Immunities:}%CONTINUE%
 
-//Dark Temple (S14 Debut)
+//Fortress of Aranoch (S14 Debut)
 ItemDisplay[t29]: %NAME%{%NAME%%CORAL%None - Debut Season%NL%%WHITE%Immunities:}%CONTINUE%
 
 //Descent from Mt Arreat (S14 Debut)
 ItemDisplay[t2a]: %NAME%{%NAME%%CORAL%None - Debut Season%NL%%WHITE%Immunities:}%CONTINUE%
 
-//Kyovoshad (Pending S14 Immunes)
-ItemDisplay[t3b]: %NAME%{%NAME%%CORAL%TBD%NL%%WHITE%Immunities:}%CONTINUE%
+//Kyovoshad
+ItemDisplay[t3b]: %NAME%{%NAME%%ORANGE%Magic %RED%Fire %YELLOW%Lightning%NL%%WHITE%Immunities:}%CONTINUE%
 
 //Ruins of Viz-Jun
 ItemDisplay[t11]: %NAME%{%NAME%%GOLD%Physical %BLUE%Cold%NL%%WHITE%Immunities:}%CONTINUE%
