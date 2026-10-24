@@ -2793,8 +2793,8 @@ ItemDisplay[STAFF !INF SOCK=2 NMAG !RW !FILTLVL=5]: %NAME%{%GRAY%Neophyte, Stren
 ItemDisplay[SIN !INF SOCK=2 NMAG !RW !FILTLVL=5]: %NAME%{%GRAY%Steel, Strength, Wind%NL%%GOLD%Runewords: %GRAY%Neophyte%CL%%NAME%}%CONTINUE%
 ItemDisplay[SOR !INF SOCK=2 NMAG !RW !FILTLVL=5]: %NAME%{%GRAY%Neophyte, Strength, Wind%NL%%GOLD%Runewords:}%CONTINUE%
 ItemDisplay[(SCEPTER OR clb OR spc OR 9cl OR 9sp OR 7cl OR 7sp) !INF SOCK=2 NMAG !RW !FILTLVL=5]: %NAME%{%GRAY%Neophyte, Strength, Wind%NL%%GOLD%Runewords:%CL%%NAME%}%CONTINUE%
-ItemDisplay[(SWORD OR AXE OR mac OR mst OR fla OR 9ma OR 9mt OR 9fl OR 7ma OR 7mt OR 7fl) !leg !INF SOCK=2 NMAG !RW !FILTLVL=5]: %NAME%{%GRAY%Steel, Strength, Wind%NL%%GOLD%Runewords:%CL%%NAME%}%CONTINUE%
-ItemDisplay[WEAPON THROWING !INF SOCK=2 NMAG !RW !FILTLVL=5]: %NAME%{%GRAY%Steel, Strength, Wind, Zephyr%NL%%GOLD%Runewords:%CL%%NAME%}%CONTINUE%
+ItemDisplay[(SWORD OR AXE OR mac OR mst OR fla OR 9ma OR 9mt OR 9fl OR 7ma OR 7mt OR 7fl) !THROWING !leg !INF SOCK=2 NMAG !RW !FILTLVL=5]: %NAME%{%GRAY%Steel, Strength, Wind%NL%%GOLD%Runewords:%CL%%NAME%}%CONTINUE%
+ItemDisplay[WEAPON THROWING !INF SOCK=2 NMAG !RW !FILTLVL=5]: %NAME%{%GRAY%Steel, Strength, Wind, Zephyr%NL%%GOLD%Runewords: %GRAY%Echo%CL%%NAME%}%CONTINUE%
 ItemDisplay[WEAPON !(BOW OR XBOW OR SOR OR leg OR STAFF OR WAND OR SIN OR SOR OR SWORD OR SCEPTER OR AXE OR clb OR spc OR 9cl OR 9sp OR 7cl OR 7sp OR mac OR mst OR fla OR 9ma OR 9mt OR 9fl OR 7ma OR 7mt OR 7fl OR THROWING) !INF SOCK=2 NMAG !RW !FILTLVL=5]: %NAME%{%GRAY%Strength, Wind%NL%%GOLD%Runewords:%CL%%NAME%}%CONTINUE%
 
 //Weapons: 3 Sockets
@@ -4996,15 +4996,15 @@ ItemDisplay[mp4 CLVL>74 FILTLVL>1 !FILTLVL=5]: {%NAME%}
 
 //Strict FINAL
 ItemDisplay[rvs CLVL>74 FILTLVL>2 !FILTLVL=5]: {%NAME%}
-ItemDisplay[WEAPON RARE !ETH !ID !leg CLVL>74 FILTLVL>2 !FILTLVL=5]: {%NAME%}
-ItemDisplay[((CHEST OR SHIELD OR HELM) ALVL<75) RARE !ETH !ID CLVL>74 FILTLVL>2 !FILTLVL=5]: {%NAME%}
+ItemDisplay[WEAPON RARE !ETH !ID !leg CLVL>84 FILTLVL>2 !FILTLVL=5]: {%NAME%}
+ItemDisplay[((CHEST OR SHIELD OR HELM) ALVL<75) RARE !ETH !ID CLVL>84 FILTLVL>2 !FILTLVL=5]: {%NAME%}
 
 //Super Strict FINAL
 ItemDisplay[NORM NMAG (WEAPON OR ARMOR OR QUIVER) CLVL>59 FILTLVL=4]: {%NAME%}
 ItemDisplay[EXC NMAG (WEAPON OR ARMOR OR QUIVER) CLVL>59 FILTLVL=4]: {%NAME%}
 ItemDisplay[ELT NMAG (WEAPON OR ARMOR OR QUIVER) CLVL>74 FILTLVL=4]: {%NAME%}
-ItemDisplay[MAG (WEAPON OR ARMOR OR QUIVER) CLVL>79 FILTLVL=4]: {%NAME%}
-ItemDisplay[RARE !ETH ALVL<75 (WEAPON OR ARMOR OR QUIVER) CLVL>79 FILTLVL=4]: {%NAME%}
-ItemDisplay[(UNI OR SET) !ETH NORM (WEAPON OR ARMOR OR QUIVER) CLVL>74 FILTLVL=4]: {%NAME%}
+ItemDisplay[MAG !ID (WEAPON OR ARMOR OR QUIVER) CLVL>79 FILTLVL=4]: {%NAME%}
+ItemDisplay[RARE !ID !ETH ALVL<75 (WEAPON OR ARMOR OR QUIVER) CLVL>79 FILTLVL=4]: {%NAME%}
+ItemDisplay[(UNI OR SET) !ID !ETH NORM (WEAPON OR ARMOR OR QUIVER) CLVL>74 FILTLVL=4]: {%NAME%}
 
 //Shoutout to the following community members for their contributions to loot filters: Wolfie, Mark, Kassahi, BetweenWalls, Cy, and Kanzeon!

@@ -15,11 +15,11 @@ Alias[act5_l]:(MAPID>108 AND MAPID<133)
 //mini ubers
 Alias[miniuber_l]:(MAPID=133 OR MAPID=134 OR MAPID=135)
 //T1 map
-Alias[t1map_l]:(MAPID=142 OR MAPID=148 OR MAPID=139 OR MAPID=170 OR MAPID=141 OR MAPID=169 OR MAPID=193 OR MAPID=155)
+Alias[t1map_l]:(MAPID=142 OR MAPID=148 OR MAPID=139 OR MAPID=170 OR MAPID=141 OR MAPID=169 OR MAPID=193 OR MAPID=155 OR MAPID=167)
 //T2 map
 Alias[t2map_l]:(MAPID=143 OR MAPID=149 OR MAPID=151 OR MAPID=191 OR MAPID=190 OR MAPID=144 OR MAPID=158 OR MAPID=146)
 //T3 map
-Alias[t3map_l]:(MAPID=167 OR MAPID=174 OR MAPID=145 OR MAPID=150 OR MAPID=154 OR MAPID=156 OR MAPID=160 OR MAPID=147 OR MAPID=175)
+Alias[t3map_l]:(MAPID=174 OR MAPID=145 OR MAPID=150 OR MAPID=154 OR MAPID=156 OR MAPID=160 OR MAPID=147 OR MAPID=175)
 //T4 map (Dungeons)
 Alias[t4map_l]:(MAPID=152 OR MAPID=153 OR MAPID=164 OR MAPID=165 OR MAPID=171 OR MAPID=172 OR MAPID=186 OR MAPID=187)
 //T5 map (Unique map)
@@ -40,9 +40,9 @@ Alias[ureh_l]:(MAPID=195 OR MAPID=196)
 /~~~ ////Item groups
 /~~~//maps
 //T1 map
-Alias[t1map_i]:(t21 OR t33 OR t34 OR t24 OR t11 OR t22 OR t26 OR t36)
+Alias[t1map_i]:(t21 OR t14 OR t33 OR t34 OR t24 OR t11 OR t22 OR t26 OR t36 OR t18)
 //T2 map
-Alias[t2map_i]:(t12 OR t25 OR t17 OR t14 OR t16 OR t32 OR t37 OR t38 OR t3a)
+Alias[t2map_i]:(t12 OR t25 OR t17 OR t16 OR t32 OR t37 OR t38 OR t3a OR t2a OR t29)
 //T3 map
 Alias[t3map_i]:(t23 OR t15 OR t13 OR t27 OR t28 OR t31 OR t35 OR t39 OR t3b)
 //T4 map (Dungeons)
@@ -233,7 +233,7 @@ Alias[good_slow_rare_zspear]:(am3 OR am8 OR amd)
 Alias[good_fast_rare_zspear]:(am4 OR am9 OR ame)
 //zon throw
 Alias[bad_rw_zthrow]:(am5 OR ama)
-Alias[good_rw_zthrow]:(amf (SOCK=2 OR SOCK=0))
+Alias[good_rw_zthrow]:(amf (SOCK=2 OR SOCK=3 OR SOCK=0))
 Alias[good_rare_zthrow]:(am5 OR ama OR amf)
 //wand
 Alias[good_rw_wand]:(WAND (SOCK=2 OR SOCK=0))
@@ -253,7 +253,7 @@ Alias[bad_rare_shield]:(buc OR sml OR lrg OR spk OR bsh OR xuc OR xml OR xrg OR 
 Alias[good_rw_shield]:((uts (SOCK=4 OR SOCK=3 OR SOCK=0)) OR (uow (SOCK=4 OR SOCK=3 OR SOCK=0)) OR (uit (SOCK=4 OR SOCK=3 OR SOCK=0)))
 Alias[good_rare_shield]:(gts OR xts OR uts OR uow OR xow OR tow OR kit OR xit OR uit)
 //helm
-Alias[bad_rw_helm]:(cap OR skp OR hlm OR fhl OR msk OR bhm OR ghm OR crn OR xap OR xkp OR xlm OR xhl OR xsk OR xh9 OR xhm OR xrn OR uap OR ukp OR hlm OR uhl)
+Alias[bad_rw_helm]:(cap OR skp OR hlm OR fhl OR msk OR bhm OR ghm OR crn OR xap OR xkp OR xlm OR xhl OR xsk OR xh9 OR xhm OR xrn OR uap OR ukp OR hlm)
 Alias[bad_rare_helm]:(cap OR skp OR hlm OR fhl OR xap OR xkp OR xlm OR xhl OR uap OR ukp OR hlm OR uhl)
 Alias[good_rw_helm]:(usk OR uh9 OR uhm OR urn)
 Alias[good_rare_helm]:(msk OR bhm OR ghm OR crn OR xrn OR xhm OR xh9 OR xsk OR urn OR uhm OR uh9 OR usk)
@@ -283,9 +283,9 @@ Alias[arrows_i]:(aqv OR aqv2 OR aqv3)
 //claws
 Alias[shopableclaw_i]:(clw OR btl OR skr OR 9lw OR 9tw OR 9qr OR 7lw OR 7tw OR 7qr)
 //helms
-Alias[badelthelm_i]:(uap OR ukp OR ulm OR uhl)
+//Alias[badelthelm_i]:(uap OR ukp OR ulm OR uhl)
 //shields
-Alias[badeltshield_i]:(uuc OR uml)
+//Alias[badeltshield_i]:(uuc OR uml)
 //
 //Gheeds
 Alias[gheeds_i]:!ID UNI cm3
@@ -1076,6 +1076,7 @@ ItemDisplay[!ID UNI xar]:Corpsemourn%CONTINUE%
 //elite
 ItemDisplay[!ID UNI uui]:Ormus' Robes%CONTINUE%
 ItemDisplay[!ID UNI utu]:The Gladiator's Bane%CONTINUE%
+ItemDisplay[!ID UNI urs]:Spectral Plate%CONTINUE%
 ItemDisplay[!ID UNI upl]:Arkaine's Valor%CONTINUE%
 ItemDisplay[!ID UNI uld]:Leviathan%CONTINUE%
 ItemDisplay[!ID UNI utp]:Purgatory%CONTINUE%
@@ -1103,6 +1104,7 @@ ItemDisplay[!ID UNI xsh]:Lidless Wall%CONTINUE%
 ItemDisplay[!ID UNI xow]:Gerke's Sanctuary%CONTINUE%
 ItemDisplay[!ID UNI xts]:Radament's Sphere%CONTINUE%
 //elite
+ItemDisplay[!ID UNI uuc]:Warriv's Warder%CONTINUE%
 ItemDisplay[!ID UNI uml]:Blackoak Shield%CONTINUE%
 ItemDisplay[!ID UNI upk]:Spike Thorn%CONTINUE%
 ItemDisplay[!ID UNI uit]:Stormshield%CONTINUE%
@@ -2576,10 +2578,10 @@ ItemDisplay[NMAG SOCK=0 MAXSOCKETS>0 !GROUND]:%NAME%{%NAME%%CL%%WHITE%Maximum So
 /~~~//Notes about possible RuneWords
 //Chest, Head, Shield, Quiver
 ItemDisplay[CHEST SOCK=2 NMAG !RW !GROUND]:%NAME%{%GRAY%Prudence, Smoke, Stealth%CL%%TAN%Note%WHITE%: Possible RuneWords:}%CONTINUE%
-ItemDisplay[CHEST SOCK=3 NMAG !RW !GROUND]:%NAME%{%GRAY%Principle, Rain, Treachery, Wealth%CL%Gloom, Hustle, Lionheart, Myth, Peace,%CL%Dragon, Duress, Enigma, Enlightenment,%CL%%TAN%Note%WHITE%: Possible RuneWords: %GRAY%Bone, }%CONTINUE%
+ItemDisplay[CHEST SOCK=3 NMAG !RW !GROUND]:%NAME%{%GRAY%Principle, Rain, Treachery, Wealth%CL%Gloom, Hustle, Lionheart, Myth, Peace,%CL%Dragon, Duress, Enigma, Enlightenment, Finesse%CL%%TAN%Note%WHITE%: Possible RuneWords: %GRAY%Bone, }%CONTINUE%
 ItemDisplay[CHEST SOCK=4 NMAG !RW !GROUND]:%NAME%{%GRAY%Fortitude, Innocence, Stone%CL%Bramble, Chains of Honor, %CL%%TAN%Note%WHITE%: Possible RuneWords:}%CONTINUE%
 ItemDisplay[(HELM OR CIRC) SOCK=2 NMAG !RW !GROUND]:%NAME%{%GRAY%Lore, Nadir%CL%%TAN%Note%WHITE%: Possible RuneWords:}%CONTINUE%
-ItemDisplay[(HELM OR CIRC) SOCK=3 NMAG !RW !GROUND]:%NAME%{%GRAY%Flickering Flame, Radiance, Wisdom%CL%Dream, Delirium, Ferocity,%CL%%TAN%Note%WHITE%: Possible RuneWords:}%CONTINUE%
+ItemDisplay[(HELM OR CIRC) SOCK=3 NMAG !RW !GROUND]:%NAME%{%GRAY%Flickering Flame, Radiance, Wisdom%CL%Dream, Delirium, Ferocity, Deception%CL%%TAN%Note%WHITE%: Possible RuneWords:}%CONTINUE%
 ItemDisplay[SHIELD SOCK=2 NMAG !RW !GROUND]:%NAME%{%GRAY%Rhyme, Splendor%CL%%TAN%Note%WHITE%: Possible RuneWords:}%CONTINUE%
 ItemDisplay[SHIELD SOCK=3 NMAG !RW !GROUND]:%NAME%{%GRAY%Pledge, Dragon, Dream, Sanctuary%CL%%TAN%Note%WHITE%: Possible RuneWords: %GRAY%Ancient's}%CONTINUE%
 ItemDisplay[SHIELD SOCK=4 NMAG !RW !GROUND]:%NAME%{%NAME%%GRAY%Epiphany, Exile, Phoenix, Spirit%CL%%TAN%Note%WHITE%: Possible RuneWords:}%CONTINUE%
@@ -2610,8 +2612,9 @@ ItemDisplay[SCEPTER SOCK=3 NMAG !RW !GROUND]:%NAME%{%GRAY%Lawbringer, Malice, Pl
 ItemDisplay[(clb OR spc OR mac OR mst OR fla OR 9cl OR 9sp OR 9ma OR 9mt OR 9fl OR 7cl OR 7sp OR 7ma OR 7mt OR 7fl) SOCK=3 NMAG !RW !GROUND]:%NAME%{%GRAY%Fury, Malice, Plague, Venom%CL%%TAN%Note%WHITE%: Possible RuneWords: %GRAY%Black,}%CONTINUE%
 ItemDisplay[(whm OR mau OR gma OR 9wh OR 9m9 OR 9gm OR 7wh OR 7m7 OR 7gm) SOCK=3 NMAG !RW !GROUND]:%NAME%{%GRAY%Malice, Plague, Venom%CL%Black, Fury, Lawbringer,%CL%%TAN%Note%WHITE%: Possible RuneWords:}%CONTINUE%
 ItemDisplay[THROWING SOCK=3 NMAG !RW !GROUND]:%NAME%{%GRAY%Lawbringer, Malice, Plague, Venom%CL%Crescent Moon, Fury, King's Grace,%CL%%TAN%Note%WHITE%: Possible RuneWords:}%CONTINUE%
+ItemDisplay[THROWING ZON SOCK=3 NMAG !RW !GROUND]:%NAME%{%GRAY%Jealousy%CL%%TAN%Note%WHITE%: Possible RuneWords:}%CONTINUE%
 //Weapons 4soc
-ItemDisplay[WEAPON SOCK=4 NMAG !RW !GROUND]:%NAME%{%GRAY%Hand of Justice, Passion, Phoenix%CL%%TAN%Note%WHITE%: Possible RuneWords: %GRAY%Fortitude,}%CONTINUE%
+ItemDisplay[WEAPON SOCK=4 NMAG !RW !GROUND]:%NAME%{%GRAY%Hand of Justice, Passion, Phoenix, Madness%CL%%TAN%Note%WHITE%: Possible RuneWords: %GRAY%Fortitude,}%CONTINUE%
 ItemDisplay[(BOW OR XBOW) SOCK=4 NMAG !RW !GROUND]:%NAME%{%GRAY%Phoenix, Voice of Reason, Wrath%CL%Hand of Justice, Harmony, Passion,%CL%Brand, Faith, Fortitude, Ice,%CL%%TAN%Note%WHITE%: Possible RuneWords:}%CONTINUE%
 ItemDisplay[(fla OR 9fl OR 7fl) SOCK=4 NMAG !RW !GROUND]:%NAME%{%GRAY%Oath, Passion, Phoenix, Voice of Reason%CL%Hand of Justice, Heart of the Oak,%CL%%TAN%Note%WHITE%: Possible RuneWords: %GRAY%Fortitude,}%CONTINUE%
 ItemDisplay[SWORD SOCK=4 NMAG !RW !GROUND]:%NAME%{%GRAY%Phoenix, Rift, Spirit, Voice of Reason%CL%Justice, Kingslayer, Oath, Passion,%CL%Famine, Fortitude, Hand of%CL%%TAN%Note%WHITE%: Possible RuneWords:}%CONTINUE%
@@ -3678,6 +3681,9 @@ ItemDisplay[t36]:%NAME%{%WHITE%Immunes:%YELLOW%120% %ORANGE%105% %GOLD%115%%CL%%
 ItemDisplay[t12]:%NAME%{%WHITE%Immunes:%YELLOW%120% %GOLD%115% %GRAY%(%WHITE%Light. Spire:%YELLOW%100%%WHITE%/%GREEN%1000%%GRAY%)%CL%%NAME%}%CONTINUE%
 ItemDisplay[t25]:%NAME%{%WHITE%Immunes:%RED%120% %GREEN%120%%CL%%NAME%}%CONTINUE%
 ItemDisplay[t17]:%NAME%{%WHITE%Immunes:%BLUE%120% %YELLOW%120%%CL%%NAME%}%CONTINUE%
+ItemDisplay[t18]:%NAME%{%WHITE%Immunes:%GRAY%Immune-Free Zone%NAME%}%CONTINUE%
+ItemDisplay[t2a]:%NAME%{%WHITE%Immunes:%GRAY%Immune-Free Zone%NAME%}%CONTINUE%
+ItemDisplay[t29]:%NAME%{%WHITE%Immunes:%GRAY%Immune-Free Zone%NAME%}%CONTINUE%
 ItemDisplay[t14]:%NAME%{%WHITE%Immunes:%YELLOW%120% %ORANGE%105%%CL%%NAME%}%CONTINUE%
 ItemDisplay[t16]:%NAME%{%WHITE%Immunes:%GREEN%120% %ORANGE%105%%CL%%NAME%}%CONTINUE%
 ItemDisplay[t32]:%NAME%{%WHITE%Immunes:%GREEN%120% %GOLD%115%%CL%%NAME%}%CONTINUE%
@@ -3692,7 +3698,7 @@ ItemDisplay[t28]:%NAME%{%WHITE%Immunes:%BLUE%120% %GREEN%120%%CL%%NAME%}%CONTINU
 ItemDisplay[t31]:%NAME%{%WHITE%Immunes:%YELLOW%120% %GREEN%120% %ORANGE%105%%CL%%NAME%}%CONTINUE%
 ItemDisplay[t35]:%NAME%{%WHITE%Immunes:%GRAY%Immune-Free Zone%CL%%NAME%}%CONTINUE%
 ItemDisplay[t39]:%NAME%{%WHITE%Immunes:%RED%120% %GOLD%115% %GRAY%(%WHITE%Fire Tower:%GREEN%1000%%GRAY%)%CL%%NAME%}%CONTINUE%
-ItemDisplay[t3b]:%NAME%{%WHITE%Immunes:%GRAY%Immune-Free Zone%CL%%NAME%}%CONTINUE%
+ItemDisplay[t3b]:%NAME%{%WHITE%Immunes:%RED%120 %YELLOW%120 %ORANGE%105%CL%%NAME%}%CONTINUE%
 ItemDisplay[t51]:%NAME%{%WHITE%Immunes:%GRAY%Immune-Free Zone%NAME%}%CONTINUE%
 ItemDisplay[t52]:%NAME%{%WHITE%Immunes:%GRAY%Immune-Free Zone%NAME%}%CONTINUE%
 ItemDisplay[t53]:%NAME%{%WHITE%Immunes:%GRAY%Immune-Free Zone%NAME%}%CONTINUE%
@@ -3895,7 +3901,7 @@ ItemDisplay[NMAG ELT SUP !GLOVES !BOOTS !BELT !caster2_i (WEAPON OR ARMOR) !(bad
 			ItemDisplay[NMAG !RW SUP ETH low_sup_ed CHEST FILTLVL>8 !town_l GROUND]://	
 			//shields
 			ItemDisplay[NMAG !RW (NORM OR EXC) SHIELD !DIN !NEC (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]://
-			ItemDisplay[NMAG !RW badeltshield_i (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]://
+			//ItemDisplay[NMAG !RW badeltshield_i (FILTLVL>4 OR (CLVL>45 FILTLVL>2)) !town_l GROUND]://
 			ItemDisplay[NMAG !RW SHIELD !DIN !NEC SOCK=2 FILTLVL>4 !town_l GROUND]://
 			ItemDisplay[NMAG !RW ELT SHIELD !DIN !NEC SUP !ETH high_sup_ed FILTLVL>8 !town_l GROUND]://
 			ItemDisplay[NMAG !RW ELT SHIELD !DIN !NEC SUP !ETH low_sup_ed FILTLVL>6 !town_l GROUND]://
