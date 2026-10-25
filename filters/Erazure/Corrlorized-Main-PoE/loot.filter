@@ -4909,14 +4909,14 @@ ItemDisplay[UNI !ID 7gl FILTLVL<8]:%NAME%%CONTINUE%// Wraith Flight Ghost Glaive
 ItemDisplay[UNI !ID ((7s7 ETH FILTLVL<8) OR (7gl FILTLVL<8))]:%UNI_MINIMAL_VALUE_LEFT%  %NAME%  %UNI_MINIMAL_VALUE_RIGHT%%MAP-50%%DOT-59%%PX-6A%//
 
 //     High Value Maces
-ItemDisplay[UNI !ID 7gm]:%NAME%%SOUNDID-4717%%CONTINUE%// Earth Shifter or The Cranium Basher Thunder Maul
 ItemDisplay[UNI !ID 7wh]:%NAME%%SOUNDID-4717%%CONTINUE%// Stone Crusher or Schaefer's Hammer Legendary Mallet
-ItemDisplay[UNI !ID (7gm OR 7wh)]:%UNI_HIGH_VALUE_LEFT%  %NAME%  %UNI_HIGH_VALUE_RIGHT%%BORDER-91%%MAP-9B%%DOT-62%%PX-68%//
+ItemDisplay[UNI !ID 7wh]:%UNI_HIGH_VALUE_LEFT%  %NAME%  %UNI_HIGH_VALUE_RIGHT%%BORDER-91%%MAP-9B%%DOT-62%%PX-68%//
 //     Medium Value Maces
+ItemDisplay[UNI !ID 7gm]:%NAME%%SOUNDID-4717%%CONTINUE%// Earth Shifter or The Cranium Basher Thunder Maul
 ItemDisplay[UNI !ID 7fl]:%NAME%%CONTINUE%// Stormlash or Horizons Tornado
 ItemDisplay[UNI !ID 9wh FILTLVL<8]:%NAME%%CONTINUE%// Earthshaker Battle Hammer
 ItemDisplay[UNI !ID 9gm ETH]:%NAME%%CONTINUE%// The Gavel Of Pain Martel de Fer
-ItemDisplay[UNI !ID (7fl OR (9wh FILTLVL<8) OR (9gm ETH))]:%UNI_MEDIUM_VALUE_LEFT%  %NAME%  %UNI_MEDIUM_VALUE_RIGHT%%BORDER-4B%%MAP-50%%DOT-59%%PX-6A%//
+ItemDisplay[UNI !ID (7gm OR 7fl OR (9wh FILTLVL<8) OR (9gm ETH))]:%UNI_MEDIUM_VALUE_LEFT%  %NAME%  %UNI_MEDIUM_VALUE_RIGHT%%BORDER-4B%%MAP-50%%DOT-59%%PX-6A%//
 //     Minimal Value Maces
 ItemDisplay[UNI !ID 7m7 (ETH OR FILTLVL<8)]:%NAME%%CONTINUE%// Windhammer Ogre Maul
 ItemDisplay[UNI !ID 9wh FILTLVL>7]:%NAME%%CONTINUE%// Earthshaker Battle Hammer
@@ -5047,9 +5047,14 @@ ItemDisplay[UNI !ID (cqv2 OR (aqv2 CLVL<60))]:%UNI_MINIMAL_VALUE_LEFT%  %NAME%  
 // =================================  Undiscovered Unique Items (Grail)  ==================================
 // --------------------------------------------------------------------------------------------------------
 
-// Every unique item the tiers above leave, until you've discovered it (Discovery Progress): the Grail look on
-// every filter level, ahead of the Low Level Duel and standard looks. No icon or sound here: BH's notification
-// pass reads only rules with one, so the rules below still give the icon, chat line and sound
+// Every unique item you haven't discovered yet (Discovery Progress) that no rule above notifies, identified or not,
+// gets a chat line and the unique icon on every filter level (the author, 2026-10-25). A %CONTINUE% layer that
+// changes no look, ahead of the rules below: the first notification rule an item matches gives its chat line, and
+// their icons cover this one
+ItemDisplay[UNI GRAIL_NEW]:%NAME%{%NAME%}%MAP-13%%DOT-18%%PX-20%%CONTINUE%//
+
+// The Grail look: every unique item the tiers above leave, until you've discovered it, on every filter level, ahead
+// of the Low Level Duel and standard looks
 ItemDisplay[UNI !ID GRAIL_NEW]:%UNI_GRAIL_LEFT%  %NAME%  %UNI_GRAIL_RIGHT%//
 
 // --------------------------------------------------------------------------------------------------------
@@ -5251,9 +5256,14 @@ ItemDisplay[SET !ID FILTLVL<5 (dr8 OR uul OR xtb OR ci3 OR uh9 OR xmg OR ne9 OR 
 ItemDisplay[SET !ID FILTLVL~5-11 (dr8 OR uul OR xtb OR ci3 OR uh9 OR xmg OR ne9 OR xhm OR ulg OR 7qr OR ucl OR (ETH (7fb OR 7gd OR 7ls)))]:%SET_MEDIUM_VALUE_LEFT%  %GREEN%%NAME%  %SET_MEDIUM_VALUE_RIGHT%%GREEN%%BORDER-71%%MAP-76%%DOT-84%%PX-20%//
 ItemDisplay[SET !ID FILTLVL=12 (dr8 OR uul OR xtb OR ci3 OR uh9 OR xmg OR ne9 OR xhm OR ulg OR 7qr OR ucl OR (ETH (7fb OR 7gd OR 7ls)))]:%NAME%// The plain name on level 12: no look, icon or sound
 
-// Undiscovered Set Items (Grail): every set item the tiers above leave, but rings and amulets, until you've
-// discovered it (Discovery Progress): the Grail look on every filter level, ahead of the Low Level Duel look. No
-// icon or sound here: the rules below still give them
+// Undiscovered Set Items (Grail): every set item you haven't discovered yet (Discovery Progress) that no rule above
+// notifies, identified or not, rings and amulets too, gets a chat line and the set icon on every filter level (the
+// author, 2026-10-25). A %CONTINUE% layer that changes no look, ahead of the rules below: the first notification
+// rule an item matches gives its chat line (their %TIER-0% icons give none), and their icons cover this one
+ItemDisplay[SET GRAIL_NEW]:%NAME%{%NAME%}%MAP-71%%DOT-76%%PX-81%%CONTINUE%//
+
+// The Grail look: every set item the tiers above leave, but rings and amulets, until you've discovered it, on every
+// filter level, ahead of the Low Level Duel look
 ItemDisplay[SET !ID GRAIL_NEW !(rin OR amu)]:%SET_GRAIL_LEFT%  %NAME%  %SET_GRAIL_RIGHT%//
 
 // Low Level Duel Set Items
@@ -7510,14 +7520,14 @@ ItemDisplay[UNI ID cm3]:%NAME%{%NAME%}//
 // ------------------------------------------------------------------------------
 
 // Jewel Visual Tags
-ItemDisplay[MAG ID jew (STAT74>0 OR IAS>0 OR RES>0 OR FRES>0 OR LRES>0 OR CRES>0 OR PRES>0 OR DEF>0 OR STAT78>0 OR STAT121>0 OR STAT122>0 OR AR>0 OR LIFE>0 OR MFIND>0 OR MANA>0 OR STAT1>0 OR DTM>0 OR GFIND>0 OR STR>0 OR DEX>0 OR STAT501>0 OR STAT91<0 OR STAT86>0 OR STAT138>0 OR MAXDMG>0 OR MINDMG>0 OR ED>0 OR FHR>0 OR STAT329>0 OR STAT330>0 OR STAT331>0 OR STAT332>0 OR STAT357>0 OR !STAT57+STAT58=0 OR STAT55>0 OR STAT51>0 OR STAT49>0 OR STAT124>0 OR STAT123>0)]:%CL%%BLUE%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[MAG ID jew (STAT74>0 OR IAS>0 OR RES>0 OR FRES>0 OR LRES>0 OR CRES>0 OR PRES>0 OR DEF>0 OR STAT78>0 OR STAT121>0 OR STAT122>0 OR AR>0 OR LIFE>0 OR MFIND>0 OR MANA>0 OR STAT1>0 OR DTM>0 OR GFIND>0 OR STR>0 OR DEX>0 OR STAT501>0 OR STAT91<0 OR STAT86>0 OR STAT138>0 OR MAXDMG>0 OR MINDMG>0 OR EDAM>0 OR FHR>0 OR STAT329>0 OR STAT330>0 OR STAT331>0 OR STAT332>0 OR STAT357>0 OR !STAT57+STAT58=0 OR STAT55>0 OR STAT51>0 OR STAT49>0 OR STAT124>0 OR STAT123>0)]:%CL%%BLUE%%NAME%{%NAME%}%CONTINUE%
 ItemDisplay[RARE ID jew]:%CL%%YELLOW%%NAME%{%NAME%}%CONTINUE%
 ItemDisplay[UNI ID jew]:%CL%%GOLD%%NAME%{%NAME%}%CONTINUE%
 
 // Magic Low Level Dueling Jewels (LLD) - 2+ desirable affixes
-ItemDisplay[MAG jew ID LVLREQ<31 $f(COUNT(CRES>24,FRES>24,LRES>24,PRES>24,RES>9,ED>14,MAXDMG+MINDMG>14,MAXDMG>11,MINDMG>9,STR>5,DEX>6,STAT91==-15,STAT135>0,AR>49,STAT51>49,AND(STAT48>7,STAT49>27))>=2)]:%TEAL%LLD%CS%%NAME%{%TEAL%Low Level Dueling%CL%%NAME%}%CONTINUE%//
+ItemDisplay[MAG jew ID LVLREQ<31 $f(COUNT(CRES>24,FRES>24,LRES>24,PRES>24,RES>9,EDAM>14,MAXDMG+MINDMG>14,MAXDMG>11,MINDMG>9,STR>5,DEX>6,STAT91==-15,STAT135>0,AR>49,STAT51>49,AND(STAT48>7,STAT49>27))>=2)]:%TEAL%LLD%CS%%NAME%{%TEAL%Low Level Dueling%CL%%NAME%}%CONTINUE%//
 // Rare Low Level Dueling Jewels (LLD) - 3+ desirable affixes
-ItemDisplay[RARE jew ID LVLREQ<31 $f(COUNT(CRES>19,FRES>19,LRES>19,PRES>19,RES>5,ED>11,MAXDMG+MINDMG>13,MAXDMG>7,MINDMG>6,STR>4,DEX>5,STAT91==-15,STAT135>0,AR>39,STAT51>39,AND(STAT48>5,STAT49>23))>=3)]:%TEAL%LLD%CS%%NAME%{%TEAL%Low Level Dueling%CL%%NAME%}%CONTINUE%//
+ItemDisplay[RARE jew ID LVLREQ<31 $f(COUNT(CRES>19,FRES>19,LRES>19,PRES>19,RES>5,EDAM>11,MAXDMG+MINDMG>13,MAXDMG>7,MINDMG>6,STR>4,DEX>5,STAT91==-15,STAT135>0,AR>39,STAT51>39,AND(STAT48>5,STAT49>23))>=3)]:%TEAL%LLD%CS%%NAME%{%TEAL%Low Level Dueling%CL%%NAME%}%CONTINUE%//
 
 // -15% Requirements
 ItemDisplay[(MAG OR RARE) STAT91<0 ID jew]:%WHITE%%STAT91%%LIGHT_GRAY%%PERCENT%rq%CS%%NAME%{%NAME%}%CONTINUE%
@@ -7594,9 +7604,9 @@ ItemDisplay[(MAG OR RARE) MAXDMG>13 ID jew]:%WHITE%%MAXDMG%%PURPLE%max%CS%%NAME%
 ItemDisplay[(MAG OR RARE) MINDMG>0 MINDMG<13 ID jew]:%WHITE%%MINDMG%%TAN%min%CS%%NAME%{%NAME%}%CONTINUE%
 ItemDisplay[(MAG OR RARE) MINDMG>12 ID jew]:%WHITE%%MINDMG%%PURPLE%min%CS%%NAME%{%NAME%}%CONTINUE%
 // Enhanced Damage
-ItemDisplay[(MAG OR RARE) ED>0 ED<30 ID jew]:%WHITE%%ED%%TAN%ed%CS%%NAME%{%NAME%}%CONTINUE%
-ItemDisplay[(MAG OR RARE) ED>29 ED<38 ID jew]:%WHITE%%ED%%RED%ed%CS%%NAME%{%NAME%}%CONTINUE%
-ItemDisplay[(MAG OR RARE) ED>37 ID jew]:%WHITE%%ED%%PURPLE%ed%CS%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[(MAG OR RARE) EDAM>0 EDAM<30 ID jew]:%WHITE%%EDAM%%TAN%ed%CS%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[(MAG OR RARE) EDAM>29 EDAM<38 ID jew]:%WHITE%%EDAM%%RED%ed%CS%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[(MAG OR RARE) EDAM>37 ID jew]:%WHITE%%EDAM%%PURPLE%ed%CS%%NAME%{%NAME%}%CONTINUE%
 // 15 Increased Attack Speed
 ItemDisplay[(MAG OR RARE) IAS>0 ID jew]:%WHITE%%IAS%%ORANGE%ias%CS%%NAME%{%NAME%}%CONTINUE%
 // Faster Hit Recovery
@@ -7782,8 +7792,8 @@ ItemDisplay[!BOSSTAG_RA_BELT !BOSSTAG_DC_BELT BOSSTAG_LU_BELT]:%NAME%{%RED%Lucio
 // Lucion - Caster: 15+ PDR mandatory; 6+ desirable stats
 // Lucion - Physical: 15+ PDR; 100+ ED mandatory; 5+ desirable stats
 Alias[BOSSTAG_RA_CHEST]:((RARE OR CRAFT) CHEST ID STAT110>74 ($f(COUNT(LIFE>49,STR>14,DEX>14,STAT216>0,CLSK0>1,CLSK1>1,CLSK2>1,CLSK3>1,CLSK4>1,CLSK5>1,CLSK6>1,CLSK0>1,CLSK1>1,CLSK2>1,CLSK3>1,CLSK4>1,CLSK5>1,CLSK6>1,FCR>19,FHR>19,FRW>19,RES>19,STAT76>3,STAT360==0,STAT360==0,STAT153>0,STAT360==50,STAT360==50,SOCK>2,SOCK>3,STAT40>3,STAT44>3,STAT46>3,STAT76>7)>=6) OR (EDAM>99 $f(COUNT(LIFE>49,STR>14,DEX>14,STAT216>0,CLSK0>1,CLSK3>1,CLSK4>1,CLSK5>1,CLSK6>1,CLSK0>1,CLSK3>1,CLSK4>1,CLSK5>1,CLSK6>1,FHR>19,FRW>19,RES>19,STAT76>3,STAT360==0,STAT360==0,STAT153>0,STAT360==50,STAT360==50,STAT40>3,STAT44>3,STAT46>3,EDAM>139,SOCK>2,SOCK>3,STAT76>7)>=5))))
-Alias[BOSSTAG_DC_CHEST]:((RARE OR CRAFT) CHEST ID STAT36>14 ($f(COUNT(LIFE>49,STR>14,DEX>14,STAT216>0,CLSK0>1,CLSK1>1,CLSK2>1,CLSK3>1,CLSK4>1,CLSK5>1,CLSK6>1,CLSK0>1,CLSK1>1,CLSK2>1,CLSK3>1,CLSK4>1,CLSK5>1,CLSK6>1,FCR>19,FHR>19,FRW>19,RES>19,STAT76>3,STAT76>7,STAT360==0,STAT360==0,STAT153>0,STAT360==50,STAT360==50,STAT40>3,SOCK>2,SOCK>3,STAT36>19)>=6) OR (EDAM>99 $f(COUNT(LIFE>49,STR>14,DEX>14,STAT216>0,CLSK0>1,CLSK3>1,CLSK4>1,CLSK5>1,CLSK6>1,CLSK0>1,CLSK3>1,CLSK4>1,CLSK5>1,CLSK6>1,FHR>19,FRW>19,RES>19,STAT36>19,STAT76>3,STAT360==0,STAT360==0,STAT76>7,STAT153>0,STAT360==50,STAT360==50,STAT40>3,SOCK>2,SOCK>3,EDAM>139)>=5))))
-Alias[BOSSTAG_LU_CHEST]:((RARE OR CRAFT) CHEST ID STAT36>14 ($f(COUNT(LIFE>49,STR>14,DEX>14,STAT216>0,CLSK0>1,CLSK1>1,CLSK2>1,CLSK3>1,CLSK4>1,CLSK5>1,CLSK6>1,CLSK0>1,CLSK1>1,CLSK2>1,CLSK3>1,CLSK4>1,CLSK5>1,CLSK6>1,FCR>19,FHR>19,FRW>19,RES>19,STAT76>3,STAT76>7,STAT360==0,STAT360==0,STAT153>0,STAT360==50,STAT360==50,STAT42>3,SOCK>2,SOCK>3,STAT36>19)>=6) OR (EDAM>99 $f(COUNT(LIFE>49,STR>14,DEX>14,STAT216>0,CLSK0>1,CLSK3>1,CLSK4>1,CLSK5>1,CLSK6>1,CLSK0>1,CLSK3>1,CLSK4>1,CLSK5>1,CLSK6>1,FHR>19,FRW>19,RES>19,STAT36>19,STAT76>3,STAT360==0,STAT360==0,STAT76>7,STAT153>0,STAT360==50,STAT360==50,STAT42>3,SOCK>2,SOCK>3,EDAM>139)>=5))))
+Alias[BOSSTAG_DC_CHEST]:((RARE OR CRAFT) CHEST ID STAT36>14 ($f(COUNT(LIFE>49,STR>14,DEX>14,STAT216>0,CLSK0>1,CLSK1>1,CLSK2>1,CLSK3>1,CLSK4>1,CLSK5>1,CLSK6>1,CLSK0>1,CLSK1>1,CLSK2>1,CLSK3>1,CLSK4>1,CLSK5>1,CLSK6>1,FCR>19,FHR>19,FRW>19,RES>19,STAT76>3,STAT76>7,STAT360==0,STAT360==0,STAT153>0,STAT360==50,STAT360==50,STAT40>3,SOCK>2,SOCK>3,STAT36>19,STAT36>14)>=6) OR (EDAM>99 $f(COUNT(LIFE>49,STR>14,DEX>14,STAT216>0,CLSK0>1,CLSK3>1,CLSK4>1,CLSK5>1,CLSK6>1,CLSK0>1,CLSK3>1,CLSK4>1,CLSK5>1,CLSK6>1,FHR>19,FRW>19,RES>19,STAT36>19,STAT76>3,STAT360==0,STAT360==0,STAT76>7,STAT153>0,STAT360==50,STAT360==50,STAT40>3,SOCK>2,SOCK>3,EDAM>139,EDAM>99,STAT36>14)>=5))))
+Alias[BOSSTAG_LU_CHEST]:((RARE OR CRAFT) CHEST ID STAT36>14 ($f(COUNT(LIFE>49,STR>14,DEX>14,STAT216>0,CLSK0>1,CLSK1>1,CLSK2>1,CLSK3>1,CLSK4>1,CLSK5>1,CLSK6>1,CLSK0>1,CLSK1>1,CLSK2>1,CLSK3>1,CLSK4>1,CLSK5>1,CLSK6>1,FCR>19,FHR>19,FRW>19,RES>19,STAT76>3,STAT76>7,STAT360==0,STAT360==0,STAT153>0,STAT360==50,STAT360==50,STAT42>3,SOCK>2,SOCK>3,STAT36>19,STAT36>14)>=6) OR (EDAM>99 $f(COUNT(LIFE>49,STR>14,DEX>14,STAT216>0,CLSK0>1,CLSK3>1,CLSK4>1,CLSK5>1,CLSK6>1,CLSK0>1,CLSK3>1,CLSK4>1,CLSK5>1,CLSK6>1,FHR>19,FRW>19,RES>19,STAT36>19,STAT76>3,STAT360==0,STAT360==0,STAT76>7,STAT153>0,STAT360==50,STAT360==50,STAT42>3,SOCK>2,SOCK>3,EDAM>139,EDAM>99,STAT36>14)>=5))))
 ItemDisplay[BOSSTAG_RA_CHEST BOSSTAG_DC_CHEST BOSSTAG_LU_CHEST]:%NAME%{%RED%Rathma %GRAY%/ %RED%D.Clone %GRAY%/ %RED%Lucion%CL%%NAME%}%CONTINUE%//
 ItemDisplay[BOSSTAG_RA_CHEST BOSSTAG_DC_CHEST !BOSSTAG_LU_CHEST]:%NAME%{%RED%Rathma %GRAY%/ %RED%D.Clone%CL%%NAME%}%CONTINUE%//
 ItemDisplay[BOSSTAG_RA_CHEST !BOSSTAG_DC_CHEST BOSSTAG_LU_CHEST]:%NAME%{%RED%Rathma %GRAY%/ %RED%Lucion%CL%%NAME%}%CONTINUE%//
@@ -9089,8 +9099,8 @@ ItemDisplay[(SHIELD OR GLOVES OR BOOTS) ROLL_DEF_TAG PLUSDEF>0]:%WHITE%%PLUSDEF%
 
 ItemDisplay[SHIELD (ROLL_ED_TAG OR ((UNI OR SET) STAT360=48)) ED>0]:%WHITE%%ED%%LIGHT_GRAY%ed%CS%%NAME%{%NAME%}%CONTINUE%
 ItemDisplay[(CHEST OR GLOVES OR HELM OR CIRC OR BOOTS) (UNI OR SET) (STAT360=33 OR STAT360=48 OR ROLL_ED_TAG)]:%WHITE%%ED%%LIGHT_GRAY%ed%CS%%NAME%{%NAME%}%CONTINUE%
-ItemDisplay[(((CHEST OR SHIELD) STAT16>199) OR STAT360=33) (RARE OR CRAFT)]:%WHITE%%ED%%LIGHT_GRAY%ed%CS%%NAME%{%NAME%}%CONTINUE%
-ItemDisplay[(CHEST OR GLOVES OR HELM OR CIRC OR BOOTS OR SHIELD OR BELT) MAG STAT16>0 !STAT360=48]:%WHITE%%ED%%LIGHT_GRAY%ed%CS%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[(((CHEST OR SHIELD) EDEF>199) OR STAT360=33) (RARE OR CRAFT)]:%WHITE%%ED%%LIGHT_GRAY%ed%CS%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[(CHEST OR GLOVES OR HELM OR CIRC OR BOOTS OR SHIELD OR BELT) MAG EDEF>0 !STAT360=48]:%WHITE%%ED%%LIGHT_GRAY%ed%CS%%NAME%{%NAME%}%CONTINUE%
 ItemDisplay[BELT ROLL_ED_TAG ED>0]:%WHITE%%ED%%LIGHT_GRAY%ed%CS%%NAME%{%NAME%}%CONTINUE%
 
 // Corruption 48 (was Indestructible): its ED on magic, rare and crafted items
