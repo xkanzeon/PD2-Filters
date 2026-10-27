@@ -249,14 +249,14 @@ Alias[good_rw_pshield]:((ELT DIN (SOCK=4 OR SOCK=3 OR SOCK=0)))
 Alias[good_rare_pshield]:DIN
 //shields
 Alias[bad_rw_shield]:(buc OR sml OR lrg OR spk OR kit OR bsh OR xuc OR xml OR xrg OR xpk OR xit OR uuc OR uml OR urg OR upk OR ush OR tow OR gts OR xow OR xts)
-Alias[bad_rare_shield]:(buc OR sml OR lrg OR spk OR bsh OR xuc OR xml OR xrg OR xpk OR uuc OR uml OR urg OR upk OR ush)
+//Alias[bad_rare_shield]:
 Alias[good_rw_shield]:((uts (SOCK=4 OR SOCK=3 OR SOCK=0)) OR (uow (SOCK=4 OR SOCK=3 OR SOCK=0)) OR (uit (SOCK=4 OR SOCK=3 OR SOCK=0)))
-Alias[good_rare_shield]:(gts OR xts OR uts OR uow OR xow OR tow OR kit OR xit OR uit)
+Alias[good_rare_shield]:SHIELD
 //helm
 Alias[bad_rw_helm]:(cap OR skp OR hlm OR fhl OR msk OR bhm OR ghm OR crn OR xap OR xkp OR xlm OR xhl OR xsk OR xh9 OR xhm OR xrn OR uap OR ukp OR hlm)
-Alias[bad_rare_helm]:(cap OR skp OR hlm OR fhl OR xap OR xkp OR xlm OR xhl OR uap OR ukp OR hlm OR uhl)
+//Alias[bad_rare_helm]:
 Alias[good_rw_helm]:(usk OR uh9 OR uhm OR urn)
-Alias[good_rare_helm]:(msk OR bhm OR ghm OR crn OR xrn OR xhm OR xh9 OR xsk OR urn OR uhm OR uh9 OR usk)
+Alias[good_rare_helm]: HELM
 //chest
 Alias[bad_rw_chest]:(qui OR lea OR hla OR stu OR rng OR scl OR chn OR brs OR spl OR plt OR fld OR gth OR ltp OR ful OR aar OR xul OR xea OR xla OR xtu OR xng OR xcl OR xhn OR xrs OR xpl OR xlt OR xld OR xth OR xtp OR xul OR xar)
 Alias[good_rw_chest]:(uui OR uea OR ula OR utu OR ung OR ucl OR uhn OR urs OR upl OR ult OR uld OR uth OR utp OR uul OR uar)
@@ -1877,7 +1877,7 @@ ItemDisplay[NMAG (good_fast_rw_1haxe OR good_fast_rw_1hsword OR good_fast_rw_2ha
 ItemDisplay[NMAG (good_slow_rw_1haxe OR good_slow_rw_1hsword OR good_slow_rw_2haxe OR good_slow_rw_2hspear OR good_slow_rw_2hsword OR good_slow_rw_bow OR good_slow_rw_claw OR good_slow_rw_dagger OR good_slow_rw_polearm OR good_slow_rw_scepter OR good_slow_rw_staff OR good_slow_rw_taxe OR good_slow_rw_tmace OR good_slow_rw_tspear OR good_slow_rw_xbow OR good_slow_rw_zbow OR good_slow_rw_zspear)]:%NAME%%TEAL%|g%CONTINUE%
 ItemDisplay[NMAG (good_tight_rw_2hhammer)]:%NAME%%TEAL%|g%CONTINUE%
 ItemDisplay[NMAG (good_loose_rw_2hhammer)]:%NAME%%TEAL%|g%CONTINUE%
-ItemDisplay[!ID (MAG OR RARE) (bad_rare_1haxe OR bad_rare_helm OR bad_rare_1hclub OR bad_rare_1hsword OR bad_rare_2haxe OR bad_rare_2hspear OR bad_rare_2hsword OR bad_rare_bow OR bad_rare_claw OR bad_rare_dagger OR bad_rare_orb OR bad_rare_polearm OR bad_rare_scepter OR bad_rare_shield OR bad_rare_staff OR bad_rare_taxe OR bad_rare_tmace OR bad_rare_tspear OR bad_rare_xbow)]:%NAME%%CORAL%|b%CONTINUE%
+ItemDisplay[!ID (MAG OR RARE) (bad_rare_1haxe OR bad_rare_1hclub OR bad_rare_1hsword OR bad_rare_2haxe OR bad_rare_2hspear OR bad_rare_2hsword OR bad_rare_bow OR bad_rare_claw OR bad_rare_dagger OR bad_rare_orb OR bad_rare_polearm OR bad_rare_staff OR bad_rare_taxe OR bad_rare_tmace OR bad_rare_tspear OR bad_rare_xbow)]:%NAME%%CORAL%|b%CONTINUE%
 ItemDisplay[!ID (MAG OR RARE) (good_rare_1hclub OR good_rare_helm OR good_rare_1hhammer OR good_rare_1hsword OR good_rare_2hsword OR good_rare_dagger OR good_rare_orb OR good_rare_polearm OR good_rare_pshield OR good_rare_scepter OR good_rare_shield OR good_rare_staff OR good_rare_taxe OR good_rare_wand OR good_rare_xbow OR good_rare_zthrow)]:%NAME%%TEAL%|g%CONTINUE%
 ItemDisplay[!ID (MAG OR RARE) (good_slow_rare_1haxe OR good_slow_rare_2haxe OR good_slow_rare_2hspear OR good_slow_rare_bow OR good_slow_rare_claw OR good_slow_rare_tmace OR good_slow_rare_tspear OR good_slow_rare_zbow OR good_slow_rare_zspear)]:%NAME%%TEAL%|g%CONTINUE%
 ItemDisplay[!ID (MAG OR RARE) (good_fast_rare_1haxe OR good_fast_rare_2haxe OR good_fast_rare_2hspear OR good_fast_rare_bow OR good_fast_rare_claw OR good_fast_rare_tmace OR good_fast_rare_tspear OR good_fast_rare_zbow OR good_fast_rare_zspear)]:%NAME%%TEAL%|g%CONTINUE%
@@ -3623,50 +3623,50 @@ ItemDisplay[WEAPON (RARE OR MAG OR CRAFT) !EQUIPPED ID ED>199 ED<300]:%LIGHT_GRA
 ItemDisplay[WEAPON (RARE OR MAG OR CRAFT) !EQUIPPED ID ED>0 ED<200]:%LIGHT_GRAY%%ED%% Edam%CL%%NAME%{%NAME%}%CONTINUE%
 
 
-ItemDisplay[(HELM OR CHEST OR SHIELD OR CIRC) !EQUIPPED (RARE OR MAG OR CRAFT) ID EDAM>0]:%LIGHT_GRAY%%EDAM%% ed%CL%%NAME%{%NAME%}%CONTINUE%
-ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR BELT) !EQUIPPED (RARE OR MAG OR CRAFT) ID STAT36>0]:%LIGHT_GRAY%%STAT36%% pdr%CL%%NAME%{%NAME%}%CONTINUE%
-ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR BELT OR GLOVES OR BOOTS) !EQUIPPED (RARE OR MAG OR CRAFT) ID FCR>0]:%LIGHT_GRAY%%FCR%% fcr%CL%%NAME%{%NAME%}%CONTINUE%
-ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR BELT OR GLOVES OR BOOTS) !EQUIPPED (RARE OR MAG OR CRAFT) ID IAS>0]:%LIGHT_GRAY%%IAS%% ias%CL%%NAME%{%NAME%}%CONTINUE%
-ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR BELT OR GLOVES OR BOOTS) !EQUIPPED (RARE OR MAG OR CRAFT) ID STAT136>0]:%LIGHT_GRAY%%STAT136%% cb%CL%%NAME%{%NAME%}%CONTINUE%
-ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR BELT OR GLOVES OR BOOTS) !EQUIPPED (RARE OR MAG OR CRAFT) ID STAT250>0]:%LIGHT_GRAY%%STAT250%% ds%CL%%NAME%{%NAME%}%CONTINUE%
-ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR BELT OR GLOVES OR BOOTS) !EQUIPPED (RARE OR MAG OR CRAFT) ID RES>0]:%LIGHT_GRAY%%RES%% all res%CL%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[(HELM OR CHEST OR SHIELD OR CIRC OR QUIVER) !EQUIPPED (RARE OR MAG OR CRAFT) ID EDAM>0]:%LIGHT_GRAY%%EDAM%% ed%CL%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR BELT OR QUIVER) !EQUIPPED (RARE OR MAG OR CRAFT) ID STAT36>0]:%LIGHT_GRAY%%STAT36%% pdr%CL%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR BELT OR GLOVES OR BOOTS OR QUIVER) !EQUIPPED (RARE OR MAG OR CRAFT) ID FCR>0]:%LIGHT_GRAY%%FCR%% fcr%CL%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR BELT OR GLOVES OR BOOTS OR QUIVER) !EQUIPPED (RARE OR MAG OR CRAFT) ID IAS>0]:%LIGHT_GRAY%%IAS%% ias%CL%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR BELT OR GLOVES OR BOOTS OR QUIVER) !EQUIPPED (RARE OR MAG OR CRAFT) ID STAT136>0]:%LIGHT_GRAY%%STAT136%% cb%CL%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR BELT OR GLOVES OR BOOTS OR QUIVER) !EQUIPPED (RARE OR MAG OR CRAFT) ID STAT250>0]:%LIGHT_GRAY%%STAT250%% ds%CL%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR BELT OR GLOVES OR BOOTS OR QUIVER) !EQUIPPED (RARE OR MAG OR CRAFT) ID RES>0]:%LIGHT_GRAY%%RES%% all res%CL%%NAME%{%NAME%}%CONTINUE%
 
-ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR GLOVES) !EQUIPPED (RARE OR MAG OR CRAFT) ID ALLSK>0]:%LIGHT_GRAY%+%ALLSK% all skills%CL%%NAME%{%NAME%}%CONTINUE%
-ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR GLOVES) !EQUIPPED (RARE OR MAG OR CRAFT) ID CLSK0>0]:%LIGHT_GRAY%+%CLSK0% Zon skills%CL%%NAME%{%NAME%}%CONTINUE%
-ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR GLOVES) !EQUIPPED (RARE OR MAG OR CRAFT) ID CLSK1>0]:%LIGHT_GRAY%+%CLSK1% Sorc skills%CL%%NAME%{%NAME%}%CONTINUE%
-ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR GLOVES) !EQUIPPED (RARE OR MAG OR CRAFT) ID CLSK2>0]:%LIGHT_GRAY%+%CLSK2% Necro skills%CL%%NAME%{%NAME%}%CONTINUE%
-ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR GLOVES) !EQUIPPED (RARE OR MAG OR CRAFT) ID CLSK3>0]:%LIGHT_GRAY%+%CLSK3% Pally skills%CL%%NAME%{%NAME%}%CONTINUE%
-ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR GLOVES) !EQUIPPED (RARE OR MAG OR CRAFT) ID CLSK4>0]:%LIGHT_GRAY%+%CLSK4% Barb skills%CL%%NAME%{%NAME%}%CONTINUE%
-ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR GLOVES) !EQUIPPED (RARE OR MAG OR CRAFT) ID CLSK5>0]:%LIGHT_GRAY%+%CLSK5% Dudu skills%CL%%NAME%{%NAME%}%CONTINUE%
-ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR GLOVES) !EQUIPPED (RARE OR MAG OR CRAFT) ID CLSK6>0]:%LIGHT_GRAY%+%CLSK6% Assa skills%CL%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR GLOVES OR QUIVER) !EQUIPPED (RARE OR MAG OR CRAFT) ID ALLSK>0]:%LIGHT_GRAY%+%ALLSK% all skills%CL%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR GLOVES OR QUIVER) !EQUIPPED (RARE OR MAG OR CRAFT) ID CLSK0>0]:%LIGHT_GRAY%+%CLSK0% Zon skills%CL%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR GLOVES OR QUIVER) !EQUIPPED (RARE OR MAG OR CRAFT) ID CLSK1>0]:%LIGHT_GRAY%+%CLSK1% Sorc skills%CL%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR GLOVES OR QUIVER) !EQUIPPED (RARE OR MAG OR CRAFT) ID CLSK2>0]:%LIGHT_GRAY%+%CLSK2% Necro skills%CL%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR GLOVES OR QUIVER) !EQUIPPED (RARE OR MAG OR CRAFT) ID CLSK3>0]:%LIGHT_GRAY%+%CLSK3% Pally skills%CL%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR GLOVES OR QUIVER) !EQUIPPED (RARE OR MAG OR CRAFT) ID CLSK4>0]:%LIGHT_GRAY%+%CLSK4% Barb skills%CL%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR GLOVES OR QUIVER) !EQUIPPED (RARE OR MAG OR CRAFT) ID CLSK5>0]:%LIGHT_GRAY%+%CLSK5% Dudu skills%CL%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR GLOVES OR QUIVER) !EQUIPPED (RARE OR MAG OR CRAFT) ID CLSK6>0]:%LIGHT_GRAY%+%CLSK6% Assa skills%CL%%NAME%{%NAME%}%CONTINUE%
 
-ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR GLOVES) !EQUIPPED (RARE OR MAG OR CRAFT) ID TABSK0>0]:%LIGHT_GRAY%+%TABSK0% bowa%CL%%NAME%{%NAME%}%CONTINUE%
-ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR GLOVES) !EQUIPPED (RARE OR MAG OR CRAFT) ID TABSK1>0]:%LIGHT_GRAY%+%TABSK1% passive%CL%%NAME%{%NAME%}%CONTINUE%
-ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR GLOVES) !EQUIPPED (RARE OR MAG OR CRAFT) ID TABSK2>0]:%LIGHT_GRAY%+%TABSK2% java%CL%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR GLOVES OR QUIVER) !EQUIPPED (RARE OR MAG OR CRAFT) ID TABSK0>0]:%LIGHT_GRAY%+%TABSK0% bowa%CL%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR GLOVES OR QUIVER) !EQUIPPED (RARE OR MAG OR CRAFT) ID TABSK1>0]:%LIGHT_GRAY%+%TABSK1% passive%CL%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR GLOVES OR QUIVER) !EQUIPPED (RARE OR MAG OR CRAFT) ID TABSK2>0]:%LIGHT_GRAY%+%TABSK2% java%CL%%NAME%{%NAME%}%CONTINUE%
 
-ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR GLOVES) !EQUIPPED (RARE OR MAG OR CRAFT) ID TABSK8>0]:%LIGHT_GRAY%+%TABSK8% fire%CL%%NAME%{%NAME%}%CONTINUE%
-ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR GLOVES) !EQUIPPED (RARE OR MAG OR CRAFT) ID TABSK9>0]:%LIGHT_GRAY%+%TABSK9% lite%CL%%NAME%{%NAME%}%CONTINUE%
-ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR GLOVES) !EQUIPPED (RARE OR MAG OR CRAFT) ID TABSK10>0]:%LIGHT_GRAY%+%TABSK10% cold%CL%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR GLOVES OR QUIVER) !EQUIPPED (RARE OR MAG OR CRAFT) ID TABSK8>0]:%LIGHT_GRAY%+%TABSK8% fire%CL%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR GLOVES OR QUIVER) !EQUIPPED (RARE OR MAG OR CRAFT) ID TABSK9>0]:%LIGHT_GRAY%+%TABSK9% lite%CL%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR GLOVES OR QUIVER) !EQUIPPED (RARE OR MAG OR CRAFT) ID TABSK10>0]:%LIGHT_GRAY%+%TABSK10% cold%CL%%NAME%{%NAME%}%CONTINUE%
 
-ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR GLOVES) !EQUIPPED (RARE OR MAG OR CRAFT) ID TABSK16>0]:%LIGHT_GRAY%+%TABSK16% curses%CL%%NAME%{%NAME%}%CONTINUE%
-ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR GLOVES) !EQUIPPED (RARE OR MAG OR CRAFT) ID TABSK17>0]:%LIGHT_GRAY%+%TABSK17% pnb%CL%%NAME%{%NAME%}%CONTINUE%
-ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR GLOVES) !EQUIPPED (RARE OR MAG OR CRAFT) ID TABSK18>0]:%LIGHT_GRAY%+%TABSK18% n sum%CL%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR GLOVES OR QUIVER) !EQUIPPED (RARE OR MAG OR CRAFT) ID TABSK16>0]:%LIGHT_GRAY%+%TABSK16% curses%CL%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR GLOVES OR QUIVER) !EQUIPPED (RARE OR MAG OR CRAFT) ID TABSK17>0]:%LIGHT_GRAY%+%TABSK17% pnb%CL%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR GLOVES OR QUIVER) !EQUIPPED (RARE OR MAG OR CRAFT) ID TABSK18>0]:%LIGHT_GRAY%+%TABSK18% n sum%CL%%NAME%{%NAME%}%CONTINUE%
 
-ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR GLOVES) !EQUIPPED (RARE OR MAG OR CRAFT) ID TABSK24>0]:%LIGHT_GRAY%+%TABSK24% pcomb%CL%%NAME%{%NAME%}%CONTINUE%
-ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR GLOVES) !EQUIPPED (RARE OR MAG OR CRAFT) ID TABSK25>0]:%LIGHT_GRAY%+%TABSK25% off a%CL%%NAME%{%NAME%}%CONTINUE%
-ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR GLOVES) !EQUIPPED (RARE OR MAG OR CRAFT) ID TABSK26>0]:%LIGHT_GRAY%+%TABSK26% deff a%CL%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR GLOVES OR QUIVER) !EQUIPPED (RARE OR MAG OR CRAFT) ID TABSK24>0]:%LIGHT_GRAY%+%TABSK24% pcomb%CL%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR GLOVES OR QUIVER) !EQUIPPED (RARE OR MAG OR CRAFT) ID TABSK25>0]:%LIGHT_GRAY%+%TABSK25% off a%CL%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR GLOVES OR QUIVER) !EQUIPPED (RARE OR MAG OR CRAFT) ID TABSK26>0]:%LIGHT_GRAY%+%TABSK26% deff a%CL%%NAME%{%NAME%}%CONTINUE%
 
-ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR GLOVES) !EQUIPPED (RARE OR MAG OR CRAFT) ID TABSK32>0]:%LIGHT_GRAY%+%TABSK32% bcomb%CL%%NAME%{%NAME%}%CONTINUE%
-ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR GLOVES) !EQUIPPED (RARE OR MAG OR CRAFT) ID TABSK33>0]:%LIGHT_GRAY%+%TABSK33% mast%CL%%NAME%{%NAME%}%CONTINUE%
-ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR GLOVES) !EQUIPPED (RARE OR MAG OR CRAFT) ID TABSK34>0]:%LIGHT_GRAY%+%TABSK34% singer%CL%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR GLOVES OR QUIVER) !EQUIPPED (RARE OR MAG OR CRAFT) ID TABSK32>0]:%LIGHT_GRAY%+%TABSK32% bcomb%CL%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR GLOVES OR QUIVER) !EQUIPPED (RARE OR MAG OR CRAFT) ID TABSK33>0]:%LIGHT_GRAY%+%TABSK33% mast%CL%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR GLOVES OR QUIVER) !EQUIPPED (RARE OR MAG OR CRAFT) ID TABSK34>0]:%LIGHT_GRAY%+%TABSK34% singer%CL%%NAME%{%NAME%}%CONTINUE%
 
-ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR GLOVES) !EQUIPPED (RARE OR MAG OR CRAFT) ID TABSK40>0]:%LIGHT_GRAY%+%TABSK40% d sum%CL%%NAME%{%NAME%}%CONTINUE%
-ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR GLOVES) !EQUIPPED (RARE OR MAG OR CRAFT) ID TABSK41>0]:%LIGHT_GRAY%+%TABSK41% ss%CL%%NAME%{%NAME%}%CONTINUE%
-ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR GLOVES) !EQUIPPED (RARE OR MAG OR CRAFT) ID TABSK42>0]:%LIGHT_GRAY%+%TABSK42% ele%CL%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR GLOVES OR QUIVER) !EQUIPPED (RARE OR MAG OR CRAFT) ID TABSK40>0]:%LIGHT_GRAY%+%TABSK40% d sum%CL%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR GLOVES OR QUIVER) !EQUIPPED (RARE OR MAG OR CRAFT) ID TABSK41>0]:%LIGHT_GRAY%+%TABSK41% ss%CL%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR GLOVES OR QUIVER) !EQUIPPED (RARE OR MAG OR CRAFT) ID TABSK42>0]:%LIGHT_GRAY%+%TABSK42% ele%CL%%NAME%{%NAME%}%CONTINUE%
 
-ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR GLOVES) !EQUIPPED (RARE OR MAG OR CRAFT) ID TABSK48>0]:%LIGHT_GRAY%+%TABSK48% trap%CL%%NAME%{%NAME%}%CONTINUE%
-ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR GLOVES) !EQUIPPED (RARE OR MAG OR CRAFT) ID TABSK49>0]:%LIGHT_GRAY%+%TABSK49% shadow%CL%%NAME%{%NAME%}%CONTINUE%
-ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR GLOVES) !EQUIPPED (RARE OR MAG OR CRAFT) ID TABSK50>0:%LIGHT_GRAY%+%TABSK50% ma%CL%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR GLOVES OR QUIVER) !EQUIPPED (RARE OR MAG OR CRAFT) ID TABSK48>0]:%LIGHT_GRAY%+%TABSK48% trap%CL%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR GLOVES OR QUIVER) !EQUIPPED (RARE OR MAG OR CRAFT) ID TABSK49>0]:%LIGHT_GRAY%+%TABSK49% shadow%CL%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[(HELM OR CHEST OR SHIELD OR WEAPON OR CIRC OR GLOVES OR QUIVER) !EQUIPPED (RARE OR MAG OR CRAFT) ID TABSK50>0:%LIGHT_GRAY%+%TABSK50% ma%CL%%NAME%{%NAME%}%CONTINUE%
 
 
 
@@ -4113,8 +4113,8 @@ ItemDisplay[NMAG ELT SUP !GLOVES !BOOTS !BELT !caster2_i (WEAPON OR ARMOR) !(bad
 		//ItemDisplay[!ID MAG (hax OR 9ha OR 7ha OR mpi OR 9mp OR 7mp OR 72a OR 92a OR 2ax OR 7la OR 9la OR lax OR bax OR 9ba OR 7ba OR 7bt OR 9bt OR btx OR 7cl OR 9cl OR clb OR 7ma OR 9ma OR mac OR 7ss OR 9ss OR ssd OR 7sm OR 9sm OR scm OR 7sb OR 9sb OR sbr OR 7fc OR 9fc OR flc OR 7ls OR 9ls OR lsd OR 7wd OR 9wd OR wsd OR 2hs OR 92h OR 72h OR 7cm OR 9cm OR clm OR 7gs OR 9gs OR gis OR 7b7 OR 9b9 OR bsw OR 7fb OR 9fb OR flb OR 7di OR 9di OR dir OR dgr OR 9dg OR 7dg OR 7bl OR 9bl OR bld OR 7ta OR 9ta OR tax OR 7ja OR 9ja OR jav OR 7pi OR 9pi OR pil OR 7s7 OR 9s9 OR ssp OR 7tr OR 9tr OR tri OR brn OR 9br OR 7br OR spt OR 9st OR 7st OR 7o7 OR 9b7 OR bar OR vou OR 9vo OR 7vo OR 7s8 OR 9s8 OR scy OR pax OR 9pa OR 7pa OR 7wc OR 9wc OR wsc OR 6sb OR 8sb OR sbw OR hbw OR 8hb OR 6hb OR 6cb OR 8cb OR cbw OR sbb OR 8s8 OR 6s7 OR 6sw OR 8sw OR swb OR 6lx OR 8lx OR lxb OR 6lw OR 8lw OR lwb OR 6mx OR 8mx OR mxb OR rxb OR 8rx OR 6rx OR 6ss OR 8ss OR sst OR lst OR 8ls OR 6ls OR 6cs OR 8cs OR cst OR bst OR 8bs OR 6bs OR 7sc OR 9sc OR scp OR gsc OR 9qs OR 7qs OR 7ar OR 9ar OR ktr OR wrb OR 9wb OR 7wb OR ces OR 9cs OR 7cs OR 7lw OR 9lw OR clw OR btl OR 9tw OR 7tw OR obb OR ob6 OR ob1 OR ob2 OR ob7 OR obc OR ob3 OR ob8 OR obd OR ob4 OR ob9 OR obe) !PRICE=35000 FILTLVL>4 !town_l GROUND]://	
 		//ItemDisplay[!ID MAG (hax OR 9ha OR 7ha OR mpi OR 9mp OR 7mp OR 72a OR 92a OR 2ax OR 7la OR 9la OR lax OR bax OR 9ba OR 7ba OR 7bt OR 9bt OR btx OR 7cl OR 9cl OR clb OR 7ma OR 9ma OR mac OR 7ss OR 9ss OR ssd OR 7sm OR 9sm OR scm OR 7sb OR 9sb OR sbr OR 7fc OR 9fc OR flc OR 7ls OR 9ls OR lsd OR 7wd OR 9wd OR wsd OR 2hs OR 92h OR 72h OR 7cm OR 9cm OR clm OR 7gs OR 9gs OR gis OR 7b7 OR 9b9 OR bsw OR 7fb OR 9fb OR flb OR 7di OR 9di OR dir OR dgr OR 9dg OR 7dg OR 7bl OR 9bl OR bld OR 7ta OR 9ta OR tax OR 7ja OR 9ja OR jav OR 7pi OR 9pi OR pil OR 7s7 OR 9s9 OR ssp OR 7tr OR 9tr OR tri OR brn OR 9br OR 7br OR spt OR 9st OR 7st OR 7o7 OR 9b7 OR bar OR vou OR 9vo OR 7vo OR 7s8 OR 9s8 OR scy OR pax OR 9pa OR 7pa OR 7wc OR 9wc OR wsc OR 6sb OR 8sb OR sbw OR hbw OR 8hb OR 6hb OR 6cb OR 8cb OR cbw OR sbb OR 8s8 OR 6s7 OR 6sw OR 8sw OR swb OR 6lx OR 8lx OR lxb OR 6lw OR 8lw OR lwb OR 6mx OR 8mx OR mxb OR rxb OR 8rx OR 6rx OR 6ss OR 8ss OR sst OR lst OR 8ls OR 6ls OR 6cs OR 8cs OR cst OR bst OR 8bs OR 6bs OR 7sc OR 9sc OR scp OR gsc OR 9qs OR 7qs OR 7ar OR 9ar OR ktr OR wrb OR 9wb OR 7wb OR ces OR 9cs OR 7cs OR 7lw OR 9lw OR clw OR btl OR 9tw OR 7tw OR obb OR ob6 OR ob1 OR ob2 OR ob7 OR obc OR ob3 OR ob8 OR obd OR ob4 OR ob9 OR obe) PRICE=35000 FILTLVL>6 !town_l GROUND]://		
 	
-		ItemDisplay[!ID MAG ((THROWING DAGGER) OR bad_rare_1haxe OR bad_rare_helm OR bad_rare_1hclub OR bad_rare_1hsword OR bad_rare_2haxe OR bad_rare_2hspear OR bad_rare_2hsword OR bad_rare_bow OR bad_rare_claw OR bad_rare_dagger OR bad_rare_orb OR bad_rare_polearm OR bad_rare_scepter OR bad_rare_shield OR bad_rare_staff OR bad_rare_taxe OR bad_rare_tmace OR bad_rare_tspear OR bad_rare_xbow) !PRICE=35000 FILTLVL>4 !town_l GROUND]://
-		ItemDisplay[!ID MAG ((THROWING DAGGER) OR bad_rare_1haxe OR bad_rare_helm OR bad_rare_1hclub OR bad_rare_1hsword OR bad_rare_2haxe OR bad_rare_2hspear OR bad_rare_2hsword OR bad_rare_bow OR bad_rare_claw OR bad_rare_dagger OR bad_rare_orb OR bad_rare_polearm OR bad_rare_scepter OR bad_rare_shield OR bad_rare_staff OR bad_rare_taxe OR bad_rare_tmace OR bad_rare_tspear OR bad_rare_xbow) PRICE=35000 FILTLVL>6 !town_l GROUND]://
+		ItemDisplay[!ID MAG ((THROWING DAGGER) OR bad_rare_1haxe OR bad_rare_1hclub OR bad_rare_1hsword OR bad_rare_2haxe OR bad_rare_2hspear OR bad_rare_2hsword OR bad_rare_bow OR bad_rare_claw OR bad_rare_dagger OR bad_rare_orb OR bad_rare_polearm OR bad_rare_staff OR bad_rare_taxe OR bad_rare_tmace OR bad_rare_tspear OR bad_rare_xbow) !PRICE=35000 FILTLVL>4 !town_l GROUND]://
+		ItemDisplay[!ID MAG ((THROWING DAGGER) OR bad_rare_1haxe OR bad_rare_1hclub OR bad_rare_1hsword OR bad_rare_2haxe OR bad_rare_2hspear OR bad_rare_2hsword OR bad_rare_bow OR bad_rare_claw OR bad_rare_dagger OR bad_rare_orb OR bad_rare_polearm OR bad_rare_staff OR bad_rare_taxe OR bad_rare_tmace OR bad_rare_tspear OR bad_rare_xbow) PRICE=35000 FILTLVL>6 !town_l GROUND]://
 
 		//ItemDisplay[!ID MAG (pab OR pa6 OR pa1 OR pac OR pa7 OR pa2 OR pad OR pa8 OR pa3 OR paf OR paa OR pa5 OR ulb OR xlb OR lbt OR uvb OR xvb OR vbt OR umb OR xmb OR mbt OR utb OR xtb OR tbt) !PRICE=35000 FILTLVL>4 !town_l GROUND]://
 		//ItemDisplay[!ID MAG (pab OR pa6 OR pa1 OR pac OR pa7 OR pa2 OR pad OR pa8 OR pa3 OR paf OR paa OR pa5 OR ulb OR xlb OR lbt OR uvb OR xvb OR vbt OR umb OR xmb OR mbt OR utb OR xtb OR tbt) PRICE=35000 FILTLVL>6 !town_l GROUND]://
@@ -4145,8 +4145,8 @@ ItemDisplay[NMAG ELT SUP !GLOVES !BOOTS !BELT !caster2_i (WEAPON OR ARMOR) !(bad
 		//ItemDisplay[!ID RARE (hax OR 9ha OR 7ha OR mpi OR 9mp OR 7mp OR 72a OR 92a OR 2ax OR 7la OR 9la OR lax OR bax OR 9ba OR 7ba OR 7bt OR 9bt OR btx OR 7cl OR 9cl OR clb OR 7ma OR 9ma OR mac OR 7ss OR 9ss OR ssd OR 7sm OR 9sm OR scm OR 7sb OR 9sb OR sbr OR 7fc OR 9fc OR flc OR 7ls OR 9ls OR lsd OR 7wd OR 9wd OR wsd OR 2hs OR 92h OR 72h OR 7cm OR 9cm OR clm OR 7gs OR 9gs OR gis OR 7b7 OR 9b9 OR bsw OR 7fb OR 9fb OR flb OR 7di OR 9di OR dir OR dgr OR 9dg OR 7dg OR 7bl OR 9bl OR bld OR 7ta OR 9ta OR tax OR 7ja OR 9ja OR jav OR 7pi OR 9pi OR pil OR 7s7 OR 9s9 OR ssp OR 7tr OR 9tr OR tri OR brn OR 9br OR 7br OR spt OR 9st OR 7st OR 7o7 OR 9b7 OR bar OR vou OR 9vo OR 7vo OR 7s8 OR 9s8 OR scy OR pax OR 9pa OR 7pa OR 7wc OR 9wc OR wsc OR 6sb OR 8sb OR sbw OR hbw OR 8hb OR 6hb OR 6cb OR 8cb OR cbw OR sbb OR 8s8 OR 6s7 OR 6sw OR 8sw OR swb OR 6lx OR 8lx OR lxb OR 6lw OR 8lw OR lwb OR 6mx OR 8mx OR mxb OR rxb OR 8rx OR 6rx OR 6ss OR 8ss OR sst OR lst OR 8ls OR 6ls OR 6cs OR 8cs OR cst OR bst OR 8bs OR 6bs OR 7sc OR 9sc OR scp OR gsc OR 9qs OR 7qs OR 7ar OR 9ar OR ktr OR wrb OR 9wb OR 7wb OR ces OR 9cs OR 7cs OR 7lw OR 9lw OR clw OR btl OR 9tw OR 7tw OR obb OR ob6 OR ob1 OR ob2 OR ob7 OR obc OR ob3 OR ob8 OR obd OR ob4 OR ob9 OR obe) PRICE=35000 FILTLVL>6 !town_l GROUND]://
 
 
-		ItemDisplay[!ID RARE ((THROWING DAGGER) OR bad_rare_1haxe OR bad_rare_helm OR bad_rare_1hclub OR bad_rare_1hsword OR bad_rare_2haxe OR bad_rare_2hspear OR bad_rare_2hsword OR bad_rare_bow OR bad_rare_claw OR bad_rare_dagger OR bad_rare_orb OR bad_rare_polearm OR bad_rare_scepter OR bad_rare_shield OR bad_rare_staff OR bad_rare_taxe OR bad_rare_tmace OR bad_rare_tspear OR bad_rare_xbow) !PRICE=35000 FILTLVL>4 !town_l GROUND]://
-		ItemDisplay[!ID RARE ((THROWING DAGGER) OR bad_rare_1haxe OR bad_rare_helm OR bad_rare_1hclub OR bad_rare_1hsword OR bad_rare_2haxe OR bad_rare_2hspear OR bad_rare_2hsword OR bad_rare_bow OR bad_rare_claw OR bad_rare_dagger OR bad_rare_orb OR bad_rare_polearm OR bad_rare_scepter OR bad_rare_shield OR bad_rare_staff OR bad_rare_taxe OR bad_rare_tmace OR bad_rare_tspear OR bad_rare_xbow) PRICE=35000 FILTLVL>6 !town_l GROUND]://
+		ItemDisplay[!ID RARE ((THROWING DAGGER) OR bad_rare_1haxe OR bad_rare_1hclub OR bad_rare_1hsword OR bad_rare_2haxe OR bad_rare_2hspear OR bad_rare_2hsword OR bad_rare_bow OR bad_rare_claw OR bad_rare_dagger OR bad_rare_orb OR bad_rare_polearm OR bad_rare_staff OR bad_rare_taxe OR bad_rare_tmace OR bad_rare_tspear OR bad_rare_xbow) !PRICE=35000 FILTLVL>4 !town_l GROUND]://
+		ItemDisplay[!ID RARE ((THROWING DAGGER) OR bad_rare_1haxe OR bad_rare_1hclub OR bad_rare_1hsword OR bad_rare_2haxe OR bad_rare_2hspear OR bad_rare_2hsword OR bad_rare_bow OR bad_rare_claw OR bad_rare_dagger OR bad_rare_orb OR bad_rare_polearm OR bad_rare_staff OR bad_rare_taxe OR bad_rare_tmace OR bad_rare_tspear OR bad_rare_xbow) PRICE=35000 FILTLVL>6 !town_l GROUND]://
 
 			
 		//bad crafting bases magic

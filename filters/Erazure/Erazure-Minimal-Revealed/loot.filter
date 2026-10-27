@@ -136,7 +136,8 @@ Alias[LEM_RUNE_LOW_QTY_LEFT]:%DARK_GREEN%x%GREEN%x%TAN%x%LIGHT_GRAY%x
 Alias[LEM_RUNE_LOW_QTY_RIGHT]:%LIGHT_GRAY%x%TAN%x%GREEN%x%DARK_GREEN%x
 
 // Pul Low Qty
-Alias[PUL_RUNE_LOW_QTY]:%DARK_GREEN%x%GREEN%x%TAN%xox%GREEN%x%DARK_GREEN%x
+Alias[PUL_RUNE_LOW_QTY_LEFT]:%DARK_GREEN%x%GREEN%x%TAN%x%LIGHT_GRAY%x
+Alias[PUL_RUNE_LOW_QTY_RIGHT]:%LIGHT_GRAY%x%TAN%x%GREEN%x%DARK_GREEN%x
 
 // Lem Pul High Qty
 Alias[LEM_PUL_RUNE_HIGH_QTY]:%DARK_GREEN%x%GREEN%x%YELLOW%x%TAN%o%YELLOW%x%GREEN%x%DARK_GREEN%x
@@ -362,12 +363,6 @@ Alias[RARE_JEWEL_NAME]:%TAN%(x  %YELLOW%%NAME%  %TAN%x)%YELLOW%
 
 // Magic Jewels: the name between (x and x)
 Alias[MAGIC_JEWEL_NAME]:%TAN%(x  %BLUE%Jewel  %TAN%x)%BLUE%
-
-// Magic Jewel arrows: the * > and < * around the name (levels 0-4, or below character level 30). The spaces
-// next to the name are part of them, so an empty one leaves no gap; BH drops spaces at an alias's ends, so a
-// color code closes them in.
-Alias[MAGIC_JEWEL_LEFT]:
-Alias[MAGIC_JEWEL_RIGHT]:
 
 // Magic Rings
 Alias[MAGIC_RING_LEFT]:%TAN%•
@@ -2315,6 +2310,10 @@ ItemDisplay[POE_SOUNDS (ubaa OR ubab OR ubac) QTY=1 !TOWN]:%NAME%{%NAME%}%SOUNDI
 ItemDisplay[!POE_SOUNDS UNI !ID MAPTIER=5]:%NAME%{%NAME%}%SOUNDID-35%%CONTINUE%//
 ItemDisplay[POE_SOUNDS UNI !ID MAPTIER=5 !TOWN]:%NAME%{%NAME%}%SOUNDID-4718%%CONTINUE%//
 
+// Sound notification for Horadrim Scarab
+ItemDisplay[!POE_SOUNDS scrb QTY=1 !TOWN]:%NAME%{%NAME%}%SOUNDID-1123%%CONTINUE%// 
+ItemDisplay[POE_SOUNDS scrb QTY=1 !TOWN]:%NAME%{%NAME%}%SOUNDID-4718%%CONTINUE%//
+
 
 //----------------------------------------------------------------------------------------------------------
 // ==========================================  El - Zod Runes  ============================================= 
@@ -2370,7 +2369,7 @@ ItemDisplay[RUNE>7 RUNE<17 QTY>9]:%LOW_RUNE_HIGH_QTY_LEFT%  %NAME%  %LOW_RUNE_HI
 ItemDisplay[RUNE>16 RUNE<20 QTY<10]:%MID_RUNE_LOW_QTY_LEFT%  %NAME%  %MID_RUNE_LOW_QTY_RIGHT%%WHITE%%CONTINUE%// 
 ItemDisplay[RUNE>16 RUNE<20 QTY>9]:%MID_RUNE_HIGH_QTY%  %NAME%  %MID_RUNE_HIGH_QTY%%WHITE%%CONTINUE%// 
 ItemDisplay[RUNE=20 QTY<2]:%LEM_RUNE_LOW_QTY_LEFT%   %NAME%   %LEM_RUNE_LOW_QTY_RIGHT%%WHITE%%CONTINUE%// 
-ItemDisplay[RUNE=21 QTY<2]:%PUL_RUNE_LOW_QTY%   %NAME%   %PUL_RUNE_LOW_QTY%%WHITE%%CONTINUE%// 
+ItemDisplay[RUNE=21 QTY<2]:%PUL_RUNE_LOW_QTY_LEFT%   %NAME%   %PUL_RUNE_LOW_QTY_RIGHT%%WHITE%%CONTINUE%// 
 ItemDisplay[RUNE>19 RUNE<22 QTY>1]:%LEM_PUL_RUNE_HIGH_QTY%   %NAME%   %LEM_PUL_RUNE_HIGH_QTY%%WHITE%%CONTINUE%// 
 ItemDisplay[RUNE=22]:%UM_RUNE%   %NAME%   %UM_RUNE%%WHITE%%CONTINUE%// 
 ItemDisplay[RUNE=23]:%MAL_RUNE%   %NAME%   %MAL_RUNE%%WHITE%%CONTINUE%// 
@@ -5561,11 +5560,10 @@ ItemDisplay[MAG !ID !ETH CIRC FILTLVL<5]:%TAN%o  %NAME%  %TAN%o%BLUE%%BORDER-91%
 ItemDisplay[jewf QTY>1]:%TAN%(x %BLUE%Jewel %TAN%x) %WHITE%Fragments %TAN%x %WHITE%%QTY%{%BLUE%Jewel %WHITE%when crafting%CL%%WHITE%Use in place of a}%MAP-91%%DOT-97%%PX-A6%// Jewel fragments
 ItemDisplay[jewf QTY<2]:%TAN%(x %BLUE%Jewel %TAN%x) %WHITE%Fragment{%BLUE%Jewel %WHITE%when crafting%CL%%WHITE%Use in place of a}%MAP-91%%DOT-97%%PX-A6%// Jewel fragments
 
-ItemDisplay[MAG !ID jew MAPID~183-184]:%MAGIC_JEWEL_NAME%%BLUE%%DOT-97%%PX-0E%%TIER-0%// All unidentified magic jewels
-ItemDisplay[MAG !ID jew CLVL>29 FILTLVL~5-11 !MAPID~183-184]:%MAGIC_JEWEL_NAME%%BLUE%%DOT-97%%PX-0E%// All unidentified magic jewels
-ItemDisplay[MAG !ID jew CLVL>29 FILTLVL=12 !MAPID~183-184]:%MAGIC_JEWEL_NAME%%BLUE%%DOT-97%%PX-0E%%TIER-0%// All unidentified magic jewels
-ItemDisplay[MAG !ID jew CLVL>29 FILTLVL<5 !MAPID~183-184]:%MAGIC_JEWEL_LEFT%%MAGIC_JEWEL_NAME%%MAGIC_JEWEL_RIGHT%%BLUE%%MAP-91%%DOT-97%%PX-0E%// All unidentified magic jewels
-ItemDisplay[MAG !ID jew CLVL<30 FILTLVL<12]:%MAGIC_JEWEL_LEFT%%MAGIC_JEWEL_NAME%%MAGIC_JEWEL_RIGHT%%BLUE%%MAP-91%%DOT-97%%PX-0E%// All unidentified magic jewels
+ItemDisplay[MAG !ID jew CLVL>29 FILTLVL~5-11]:%MAGIC_JEWEL_NAME%%BLUE%%DOT-97%%PX-0E%// All unidentified magic jewels
+ItemDisplay[MAG !ID jew CLVL>29 FILTLVL=12]:%MAGIC_JEWEL_NAME%%BLUE%%DOT-97%%PX-0E%%TIER-0%// All unidentified magic jewels
+ItemDisplay[MAG !ID jew CLVL>29 FILTLVL<5]:%MAGIC_JEWEL_NAME%%BLUE%%MAP-91%%DOT-97%%PX-0E%// All unidentified magic jewels
+ItemDisplay[MAG !ID jew CLVL<30 FILTLVL<12]:%MAGIC_JEWEL_NAME%%BLUE%%MAP-91%%DOT-97%%PX-0E%// All unidentified magic jewels
 
 // Magic Amazon Spears
 
@@ -5873,6 +5871,8 @@ Alias[RWB_PLAGUE_CLUB_POISON_CREEPER]:((9cl OR 9sp OR 7cl OR 7sp OR leg) (SOCK=0
 // Druid pelts
 // Lore druid pelts
 Alias[RWB_LORE_PELT]:(DRU SOCK=2 (SK221>2 OR SK237>2 OR SK227>2 OR SK247>2))
+// Delirium druid pelts: +3 Twister and +1 or more to two of Tornado, Hurricane, Cyclone Armor, Gust, Summon Grizzly, Carrion Vine, Solar Creeper, Oak Sage, Spirit of Barbs
+Alias[RWB_DELIRIUM_PELT]:(!ETH (SOCK=0 OR SOCK=3) DRU SK240=3 ((SK245>0 (SK250>0 OR SK235>0 OR SK370>0 OR SK247>0 OR SK231>0 OR SK241>0 OR SK226>0 OR SK246>0)) OR (SK250>0 (SK235>0 OR SK370>0 OR SK247>0 OR SK231>0 OR SK241>0 OR SK226>0 OR SK246>0)) OR (SK235>0 (SK370>0 OR SK247>0 OR SK231>0 OR SK241>0 OR SK226>0 OR SK246>0)) OR (SK370>0 (SK247>0 OR SK231>0 OR SK241>0 OR SK226>0 OR SK246>0)) OR (SK247>0 (SK231>0 OR SK241>0 OR SK226>0 OR SK246>0)) OR (SK231>0 (SK241>0 OR SK226>0 OR SK246>0)) OR (SK241>0 (SK226>0 OR SK246>0)) OR (SK226>0 SK246>0)))
 
 // Necromancer heads
 // Rhyme necromancer heads
@@ -6373,10 +6373,10 @@ ItemDisplay[NMAG !RW (clb OR spc OR 9cl OR 9sp OR 7cl OR 7sp) (FILTLVL~3-4 CLVL>
 ItemDisplay[NMAG !RW (clb OR spc OR 9cl OR 9sp OR 7cl OR 7sp) (FILTLVL~3-4 CLVL>79) !(RWB_PLAGUE_CLUB_ARMAGEDDON OR RWB_PLAGUE_CLUB_SHOCK_WAVE OR RWB_PLAGUE_CLUB_ARCTIC_BLAST OR RWB_PLAGUE_CLUB_SUMMONS OR RWB_PLAGUE_CLUB_POISON_CREEPER) GROUND !TOWN (SELLPRICE<25000 OR AREA>2)]://
 ItemDisplay[NMAG !RW (clb OR spc OR 9cl OR 9sp OR 7cl OR 7sp) FILTLVL>4 !(RWB_PLAGUE_CLUB_ARMAGEDDON OR RWB_PLAGUE_CLUB_SHOCK_WAVE OR RWB_PLAGUE_CLUB_ARCTIC_BLAST OR RWB_PLAGUE_CLUB_SUMMONS OR RWB_PLAGUE_CLUB_POISON_CREEPER) GROUND !TOWN]:// On filter levels 5+, hide nonmagical druid clubs that are not Plague bases
 
-// Hide all nonmagical druid helms: on filter levels 3-4 from character level 80 (only a ($) shows when one sells for 25,000+ gold and takes 2 inventory squares or less), and on filter levels 5+
-ItemDisplay[NMAG !RW DRU (FILTLVL~3-4 CLVL>79) GROUND !TOWN SELLPRICE>24999 AREA<3]:%GRAY%(%TAN%$%GRAY%)//
-ItemDisplay[NMAG !RW DRU (FILTLVL~3-4 CLVL>79) GROUND !TOWN (SELLPRICE<25000 OR AREA>2)]://
-ItemDisplay[NMAG !RW DRU FILTLVL>4 GROUND !TOWN]://
+// Hide nonmagical druid helms that are not Delirium bases: on filter levels 3-4 from character level 80 (only a ($) shows when one sells for 25,000+ gold and takes 2 inventory squares or less), and on filter levels 5+
+ItemDisplay[NMAG !RW DRU (FILTLVL~3-4 CLVL>79) GROUND !TOWN SELLPRICE>24999 AREA<3 !RWB_DELIRIUM_PELT]:%GRAY%(%TAN%$%GRAY%)//
+ItemDisplay[NMAG !RW DRU (FILTLVL~3-4 CLVL>79) GROUND !TOWN (SELLPRICE<25000 OR AREA>2) !RWB_DELIRIUM_PELT]://
+ItemDisplay[NMAG !RW DRU FILTLVL>4 GROUND !TOWN !RWB_DELIRIUM_PELT]://
 
 //      Plague runeword club bases
 //      +3 Hurricane, +3 Armageddon, and +1-3 to Oak/CarrionVine/CycloneArmor/Solar/Grizzly/Gust
@@ -6402,6 +6402,10 @@ ItemDisplay[NMAG !RW ETH DRU !DRUID FILTLVL>0 GROUND !TOWN]:// Hides all Eth non
 //      +3 to one of the following: Raven, Spirit Wolf, Dire Wolf, Grizzly
 ItemDisplay[NMAG !RW !ETH DRUID ((CLVL<90 FILTLVL<5) OR FILTLVL<3) ((!DRUID CLVL<60) OR (DRUID CLVL<80)) RWB_LORE_PELT]:%ORANGE%Lore %WHITE%%NAME%{%NAME%}%DOT-20%%PX-00%%CONTINUE%//
 ItemDisplay[NMAG !RW !ETH !DRUID ((CLVL<90 FILTLVL<5) OR FILTLVL<3) ((!DRUID CLVL<60) OR (DRUID CLVL<80)) RWB_LORE_PELT]:%TEAL%Lore %WHITE%%NAME%{%NAME%}%CONTINUE%//
+
+//      Delirium runeword Druid pelt bases (every filter level)
+//      +3 Twister and +1-3 to two of the following: Tornado, Hurricane, Cyclone Armor, Gust, Summon Grizzly, Carrion Vine, Solar Creeper, Oak Sage, Spirit of Barbs
+ItemDisplay[NMAG !RW RWB_DELIRIUM_PELT]:%ORANGE%Delirium %WHITE%%NAME%{%NAME%}%DOT-20%%PX-00%%CONTINUE%//
 
 // Hides all other Druid Helms and clubs that don't have any + to skills past level 10
 ItemDisplay[NMAG !RW (DRU OR clb OR 9cl OR 7cl OR spc OR 9sp OR 7sp) CLVL>9 FILTLVL>0 !(SK221>0 OR SK222>0 OR SK223>0 OR SK224>0 OR SK225>0 OR SK226>0 OR SK227>0 OR SK228>0 OR SK229>0 OR SK230>0 OR SK231>0 OR SK232>0 OR SK233>0 OR SK234>0 OR SK235>0 OR SK236>0 OR SK237>0 OR SK238>0 OR SK239>0 OR SK240>0 OR SK241>0 OR SK242>0 OR SK243>0 OR SK244>0 OR SK245>0 OR SK246>0 OR SK247>0 OR SK248>0 OR SK249>0 OR SK250>0 OR SK370>0) GROUND !TOWN]:// All tiers
@@ -6509,10 +6513,9 @@ ItemDisplay[NMAG TABSK2<2 (am3 OR am4 OR am8 OR am9 OR amd OR ame OR am5 OR ama 
 ItemDisplay[NMAG TABSK2<3 (am3 OR am4 OR am8 OR am9 OR amd OR ame OR am5 OR ama OR amf) CLVL>69 FILTLVL>0 GROUND !TOWN]://
 
 // Hides nonmagical Zon Class Javelins on filter levels 3+ (by then most Amazons have used their imbue quests); levels 1-2 keep +3 ones at every character level (for alts and LLDs)
-ItemDisplay[NMAG TABSK2=3 (am5 OR ama OR amf) FILTLVL>2 FILTLVL>0 !(amf ETH (SOCK=0 OR SOCK=3) (FILTLVL<3 OR ED>14 OR (FILTLVL<5 (ED>4 OR CLVL<80)))) GROUND !TOWN]:// S14: eth +3 Matriarchal Javelins with 0 or 3 sockets (Jealousy base) show on levels 0-2, on 3-4 with 5+ ED or below clvl 80, and with 15+ ED on 5-12
-ItemDisplay[NMAG !INF !RW amf ETH TABSK2=3 (SOCK=0 OR SOCK=3) FILTLVL<3]:%NAME%{%NAME%}%DOT-20%%PX-00%%CONTINUE%// S14: Notify eth +3 Matriarchal Javelins (Jealousy base) with 0 or 3os on filter levels 0-2
-ItemDisplay[NMAG !INF !RW amf ETH TABSK2=3 ED>4 (SOCK=0 OR SOCK=3) FILTLVL~3-4]:%NAME%{%NAME%}%DOT-20%%PX-00%%CONTINUE%// S14: Notify eth +3 Matriarchal Javelins (Jealousy base) with ED>4 and 0 or 3os on filter levels 3-4
-ItemDisplay[NMAG !INF !RW amf ETH TABSK2=3 ED>14 (SOCK=0 OR SOCK=3) FILTLVL>4]:%NAME%{%NAME%}%DOT-20%%PX-00%%CONTINUE%// S14: Notify eth +3 Matriarchal Javelins (Jealousy base) with ED>14 and 0 or 3os on filter levels 5+
+ItemDisplay[NMAG TABSK2=3 (am5 OR ama OR amf) FILTLVL>2 FILTLVL>0 !(amf ETH (SOCK=0 OR SOCK=3)) GROUND !TOWN]:// S14: eth +3 Matriarchal Javelins with 0 or 3 sockets (Jealousy base) show on every level
+ItemDisplay[NMAG !INF !RW amf ETH TABSK2=3 (SOCK=0 OR SOCK=3) FILTLVL<5]:%NAME%{%NAME%}%DOT-20%%PX-00%%CONTINUE%// S14: Notify eth +3 Matriarchal Javelins (Jealousy base) with 0 or 3os on filter levels 0-4
+ItemDisplay[NMAG !INF !RW amf ETH TABSK2=3 ED>4 (SOCK=0 OR SOCK=3) FILTLVL>4]:%NAME%{%NAME%}%DOT-20%%PX-00%%CONTINUE%// S14: Notify eth +3 Matriarchal Javelins (Jealousy base) with ED>4 and 0 or 3os on filter levels 5+
 
 //           Maiden Spear, Maiden Pike
 ItemDisplay[NMAG !INF !RW (am3 OR am4) !AMAZON SOCK=0 CLVL>19 FILTLVL>0 GROUND !TOWN]:// 
@@ -7336,7 +7339,7 @@ ItemDisplay[MAG cm3 ((MAXDMG>7 (LIFE>34 OR FHR>11 OR FRW>6 OR STR>5 OR DEX>5 OR 
 ItemDisplay[MAG cm2 ((IAS>5 (LIFE>29 OR FHR>7 OR FRW>4 OR STR>4 OR DEX>4 OR GFIND>19)) OR ((IAS>6 (LIFE>24 OR STR>3 OR DEX>3))))]:%NAME%{%HIGHLIGHT_1_LEFT%   %GREEN%Attack Speed   %HIGHLIGHT_1_RIGHT%%CL%%NAME%}//
 
 // Faster Cast Rate
-ItemDisplay[MAG cm2 ((FCR>4 (LIFE>29 OR FHR>7 OR FRW>4 OR STR>4 OR DEX>4 OR GFIND>19)) OR ((FCR>5 (LIFE>24 OR STR>3 OR DEX>3))))]:%NAME%{%HIGHLIGHT_1_LEFT%   %GREEN%Cast Rate   %HIGHLIGHT_1_RIGHT%%CL%%NAME%}//
+ItemDisplay[MAG cm2 ((FCR>4 (LIFE>24 OR FHR>7 OR FRW>4 OR STR>3 OR DEX>3 OR GFIND>14)) OR ((FCR>5 (LIFE>14 OR STR>2 OR DEX>2))))]:%NAME%{%HIGHLIGHT_1_LEFT%   %GREEN%Cast Rate   %HIGHLIGHT_1_RIGHT%%CL%%NAME%}//
 
 // Skill Damage
 ItemDisplay[MAG cm2 STAT329=3 (LIFE>24 OR FHR>7 OR FRW>4 OR STR>4 OR DEX>4)]:%NAME%{%HIGHLIGHT_1_LEFT%   %GREEN%Fire Damage   %HIGHLIGHT_1_RIGHT%%CL%%NAME%}//
@@ -7616,7 +7619,7 @@ ItemDisplay[(MAG OR RARE OR CRAFT) ID QUIVER]:%NAME%{%NAME%}//
 // Rare/Crafted Amulets
 // Rathma - Caster: 50+ PLR mandatory; 6+ desirable stats
 // Rathma - Physical: 50+ PLR mandatory; 6+ desirable stats
-Alias[BOSSTAG_RA_AMU]:((RARE OR CRAFT) amu ID STAT110>49 ($f(COUNT(LIFE>39,STR>19,DEX>19,ALLATTRIB>4,ALLSK>0,ALLSK>0,FCR>9,FRW>9,RES>9,MAXRES>1,MAXRES>1,STAT153>0,STAT153>0,IF(STAT153>0,0,STAT118>0),STAT360==0,STAT360==0,TABSK1>1,TABSK8>1,TABSK9>1,TABSK10>1,TABSK17>1,TABSK18>1,TABSK24>1,TABSK32>1,TABSK34>1,TABSK40>1,TABSK42>1,TABSK48>1,TABSK49>1,CLSK0>1,CLSK1>1,CLSK2>1,CLSK3>1,CLSK4>1,CLSK5>1,CLSK6>1,CLSK0>1,CLSK1>1,CLSK2>1,CLSK3>1,CLSK4>1,CLSK5>1,CLSK6>1,FRES>29,CRES>29,PRES>29,MAXRES>3,MAXRES>3,FHR>9)>=6) OR $f(COUNT(LIFE>39,STR>19,DEX>19,ALLATTRIB>4,ALLSK>0,ALLSK>0,FHR>9,FRW>9,STAT20>9,AR>79,EDAM>29,RES>9,FRES>29,CRES>29,PRES>29,MAXRES>1,MAXRES>1,STAT153>0,STAT153>0,IF(STAT153>0,0,STAT118>0),STAT360==0,STAT360==0,TABSK0>1,TABSK2>1,TABSK17>1,TABSK24>1,TABSK25>1,TABSK32>1,TABSK33>1,TABSK34>1,TABSK41>1,TABSK48>1,TABSK49>1,TABSK50>1,CLSK0>1,CLSK1>1,CLSK2>1,CLSK3>1,CLSK4>1,CLSK5>1,CLSK6>1,CLSK0>1,CLSK1>1,CLSK2>1,CLSK3>1,CLSK4>1,CLSK5>1,CLSK6>1,MAXRES>3,MAXRES>3,MINDMG>9,MAXDMG>10)>=6)))
+Alias[BOSSTAG_RA_AMU]:((RARE OR CRAFT) amu ID STAT110>49 ($f(COUNT(LIFE>39,STR>14,STR>24,DEX>14,DEX>24,STAT3>14,STAT3>24,ALLATTRIB>3,ALLATTRIB>7,ALLATTRIB>11,ALLSK>0,ALLSK>0,FCR>9,FRW>9,FRW>19,RES>9,RES>19,MAXRES>1,MAXRES>1,STAT153>0,STAT153>0,IF(STAT153>0,0,STAT118>0),STAT360==0,STAT360==0,TABSK1>1,TABSK8>1,TABSK9>1,TABSK10>1,TABSK17>1,TABSK18>1,TABSK24>1,TABSK32>1,TABSK34>1,TABSK40>1,TABSK42>1,TABSK48>1,TABSK49>1,CLSK0>1,CLSK1>1,CLSK2>1,CLSK3>1,CLSK4>1,CLSK5>1,CLSK6>1,CLSK0>1,CLSK1>1,CLSK2>1,CLSK3>1,CLSK4>1,CLSK5>1,CLSK6>1,FRES>29,CRES>29,PRES>29,MAXRES>3,MAXRES>3,FHR>9)>=6) OR $f(COUNT(LIFE>39,STR>14,STR>24,DEX>14,DEX>24,STAT3>14,STAT3>24,ALLATTRIB>3,ALLATTRIB>7,ALLATTRIB>11,ALLSK>0,ALLSK>0,FHR>9,FRW>9,FRW>19,STAT20>9,AR>79,EDAM>29,RES>9,RES>19,FRES>29,CRES>29,PRES>29,MAXRES>1,MAXRES>1,STAT153>0,STAT153>0,IF(STAT153>0,0,STAT118>0),STAT360==0,STAT360==0,TABSK0>1,TABSK2>1,TABSK17>1,TABSK24>1,TABSK25>1,TABSK32>1,TABSK33>1,TABSK34>1,TABSK41>1,TABSK48>1,TABSK49>1,TABSK50>1,CLSK0>1,CLSK1>1,CLSK2>1,CLSK3>1,CLSK4>1,CLSK5>1,CLSK6>1,CLSK0>1,CLSK1>1,CLSK2>1,CLSK3>1,CLSK4>1,CLSK5>1,CLSK6>1,MAXRES>3,MAXRES>3,MINDMG>9,MAXDMG>10)>=6)))
 ItemDisplay[BOSSTAG_RA_AMU]:%NAME%{%RED%Rathma%CL%%NAME%}%CONTINUE%//
 
 // Magic Amulets
