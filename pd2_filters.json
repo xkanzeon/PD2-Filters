@@ -53,6 +53,16 @@
                     "download_url": "https://raw.githubusercontent.com/FiltersBy-Erazure/PD2-Loot-Filter/main/Corrlorized-Main-PoE.filter"
                 },
                 {
+                    "name": "Corrlorized-Revealed-BIG-GG-PoE.filter",
+                    "url": "https://api.github.com/repos/FiltersBy-Erazure/PD2-Loot-Filter/contents/Corrlorized-Revealed-BIG-GG-PoE.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/FiltersBy-Erazure/PD2-Loot-Filter/main/Corrlorized-Revealed-BIG-GG-PoE.filter"
+                },
+                {
+                    "name": "Corrlorized-Revealed-PoE.filter",
+                    "url": "https://api.github.com/repos/FiltersBy-Erazure/PD2-Loot-Filter/contents/Corrlorized-Revealed-PoE.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/FiltersBy-Erazure/PD2-Loot-Filter/main/Corrlorized-Revealed-PoE.filter"
+                },
+                {
                     "name": "Erazure-BIG-GG-PoE.filter",
                     "url": "https://api.github.com/repos/FiltersBy-Erazure/PD2-Loot-Filter/contents/Erazure-BIG-GG-PoE.filter?ref=main",
                     "download_url": "https://raw.githubusercontent.com/FiltersBy-Erazure/PD2-Loot-Filter/main/Erazure-BIG-GG-PoE.filter"
