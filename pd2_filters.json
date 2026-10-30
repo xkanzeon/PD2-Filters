@@ -218,6 +218,11 @@
                     "name": "Hiim_Mystery.filter",
                     "url": "https://api.github.com/repos/Maaaaaarrk/HiimFilter-PD2-Filter/contents/filtergroups/hiimhyper/Hiim_Mystery.filter?ref=main",
                     "download_url": "https://raw.githubusercontent.com/Maaaaaarrk/HiimFilter-PD2-Filter/main/filtergroups/hiimhyper/Hiim_Mystery.filter"
+                },
+                {
+                    "name": "Hiim_Rainbows.filter",
+                    "url": "https://api.github.com/repos/Maaaaaarrk/HiimFilter-PD2-Filter/contents/filtergroups/hiimhyper/Hiim_Rainbows.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/Maaaaaarrk/HiimFilter-PD2-Filter/main/filtergroups/hiimhyper/Hiim_Rainbows.filter"
                 }
             ]
         }
@@ -691,9 +696,29 @@
                     "download_url": "https://raw.githubusercontent.com/RoofooEvazan/Roofoo-s-PD2-Loot-Filter/main/Roofoo.filter"
                 },
                 {
+                    "name": "RoofooHealthBar.filter",
+                    "url": "https://api.github.com/repos/RoofooEvazan/Roofoo-s-PD2-Loot-Filter/contents/RoofooHealthBar.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/RoofooEvazan/Roofoo-s-PD2-Loot-Filter/main/RoofooHealthBar.filter"
+                },
+                {
+                    "name": "RoofooLoadingBar.filter",
+                    "url": "https://api.github.com/repos/RoofooEvazan/Roofoo-s-PD2-Loot-Filter/contents/RoofooLoadingBar.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/RoofooEvazan/Roofoo-s-PD2-Loot-Filter/main/RoofooLoadingBar.filter"
+                },
+                {
                     "name": "RoofooMystery.filter",
                     "url": "https://api.github.com/repos/RoofooEvazan/Roofoo-s-PD2-Loot-Filter/contents/RoofooMystery.filter?ref=main",
                     "download_url": "https://raw.githubusercontent.com/RoofooEvazan/Roofoo-s-PD2-Loot-Filter/main/RoofooMystery.filter"
+                },
+                {
+                    "name": "RoofooMysteryHealthBar.filter",
+                    "url": "https://api.github.com/repos/RoofooEvazan/Roofoo-s-PD2-Loot-Filter/contents/RoofooMysteryHealthBar.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/RoofooEvazan/Roofoo-s-PD2-Loot-Filter/main/RoofooMysteryHealthBar.filter"
+                },
+                {
+                    "name": "RoofooMysteryLoadingBar.filter",
+                    "url": "https://api.github.com/repos/RoofooEvazan/Roofoo-s-PD2-Loot-Filter/contents/RoofooMysteryLoadingBar.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/RoofooEvazan/Roofoo-s-PD2-Loot-Filter/main/RoofooMysteryLoadingBar.filter"
                 },
                 {
                     "name": "RoofooSlamfestBETA.filter",
