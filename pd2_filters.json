@@ -696,9 +696,19 @@
                     "download_url": "https://raw.githubusercontent.com/RoofooEvazan/Roofoo-s-PD2-Loot-Filter/main/Roofoo.filter"
                 },
                 {
+                    "name": "RoofooBIS.filter",
+                    "url": "https://api.github.com/repos/RoofooEvazan/Roofoo-s-PD2-Loot-Filter/contents/RoofooBIS.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/RoofooEvazan/Roofoo-s-PD2-Loot-Filter/main/RoofooBIS.filter"
+                },
+                {
                     "name": "RoofooHealthBar.filter",
                     "url": "https://api.github.com/repos/RoofooEvazan/Roofoo-s-PD2-Loot-Filter/contents/RoofooHealthBar.filter?ref=main",
                     "download_url": "https://raw.githubusercontent.com/RoofooEvazan/Roofoo-s-PD2-Loot-Filter/main/RoofooHealthBar.filter"
+                },
+                {
+                    "name": "RoofooHealthBarBIS.filter",
+                    "url": "https://api.github.com/repos/RoofooEvazan/Roofoo-s-PD2-Loot-Filter/contents/RoofooHealthBarBIS.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/RoofooEvazan/Roofoo-s-PD2-Loot-Filter/main/RoofooHealthBarBIS.filter"
                 },
                 {
                     "name": "RoofooLoadingBar.filter",
@@ -706,9 +716,19 @@
                     "download_url": "https://raw.githubusercontent.com/RoofooEvazan/Roofoo-s-PD2-Loot-Filter/main/RoofooLoadingBar.filter"
                 },
                 {
+                    "name": "RoofooLoadingBarBIS.filter",
+                    "url": "https://api.github.com/repos/RoofooEvazan/Roofoo-s-PD2-Loot-Filter/contents/RoofooLoadingBarBIS.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/RoofooEvazan/Roofoo-s-PD2-Loot-Filter/main/RoofooLoadingBarBIS.filter"
+                },
+                {
                     "name": "RoofooMystery.filter",
                     "url": "https://api.github.com/repos/RoofooEvazan/Roofoo-s-PD2-Loot-Filter/contents/RoofooMystery.filter?ref=main",
                     "download_url": "https://raw.githubusercontent.com/RoofooEvazan/Roofoo-s-PD2-Loot-Filter/main/RoofooMystery.filter"
+                },
+                {
+                    "name": "RoofooMysteryBIS.filter",
+                    "url": "https://api.github.com/repos/RoofooEvazan/Roofoo-s-PD2-Loot-Filter/contents/RoofooMysteryBIS.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/RoofooEvazan/Roofoo-s-PD2-Loot-Filter/main/RoofooMysteryBIS.filter"
                 },
                 {
                     "name": "RoofooMysteryHealthBar.filter",
@@ -716,9 +736,19 @@
                     "download_url": "https://raw.githubusercontent.com/RoofooEvazan/Roofoo-s-PD2-Loot-Filter/main/RoofooMysteryHealthBar.filter"
                 },
                 {
+                    "name": "RoofooMysteryHealthBarBIS.filter",
+                    "url": "https://api.github.com/repos/RoofooEvazan/Roofoo-s-PD2-Loot-Filter/contents/RoofooMysteryHealthBarBIS.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/RoofooEvazan/Roofoo-s-PD2-Loot-Filter/main/RoofooMysteryHealthBarBIS.filter"
+                },
+                {
                     "name": "RoofooMysteryLoadingBar.filter",
                     "url": "https://api.github.com/repos/RoofooEvazan/Roofoo-s-PD2-Loot-Filter/contents/RoofooMysteryLoadingBar.filter?ref=main",
                     "download_url": "https://raw.githubusercontent.com/RoofooEvazan/Roofoo-s-PD2-Loot-Filter/main/RoofooMysteryLoadingBar.filter"
+                },
+                {
+                    "name": "RoofooMysteryLoadingBarBIS.filter",
+                    "url": "https://api.github.com/repos/RoofooEvazan/Roofoo-s-PD2-Loot-Filter/contents/RoofooMysteryLoadingBarBIS.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/RoofooEvazan/Roofoo-s-PD2-Loot-Filter/main/RoofooMysteryLoadingBarBIS.filter"
                 },
                 {
                     "name": "RoofooSlamfestBETA.filter",
