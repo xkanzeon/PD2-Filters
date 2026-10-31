@@ -9,7 +9,7 @@ ItemDisplayFilterName[]: ÿc8Extremely Strict+
 ItemDisplayFilterName[]: ÿc1High roller
 ItemDisplayFilterName[]: ÿc13 Min Mapper
 ItemDisplayFilterName[]: ÿc1No Items Out of Town
-ItemDisplay[box]: %NAME%{Send Feedback via PD2 Discord #lootfilter%CL%Last updated October 30th%CL%Season 14 - build 141%CL%Kassahi - Meme -}%CONTINUE%
+ItemDisplay[box]: %NAME%{Send Feedback via PD2 Discord #lootfilter%CL%Last updated October 31st%CL%Season 14 - build 151%CL%Kassahi - Meme -}%CONTINUE%
 Alias[IN_TOWN]: (MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109)
 ItemDisplay[box FILTLVL=0]: %NAME%{%NAME% OFF}%CONTINUE%
 ItemDisplay[box FILTLVL=1]: %NAME%{%NAME% Campaign (1)}%CONTINUE%
@@ -173,6 +173,7 @@ Alias[DISP_UNID_SET_ETH_WEAPON]: %NAME%
 Alias[RUNE_NUMBER_LEVELS]: FILTLVL<3
 Alias[RUNE_NUMBER_TOWN_LEVELS]: FILTLVL<12
 Alias[LOW_RUNE_RANGE]: RUNE<21
+Alias[GHEEDS_TOOLTIP_LINE]: +69 to Niko Niko Nii Skills
 Alias[GEN_ITEM]: %NAME%
 Alias[GEN_ALT]: %NAME%
 Alias[TOKEN_PARTS]: %SOUNDID-4715%%PX-9B%%DOT-62%%PURPLE%«%BLACK%·%RED%»  %NAME%  %RED%«%BLACK%·%PURPLE%»
@@ -191,7 +192,7 @@ Alias[FLAW_GEM3]: %GREEN%•  %NAME%  %GREEN%•
 Alias[FLAW_GEM4]: %RED%•  %NAME%  %RED%•
 Alias[FLAW_GEM5]: %BLUE%•  %NAME%  %BLUE%•
 Alias[FLAW_GEM6]: %YELLOW%•  %NAME%  %YELLOW%•
-Alias[FLAW_GEM7]: %ORANGE%•  %NAME%  %ORANGE%•
+Alias[FLAW_GEM7]: %PX-20%%ORANGE%•  %NAME%  %ORANGE%•
 Alias[PERF_GEM1]: %DOT-20%%PURPLE%••  %NAME%  %PURPLE%••
 Alias[PERF_GEM2]: %DOT-20%%WHITE%••  %NAME%  %WHITE%••
 Alias[PERF_GEM3]: %DOT-20%%GREEN%••  %NAME%  %GREEN%••
@@ -209,7 +210,7 @@ Alias[INFUSION7]: %SOUNDID-4715%%MAP-20%%TAN%•%ORANGE%••  %NAME%  %ORANGE%
 Alias[RUNE_LOW]: %PX-0B%%GREEN%•  %NAME%  %GREEN%•
 Alias[RUNE_LOW_STRICT]: %NAME%
 Alias[RUNE_CRAFT]: %DOT-0B%%GREEN%••  %NAME%  %GREEN%••
-Alias[RUNE_MID_LOW]: %PX-0A%%DOT-0B%%RED%•  %NAME%  %RED%•
+Alias[RUNE_MID_LOW]: %SOUNDID-4715%%PX-0A%%DOT-0B%%RED%•  %NAME%  %RED%•
 Alias[RUNE_MID]: %SOUNDID-4716%%PX-0A%%DOT-21%%MAP-0B%%PURPLE%•%RED%•  %NAME%  %RED%•%PURPLE%•
 Alias[RUNE_ALT_MID]: %SOUNDID-4716%%PX-0A%%DOT-21%%MAP-0B%%PURPLE%••%RED%•  %NAME%  %RED%•%PURPLE%••
 Alias[RUNE_HIGH]: %SOUNDID-4714%%PX-0D%%DOT-21%%MAP-0A%%RED%•%ORANGE%•%YELLOW%•     %NAME%     %YELLOW%•%ORANGE%•%RED%•
@@ -275,87 +276,101 @@ Alias[UNID_SET_GG]: %SOUNDID-4715%%PX-62%%DOT-21%%MAP-84%%PURPLE%•%RED%•%DAR
 Alias[UNID_SET_T3]: %PX-62%%DOT-21%%MAP-84%%RED%•%DARK_GREEN%•  %NAME%  %DARK_GREEN%•%RED%•
 Alias[UNID_SET_T2]: %PX-62%%DOT-84%%RED%•  %NAME%  %RED%•
 Alias[UNID_SET_T1]: %PX-84%%LIGHT_GRAY%•  %NAME%  %LIGHT_GRAY%•
-Alias[CURRENCY_TIMESTAMP]: %WHITE%HR Values Last updated Oct 29 2026
+Alias[CURRENCY_TIMESTAMP]: %WHITE%HR Values Last updated Oct 31 2026
 Alias[CRAFTING_RUNES_SET]: (RUNE=3 OR RUNE=4 OR RUNE=5 OR RUNE=7 OR RUNE=8 OR RUNE=9 OR RUNE=11 OR RUNE=12 OR RUNE=15 OR RUNE=16 OR RUNE=17 OR RUNE=18 OR RUNE=19)
 Alias[OHM_RUNE_VALUE]: 0.95
 Alias[LO_RUNE_VALUE]: 1
 Alias[SUR_RUNE_VALUE]: 1.5
 Alias[BER_RUNE_VALUE]: 3
-Alias[JAH_RUNE_VALUE]: 1.6
+Alias[JAH_RUNE_VALUE]: 1.75
 Alias[CHAM_RUNE_VALUE]: 1.75
-Alias[ZOD_RUNE_VALUE]: 3.4
+Alias[ZOD_RUNE_VALUE]: 3.5
 Alias[OHM_WSS_VALUE]: 95
 Alias[LO_WSS_VALUE]: 100
 Alias[SUR_WSS_VALUE]: 150
 Alias[BER_WSS_VALUE]: 300
-Alias[JAH_WSS_VALUE]: 160
+Alias[JAH_WSS_VALUE]: 175
 Alias[CHAM_WSS_VALUE]: 175
-Alias[ZOD_WSS_VALUE]: 340
-Alias[PUL_STACK_HR]: (QTY*0.01)
-Alias[UM_STACK_HR]: (QTY*0.03)
-Alias[MAL_STACK_HR]: (QTY*0.15)
-Alias[IST_STACK_HR]: (QTY*0.24)
-Alias[GUL_STACK_HR]: (QTY*0.25)
-Alias[VEX_STACK_HR]: (QTY*0.25)
-Alias[HALFHR_STACK_HR]: (QTY*0.5)
-Alias[PUL_STACK_WSS]: (QTY*1)
-Alias[UM_STACK_WSS]: (QTY*3)
-Alias[MAL_STACK_WSS]: (QTY*15)
-Alias[IST_STACK_WSS]: (QTY*24)
-Alias[GUL_STACK_WSS]: (QTY*25)
-Alias[VEX_STACK_WSS]: (QTY*25)
-Alias[HALFHR_STACK_WSS]: (QTY*50)
+Alias[ZOD_WSS_VALUE]: 350
+Alias[LEM_RUNE_VALUE]: 0.01
+Alias[PUL_RUNE_VALUE]: 0.03
+Alias[UM_RUNE_VALUE]: 0.05
+Alias[MAL_RUNE_VALUE]: 0.16
+Alias[IST_RUNE_VALUE]: 0.3
+Alias[GUL_RUNE_VALUE]: 0.3
+Alias[VEX_RUNE_VALUE]: 0.5
+Alias[LEM_WSS_VALUE]: 1
+Alias[PUL_WSS_VALUE]: 3
+Alias[UM_WSS_VALUE]: 5
+Alias[MAL_WSS_VALUE]: 16
+Alias[IST_WSS_VALUE]: 30
+Alias[GUL_WSS_VALUE]: 30
+Alias[VEX_WSS_VALUE]: 50
+Alias[LEM_STACK_HR]: (QTY*0.01)
+Alias[PUL_STACK_HR]: (QTY*0.03)
+Alias[UM_STACK_HR]: (QTY*0.05)
+Alias[MAL_STACK_HR]: (QTY*0.16)
+Alias[IST_STACK_HR]: (QTY*0.3)
+Alias[GUL_STACK_HR]: (QTY*0.3)
+Alias[VEX_STACK_HR]: (QTY*0.5)
+Alias[LEM_STACK_WSS]: (QTY*1)
+Alias[PUL_STACK_WSS]: (QTY*3)
+Alias[UM_STACK_WSS]: (QTY*5)
+Alias[MAL_STACK_WSS]: (QTY*16)
+Alias[IST_STACK_WSS]: (QTY*30)
+Alias[GUL_STACK_WSS]: (QTY*30)
+Alias[VEX_STACK_WSS]: (QTY*50)
 Alias[OHM_STACK_HR]: (QTY*0.95)
 Alias[LO_STACK_HR]: (QTY*1)
 Alias[SUR_STACK_HR]: (QTY*1.5)
 Alias[BER_STACK_HR]: (QTY*3)
-Alias[JAH_STACK_HR]: (QTY*1.6)
+Alias[JAH_STACK_HR]: (QTY*1.75)
 Alias[CHAM_STACK_HR]: (QTY*1.75)
-Alias[ZOD_STACK_HR]: (QTY*3.4)
+Alias[ZOD_STACK_HR]: (QTY*3.5)
 Alias[OHM_STACK_WSS]: (QTY*95)
 Alias[LO_STACK_WSS]: (QTY*100)
 Alias[SUR_STACK_WSS]: (QTY*150)
 Alias[BER_STACK_WSS]: (QTY*300)
-Alias[JAH_STACK_WSS]: (QTY*160)
+Alias[JAH_STACK_WSS]: (QTY*175)
 Alias[CHAM_STACK_WSS]: (QTY*175)
-Alias[ZOD_STACK_WSS]: (QTY*340)
+Alias[ZOD_STACK_WSS]: (QTY*350)
 Alias[WSS_ITEM_HR_VALUE]: 0.01
 Alias[TAINTED_WORLDSTONE_SHARD_VALUE]: 1.25
 Alias[LARZUK_PUZZLEBOX_VALUE]: 0.5
 Alias[LARZUK_PUZZLEPIECE_VALUE]: 0.1
-Alias[DEMONIC_CUBE_VALUE]: 0.25
-Alias[CATALYST_SHARD_VALUE]: 0.15
+Alias[DEMONIC_CUBE_VALUE]: 0.4
+Alias[CATALYST_SHARD_VALUE]: 0.2
 Alias[WSS_ITEM_WSS_VALUE]: 1
 Alias[TAINTED_WORLDSTONE_SHARD_WSS_VALUE]: 125
 Alias[LARZUK_PUZZLEBOX_WSS_VALUE]: 50
 Alias[LARZUK_PUZZLEPIECE_WSS_VALUE]: 10
-Alias[DEMONIC_CUBE_WSS_VALUE]: 25
-Alias[CATALYST_SHARD_WSS_VALUE]: 15
+Alias[DEMONIC_CUBE_WSS_VALUE]: 40
+Alias[CATALYST_SHARD_WSS_VALUE]: 20
 Alias[WSS_ITEM_STACK_HR]: (QTY*0.01)
 Alias[TAINTED_WORLDSTONE_SHARD_STACK_HR]: (QTY*1.25)
 Alias[LARZUK_PUZZLEBOX_STACK_HR]: (QTY*0.5)
 Alias[LARZUK_PUZZLEPIECE_STACK_HR]: (QTY*0.1)
-Alias[DEMONIC_CUBE_STACK_HR]: (QTY*0.25)
-Alias[CATALYST_SHARD_STACK_HR]: (QTY*0.15)
+Alias[DEMONIC_CUBE_STACK_HR]: (QTY*0.4)
+Alias[CATALYST_SHARD_STACK_HR]: (QTY*0.2)
 Alias[WSS_ITEM_STACK_WSS]: (QTY*1)
 Alias[TAINTED_WORLDSTONE_SHARD_STACK_WSS]: (QTY*125)
 Alias[LARZUK_PUZZLEBOX_STACK_WSS]: (QTY*50)
 Alias[LARZUK_PUZZLEPIECE_STACK_WSS]: (QTY*10)
-Alias[DEMONIC_CUBE_STACK_WSS]: (QTY*25)
-Alias[CATALYST_SHARD_STACK_WSS]: (QTY*15)
-Alias[BLACK_SOULSTONE_VALUE]: 0.3
+Alias[DEMONIC_CUBE_STACK_WSS]: (QTY*40)
+Alias[CATALYST_SHARD_STACK_WSS]: (QTY*20)
+Alias[BLACK_SOULSTONE_VALUE]: 0.25
 Alias[PRIME_EVIL_SOUL_VALUE]: 0.35
-Alias[PURE_DEMONIC_ESSENCE_VALUE]: 0.2
-Alias[HELLFIRE_ASHES_VALUE]: 0.5
+Alias[PURE_DEMONIC_ESSENCE_VALUE]: 0.15
+Alias[HELLFIRE_ASHES_VALUE]: 0.65
 Alias[SPLINTER_OF_THE_VOID_VALUE]: 0.1
 Alias[TRANG_OUL_JAWBONE_VALUE]: 0.03
-Alias[FLESH_OF_MALIC_VALUE]: 0.03
+Alias[FLESH_OF_MALIC_VALUE]: 0.05
 Alias[TALISMAN_OF_TRANSGRESSION_VALUE]: 0.03
-Alias[DEMONIC_INSIGNIA_VALUE]: 0.2
-Alias[FESTERING_ESS_VALUE]: 0.11
+Alias[DEMONIC_INSIGNIA_VALUE]: 0.25
+Alias[FESTERING_ESS_VALUE]: 0.2
 Alias[BURNING_ESS_VALUE]: 0.04
-Alias[CHARGED_ESS_VALUE]: 0.09
-Alias[TWISTED_ESS_VALUE]: 0.03
+Alias[CHARGED_ESS_VALUE]: 0.1
+Alias[TWISTED_ESS_VALUE]: 0.04
 Alias[4_STAR_UNIQUE]: (6lw OR 6ws OR 7bl OR 7cr OR 7gw OR 7pa OR 7wh OR 7ws OR 8ws OR 9ls OR amd OR amf OR aqv3 OR ci2 OR ci3 OR drd OR dre OR obe OR pa9 OR pab OR pac OR paf OR uar OR uh9 OR uhc OR uhm OR ulc OR ulm OR umc OR umg OR upl OR urn OR urs OR usk OR utg OR uts OR uul OR uvg OR xh9 OR xhb OR xtb OR xvb)
 Alias[3_STAR_UNIQUE]: (6bs OR 7b7 OR 7gd OR 7gm OR 7lw OR 7s8 OR 7tw OR 7wb OR 7wc OR 7xf OR 8mx OR 8rx OR ame OR bae OR cqv3 OR dr6 OR dra OR drc OR ned OR nef OR neg OR tbt OR tgl OR uap OR uhg OR uit OR umb OR ung OR uow OR urg OR uuc OR uui OR uvc OR xea OR xhm OR xhn OR xlb OR xlt OR xmb OR xow OR xsh OR xtg OR zhb OR zlb OR ztb OR zvb)
 Alias[2_STAR_UNIQUE]: (6rx OR 6sw OR 7bk OR 7bt OR 7bw OR 7fl OR 7gs OR 7m7 OR 7p7 OR 7sr OR 7ts OR 7wa OR 8hx OR 9bw OR 9di OR 9fc OR 9gw OR 9s8 OR 9tw OR 9wc OR 9wn OR aar OR amb OR amc OR aqv2 OR ba6 OR ba7 OR baa OR bad OR baf OR cqv2 OR drb OR gsd OR kit OR ltp OR mbt OR nee OR oba OR obc OR obd OR obf OR pae OR tbl OR uhb OR uhl OR ulb OR uld OR ulg OR upk OR ush OR utu OR uvb OR xap OR xcl OR xhg OR xlg OR xmg OR xpl OR xth OR xtp OR xui OR xvg)
@@ -1296,6 +1311,7 @@ ItemDisplay[crfu]: %INFUSION6%%CONTINUE%
 ItemDisplay[crfv]: %INFUSION7%%CONTINUE%
 ItemDisplay[(ivea OR ivez OR iveb OR ived OR iven OR ivep OR ives)]: %PD2_MATS%{%NAME%}
 ItemDisplay[std]: %PD2_MATS%{%NAME%}%CONTINUE%
+ItemDisplay[rid]: %RUNE_TOP_HIGH%{%NAME%}
 ItemDisplay[scrb]: %PD2_MATS%{%NAME%}%CONTINUE%
 ItemDisplay[(irma OR upma OR urma OR scou)]:
 ItemDisplay[STAT477>0 (ARMOR OR WEAPON OR amu OR rin)]: %BORDER-4A%%DOT-55%%SOUNDID-4719%%NAME%{%NAME%}
@@ -1764,13 +1780,13 @@ ItemDisplay[!PHIL777_STYLE r17s]: %NAME%{%YELLOW%Bountiful %WHITE%Ring: %YELLOW%
 ItemDisplay[!PHIL777_STYLE r18s]: %NAME%{%WHITE%Brilliant Boots: O%NL%%YELLOW%Bountiful %WHITE%Amulet: %YELLOW%O%NL%%WHITE%Crafting Recipes: %ORANGE%Ko, %GOLD%O, %BLUE%Magic%GOLD%/%YELLOW%Rare%NL%%NAME%}%CONTINUE%
 ItemDisplay[PHIL777_STYLE RUNE<21 RUNE>0 FILTLVL<10]: %NAME%{%NAME%}
 ItemDisplay[RUNE>19]: %NAME%{%CURRENCY_TIMESTAMP%%CL%%NAME%}%CONTINUE%
-ItemDisplay[RUNE=20]: %NAME%{%PURPLE%WSS %TAN%Estimated Value Each%WHITE%: 1%CL%%TAN%HR Estimated Value Each%WHITE%: 0.01%CL%%NAME%}%CONTINUE%
-ItemDisplay[RUNE=21]: %NAME%{%PURPLE%WSS %TAN%Estimated Value Each%WHITE%: 3%CL%%TAN%HR Estimated Value Each%WHITE%: 0.03%CL%%NAME%}%CONTINUE%
-ItemDisplay[RUNE=22]: %NAME%{%PURPLE%WSS %TAN%Estimated Value Each%WHITE%: 5%CL%%TAN%HR Estimated Value Each%WHITE%: 0.05%CL%%NAME%}%CONTINUE%
-ItemDisplay[RUNE=23]: %NAME%{%PURPLE%WSS %TAN%Estimated Value Each%WHITE%: 10%CL%%TAN%HR Estimated Value Each%WHITE%: 0.1%CL%%NAME%}%CONTINUE%
-ItemDisplay[RUNE=24]: %NAME%{%PURPLE%WSS %TAN%Estimated Value Each%WHITE%: 15%CL%%TAN%HR Estimated Value Each%WHITE%: 0.175%CL%%NAME%}%CONTINUE%
-ItemDisplay[RUNE=25]: %NAME%{%PURPLE%WSS %TAN%Estimated Value Each%WHITE%: 25%CL%%TAN%HR Estimated Value Each%WHITE%: 0.25%CL%%NAME%}%CONTINUE%
-ItemDisplay[RUNE=26]: %NAME%{%PURPLE%WSS %TAN%Estimated Value Each%WHITE%: 50%CL%%TAN%HR Estimated Value Each%WHITE%: 0.5%CL%%NAME%}%CONTINUE%
+ItemDisplay[RUNE=20]: %NAME%{%PURPLE%WSS %TAN%Estimated Value Each%WHITE%: %LEM_WSS_VALUE%%CL%%TAN%HR Estimated Value Each%WHITE%: %LEM_RUNE_VALUE%%CL%%NAME%}%CONTINUE%
+ItemDisplay[RUNE=21]: %NAME%{%PURPLE%WSS %TAN%Estimated Value Each%WHITE%: %PUL_WSS_VALUE%%CL%%TAN%HR Estimated Value Each%WHITE%: %PUL_RUNE_VALUE%%CL%%NAME%}%CONTINUE%
+ItemDisplay[RUNE=22]: %NAME%{%PURPLE%WSS %TAN%Estimated Value Each%WHITE%: %UM_WSS_VALUE%%CL%%TAN%HR Estimated Value Each%WHITE%: %UM_RUNE_VALUE%%CL%%NAME%}%CONTINUE%
+ItemDisplay[RUNE=23]: %NAME%{%PURPLE%WSS %TAN%Estimated Value Each%WHITE%: %MAL_WSS_VALUE%%CL%%TAN%HR Estimated Value Each%WHITE%: %MAL_RUNE_VALUE%%CL%%NAME%}%CONTINUE%
+ItemDisplay[RUNE=24]: %NAME%{%PURPLE%WSS %TAN%Estimated Value Each%WHITE%: %IST_WSS_VALUE%%CL%%TAN%HR Estimated Value Each%WHITE%: %IST_RUNE_VALUE%%CL%%NAME%}%CONTINUE%
+ItemDisplay[RUNE=25]: %NAME%{%PURPLE%WSS %TAN%Estimated Value Each%WHITE%: %GUL_WSS_VALUE%%CL%%TAN%HR Estimated Value Each%WHITE%: %GUL_RUNE_VALUE%%CL%%NAME%}%CONTINUE%
+ItemDisplay[RUNE=26]: %NAME%{%PURPLE%WSS %TAN%Estimated Value Each%WHITE%: %VEX_WSS_VALUE%%CL%%TAN%HR Estimated Value Each%WHITE%: %VEX_RUNE_VALUE%%CL%%NAME%}%CONTINUE%
 ItemDisplay[RUNE=27]: %NAME%{%PURPLE%WSS %TAN%Estimated Value Each%WHITE%: %OHM_WSS_VALUE%%CL%%TAN%HR Estimated Value Each%WHITE%: %OHM_RUNE_VALUE%%CL%%NAME%}%CONTINUE%
 ItemDisplay[RUNE=28]: %NAME%{%PURPLE%WSS %TAN%Estimated Value Each%WHITE%: %LO_WSS_VALUE%%CL%%TAN%HR Estimated Value Each%WHITE%: %LO_RUNE_VALUE%%CL%%NAME%}%CONTINUE%
 ItemDisplay[RUNE=29]: %NAME%{%PURPLE%WSS %TAN%Estimated Value Each%WHITE%: %SUR_WSS_VALUE%%CL%%TAN%HR Estimated Value Each%WHITE%: %SUR_RUNE_VALUE%%CL%%NAME%}%CONTINUE%
@@ -1778,20 +1794,20 @@ ItemDisplay[RUNE=30]: %NAME%{%PURPLE%WSS %TAN%Estimated Value Each%WHITE%: %BER_
 ItemDisplay[RUNE=31]: %NAME%{%PURPLE%WSS %TAN%Estimated Value Each%WHITE%: %JAH_WSS_VALUE%%CL%%TAN%HR Estimated Value Each%WHITE%: %JAH_RUNE_VALUE%%CL%%NAME%}%CONTINUE%
 ItemDisplay[RUNE=32]: %NAME%{%PURPLE%WSS %TAN%Estimated Value Each%WHITE%: %CHAM_WSS_VALUE%%CL%%TAN%HR Estimated Value Each%WHITE%: %CHAM_RUNE_VALUE%%CL%%NAME%}%CONTINUE%
 ItemDisplay[RUNE=33]: %NAME%{%PURPLE%WSS %TAN%Estimated Value Each%WHITE%: %ZOD_WSS_VALUE%%CL%%TAN%HR Estimated Value Each%WHITE%: %ZOD_RUNE_VALUE%%CL%%NAME%}%CONTINUE%
-ItemDisplay[RUNE=20 QTY>1 QTY<501]: %NAME%{%PURPLE%WSS %TAN%Estimated Stack Value%WHITE%: $f((QTY*1))%CL%%TAN%HR Estimated Stack Value%WHITE%: $f((QTY*0.01))%CL%%NAME%}%CONTINUE%
-ItemDisplay[RUNE=20 QTY>500]: %NAME%{%TAN%HR Estimated Stack Value%WHITE%: $f((QTY*0.01))%CL%%NAME%}%CONTINUE%
-ItemDisplay[RUNE=21 QTY>1 QTY<167]: %NAME%{%PURPLE%WSS %TAN%Estimated Stack Value%WHITE%: $f((QTY*3))%CL%%TAN%HR Estimated Stack Value%WHITE%: $f((QTY*0.03))%CL%%NAME%}%CONTINUE%
-ItemDisplay[RUNE=21 QTY>166]: %NAME%{%TAN%HR Estimated Stack Value%WHITE%: $f((QTY*0.03))%CL%%NAME%}%CONTINUE%
-ItemDisplay[RUNE=22 QTY>1 QTY<101]: %NAME%{%PURPLE%WSS %TAN%Estimated Stack Value%WHITE%: $f((QTY*5))%CL%%TAN%HR Estimated Stack Value%WHITE%: $f((QTY*0.05))%CL%%NAME%}%CONTINUE%
-ItemDisplay[RUNE=22 QTY>100]: %NAME%{%TAN%HR Estimated Stack Value%WHITE%: $f((QTY*0.05))%CL%%NAME%}%CONTINUE%
-ItemDisplay[RUNE=23 QTY>1 QTY<51]: %NAME%{%PURPLE%WSS %TAN%Estimated Stack Value%WHITE%: $f((QTY*10))%CL%%TAN%HR Estimated Stack Value%WHITE%: $f((QTY*0.1))%CL%%NAME%}%CONTINUE%
-ItemDisplay[RUNE=23 QTY>50]: %NAME%{%TAN%HR Estimated Stack Value%WHITE%: $f((QTY*0.1))%CL%%NAME%}%CONTINUE%
-ItemDisplay[RUNE=24 QTY>1 QTY<29]: %NAME%{%PURPLE%WSS %TAN%Estimated Stack Value%WHITE%: $f(%GUL_STACK_WSS%)%CL%%TAN%HR Estimated Stack Value%WHITE%: $f((QTY*0.175))%CL%%NAME%}%CONTINUE%
-ItemDisplay[RUNE=24 QTY>28]: %NAME%{%TAN%HR Estimated Stack Value%WHITE%: $f((QTY*0.175))%CL%%NAME%}%CONTINUE%
-ItemDisplay[RUNE=25 QTY>1 QTY<21]: %NAME%{%PURPLE%WSS %TAN%Estimated Stack Value%WHITE%: $f(%VEX_STACK_WSS%)%CL%%TAN%HR Estimated Stack Value%WHITE%: $f((QTY*0.25))%CL%%NAME%}%CONTINUE%
-ItemDisplay[RUNE=25 QTY>20]: %NAME%{%TAN%HR Estimated Stack Value%WHITE%: $f((QTY*0.25))%CL%%NAME%}%CONTINUE%
-ItemDisplay[RUNE=26 QTY>1 QTY<11]: %NAME%{%PURPLE%WSS %TAN%Estimated Stack Value%WHITE%: $f(%HALFHR_STACK_WSS%)%CL%%TAN%HR Estimated Stack Value%WHITE%: $f((QTY*0.5))%CL%%NAME%}%CONTINUE%
-ItemDisplay[RUNE=26 QTY>10]: %NAME%{%TAN%HR Estimated Stack Value%WHITE%: $f((QTY*0.5))%CL%%NAME%}%CONTINUE%
+ItemDisplay[RUNE=20 QTY>1 !$f(LEM_STACK_HR>5)]: %NAME%{%PURPLE%WSS %TAN%Estimated Stack Value%WHITE%: $f(%LEM_STACK_WSS%)%CL%%TAN%HR Estimated Stack Value%WHITE%: $f(%LEM_STACK_HR%)%CL%%NAME%}%CONTINUE%
+ItemDisplay[RUNE=20 QTY>1 $f(LEM_STACK_HR>5)]: %NAME%{%TAN%HR Estimated Stack Value%WHITE%: $f(%LEM_STACK_HR%)%CL%%NAME%}%CONTINUE%
+ItemDisplay[RUNE=21 QTY>1 !$f(PUL_STACK_HR>5)]: %NAME%{%PURPLE%WSS %TAN%Estimated Stack Value%WHITE%: $f(%PUL_STACK_WSS%)%CL%%TAN%HR Estimated Stack Value%WHITE%: $f(%PUL_STACK_HR%)%CL%%NAME%}%CONTINUE%
+ItemDisplay[RUNE=21 QTY>1 $f(PUL_STACK_HR>5)]: %NAME%{%TAN%HR Estimated Stack Value%WHITE%: $f(%PUL_STACK_HR%)%CL%%NAME%}%CONTINUE%
+ItemDisplay[RUNE=22 QTY>1 !$f(UM_STACK_HR>5)]: %NAME%{%PURPLE%WSS %TAN%Estimated Stack Value%WHITE%: $f(%UM_STACK_WSS%)%CL%%TAN%HR Estimated Stack Value%WHITE%: $f(%UM_STACK_HR%)%CL%%NAME%}%CONTINUE%
+ItemDisplay[RUNE=22 QTY>1 $f(UM_STACK_HR>5)]: %NAME%{%TAN%HR Estimated Stack Value%WHITE%: $f(%UM_STACK_HR%)%CL%%NAME%}%CONTINUE%
+ItemDisplay[RUNE=23 QTY>1 !$f(MAL_STACK_HR>5)]: %NAME%{%PURPLE%WSS %TAN%Estimated Stack Value%WHITE%: $f(%MAL_STACK_WSS%)%CL%%TAN%HR Estimated Stack Value%WHITE%: $f(%MAL_STACK_HR%)%CL%%NAME%}%CONTINUE%
+ItemDisplay[RUNE=23 QTY>1 $f(MAL_STACK_HR>5)]: %NAME%{%TAN%HR Estimated Stack Value%WHITE%: $f(%MAL_STACK_HR%)%CL%%NAME%}%CONTINUE%
+ItemDisplay[RUNE=24 QTY>1 !$f(IST_STACK_HR>5)]: %NAME%{%PURPLE%WSS %TAN%Estimated Stack Value%WHITE%: $f(%IST_STACK_WSS%)%CL%%TAN%HR Estimated Stack Value%WHITE%: $f(%IST_STACK_HR%)%CL%%NAME%}%CONTINUE%
+ItemDisplay[RUNE=24 QTY>1 $f(IST_STACK_HR>5)]: %NAME%{%TAN%HR Estimated Stack Value%WHITE%: $f(%IST_STACK_HR%)%CL%%NAME%}%CONTINUE%
+ItemDisplay[RUNE=25 QTY>1 !$f(GUL_STACK_HR>5)]: %NAME%{%PURPLE%WSS %TAN%Estimated Stack Value%WHITE%: $f(%GUL_STACK_WSS%)%CL%%TAN%HR Estimated Stack Value%WHITE%: $f(%GUL_STACK_HR%)%CL%%NAME%}%CONTINUE%
+ItemDisplay[RUNE=25 QTY>1 $f(GUL_STACK_HR>5)]: %NAME%{%TAN%HR Estimated Stack Value%WHITE%: $f(%GUL_STACK_HR%)%CL%%NAME%}%CONTINUE%
+ItemDisplay[RUNE=26 QTY>1 !$f(VEX_STACK_HR>5)]: %NAME%{%PURPLE%WSS %TAN%Estimated Stack Value%WHITE%: $f(%VEX_STACK_WSS%)%CL%%TAN%HR Estimated Stack Value%WHITE%: $f(%VEX_STACK_HR%)%CL%%NAME%}%CONTINUE%
+ItemDisplay[RUNE=26 QTY>1 $f(VEX_STACK_HR>5)]: %NAME%{%TAN%HR Estimated Stack Value%WHITE%: $f(%VEX_STACK_HR%)%CL%%NAME%}%CONTINUE%
 ItemDisplay[RUNE=27 QTY>1 QTY<7]: %NAME%{%PURPLE%WSS %TAN%Estimated Stack Value%WHITE%: $f(%OHM_STACK_WSS%)%CL%%TAN%HR Estimated Stack Value%WHITE%: $f(%OHM_STACK_HR%)%CL%%NAME%}%CONTINUE%
 ItemDisplay[RUNE=27 QTY>6]: %NAME%{%TAN%HR Estimated Stack Value%WHITE%: $f(%OHM_STACK_HR%)%CL%%NAME%}%CONTINUE%
 ItemDisplay[RUNE=28 QTY>1 QTY<6]: %NAME%{%PURPLE%WSS %TAN%Estimated Stack Value%WHITE%: $f(%LO_STACK_WSS%)%CL%%TAN%HR Estimated Stack Value%WHITE%: $f(%LO_STACK_HR%)%CL%%NAME%}%CONTINUE%
@@ -1983,6 +1999,8 @@ ItemDisplay[MAG cm3 !ID ILVL>89 FILTLVL<8]: %TIER-8%%MAG_DBL_AFFIX_ITEM%
 ItemDisplay[MAG cm3 !ID ILVL>49 FILTLVL<8]: %TIER-6%%MAG_ITEM%
 ItemDisplay[!SITE_FX MAG cm3 !ID FILTLVL<7]: %TIER-6%%MAG_ITEM%
 ItemDisplay[MAG cm3 !ID FILTLVL<7]: %CHARM_UNID%
+ItemDisplay[!SITE_FX MAG (cm1 OR cm2) !ID ILVL>89 FILTLVL<11]: %TIER-6%%CHARM_GC_TAG%%CONTINUE%
+ItemDisplay[!SITE_FX MAG (cm1 OR cm2) ILVL>90 !ID]: %CHARM_HIGH_LVL%%CONTINUE%
 ItemDisplay[SITE_FX MAG cm1 !ID FILTLVL>6]: %CHARM_SC_TAG%%CONTINUE%
 ItemDisplay[!SITE_FX MAG cm1 ILVL>89 !ID FILTLVL>7]: %TIER-6%%MAG_DBL_AFFIX_ITEM%
 ItemDisplay[MAG cm1 ILVL>89 !ID FILTLVL>7]: %DISP_UNID_CHARM_TOP%
@@ -2010,10 +2028,10 @@ ItemDisplay[!ID (ssd OR 9ss OR 7ss) RARE FILTLVL<8 ILVL>84]: %TIER-2%%NAME%
 ItemDisplay[!ID (flc OR 9fc OR 7fc) RARE FILTLVL<8 ILVL>84]: %TIER-2%%NAME%
 ItemDisplay[!ID (crs OR 9cr OR 7cr) RARE FILTLVL<8 ILVL>84]: %TIER-2%%NAME%
 ItemDisplay[!ID (pik OR 9p9 OR 7p7) RARE FILTLVL<8 ILVL>84]: %TIER-2%%NAME%
-ItemDisplay[!ID (am2 OR am7 OR amc) RARE FILTLVL<8 ILVL>84]: %TIER-6%%NAME%
+ItemDisplay[!ID (am2 OR am7 OR amc) RARE FILTLVL<9 ILVL>84]: %TIER-6%%NAME%
 ItemDisplay[!ID (am1 OR am6 OR amb) RARE FILTLVL<8 ILVL>84]: %TIER-6%%NAME%
 ItemDisplay[!ID (am5 OR ama OR amf) RARE FILTLVL<8 ILVL>84]: %TIER-6%%NAME%
-ItemDisplay[(lwb OR 6lw OR 8lw) RARE (ILVL>84) !ID FILTLVL<8]: %TIER-6%%RARE_HIGH_ITEM%
+ItemDisplay[(lwb OR 6lw OR 8lw) RARE (ILVL>84) !ID FILTLVL<9]: %TIER-6%%RARE_HIGH_ITEM%
 ItemDisplay[(sbb OR 8s8 OR 6s7) RARE (ILVL>84) !ID FILTLVL<8]: %TIER-6%%NAME%
 ItemDisplay[(mxb OR 8mx OR 6mx) RARE (ILVL>84) !ID FILTLVL<5]: %NAME%
 ItemDisplay[(6hx OR 8hx OR hxb) RARE (ILVL>84) !ID FILTLVL<8]: %TIER-6%%NAME%
@@ -3519,7 +3537,7 @@ ItemDisplay[SET ID STASH ne9]: %NAME%{%NL%%GRAY%3:%GREEN%-25psn, %GRAY%4:%GREEN%
 ItemDisplay[SET ID STASH utc STAT153>0]: %NAME%{%NL%%GRAY%3:%GREEN%40cres%CL%%NAME%}%CONTINUE%
 ItemDisplay[SET ID STASH xmg FCR>19]: %NAME%{%NL%%GRAY%4:%GREEN%20mtr%CL%%NAME%}%CONTINUE%
 ItemDisplay[SET ID !STASH]: %NAME%{%RED%Set bonuses Shows in Stash%NL%%NAME%}
-ItemDisplay[UNI cm3]: %NAME%{%NAME%+69 to Niko Niko Nii Skills}%CONTINUE%
+ItemDisplay[UNI cm3]: %NAME%{%NAME%%GHEEDS_TOOLTIP_LINE%}%CONTINUE%
 ItemDisplay[UNI ID STAT270>0]: %DOT-0A%%MAP-9B%%BORDER-1F%%ORANGE%Anniversary %NAME%{%NAME%%CL%}%CONTINUE%
 ItemDisplay[STAT477=4]: %DOT-0A%%MAP-9B%%BORDER-1F%%ORANGE%Black%CL%%WHITE%>> %PURPLE%>> %WHITE%>> %PURPLE%Mirrored %WHITE%<< %PURPLE%<< %WHITE%<<%CL%%NAME%{%NAME%%CL%}
 ItemDisplay[STAT477=21]: %DOT-0A%%MAP-9B%%BORDER-1F%%ORANGE%White%CL%%WHITE%>> %PURPLE%>> %WHITE%>> %PURPLE%Mirrored %WHITE%<< %PURPLE%<< %WHITE%<<%CL%%NAME%{%NAME%%CL%}
@@ -5866,6 +5884,9 @@ ItemDisplay[(7fb OR 7wa OR 7gd) ETH !INF (SOCK=0 OR SOCK=4 OR SOCK=5) NMAG EDAM>
 ItemDisplay[(7wa OR 7gd OR 7p7 OR 7h7) ETH !RW (SOCK=0 OR SOCK=6) !INF NMAG !RW EDAM>0 (EDAM>9 OR FILTLVL<5) FILTLVL<7]: %NAME%{%NAME%}
 ItemDisplay[(7wa OR 7gd OR 7p7 OR 7h7) ETH !RW (SOCK=0 OR SOCK=6) !INF NMAG EDAM>17 FILTLVL<8]: %NAME%{%NAME%}
 ItemDisplay[(7wa OR 7gd OR 7p7 OR 7h7) !RW (SOCK=0 OR SOCK=6) !INF NMAG EDAM>19 FILTLVL<9]: %NAME%{%NAME%}
+ItemDisplay[6lb !RW (SOCK=0 OR SOCK=6) !INF NMAG EDAM>0 (EDAM>9 OR FILTLVL<5) FILTLVL<7]: %NAME%{%NAME%}
+ItemDisplay[6lb !RW (SOCK=0 OR SOCK=6) !INF NMAG EDAM>17 FILTLVL<8]: %NAME%{%NAME%}
+ItemDisplay[6lb !RW (SOCK=0 OR SOCK=6) !INF NMAG EDAM>19 FILTLVL<9]: %NAME%{%NAME%}
 ItemDisplay[7xf !RW SK263>2 SK252>2 ETH !INF SOCK=3 NMAG]: %RW_BASE_GG%GG [Chaos]{%NAME%%CL%%PURPLE%GG Chaos base}
 ItemDisplay[7xf !RW SK263>2 SK252>2 ETH !INF SOCK=0 NMAG]: %RW_BASE_GG%GG [Chaos]{%NAME%%CL%%PURPLE%Larzuk for 3 sockets for GG Chaos base}
 ItemDisplay[7xf !RW (SK263>2 OR SK252>2) ETH !INF SOCK=3 NMAG]: %RW_BASE_GG%[Chaos]{%NAME%%CL%%PURPLE%Chaos base}
@@ -6177,6 +6198,7 @@ ItemDisplay[SK226>2 CLVL<80 FILTLVL<3 (DRUID OR FILTLVL<2)]: %NAME% %LEVELING_TA
 ItemDisplay[(DRUID OR FILTLVL<2) CL1 FILTLVL<3 (MAG OR RARE) !ID]: %NAME%{%NAME%}
 ItemDisplay[NMAG STAFF ELT !RW !(8ss OR 8ls OR 6ss) (SOCK=0 OR SOCK=4) FILTLVL<3 (DRUID OR FILTLVL<2)]: %NAME% %LEVELING_TAG%{%RED%Memory Base%CL%%NAME%}
 ItemDisplay[NMAG BOW !RW SOCK=3 (AMAZON OR FILTLVL<2) FILTLVL<3 CLVL<80]: %NAME% %ORANGE%[Loyalty]{%RED%Loyalty Base%CL%%NAME%}
+ItemDisplay[NMAG amc !INF !RW (SOCK=2 OR SOCK=3) FILTLVL<3]: %NAME% %LEVELING_TAG%{%RED%Leveling Item%CL%%NAME%}
 ItemDisplay[(AMAZON OR FILTLVL<2) CL7 FILTLVL<3 (MAG OR RARE) !ID]: %NAME%{%NAME%}
 ItemDisplay[SK149>2 BAR (SOCK=0 OR SOCK=2) !INF NMAG FILTLVL<3]: %NAME% %DARK_GREEN%[LORE]{%NAME%}
 ItemDisplay[NMAG !INF !RW SOCK=3 FILTLVL<3 (SPEAR OR POLEARM OR BOW OR XBOW OR STAFF)]: %NAME% %DARK_GREEN%[Purity]{%NAME%}

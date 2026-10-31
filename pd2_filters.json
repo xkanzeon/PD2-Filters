@@ -228,6 +228,48 @@
         }
     ],
     [
+        "Hiim - PiLLLa",
+        {
+            "info": {
+                "name": "PiLLLa Updated by Hiim",
+                "url": "https://api.github.com/repos/Maaaaaarrk/Pd2/contents",
+                "author": "Hiim - PiLLLa"
+            },
+            "filters": [
+                {
+                    "name": "S14_Blank.filter",
+                    "url": "https://api.github.com/repos/Maaaaaarrk/Pd2/contents/S14_Blank.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/Maaaaaarrk/Pd2/main/S14_Blank.filter"
+                },
+                {
+                    "name": "S14_Hype.filter",
+                    "url": "https://api.github.com/repos/Maaaaaarrk/Pd2/contents/S14_Hype.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/Maaaaaarrk/Pd2/main/S14_Hype.filter"
+                },
+                {
+                    "name": "S14_Hype_POEsound.filter",
+                    "url": "https://api.github.com/repos/Maaaaaarrk/Pd2/contents/S14_Hype_POEsound.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/Maaaaaarrk/Pd2/main/S14_Hype_POEsound.filter"
+                },
+                {
+                    "name": "S14_NoBlank.filter",
+                    "url": "https://api.github.com/repos/Maaaaaarrk/Pd2/contents/S14_NoBlank.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/Maaaaaarrk/Pd2/main/S14_NoBlank.filter"
+                },
+                {
+                    "name": "S14_PurpleGold_hide.filter",
+                    "url": "https://api.github.com/repos/Maaaaaarrk/Pd2/contents/S14_PurpleGold_hide.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/Maaaaaarrk/Pd2/main/S14_PurpleGold_hide.filter"
+                },
+                {
+                    "name": "S14_Starter.filter",
+                    "url": "https://api.github.com/repos/Maaaaaarrk/Pd2/contents/S14_Starter.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/Maaaaaarrk/Pd2/main/S14_Starter.filter"
+                }
+            ]
+        }
+    ],
+    [
         "Hiim - TalRasha",
         {
             "info": {
