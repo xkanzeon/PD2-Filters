@@ -1908,15 +1908,15 @@ ItemDisplay[GROUND !ID RARE]:%HIDE%
 //Misc
 ItemDisplay[(FILTLVL<4 OR SET_T1) !ID SET (amu OR rin)]:%GREEN_T1%
 //Helm
-ItemDisplay[!ID SET !ETH (xhm OR xh9 OR urn)]:%GREEN_T2%
-ItemDisplay[(FILTLVL<4 OR SET_T1) !ID SET !ETH (xap OR xsk OR uhm OR uh9 OR ci0 OR ci3)]:%GREEN_T1%
-ItemDisplay[!ID SET ETH (xhm OR urn)]:%GREEN_T2%
-ItemDisplay[(FILTLVL<4 OR SET_T1) !ID SET ETH (xap OR xsk OR xh9 OR uhm OR uh9 OR ci0 OR ci3)]:%GREEN_T1%
+ItemDisplay[!ID SET !ETH (xhm OR xh9 OR urn OR uh9)]:%GREEN_T2%
+ItemDisplay[(FILTLVL<4 OR SET_T1) !ID SET !ETH (xap OR xsk OR uhm OR ci0 OR ci3)]:%GREEN_T1%
+ItemDisplay[!ID SET ETH (xhm OR urn OR uh9)]:%GREEN_T2%
+ItemDisplay[(FILTLVL<4 OR SET_T1) !ID SET ETH (xap OR xsk OR xh9 OR uhm OR ci0 OR ci3)]:%GREEN_T1%
 //Chest
-ItemDisplay[!ID SET !ETH (ucl OR uar)]:%GREEN_T2%
-ItemDisplay[(FILTLVL<4 OR SET_T1) !ID SET !ETH (stu OR xul OR xar OR ult OR uld OR uth OR uul)]:%GREEN_T1%
-ItemDisplay[!ID SET ETH uar]:%GREEN_T2%
-ItemDisplay[(FILTLVL<4 OR SET_T1) !ID SET ETH (stu OR xul OR xar OR ucl OR ult OR uld OR uth OR uul)]:%GREEN_T1%
+ItemDisplay[!ID SET !ETH (xul OR ucl OR uth OR uar)]:%GREEN_T2%
+ItemDisplay[(FILTLVL<4 OR SET_T1) !ID SET !ETH (stu OR xar OR ult OR uld OR uul)]:%GREEN_T1%
+ItemDisplay[!ID SET ETH (uth OR uar)]:%GREEN_T2%
+ItemDisplay[(FILTLVL<4 OR SET_T1) !ID SET ETH (stu OR xul OR xar OR ucl OR ult OR uld OR uul)]:%GREEN_T1%
 //Gloves
 ItemDisplay[!ID SET !ETH (lgl OR xvg OR xmg OR ulg)]:%GREEN_T2%
 ItemDisplay[(FILTLVL<4 OR SET_T1) !ID SET !ETH (xtg OR xhg)]:%GREEN_T1%
@@ -1941,7 +1941,7 @@ ItemDisplay[!ID SET ETH 7ws]:%GREEN_T2%
 ItemDisplay[(FILTLVL<4 OR SET_T1) !ID SET ETH (9mt OR 7ma)]:%GREEN_T1%
 //Sword
 ItemDisplay[(FILTLVL<4 OR SET_T1) !ID SET !ETH (7fb OR 7gd)]:%GREEN_T1%
-ItemDisplay[(FILTLVL<4 OR SET_T1) !ID SET ETH (7fb OR 7gd)]:%GREEN_T1%
+ItemDisplay[!ID SET ETH (7fb OR 7gd)]:%GREEN_T2%
 //Staff
 ItemDisplay[(FILTLVL<4 OR SET_T1) !ID SET !ETH 6cs]:%GREEN_T1%
 ItemDisplay[(FILTLVL<4 OR SET_T1) !ID SET ETH 6cs]:%GREEN_T1%
@@ -1974,28 +1974,27 @@ ItemDisplay[!ID UNI (cqv3 OR aqv3)]:%GOLD_T2%
 ItemDisplay[(FILTLVL<4 OR UNI_T1) !ID UNI (cqv2 OR aqv2)]:%GOLD_T1%
 //Helm
 ItemDisplay[!ID UNI !ETH (uhm OR ci3)]:%GOLD_T5%
-ItemDisplay[!ID UNI !ETH (xh9 OR uap OR urn OR ci2)]:%GOLD_T4%
-ItemDisplay[!ID UNI !ETH (xhm OR usk OR uh9)]:%GOLD_T3%
-ItemDisplay[!ID UNI !ETH (ulm OR uhl)]:%GOLD_T2%
-ItemDisplay[(FILTLVL<4 OR UNI_T1) !ID UNI !ETH (xrn OR xsk)]:%GOLD_T1%
+ItemDisplay[!ID UNI !ETH (xh9 OR uap OR urn OR uh9)]:%GOLD_T4%
+ItemDisplay[!ID UNI !ETH (xhm OR usk OR ci2)]:%GOLD_T3%
+ItemDisplay[!ID UNI !ETH (xrn OR ulm OR uhl)]:%GOLD_T2%
+ItemDisplay[(FILTLVL<4 OR UNI_T1) !ID UNI !ETH (xkp OR xsk)]:%GOLD_T1%
 ItemDisplay[!ID UNI ETH xh9]:%GOLD_T5%
-ItemDisplay[!ID UNI ETH (uap OR uhm OR usk OR uh9 OR ci2 OR ci3)]:%GOLD_T3%
-ItemDisplay[!ID UNI ETH (xhm OR uhl)]:%GOLD_T2%
-ItemDisplay[(FILTLVL<4 OR UNI_T1) !ID UNI ETH (xkp OR xrn OR xsk OR ulm)]:%GOLD_T1%
+ItemDisplay[!ID UNI ETH (uap OR uhm OR usk OR uh9 OR ci3)]:%GOLD_T3%
+ItemDisplay[!ID UNI ETH (xkp OR xhm OR xrn OR uhl OR ci2)]:%GOLD_T2%
+ItemDisplay[(FILTLVL<4 OR UNI_T1) !ID UNI ETH (xsk OR ulm)]:%GOLD_T1%
 //Chest
 ItemDisplay[!ID UNI !ETH uar]:%GOLD_T5%
 ItemDisplay[!ID UNI !ETH (xhn OR upl OR uul)]:%GOLD_T4%
 ItemDisplay[!ID UNI !ETH (xea OR xpl OR xlt OR uui OR uld)]:%GOLD_T3%
-ItemDisplay[!ID UNI !ETH (utu OR ung OR utp)]:%GOLD_T2%
-ItemDisplay[(FILTLVL<4 OR UNI_T1) !ID UNI !ETH (rng OR scl OR brs OR aar OR ltp OR xui OR xng OR xcl OR xrs OR xld OR xth OR xul OR xar OR xtp)]:%GOLD_T1%
+ItemDisplay[!ID UNI !ETH (xld OR utu OR ung OR utp)]:%GOLD_T2%
+ItemDisplay[(FILTLVL<4 OR UNI_T1) !ID UNI !ETH (rng OR scl OR brs OR aar OR ltp OR xui OR xng OR xcl OR xrs OR xth OR xul OR xar OR xtp)]:%GOLD_T1%
 ItemDisplay[!ID UNI ETH (uul OR uar OR utp)]:%GOLD_T5%
 ItemDisplay[!ID UNI ETH (xhn OR xpl)]:%GOLD_T4%
-ItemDisplay[!ID UNI ETH (xlt OR upl)]:%GOLD_T3%
-ItemDisplay[!ID UNI ETH (xea OR xrs OR xul OR uui OR utu OR ung OR urs)]:%GOLD_T2%
-ItemDisplay[(FILTLVL<4 OR UNI_T1) !ID UNI ETH (fld OR aar OR ltp OR xui OR xld OR xth)]:%GOLD_T1%
+ItemDisplay[!ID UNI ETH (xlt OR urs OR upl)]:%GOLD_T3%
+ItemDisplay[!ID UNI ETH (xea OR xrs OR xul OR uui OR utu OR ung)]:%GOLD_T2%
+ItemDisplay[(FILTLVL<4 OR UNI_T1) !ID UNI ETH (fld OR aar OR ltp OR xui OR xld OR xth OR xtp)]:%GOLD_T1%
 //Gloves
-ItemDisplay[!ID UNI !ETH uhg]:%GOLD_T5%
-ItemDisplay[!ID UNI !ETH uvg]:%GOLD_T4%
+ItemDisplay[!ID UNI !ETH (uvg OR uhg)]:%GOLD_T4%
 ItemDisplay[!ID UNI !ETH (xtg OR umg OR utg)]:%GOLD_T3%
 ItemDisplay[!ID UNI !ETH (tgl OR xvg)]:%GOLD_T2%
 ItemDisplay[(FILTLVL<4 OR UNI_T1) !ID UNI !ETH (vgl OR mgl OR hgl OR xlg OR xmg OR xhg OR ulg)]:%GOLD_T1%
@@ -2004,66 +2003,68 @@ ItemDisplay[!ID UNI ETH (xtg OR umg OR utg)]:%GOLD_T3%
 ItemDisplay[!ID UNI ETH xvg]:%GOLD_T2%
 ItemDisplay[(FILTLVL<4 OR UNI_T1) !ID UNI ETH (vgl OR tgl OR hgl OR xlg OR xmg OR xhg OR ulg)]:%GOLD_T1%
 //Belt
-ItemDisplay[!ID UNI !ETH (zlb OR ztb OR zhb OR ulc OR umc OR uhc)]:%GOLD_T4%
-ItemDisplay[!ID UNI !ETH uvc]:%GOLD_T3%
-ItemDisplay[!ID UNI !ETH (vbl OR zvb)]:%GOLD_T2%
+ItemDisplay[!ID UNI !ETH ulc]:%GOLD_T5%
+ItemDisplay[!ID UNI !ETH (zlb OR ztb OR uhc)]:%GOLD_T4%
+ItemDisplay[!ID UNI !ETH (zvb OR zhb OR uvc OR umc)]:%GOLD_T3%
+ItemDisplay[!ID UNI !ETH vbl]:%GOLD_T2%
 ItemDisplay[(FILTLVL<4 OR UNI_T1) !ID UNI !ETH (tbl OR zmb)]:%GOLD_T1%
 ItemDisplay[!ID UNI ETH uhc]:%GOLD_T5%
-ItemDisplay[!ID UNI ETH zlb]:%GOLD_T4%
-ItemDisplay[!ID UNI ETH (ztb OR zhb OR ulc OR uvc OR umc)]:%GOLD_T3%
-ItemDisplay[!ID UNI ETH zvb]:%GOLD_T2%
+ItemDisplay[!ID UNI ETH (zlb OR ulc)]:%GOLD_T4%
+ItemDisplay[!ID UNI ETH (zvb OR zhb OR uvc OR umc)]:%GOLD_T3%
+ItemDisplay[!ID UNI ETH ztb]:%GOLD_T2%
 ItemDisplay[(FILTLVL<4 OR UNI_T1) !ID UNI ETH (tbl OR zmb)]:%GOLD_T1%
 //Boots
-ItemDisplay[!ID UNI !ETH xhb]:%GOLD_T5%
-ItemDisplay[!ID UNI !ETH xtb]:%GOLD_T4%
+ItemDisplay[!ID UNI !ETH (xtb OR xhb)]:%GOLD_T4%
 ItemDisplay[!ID UNI !ETH (xvb OR umb OR uhb)]:%GOLD_T3%
 ItemDisplay[!ID UNI !ETH xmb]:%GOLD_T2%
 ItemDisplay[(FILTLVL<4 OR UNI_T1) !ID UNI !ETH (lbt OR mbt OR tbt OR hbt OR xlb OR ulb OR uvb)]:%GOLD_T1%
-ItemDisplay[!ID UNI ETH xhb]:%GOLD_T5%
-ItemDisplay[!ID UNI ETH xtb]:%GOLD_T4%
-ItemDisplay[!ID UNI ETH (uvb OR umb)]:%GOLD_T3%
+ItemDisplay[!ID UNI ETH xhb]:%GOLD_T4%
+ItemDisplay[!ID UNI ETH (xtb OR uvb OR umb)]:%GOLD_T3%
 ItemDisplay[!ID UNI ETH (xvb OR xmb OR uhb)]:%GOLD_T2%
 ItemDisplay[(FILTLVL<4 OR UNI_T1) !ID UNI ETH (mbt OR tbt OR xlb OR ulb)]:%GOLD_T1%
 //Shield
 ItemDisplay[!ID UNI !ETH (xow OR uit OR uts)]:%GOLD_T3%
-ItemDisplay[!ID UNI !ETH (xsh OR uuc OR uow OR ush)]:%GOLD_T2%
-ItemDisplay[(FILTLVL<4 OR UNI_T1) !ID UNI !ETH (xts OR xpk OR uml OR urg OR upk)]:%GOLD_T1%
-ItemDisplay[!ID UNI ETH (xow OR uuc OR uts)]:%GOLD_T2%
-ItemDisplay[(FILTLVL<4 OR UNI_T1) !ID UNI ETH (xsh OR uml OR urg OR uow OR ush OR upk)]:%GOLD_T1%
+ItemDisplay[!ID UNI !ETH (xsh OR uow OR ush)]:%GOLD_T2%
+ItemDisplay[(FILTLVL<4 OR UNI_T1) !ID UNI !ETH (xts OR xpk OR uuc OR uml OR urg OR upk)]:%GOLD_T1%
+ItemDisplay[!ID UNI ETH (xow OR uts)]:%GOLD_T2%
+ItemDisplay[(FILTLVL<4 OR UNI_T1) !ID UNI ETH (xsh OR uuc OR uml OR urg OR uow OR ush OR upk)]:%GOLD_T1%
 //Axe
 ItemDisplay[!ID UNI !ETH 7wa]:%GOLD_T3%
 ItemDisplay[!ID UNI !ETH 7gi]:%GOLD_T2%
 ItemDisplay[(FILTLVL<4 OR UNI_T1) !ID UNI !ETH (gix OR 9la OR 9ba OR 9gi OR 7ha OR 72a OR 7mp OR 7bt OR 7ga OR 7ta OR 7b8)]:%GOLD_T1%
-ItemDisplay[!ID UNI ETH 7wa]:%GOLD_T5%
-ItemDisplay[!ID UNI ETH (7ga OR 7b8)]:%GOLD_T4%
-ItemDisplay[!ID UNI ETH (9gi OR 7gi)]:%GOLD_T3%
+ItemDisplay[!ID UNI ETH (7wa OR 7ga OR 7gi OR 7b8)]:%GOLD_T4%
+ItemDisplay[!ID UNI ETH 9gi]:%GOLD_T3%
 ItemDisplay[!ID UNI ETH (gix OR 9la OR 72a OR 7bt OR 7ta)]:%GOLD_T2%
 ItemDisplay[(FILTLVL<4 OR UNI_T1) !ID UNI ETH (7ha OR 7mp OR 7ba)]:%GOLD_T1%
 //Bow
-ItemDisplay[!ID UNI !ETH (6lw OR 8mx)]:%GOLD_T3%
-ItemDisplay[!ID UNI !ETH (8s8 OR 8hx OR 8rx)]:%GOLD_T2%
-ItemDisplay[(FILTLVL<4 OR UNI_T1) !ID UNI !ETH (8lb OR 8cb OR 8sw OR 8lw OR 6hb OR 6l7 OR 6sw OR 6hx OR 6rx)]:%GOLD_T1%
+ItemDisplay[!ID UNI !ETH 6lw]:%GOLD_T4%
+ItemDisplay[!ID UNI !ETH (8mx OR 8rx)]:%GOLD_T3%
+ItemDisplay[!ID UNI !ETH (8s8 OR 6sw OR 8hx)]:%GOLD_T2%
+ItemDisplay[(FILTLVL<4 OR UNI_T1) !ID UNI !ETH (8lb OR 8cb OR 8sw OR 8lw OR 6hb OR 6l7 OR 6hx OR 6rx)]:%GOLD_T1%
 //Dagger
-ItemDisplay[(FILTLVL<4 OR UNI_T1) !ID UNI !ETH (9di OR 9kr OR 9bl OR 7dg OR 7di OR 7kr OR 7bk)]:%GOLD_T1%
-ItemDisplay[!ID UNI ETH (7bl OR 7bk)]:%GOLD_T3%
+ItemDisplay[!ID UNI !ETH 7bk]:%GOLD_T3%
+ItemDisplay[(FILTLVL<4 OR UNI_T1) !ID UNI !ETH (9di OR 9kr OR 9bl OR 7dg OR 7di OR 7kr)]:%GOLD_T1%
+ItemDisplay[!ID UNI ETH 7bk]:%GOLD_T5%
+ItemDisplay[!ID UNI ETH 7bl]:%GOLD_T3%
 ItemDisplay[!ID UNI ETH (9di OR 7kr)]:%GOLD_T2%
 ItemDisplay[(FILTLVL<4 OR UNI_T1) !ID UNI ETH (9bl OR 7di OR 9tk)]:%GOLD_T1%
 //Mace
-ItemDisplay[!ID UNI !ETH (7wh OR 7ws)]:%GOLD_T3%
-ItemDisplay[!ID UNI !ETH (7fl OR 7gm OR 9ws OR 7sc OR 7qs)]:%GOLD_T2%
+ItemDisplay[!ID UNI !ETH (9ws OR 7ws)]:%GOLD_T4%
+ItemDisplay[!ID UNI !ETH (7fl OR 7wh OR 7gm OR 7qs)]:%GOLD_T3%
+ItemDisplay[!ID UNI !ETH 7sc]:%GOLD_T2%
 ItemDisplay[(FILTLVL<4 OR UNI_T1) !ID UNI !ETH (7cl OR 7sp OR 9wh OR 9gm OR 7m7)]:%GOLD_T1%
-ItemDisplay[!ID UNI ETH 7wh]:%GOLD_T5%
-ItemDisplay[!ID UNI ETH (7fl OR 7gm)]:%GOLD_T4%
-ItemDisplay[!ID UNI ETH (9gm OR 7sc OR 7ws)]:%GOLD_T3%
-ItemDisplay[!ID UNI ETH (7m7 OR 9ws OR 7qs)]:%GOLD_T2%
+ItemDisplay[!ID UNI ETH (7wh OR 7gm)]:%GOLD_T5%
+ItemDisplay[!ID UNI ETH (9ws OR 7ws)]:%GOLD_T4%
+ItemDisplay[!ID UNI ETH (7fl OR 9gm OR 7sc OR 7qs)]:%GOLD_T3%
+ItemDisplay[!ID UNI ETH 7m7]:%GOLD_T2%
 ItemDisplay[(FILTLVL<4 OR UNI_T1) !ID UNI ETH (7cl OR 7sp OR 9wh)]:%GOLD_T1%
 //Polearm
 ItemDisplay[!ID UNI !ETH 7wc]:%GOLD_T4%
 ItemDisplay[!ID UNI !ETH 7s8]:%GOLD_T3%
 ItemDisplay[!ID UNI !ETH (7vo OR 7pa)]:%GOLD_T2%
 ItemDisplay[(FILTLVL<4 OR UNI_T1) !ID UNI !ETH (7o7 OR 9s8 OR 9wc)]:%GOLD_T1%
-ItemDisplay[!ID UNI ETH (7s8 OR 7wc)]:%GOLD_T5%
-ItemDisplay[!ID UNI ETH 7pa]:%GOLD_T4%
+ItemDisplay[!ID UNI ETH 7wc]:%GOLD_T5%
+ItemDisplay[!ID UNI ETH (7pa OR 7s8)]:%GOLD_T4%
 ItemDisplay[!ID UNI ETH 7vo]:%GOLD_T3%
 ItemDisplay[!ID UNI ETH 7o7]:%GOLD_T2%
 ItemDisplay[(FILTLVL<4 OR UNI_T1) !ID UNI ETH (9s8 OR 9wc)]:%GOLD_T1%
@@ -2072,49 +2073,49 @@ ItemDisplay[!ID UNI !ETH 7p7]:%GOLD_T4%
 ItemDisplay[!ID UNI !ETH 7ts]:%GOLD_T2%
 ItemDisplay[(FILTLVL<4 OR UNI_T1) !ID UNI !ETH (7sr OR 7br OR 7st OR 7s7)]:%GOLD_T1%
 ItemDisplay[!ID UNI ETH 7p7]:%GOLD_T5%
-ItemDisplay[!ID UNI ETH (7sr OR 7ts)]:%GOLD_T3%
+ItemDisplay[!ID UNI ETH (7sr OR 7s7 OR 7ts)]:%GOLD_T3%
 ItemDisplay[!ID UNI ETH (7br OR 7st)]:%GOLD_T2%
-ItemDisplay[(FILTLVL<4 OR UNI_T1) !ID UNI ETH (9sr OR 7s7 OR 7gl)]:%GOLD_T1%
+ItemDisplay[(FILTLVL<4 OR UNI_T1) !ID UNI ETH (9sr OR 7gl)]:%GOLD_T1%
 //Staff
-ItemDisplay[!ID UNI !ETH 6ws]:%GOLD_T5%
-ItemDisplay[!ID UNI !ETH 7gw]:%GOLD_T4%
-ItemDisplay[!ID UNI !ETH (6bs OR 9bw)]:%GOLD_T3%
-ItemDisplay[!ID UNI !ETH (8ws OR 7yw OR 7bw)]:%GOLD_T2%
+ItemDisplay[!ID UNI !ETH (6ws OR 7gw)]:%GOLD_T5%
+ItemDisplay[!ID UNI !ETH 6bs]:%GOLD_T4%
+ItemDisplay[!ID UNI !ETH (8ws OR 9bw OR 7bw)]:%GOLD_T3%
+ItemDisplay[!ID UNI !ETH 7yw]:%GOLD_T2%
 ItemDisplay[(FILTLVL<4 OR UNI_T1) !ID UNI !ETH (cst OR wst OR 8ls OR 6cs OR 9gw)]:%GOLD_T1%
-ItemDisplay[!ID UNI ETH 6ws]:%GOLD_T5%
-ItemDisplay[!ID UNI ETH 7gw]:%GOLD_T4%
-ItemDisplay[!ID UNI ETH (8ls OR 6bs OR 9bw)]:%GOLD_T3%
-ItemDisplay[!ID UNI ETH (8ws OR 7yw OR 7bw)]:%GOLD_T2%
+ItemDisplay[!ID UNI ETH (6ws OR 7gw)]:%GOLD_T5%
+ItemDisplay[!ID UNI ETH 6bs]:%GOLD_T4%
+ItemDisplay[!ID UNI ETH (8ls OR 8ws OR 9bw OR 7bw)]:%GOLD_T3%
+ItemDisplay[!ID UNI ETH 7yw]:%GOLD_T2%
 ItemDisplay[(FILTLVL<4 OR UNI_T1) !ID UNI ETH (cst OR wst OR 6cs OR 9gw)]:%GOLD_T1%
 //Sword
 ItemDisplay[!ID UNI !ETH (7cr OR 7gd)]:%GOLD_T3%
 ItemDisplay[!ID UNI !ETH 7b7]:%GOLD_T2%
-ItemDisplay[(FILTLVL<4 OR UNI_T1) !ID UNI !ETH (gsd OR 9fc OR 9bs OR 9ls OR 9gs OR 9b9 OR 9fb OR 7sm OR 7ls OR 7cm OR 7gs OR 7fb)]:%GOLD_T1%
+ItemDisplay[(FILTLVL<4 OR UNI_T1) !ID UNI !ETH (gsd OR 9fc OR 9bs OR 9ls OR 9gs OR 9b9 OR 9fb OR 9gd OR 7sm OR 7ls OR 7cm OR 7gs OR 7fb)]:%GOLD_T1%
 ItemDisplay[!ID UNI ETH (7b7 OR 7gd)]:%GOLD_T5%
-ItemDisplay[!ID UNI ETH 7fb]:%GOLD_T3%
-ItemDisplay[!ID UNI ETH (9bs OR 9gs OR 9fb OR 7cm OR 7gs)]:%GOLD_T2%
-ItemDisplay[(FILTLVL<4 OR UNI_T1) !ID UNI ETH (gsd OR 9fc OR 9b9 OR 7sm OR 7ls)]:%GOLD_T1%
+ItemDisplay[!ID UNI ETH (9gs OR 7fb)]:%GOLD_T3%
+ItemDisplay[!ID UNI ETH (gsd OR 9bs OR 9fb OR 9gd OR 7cm OR 7gs)]:%GOLD_T2%
+ItemDisplay[(FILTLVL<4 OR UNI_T1) !ID UNI ETH (9fc OR 9b9 OR 7sm OR 7ls)]:%GOLD_T1%
 //Class Armor
-ItemDisplay[!ID UNI !ETH dre]:%GOLD_T4%
-ItemDisplay[!ID UNI !ETH (bae OR drc OR drd)]:%GOLD_T3%
-ItemDisplay[!ID UNI !ETH (baf OR dr6 OR dra OR drf)]:%GOLD_T2%
-ItemDisplay[(FILTLVL<4 OR UNI_T1) !ID UNI !ETH (baa OR bac OR bad OR dr2 OR drb)]:%GOLD_T1%
-ItemDisplay[!ID UNI ETH (bae OR drc OR drd OR dre)]:%GOLD_T2%
-ItemDisplay[(FILTLVL<4 OR UNI_T1) !ID UNI ETH (baa OR bac OR bad OR baf OR dr2 OR dr6 OR dra OR drb OR drf)]:%GOLD_T1%
+ItemDisplay[!ID UNI !ETH (baa OR bae OR drc OR drd OR dre)]:%GOLD_T3%
+ItemDisplay[!ID UNI !ETH (bad OR baf OR dr6 OR dra OR drb OR drf)]:%GOLD_T2%
+ItemDisplay[(FILTLVL<4 OR UNI_T1) !ID UNI !ETH (bac OR dr2)]:%GOLD_T1%
+ItemDisplay[!ID UNI ETH (baa OR bae OR drc OR drd OR dre)]:%GOLD_T2%
+ItemDisplay[(FILTLVL<4 OR UNI_T1) !ID UNI ETH (bac OR bad OR baf OR dr2 OR dr6 OR dra OR drb OR drf)]:%GOLD_T1%
 //Class Shield
-ItemDisplay[!ID UNI !ETH (pa9 OR pae OR paf OR neg OR nee)]:%GOLD_T3%
-ItemDisplay[!ID UNI !ETH (pab OR pac OR nea OR ned OR nef)]:%GOLD_T2%
-ItemDisplay[!ID UNI ETH (pa9 OR pac OR pae OR paf OR neg OR nee)]:%GOLD_T2%
-ItemDisplay[(FILTLVL<4 OR UNI_T1) !ID UNI ETH (pab OR nea OR ned OR nef)]:%GOLD_T1%
+ItemDisplay[!ID UNI !ETH pa9]:%GOLD_T4%
+ItemDisplay[!ID UNI !ETH (pab OR pac OR pae OR paf OR nee OR nef)]:%GOLD_T3%
+ItemDisplay[!ID UNI !ETH (nea OR neg OR ned)]:%GOLD_T2%
+ItemDisplay[!ID UNI ETH (pa9 OR pab OR pac OR pae OR paf OR nee OR nef)]:%GOLD_T2%
+ItemDisplay[(FILTLVL<4 OR UNI_T1) !ID UNI ETH (nea OR neg OR ned)]:%GOLD_T1%
 //Class Weapon
 ItemDisplay[!ID UNI !ETH obf]:%GOLD_T4%
-ItemDisplay[!ID UNI !ETH (amc OR obe)]:%GOLD_T3%
-ItemDisplay[!ID UNI !ETH (amd OR ame OR amf OR 9tw OR 7wb OR 7xf OR 7lw OR obc OR obd)]:%GOLD_T2%
-ItemDisplay[(FILTLVL<4 OR UNI_T1) !ID UNI !ETH (am7 OR amb OR am9 OR ama OR 7tw OR oba)]:%GOLD_T1%
-ItemDisplay[!ID UNI ETH (amf OR obf)]:%GOLD_T4%
-ItemDisplay[!ID UNI ETH (amd OR ame OR ama OR 7wb OR 7xf OR obe)]:%GOLD_T3%
-ItemDisplay[!ID UNI ETH (am9 OR 9tw OR 7tw OR obc OR obd)]:%GOLD_T2%
-ItemDisplay[(FILTLVL<4 OR UNI_T1) !ID UNI ETH (am5 OR 7cs OR 7lw OR oba)]:%GOLD_T1%
+ItemDisplay[!ID UNI !ETH (amc OR 7xf OR 7lw OR obe)]:%GOLD_T3%
+ItemDisplay[!ID UNI !ETH (amd OR ame OR amf OR 7wb OR 7tw OR oba OR obc)]:%GOLD_T2%
+ItemDisplay[(FILTLVL<4 OR UNI_T1) !ID UNI !ETH (am7 OR amb OR am9 OR ama OR 9tw OR obd)]:%GOLD_T1%
+ItemDisplay[!ID UNI ETH (amd OR amf OR obf)]:%GOLD_T4%
+ItemDisplay[!ID UNI ETH (ame OR 7xf OR 7lw OR obe)]:%GOLD_T3%
+ItemDisplay[!ID UNI ETH (am9 OR ama OR 9tw OR 7wb OR 7tw OR oba OR obc)]:%GOLD_T2%
+ItemDisplay[(FILTLVL<4 OR UNI_T1) !ID UNI ETH (am5 OR 7cs OR obd)]:%GOLD_T1%
 //Grail
 ItemDisplay[GRAIL !ID UNI !ALLDISCOVERED]:%GOLD_T1%
 //Catch All
