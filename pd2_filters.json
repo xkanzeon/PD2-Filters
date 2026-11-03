@@ -17,6 +17,23 @@
         }
     ],
     [
+        "Antemortem",
+        {
+            "info": {
+                "name": "Antemortem's Kryszard Filter",
+                "url": "https://api.github.com/repos/AntemortemDev/pd2-loot-filter/contents",
+                "author": "Antemortem"
+            },
+            "filters": [
+                {
+                    "name": "futureal.filter",
+                    "url": "https://api.github.com/repos/AntemortemDev/pd2-loot-filter/contents/futureal.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/AntemortemDev/pd2-loot-filter/main/futureal.filter"
+                }
+            ]
+        }
+    ],
+    [
         "Dauracul",
         {
             "info": {
