@@ -9,7 +9,7 @@ ItemDisplayFilterName[]: ÿc8Extremely Strict+
 ItemDisplayFilterName[]: ÿc1High roller
 ItemDisplayFilterName[]: ÿc13 Min Mapper
 ItemDisplayFilterName[]: ÿc1No Items Out of Town
-ItemDisplay[box]: %NAME%{Send Feedback via PD2 Discord #lootfilter%CL%Last updated November 7th%CL%Season 14 - build 197%CL%Kassahi - Mystery - Phil777 -}%CONTINUE%
+ItemDisplay[box]: %NAME%{Send Feedback via PD2 Discord #lootfilter%CL%Last updated November 8th%CL%Season 14 - build 203%CL%Kassahi - Mystery - Phil777 -}%CONTINUE%
 Alias[IN_TOWN]: (MAPID=1 OR MAPID=40 OR MAPID=75 OR MAPID=103 OR MAPID=109)
 ItemDisplay[cm3 UNI !ID FILTLVL>10]: %PURPLE%«%BLACK%·%GREEN%» %BLACK%O %GOLD%Unidentified Gheeds Fortune %BLACK%O %GREEN%«%BLACK%·%PURPLE%»
 ItemDisplay[box FILTLVL=0]: %NAME%{%NAME% OFF}%CONTINUE%
@@ -269,7 +269,7 @@ Alias[PD2_MATS]: %PURPLE%«%BLACK%·%GREEN%» %BLACK%O %NAME% %BLACK%O %GREEN%«
 ItemDisplay[rvl]: %GREEN%+ %PURPLE%Full %GREEN%+%CONTINUE%
 Alias[UNID_UNI_AMULET]: Amulet
 Alias[UNID_UNI_RING]: Ring
-Alias[GHEEDS_TOOLTIP_LINE]: S14 SCORE - PHIL777 4:5 Maaaark
+Alias[GHEEDS_TOOLTIP_LINE]: S14 SCORE - PHIL777 7:6 Maaaark
 Alias[CURRENCY_TIMESTAMP]: %WHITE%HR Values Last updated Nov 6 2026
 Alias[CRAFTING_RUNES_SET]: (RUNE=3 OR RUNE=4 OR RUNE=5 OR RUNE=7 OR RUNE=8 OR RUNE=9 OR RUNE=11 OR RUNE=12 OR RUNE=15 OR RUNE=16 OR RUNE=17 OR RUNE=18)
 Alias[OHM_RUNE_VALUE]: 1
@@ -366,24 +366,24 @@ Alias[BURNING_ESS_VALUE]: 0.07
 Alias[CHARGED_ESS_VALUE]: 0.22
 Alias[TWISTED_ESS_VALUE]: 0.08
 Alias[BLAME_ONION]: %PX-60%%DOT-21%%MAP-0A%%SOUNDID-4714%%RED%...%ORANGE%B%YELLOW%l%GREEN%a%BLUE%m%PURPLE%e     %GOLD%%NAME%%PURPLE%     O%BLUE%n%GREEN%i%YELLOW%o%ORANGE%n%RED%...
-Alias[4_STAR_UNIQUE]: (6lw OR 6ws OR 7bl OR 7cr OR 7gw OR 7wh OR 7ws OR 8ws OR aqv3 OR ci3 OR drd OR dre OR obe OR obf OR pa9 OR pab OR pac OR uar OR uh9 OR uhc OR uhg OR uhm OR ulc OR umg OR urn OR usk OR uul OR uvg OR xh9 OR xhb OR xtb OR xtg)
-Alias[3_STAR_UNIQUE]: (6bs OR 7pa OR 7wc OR 8mx OR 8rx OR amf OR ci2 OR ned OR paf OR tbt OR tgl OR uap OR ulm OR umb OR umc OR ung OR upl OR urs OR utg OR uts OR uui OR xhn OR xlt OR xvb OR zhb OR zlb)
-Alias[2_STAR_UNIQUE]: (6rx OR 7b7 OR 7bk OR 7bw OR 7fl OR 7gd OR 7gm OR 7p7 OR 7s8 OR 7tw OR 7wa OR 7xf OR 9di OR 9fc OR 9gw OR 9ls OR 9s8 OR 9wc OR 9wn OR aar OR amc OR amd OR ame OR ba7 OR bae OR baf OR kit OR mbt OR nef OR neg OR pae OR uhb OR uit OR ush OR utu OR uuc OR uvb OR uvc OR xea OR xhm OR xlb OR xld OR xmb OR xow OR xpl OR xsh OR xth OR ztb OR zvb)
-Alias[1_STAR_UNIQUE]: (6cs OR 6l7 OR 6sw OR 72a OR 7bt OR 7fb OR 7gi OR 7lw OR 7sr OR 7ts OR 7wb OR 8cb OR 8hx OR 8ls OR 8s8 OR 9bw OR 9kr OR ba6 OR baa OR bac OR bad OR brs OR cap OR cqv2 OR cqv3 OR dr6 OR dra OR drb OR drc OR drf OR fhl OR gsd OR hgl OR ltp OR mgl OR nee OR uhl OR uld OR ulg OR uow OR upk OR urg OR xap OR xcl OR xkp OR xlg OR xmg OR xrn OR xtp OR xts OR xui OR xvg)
-Alias[0_STAR_UNIQUE]: (7b8 OR 7br OR 7di OR 7gs OR 7ls OR 7m7 OR 7yw OR 9tw OR amb OR aqv2 OR lbb OR nea OR oba OR obc OR obd OR tbl OR ulb OR uml OR vbt OR vgl OR xar OR xul)
-Alias[NO_STAR_UNIQUE]: (7dg OR 7sm OR 7ta OR 7vo OR 8cs OR 8lb OR 8sw OR 9b9 OR 9fl OR 9gd OR 9gm OR 9la OR 9m9 OR 9sr OR ama OR dgr OR gix OR kri OR lgl OR utp OR xhg)
+Alias[4_STAR_UNIQUE]: (6lw OR 6ws OR 7bl OR 7cr OR 7gw OR 7wh OR 7ws OR 8ws OR aqv3 OR ci3 OR drd OR dre OR obe OR obf OR pa9 OR pab OR pac OR uar OR uh9 OR uhc OR uhg OR uhm OR ulc OR umg OR urn OR usk OR uul OR uvg OR xhb OR xtb OR xtg)
+Alias[3_STAR_UNIQUE]: (6bs OR 7pa OR 7wa OR 7wc OR 8mx OR 8rx OR amf OR ci2 OR ned OR paf OR tbt OR tgl OR uap OR ulm OR umb OR umc OR ung OR upl OR urs OR utg OR uts OR uui OR xh9 OR xhn OR xld OR xlt OR xvb OR zhb OR zlb OR zvb)
+Alias[2_STAR_UNIQUE]: (6rx OR 7b7 OR 7bk OR 7fl OR 7gd OR 7gm OR 7lw OR 7p7 OR 7s8 OR 7tw OR 7xf OR 9di OR 9fc OR 9gw OR 9ls OR 9s8 OR 9wc OR 9wn OR aar OR amc OR amd OR ame OR ba7 OR bae OR baf OR kit OR mbt OR nef OR neg OR pae OR uhb OR uit OR ush OR utu OR uuc OR uvb OR uvc OR xea OR xhm OR xlb OR xmb OR xow OR xsh OR xth OR ztb)
+Alias[1_STAR_UNIQUE]: (6cs OR 6l7 OR 6sw OR 72a OR 7bt OR 7bw OR 7fb OR 7gi OR 7sr OR 7ts OR 7wb OR 8cb OR 8hx OR 8ls OR 8s8 OR 9bw OR 9kr OR 9m9 OR 9tw OR aqv2 OR ba6 OR baa OR bac OR bad OR brs OR cap OR cqv2 OR cqv3 OR dr6 OR dra OR drb OR drc OR drf OR fhl OR gsd OR hgl OR mgl OR nea OR nee OR oba OR obc OR obd OR tbl OR uhl OR ulb OR uld OR ulg OR uow OR upk OR urg OR vgl OR xap OR xar OR xcl OR xhg OR xkp OR xlg OR xmg OR xpl OR xrn OR xtp OR xui OR xvg)
+Alias[0_STAR_UNIQUE]: (7b8 OR 7di OR 7gs OR 7ls OR 7yw OR 8cs OR amb OR lbb OR ltp OR uml OR vbt OR xts OR xul)
+Alias[NO_STAR_UNIQUE]: (7br OR 7dg OR 7m7 OR 7sm OR 7ta OR 7vo OR 8lb OR 8sw OR 9b9 OR 9fl OR 9gd OR 9gm OR 9la OR 9sr OR ama OR dgr OR gix OR kri OR lgl OR utp)
 Alias[4_STAR_ETH_UNIQUE]: (6lw OR 6ws OR 7b7 OR 7b8 OR 7cr OR 7gd OR 7gm OR 7gw OR 7s8 OR 7sr OR 7wa OR 7wc OR 7wh OR 7ws OR 8ls OR 8ws OR 9ls OR aar OR am5 OR amd OR ame OR amf OR aqv3 OR ci3 OR drd OR obe OR pa9 OR pab OR pac OR paf OR uar OR uh9 OR uhc OR uhm OR umc OR umg OR urn OR usk OR utg OR utp OR uul OR uvg OR xh9 OR xhb OR xtb OR xvb)
 Alias[3_STAR_ETH_UNIQUE]: (6bs OR 7bl OR 7lw OR 7p7 OR 7pa OR 7tw OR 8mx OR 8rx OR 9la OR 9s8 OR bae OR cqv3 OR dr6 OR dra OR drc OR nef OR neg OR tbt OR tgl OR uhg OR ulc OR umb OR ung OR uow OR urg OR uts OR uuc OR uvc OR xea OR xhm OR xhn OR xlb OR xmb OR xow OR xsh OR xtg OR zlb OR zvb)
-Alias[2_STAR_ETH_UNIQUE]: (6rx OR 6sw OR 7bk OR 7bw OR 7fl OR 7gs OR 7ts OR 7xf OR 8hx OR 9bw OR 9di OR 9fc OR 9gm OR 9gw OR 9m9 OR 9tw OR 9wc OR 9wn OR ama OR amb OR amc OR aqv2 OR ba6 OR ba7 OR baa OR bad OR baf OR ci2 OR cqv2 OR drb OR dre OR gsd OR kit OR ltp OR mbt OR ned OR nee OR oba OR obc OR obd OR obf OR pae OR tbl OR uhb OR uhl OR uit OR ulb OR uld OR ulg OR ulm OR upk OR upl OR urs OR ush OR utu OR uui OR uvb OR xap OR xcl OR xhg OR xlg OR xmg OR xpl OR xth OR xtp OR xvg)
-Alias[1_STAR_ETH_UNIQUE]: (6cs OR 6l7 OR 72a OR 7br OR 7bt OR 7dg OR 7di OR 7gi OR 7ls OR 7wb OR 7yw OR 8cs OR 8s8 OR 9gd OR brs OR cap OR drf OR fhl OR gix OR hgl OR mgl OR nea OR uap OR vgl OR xar OR xkp OR xld OR xlt OR xrn OR xui OR xul OR zhb OR ztb)
+Alias[2_STAR_ETH_UNIQUE]: (6rx OR 6sw OR 7bk OR 7bt OR 7bw OR 7fl OR 7gs OR 7ts OR 7xf OR 8hx OR 9bw OR 9di OR 9fc OR 9gm OR 9gw OR 9m9 OR 9tw OR 9wc OR 9wn OR ama OR amb OR amc OR aqv2 OR ba6 OR ba7 OR baa OR bad OR baf OR ci2 OR cqv2 OR drb OR dre OR gsd OR kit OR ltp OR mbt OR ned OR nee OR oba OR obc OR obd OR obf OR pae OR tbl OR uhb OR uhl OR uit OR ulb OR uld OR ulg OR ulm OR upk OR upl OR urs OR ush OR utu OR uui OR uvb OR xap OR xcl OR xhg OR xlg OR xmg OR xpl OR xth OR xtp OR xvg)
+Alias[1_STAR_ETH_UNIQUE]: (6cs OR 6l7 OR 72a OR 7br OR 7dg OR 7di OR 7gi OR 7ls OR 7wb OR 7yw OR 8cs OR 8s8 OR 9gd OR brs OR cap OR drf OR fhl OR gix OR hgl OR mgl OR nea OR uap OR vgl OR xar OR xkp OR xld OR xlt OR xrn OR xui OR xul OR zhb OR ztb)
 Alias[0_STAR_ETH_UNIQUE]: (7fb OR 7m7 OR 7vo OR 8cb OR 9kr OR bac OR kri OR lbb OR vbt OR xts)
 Alias[NO_STAR_ETH_UNIQUE]: (7sm OR 7ta OR 8lb OR 8sw OR 9b9 OR 9fl OR 9sr OR dgr OR lgl OR uml)
 Alias[LLD_UNIQUE]: (aar OR am5 OR cbw OR dr2 OR flb OR fld OR gma OR gsd OR gth OR hbt OR kit OR mau OR stu OR tbt OR tgl OR vgl OR wax OR wst OR xap OR zlb)
-Alias[4_STAR_SET]: (7ws OR lbt OR ne9)
-Alias[3_STAR_SET]: (xmg)
+Alias[4_STAR_SET]: (lbt)
+Alias[3_STAR_SET]: (7ws OR ne9 OR xh9 OR xmg)
 Alias[2_STAR_SET]: (6cs OR 7qr OR paf OR stu OR uar OR ucl OR ulg OR utc OR vbt OR xap OR xar OR xhm)
-Alias[1_STAR_SET]: (7m7 OR 7ma OR dr8 OR lgl OR mbl OR tow OR uhm OR urn OR uth OR uts OR uul OR xh9 OR xmb OR xrs OR xul OR xvg OR zvb)
-Alias[0_STAR_SET]: (9mt OR amc OR ba5 OR ci0 OR ci3 OR oba OR uld OR ult OR xhb OR xhg OR xlb OR xsk OR xtb OR xtg OR zhb OR zmb)
+Alias[1_STAR_SET]: (7m7 OR 7ma OR ba5 OR dr8 OR lgl OR mbl OR oba OR tow OR uhm OR urn OR uth OR uts OR uul OR xmb OR xrs OR xtb OR xul OR xvg OR zvb)
+Alias[0_STAR_SET]: (9mt OR amc OR ci0 OR ci3 OR uld OR ult OR xhb OR xhg OR xlb OR xsk OR xtg OR zhb OR zmb)
 Alias[LLD_SET]: (lbl OR lbt OR lgl OR vbt OR vgl)
 Alias[NORM_XP]:(1-MIN(MAX(ABS(%LVLDIFF%)-5,0)*0.19,0.95))
 Alias[ELITE_XP]:(1-MIN(MAX(ABS(%ELITEDIFF%)-5,0)*0.19,0.95))
@@ -510,7 +510,7 @@ ItemDisplay[cwss]: %RED%Tainted{%TAN%Anni: %WHITE%80% %BLUE%Mod %WHITE%20% %BLUE
 ItemDisplay[lucb]: %ORANGE%Demonic Insignia{%WHITE%to Make %ORANGE%Shadow of Hatred%NL%%TAN%Cube: %ORANGE%DI, TOT, FOM%NL%%RED%(Abaddon, Pit of Acheron & Infernal Pit)%CL%%TAN%Drops From: %RED%A5 Red Portals}%CONTINUE%
 ItemDisplay[lucc]: %ORANGE%Talisman of Transgression{%WHITE%to Make %ORANGE%Shadow of Hatred%NL%%TAN%Cube: %ORANGE%DI, TOT, FOM%NL%%TAN%Drops From: %RED%Corrupted Zones}%CONTINUE%
 ItemDisplay[lucd]: %ORANGE%Flesh of Malic{%WHITE%to Make %ORANGE%Shadow of Hatred%NL%%TAN%Cube: %ORANGE%DI, TOT, FOM%NL%%TAN%Drops From: %RED%Demon Enemy}%CONTINUE%
-ItemDisplay[(rid OR rtp OR rkey) INVENTORY]: %RED%%NAME%{%RED%Highlight disabled in inventory%NAME%}%CONTINUE%
+ItemDisplay[(rid OR rtp OR rkey) INVENTORY]: %PURPLE%%NAME%{%RED%Highlight disabled in inventory%NAME%}%CONTINUE%
 ItemDisplay[wss]: %MAP-0A%%SOUNDID-4715%%RED%Worldstone{%TAN%Maps: %WHITE%100% %BLUE%Mod %NL% %TAN%Sock Item: %WHITE%75% %BLUE%Mod %WHITE%25% %BLUE%Brick %NL% %TAN%Unsock Item: %WHITE%50% %BLUE%Mod %WHITE%25%%BLUE% Brick%WHITE%/%BLUE%Sockets %NL%%WHITE%Armor: 1-3, 1h Weapon: 2-4, 2h Weapon: 3-6%NL%%WHITE%Possible Corruptions:}%CONTINUE%
 ItemDisplay[iwss]: %PX-60%%MAP-0A%%SOUNDID-4715%%RED%Catalyst{%TAN%Ads: %WHITE%Area Contains a Random Event to Maps%NL%%TAN%Drops From: %RED%An Altar of the Catalyst Event}%CONTINUE%
 ItemDisplay[lmal]: %WHITE%Larzuk's Malus{%WHITE%All Sockets: 1%NL%%WHITE%Possible Sockets:}
@@ -2161,7 +2161,7 @@ ItemDisplay[jew (STR+DEX>15)]: Fat%NAME%%CONTINUE%{%NAME%}
 ItemDisplay[jew (STR+DEX>9)]: %LIGHT_GRAY%%NAME%%CONTINUE%{%NAME%}
 ItemDisplay[jew !UNI !SET STAT86>0]: %RED%%STAT86% LAEK %NAME%%CONTINUE%{%NAME%}
 ItemDisplay[jew !UNI !SET STAT138>0]: %BLUE%%STAT138% MAEK %NAME%%CONTINUE%{%NAME%}
-ItemDisplay[jew !UNI !SET RES>0]: %PURPLE%%RES%% ALL Res %NAME%%CONTINUE%{%NAME%}
+ItemDisplay[jew !UNI !SET RES>0]: %PURPLE%%RES%% All Res %NAME%%CONTINUE%{%NAME%}
 ItemDisplay[jew !UNI STAT80>0]: %BLUE%%STAT80%%MF %NAME%%CONTINUE%{%NAME%}
 ItemDisplay[jew !UNI STAT79>0]: %GOLD%%STAT79%%GF %NAME%%CONTINUE%{%NAME%}
 ItemDisplay[jew !UNI STAT329>0]: %RED%%STAT329%% Fire %NAME%%CONTINUE%{%NAME%}
@@ -2329,7 +2329,7 @@ ItemDisplay[(cm1 OR cm2 OR cm3) !UNI MANA>0]: %BLUE%%STAT9% Mana %NAME%%CONTINUE
 ItemDisplay[(cm1 OR cm2 OR cm3) !UNI LIFE>0]: %RED%+%STAT7% Life %NAME%%CONTINUE%
 ItemDisplay[(cm1 OR cm2 OR cm3) !UNI AR>0]: %GRAY%+%STAT19% AR %NAME%%CONTINUE%
 ItemDisplay[(cm1 OR cm2 OR cm3) !UNI MAXDMG>0]: %TAN%+%STAT24% Max Dmg %NAME%%CONTINUE%%DOT-93%%TIER-4%
-ItemDisplay[(cm1 OR cm2 OR cm3) !UNI RES>0]: %PURPLE%ALL Res %RES%% %NAME%%CONTINUE%%DOT-93%
+ItemDisplay[(cm1 OR cm2 OR cm3) !UNI RES>0]: %PURPLE%All Res %RES%% %NAME%%CONTINUE%%DOT-93%
 ItemDisplay[(cm1 OR cm2 OR cm3) !UNI CRES>0 !(RES>0)]: %BLUE%%STAT43%%Cold RES %NAME%%CONTINUE%%DOT-93%%TIER-4%
 ItemDisplay[(cm1 OR cm2 OR cm3) !UNI FRES>0 !(RES>0)]: %RED%%STAT39%%Fire RES %NAME%%CONTINUE%%DOT-93%%TIER-4%
 ItemDisplay[(cm1 OR cm2 OR cm3) !UNI LRES>0 !(RES>0)]: %YELLOW%%STAT41%%Light RES %NAME%%CONTINUE%%DOT-93%%TIER-4%
@@ -2743,7 +2743,7 @@ ItemDisplay[SOCK_WEAP_4_6 2H NMAG SOCK=0 ILVL>40]: %NAME%{%NAME%%TEAL%q:%WHITE%6
 ItemDisplay[wst NMAG SOCK=0 ILVL<26]: %NAME%{%NAME%%TEAL%q:%WHITE%5, %RED%c:%WHITE%1-5%GOLD%/%RED%b}%CONTINUE%
 ItemDisplay[wst NMAG SOCK=0 ILVL>25]: %NAME%{%NAME%%TEAL%q:%WHITE%6, %RED%c:%WHITE%1-6%GOLD%/%RED%b}%CONTINUE%
 ItemDisplay[UNI cm3]: %NAME%{%NAME%%GHEEDS_TOOLTIP_LINE%}%CONTINUE%
-ItemDisplay[SET ID !STASH]: %NAME%{%RED%Set bonuses Shows in Stash%NL%%NAME%}
+ItemDisplay[SET ID !STASH]: %NAME%{%RED%Set bonuses Shows in Stash%NL%%NAME%}%CONTINUE%
 ItemDisplay[UNI ID STAT270>0]: %DOT-0A%%MAP-9B%%BORDER-1F%%ORANGE%Anniversary %NAME%{%NAME%%CL%}%CONTINUE%
 ItemDisplay[STAT477=4]: %DOT-0A%%MAP-9B%%BORDER-1F%%ORANGE%Black%CL%%WHITE%>> %PURPLE%>> %WHITE%>> %PURPLE%Mirrored %WHITE%<< %PURPLE%<< %WHITE%<<%CL%%NAME%{%NAME%%CL%}
 ItemDisplay[STAT477=21]: %DOT-0A%%MAP-9B%%BORDER-1F%%ORANGE%White%CL%%WHITE%>> %PURPLE%>> %WHITE%>> %PURPLE%Mirrored %WHITE%<< %PURPLE%<< %WHITE%<<%CL%%NAME%{%NAME%%CL%}
@@ -3698,7 +3698,7 @@ ItemDisplay[(RARE OR CRAFT) (9pi OR 9s9 OR 9gl OR 9ts OR ama) ED>139 STAT360=0 E
 ItemDisplay[(RARE OR CRAFT) (9pi OR 9s9 OR 9gl OR 9ts OR ama) ((ED>179) OR (ED>139 ((IAS>19) OR (MAXDMG>19)))) STAT360>0 ETH LVLREQ<31]: %DOT-9F%%TEAL%usable lld%CL%%NAME%{%NAME%}
 ItemDisplay[(RARE OR CRAFT) (8lw OR 8rx OR am6 OR 8sw) ((ED>199 STAT360>0 ((IAS>19) OR (MAXDMG>19))) OR (ED>199 STAT360>0 IAS<20 SOCK>2) OR (ED>229 STAT360>0 IAS<20 SOCK<3) OR (STAT360>0 TABSK0>2 ((IAS>19 SOCK>2) OR (IAS>39 SOCK=0)))) LVLREQ<31]: %DOT-9F%%TEAL%usable lld%CL%%NAME%{%NAME%}
 ItemDisplay[(RARE OR CRAFT) (8lw OR 8rx OR am6 OR 8sw) ((ED>169 STAT360=0) OR (STAT360=0 TABSK0>2 IAS>19) OR (STAT360=0 TABSK0>3 IAS<20)) LVLREQ<31]: %DOT-9F%%TEAL%corruptible lld%CL%%NAME%{%NAME%}
-ItemDisplay[(WEAPON !UNI (EDAM>149 OR SUFFIX=662 OR SUFFIX=898) LVLREQ<31) OR (WEAPON !UNI (SUFFIX=907 OR SUFFIX=908 OR SUFFIX=910 OR SUFFIX=911) LVLREQ<31) OR (UNI ID (stu OR gth OR aar OR xui OR vgl OR xap OR kit OR wax OR cbw OR mau OR gma OR wst OR flb OR gsd OR tbt OR zlb OR dr2 OR tgl OR fld OR am5) STAT360=0) OR (SET ID (bwn OR vbt OR lbt OR lbl OR lgl) STAT360=0) OR (SET ID amu (STAT360=0 AND STAT89=3)) OR (SET ID rin (STAT360=0 AND STAT74=6))]: %TEAL%lld%CL%%NAME%{%NAME%}%CONTINUE%
+ItemDisplay[(WEAPON !UNI (EDAM>149 OR SUFFIX=662 OR SUFFIX=898) LVLREQ<31) OR (WEAPON !UNI (SUFFIX=907 OR SUFFIX=908 OR SUFFIX=910 OR SUFFIX=911) LVLREQ<31) OR (UNI ID (stu OR gth OR aar OR xui OR vgl OR xap OR kit OR wax OR cbw OR mau OR gma OR wst OR flb OR gsd OR tbt OR zlb OR dr2 OR tgl OR fld OR am5) STAT360=0) OR (!PHIL777_STYLE SET ID (bwn OR vbt OR lbt OR lbl OR lgl) STAT360=0) OR (!PHIL777_STYLE SET ID amu (STAT360=0 AND STAT89=3)) OR (!PHIL777_STYLE SET ID rin (STAT360=0 AND STAT74=6))]: %TEAL%lld%CL%%NAME%{%NAME%}%CONTINUE%
 ItemDisplay[QUIVER ID (RARE OR CRAFT) LVLREQ<31 (FCR>0 OR IAS>0 OR TABSK0>0)]: %TEAL%quiver lld%CL%%NAME%{%NAME%}%CONTINUE%
 ItemDisplay[BELT ID (RARE OR CRAFT) LVLREQ<31 (FCR>0 OR FHR>16 OR LIFE>69)]: %TEAL%belt lld%CL%%NAME%{%NAME%}%CONTINUE%
 ItemDisplay[(CHEST ID (RARE OR CRAFT) LVLREQ<31 STAT36>7 LIFE>49 (EDAM>0 OR CLSK0>0 OR CLSK1>0 OR CLSK2>0 OR CLSK3>0 OR CLSK4>0 OR CLSK5>0 OR CLSK6>0 OR FCR>0 OR SOCK=3)) OR ((aar OR xar OR ful OR xul OR gth OR xth) ID (RARE OR CRAFT) LVLREQ<31 ETH EDEF>0 (STAT36>7 OR EDAM>0 OR CLSK0>0 OR CLSK1>0 OR CLSK2>0 OR CLSK3>0 OR CLSK4>0 OR CLSK5>0 OR CLSK6>0 OR FCR>0 OR SOCK=3 OR REPAIR>0))]: %TEAL%armor lld%CL%%NAME%{%NAME%}%CONTINUE%
@@ -4018,6 +4018,7 @@ ItemDisplay[(wsp OR 9ws OR 7ws) SK117>2 NMAG !INF (SOCK=0 OR SOCK=5) !RW FILTLVL
 ItemDisplay[(wsp OR 9ws OR 7ws) SK119>2 NMAG !INF (SOCK=0 OR SOCK=5) !RW FILTLVL<5]: %NAME% %DOT-76%%DARK_GREEN%[CTA]{%NAME%}
 ItemDisplay[7ws ETH !INF NMAG !RW (SOCK=0 OR SOCK=5) FILTLVL<9]: %NAME%{%NAME%}
 ItemDisplay[7ws !INF NMAG !RW (SOCK=0 OR SOCK=5) EDAM>5 FILTLVL<9]: %NAME%{%NAME%}
+ItemDisplay[scy NMAG !RW SOCK=5 FILTLVL<5]: %NAME% %DOT-76%%DARK_GREEN%[CTA]{%NAME%}
 ItemDisplay[(SPEAR OR POLEARM) ELT ETH !INF SOCK=0 NMAG !RW EDAM>0 (EDAM>9 OR FILTLVL<5) FILTLVL<7]: %NAME%{%NAME%}
 ItemDisplay[(SPEAR OR POLEARM) ELT ETH !INF SOCK=0 NMAG !RW EDAM>17 FILTLVL<8]: %NAME%{%NAME%}
 ItemDisplay[(SPEAR OR POLEARM) ELT ETH !INF SOCK=0 NMAG !RW EDAM>19 FILTLVL<9]: %NAME%{%NAME%}
