@@ -1,4 +1,4 @@
-//	Varyk's Kryszard and Roofoo S14 Fusion: ver 14.0.1 (based on Kryszard's PD2 Loot Filter ver 13.3.2)
+//	Varyk's Kryszard and Roofoo S14 Fusion: ver 14.0.2 (based on Kryszard's PD2 Loot Filter ver 13.3.2)
 //	S14 merge: Holy Grail tags/alerts from Roofoo's S14 filter (twitch.tv/roofooevazan, made with PD2 Filter Forge),
 //	new S14 maps, towns, uniques and runewords added. All other design and settings are Kryszard's.
 //	Maintained by Varyk. Strict levels: 6 = no potions (rejuvs still show), 7 = also hides flawless gems/skulls. Strict+ = curated rare weapons and class items (see VARYK STRICTNESS RULES).
@@ -19,7 +19,7 @@ ItemDisplayFilterName[]: Strict Filter - w/o Large Charms
 ItemDisplayFilterName[]: Max-Strictness Filter
 
 //Show info about current Filter Level in description of Horadric Cube
-ItemDisplay[box]:%NAME%{%NAME%%NL%%GRAY%item.filter ver 14.0.1 S14 grail merge %BLACK%| %GRAY% updated: 2026-11-17}%CONTINUE%
+ItemDisplay[box]:%NAME%{%NAME%%NL%%GRAY%item.filter ver 14.0.2 S14 grail merge %BLACK%| %GRAY% updated: 2026-11-18}%CONTINUE%
 ItemDisplay[box FILTLVL=0]: %NAME%{%NAME%%NL%%WHITE%You Can Change it in Settings%NL%0 - %TAN%Show All Items%NL%%TAN% Note%WHITE%: Kryszard's PD2 Loot-Filter level:%NL%}
 ItemDisplay[box FILTLVL=1]: %NAME%{%NAME%%NL%%WHITE%You Can Change it in Settings%NL%1 - %TAN%Hide Just Trash Items%NL%%TAN% Note%WHITE%: Kryszard's PD2 Loot-Filter level:%NL%}
 ItemDisplay[box FILTLVL=2]: %NAME%{%NAME%%NL%%WHITE%You Can Change it in Settings%NL%2 - %TAN%More Notify%NL%%TAN% Note%WHITE%: Kryszard's PD2 Loot-Filter level:%NL%}
@@ -3240,8 +3240,10 @@ ItemDisplay[((NEC NECROMANCER) OR (DIN PALADIN)) RARE !ID VKCLASSILVL FILTLVL>5 
 ItemDisplay[(NEC OR DIN) RARE !ID !(TOWN OR INVENTORY OR STASH OR CUBE OR EQUIPPED OR MERC) FILTLVL>5 CLVL>69]: {%NAME%}
 //Orbs: own class only. Caster weapons, so no ethereal-only rule on Max
 ItemDisplay[SOR SORCERESS RARE !ID VKCLASSILVL FILTLVL>5 CLVL>69]: %DOT-A8%%TIER-7%%NAME%
-//Amazon weapons (no Stag/Ashwood/Matriarchal bows): own class only, ethereal only on Max
-ItemDisplay[VKAMA !VKAMASTAG AMAZON RARE !ID VKCLASSILVL FILTLVL>5 (FILTLVL~6-7 OR ETH) CLVL>69]: %DOT-A8%%TIER-7%%NAME%
+//Amazon weapons (no Stag/Ashwood/Matriarchal bows): own class only, ethereal only on Max. Amazon bows (Reflex, Ceremonial, Grand Matron) can't be ethereal, so they also show on Max
+ItemDisplay[VKAMA !VKAMASTAG AMAZON RARE !ID VKCLASSILVL FILTLVL>5 (FILTLVL~6-7 OR ETH OR am2 OR am7 OR amc) CLVL>69]: %DOT-A8%%TIER-7%%NAME%
+//Rare Reflex, Ceremonial and Grand Matron bows: shown for every class at every filter level and character level (Amazons at item level 70+ still get the pin above)
+ItemDisplay[(am2 OR am7 OR amc) RARE !ID]: %NAME%
 ItemDisplay[(SOR OR VKAMA) RARE !ID !(TOWN OR INVENTORY OR STASH OR CUBE OR EQUIPPED OR MERC) FILTLVL>5 CLVL>69]: {%NAME%}
 //Staves: sorceress only. Caster weapons, so no ethereal pin or ethereal-only rule
 ItemDisplay[STAFF SORCERESS RARE !ID FILTLVL>5 CLVL>69]: %NAME%
@@ -3249,9 +3251,10 @@ ItemDisplay[STAFF SORCERESS RARE !ID FILTLVL>5 CLVL>69]: %NAME%
 //Strict (6) and up: regular rare shields, only the elite 4-socket bases (Monarch, Aegis, Ward). Class shields are handled above
 ItemDisplay[SHIELD !(DIN OR NEC) !(uit OR uow OR uts) RARE !ID !(TOWN OR INVENTORY OR STASH OR CUBE OR EQUIPPED OR MERC) FILTLVL>5 CLVL>69]: {%NAME%}
 
-//Strict (6) and up: other rare weapons, only the chosen bases. Ethereal ones get a pin. Max: ethereal only (physical weapons only; orbs and staves are exempt)
+//Strict (6) and up: other rare weapons, only the chosen bases. Ethereal ones get a pin. Max: ethereal only (physical weapons only; orbs and staves are exempt; bows and crossbows can't be ethereal, so they still show on Max)
 ItemDisplay[(VKWEP1H OR VKWEPBOW OR VKWEP2H OR VKWEPJAV) RARE !ID ETH FILTLVL>5 CLVL>69]: %DOT-A8%%NAME%
 ItemDisplay[(VKWEP1H OR VKWEPBOW OR VKWEP2H OR VKWEPJAV) RARE !ID FILTLVL~6-7 CLVL>69]: %NAME%
+ItemDisplay[VKWEPBOW RARE !ID FILTLVL>7 CLVL>69]: %NAME%
 ItemDisplay[WEAPON RARE !ID !(TOWN OR INVENTORY OR STASH OR CUBE OR EQUIPPED OR MERC) FILTLVL>5 CLVL>69]: {%NAME%}
 
 //BASES (white/grey, non-magic): Recommended = good bases only (no plain ones); Strict = sellable bases; Max = ethereal Sacred Armor only
@@ -3263,7 +3266,7 @@ ItemDisplay[(utp OR uul) ETH NMAG !INF !RW ED>0 (SOCK=0 OR SOCK=4) FILTLVL~6-7 C
 ItemDisplay[(usk OR uh9) NMAG !INF !RW ED>14 (SOCK=0 OR SOCK=3) FILTLVL~6-7 CLVL>69]: %DOT-D6%%NAME%{%NAME%}
 //Strict: paladin shields with 28+ all resist and enhanced defense, 0 or 4 sockets
 ItemDisplay[DIN NMAG !INF !RW RES>27 ED>0 (SOCK=0 OR SOCK=4) FILTLVL~6-7 CLVL>69]: %DOT-D6%%NAME%{%NAME%}
-ItemDisplay[NMAG (ARMOR OR WEAPON) !RW !(TOWN OR INVENTORY OR STASH OR CUBE OR EQUIPPED OR MERC) FILTLVL>5 CLVL>69]: {%NAME%}
+ItemDisplay[NMAG (ARMOR OR WEAPON) !leg !RW !(TOWN OR INVENTORY OR STASH OR CUBE OR EQUIPPED OR MERC) FILTLVL>5 CLVL>69]: {%NAME%}
 //Recommended: elite body armor with enhanced defense (Kryszard's sockets: not 1-2)
 ItemDisplay[CHEST ELT NMAG !INF !RW ED>0 !SOCK~1-2 FILTLVL~4-5 CLVL>69]: %DOT-D6%%TIER-5%%NAME%{%NAME%}
 //Recommended: elite helms that can roll 3 sockets, with enhanced defense, 0 or 3 sockets
@@ -3278,7 +3281,7 @@ ItemDisplay[(VKWEP1H OR VKWEPBOW OR VKWEP2H OR VKWEPJAV) NMAG !INF !RW ED>14 !SO
 ItemDisplay[(7wc OR 7pa OR 7s8 OR 7vo OR 7h7 OR 7tr OR 7br OR 7st OR 7o7 OR 7sr) ETH NMAG !INF !RW !SOCK~1-3 FILTLVL~4-5 CLVL>69]: %DOT-D6%%TIER-5%%NAME%{%NAME%}
 ItemDisplay[7p7 ETH NMAG !INF !RW !SOCK=1 FILTLVL~4-5 CLVL>69]: %DOT-D6%%TIER-5%%NAME%{%NAME%}
 //Recommended: white items with class skills and 1-socket Amazon craft bases keep Kryszard's rules; every other plain base is hidden
-ItemDisplay[NMAG (ARMOR OR WEAPON) !RW !(AMASTAFF OR NECSTAFF OR ASNSTAFF OR BARSTAFF OR DRUSTAFF OR PALSTAFF OR SORSTAFF) !(AMAZON SOCK=1) !(TOWN OR INVENTORY OR STASH OR CUBE OR EQUIPPED OR MERC) FILTLVL~4-5 CLVL>69]: {%NAME%}
+ItemDisplay[NMAG (ARMOR OR WEAPON) !leg !RW !(AMASTAFF OR NECSTAFF OR ASNSTAFF OR BARSTAFF OR DRUSTAFF OR PALSTAFF OR SORSTAFF) !(AMAZON SOCK=1) !(TOWN OR INVENTORY OR STASH OR CUBE OR EQUIPPED OR MERC) FILTLVL~4-5 CLVL>69]: {%NAME%}
 //================== END VARYK STRICTNESS RULES ==================
 
 //Class dependence highlight items
