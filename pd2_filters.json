@@ -835,6 +835,23 @@
         }
     ],
     [
+        "Varyk",
+        {
+            "info": {
+                "name": "Varyk's Kryszard and Roofoo S14 Fusion",
+                "url": "https://api.github.com/repos/varyk04/pd2-loot-filter/contents",
+                "author": "Varyk"
+            },
+            "filters": [
+                {
+                    "name": "Varyk_Kryszard_Roofoo_S14_Fusion.filter",
+                    "url": "https://api.github.com/repos/varyk04/pd2-loot-filter/contents/Varyk_Kryszard_Roofoo_S14_Fusion.filter?ref=main",
+                    "download_url": "https://raw.githubusercontent.com/varyk04/pd2-loot-filter/main/Varyk_Kryszard_Roofoo_S14_Fusion.filter"
+                }
+            ]
+        }
+    ],
+    [
         "Vylens",
         {
             "info": {
