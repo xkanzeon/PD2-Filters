@@ -112,7 +112,7 @@ Alias[NOTIFYSET1]: (((ARMOR OR WEAPON OR QUIVER) (EXC OR ELT OR ci0 OR ba5 OR lb
 
 //NMAG ITEMS WITH ED TO SHOW EXACT ED VALUES 
 //Armors
-Alias[EDARMOR]: ((((CHEST OR (HELM !(BAR OR DRU)) OR (SHIELD !(DIN OR NEC))) ELT) OR (DIN (EXC OR ELT) (RES>19 OR AR>100)) OR (gth OR ful OR aar) OR (xng OR xcl OR xhn OR xrs OR xpl OR xlt OR xld OR xtp) OR ci3 OR xsh OR xpk OR xhm OR (RW ARMOR)) !SOCK=1 !INF SUP NMAG ED>4)
+Alias[EDARMOR]: ((((CHEST OR (HELM !(BAR OR DRU)) OR (SHIELD !(DIN OR NEC))) ELT) OR (DIN (RES>19 OR AR>100)) OR (gth OR ful OR aar) OR (xng OR xcl OR xhn OR xrs OR xpl OR xlt OR xld OR xtp) OR ci3 OR xsh OR xpk OR xhm OR (RW ARMOR)) !SOCK=1 !INF SUP NMAG ED>4)
 //Weapons
 Alias[EDWEAPON]: ((((WEAPON !SIN !SOR !WAND !SCEPTER !STAFF !(clb OR 9cl OR 7cl OR spc OR 9sp OR 7sp) !DAGGER) ELT) OR 8rx OR (RW WEAPON)) !SOCK=1 !INF SUP NMAG ED>4)
 
@@ -393,10 +393,10 @@ Alias[VKCLASSILVL]: (ALVL>69 OR CRAFTALVL>69)
 Alias[VKWARFIST]: (axf OR 9xf OR 7xf)
 Alias[VKAMA]: (am1 OR am2 OR am3 OR am4 OR am5 OR am6 OR am7 OR am8 OR am9 OR ama OR amb OR amc OR amd OR ame OR amf)
 Alias[VKAMASTAG]: (am1 OR am6 OR amb)
-//One-handers: Crystal Sword, War Axe, Flail, War Hammer lines
-Alias[VKWEP1H]: (crs OR 9cr OR 7cr OR wax OR 9wa OR 7wa OR fla OR 9fl OR 7fl OR whm OR 9wh OR 7wh)
-//Bows: Long Bow, Long Battle Bow, Long War Bow lines. Crossbows: Heavy and Repeating Crossbow lines
-Alias[VKWEPBOW]: (lbw OR 8lb OR 6lb OR lbb OR 8l8 OR 6l7 OR lwb OR 8lw OR 6lw OR hxb OR 8hx OR 6hx OR rxb OR 8rx OR 6rx)
+//One-handers: Crystal Sword, War Axe, Flail, War Hammer, Morning Star (Jagged Star/Devil Star) lines
+Alias[VKWEP1H]: (crs OR 9cr OR 7cr OR wax OR 9wa OR 7wa OR fla OR 9fl OR 7fl OR whm OR 9wh OR 7wh OR mst OR 9mt OR 7mt)
+//Bows: Long Bow, Long Battle Bow, Short Battle Bow (Short Siege Bow/Diamond Bow), Long War Bow lines. Crossbows: Heavy and Repeating Crossbow lines
+Alias[VKWEPBOW]: (lbw OR 8lb OR 6lb OR lbb OR 8l8 OR 6l7 OR sbb OR 8s8 OR 6s7 OR lwb OR 8lw OR 6lw OR hxb OR 8hx OR 6hx OR rxb OR 8rx OR 6rx)
 //Two-handers: Giant Sword, Bastard Sword, Flamberge, Great Sword, both Maul lines, Pike line, Battle/Great/Giant Axe lines
 Alias[VKWEP2H]: (gis OR 9gs OR 7gs OR bsw OR 9b9 OR 7b7 OR flb OR 9fb OR 7fb OR gsd OR 9gd OR 7gd OR mau OR 9m9 OR 7m7 OR gma OR 9gm OR 7gm OR pik OR 9p9 OR 7p7 OR btx OR 9bt OR 7bt OR gax OR 9ga OR 7ga OR gix OR 9gi OR 7gi)
 //Javelins: Throwing Spear and Glaive lines
@@ -4968,6 +4968,15 @@ ItemDisplay[BOOTS (RARE OR CRAFT OR SET OR UNI) ID $f(count(FRES>0,LRES>0,CRES>0
 ItemDisplay[BOOTS (RARE OR CRAFT OR SET OR UNI) ID $f(count(FRES>0,LRES>0,CRES>0,PRES>0))=4 $f(FRES+LRES+CRES+PRES)<70]: %NAME% %RED%$f(FRES+LRES+CRES+PRES)R{%NAME%%CL%%RED%*%WHITE%*%RED%* %RED%$f(FRES+LRES+CRES+PRES) Quad Res %RED%*%WHITE%*%RED%*}%CONTINUE%
 ItemDisplay[BOOTS (RARE OR CRAFT OR SET OR UNI) ID $f(count(FRES>0,LRES>0,CRES>0,PRES>0))=4 $f(FRES+LRES+CRES+PRES)>69 $f(FRES+LRES+CRES+PRES)<91]: %NAME% %ORANGE%$f(FRES+LRES+CRES+PRES)R{%NAME%%CL%%RED%*%WHITE%*%RED%* %ORANGE%$f(FRES+LRES+CRES+PRES) Quad Res %RED%*%WHITE%*%RED%*}%CONTINUE%
 ItemDisplay[BOOTS (RARE OR CRAFT OR SET OR UNI) ID $f(count(FRES>0,LRES>0,CRES>0,PRES>0))=4 $f(FRES+LRES+CRES+PRES)>90]: %NAME% %GREEN%$f(FRES+LRES+CRES+PRES)R{%NAME%%CL%%GREEN%*%TEAL%*%GREEN%* %GREEN%$f(FRES+LRES+CRES+PRES) Quad Res %GREEN%*%TEAL%*%GREEN%*}%CONTINUE%
+
+//Helm and glove melee mods: Enhanced Damage (ED), Deadly Strike (DS), Crushing Blow (CB) tag + values. White = 1 mod, orange = 2, green = all 3
+ItemDisplay[(HELM OR CIRC OR GLOVES) (RARE OR CRAFT) ID STAT17>0 STAT141=0 STAT136=0]: %NAME% %WHITE%$f(STAT17)ED{%NAME%%CL%%WHITE%*%GRAY%*%WHITE%* %WHITE%ED %WHITE%*%GRAY%*%WHITE%*}%CONTINUE%
+ItemDisplay[(HELM OR CIRC OR GLOVES) (RARE OR CRAFT) ID STAT17=0 STAT141>0 STAT136=0]: %NAME% %WHITE%$f(STAT141)DS{%NAME%%CL%%WHITE%*%GRAY%*%WHITE%* %WHITE%DS %WHITE%*%GRAY%*%WHITE%*}%CONTINUE%
+ItemDisplay[(HELM OR CIRC OR GLOVES) (RARE OR CRAFT) ID STAT17=0 STAT141=0 STAT136>0]: %NAME% %WHITE%$f(STAT136)CB{%NAME%%CL%%WHITE%*%GRAY%*%WHITE%* %WHITE%CB %WHITE%*%GRAY%*%WHITE%*}%CONTINUE%
+ItemDisplay[(HELM OR CIRC OR GLOVES) (RARE OR CRAFT) ID STAT17>0 STAT141>0 STAT136=0]: %NAME% %ORANGE%$f(STAT17)ED/$f(STAT141)DS{%NAME%%CL%%ORANGE%*%WHITE%*%ORANGE%* %ORANGE%ED + DS %ORANGE%*%WHITE%*%ORANGE%*}%CONTINUE%
+ItemDisplay[(HELM OR CIRC OR GLOVES) (RARE OR CRAFT) ID STAT17>0 STAT141=0 STAT136>0]: %NAME% %ORANGE%$f(STAT17)ED/$f(STAT136)CB{%NAME%%CL%%ORANGE%*%WHITE%*%ORANGE%* %ORANGE%ED + CB %ORANGE%*%WHITE%*%ORANGE%*}%CONTINUE%
+ItemDisplay[(HELM OR CIRC OR GLOVES) (RARE OR CRAFT) ID STAT17=0 STAT141>0 STAT136>0]: %NAME% %ORANGE%$f(STAT141)DS/$f(STAT136)CB{%NAME%%CL%%ORANGE%*%WHITE%*%ORANGE%* %ORANGE%DS + CB %ORANGE%*%WHITE%*%ORANGE%*}%CONTINUE%
+ItemDisplay[(HELM OR CIRC OR GLOVES) (RARE OR CRAFT) ID STAT17>0 STAT141>0 STAT136>0]: %NAME% %GREEN%$f(STAT17)ED/$f(STAT141)DS/$f(STAT136)CB{%NAME%%CL%%GREEN%*%TEAL%*%GREEN%* %GREEN%ED + DS + CB %GREEN%*%TEAL%*%GREEN%*}%CONTINUE%
 
 //Show me every identified item
 ItemDisplay[(ARMOR OR WEAPON OR QUIVER) (MAG OR RARE OR SET OR UNI OR CRAFT) ID]: %NAME%{%NAME%}
