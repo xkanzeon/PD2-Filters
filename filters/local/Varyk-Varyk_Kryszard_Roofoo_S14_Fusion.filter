@@ -406,7 +406,7 @@ Alias[VKWEPJAV]: (tsp OR 9ts OR 7ts OR glv OR 9gl OR 7gl)
 //Special Items Exclusives
 ItemDisplay[neg UNI !ID !TOWN !(GRAILUNI OR GRAILSET)]: %SOUNDID-4699%%NAME%{%NAME%}%CONTINUE% //fallen_warcry_1 - for Sacred Totem "Raaaakanishu!"
 ItemDisplay[jew UNI !ID !TOWN]: %SOUNDID-2669%%NAME%{%NAME%}%CONTINUE% //shrine_gemupgrade - for Rainbow Facet
-ItemDisplay[(uba OR ubaa OR ubab OR ubac) !TOWN]: %SOUNDID-1123%%NAME%{%NAME%}%CONTINUE% //greatermummy_resurrect_1 - for Uber Ancients sigils (was wussie_let_us_out_2)
+ItemDisplay[(uba OR ubaa OR ubab OR ubac) !TOWN]: %SOUNDID-4610%%NAME%{%NAME%}%CONTINUE% //wussie "Over here!" - for Uber Ancients sigils (4607-4609 are "Let us out!" takes)
 ItemDisplay[cm3 UNI !ID !TOWN !(GRAILUNI OR GRAILSET)]: %SOUNDID-3918%%NAME%{%NAME%}%CONTINUE% //gheed_greeting_time_2 - for Gheed's Fortune
 //Runes and Larzuk Puzzlepiece
 ItemDisplay[RUNE>25 !TOWN]: %SOUNDID-418%%NAME%{%NAME%}%CONTINUE% //cairn_success - for HRs 
