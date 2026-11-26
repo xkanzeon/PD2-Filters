@@ -344,6 +344,7 @@ Alias[splitthrow70]: ($f(SK375+TABSK32+CLSK4+STAT127)>3) // Split Throw 375
 // ======================================================================================================== END OF ALIASES =========================================================================================================
 
 // Gold
+ItemDisplay[GOLD>0 (MAPID=197 OR MAPID=198 OR MAPID=199) FILTLVL>1]: // Hide all gold in Djinn's Domain
 ItemDisplay[GOLD<15 (CLVL>3 OR FILTLVL>3)]:
 ItemDisplay[GOLD<30 (CLVL>5 OR FILTLVL>3)]:
 ItemDisplay[GOLD<200 (CLVL>11 OR FILTLVL>3)]:
@@ -448,7 +449,7 @@ ItemDisplay[NMAG !ID SHOP hla MAPID>132]: %NAME%%GOLD%Skin of the Flayed One%NL%
 ItemDisplay[NMAG !ID SHOP stu MAPID>132]: %NAME%%GOLD%The Gladiator's Bane%NL%%WHITE%Elite Tier:%NL%%NL%%GOLD%Iron Pelt%NL%%WHITE%Exceptional Tier:%NL%%NL%%GOLD%Twitchthroe%NL%%WHITE%Normal Tier:%CONTINUE%
 ItemDisplay[NMAG !ID SHOP rng MAPID>132]: %NAME%%GOLD%Wraithskin%NL%%WHITE%Elite Tier:%NL%%NL%%GOLD%Spirit Forge%NL%%WHITE%Exceptional Tier:%NL%%NL%%GOLD%Darkglow%NL%%WHITE%Normal Tier:%CONTINUE%
 ItemDisplay[NMAG !ID SHOP scl MAPID>132]: %NAME%%GOLD%Crow Caw%NL%%WHITE%Exceptional Tier:%NL%%NL%%GOLD%Hawkmail%NL%%WHITE%Normal Tier:%CONTINUE%
-ItemDisplay[NMAG !ID SHOP brs MAPID>132]: %NAME%%GOLD%Duriel's Shell%NL%%WHITE%Exceptional Tier:%NL%%NL%%GOLD%Venom Ward%NL%%WHITE%Normal Tier:%CONTINUE%
+ItemDisplay[NMAG !ID SHOP brs MAPID>132]: %NAME%%GOLD%Spectral Plate%NL%%WHITE%Elite Tier:%NL%%NL%%GOLD%Duriel's Shell%NL%%WHITE%Exceptional Tier:%NL%%NL%%GOLD%Venom Ward%NL%%WHITE%Normal Tier:%CONTINUE%
 ItemDisplay[NMAG !ID SHOP chn MAPID>132]: %NAME%%GOLD%Shaftstop%NL%%WHITE%Exceptional Tier:%NL%%NL%%GOLD%Sparking Mail%NL%%WHITE%Normal Tier:%CONTINUE%
 ItemDisplay[NMAG !ID SHOP spl MAPID>132]: %NAME%%GOLD%Arkaine's Valor%NL%%WHITE%Elite Tier:%NL%%NL%%GOLD%Skullder's Ire%NL%%WHITE%Exceptional Tier:%NL%%NL%%GOLD%Iceblink%NL%%WHITE%Normal Tier:%CONTINUE%
 ItemDisplay[NMAG !ID SHOP ltp MAPID>132]: %NAME%%GOLD%Purgatory%NL%%WHITE%Elite Tier:%NL%%NL%%GOLD%Que-Hegan's Wisdom%NL%%WHITE%Exceptional Tier:%NL%%NL%%GOLD%Heavenly Garb%NL%%WHITE%Normal Tier:%CONTINUE%
@@ -480,7 +481,7 @@ ItemDisplay[NMAG !ID SHOP ghm MAPID>132]: %NAME%%GOLD%Nightwing's Veil%NL%Veil o
 ItemDisplay[NMAG !ID SHOP msk MAPID>132]: %NAME%%GOLD%Andariel's Visage%NL%%WHITE%Elite Tier:%NL%%NL%%GOLD%Blackhorn's Face%NL%%WHITE%Exceptional Tier:%NL%%NL%%GOLD%The Face of Horror%NL%%WHITE%Normal Tier:%CONTINUE%
 ItemDisplay[NMAG !ID SHOP crn MAPID>132]: %NAME%%GOLD%Crown of Ages%NL%%WHITE%Elite Tier:%NL%%NL%%GOLD%Crown of Thieves%NL%%WHITE%Exceptional Tier:%NL%%NL%%GOLD%Undead Crown%NL%%WHITE%Normal Tier:%CONTINUE%
 ItemDisplay[NMAG !ID SHOP bhm MAPID>132]: %NAME%%GOLD%Giant Skull%NL%%WHITE%Elite Tier:%NL%%NL%%GOLD%Vampire Gaze%NL%%WHITE%Exceptional Tier:%NL%%NL%%GOLD%Wormskull%NL%%WHITE%Normal Tier:%CONTINUE%
-ItemDisplay[NMAG !ID SHOP buc MAPID>132]: %NAME%%GOLD%Visceratuant%NL%%WHITE%Exceptional Tier:%NL%%NL%%GOLD%Pelta Lunata%NL%%WHITE%Normal Tier:%CONTINUE%
+ItemDisplay[NMAG !ID SHOP buc MAPID>132]: %NAME%%GOLD%Warriv's Warder%NL%%WHITE%Elite Tier:%NL%%NL%%GOLD%Visceratuant%NL%%WHITE%Exceptional Tier:%NL%%NL%%GOLD%Pelta Lunata%NL%%WHITE%Normal Tier:%CONTINUE%
 ItemDisplay[NMAG !ID SHOP sml MAPID>132]: %NAME%%GOLD%Blackoak Shield%NL%%WHITE%Elite Tier:%NL%%NL%%GOLD%Moser's Blessed Circle%NL%%WHITE%Exceptional Tier:%NL%%NL%%GOLD%Umbral Disk%NL%%WHITE%Normal Tier:%CONTINUE%
 ItemDisplay[NMAG !ID SHOP lrg MAPID>132]: %NAME%%GOLD%Twilight's Reflection%NL%%WHITE%Elite Tier:%NL%%NL%%GOLD%Stormchaser%NL%%WHITE%Exceptional Tier:%NL%%NL%%GOLD%Stormguild%NL%%WHITE%Normal Tier:%CONTINUE%
 ItemDisplay[NMAG !ID SHOP kit MAPID>132]: %NAME%%GOLD%Stormshield%NL%%WHITE%Elite Tier:%NL%%NL%%GOLD%Tiamat's Rebuke%NL%%WHITE%Exceptional Tier:%NL%%NL%%GOLD%Steelclash%NL%%WHITE%Normal Tier:%CONTINUE%
@@ -944,32 +945,38 @@ ItemDisplay[gzv OR glw OR glg OR glr OR glb OR gly OR skl]: %NAME%{%DARK_GREEN%P
 ItemDisplay[gzv OR glw OR glg OR glr OR glb OR gly OR skl]: %NAME%{%NAME%%NL%}%CONTINUE%
 
 // --- Crafting Infusions -----------------------------------------------------------------------------------
-// On the ground outside of Town and x1 quantity
 ItemDisplay[crfc GROUND !TOWN QTY=1]: %DOT-70%%GOLD%Caster Inf %ORANGE%[%PURPLE%O%ORANGE%]
-ItemDisplay[crfu GROUND !TOWN QTY=1]: %DOT-70%%GOLD%Bountiful Inf %ORANGE%[%YELLOW%O%ORANGE%]
-ItemDisplay[crfh GROUND !TOWN QTY=1]: %DOT-70%%GOLD%Hitpower Inf %ORANGE%[%BLUE%O%ORANGE%]
-ItemDisplay[crfs GROUND !TOWN QTY=1]: %DOT-70%%GOLD%Safety Inf %ORANGE%[%GREEN%O%ORANGE%]
-ItemDisplay[crfb GROUND !TOWN QTY=1]: %DOT-70%%GOLD%Blood Inf %ORANGE%[%RED%O%ORANGE%]
-ItemDisplay[crfp GROUND !TOWN QTY=1]: %DOT-70%%GOLD%Brilliant Inf %ORANGE%[%WHITE%O%ORANGE%]
-ItemDisplay[crfv GROUND !TOWN QTY=1]: %DOT-70%%GOLD%Vampiric Inf %ORANGE%[%GRAY%O%ORANGE%]
-// Elsewhere
 ItemDisplay[crfc]: %DOT-70%%NAME% %ORANGE%[%PURPLE%O%ORANGE%] %TAN%x %WHITE%%QTY%{Weapon: 1 all skills, 10-20fcr, 10-20mana%NL%Quiver: 10fcr, 10-20mana, 2-4mpk%NL%Shield: 10-20blk, 10fcr, 20-30mana%PERCENT%%NL%Chest: 10-15fcr, 3-6mpk, 15-25energy%NL%Helm: 10fcr, 5-10reg, 10-20energy%NL%Boots: 10-15mana%PERCENT%, 4-10reg, 10-20mana%NL%Gloves: 5-10fcr, 1-3mpk, 10-20mana%NL%Belt: 10fcr, 4-10reg, 10-20mana%NL%Ring: 5-10energy, 1-2mpk, 10-20mana%NL%Amulet: 5-10fcr, 4-10reg, 10-20mana%NL%%ORANGE%Caster [%PURPLE%O%ORANGE%]}
+ItemDisplay[crfu GROUND !TOWN QTY=1]: %DOT-70%%GOLD%Bountiful Inf %ORANGE%[%YELLOW%O%ORANGE%]
 ItemDisplay[crfu]: %DOT-70%%NAME% %ORANGE%[%YELLOW%O%ORANGE%] %TAN%x %WHITE%%QTY%{Weapon: 1 all skills, 25-40gf, 15-25mf%NL%Quiver: 5-10vit, 25-40eg, 15-25mf%NL%Shield: 10-20blk, 30-50gf, 20-30mf%NL%Chest: 30-50%def, 30-50gf, 20-30mf%NL%Helm: 25-50%def, 25-40gf, 15-25mf%NL%Boots: 25-50%def, 20-30gf, 10-20mf%NL%Gloves: 25-50%def, 20-30gf, 10-20mf%NL%Belt: 25-50%def, 25-40gf, 15-25mf%NL%Ring: 5-10vit, 20-30gf, 10-20mf%NL%Amulet: 10-20vit, 30-50gf, 20-30mf%NL%%ORANGE%Bountiful [%YELLOW%O%ORANGE%]}
+ItemDisplay[crfh GROUND !TOWN QTY=1]: %DOT-70%%GOLD%Hitpower Inf %ORANGE%[%BLUE%O%ORANGE%]
 ItemDisplay[crfh]: %DOT-70%%NAME% %ORANGE%[%BLUE%O%ORANGE%] %TAN%x %WHITE%%QTY%{Weapon: 50-80ed, -10-20TDef%NL%Quiver: kb, -10-20TDef%NL%Shield: 10-20blk, 20-30fbr%NL%Chest: 75-100%def, 30-40fhr%NL%Helm: 100-150ar, 10-15%PERCENT% pierce%NL%Boots: 60-120DefMelee, 10-20fhr%NL%Gloves: kb, -10-20TDef%NL%Belt: 5-10fbr, 10-20fhr%NL%Ring: 5-10dex, 2-4maxdmg%NL%Amulet: 100-150ar, 10-15%PERCENT% pierce%NL%%ORANGE%Hitpower [%BLUE%O%ORANGE%]}
+ItemDisplay[crfs GROUND !TOWN QTY=1]: %DOT-70%%GOLD%Safety Inf %ORANGE%[%GREEN%O%ORANGE%]
 ItemDisplay[crfs]: %DOT-70%%NAME% %ORANGE%[%GREEN%O%ORANGE%] %TAN%x %WHITE%%QTY%{Weapon: 50-80ed, kb, 2-5m&pdr%NL%Quiver: 10frw, 4-7m&pdr%NL%Shield: 50-75%def, 4-6%pdr, 100-150DefMelee%NL%Chest: 50-75%def, 4-6%pdr, 100-150DefMelee%NL%Helm: 30-60%def, 10-20Lres, 4-6%pdr%NL%Boots: 20-60%def, 10-20Fres, 2-5m&pdr%NL%Gloves: 10-30%def, 10-20Cres, 2-5m&pdr%NL%Belt: 10-30%def, 10-20Pres, 2-5m&pdr%NL%Ring: 5-10vit, 2-5m&pdr%NL%Amulet: 10blk, 4-7m&pdr%NL%%ORANGE%Safety [%GREEN%O%ORANGE%]}
+ItemDisplay[crfb GROUND !TOWN QTY=1]: %DOT-70%%GOLD%Blood Inf %ORANGE%[%RED%O%ORANGE%]
 ItemDisplay[crfb]: %DOT-70%%NAME% %ORANGE%[%RED%O%ORANGE%] %TAN%x %WHITE%%QTY%{Weapon: 50-80ed, 3-6ll, 10-20life%NL%Quiver: 10-20cb, 3-6ll, 10-20life%NL%Shield: 10-20blk, 3-6ll, 5-8life%PERCENT%%NL%Chest: 4-6lpk, 30-50%def, 5-7life%PERCENT%%NL%Helm: 10-15cb, 2-4ll, 10-20life%NL%Boots: 5-10ow, 2-4ll, 10-20life%NL%Gloves: 5-10cb, 2-4ll, 10-20life%NL%Belt: 10-20ow, 3-6ll, 10-20life%NL%Ring: 5-10str, 2-3ll, 10-20life%NL%Amulet: 10frw, 3-6lpk, 10-20life%NL%%ORANGE%Blood [%RED%O%ORANGE%]}
+ItemDisplay[crfp GROUND !TOWN QTY=1]: %DOT-70%%GOLD%Brilliant Inf %ORANGE%[%WHITE%O%ORANGE%]
 ItemDisplay[crfp]: %DOT-70%%NAME% %ORANGE%[%WHITE%O%ORANGE%] %TAN%x %WHITE%%QTY%{Weapon: 20-40ed, 20ias, 50-100ar%NL%Quiver: 5-10allres, 100-150DefMissile, 10fhr%NL%Shield: 5-10allres, 10-20block, hfd%NL%Chest: 5-10allres, 25-50%def, 10-20blk%NL%Helm: 5-10ias, 25-50%def, hfd%NL%Boots: 10frw, 100-150DefMissile, hfd%NL%Gloves: 5-10ias, 10-20%ar, 25-50%def%NL%Belt: 5-10ias, 25-50%def, hfd%NL%Ring: 3-5allres, 50-100DefMissile, hfd%NL%Amulet: 5-10allres, 100-150DefMissile, 4-8allatt%NL%%ORANGE%Brilliant [%WHITE%O%ORANGE%]}
+ItemDisplay[crfv GROUND !TOWN QTY=1]: %DOT-70%%GOLD%Vampiric Inf %ORANGE%[%GRAY%O%ORANGE%]
 ItemDisplay[crfv]: %DOT-70%%NAME% %ORANGE%[%GRAY%O%ORANGE%] %TAN%x %WHITE%%QTY%{Weapon: 100-140demon/undead dmg, 3-6ml, 10-15rep%NL%Quiver: 3-6ml, 30-50plr, 15-25rep%NL%Shield: 10-20blk, 3-6ml, 30-50plr%NL%Chest: 4-6ml, 30-50%def, 30-50plr%NL%Helm: 10-15ds, 2-4ml, 10-20rep%NL%Boots: 15-25plr, 2-4ml, 10-20rep%NL%Gloves: 5-10ds, 2-4ml, 10-20rep%NL%Belt: 15-25plr, 3-6ml, 10-20rep%NL%Ring: 15-25plr, 2-3ml, 2-4mindmg%NL%Amulet: 15-25curse dur, 3-6ml, 20-30rep%NL%%ORANGE%Vampiric [%GRAY%O%ORANGE%]}
 
 // ==========================================================================================================
 // Runes
 // ==========================================================================================================
-ItemDisplay[RUNE<20]: %DOT-62%%TIER-4%%ORANGE%%RUNENAME% %GRAY%[%TAN%%RUNENUM%%GRAY%]%CONTINUE% // Below Lem
-ItemDisplay[(RUNE=20 OR RUNE=21 OR RUNE=22) FILTLVL<5]: %MAP-62%%DOT-55%%TAN%*  %ORANGE%%RUNENAME% Rune %GRAY%[%WHITE%%RUNENUM%%GRAY%]%TAN%  *%CONTINUE% // Lem, Pul, Um
-ItemDisplay[(RUNE=20 OR RUNE=21 OR RUNE=22) FILTLVL>4]: %DOT-62%%TIER-4%%ORANGE%%RUNENAME% %GRAY%[%WHITE%%RUNENUM%%GRAY%]%CONTINUE% // Lem, Pul, Um
-ItemDisplay[RUNE>22 RUNE<26]: %MAP-62%%DOT-55%%RED%*     %ORANGE%%RUNENAME% Rune %GRAY%[%RED%%RUNENUM%%GRAY%]%RED%     *%CONTINUE% // Mal to Gul
-ItemDisplay[RUNE>25 RUNE<28]: %BORDER-62%%SOUNDID-4303%%TAN%*%ORANGE%*%YELLOW%*     %ORANGE%%RUNENAME% Rune %GRAY%[%RED%%RUNENUM%%GRAY%]     %YELLOW%*%ORANGE%*%TAN%*%CONTINUE% // Vex to Ohm
-ItemDisplay[RUNE>27]: %BORDER-62%%SOUNDID-4325%%TAN%*%PURPLE%*%RED%*%ORANGE%*%YELLOW%*     %ORANGE%%RUNENAME% Rune %GRAY%[%GREEN%%RUNENUM%%GRAY%]     %YELLOW%*%ORANGE%*%RED%*%PURPLE%*%TAN%*%CONTINUE% // Lo to Zod
+ItemDisplay[RUNE<20]: %DOT-62%%TIER-4%%ORANGE%%RUNENAME% %GRAY%[%TAN%%RUNENUM%%GRAY%] %TAN%x %WHITE%%QTY% // Below Lem
+// Lem, Pul, Um
+ItemDisplay[RUNE~20-22 QTY=1 GROUND !TOWN FILTLVL<5]: %MAP-62%%DOT-55%%TIER-4%%TAN%*  %ORANGE%%RUNENAME% Rune %GRAY%[%WHITE%%RUNENUM%%GRAY%]  %TAN%*
+ItemDisplay[RUNE~20-22 QTY>0 FILTLVL<5]: %MAP-62%%DOT-55%%TIER-4%%TAN%*  %ORANGE%%RUNENAME% Rune %GRAY%[%WHITE%%RUNENUM%%GRAY%] %TAN%x %WHITE%%QTY%  %TAN%*
+ItemDisplay[RUNE~20-22 QTY>0 FILTLVL>4]: %DOT-62%%TIER-4%%ORANGE%%RUNENAME% %GRAY%[%WHITE%%RUNENUM%%GRAY%] %TAN%x %WHITE%%QTY% // flvl5+
+// Mal, Ist, Gul
+ItemDisplay[RUNE~23-25 QTY=1 GROUND !TOWN]: %MAP-62%%DOT-55%%RED%*    %ORANGE%%RUNENAME% Rune %GRAY%[%RED%%RUNENUM%%GRAY%]    %RED%*
+ItemDisplay[RUNE~23-25 QTY>0]: %MAP-62%%DOT-55%%RED%*    %ORANGE%%RUNENAME% Rune %GRAY%[%RED%%RUNENUM%%GRAY%]%RED% %TAN%x %WHITE%%QTY%    %RED%*
+// Vex and Ohm
+ItemDisplay[RUNE~26-27 QTY=1 GROUND !TOWN]: %BORDER-62%%SOUNDID-4303%%TAN%*%ORANGE%*%YELLOW%*     %ORANGE%%RUNENAME% Rune %GRAY%[%RED%%RUNENUM%%GRAY%]     %YELLOW%*%ORANGE%*%TAN%*
+ItemDisplay[RUNE~26-27 QTY>0]: %BORDER-62%%SOUNDID-4303%%TAN%*%ORANGE%*%YELLOW%*     %ORANGE%%RUNENAME% Rune %GRAY%[%RED%%RUNENUM%%GRAY%] %TAN%x %WHITE%%QTY%     %YELLOW%*%ORANGE%*%TAN%*
+// Lo to Zod
+ItemDisplay[RUNE>27 QTY=1 GROUND !TOWN]: %BORDER-62%%SOUNDID-4325%%TAN%*%PURPLE%*%RED%*%ORANGE%*%YELLOW%*     %ORANGE%%RUNENAME% Rune %GRAY%[%GREEN%%RUNENUM%%GRAY%]     %YELLOW%*%ORANGE%*%RED%*%PURPLE%*%TAN%*
+ItemDisplay[RUNE>27 QTY>0]: %BORDER-62%%SOUNDID-4325%%TAN%*%PURPLE%*%RED%*%ORANGE%*%YELLOW%*     %ORANGE%%RUNENAME% Rune %GRAY%[%GREEN%%RUNENUM%%GRAY%] %TAN%x %WHITE%%QTY%     %YELLOW%*%ORANGE%*%RED%*%PURPLE%*%TAN%*
 
 // ==========================================================================================================
 // All Charms
@@ -979,7 +986,8 @@ ItemDisplay[(cm1 OR cm3) MAG ILVL<90 !ID]: %DOT-9B%%PURPLE%*%BLUE%  %NAME%  %PUR
 ItemDisplay[cm2 MAG (ILVL<90 FILTLVL<3) !ID]: %DOT-9B%%PURPLE%*%BLUE%  %NAME%  %PURPLE%*
 ItemDisplay[cm2 MAG (ILVL<90 FILTLVL=3) !ID]: %PURPLE%*%BLUE%  %NAME%  %PURPLE%*
 ItemDisplay[cm2 MAG (ILVL<90 FILTLVL>3) !ID]: {%NAME%}
-ItemDisplay[CHARM UNI !ID]: %MAP-68%%PURPLE%*  %GOLD%%NAME%  %PURPLE%*
+ItemDisplay[(cm1 OR cm2) UNI !ID]: %MAP-68%%PURPLE%*%WHITE%*  %NAME%  %WHITE%*%PURPLE%*
+ItemDisplay[cm3 UNI !ID]: %MAP-68%%SOUNDID-3915%%PURPLE%*%WHITE%*  %NAME%  %WHITE%*%PURPLE%*
 
 // CL when needed
 ItemDisplay[CHARM MAG ID]: %CL%%NAME%{%NAME%}%CONTINUE%
@@ -1245,8 +1253,8 @@ ItemDisplay[ucl SET !ID FILTLVL<5 !ALLDISCOVERED]: %DOT-84%%SETGRAIL_T2%
 ItemDisplay[ucl SET !ID FILTLVL<5 ALLDISCOVERED]: %DOT-84%%SET_T2%
 ItemDisplay[(stu OR xul OR xar OR ult OR uld OR uth OR uul) SET !ID FILTLVL<3 !ALLDISCOVERED]: %DOT-84%%SETGRAIL_T1%
 ItemDisplay[(stu OR xul OR xar OR ult OR uld OR uth OR uul) SET !ID FILTLVL<3 ALLDISCOVERED]: %DOT-84%%SET_T1%
-ItemDisplay[uar SET !ID !ALLDISCOVERED]: %DOT-84%%SOUNDID-4625%%DARK_GREEN%*%GREEN%*%WHITE%*   %GREEN%Anger Incarnate %GRAILER%   %WHITE%*%GREEN%*%DARK_GREEN%*
-ItemDisplay[uar SET !ID ALLDISCOVERED]: %DOT-84%%SOUNDID-4625%%DARK_GREEN%*%GREEN%*%WHITE%*   %GREEN%Anger Incarnate   %WHITE%*%GREEN%*%DARK_GREEN%*
+ItemDisplay[uar SET !ETH !ID !ALLDISCOVERED]: %DOT-84%%SOUNDID-4625%%DARK_GREEN%*%GREEN%*%WHITE%*   %GREEN%Anger Incarnate %GRAILER%   %WHITE%*%GREEN%*%DARK_GREEN%*
+ItemDisplay[uar SET !ETH !ID ALLDISCOVERED]: %DOT-84%%SOUNDID-4625%%DARK_GREEN%*%GREEN%*%WHITE%*   %GREEN%Anger Incarnate   %WHITE%*%GREEN%*%DARK_GREEN%*
 ItemDisplay[uar SET ETH !ID !ALLDISCOVERED]: %DOT-84%%SOUNDID-4625%%DARK_GREEN%*%GREEN%*%WHITE%*   %GRAY%[%WHITE%eth%GRAY%] %GREEN%Anger Incarnate %GRAILER%   %WHITE%*%GREEN%*%DARK_GREEN%*
 ItemDisplay[uar SET ETH !ID ALLDISCOVERED]: %DOT-84%%SOUNDID-4625%%DARK_GREEN%*%GREEN%*%WHITE%*   %GRAY%[%WHITE%eth%GRAY%] %GREEN%Anger Incarnate   %WHITE%*%GREEN%*%DARK_GREEN%*
 ItemDisplay[uar SET ID]: %GREEN%%NAME%
@@ -1439,7 +1447,7 @@ ItemDisplay[WEAPON !(hax OR 9ha OR 7ha OR axe OR 9ax OR 7ax OR clb OR 9cl OR 7cl
 
 // Rare weapons
 ItemDisplay[WEAPON !(hax OR 9ha OR 7ha OR axe OR 9ax OR 7ax OR clb OR 9cl OR 7cl OR spc OR 9sp OR 7sp OR mac OR 9ma OR 7ma OR mst OR 9mt OR 7mt OR ssd OR 9ss OR 7ss OR scm OR 9sm OR 7sm OR sbr OR 9sb OR 7sb OR flc OR 9fc OR 7fc OR wsd OR 9wd OR 7wd OR dgr OR 9dg OR 7dg OR dir OR 9di OR 7di OR bld OR 9bl OR 7bl OR STAFF OR BOW) RARE !ETH !ID FILTLVL<4]: %NAME%
-ItemDisplay[(lbw OR 8lb OR 6lb OR lbb OR 8l8 OR 6l7 OR lwb OR 8lw OR 6lw) RARE !ID]: %NAME%
+ItemDisplay[(lbw OR 8lb OR 6lb OR lwb OR 8lw OR 6lw) RARE !ID]: %NAME%
 ItemDisplay[(wst OR 8ws OR 6ws) RARE !ID]: %NAME%
 
 // =================================================================================================================================================================================================================================
@@ -1715,7 +1723,7 @@ ItemDisplay[NMAG !RW SK138>0 (SK126>0 OR SK128>0 OR SK130>0 OR SK131>0 OR SK132>
 ItemDisplay[NMAG !RW SK137>0]: %ORANGE%tnt%NAME%%CONTINUE% // Skill:Taunt
 ItemDisplay[NMAG !RW SK137>0]: %TEAL%%SK137%%NAME%%CONTINUE%
 ItemDisplay[NMAG !RW SK137>0 (SK126>0 OR SK128>0 OR SK130>0 OR SK131>0 OR SK132>0 OR SK133>0 OR SK135>0 OR (SK134>0 OR SK136>0))]: %CONTINUE% %NAME%
-ItemDisplay[NMAG !RW (SK134>0 OR SK136>0)]: %LIGHT_GRAY%2hm%NAME%%CONTINUE% // Skill:Two-handed Mastery
+ItemDisplay[NMAG !RW (SK134>0 OR SK136>0)]: %LIGHT_GRAY%two%NAME%%CONTINUE% // Skill:Two-handed Mastery
 ItemDisplay[NMAG !RW (SK134>0 OR SK136>0)]: %TEAL%%SK134%%NAME%%CONTINUE%
 ItemDisplay[NMAG !RW (SK134>0 OR SK136>0) (SK126>0 OR SK128>0 OR SK130>0 OR SK131>0 OR SK132>0 OR SK133>0 OR SK135>0)]: %CONTINUE% %NAME%
 ItemDisplay[NMAG !RW SK135>0]: %LIGHT_GRAY%tma%NAME%%CONTINUE% // Skill:Throwing Mastery
@@ -1733,7 +1741,7 @@ ItemDisplay[NMAG !RW SK131>0 (SK126>0 OR SK128>0 OR SK130>0)]: %CONTINUE% %NAME%
 ItemDisplay[NMAG !RW SK130>0]: %ORANGE%hwl%NAME%%CONTINUE% // Skill:Howl
 ItemDisplay[NMAG !RW SK130>0]: %TEAL%%SK130%%NAME%%CONTINUE%
 ItemDisplay[NMAG !RW SK130>0 (SK126>0 OR SK128>0)]: %CONTINUE% %NAME%
-ItemDisplay[NMAG !RW SK128>0]: %LIGHT_GRAY%1hm%NAME%%CONTINUE% // Skill:One-handed Mastery
+ItemDisplay[NMAG !RW SK128>0]: %LIGHT_GRAY%one%NAME%%CONTINUE% // Skill:One-handed Mastery
 ItemDisplay[NMAG !RW SK128>0]: %TEAL%%SK128%%NAME%%CONTINUE%
 ItemDisplay[NMAG !RW SK128>0 SK126>0]: %CONTINUE% %NAME%
 ItemDisplay[NMAG !RW SK126>0]: %GOLD%bsh%NAME%%CONTINUE% // Skill:Bash
@@ -2215,7 +2223,7 @@ ItemDisplay[(dgr OR dir OR tkf OR tax OR jav OR wnd OR 9wn OR ywn OR buc OR xuc)
 ItemDisplay[(dgr OR dir OR tkf OR tax OR jav OR wnd OR 9wn OR ywn OR buc OR xuc) (RARE OR CRAFT OR UNI OR SET) ID SOCK=0 STAT360=0 !GROUND]: %NAME%{%NAME%, %RED%C%WHITE%:%ORANGE%2}%CONTINUE%
 ItemDisplay[(dgr OR dir OR tkf OR tax OR jav OR wnd OR 9wn OR ywn OR buc OR xuc) (RARE OR CRAFT OR UNI OR SET) ID SOCK=0 !GROUND]: %NAME%{%NAME%%TAN%]}%CONTINUE%
 //ITEMS - upgrade improves C to 3
-ItemDisplay[(hax OR clb OR spc OR mac OR ssd OR scm OR sbr OR flc OR scp OR bsh OR qui OR lea OR hla OR stu OR scl OR chn OR spl OR plt OR fld OR xui OR xea OR xla OR xtu) (RARE OR CRAFT OR UNI OR SET) ID SOCK=0 STAT360=0 !GROUND]: %NAME%{%NAME%%CL%%WHITE%After Upgrade: %TAN%[%WHITE%L:1, %TAN%P%WHITE%:2%WHITE%, %RED%C%WHITE%:%ORANGE%3%TAN%]}%CONTINUE%
+ItemDisplay[(hax OR clb OR spc OR mac OR ssd OR scm OR sbr OR flc OR scp OR bsh OR qui OR lea OR hla OR stu OR scl OR chn OR xlm OR xhl) (RARE OR CRAFT OR UNI OR SET) ID SOCK=0 STAT360=0 !GROUND]: %NAME%{%NAME%%CL%%WHITE%After Upgrade: %TAN%[%WHITE%L:1, %TAN%P%WHITE%:2%WHITE%, %RED%C%WHITE%:%ORANGE%3%TAN%]}%CONTINUE%
 //ITEMS - upgrade improves C to 3 only when ILVL>25
 ItemDisplay[(ktr OR wrb OR axf OR ces OR ne1 OR ne2 OR ne3 OR ne4 OR ne5) ILVL>25 (RARE OR CRAFT OR UNI OR SET) ID SOCK=0 STAT360=0 !GROUND]: %NAME%{%NAME%%CL%%WHITE%After Upgrade: %TAN%[%WHITE%L:1, %TAN%P%WHITE%:2%WHITE%, %RED%C%WHITE%:%ORANGE%3%TAN%]}%CONTINUE%
 //ITEMS - upgrade improves C to 3 only when ILVL>40
@@ -2860,7 +2868,7 @@ ItemDisplay[((WAND NECSTAFF) OR (SOR SORSTAFF) OR (DAGGER (NECSTAFF OR ASNSTAFF)
 ItemDisplay[((WAND NECSTAFF) OR (SOR SORSTAFF) OR (DAGGER (NECSTAFF OR ASNSTAFF)) OR ((clb OR 9cl OR 7cl OR spc OR 9sp OR 7sp) (BARSTAFF OR DRUSTAFF)) OR (SCEPTER !(wsp OR 9ws OR 7ws) PALSTAFF)) NMAG !INF !RW SELLPRICE>34501 FILTLVL>5]: {%RED%at current filter level%NL%Warning! Hidden outside of town%CL%%NAME%}
 
 // Show me quantity of all stackables
-ItemDisplay[!(ARMOR OR WEAPON OR tbk OR ibk OR QUIVER OR GEMLEVEL~4-5 OR crfb OR crfc OR crfs OR crfh OR crfv OR crfu OR crfp OR (MAPTIER>0 !NMAG)) QTY>0]: %NAME% %TAN%x %WHITE%%QTY%{%NAME%}%CONTINUE%
+ItemDisplay[!(ARMOR OR WEAPON OR tbk OR ibk OR QUIVER OR GEMLEVEL~4-5 OR crfb OR crfc OR crfs OR crfh OR crfv OR crfu OR crfp OR (MAPTIER>0 !NMAG) OR RUNE~1-33) QTY>0]: %NAME% %TAN%x %WHITE%%QTY%{%NAME%}%CONTINUE%
 
 // Jewel notes part 1
 // All without High OW Damage Character Level Requirements Values
@@ -2933,30 +2941,40 @@ ItemDisplay[wss]: %MAP-0A%%DOT-66%%NAME%{%RED%warning%WHITE%: it can brick your 
 ItemDisplay[iwss]: %MAP-0A%%DOT-66%%ORANGE%* %NAME% %ORANGE%*{%NAME%}
 ItemDisplay[scrb]: %MAP-A9%%NAME%{%NAME%}
 ItemDisplay[ubtm]: %MAP-86%%RED%*%GRAY%* %NAME% %GRAY%*%RED%*{%WHITE%to re-enter up to 3 times%NL%It will create 3 portals%NL%%TAN%Uber Tristram Entry%NL%}
-ItemDisplay[imra]: %DOT-D3%%NAME%{%WHITE%map + %GOLD%orb %WHITE%+ %BLUE%jewel %WHITE%+ %ORANGE%any rune%NL%%WHITE%imbue white map to %YELLOW%rare%WHITE%:%NL%}%CONTINUE%
-ItemDisplay[rera]: %DOT-D3%%NAME%{%YELLOW%map %WHITE%+ %GOLD%orb %WHITE%+ perf gem + %ORANGE%any rune%NL%%WHITE%reroll %YELLOW%rare %WHITE%map:%NL%}%CONTINUE%
-ItemDisplay[upma]: %NAME%{%BLUE%map %WHITE%+ %GOLD%orb %WHITE%+ any perf gem %WHITE%+ %ORANGE%any rune%NL%%WHITE%imbue %BLUE%magic %WHITE%map to %YELLOW%rare%WHITE%:%NL%}%CONTINUE%
-ItemDisplay[imma]: %NAME%{%BLUE%map + %GOLD%orb %WHITE%= reroll %BLUE%map%NL%%WHITE%map + %GOLD%orb %WHITE%+ %BLUE%jewel%NL%%WHITE%imbue white map to %BLUE%magic%WHITE%:%NL%}%CONTINUE%
-ItemDisplay[irma]: %NAME%{%WHITE%map + %GOLD%orb%NL%%WHITE%imbue white map to %BLUE%magic%WHITE%:%NL%}
-ItemDisplay[scou]: %DOT-D3%%NAME%{%WHITE%Cows: %GOLD%Ph:50 %RED%F:50 %BLUE%C:50 %YELLOW%L:50 %GREEN%P:33 %ORANGE%M:33%NL%%WHITE%Ghouls: %GOLD%Ph:75 %RED%F:33 %BLUE%C:135 %YELLOW%L:33 %GREEN%P:50 %ORANGE%M:0%NL%%WHITE%Witches: %GOLD%Ph:0 %RED%F:50 %BLUE%C:50 %YELLOW%L:50 %GREEN%P:50 %ORANGE%M:0%NL%%WHITE%Dolls: %GOLD%Ph:33 %RED%F:25 %BLUE%C:33 %YELLOW%L:0 %GREEN%P:80 %ORANGE%M:0%NL%Resistances of added mobs for maps%NL%}%CONTINUE%
-ItemDisplay[fort]: %DOT-D3%%NAME%{%WHITE%Minions: %GOLD%Ph:50 %RED%F:75 %BLUE%C:50 %YELLOW%L:33 %GREEN%P:95 %ORANGE%M:0%NL%%WHITE%Fetish: %GOLD%Ph:25 %RED%F:50 %BLUE%C:50 %YELLOW%L:50 %GREEN%P:50 %ORANGE%M:25%NL%%WHITE%Souls: %GOLD%Ph:0 %RED%F:0 %BLUE%C:50 %YELLOW%L:80 %GREEN%P:75 %ORANGE%M:25%NL%%WHITE%Ghosts: %GOLD%Ph:95 %RED%F:25 %BLUE%C:50 %YELLOW%L:75 %GREEN%P:95 %ORANGE%M:50%NL%%WHITE%Unholy Corpse: %GOLD%Ph:50 %RED%F:75 %BLUE%C:0 %YELLOW%L:0 %GREEN%P:80 %ORANGE%M:50%NL%Resistances of added mobs for maps%NL%}%CONTINUE%
-ItemDisplay[upmp]: %DOT-D3%%NAME%{%WHITE%3x%BLUE%m%WHITE%a%YELLOW%p %TAN%(%WHITE%tier:%ORANGE%x%TAN%) %WHITE%+ %GOLD%orb %WHITE%= map %TAN%(%WHITE%tier:%ORANGE%x%WHITE%+1%TAN%)%NL%Note%WHITE%: upgrade maps for higher tier:%NL%}
+ItemDisplay[imma QTY=1 GROUND !TOWN]: %GOLD%Arc Orb{%BLUE%map + %GOLD%orb %WHITE%= reroll %BLUE%map%NL%%WHITE%map + %GOLD%orb %WHITE%+ %BLUE%jewel%NL%%WHITE%imbue white map to %BLUE%magic%WHITE%:%NL%}%CONTINUE%
+ItemDisplay[imma QTY>0]: %NAME%{%BLUE%map + %GOLD%orb %WHITE%= reroll %BLUE%map%NL%%WHITE%map + %GOLD%orb %WHITE%+ %BLUE%jewel%NL%%WHITE%imbue white map to %BLUE%magic%WHITE%:%NL%}%CONTINUE%
+ItemDisplay[irma QTY=1 GROUND !TOWN]: %GOLD%Inf Arc Orb{%WHITE%map + %GOLD%orb%NL%%WHITE%imbue white map to %BLUE%magic%WHITE%:%NL%}
+ItemDisplay[irma QTY>0]: %NAME%{%WHITE%map + %GOLD%orb%NL%%WHITE%imbue white map to %BLUE%magic%WHITE%:%NL%}
+ItemDisplay[imra QTY=1 GROUND !TOWN]: %DOT-D3%%GOLD%Z. Orb{%WHITE%map + %GOLD%orb %WHITE%+ %BLUE%jewel %WHITE%+ %ORANGE%any rune%NL%%WHITE%imbue white map to %YELLOW%rare%WHITE%:%NL%}%CONTINUE%
+ItemDisplay[imra QTY>0]: %DOT-D3%%NAME%{%WHITE%map + %GOLD%orb %WHITE%+ %BLUE%jewel %WHITE%+ %ORANGE%any rune%NL%%WHITE%imbue white map to %YELLOW%rare%WHITE%:%NL%}%CONTINUE%
+ItemDisplay[irra QTY=1 GROUND !TOWN]: %DOT-D3%%GOLD%Inf Z. Orb{%WHITE%map + %GOLD%orb%NL%%WHITE%imbue white map to %YELLOW%rare%WHITE%:%NL%}
+ItemDisplay[irra QTY>0]: %DOT-D3%%NAME%{%WHITE%map + %GOLD%orb%NL%%WHITE%imbue white map to %YELLOW%rare%WHITE%:%NL%}
+ItemDisplay[upma QTY=1 GROUND !TOWN]: %GOLD%Ang Orb{%BLUE%map %WHITE%+ %GOLD%orb %WHITE%+ any perf gem %WHITE%+ %ORANGE%any rune%NL%%WHITE%imbue %BLUE%magic %WHITE%map to %YELLOW%rare%WHITE%:%NL%}%CONTINUE%
+ItemDisplay[upma QTY>0]: %NAME%{%BLUE%map %WHITE%+ %GOLD%orb %WHITE%+ any perf gem %WHITE%+ %ORANGE%any rune%NL%%WHITE%imbue %BLUE%magic %WHITE%map to %YELLOW%rare%WHITE%:%NL%}%CONTINUE%
+ItemDisplay[urma QTY=1 GROUND !TOWN]: %GOLD%Inf Ang Orb{%BLUE%map %WHITE%+ %GOLD%orb%NL%%WHITE%imbue %BLUE%magic %WHITE%map to %YELLOW%rare%WHITE%:%NL%}
+ItemDisplay[urma QTY>0]: %NAME%{%BLUE%map %WHITE%+ %GOLD%orb%NL%%WHITE%imbue %BLUE%magic %WHITE%map to %YELLOW%rare%WHITE%:%NL%}
+ItemDisplay[rera QTY=1 GROUND !TOWN]: %DOT-D3%%GOLD%H. Orb{%YELLOW%map %WHITE%+ %GOLD%orb %WHITE%+ perf gem + %ORANGE%any rune%NL%%WHITE%reroll %YELLOW%rare %WHITE%map:%NL%}%CONTINUE%
+ItemDisplay[rera QTY>0]: %DOT-D3%%NAME%{%YELLOW%map %WHITE%+ %GOLD%orb %WHITE%+ perf gem + %ORANGE%any rune%NL%%WHITE%reroll %YELLOW%rare %WHITE%map:%NL%}%CONTINUE%
+ItemDisplay[rrra QTY=1 GROUND !TOWN]: %DOT-D3%%GOLD%Inf H. Orb{%YELLOW%map %WHITE%+ %GOLD%orb%NL%%WHITE%reroll %YELLOW%rare %WHITE%map:%NL%}
+ItemDisplay[rrra QTY>0]: %DOT-D3%%NAME%{%YELLOW%map %WHITE%+ %GOLD%orb%NL%%WHITE%reroll %YELLOW%rare %WHITE%map:%NL%}
 ItemDisplay[(imra OR rera OR upma OR imma)]: %NAME%{%GRAY%(skip map to make %GOLD%infused orb%GRAY%)%NL%%NAME%}
-ItemDisplay[irra]: %DOT-D3%%NAME%{%WHITE%map + %GOLD%orb%NL%%WHITE%imbue white map to %YELLOW%rare%WHITE%:%NL%}
-ItemDisplay[rrra]: %DOT-D3%%NAME%{%YELLOW%map %WHITE%+ %GOLD%orb%NL%%WHITE%reroll %YELLOW%rare %WHITE%map:%NL%}
-ItemDisplay[urma]: %NAME%{%BLUE%map %WHITE%+ %GOLD%orb%NL%%WHITE%imbue %BLUE%magic %WHITE%map to %YELLOW%rare%WHITE%:%NL%}
-ItemDisplay[irma]: %NAME%{%WHITE%map + %GOLD%orb%NL%%WHITE%imbue white map to %BLUE%magic%WHITE%:%NL%}
-ItemDisplay[lbox QTY=1 GROUND !TOWN]: %BORDER-0A%%SOUNDID-4303%%DOT-62%%GREEN%*%PURPLE%*%RED%*       %GOLD%Larzuk's Puzzlebox       %RED%*%PURPLE%*%GREEN%*{%WHITE%Two-Handed Weapon = 2-4 max%NL%One-Handed Weapon = 1-2 max%NL%Helmet, Chest, Offhand = 1-2 max%NL%use it to %TAN%socket %WHITE%an item}
-ItemDisplay[lbox]: %BORDER-0A%%SOUNDID-4303%%DOT-62%%GREEN%*%PURPLE%*%RED%*       %NAME%       %RED%*%PURPLE%*%GREEN%*{%WHITE%Two-Handed Weapon = 2-4 max%NL%One-Handed Weapon = 1-2 max%NL%Helmet, Chest, Offhand = 1-2 max%NL%use it to %TAN%socket %WHITE%an item}
-ItemDisplay[lpp QTY=1 GROUND !TOWN]: %DOT-0A%%PX-62%%GRAY%*%YELLOW%*   %GOLD%Puzzlepiece   %YELLOW%*%GRAY%*{%WHITE%Two-Handed Weapon = 2-4 max%NL%One-Handed Weapon = 1-2 max%NL%Helmet, Chest, Offhand = 1-2 max%NL%use to %TAN%socket %WHITE%normal/%BLUE%magic%WHITE%/%YELLOW%rare%WHITE%/%ORANGE%crafted %WHITE%item}
-ItemDisplay[lpp]: %DOT-0A%%PX-62%%GRAY%*%YELLOW%*   %GOLD%Puzzlepiece %TAN%x %WHITE%%QTY%   %YELLOW%*%GRAY%*{%WHITE%Two-Handed Weapon = 2-4 max%NL%One-Handed Weapon = 1-2 max%NL%Helmet, Chest, Offhand = 1-2 max%NL%use to %TAN%socket %WHITE%normal/%BLUE%magic%WHITE%/%YELLOW%rare%WHITE%/%ORANGE%crafted %WHITE%item}
+ItemDisplay[scou QTY=1 GROUND !TOWN]: %DOT-D3%%GOLD%D. Orb{%WHITE%Cows: %GOLD%Ph:50 %RED%F:50 %BLUE%C:50 %YELLOW%L:50 %GREEN%P:33 %ORANGE%M:33%NL%%WHITE%Ghouls: %GOLD%Ph:75 %RED%F:33 %BLUE%C:135 %YELLOW%L:33 %GREEN%P:50 %ORANGE%M:0%NL%%WHITE%Witches: %GOLD%Ph:0 %RED%F:50 %BLUE%C:50 %YELLOW%L:50 %GREEN%P:50 %ORANGE%M:0%NL%%WHITE%Dolls: %GOLD%Ph:33 %RED%F:25 %BLUE%C:33 %YELLOW%L:0 %GREEN%P:80 %ORANGE%M:0%NL%Resistances of added mobs for maps%NL%}%CONTINUE%
+ItemDisplay[scou QTY>0]: %DOT-D3%%NAME%{%WHITE%Cows: %GOLD%Ph:50 %RED%F:50 %BLUE%C:50 %YELLOW%L:50 %GREEN%P:33 %ORANGE%M:33%NL%%WHITE%Ghouls: %GOLD%Ph:75 %RED%F:33 %BLUE%C:135 %YELLOW%L:33 %GREEN%P:50 %ORANGE%M:0%NL%%WHITE%Witches: %GOLD%Ph:0 %RED%F:50 %BLUE%C:50 %YELLOW%L:50 %GREEN%P:50 %ORANGE%M:0%NL%%WHITE%Dolls: %GOLD%Ph:33 %RED%F:25 %BLUE%C:33 %YELLOW%L:0 %GREEN%P:80 %ORANGE%M:0%NL%Resistances of added mobs for maps%NL%}%CONTINUE%
+ItemDisplay[fort QTY=1 GROUND !TOWN]: %DOT-D3%%GOLD%Fort Orb{%WHITE%Minions: %GOLD%Ph:50 %RED%F:75 %BLUE%C:50 %YELLOW%L:33 %GREEN%P:95 %ORANGE%M:0%NL%%WHITE%Fetish: %GOLD%Ph:25 %RED%F:50 %BLUE%C:50 %YELLOW%L:50 %GREEN%P:50 %ORANGE%M:25%NL%%WHITE%Souls: %GOLD%Ph:0 %RED%F:0 %BLUE%C:50 %YELLOW%L:80 %GREEN%P:75 %ORANGE%M:25%NL%%WHITE%Ghosts: %GOLD%Ph:95 %RED%F:25 %BLUE%C:50 %YELLOW%L:75 %GREEN%P:95 %ORANGE%M:50%NL%%WHITE%Unholy Corpse: %GOLD%Ph:50 %RED%F:75 %BLUE%C:0 %YELLOW%L:0 %GREEN%P:80 %ORANGE%M:50%NL%Resistances of added mobs for maps%NL%}%CONTINUE%
+ItemDisplay[fort QTY>0]: %DOT-D3%%NAME%{%WHITE%Minions: %GOLD%Ph:50 %RED%F:75 %BLUE%C:50 %YELLOW%L:33 %GREEN%P:95 %ORANGE%M:0%NL%%WHITE%Fetish: %GOLD%Ph:25 %RED%F:50 %BLUE%C:50 %YELLOW%L:50 %GREEN%P:50 %ORANGE%M:25%NL%%WHITE%Souls: %GOLD%Ph:0 %RED%F:0 %BLUE%C:50 %YELLOW%L:80 %GREEN%P:75 %ORANGE%M:25%NL%%WHITE%Ghosts: %GOLD%Ph:95 %RED%F:25 %BLUE%C:50 %YELLOW%L:75 %GREEN%P:95 %ORANGE%M:50%NL%%WHITE%Unholy Corpse: %GOLD%Ph:50 %RED%F:75 %BLUE%C:0 %YELLOW%L:0 %GREEN%P:80 %ORANGE%M:50%NL%Resistances of added mobs for maps%NL%}%CONTINUE%
+ItemDisplay[upmp QTY=1 GROUND !TOWN]: %DOT-D3%%GOLD%Cart Orb{%WHITE%3x%BLUE%m%WHITE%a%YELLOW%p %TAN%(%WHITE%tier:%ORANGE%x%TAN%) %WHITE%+ %GOLD%orb %WHITE%= map %TAN%(%WHITE%tier:%ORANGE%x%WHITE%+1%TAN%)%NL%Note%WHITE%: upgrade maps for higher tier:%NL%}
+ItemDisplay[upmp QTY>0]: %DOT-D3%%NAME%{%WHITE%3x%BLUE%m%WHITE%a%YELLOW%p %TAN%(%WHITE%tier:%ORANGE%x%TAN%) %WHITE%+ %GOLD%orb %WHITE%= map %TAN%(%WHITE%tier:%ORANGE%x%WHITE%+1%TAN%)%NL%Note%WHITE%: upgrade maps for higher tier:%NL%}
+ItemDisplay[lbox QTY=1 GROUND !TOWN]: %SOUNDID-4303%%BORDER-0A%%DOT-62%%GREEN%*%PURPLE%*%RED%*       %GOLD%Larzuk's Puzzlebox       %RED%*%PURPLE%*%GREEN%*{%WHITE%Two-Handed Weapon = 2-4 max%NL%One-Handed Weapon = 1-2 max%NL%Helmet, Chest, Offhand = 1-2 max%NL%use it to %TAN%socket %WHITE%an item}
+ItemDisplay[lbox]: %SOUNDID-4303%%BORDER-0A%%DOT-62%%GREEN%*%PURPLE%*%RED%*       %NAME%       %RED%*%PURPLE%*%GREEN%*{%WHITE%Two-Handed Weapon = 2-4 max%NL%One-Handed Weapon = 1-2 max%NL%Helmet, Chest, Offhand = 1-2 max%NL%use it to %TAN%socket %WHITE%an item}
+ItemDisplay[lpp QTY=1 GROUND !TOWN]: %MAP-0A%%DOT-62%%GRAY%*%YELLOW%*   %GOLD%Puzzlepiece   %YELLOW%*%GRAY%*{%WHITE%Two-Handed Weapon = 2-4 max%NL%One-Handed Weapon = 1-2 max%NL%Helmet, Chest, Offhand = 1-2 max%NL%use to %TAN%socket %WHITE%normal/%BLUE%magic%WHITE%/%YELLOW%rare%WHITE%/%ORANGE%crafted %WHITE%item}
+ItemDisplay[lpp]: %MAP-0A%%DOT-62%%GRAY%*%YELLOW%*   %GOLD%Puzzlepiece %TAN%x %WHITE%%QTY%   %YELLOW%*%GRAY%*{%WHITE%Two-Handed Weapon = 2-4 max%NL%One-Handed Weapon = 1-2 max%NL%Helmet, Chest, Offhand = 1-2 max%NL%use to %TAN%socket %WHITE%normal/%BLUE%magic%WHITE%/%YELLOW%rare%WHITE%/%ORANGE%crafted %WHITE%item}
 ItemDisplay[lmal]: %GOLD%%NAME%{%WHITE%All types of items = 1 max%NL%use it to %TAN%socket %WHITE%an item}
 ItemDisplay[imrn QTY=1 GROUND !TOWN]: %BORDER-0A%%SOUNDID-4303%%DOT-62%%GREEN%*%PURPLE%*%RED%*       %GOLD%Demonic Cube       %RED%*%PURPLE%*%GREEN%*{%NAME%}
 ItemDisplay[imrn]: %BORDER-0A%%SOUNDID-4303%%DOT-62%%GREEN%*%PURPLE%*%RED%*       %NAME%       %RED%*%PURPLE%*%GREEN%*{%NAME%}
 ItemDisplay[lsvl]: %BORDER-9B%%SOUNDID-3902%%TAN%*%CORAL%*%PURPLE%*%RED%*%ORANGE%*%YELLOW%*%TEAL%*     %NAME%     %TEAL%*%YELLOW%*%ORANGE%*%RED%*%PURPLE%*%CORAL%*%TAN%*{%RED%Worth a lot%NL%%TAN%1:7.5mil drop chance, %RED%very rare%TAN% item.}
 ItemDisplay[llmr]: %BORDER-9B%%SOUNDID-3902%%TAN%*%CORAL%*%PURPLE%*%RED%*%ORANGE%*%YELLOW%*%TEAL%*     %NAME%     %TEAL%*%YELLOW%*%ORANGE%*%RED%*%PURPLE%*%CORAL%*%TAN%*{%WHITE%Only works with %BLUE%magic%WHITE%/%YELLOW%rare%WHITE%/%ORANGE%crafted %WHITE%equipment%NL%%RED%Worth a lot%NL%%TAN%1:25mil drop chance, %RED%super rare%TAN% item.}
 ItemDisplay[rkey]: %BORDER-98%%SOUNDID-4303%%GRAY%*%LIGHT_GRAY%*%YELLOW%*   %NAME%   %YELLOW%*%LIGHT_GRAY%*%GRAY%*{%WHITE%losing it in cube recipes%NL%You can use it without}%CONTINUE%
-ItemDisplay[rkey MAPID=190]: %NAME%{%GOLD%2025-09-28 #32 - Tyrael's Might%NL%%NL%%NAME%}%CONTINUE%
+ItemDisplay[(key OR rkey) MAPID=190]: %NAME%{%GOLD%2025-09-28 #32 - Tyrael's Might%NL%%NL%%NAME%}%CONTINUE%
 ItemDisplay[ivea OR ivez OR iveb OR ived OR iven OR ivep OR ives]: %MAP-86%%RED%* %NAME% %RED%*{%NAME%} // Corrupted Heroes Ears
 
 // DClone, Rathma and Lucion Materials & items
@@ -3067,7 +3085,7 @@ ItemDisplay[t39]: %NAME%{%WHITE%Highest Res: %BLUE%C:75 %YELLOW%L:75 %GREEN%P:75
 ItemDisplay[t54]: %NAME%{%RED%Witches%NL%%WHITE%Highest Res: %GOLD%Ph:20 %RED%F:65 %BLUE%C:65 %YELLOW%L:65 %GREEN%P:65 %ORANGE%M:20%NAME%}%CONTINUE% // Unique: Imperial Palace 192
 ItemDisplay[t55]: %NAME%{%WHITE%Highest Res: %GOLD%Ph:50 %RED%F:75 %BLUE%C:50 %YELLOW%L:75 %GREEN%P:30 %ORANGE%M:50%NAME%}%CONTINUE% // Unique: Outer Void 180
 ItemDisplay[t56]: %NAME%{%WHITE%Highest Res: %GOLD%Ph:65 %RED%F:85 %BLUE%C:80 %GREEN%P:75 %ORANGE%M:50%NL%%WHITE%Immunes: %YELLOW%L:100%NAME%}%CONTINUE% // Unique: The City of Ureh 196
-ItemDisplay[t57]: %NAME%{%WHITE%Highest Res: %ORANGE%M:50%NL%%WHITE%Immunes: %GOLD%Ph:100 %RED%F:110 %BLUE%C:145 %YELLOW%L:120 %GREEN%P:110%NAME%}%CONTINUE% // Unique: Djinn's Domain
+ItemDisplay[t57]: %NAME%{%WHITE%Highest Res: %ORANGE%M:50%NL%%WHITE%Immunes: %GOLD%Ph:100 %RED%F:110 %BLUE%C:145 %YELLOW%L:120 %GREEN%P:110%NAME%}%CONTINUE% // Unique: Djinn's Domain 197 198 199
 ItemDisplay[t58]: %NAME%{%WHITE%Highest Res: %GOLD%Ph:50 %RED%F:75 %BLUE%C:85 %YELLOW%L:80 %GREEN%P:75 %ORANGE%M:50%NAME%}%CONTINUE% // Unique: Na-Krul's Abyss
 // T4
 ItemDisplay[t41]: %NAME%{%WHITE%Immunes: %GOLD%Ph:165 %RED%F:165 %BLUE%C:165 %YELLOW%L:165 %GREEN%P:165 %ORANGE%M:165}%CONTINUE% // Cathedral of Light
@@ -3091,8 +3109,9 @@ ItemDisplay[STAT440>0]: %NAME%{Cows, %NAME%}%CONTINUE%
 ItemDisplay[STAT442>0]: %NAME%{Ghosts, %NAME%}%CONTINUE%
 ItemDisplay[!cm1 (STAT360=78 OR STAT360=79 OR STAT360=80 OR STAT360=81 OR STAT360=82 OR STAT360=83 OR STAT360=84 OR STAT360=85 OR STAT360=86 OR STAT360=87 OR STAT360=88) OR (STAT458>0 OR STAT500>0 OR STAT471>0 OR STAT499>0 OR STAT374>0 OR STAT494>0 OR STAT495>0 OR STAT496>0 OR STAT497>0 OR STAT502>0 OR STAT440>0 OR STAT442>0)]: %NAME%{%GREEN%>>>> %NAME%}%CONTINUE%
 // Bad stats/mobs on maps
-ItemDisplay[(((t25 OR t34 OR t13 OR t33 OR t11 OR t39 OR t16) STAT391>0) OR STAT435>0 OR ((t32 OR t16 OR t39) STAT388>0) OR ((t38 OR t11 OR t12 OR t36) STAT390>0) OR ((t14 OR t3a OR t28 OR t23 OR t37) STAT389>0) OR STAT395>0 OR STAT400>0 OR STAT399>0 OR STAT396>0 OR STAT398>0 OR STAT397>0 OR STAT439>0 OR STAT405>0 OR STAT431<0 OR STAT449>0 OR STAT408>0 OR STAT412<0 OR STAT411<0 OR STAT452<0 OR MULTI427,22913=100 OR STAT437>0 OR STAT438>0 OR (STAT470>0 !(STAT389>0 OR t3a OR t14)) OR STAT498>0) !MAG]: %NAME%{%NL%%NAME%}%CONTINUE%
-ItemDisplay[(t25 OR t34 OR t13 OR t33 OR t11 OR t39 OR t16) STAT391>0 !MAG]: %NAME%{%DARK_GREEN%!Psn, %NAME%}%CONTINUE% // Sewers, Ancestral, Skovos, Bastion Keep, Lost Temple, Ruins, Kehjistan, Cistern +Poison Skill Damage
+ItemDisplay[(STAT456<0 OR ((t25 OR t34 OR t13 OR t33 OR t11 OR t39 OR t16) STAT391>0) OR STAT435>0 OR ((t32 OR t16 OR t39) STAT388>0) OR ((t38 OR t11 OR t12 OR t36) STAT390>0) OR ((t14 OR t3a OR t28 OR t23 OR t37) STAT389>0) OR STAT395>0 OR STAT400>0 OR STAT399>0 OR STAT396>0 OR STAT398>0 OR STAT397>0 OR STAT439>0 OR STAT405>0 OR STAT431<0 OR STAT449>0 OR STAT408>0 OR STAT412<0 OR STAT411<0 OR STAT452<0 OR MULTI427,22913=100 OR STAT437>0 OR STAT438>0 OR (STAT470>0 !(STAT389>0 OR t3a OR t14)) OR STAT498>0) !MAG]: %NAME%{%NL%%NAME%}%CONTINUE%
+ItemDisplay[STAT456<0 !MAG]: %ORANGE%%NAME%{%GOLD%%STAT456%pdr, %NAME%}%CONTINUE%
+ItemDisplay[(t18 OR t25 OR t34 OR t13 OR t33 OR t11 OR t39 OR t16) STAT391>0 !MAG]: %NAME%{%DARK_GREEN%!Psn, %NAME%}%CONTINUE% // Sewers, Ancestral, Skovos, Bastion Keep, Lost Temple, Ruins, Kehjistan, Cistern +Poison Skill Damage
 ItemDisplay[STAT435>0 !MAG]: %NAME%{%DARK_GREEN%+Psn, %NAME%}%CONTINUE% // Non native poison mob maps Physical to Poison
 ItemDisplay[(t14 OR t3a OR t28 OR t23 OR t37) STAT389>0 !MAG]: %NAME%{%YELLOW%!Light, %NAME%}%CONTINUE% // Sanatorium, Ashen Plains, Skovos, Arreat, Pandemonium +Lightning Skill Damage
 ItemDisplay[(t38 OR t11 OR t12 OR t36) STAT390>0 !MAG]: %NAME%{%BLUE%!Cold, %NAME%}%CONTINUE% // Canyon, Ruins, Horazon, Caldeum +Cold Skill Damage
@@ -3117,7 +3136,7 @@ ItemDisplay[STAT438>0 !MAG]: %ORANGE%%NAME%{%RED%Witches, %NAME%}%CONTINUE%
 ItemDisplay[STAT470>0 STAT389>0 !MAG]: %NAME%{%YELLOW%!Souls, %NAME%}%CONTINUE%
 ItemDisplay[STAT470>0 !(STAT389>0 OR t3a OR t14) !MAG]: %ORANGE%%NAME%{%YELLOW%Souls, %NAME%}%CONTINUE%
 ItemDisplay[STAT498>0 !MAG]: %ORANGE%%NAME%{%RED%2Boss, %NAME%}%CONTINUE%
-ItemDisplay[(((t25 OR t34 OR t13 OR t33 OR t11 OR t39 OR t16) STAT391>0) OR STAT435>0 OR ((t32 OR t16 OR t39) STAT388>0) OR ((t38 OR t11 OR t12 OR t36) STAT390>0) OR ((t14 OR t3a OR t28 OR t23 OR t37) STAT389>0) OR STAT395>0 OR STAT400>0 OR STAT399>0 OR STAT396>0 OR STAT398>0 OR STAT397>0 OR STAT439>0 OR STAT405>0 OR STAT431<0 OR STAT449>0 OR STAT408>0 OR STAT412<0 OR STAT411<0 OR STAT452<0 OR MULTI427,22913=100 OR STAT437>0 OR STAT438>0 OR (STAT470>0 !(STAT389>0 OR t3a OR t14)) OR STAT498>0) !MAG]: %NAME%{%RED%>>>> %NAME%}%CONTINUE%
+ItemDisplay[(STAT456<0 OR ((t25 OR t34 OR t13 OR t33 OR t11 OR t39 OR t16) STAT391>0) OR STAT435>0 OR ((t32 OR t16 OR t39) STAT388>0) OR ((t38 OR t11 OR t12 OR t36) STAT390>0) OR ((t14 OR t3a OR t28 OR t23 OR t37) STAT389>0) OR STAT395>0 OR STAT400>0 OR STAT399>0 OR STAT396>0 OR STAT398>0 OR STAT397>0 OR STAT439>0 OR STAT405>0 OR STAT431<0 OR STAT449>0 OR STAT408>0 OR STAT412<0 OR STAT411<0 OR STAT452<0 OR MULTI427,22913=100 OR STAT437>0 OR STAT438>0 OR (STAT470>0 !(STAT389>0 OR t3a OR t14)) OR STAT498>0) !MAG]: %NAME%{%RED%>>>> %NAME%}%CONTINUE%
 // Duel Arenas info
 ItemDisplay[NMAG MAPTIER=0]: %NAME%{%WHITE%for %RED%hardcore %WHITE%characters%NL%not result in perma death%NL%Deaths in duel arenas does}%CONTINUE%
 // Map names
